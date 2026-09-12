@@ -1,36 +1,36 @@
 {
   "app_name": "Raj Tube Pro",
   "version": "6.0.0",
-  "timestamp": "2026-09-12T17:32:13.828215+00:00",
+  "timestamp": "2026-09-12T17:55:16.230015+00:00",
   "schedule": {
     "next_slot_iso": "2026-09-12T22:00:00+00:00",
-    "seconds_remaining": 16072,
-    "formatted_countdown": "04h 27m 52s",
+    "seconds_remaining": 14690,
+    "formatted_countdown": "04h 04m 50s",
     "slot_label": "06:00 PM USA (3:30 AM IST)",
-    "now_ist": "12 Sep, 11:02 PM IST"
+    "now_ist": "12 Sep, 11:25 PM IST"
   },
   "summary": {
-    "total_channels": 4,
-    "total_uploaded": 36,
-    "total_in_queue": 410,
-    "total_subscribers": 98,
-    "total_views": 94634,
-    "total_likes": 969,
+    "total_channels": 5,
+    "total_uploaded": 46,
+    "total_in_queue": 409,
+    "total_subscribers": 99,
+    "total_views": 109022,
+    "total_likes": 1060,
     "network_engagement": 1.0,
-    "total_runway_days": 51.2,
+    "total_runway_days": 40.9,
     "system_health": "All Systems Operational",
     "issues_count": 0,
     "top_trending_video": {
       "title": "He Was Not Backing Down From Anyone #SlapFight #PowerSlap #SlapFighting #Viral #Sports.",
-      "views": 27039,
-      "likes": 346,
+      "views": 28121,
+      "likes": 350,
       "youtube_url": "https://youtu.be/t5oF0IsXkN0",
       "thumbnail": "https://i.ytimg.com/vi/t5oF0IsXkN0/mqdefault.jpg",
       "channel_name": "Zyntrix07",
       "uploaded_at": "2026-09-11T16:04:35Z"
     },
     "analytics": {
-      "watch_time_hours": 397.5,
+      "watch_time_hours": 457.9,
       "avg_view_duration": "0:24",
       "top_countries": [
         {
@@ -168,13 +168,13 @@
       "color": "#10B981",
       "avatar_url": "https://yt3.ggpht.com/R5wyufkApz5fijH1a4mek8n6CM9y64QklZgfgjuGI-SOwbTIBjEFmmKot6aBnYkVRwOpq965=s240-c-k-c0x00ffffff-no-rj",
       "subscribers": 24,
-      "total_views": 10890,
+      "total_views": 11088,
       "channel_total_videos": 4,
-      "avg_views_per_video": 2722.5,
+      "avg_views_per_video": 2772.0,
       "engagement_rate": 1.6,
-      "total_likes": 172,
+      "total_likes": 175,
       "analytics": {
-        "watch_time_hours": 45.7,
+        "watch_time_hours": 46.6,
         "avg_view_duration": "0:24",
         "top_countries": [
           {
@@ -313,7 +313,7 @@
         "title": "Close Enough To Hear His Breath #wildlife #shorts #cameraman #viral",
         "uploaded_at": "2026-09-12T14:03:34Z",
         "thumbnail": "https://i.ytimg.com/vi/RMgm8o875X0/mqdefault.jpg",
-        "views": 907,
+        "views": 912,
         "likes": 17,
         "comments": 0
       },
@@ -324,7 +324,7 @@
           "title": "Close Enough To Hear His Breath #wildlife #shorts #cameraman #viral",
           "uploaded_at": "2026-09-12T14:03:34Z",
           "thumbnail": "https://i.ytimg.com/vi/RMgm8o875X0/mqdefault.jpg",
-          "views": 907,
+          "views": 912,
           "likes": 17,
           "comments": 0
         },
@@ -344,8 +344,8 @@
           "title": "Breathtaking 4K Wildlife Moment #wildlifephotography #shorts #naturelovers #viral",
           "uploaded_at": "2026-09-11T14:42:29Z",
           "thumbnail": "https://i.ytimg.com/vi/3pDpmQcqJT8/mqdefault.jpg",
-          "views": 6850,
-          "likes": 132,
+          "views": 7043,
+          "likes": 135,
           "comments": 0
         },
         {
@@ -404,13 +404,13 @@
       "color": "#F59E0B",
       "avatar_url": "https://yt3.ggpht.com/TTLhq8ijvpChRrWaVb1i96FzeFG02Gd31oOfWo4EdOtBtfqTD6h0TrRmEOTd2fE8V0kPexV6EA=s240-c-k-c0x00ffffff-no-rj",
       "subscribers": 65,
-      "total_views": 72067,
+      "total_views": 73296,
       "channel_total_videos": 11,
-      "avg_views_per_video": 6551.5,
+      "avg_views_per_video": 6663.3,
       "engagement_rate": 0.8,
-      "total_likes": 599,
+      "total_likes": 603,
       "analytics": {
-        "watch_time_hours": 302.7,
+        "watch_time_hours": 307.8,
         "avg_view_duration": "0:24",
         "top_countries": [
           {
@@ -550,7 +550,7 @@
         "uploaded_at": "2026-09-12T14:06:29Z",
         "thumbnail": "https://i.ytimg.com/vi/7OVj2yza4ks/mqdefault.jpg",
         "views": 727,
-        "likes": 18,
+        "likes": 17,
         "comments": 1
       },
       "uploaded_videos": [
@@ -561,7 +561,7 @@
           "uploaded_at": "2026-09-12T14:06:29Z",
           "thumbnail": "https://i.ytimg.com/vi/7OVj2yza4ks/mqdefault.jpg",
           "views": 727,
-          "likes": 18,
+          "likes": 17,
           "comments": 1
         },
         {
@@ -570,8 +570,8 @@
           "title": "His Confidence Had The Whole Crowd Talking #PowerSlap #SlapFighting #SlapFight #Viral #Sports.",
           "uploaded_at": "2026-09-11T22:07:28Z",
           "thumbnail": "https://i.ytimg.com/vi/g-2DEoij8dY/mqdefault.jpg",
-          "views": 2495,
-          "likes": 55,
+          "views": 2642,
+          "likes": 56,
           "comments": 0
         },
         {
@@ -580,8 +580,8 @@
           "title": "He Was Not Backing Down From Anyone #SlapFight #PowerSlap #SlapFighting #Viral #Sports.",
           "uploaded_at": "2026-09-11T16:04:35Z",
           "thumbnail": "https://i.ytimg.com/vi/t5oF0IsXkN0/mqdefault.jpg",
-          "views": 27039,
-          "likes": 346,
+          "views": 28121,
+          "likes": 350,
           "comments": 1
         },
         {
@@ -990,13 +990,13 @@
       "color": "#8B5CF6",
       "avatar_url": "https://yt3.ggpht.com/WKefM8i0bji48M_e159k6q0080b5zNwYExax_QloW7H3XguFARUF-SuE62a8rdPQJXvtTXxbJQ=s240-c-k-c0x00ffffff-no-rj",
       "subscribers": 0,
-      "total_views": 7,
-      "channel_total_videos": 9,
-      "avg_views_per_video": 0.8,
-      "engagement_rate": 0.0,
-      "total_likes": 0,
+      "total_views": 229,
+      "channel_total_videos": 10,
+      "avg_views_per_video": 22.9,
+      "engagement_rate": 0.4,
+      "total_likes": 1,
       "analytics": {
-        "watch_time_hours": 0.0,
+        "watch_time_hours": 1.0,
         "avg_view_duration": "0:24",
         "top_countries": [
           {
@@ -1122,24 +1122,34 @@
       },
       "drive_folder_id": "1C_R0kNrMxrW5FeX241UluglGU-qUEfkS",
       "drive_folder_url": "https://drive.google.com/drive/folders/1C_R0kNrMxrW5FeX241UluglGU-qUEfkS",
-      "uploaded_count": 9,
-      "drive_queue_count": 127,
-      "runway_days": 63.5,
-      "stock_status": "Plentiful (63.5 days)",
+      "uploaded_count": 10,
+      "drive_queue_count": 126,
+      "runway_days": 63.0,
+      "stock_status": "Plentiful (63.0 days)",
       "stock_color": "#10B981",
-      "latest_run_status": "idle",
-      "latest_run_time": null,
+      "latest_run_status": "success",
+      "latest_run_time": "2026-09-12T17:39:26.554769+00:00",
       "latest_uploaded_video": {
-        "youtube_id": "yNvI5S6ywtk",
-        "youtube_url": "https://youtu.be/yNvI5S6ywtk",
-        "title": "Adorable Toddler Makes Everyone Smile #ToddlerLife #CutestMoments #FamilyMoments #WholesomeContent #",
-        "uploaded_at": "2026-09-11T09:09:05Z",
-        "thumbnail": "https://i.ytimg.com/vi/yNvI5S6ywtk/mqdefault.jpg",
-        "views": 0,
-        "likes": 0,
+        "youtube_id": "goCoZBF3N_M",
+        "youtube_url": "https://youtu.be/goCoZBF3N_M",
+        "title": "Adorable Toddler Reacts In The Cutest Way #ToddlerLife #CutestMoments #FamilyMoments #WholesomeConte",
+        "uploaded_at": "2026-09-12T17:39:42Z",
+        "thumbnail": "https://i.ytimg.com/vi/goCoZBF3N_M/mqdefault.jpg",
+        "views": 222,
+        "likes": 1,
         "comments": 0
       },
       "uploaded_videos": [
+        {
+          "youtube_id": "goCoZBF3N_M",
+          "youtube_url": "https://youtu.be/goCoZBF3N_M",
+          "title": "Adorable Toddler Reacts In The Cutest Way #ToddlerLife #CutestMoments #FamilyMoments #WholesomeConte",
+          "uploaded_at": "2026-09-12T17:39:42Z",
+          "thumbnail": "https://i.ytimg.com/vi/goCoZBF3N_M/mqdefault.jpg",
+          "views": 222,
+          "likes": 1,
+          "comments": 0
+        },
         {
           "youtube_id": "yNvI5S6ywtk",
           "youtube_url": "https://youtu.be/yNvI5S6ywtk",
@@ -1228,6 +1238,274 @@
           "thumbnail": "https://i.ytimg.com/vi/uyjCXgfWTOY/mqdefault.jpg",
           "views": 0,
           "likes": 0,
+          "comments": 0
+        }
+      ],
+      "recent_runs": [
+        {
+          "started_at": "2026-09-12T17:39:07.566302+00:00",
+          "finished_at": "2026-09-12T17:39:26.554769+00:00",
+          "status": "success",
+          "error": null
+        },
+        {
+          "started_at": "2026-09-12T17:33:36.563903+00:00",
+          "finished_at": "2026-09-12T17:33:38.572691+00:00",
+          "status": "dry_run",
+          "error": null
+        }
+      ],
+      "is_active": true
+    },
+    {
+      "id": "channel_5",
+      "name": "Klyvo",
+      "handle": "@Klyvo-x5o",
+      "youtube_channel_id": "UCjtNCrZzwZbAVtuy5mhiMPA",
+      "channel_url": "https://www.youtube.com/channel/UCjtNCrZzwZbAVtuy5mhiMPA",
+      "category": "Art & Puppetry Shorts",
+      "github_repo": "malhotramahi396-afk/yt-automation-klyvo",
+      "color": "#EC4899",
+      "avatar_url": "https://yt3.ggpht.com/pqIrk9GBtAR6cdyBH5C_kHNWA1jlu4VT9ZLKxdYTFW6IvVQLWbtFO3OUxrSV1Jm1SR0JAyTrAA=s240-c-k-c0x00ffffff-no-rj",
+      "subscribers": 1,
+      "total_views": 12739,
+      "channel_total_videos": 9,
+      "avg_views_per_video": 1415.4,
+      "engagement_rate": 0.7,
+      "total_likes": 83,
+      "analytics": {
+        "watch_time_hours": 53.5,
+        "avg_view_duration": "0:24",
+        "top_countries": [
+          {
+            "country": "United States",
+            "code": "US",
+            "flag": "\ud83c\uddfa\ud83c\uddf8",
+            "percent": 45.0
+          },
+          {
+            "country": "India",
+            "code": "IN",
+            "flag": "\ud83c\uddee\ud83c\uddf3",
+            "percent": 27.5
+          },
+          {
+            "country": "United Kingdom",
+            "code": "GB",
+            "flag": "\ud83c\uddec\ud83c\udde7",
+            "percent": 11.3
+          },
+          {
+            "country": "Canada",
+            "code": "CA",
+            "flag": "\ud83c\udde8\ud83c\udde6",
+            "percent": 7.4
+          },
+          {
+            "country": "Germany",
+            "code": "DE",
+            "flag": "\ud83c\udde9\ud83c\uddea",
+            "percent": 4.2
+          },
+          {
+            "country": "Other countries",
+            "code": "OTHER",
+            "flag": "\ud83c\udf10",
+            "percent": 4.6
+          }
+        ],
+        "age_distribution": [
+          {
+            "range": "13\u201317 years",
+            "percent": 5.5
+          },
+          {
+            "range": "18\u201324 years",
+            "percent": 40.2
+          },
+          {
+            "range": "25\u201334 years",
+            "percent": 41.3
+          },
+          {
+            "range": "35\u201344 years",
+            "percent": 8.8
+          },
+          {
+            "range": "45\u201354 years",
+            "percent": 2.9
+          },
+          {
+            "range": "55+ years",
+            "percent": 1.3
+          }
+        ],
+        "gender": {
+          "male": 75.8,
+          "female": 24.2
+        },
+        "traffic_sources": [
+          {
+            "source": "Shorts feed",
+            "percent": 81.2,
+            "icon": "\ud83d\udcf1"
+          },
+          {
+            "source": "YouTube search",
+            "percent": 10.6,
+            "icon": "\ud83d\udd0d"
+          },
+          {
+            "source": "Channel pages",
+            "percent": 4.4,
+            "icon": "\ud83d\udcc4"
+          },
+          {
+            "source": "Suggested videos",
+            "percent": 2.5,
+            "icon": "\ud83c\udfac"
+          },
+          {
+            "source": "External & Others",
+            "percent": 1.3,
+            "icon": "\ud83d\udd17"
+          }
+        ],
+        "subscriber_watch_time": {
+          "not_subscribed": 94.2,
+          "subscribed": 5.8
+        },
+        "viewer_types": {
+          "new_viewers": 87.6,
+          "returning_viewers": 12.4
+        },
+        "top_devices": [
+          {
+            "device": "Mobile phone",
+            "percent": 94.6,
+            "icon": "\ud83d\udcf1"
+          },
+          {
+            "device": "Computer",
+            "percent": 3.8,
+            "icon": "\ud83d\udcbb"
+          },
+          {
+            "device": "TV / Tablet",
+            "percent": 1.6,
+            "icon": "\ud83d\udcfa"
+          }
+        ],
+        "peak_hours": "6:00 PM \u2013 10:30 PM IST (Peak Global Viewing Window)"
+      },
+      "drive_folder_id": "",
+      "drive_folder_url": null,
+      "uploaded_count": 9,
+      "drive_queue_count": 0,
+      "runway_days": 0,
+      "stock_status": "Healthy",
+      "stock_color": "#10B981",
+      "latest_run_status": "idle",
+      "latest_run_time": null,
+      "latest_uploaded_video": {
+        "youtube_id": "23fs8X8RlyM",
+        "youtube_url": "https://youtu.be/23fs8X8RlyM",
+        "title": "Every Stroke Brings The Scene Closer To Life #Painting #ArtReels #Artist #ArtTransformation #Satisfy",
+        "uploaded_at": "2026-09-11T09:08:18Z",
+        "thumbnail": "https://i.ytimg.com/vi/23fs8X8RlyM/mqdefault.jpg",
+        "views": 1259,
+        "likes": 8,
+        "comments": 0
+      },
+      "uploaded_videos": [
+        {
+          "youtube_id": "23fs8X8RlyM",
+          "youtube_url": "https://youtu.be/23fs8X8RlyM",
+          "title": "Every Stroke Brings The Scene Closer To Life #Painting #ArtReels #Artist #ArtTransformation #Satisfy",
+          "uploaded_at": "2026-09-11T09:08:18Z",
+          "thumbnail": "https://i.ytimg.com/vi/23fs8X8RlyM/mqdefault.jpg",
+          "views": 1259,
+          "likes": 8,
+          "comments": 0
+        },
+        {
+          "youtube_id": "nF35nkMVC2s",
+          "youtube_url": "https://youtu.be/nF35nkMVC2s",
+          "title": "Every Detail Was Painted By Hand #Painting #Artist #ArtReels #HandPainted #Satisfying",
+          "uploaded_at": "2026-09-07T19:36:09Z",
+          "thumbnail": "https://i.ytimg.com/vi/nF35nkMVC2s/mqdefault.jpg",
+          "views": 1238,
+          "likes": 7,
+          "comments": 0
+        },
+        {
+          "youtube_id": "o7gOcdKnn-c",
+          "youtube_url": "https://youtu.be/o7gOcdKnn-c",
+          "title": "Every Color Has A Purpose In This Painting #Painting #Artist #ArtReels #Creative #Art",
+          "uploaded_at": "2026-09-06T07:17:01Z",
+          "thumbnail": "https://i.ytimg.com/vi/o7gOcdKnn-c/mqdefault.jpg",
+          "views": 1558,
+          "likes": 14,
+          "comments": 0
+        },
+        {
+          "youtube_id": "fw8w3TgkU7U",
+          "youtube_url": "https://youtu.be/fw8w3TgkU7U",
+          "title": "Every Brushstroke Gets Better Than The Last #Painting #Satisfying #ArtReels #Artist #Art",
+          "uploaded_at": "2026-09-03T19:34:17Z",
+          "thumbnail": "https://i.ytimg.com/vi/fw8w3TgkU7U/mqdefault.jpg",
+          "views": 11,
+          "likes": 0,
+          "comments": 0
+        },
+        {
+          "youtube_id": "ls-oNuVUj88",
+          "youtube_url": "https://youtu.be/ls-oNuVUj88",
+          "title": "Can You Recognize The Place He Is Painting #ArtChallenge #Painting #Artist #ArtReels #Viral",
+          "uploaded_at": "2026-08-30T17:35:34Z",
+          "thumbnail": "https://i.ytimg.com/vi/ls-oNuVUj88/mqdefault.jpg",
+          "views": 2110,
+          "likes": 12,
+          "comments": 1
+        },
+        {
+          "youtube_id": "bbfuIfZrtqM",
+          "youtube_url": "https://youtu.be/bbfuIfZrtqM",
+          "title": "Can You Guess The Landmark Before The Reveal #Painting #ArtChallenge #ArtReels #Artist #Viral",
+          "uploaded_at": "2026-08-27T19:49:53Z",
+          "thumbnail": "https://i.ytimg.com/vi/bbfuIfZrtqM/mqdefault.jpg",
+          "views": 1150,
+          "likes": 11,
+          "comments": 0
+        },
+        {
+          "youtube_id": "Wk-N6p-_SvQ",
+          "youtube_url": "https://youtu.be/Wk-N6p-_SvQ",
+          "title": "Can You Guess How The Finished Painting Looks #ArtChallenge #Painting #ArtReels #Artist #Reveal",
+          "uploaded_at": "2026-08-26T19:38:01Z",
+          "thumbnail": "https://i.ytimg.com/vi/Wk-N6p-_SvQ/mqdefault.jpg",
+          "views": 2885,
+          "likes": 17,
+          "comments": 2
+        },
+        {
+          "youtube_id": "6ywkGNA2y4M",
+          "youtube_url": "https://youtu.be/6ywkGNA2y4M",
+          "title": "Blank Canvas Meets A Surprisingly Skilled Painter #Painting #Artist #ArtReels #Viral #artist",
+          "uploaded_at": "2026-08-25T19:55:22Z",
+          "thumbnail": "https://i.ytimg.com/vi/6ywkGNA2y4M/mqdefault.jpg",
+          "views": 1242,
+          "likes": 8,
+          "comments": 0
+        },
+        {
+          "youtube_id": "pHV3j-pPwo4",
+          "youtube_url": "https://youtu.be/pHV3j-pPwo4",
+          "title": "A Tiny Easel And A Surprisingly Big Talent #Artist #Painting #ArtReels #Creative #ViralArt",
+          "uploaded_at": "2026-08-24T19:05:19Z",
+          "thumbnail": "https://i.ytimg.com/vi/pHV3j-pPwo4/mqdefault.jpg",
+          "views": 1286,
+          "likes": 6,
           "comments": 0
         }
       ],
