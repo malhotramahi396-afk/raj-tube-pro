@@ -1,23 +1,23 @@
 {
   "app_name": "Raj Tube Pro",
   "version": "6.0.0",
-  "timestamp": "2026-09-12T20:06:38.085306+00:00",
+  "timestamp": "2026-09-12T20:32:24.149330+00:00",
   "schedule": {
     "next_slot_iso": "2026-09-12T22:00:00+00:00",
-    "seconds_remaining": 6809,
-    "formatted_countdown": "01h 53m 29s",
+    "seconds_remaining": 5264,
+    "formatted_countdown": "01h 27m 44s",
     "slot_label": "06:00 PM USA (3:30 AM IST)",
-    "now_ist": "13 Sep, 01:36 AM IST"
+    "now_ist": "13 Sep, 02:02 AM IST"
   },
   "summary": {
-    "total_channels": 5,
-    "total_uploaded": 47,
-    "total_in_queue": 547,
-    "total_subscribers": 100,
-    "total_views": 119373,
-    "total_likes": 1094,
-    "network_engagement": 0.9,
-    "total_runway_days": 54.7,
+    "total_channels": 6,
+    "total_uploaded": 72,
+    "total_in_queue": 688,
+    "total_subscribers": 123,
+    "total_views": 129652,
+    "total_likes": 1234,
+    "network_engagement": 1.0,
+    "total_runway_days": 57.3,
     "system_health": "All Systems Operational",
     "issues_count": 0,
     "top_trending_video": {
@@ -31,7 +31,7 @@
       "uploaded_at": "2026-09-11T16:04:35Z"
     },
     "analytics": {
-      "watch_time_hours": 501.4,
+      "watch_time_hours": 544.5,
       "avg_view_duration": "0:24",
       "top_countries": [
         {
@@ -174,10 +174,10 @@
         "is_clean": true
       },
       "view_health": {
-        "label": "YouTube API Verified: 2,540 avg views/video (119,373 total views across 47 videos)",
-        "badge": "2,540 AVG",
+        "label": "YouTube API Verified: 1,801 avg views/video (129,652 total views across 72 videos)",
+        "badge": "1,801 AVG",
         "color": "#10B981",
-        "avg_views": 2539.9,
+        "avg_views": 1800.7,
         "shorts_feed_share": "81.2%",
         "velocity_verdict": "Algorithm Reach: High"
       },
@@ -190,9 +190,9 @@
       },
       "upload_engine": {
         "latest_run": "success",
-        "queue_health": "Plentiful Runway (54.7 days)",
-        "runway_days": 54.7,
-        "total_uploaded": 47
+        "queue_health": "Plentiful Runway (57.3 days)",
+        "runway_days": 57.3,
+        "total_uploaded": 72
       }
     }
   },
@@ -209,13 +209,13 @@
       "color": "#10B981",
       "avatar_url": "https://yt3.ggpht.com/R5wyufkApz5fijH1a4mek8n6CM9y64QklZgfgjuGI-SOwbTIBjEFmmKot6aBnYkVRwOpq965=s240-c-k-c0x00ffffff-no-rj",
       "subscribers": 25,
-      "total_views": 12988,
+      "total_views": 13239,
       "channel_total_videos": 4,
-      "avg_views_per_video": 3247.0,
+      "avg_views_per_video": 3309.8,
       "engagement_rate": 1.5,
-      "total_likes": 198,
+      "total_likes": 201,
       "analytics": {
-        "watch_time_hours": 54.5,
+        "watch_time_hours": 55.6,
         "avg_view_duration": "0:24",
         "top_countries": [
           {
@@ -358,10 +358,10 @@
           "is_clean": true
         },
         "view_health": {
-          "label": "YouTube API Verified: 3,247 avg views/video (12,988 total views across 4 videos)",
-          "badge": "3,247 AVG",
+          "label": "YouTube API Verified: 3,310 avg views/video (13,239 total views across 4 videos)",
+          "badge": "3,310 AVG",
           "color": "#10B981",
-          "avg_views": 3247.0,
+          "avg_views": 3309.8,
           "shorts_feed_share": "81.2%",
           "velocity_verdict": "Algorithm Reach: High"
         },
@@ -394,8 +394,8 @@
         "title": "Close Enough To Hear His Breath #wildlife #shorts #cameraman #viral",
         "uploaded_at": "2026-09-12T14:03:34Z",
         "thumbnail": "https://i.ytimg.com/vi/RMgm8o875X0/mqdefault.jpg",
-        "views": 1323,
-        "likes": 21,
+        "views": 1421,
+        "likes": 22,
         "comments": 0,
         "subscribers_gained": 3
       },
@@ -406,8 +406,8 @@
           "title": "Close Enough To Hear His Breath #wildlife #shorts #cameraman #viral",
           "uploaded_at": "2026-09-12T14:03:34Z",
           "thumbnail": "https://i.ytimg.com/vi/RMgm8o875X0/mqdefault.jpg",
-          "views": 1323,
-          "likes": 21,
+          "views": 1421,
+          "likes": 22,
           "comments": 0,
           "subscribers_gained": 3
         },
@@ -428,9 +428,9 @@
           "title": "Breathtaking 4K Wildlife Moment #wildlifephotography #shorts #naturelovers #viral",
           "uploaded_at": "2026-09-11T14:42:29Z",
           "thumbnail": "https://i.ytimg.com/vi/3pDpmQcqJT8/mqdefault.jpg",
-          "views": 8530,
-          "likes": 154,
-          "comments": 0,
+          "views": 8683,
+          "likes": 156,
+          "comments": 1,
           "subscribers_gained": 17
         },
         {
@@ -490,13 +490,13 @@
       "color": "#F59E0B",
       "avatar_url": "https://yt3.ggpht.com/TTLhq8ijvpChRrWaVb1i96FzeFG02Gd31oOfWo4EdOtBtfqTD6h0TrRmEOTd2fE8V0kPexV6EA=s240-c-k-c0x00ffffff-no-rj",
       "subscribers": 65,
-      "total_views": 81134,
+      "total_views": 81420,
       "channel_total_videos": 11,
-      "avg_views_per_video": 7375.8,
-      "engagement_rate": 0.8,
+      "avg_views_per_video": 7401.8,
+      "engagement_rate": 0.7,
       "total_likes": 609,
       "analytics": {
-        "watch_time_hours": 340.8,
+        "watch_time_hours": 342.0,
         "avg_view_duration": "0:24",
         "top_countries": [
           {
@@ -639,10 +639,10 @@
           "is_clean": true
         },
         "view_health": {
-          "label": "YouTube API Verified: 7,376 avg views/video (81,134 total views across 11 videos)",
-          "badge": "7,376 AVG",
+          "label": "YouTube API Verified: 7,402 avg views/video (81,420 total views across 11 videos)",
+          "badge": "7,402 AVG",
           "color": "#10B981",
-          "avg_views": 7375.8,
+          "avg_views": 7401.8,
           "shorts_feed_share": "81.2%",
           "velocity_verdict": "Algorithm Reach: High"
         },
@@ -675,7 +675,7 @@
         "title": "Nobody Expected That Faceoff Reaction #SlapFighting #PowerSlap #SlapBattle #CombatSports #Viral.",
         "uploaded_at": "2026-09-12T14:06:29Z",
         "thumbnail": "https://i.ytimg.com/vi/7OVj2yza4ks/mqdefault.jpg",
-        "views": 857,
+        "views": 893,
         "likes": 18,
         "comments": 1,
         "subscribers_gained": 1
@@ -687,7 +687,7 @@
           "title": "Nobody Expected That Faceoff Reaction #SlapFighting #PowerSlap #SlapBattle #CombatSports #Viral.",
           "uploaded_at": "2026-09-12T14:06:29Z",
           "thumbnail": "https://i.ytimg.com/vi/7OVj2yza4ks/mqdefault.jpg",
-          "views": 857,
+          "views": 893,
           "likes": 18,
           "comments": 1,
           "subscribers_gained": 1
@@ -698,7 +698,7 @@
           "title": "His Confidence Had The Whole Crowd Talking #PowerSlap #SlapFighting #SlapFight #Viral #Sports.",
           "uploaded_at": "2026-09-11T22:07:28Z",
           "thumbnail": "https://i.ytimg.com/vi/g-2DEoij8dY/mqdefault.jpg",
-          "views": 3445,
+          "views": 3695,
           "likes": 59,
           "comments": 0,
           "subscribers_gained": 3
@@ -1181,9 +1181,9 @@
       "color": "#8B5CF6",
       "avatar_url": "https://yt3.ggpht.com/WKefM8i0bji48M_e159k6q0080b5zNwYExax_QloW7H3XguFARUF-SuE62a8rdPQJXvtTXxbJQ=s240-c-k-c0x00ffffff-no-rj",
       "subscribers": 0,
-      "total_views": 841,
+      "total_views": 845,
       "channel_total_videos": 10,
-      "avg_views_per_video": 84.1,
+      "avg_views_per_video": 84.5,
       "engagement_rate": 0.7,
       "total_likes": 6,
       "analytics": {
@@ -1330,10 +1330,10 @@
           "is_clean": true
         },
         "view_health": {
-          "label": "Warm-Up Phase: 84 avg views/video (841 total views across 10 videos)",
+          "label": "Warm-Up Phase: 84 avg views/video (845 total views across 10 videos)",
           "badge": "84 AVG",
           "color": "#F59E0B",
-          "avg_views": 84.1,
+          "avg_views": 84.5,
           "shorts_feed_share": "81.2%",
           "velocity_verdict": "Algorithm Reach: Healthy"
         },
@@ -1366,7 +1366,7 @@
         "title": "Adorable Toddler Reacts In The Cutest Way #ToddlerLife #CutestMoments #FamilyMoments #WholesomeConte",
         "uploaded_at": "2026-09-12T17:39:42Z",
         "thumbnail": "https://i.ytimg.com/vi/goCoZBF3N_M/mqdefault.jpg",
-        "views": 834,
+        "views": 838,
         "likes": 6,
         "comments": 0,
         "subscribers_gained": 0
@@ -1378,7 +1378,7 @@
           "title": "Adorable Toddler Reacts In The Cutest Way #ToddlerLife #CutestMoments #FamilyMoments #WholesomeConte",
           "uploaded_at": "2026-09-12T17:39:42Z",
           "thumbnail": "https://i.ytimg.com/vi/goCoZBF3N_M/mqdefault.jpg",
-          "views": 834,
+          "views": 838,
           "likes": 6,
           "comments": 0,
           "subscribers_gained": 0
@@ -1523,68 +1523,68 @@
             "country": "United States",
             "code": "US",
             "flag": "\ud83c\uddfa\ud83c\uddf8",
-            "percent": 45.0
-          },
-          {
-            "country": "India",
-            "code": "IN",
-            "flag": "\ud83c\uddee\ud83c\uddf3",
-            "percent": 27.5
+            "percent": 41.2
           },
           {
             "country": "United Kingdom",
             "code": "GB",
             "flag": "\ud83c\uddec\ud83c\udde7",
-            "percent": 11.3
+            "percent": 16.4
           },
           {
-            "country": "Canada",
-            "code": "CA",
-            "flag": "\ud83c\udde8\ud83c\udde6",
-            "percent": 7.4
+            "country": "India",
+            "code": "IN",
+            "flag": "\ud83c\uddee\ud83c\uddf3",
+            "percent": 14.8
+          },
+          {
+            "country": "France",
+            "code": "FR",
+            "flag": "\ud83c\uddeb\ud83c\uddf7",
+            "percent": 8.5
           },
           {
             "country": "Germany",
             "code": "DE",
             "flag": "\ud83c\udde9\ud83c\uddea",
-            "percent": 4.2
+            "percent": 6.9
           },
           {
             "country": "Other countries",
             "code": "OTHER",
             "flag": "\ud83c\udf10",
-            "percent": 4.6
+            "percent": 12.2
           }
         ],
         "age_distribution": [
           {
             "range": "13\u201317 years",
-            "percent": 5.5
+            "percent": 11.5
           },
           {
             "range": "18\u201324 years",
-            "percent": 40.2
+            "percent": 38.2
           },
           {
             "range": "25\u201334 years",
-            "percent": 41.3
+            "percent": 32.7
           },
           {
             "range": "35\u201344 years",
-            "percent": 8.8
+            "percent": 10.4
           },
           {
             "range": "45\u201354 years",
-            "percent": 2.9
+            "percent": 5.1
           },
           {
             "range": "55+ years",
-            "percent": 1.3
+            "percent": 2.1
           }
         ],
         "gender": {
-          "male": 75.8,
-          "female": 24.2
+          "male": 52.4,
+          "female": 47.6
         },
         "traffic_sources": [
           {
@@ -1638,7 +1638,7 @@
             "icon": "\ud83d\udcfa"
           }
         ],
-        "peak_hours": "6:00 PM \u2013 10:30 PM IST (Peak Global Viewing Window)"
+        "peak_hours": "4:30 PM \u2013 9:30 PM IST (Global Art & Creative Window)"
       },
       "health": {
         "overall_score": 100,
@@ -1826,6 +1826,487 @@
           "error": null
         }
       ],
+      "is_active": true
+    },
+    {
+      "id": "channel_6",
+      "name": "CoreVanta Media",
+      "handle": "@corevantamedia",
+      "youtube_channel_id": "UC1ELbkEuvpIsoQ49ZCe9iVg",
+      "channel_url": "https://www.youtube.com/channel/UC1ELbkEuvpIsoQ49ZCe9iVg",
+      "category": "Football & Soccer Stories",
+      "github_repo": "malhotramahi396-afk/yt-automation-corevantamedia",
+      "color": "#3B82F6",
+      "avatar_url": "https://yt3.ggpht.com/vRLBXNb4fgjWzDfLf8ltniGaD2BlvZ1PAWugGoZaJx1nCdJ92LubM-8vy7hIgxHlCicFwpt2=s240-c-k-c0x00ffffff-no-rj",
+      "subscribers": 23,
+      "total_views": 9738,
+      "channel_total_videos": 25,
+      "avg_views_per_video": 389.5,
+      "engagement_rate": 1.4,
+      "total_likes": 137,
+      "analytics": {
+        "watch_time_hours": 40.9,
+        "avg_view_duration": "0:24",
+        "top_countries": [
+          {
+            "country": "United States",
+            "code": "US",
+            "flag": "\ud83c\uddfa\ud83c\uddf8",
+            "percent": 42.1
+          },
+          {
+            "country": "United Kingdom",
+            "code": "GB",
+            "flag": "\ud83c\uddec\ud83c\udde7",
+            "percent": 18.5
+          },
+          {
+            "country": "Brazil",
+            "code": "BR",
+            "flag": "\ud83c\udde7\ud83c\uddf7",
+            "percent": 14.2
+          },
+          {
+            "country": "Germany",
+            "code": "DE",
+            "flag": "\ud83c\udde9\ud83c\uddea",
+            "percent": 9.4
+          },
+          {
+            "country": "India",
+            "code": "IN",
+            "flag": "\ud83c\uddee\ud83c\uddf3",
+            "percent": 8.6
+          },
+          {
+            "country": "Other countries",
+            "code": "OTHER",
+            "flag": "\ud83c\udf10",
+            "percent": 7.2
+          }
+        ],
+        "age_distribution": [
+          {
+            "range": "13\u201317 years",
+            "percent": 9.2
+          },
+          {
+            "range": "18\u201324 years",
+            "percent": 46.5
+          },
+          {
+            "range": "25\u201334 years",
+            "percent": 34.2
+          },
+          {
+            "range": "35\u201344 years",
+            "percent": 6.8
+          },
+          {
+            "range": "45\u201354 years",
+            "percent": 2.3
+          },
+          {
+            "range": "55+ years",
+            "percent": 1.0
+          }
+        ],
+        "gender": {
+          "male": 88.5,
+          "female": 11.5
+        },
+        "traffic_sources": [
+          {
+            "source": "Shorts feed",
+            "percent": 81.2,
+            "icon": "\ud83d\udcf1"
+          },
+          {
+            "source": "YouTube search",
+            "percent": 10.6,
+            "icon": "\ud83d\udd0d"
+          },
+          {
+            "source": "Channel pages",
+            "percent": 4.4,
+            "icon": "\ud83d\udcc4"
+          },
+          {
+            "source": "Suggested videos",
+            "percent": 2.5,
+            "icon": "\ud83c\udfac"
+          },
+          {
+            "source": "External & Others",
+            "percent": 1.3,
+            "icon": "\ud83d\udd17"
+          }
+        ],
+        "subscriber_watch_time": {
+          "not_subscribed": 94.2,
+          "subscribed": 5.8
+        },
+        "viewer_types": {
+          "new_viewers": 87.6,
+          "returning_viewers": 12.4
+        },
+        "top_devices": [
+          {
+            "device": "Mobile phone",
+            "percent": 94.6,
+            "icon": "\ud83d\udcf1"
+          },
+          {
+            "device": "Computer",
+            "percent": 3.8,
+            "icon": "\ud83d\udcbb"
+          },
+          {
+            "device": "TV / Tablet",
+            "percent": 1.6,
+            "icon": "\ud83d\udcfa"
+          }
+        ],
+        "peak_hours": "6:00 PM \u2013 11:00 PM IST (Prime Global Matchdays & Sports Window)"
+      },
+      "health": {
+        "overall_score": 99,
+        "verdict": "Flawless (Optimal Standing)",
+        "verdict_color": "#10B981",
+        "shield_icon": "\ud83d\udee1\ufe0f",
+        "strikes": {
+          "count": 0,
+          "max": 3,
+          "status": "0 of 3 active strikes \u2022 Channel Active & Public (YouTube API Verified)",
+          "badge": "CLEAN",
+          "is_clean": true
+        },
+        "copyright": {
+          "count": 0,
+          "status": "0 copyright claims \u2022 100% Original Audio & Video",
+          "badge": "CLEAN",
+          "is_clean": true
+        },
+        "view_health": {
+          "label": "YouTube API Verified: 390 avg views/video (9,738 total views across 25 videos)",
+          "badge": "390 AVG",
+          "color": "#3EA6FF",
+          "avg_views": 389.5,
+          "shorts_feed_share": "81.2%",
+          "velocity_verdict": "Algorithm Reach: Healthy"
+        },
+        "compliance": {
+          "label": "YouTube Policy: AI Disclosure & COPPA Guard Active (Self-Declared)",
+          "badge": "100% OK",
+          "synthetic_media": "Self-Declared True (Compliant)",
+          "coppa_kids": "Declared False (General Audience)",
+          "is_compliant": true
+        },
+        "upload_engine": {
+          "latest_run": "idle",
+          "queue_health": "Plentiful Runway (70.5 days)",
+          "runway_days": 70.5,
+          "total_uploaded": 25
+        }
+      },
+      "drive_folder_id": "1mxwPH1BvYEfv77zDUWA5ZxiwYW2hG125",
+      "drive_folder_url": "https://drive.google.com/drive/folders/1mxwPH1BvYEfv77zDUWA5ZxiwYW2hG125",
+      "uploaded_count": 25,
+      "drive_queue_count": 141,
+      "runway_days": 70.5,
+      "stock_status": "Plentiful (70.5 days)",
+      "stock_color": "#10B981",
+      "latest_run_status": "idle",
+      "latest_run_time": null,
+      "latest_uploaded_video": {
+        "youtube_id": "8a22a48a74Q",
+        "youtube_url": "https://youtu.be/8a22a48a74Q",
+        "title": "Every Champion Has A Beginning Against All Odds #Football #Soccer #FootballStory #FootballLife #Goal",
+        "uploaded_at": "2026-09-07T19:30:16Z",
+        "thumbnail": "https://i.ytimg.com/vi/8a22a48a74Q/mqdefault.jpg",
+        "views": 8,
+        "likes": 0,
+        "comments": 0,
+        "subscribers_gained": 0
+      },
+      "uploaded_videos": [
+        {
+          "youtube_id": "8a22a48a74Q",
+          "youtube_url": "https://youtu.be/8a22a48a74Q",
+          "title": "Every Champion Has A Beginning Against All Odds #Football #Soccer #FootballStory #FootballLife #Goal",
+          "uploaded_at": "2026-09-07T19:30:16Z",
+          "thumbnail": "https://i.ytimg.com/vi/8a22a48a74Q/mqdefault.jpg",
+          "views": 8,
+          "likes": 0,
+          "comments": 0,
+          "subscribers_gained": 0
+        },
+        {
+          "youtube_id": "6GWHb0fbYU4",
+          "youtube_url": "https://youtu.be/6GWHb0fbYU4",
+          "title": "Dreams Begin On The Pitch With Pure Determination #Football #Soccer #FootballStory #FootballLife #Go",
+          "uploaded_at": "2026-09-06T07:57:20Z",
+          "thumbnail": "https://i.ytimg.com/vi/6GWHb0fbYU4/mqdefault.jpg",
+          "views": 235,
+          "likes": 1,
+          "comments": 0,
+          "subscribers_gained": 0
+        },
+        {
+          "youtube_id": "I5W5DIr---I",
+          "youtube_url": "https://youtu.be/I5W5DIr---I",
+          "title": "Dreams Begin On The Pitch When Nobody Believed #Football #Soccer #FootballStory #FootballLife #Goal",
+          "uploaded_at": "2026-09-03T19:41:28Z",
+          "thumbnail": "https://i.ytimg.com/vi/I5W5DIr---I/mqdefault.jpg",
+          "views": 38,
+          "likes": 0,
+          "comments": 0,
+          "subscribers_gained": 0
+        },
+        {
+          "youtube_id": "l3U70dOLNik",
+          "youtube_url": "https://youtu.be/l3U70dOLNik",
+          "title": "Dreams Begin On The Pitch Today #Football #Soccer #FootballStory #FootballLife #Goal #Dream",
+          "uploaded_at": "2026-08-30T18:43:24Z",
+          "thumbnail": "https://i.ytimg.com/vi/l3U70dOLNik/mqdefault.jpg",
+          "views": 16,
+          "likes": 0,
+          "comments": 0,
+          "subscribers_gained": 0
+        },
+        {
+          "youtube_id": "vSUk6veB6RU",
+          "youtube_url": "https://youtu.be/vSUk6veB6RU",
+          "title": "Dreams Begin On The Pitch On The Biggest Stage #Football #Soccer #FootballStory #FootballLife #Goal",
+          "uploaded_at": "2026-08-18T20:04:53Z",
+          "thumbnail": "https://i.ytimg.com/vi/vSUk6veB6RU/mqdefault.jpg",
+          "views": 990,
+          "likes": 10,
+          "comments": 0,
+          "subscribers_gained": 2
+        },
+        {
+          "youtube_id": "ITi_ev2jVLY",
+          "youtube_url": "https://youtu.be/ITi_ev2jVLY",
+          "title": "Dreams Begin On The Pitch Forever #Football #Soccer #FootballStory #FootballLife #Goal #Dream #Champ",
+          "uploaded_at": "2026-08-05T16:44:09Z",
+          "thumbnail": "https://i.ytimg.com/vi/ITi_ev2jVLY/mqdefault.jpg",
+          "views": 2,
+          "likes": 0,
+          "comments": 0,
+          "subscribers_gained": 0
+        },
+        {
+          "youtube_id": "3K8rVRWmrms",
+          "youtube_url": "https://youtu.be/3K8rVRWmrms",
+          "title": "Dreams Begin On The Pitch For The Team #Football #Soccer #FootballStory #FootballLife #Goal #Dream",
+          "uploaded_at": "2026-08-03T16:11:15Z",
+          "thumbnail": "https://i.ytimg.com/vi/3K8rVRWmrms/mqdefault.jpg",
+          "views": 6,
+          "likes": 0,
+          "comments": 0,
+          "subscribers_gained": 0
+        },
+        {
+          "youtube_id": "fWHrYPGEKBY",
+          "youtube_url": "https://youtu.be/fWHrYPGEKBY",
+          "title": "Dreams Begin On The Pitch Before The Final Whistle #Football #Soccer #FootballStory #FootballLife",
+          "uploaded_at": "2026-07-28T13:43:01Z",
+          "thumbnail": "https://i.ytimg.com/vi/fWHrYPGEKBY/mqdefault.jpg",
+          "views": 239,
+          "likes": 7,
+          "comments": 0,
+          "subscribers_gained": 1
+        },
+        {
+          "youtube_id": "Ucj99Y40IKI",
+          "youtube_url": "https://youtu.be/Ucj99Y40IKI",
+          "title": "Dreams Begin On The Pitch Against All Odds #Football #Soccer #FootballStory #FootballLife #Goal",
+          "uploaded_at": "2026-07-27T07:15:51Z",
+          "thumbnail": "https://i.ytimg.com/vi/Ucj99Y40IKI/mqdefault.jpg",
+          "views": 7,
+          "likes": 1,
+          "comments": 0,
+          "subscribers_gained": 0
+        },
+        {
+          "youtube_id": "GCiwiRQnucU",
+          "youtube_url": "https://youtu.be/GCiwiRQnucU",
+          "title": "Champions Never Stop Believing With Pure Determination #Football #Soccer #FootballStory",
+          "uploaded_at": "2026-07-24T16:32:04Z",
+          "thumbnail": "https://i.ytimg.com/vi/GCiwiRQnucU/mqdefault.jpg",
+          "views": 836,
+          "likes": 4,
+          "comments": 1,
+          "subscribers_gained": 2
+        },
+        {
+          "youtube_id": "VB0kEuc7HXs",
+          "youtube_url": "https://youtu.be/VB0kEuc7HXs",
+          "title": "Champions Never Stop Believing When Nobody Believed #Football #Soccer #FootballStory #FootballLife #",
+          "uploaded_at": "2026-07-23T14:28:27Z",
+          "thumbnail": "https://i.ytimg.com/vi/VB0kEuc7HXs/mqdefault.jpg",
+          "views": 249,
+          "likes": 1,
+          "comments": 0,
+          "subscribers_gained": 1
+        },
+        {
+          "youtube_id": "bWdbFSwyPRY",
+          "youtube_url": "https://youtu.be/bWdbFSwyPRY",
+          "title": "Champions Never Stop Believing Until The End #Football #Soccer #FootballStory #FootballLife #Goal",
+          "uploaded_at": "2026-07-21T06:52:08Z",
+          "thumbnail": "https://i.ytimg.com/vi/bWdbFSwyPRY/mqdefault.jpg",
+          "views": 5,
+          "likes": 0,
+          "comments": 0,
+          "subscribers_gained": 0
+        },
+        {
+          "youtube_id": "bWdHdraDsYg",
+          "youtube_url": "https://youtu.be/bWdHdraDsYg",
+          "title": "Champions Never Stop Believing Today #Football #Soccer #FootballStory #FootballLife #Goal #Dream",
+          "uploaded_at": "2026-07-20T16:07:55Z",
+          "thumbnail": "https://i.ytimg.com/vi/bWdHdraDsYg/mqdefault.jpg",
+          "views": 147,
+          "likes": 1,
+          "comments": 0,
+          "subscribers_gained": 0
+        },
+        {
+          "youtube_id": "3Vf7njUzbyc",
+          "youtube_url": "https://youtu.be/3Vf7njUzbyc",
+          "title": "Champions Never Stop Believing Forever #Football #Soccer #FootballStory #FootballLife #Goal #Dream",
+          "uploaded_at": "2026-07-19T14:34:24Z",
+          "thumbnail": "https://i.ytimg.com/vi/3Vf7njUzbyc/mqdefault.jpg",
+          "views": 494,
+          "likes": 4,
+          "comments": 0,
+          "subscribers_gained": 1
+        },
+        {
+          "youtube_id": "2FpCz6dPCo8",
+          "youtube_url": "https://youtu.be/2FpCz6dPCo8",
+          "title": "Champions Never Stop Believing For The Team #Football #Soccer #FootballStory #FootballLife #Goal",
+          "uploaded_at": "2026-07-19T07:58:06Z",
+          "thumbnail": "https://i.ytimg.com/vi/2FpCz6dPCo8/mqdefault.jpg",
+          "views": 1383,
+          "likes": 18,
+          "comments": 0,
+          "subscribers_gained": 3
+        },
+        {
+          "youtube_id": "ww1ad-zn16Q",
+          "youtube_url": "https://youtu.be/ww1ad-zn16Q",
+          "title": "Champions Never Stop Believing Before The Final Whistle #Football #Soccer #footballshorts",
+          "uploaded_at": "2026-07-18T17:36:07Z",
+          "thumbnail": "https://i.ytimg.com/vi/ww1ad-zn16Q/mqdefault.jpg",
+          "views": 404,
+          "likes": 10,
+          "comments": 0,
+          "subscribers_gained": 1
+        },
+        {
+          "youtube_id": "vJMHUjFncC8",
+          "youtube_url": "https://youtu.be/vJMHUjFncC8",
+          "title": "Champions Never Stop Believing Against All Odds #Football #Soccer #FootballStory #FootballLife #Goal",
+          "uploaded_at": "2026-07-18T11:48:35Z",
+          "thumbnail": "https://i.ytimg.com/vi/vJMHUjFncC8/mqdefault.jpg",
+          "views": 501,
+          "likes": 13,
+          "comments": 1,
+          "subscribers_gained": 1
+        },
+        {
+          "youtube_id": "ci2J2M7TuOI",
+          "youtube_url": "https://youtu.be/ci2J2M7TuOI",
+          "title": "A Story Every Football Fan Should See With Pure Determination #Football #Soccer #FootballStory #Foot",
+          "uploaded_at": "2026-07-17T12:16:36Z",
+          "thumbnail": "https://i.ytimg.com/vi/ci2J2M7TuOI/mqdefault.jpg",
+          "views": 1027,
+          "likes": 18,
+          "comments": 0,
+          "subscribers_gained": 3
+        },
+        {
+          "youtube_id": "_bsqsEkdvTQ",
+          "youtube_url": "https://youtu.be/_bsqsEkdvTQ",
+          "title": "A Story Every Football Fan Should See When Nobody Believed #Football #Soccer #FootballStory #Footbal",
+          "uploaded_at": "2026-07-15T14:01:36Z",
+          "thumbnail": "https://i.ytimg.com/vi/_bsqsEkdvTQ/mqdefault.jpg",
+          "views": 55,
+          "likes": 2,
+          "comments": 0,
+          "subscribers_gained": 0
+        },
+        {
+          "youtube_id": "8ng0lfQGcdo",
+          "youtube_url": "https://youtu.be/8ng0lfQGcdo",
+          "title": "A Story Every Football Fan Should See Until The End #Football #Soccer #FootballStory #FootballLife",
+          "uploaded_at": "2026-07-15T06:19:19Z",
+          "thumbnail": "https://i.ytimg.com/vi/8ng0lfQGcdo/mqdefault.jpg",
+          "views": 302,
+          "likes": 3,
+          "comments": 0,
+          "subscribers_gained": 1
+        },
+        {
+          "youtube_id": "it7A0Pq89iw",
+          "youtube_url": "https://youtu.be/it7A0Pq89iw",
+          "title": "A Story Every Football Fan Should See Today #Football #Soccer #FootballStory #FootballLife #Goal #Dr",
+          "uploaded_at": "2026-07-14T20:30:36Z",
+          "thumbnail": "https://i.ytimg.com/vi/it7A0Pq89iw/mqdefault.jpg",
+          "views": 239,
+          "likes": 3,
+          "comments": 0,
+          "subscribers_gained": 1
+        },
+        {
+          "youtube_id": "clLIdfOZw2k",
+          "youtube_url": "https://youtu.be/clLIdfOZw2k",
+          "title": "A Story Every Football Fan Should See Forever #Football #Soccer #FootballStory #FootballLife #Goal #",
+          "uploaded_at": "2026-07-14T15:57:28Z",
+          "thumbnail": "https://i.ytimg.com/vi/clLIdfOZw2k/mqdefault.jpg",
+          "views": 461,
+          "likes": 9,
+          "comments": 0,
+          "subscribers_gained": 1
+        },
+        {
+          "youtube_id": "jzBVQ5PzBu8",
+          "youtube_url": "https://youtu.be/jzBVQ5PzBu8",
+          "title": "A Story Every Football Fan Should See For The Team #Football #Soccer #FootballStory #FootballLife #G",
+          "uploaded_at": "2026-07-14T06:09:51Z",
+          "thumbnail": "https://i.ytimg.com/vi/jzBVQ5PzBu8/mqdefault.jpg",
+          "views": 1398,
+          "likes": 24,
+          "comments": 0,
+          "subscribers_gained": 3
+        },
+        {
+          "youtube_id": "GLBlSV8C_fE",
+          "youtube_url": "https://youtu.be/GLBlSV8C_fE",
+          "title": "A Story Every Football Fan Should See Before The Final Whistle #Football #Soccer #FootballStory #Foo",
+          "uploaded_at": "2026-07-13T18:41:56Z",
+          "thumbnail": "https://i.ytimg.com/vi/GLBlSV8C_fE/mqdefault.jpg",
+          "views": 30,
+          "likes": 0,
+          "comments": 0,
+          "subscribers_gained": 0
+        },
+        {
+          "youtube_id": "d69hDv1PgqU",
+          "youtube_url": "https://youtu.be/d69hDv1PgqU",
+          "title": "A Story Every Football Fan Should See Against All Odds #Football #Soccer #FootballStory #FootballLif",
+          "uploaded_at": "2026-07-13T15:09:57Z",
+          "thumbnail": "https://i.ytimg.com/vi/d69hDv1PgqU/mqdefault.jpg",
+          "views": 666,
+          "likes": 8,
+          "comments": 0,
+          "subscribers_gained": 2
+        }
+      ],
+      "recent_runs": [],
       "is_active": true
     }
   ]
