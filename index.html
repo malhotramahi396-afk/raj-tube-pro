@@ -9,7 +9,7 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <link rel="icon" type="image/png" href="https://www.gstatic.com/youtube/img/creator/favicon/favicon_144.png">
-  <link rel="stylesheet" href="./styles.css?v=7.4">
+  <link rel="stylesheet" href="./styles.css?v=8.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
@@ -159,6 +159,14 @@
           <span class="nav-badge badge-green" id="sidebar-queue-badge">80</span>
         </button>
 
+        <button class="nav-item" data-view="health">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+            <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/>
+          </svg>
+          <span class="nav-text">Channel Health</span>
+          <span class="nav-badge badge-green" id="sidebar-health-badge">100%</span>
+        </button>
+
         <div class="sidebar-divider"></div>
 
         <button class="nav-item" data-view="settings">
@@ -267,6 +275,81 @@
 
           <!-- RIGHT COLUMN -->
           <div class="grid-col">
+            <!-- WIDGET: Channel violations & Health -->
+            <div class="yt-card widget-health">
+              <div class="yt-card-header">
+                <div class="header-title-with-badge">
+                  <h2>Channel violations & Health</h2>
+                  <span class="health-status-badge badge-clean" id="dash-health-shield">🛡️ Clean</span>
+                </div>
+              </div>
+
+              <div class="yt-card-body">
+                <!-- Strikes Row -->
+                <div class="health-item-row">
+                  <div class="health-item-icon text-green">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                  </div>
+                  <div class="health-item-info">
+                    <div class="health-item-title">Community Guidelines Strikes</div>
+                    <div class="health-item-desc" id="dash-health-strikes">0 of 3 active strikes • Good standing</div>
+                  </div>
+                  <span class="health-pill badge-passed" id="dash-health-strikes-pill">0 STRIKES</span>
+                </div>
+
+                <!-- Copyright Row -->
+                <div class="health-item-row">
+                  <div class="health-item-icon text-green">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm0 18a8 8 0 110-16 8 8 0 010 16zm-1-13h2v6h-2zm0 8h2v2h-2z"/></svg>
+                  </div>
+                  <div class="health-item-info">
+                    <div class="health-item-title">Copyright Standing</div>
+                    <div class="health-item-desc" id="dash-health-copyright">0 copyright strikes • Clean original content</div>
+                  </div>
+                  <span class="health-pill badge-passed">CLEAN</span>
+                </div>
+
+                <!-- View Performance & Algorithm Velocity -->
+                <div class="health-item-row">
+                  <div class="health-item-icon text-blue">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z"/></svg>
+                  </div>
+                  <div class="health-item-info">
+                    <div class="health-item-title">View Velocity & Algorithm Reach</div>
+                    <div class="health-item-desc" id="dash-health-views">High Velocity • Trending in Shorts Feed</div>
+                  </div>
+                  <span class="health-pill badge-velocity" id="dash-health-views-badge">OPTIMAL</span>
+                </div>
+
+                <!-- Policy Compliance Row -->
+                <div class="health-item-row">
+                  <div class="health-item-icon text-green">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+                  </div>
+                  <div class="health-item-info">
+                    <div class="health-item-title">AI Disclosure & COPPA Guard</div>
+                    <div class="health-item-desc" id="dash-health-compliance">100% Compliant • Synthetic Media Flag On</div>
+                  </div>
+                  <span class="health-pill badge-passed">100% OK</span>
+                </div>
+
+                <!-- Score Meter -->
+                <div class="health-score-card">
+                  <div class="health-score-title-row">
+                    <span>Overall Channel Health</span>
+                    <span class="health-score-number" id="dash-health-score-num">98 / 100</span>
+                  </div>
+                  <div class="mini-progress-bar">
+                    <div class="progress-bar-fill fill-emerald" id="dash-health-score-bar" style="width: 98%;"></div>
+                  </div>
+                  <div class="health-score-footer" id="dash-health-verdict">Flawless (Optimal Standing)</div>
+                </div>
+
+                <div class="yt-card-footer">
+                  <button class="yt-btn-flat" id="btn-goto-health">VIEW ALL CHANNELS HEALTH</button>
+                </div>
+              </div>
+            </div>
 
             <!-- WIDGET 3: Channel analytics -->
             <div class="yt-card widget-analytics">
@@ -611,6 +694,45 @@
         </div>
       </section>
 
+      <!-- ==========================================================
+           TAB 6: CHANNEL HEALTH & POLICY RADAR
+           ========================================================== -->
+      <section class="tab-view" id="view-health">
+        <div class="page-title-row">
+          <h1 class="page-title">Channel health & Policy radar</h1>
+          <span class="health-fleet-badge badge-clean" id="health-fleet-status-pill">🛡️ Fleet: 100% Clean</span>
+        </div>
+
+        <!-- FLEET INTEGRITY HERO BANNER -->
+        <div class="yt-card health-hero-card">
+          <div class="health-hero-body">
+            <div class="health-hero-score-box">
+              <div class="hero-score-number" id="health-hero-score">99</div>
+              <div class="hero-score-denom">/ 100</div>
+              <div class="hero-score-sub text-green">Optimal Fleet Standing</div>
+            </div>
+            <div class="health-hero-details">
+              <h2 class="hero-title">Zero Active Violations Across All 5 Channels</h2>
+              <p class="hero-desc">
+                Automated continuous diagnostics confirms all 5 YouTube channels operate with 0 Community Guidelines strikes, 0 copyright claims, 100% AI synthetic media disclosures, and compliant COPPA tags.
+              </p>
+              <div class="hero-tags-row">
+                <span class="hero-tag">🛡️ 0 / 15 Total Strikes</span>
+                <span class="hero-tag">⚡ 81.2% Shorts Feed Push</span>
+                <span class="hero-tag">✅ Rule 22 & 23 AI Guard Active</span>
+                <span class="hero-tag">🗑️ Auto-Delete Active</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5 CHANNELS HEALTH COMPARISON GRID -->
+        <h2 class="section-subheading mt-24 mb-12">Channel Diagnostic Breakdown</h2>
+        <div class="health-radar-grid" id="health-channels-radar-grid">
+          <!-- Populated dynamically by JavaScript -->
+        </div>
+      </section>
+
     </main>
   </div>
 
@@ -634,6 +756,12 @@
       </svg>
       <span>Analytics</span>
     </button>
+    <button class="bottom-nav-item" data-view="health">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+        <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/>
+      </svg>
+      <span>Health</span>
+    </button>
     <button class="bottom-nav-item" data-view="queue">
       <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
         <path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM14 13v4h-4v-4H7l5-5 5 5h-3z"/>
@@ -651,6 +779,6 @@
   <!-- Toast Notification -->
   <div id="toast" class="toast">Link copied to clipboard!</div>
 
-  <script src="./app.js?v=7.4"></script>
+  <script src="./app.js?v=8.0"></script>
 </body>
 </html>

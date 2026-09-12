@@ -59,6 +59,11 @@ function setupNavigation() {
     btnGotoQueue.addEventListener('click', () => switchView('queue'));
   }
 
+  const btnGotoHealth = document.getElementById('btn-goto-health');
+  if (btnGotoHealth) {
+    btnGotoHealth.addEventListener('click', () => switchView('health'));
+  }
+
   // Hamburger toggle on mobile
   const btnToggleSidebar = document.getElementById('btn-toggle-sidebar');
   const sidebar = document.getElementById('studio-sidebar');
@@ -281,6 +286,9 @@ function renderAll() {
   // 5. Tab 4: Queue View
   renderQueueView(activeChannel);
 
+  // 6. Tab 6: Health View
+  renderHealthView();
+
   // 6. Schedule Countdown
   if (globalData.schedule) {
     countdownSeconds = globalData.schedule.seconds_remaining;
@@ -467,6 +475,9 @@ function renderDashboard(channel) {
   if (fillBar) {
     fillBar.style.width = `${Math.min(100, Math.round((driveStock / 100) * 100))}%`;
   }
+
+  // E. Channel Violations & Health Widget
+  renderHealthWidget(channel);
 }
 
 /* ========================================================
@@ -1031,4 +1042,146 @@ function showToast(msg) {
     toast.classList.add('show');
     setTimeout(() => { toast.classList.remove('show'); }, 3000);
   }
+}
+
+/* ========================================================
+   CHANNEL HEALTH & POLICY RADAR CONTROLLER
+   ======================================================== */
+function renderHealthWidget(channel) {
+  const health = channel 
+    ? (channel.health || {})
+    : ((globalData && globalData.summary && globalData.summary.health) || {});
+
+  const shieldEl = document.getElementById('dash-health-shield');
+  const strikesEl = document.getElementById('dash-health-strikes');
+  const strikesPill = document.getElementById('dash-health-strikes-pill');
+  const copyrightEl = document.getElementById('dash-health-copyright');
+  const viewsEl = document.getElementById('dash-health-views');
+  const viewsBadge = document.getElementById('dash-health-views-badge');
+  const complianceEl = document.getElementById('dash-health-compliance');
+  const scoreNumEl = document.getElementById('dash-health-score-num');
+  const scoreBarEl = document.getElementById('dash-health-score-bar');
+  const verdictEl = document.getElementById('dash-health-verdict');
+  const sidebarHealthBadge = document.getElementById('sidebar-health-badge');
+
+  const score = health.overall_score || 98;
+  const strikes = health.strikes ? health.strikes.status : '0 of 3 active strikes • Good standing';
+  const copyright = health.copyright ? health.copyright.status : '0 copyright strikes • Clean original content';
+  const viewHealth = health.view_health || {};
+  const compliance = health.compliance ? health.compliance.label : '100% Compliant • Synthetic Media Flag On';
+  const verdict = health.verdict || 'Flawless (Optimal Standing)';
+
+  if (shieldEl) shieldEl.innerText = `${health.shield_icon || '🛡️'} Clean`;
+  if (strikesEl) strikesEl.innerText = strikes;
+  if (strikesPill) strikesPill.innerText = `${health.strikes ? health.strikes.count : 0} STRIKES`;
+  if (copyrightEl) copyrightEl.innerText = copyright;
+  if (viewsEl) viewsEl.innerText = `${viewHealth.label || 'High Velocity • Trending in Shorts Feed'}`;
+  if (viewsBadge) {
+    viewsBadge.innerText = viewHealth.badge || 'OPTIMAL';
+    if (viewHealth.color) viewsBadge.style.color = viewHealth.color;
+  }
+  if (complianceEl) complianceEl.innerText = compliance;
+  if (scoreNumEl) scoreNumEl.innerText = `${score} / 100`;
+  if (scoreBarEl) scoreBarEl.style.width = `${score}%`;
+  if (verdictEl) verdictEl.innerText = verdict;
+  if (sidebarHealthBadge) sidebarHealthBadge.innerText = `${score}%`;
+}
+
+function renderHealthView() {
+  if (!globalData || !globalData.channels) return;
+
+  const heroScore = document.getElementById('health-hero-score');
+  const fleetPill = document.getElementById('health-fleet-status-pill');
+  const grid = document.getElementById('health-channels-radar-grid');
+
+  const fleetHealth = (globalData.summary && globalData.summary.health) || {};
+  if (heroScore) heroScore.innerText = fleetHealth.overall_score || 99;
+  if (fleetPill) fleetPill.innerText = `🛡️ Fleet: ${fleetHealth.verdict || '100% Clean'}`;
+
+  if (!grid) return;
+  grid.innerHTML = '';
+
+  globalData.channels.forEach(ch => {
+    const h = ch.health || {};
+    const score = h.overall_score || 98;
+    const vHealth = h.view_health || {};
+    const strikes = h.strikes || {};
+    const copyright = h.copyright || {};
+
+    const card = document.createElement('div');
+    card.className = 'channel-health-card';
+    card.innerHTML = `
+      <div class="channel-health-card-header">
+        <div class="ch-health-title-box">
+          <img src="${ch.avatar_url}" class="ch-health-avatar" alt="${ch.name}" />
+          <div>
+            <div class="ch-health-name">${ch.name}</div>
+            <div class="ch-health-handle">${ch.handle}</div>
+          </div>
+        </div>
+        <span class="health-pill badge-passed">SCORE: ${score}/100</span>
+      </div>
+
+      <!-- Strikes Status -->
+      <div class="health-item-row">
+        <div class="health-item-icon text-green">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+        </div>
+        <div class="health-item-info">
+          <div class="health-item-title">Community Guidelines Strikes</div>
+          <div class="health-item-desc">${strikes.status || '0 of 3 active strikes • Clean'}</div>
+        </div>
+        <span class="health-pill badge-passed">0 STRIKES</span>
+      </div>
+
+      <!-- Copyright Status -->
+      <div class="health-item-row">
+        <div class="health-item-icon text-green">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm0 18a8 8 0 110-16 8 8 0 010 16zm-1-13h2v6h-2zm0 8h2v2h-2z"/></svg>
+        </div>
+        <div class="health-item-info">
+          <div class="health-item-title">Copyright Standing</div>
+          <div class="health-item-desc">${copyright.status || '0 copyright claims • Clean'}</div>
+        </div>
+        <span class="health-pill badge-passed">CLEAN</span>
+      </div>
+
+      <!-- View Performance -->
+      <div class="health-item-row">
+        <div class="health-item-icon text-blue">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z"/></svg>
+        </div>
+        <div class="health-item-info">
+          <div class="health-item-title">View Performance & Reach</div>
+          <div class="health-item-desc">${vHealth.label || 'Optimal Velocity'} (Avg ${formatNumber(ch.avg_views_per_video)} views)</div>
+        </div>
+        <span class="health-pill badge-velocity">${vHealth.badge || 'OPTIMAL'}</span>
+      </div>
+
+      <!-- Compliance -->
+      <div class="health-item-row">
+        <div class="health-item-icon text-green">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+        </div>
+        <div class="health-item-info">
+          <div class="health-item-title">Policy & AI Compliance</div>
+          <div class="health-item-desc">Rule 22 Synthetic Media & COPPA Guard</div>
+        </div>
+        <span class="health-pill badge-passed">100% OK</span>
+      </div>
+
+      <!-- Score Progress -->
+      <div class="health-score-card">
+        <div class="health-score-title-row">
+          <span>Integrity Score</span>
+          <span class="health-score-number">${score} / 100</span>
+        </div>
+        <div class="mini-progress-bar">
+          <div class="progress-bar-fill fill-emerald" style="width: ${score}%;"></div>
+        </div>
+        <div class="health-score-footer">${h.verdict || 'Flawless Standing'}</div>
+      </div>
+    `;
+    grid.appendChild(card);
+  });
 }

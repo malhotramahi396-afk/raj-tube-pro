@@ -1,28 +1,28 @@
 {
   "app_name": "Raj Tube Pro",
   "version": "6.0.0",
-  "timestamp": "2026-09-12T18:28:50.283114+00:00",
+  "timestamp": "2026-09-12T18:41:39.060860+00:00",
   "schedule": {
     "next_slot_iso": "2026-09-12T22:00:00+00:00",
-    "seconds_remaining": 12677,
-    "formatted_countdown": "03h 31m 17s",
+    "seconds_remaining": 11908,
+    "formatted_countdown": "03h 18m 28s",
     "slot_label": "06:00 PM USA (3:30 AM IST)",
-    "now_ist": "12 Sep, 11:58 PM IST"
+    "now_ist": "13 Sep, 12:11 AM IST"
   },
   "summary": {
     "total_channels": 5,
-    "total_uploaded": 46,
+    "total_uploaded": 47,
     "total_in_queue": 547,
     "total_subscribers": 100,
-    "total_views": 111493,
-    "total_likes": 1069,
-    "network_engagement": 1.0,
+    "total_views": 113083,
+    "total_likes": 1072,
+    "network_engagement": 0.9,
     "total_runway_days": 54.7,
     "system_health": "All Systems Operational",
     "issues_count": 0,
     "top_trending_video": {
       "title": "He Was Not Backing Down From Anyone #SlapFight #PowerSlap #SlapFighting #Viral #Sports.",
-      "views": 29832,
+      "views": 30982,
       "likes": 351,
       "youtube_url": "https://youtu.be/t5oF0IsXkN0",
       "thumbnail": "https://i.ytimg.com/vi/t5oF0IsXkN0/mqdefault.jpg",
@@ -30,7 +30,7 @@
       "uploaded_at": "2026-09-11T16:04:35Z"
     },
     "analytics": {
-      "watch_time_hours": 468.3,
+      "watch_time_hours": 474.9,
       "avg_view_duration": "0:24",
       "top_countries": [
         {
@@ -153,6 +153,46 @@
         }
       ],
       "peak_hours": "6:00 PM \u2013 10:30 PM IST (Peak Global Viewing Window)"
+    },
+    "health": {
+      "overall_score": 100,
+      "verdict": "Flawless (Optimal Standing)",
+      "verdict_color": "#10B981",
+      "shield_icon": "\ud83d\udee1\ufe0f",
+      "strikes": {
+        "count": 0,
+        "max": 3,
+        "status": "0 of 3 active strikes \u2022 Good standing",
+        "badge": "CLEAN",
+        "is_clean": true
+      },
+      "copyright": {
+        "count": 0,
+        "status": "0 copyright claims \u2022 Clean original audio & video",
+        "badge": "CLEAN",
+        "is_clean": true
+      },
+      "view_health": {
+        "label": "High Velocity (Trending in Shorts Feed)",
+        "badge": "OPTIMAL",
+        "color": "#10B981",
+        "avg_views": 2406.0,
+        "shorts_feed_share": "81.2%",
+        "velocity_verdict": "Algorithm Reach: High"
+      },
+      "compliance": {
+        "label": "100% Policy Compliant (AI Synthetic Media & COPPA Guard Active)",
+        "badge": "100% OK",
+        "synthetic_media": "Self-Declared True (Compliant)",
+        "coppa_kids": "Declared False (General Audience)",
+        "is_compliant": true
+      },
+      "upload_engine": {
+        "latest_run": "success",
+        "queue_health": "Plentiful Runway",
+        "runway_days": 54.7,
+        "total_uploaded": 47
+      }
     }
   },
   "issues": [],
@@ -168,13 +208,13 @@
       "color": "#10B981",
       "avatar_url": "https://yt3.ggpht.com/R5wyufkApz5fijH1a4mek8n6CM9y64QklZgfgjuGI-SOwbTIBjEFmmKot6aBnYkVRwOpq965=s240-c-k-c0x00ffffff-no-rj",
       "subscribers": 25,
-      "total_views": 11535,
+      "total_views": 11760,
       "channel_total_videos": 4,
-      "avg_views_per_video": 2883.8,
+      "avg_views_per_video": 2940.0,
       "engagement_rate": 1.6,
-      "total_likes": 180,
+      "total_likes": 183,
       "analytics": {
-        "watch_time_hours": 48.4,
+        "watch_time_hours": 49.4,
         "avg_view_duration": "0:24",
         "top_countries": [
           {
@@ -298,6 +338,46 @@
         ],
         "peak_hours": "7:00 PM \u2013 11:00 PM IST (09:30 AM \u2013 01:30 PM USA / Best Wildlife Timing)"
       },
+      "health": {
+        "overall_score": 100,
+        "verdict": "Flawless (Optimal Standing)",
+        "verdict_color": "#10B981",
+        "shield_icon": "\ud83d\udee1\ufe0f",
+        "strikes": {
+          "count": 0,
+          "max": 3,
+          "status": "0 of 3 active strikes \u2022 Good standing",
+          "badge": "CLEAN",
+          "is_clean": true
+        },
+        "copyright": {
+          "count": 0,
+          "status": "0 copyright claims \u2022 Clean original audio & video",
+          "badge": "CLEAN",
+          "is_clean": true
+        },
+        "view_health": {
+          "label": "High Velocity (Trending in Shorts Feed)",
+          "badge": "OPTIMAL",
+          "color": "#10B981",
+          "avg_views": 2940.0,
+          "shorts_feed_share": "81.2%",
+          "velocity_verdict": "Algorithm Reach: High"
+        },
+        "compliance": {
+          "label": "100% Policy Compliant (AI Synthetic Media & COPPA Guard Active)",
+          "badge": "100% OK",
+          "synthetic_media": "Self-Declared True (Compliant)",
+          "coppa_kids": "Declared False (General Audience)",
+          "is_compliant": true
+        },
+        "upload_engine": {
+          "latest_run": "success",
+          "queue_health": "Plentiful Runway",
+          "runway_days": 39.0,
+          "total_uploaded": 4
+        }
+      },
       "drive_folder_id": "1f8Nj2kEchzW4gdlMEQ5S_eAazvdrQ3ai",
       "drive_folder_url": "https://drive.google.com/drive/folders/1f8Nj2kEchzW4gdlMEQ5S_eAazvdrQ3ai",
       "uploaded_count": 4,
@@ -313,7 +393,7 @@
         "title": "Close Enough To Hear His Breath #wildlife #shorts #cameraman #viral",
         "uploaded_at": "2026-09-12T14:03:34Z",
         "thumbnail": "https://i.ytimg.com/vi/RMgm8o875X0/mqdefault.jpg",
-        "views": 1049,
+        "views": 1067,
         "likes": 17,
         "comments": 0
       },
@@ -324,7 +404,7 @@
           "title": "Close Enough To Hear His Breath #wildlife #shorts #cameraman #viral",
           "uploaded_at": "2026-09-12T14:03:34Z",
           "thumbnail": "https://i.ytimg.com/vi/RMgm8o875X0/mqdefault.jpg",
-          "views": 1049,
+          "views": 1067,
           "likes": 17,
           "comments": 0
         },
@@ -344,8 +424,8 @@
           "title": "Breathtaking 4K Wildlife Moment #wildlifephotography #shorts #naturelovers #viral",
           "uploaded_at": "2026-09-11T14:42:29Z",
           "thumbnail": "https://i.ytimg.com/vi/3pDpmQcqJT8/mqdefault.jpg",
-          "views": 7353,
-          "likes": 140,
+          "views": 7560,
+          "likes": 143,
           "comments": 0
         },
         {
@@ -404,13 +484,13 @@
       "color": "#F59E0B",
       "avatar_url": "https://yt3.ggpht.com/TTLhq8ijvpChRrWaVb1i96FzeFG02Gd31oOfWo4EdOtBtfqTD6h0TrRmEOTd2fE8V0kPexV6EA=s240-c-k-c0x00ffffff-no-rj",
       "subscribers": 65,
-      "total_views": 75245,
+      "total_views": 76610,
       "channel_total_videos": 11,
-      "avg_views_per_video": 6840.5,
+      "avg_views_per_video": 6964.5,
       "engagement_rate": 0.8,
       "total_likes": 605,
       "analytics": {
-        "watch_time_hours": 316.0,
+        "watch_time_hours": 321.8,
         "avg_view_duration": "0:24",
         "top_countries": [
           {
@@ -534,6 +614,46 @@
         ],
         "peak_hours": "6:30 PM \u2013 10:30 PM IST (Prime USA Afternoon Engagement)"
       },
+      "health": {
+        "overall_score": 100,
+        "verdict": "Flawless (Optimal Standing)",
+        "verdict_color": "#10B981",
+        "shield_icon": "\ud83d\udee1\ufe0f",
+        "strikes": {
+          "count": 0,
+          "max": 3,
+          "status": "0 of 3 active strikes \u2022 Good standing",
+          "badge": "CLEAN",
+          "is_clean": true
+        },
+        "copyright": {
+          "count": 0,
+          "status": "0 copyright claims \u2022 Clean original audio & video",
+          "badge": "CLEAN",
+          "is_clean": true
+        },
+        "view_health": {
+          "label": "High Velocity (Trending in Shorts Feed)",
+          "badge": "OPTIMAL",
+          "color": "#10B981",
+          "avg_views": 6964.5,
+          "shorts_feed_share": "81.2%",
+          "velocity_verdict": "Algorithm Reach: High"
+        },
+        "compliance": {
+          "label": "100% Policy Compliant (AI Synthetic Media & COPPA Guard Active)",
+          "badge": "100% OK",
+          "synthetic_media": "Self-Declared True (Compliant)",
+          "coppa_kids": "Declared False (General Audience)",
+          "is_compliant": true
+        },
+        "upload_engine": {
+          "latest_run": "success",
+          "queue_health": "Plentiful Runway",
+          "runway_days": 36.0,
+          "total_uploaded": 11
+        }
+      },
       "drive_folder_id": "1So3rmfL0rvojsXq7m6WoA9RYS029HXW6",
       "drive_folder_url": "https://drive.google.com/drive/folders/1So3rmfL0rvojsXq7m6WoA9RYS029HXW6",
       "uploaded_count": 11,
@@ -549,7 +669,7 @@
         "title": "Nobody Expected That Faceoff Reaction #SlapFighting #PowerSlap #SlapBattle #CombatSports #Viral.",
         "uploaded_at": "2026-09-12T14:06:29Z",
         "thumbnail": "https://i.ytimg.com/vi/7OVj2yza4ks/mqdefault.jpg",
-        "views": 738,
+        "views": 759,
         "likes": 17,
         "comments": 1
       },
@@ -560,7 +680,7 @@
           "title": "Nobody Expected That Faceoff Reaction #SlapFighting #PowerSlap #SlapBattle #CombatSports #Viral.",
           "uploaded_at": "2026-09-12T14:06:29Z",
           "thumbnail": "https://i.ytimg.com/vi/7OVj2yza4ks/mqdefault.jpg",
-          "views": 738,
+          "views": 759,
           "likes": 17,
           "comments": 1
         },
@@ -570,7 +690,7 @@
           "title": "His Confidence Had The Whole Crowd Talking #PowerSlap #SlapFighting #SlapFight #Viral #Sports.",
           "uploaded_at": "2026-09-11T22:07:28Z",
           "thumbnail": "https://i.ytimg.com/vi/g-2DEoij8dY/mqdefault.jpg",
-          "views": 2866,
+          "views": 3051,
           "likes": 57,
           "comments": 0
         },
@@ -580,7 +700,7 @@
           "title": "He Was Not Backing Down From Anyone #SlapFight #PowerSlap #SlapFighting #Viral #Sports.",
           "uploaded_at": "2026-09-11T16:04:35Z",
           "thumbnail": "https://i.ytimg.com/vi/t5oF0IsXkN0/mqdefault.jpg",
-          "views": 29832,
+          "views": 30982,
           "likes": 351,
           "comments": 1
         },
@@ -610,7 +730,7 @@
           "title": "He Looked Ready For The Biggest Hit Of His Life #PowerSlap #SlapFight #FightNight #Highlights #FYP",
           "uploaded_at": "2026-09-06T07:20:35Z",
           "thumbnail": "https://i.ytimg.com/vi/EU0lTDiLM2Y/mqdefault.jpg",
-          "views": 7298,
+          "views": 7307,
           "likes": 11,
           "comments": 0
         },
@@ -821,6 +941,46 @@
           }
         ],
         "peak_hours": "5:30 PM \u2013 10:00 PM IST (High Viral Shorts Activity)"
+      },
+      "health": {
+        "overall_score": 99,
+        "verdict": "Flawless (Optimal Standing)",
+        "verdict_color": "#10B981",
+        "shield_icon": "\ud83d\udee1\ufe0f",
+        "strikes": {
+          "count": 0,
+          "max": 3,
+          "status": "0 of 3 active strikes \u2022 Good standing",
+          "badge": "CLEAN",
+          "is_clean": true
+        },
+        "copyright": {
+          "count": 0,
+          "status": "0 copyright claims \u2022 Clean original audio & video",
+          "badge": "CLEAN",
+          "is_clean": true
+        },
+        "view_health": {
+          "label": "Steady Growth Pace (Active Algorithm Reach)",
+          "badge": "HEALTHY",
+          "color": "#3EA6FF",
+          "avg_views": 972.5,
+          "shorts_feed_share": "81.2%",
+          "velocity_verdict": "Algorithm Reach: High"
+        },
+        "compliance": {
+          "label": "100% Policy Compliant (AI Synthetic Media & COPPA Guard Active)",
+          "badge": "100% OK",
+          "synthetic_media": "Self-Declared True (Compliant)",
+          "coppa_kids": "Declared False (General Audience)",
+          "is_compliant": true
+        },
+        "upload_engine": {
+          "latest_run": "success",
+          "queue_health": "Plentiful Runway",
+          "runway_days": 66.5,
+          "total_uploaded": 12
+        }
       },
       "drive_folder_id": "1oZBC0TiLWerpRuyZnhbDhNbAMAcEtdAc",
       "drive_folder_url": "https://drive.google.com/drive/folders/1oZBC0TiLWerpRuyZnhbDhNbAMAcEtdAc",
@@ -1120,6 +1280,46 @@
         ],
         "peak_hours": "6:00 PM \u2013 10:30 PM IST (Prime US/UK Fast Action Window)"
       },
+      "health": {
+        "overall_score": 98,
+        "verdict": "Flawless (Optimal Standing)",
+        "verdict_color": "#10B981",
+        "shield_icon": "\ud83d\udee1\ufe0f",
+        "strikes": {
+          "count": 0,
+          "max": 3,
+          "status": "0 of 3 active strikes \u2022 Good standing",
+          "badge": "CLEAN",
+          "is_clean": true
+        },
+        "copyright": {
+          "count": 0,
+          "status": "0 copyright claims \u2022 Clean original audio & video",
+          "badge": "CLEAN",
+          "is_clean": true
+        },
+        "view_health": {
+          "label": "Warm-Up Phase (Building Initial Signals)",
+          "badge": "WARMING UP",
+          "color": "#F59E0B",
+          "avg_views": 30.3,
+          "shorts_feed_share": "81.2%",
+          "velocity_verdict": "Algorithm Reach: Healthy"
+        },
+        "compliance": {
+          "label": "100% Policy Compliant (AI Synthetic Media & COPPA Guard Active)",
+          "badge": "100% OK",
+          "synthetic_media": "Self-Declared True (Compliant)",
+          "coppa_kids": "Declared False (General Audience)",
+          "is_compliant": true
+        },
+        "upload_engine": {
+          "latest_run": "success",
+          "queue_health": "Plentiful Runway",
+          "runway_days": 63.0,
+          "total_uploaded": 10
+        }
+      },
       "drive_folder_id": "1C_R0kNrMxrW5FeX241UluglGU-qUEfkS",
       "drive_folder_url": "https://drive.google.com/drive/folders/1C_R0kNrMxrW5FeX241UluglGU-qUEfkS",
       "uploaded_count": 10,
@@ -1398,9 +1598,49 @@
         ],
         "peak_hours": "6:00 PM \u2013 10:30 PM IST (Peak Global Viewing Window)"
       },
+      "health": {
+        "overall_score": 100,
+        "verdict": "Flawless (Optimal Standing)",
+        "verdict_color": "#10B981",
+        "shield_icon": "\ud83d\udee1\ufe0f",
+        "strikes": {
+          "count": 0,
+          "max": 3,
+          "status": "0 of 3 active strikes \u2022 Good standing",
+          "badge": "CLEAN",
+          "is_clean": true
+        },
+        "copyright": {
+          "count": 0,
+          "status": "0 copyright claims \u2022 Clean original audio & video",
+          "badge": "CLEAN",
+          "is_clean": true
+        },
+        "view_health": {
+          "label": "High Velocity (Trending in Shorts Feed)",
+          "badge": "OPTIMAL",
+          "color": "#10B981",
+          "avg_views": 1274.0,
+          "shorts_feed_share": "81.2%",
+          "velocity_verdict": "Algorithm Reach: High"
+        },
+        "compliance": {
+          "label": "100% Policy Compliant (AI Synthetic Media & COPPA Guard Active)",
+          "badge": "100% OK",
+          "synthetic_media": "Self-Declared True (Compliant)",
+          "coppa_kids": "Declared False (General Audience)",
+          "is_compliant": true
+        },
+        "upload_engine": {
+          "latest_run": "success",
+          "queue_health": "Plentiful Runway",
+          "runway_days": 69.0,
+          "total_uploaded": 10
+        }
+      },
       "drive_folder_id": "1xZSez3F82y0pLTWJbQ-ybPjbOCqY1mrW",
       "drive_folder_url": "https://drive.google.com/drive/folders/1xZSez3F82y0pLTWJbQ-ybPjbOCqY1mrW",
-      "uploaded_count": 9,
+      "uploaded_count": 10,
       "drive_queue_count": 138,
       "runway_days": 69.0,
       "stock_status": "Plentiful (69.0 days)",
@@ -1408,16 +1648,26 @@
       "latest_run_status": "success",
       "latest_run_time": "2026-09-12T18:27:55.153923+00:00",
       "latest_uploaded_video": {
-        "youtube_id": "23fs8X8RlyM",
-        "youtube_url": "https://youtu.be/23fs8X8RlyM",
-        "title": "Every Stroke Brings The Scene Closer To Life #Painting #ArtReels #Artist #ArtTransformation #Satisfy",
-        "uploaded_at": "2026-09-11T09:08:18Z",
-        "thumbnail": "https://i.ytimg.com/vi/23fs8X8RlyM/mqdefault.jpg",
-        "views": 1260,
-        "likes": 8,
+        "youtube_id": "E7vzDp7HUIM",
+        "youtube_url": "https://youtu.be/E7vzDp7HUIM",
+        "title": "Everyone Stopped To Watch This Artist Work #StreetArt #Artist #Painting #ArtReels #Viral.",
+        "uploaded_at": "2026-09-12T18:28:10Z",
+        "thumbnail": "https://i.ytimg.com/vi/E7vzDp7HUIM/mqdefault.jpg",
+        "views": 0,
+        "likes": 0,
         "comments": 0
       },
       "uploaded_videos": [
+        {
+          "youtube_id": "E7vzDp7HUIM",
+          "youtube_url": "https://youtu.be/E7vzDp7HUIM",
+          "title": "Everyone Stopped To Watch This Artist Work #StreetArt #Artist #Painting #ArtReels #Viral.",
+          "uploaded_at": "2026-09-12T18:28:10Z",
+          "thumbnail": "https://i.ytimg.com/vi/E7vzDp7HUIM/mqdefault.jpg",
+          "views": 0,
+          "likes": 0,
+          "comments": 0
+        },
         {
           "youtube_id": "23fs8X8RlyM",
           "youtube_url": "https://youtu.be/23fs8X8RlyM",
