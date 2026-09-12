@@ -502,6 +502,7 @@ function renderDashboard(channel) {
           <div class="mini-title" title="${v.title}">${v.title}</div>
           <div class="mini-meta">
             <span>👁️ ${formatNumber(v.views)} views</span>
+            <span style="color:#10B981; font-weight:600;">👥 +${v.subscribers_gained !== undefined ? v.subscribers_gained : 0}</span>
             <span>👍 ${v.likes || 0}</span>
             <span>${dStr}</span>
           </div>
@@ -543,7 +544,10 @@ function renderDashboard(channel) {
       row.className = 'top-vid-item';
       row.innerHTML = `
         <span class="top-vid-title" title="${v.title}">${v.title}</span>
-        <span class="top-vid-views">${formatNumber(v.views)}</span>
+        <div style="display:flex; align-items:center; gap:8px;">
+          <span class="top-vid-views">${formatNumber(v.views)}</span>
+          <span style="font-size:11.5px; font-weight:600; color:#10B981; background:rgba(16,185,129,0.12); padding:2px 7px; border-radius:10px;">+${v.subscribers_gained !== undefined ? v.subscribers_gained : 0} subs</span>
+        </div>
       `;
       topList.appendChild(row);
     });
@@ -865,7 +869,7 @@ function renderContentTable(channel) {
   if (mobileContainer) mobileContainer.innerHTML = '';
 
   if (vids.length === 0) {
-    tbody.innerHTML = `<tr><td colspan="8" style="text-align:center; padding:36px; color:var(--yt-text-secondary);">${contentSearchQuery ? `No videos matching "${contentSearchQuery}"` : 'No videos uploaded yet.'}</td></tr>`;
+    tbody.innerHTML = `<tr><td colspan="9" style="text-align:center; padding:36px; color:var(--yt-text-secondary);">${contentSearchQuery ? `No videos matching "${contentSearchQuery}"` : 'No videos uploaded yet.'}</td></tr>`;
     if (mobileContainer) {
       mobileContainer.innerHTML = `<div style="text-align:center; padding:32px 16px; color:var(--yt-text-secondary);">${contentSearchQuery ? `No videos matching "${contentSearchQuery}"` : 'No videos uploaded yet.'}</div>`;
     }
@@ -876,6 +880,7 @@ function renderContentTable(channel) {
     const thumb = v.thumbnail || `https://i.ytimg.com/vi/${v.youtube_id}/mqdefault.jpg`;
     const dateStr = v.uploaded_at ? new Date(v.uploaded_at).toLocaleDateString([], { month: 'short', day: 'numeric', year: 'numeric' }) : 'Sep 12, 2026';
     const isChecked = selectedVideoIds.has(v.youtube_id);
+    const subsGained = v.subscribers_gained !== undefined ? v.subscribers_gained : 0;
 
     // 1. Desktop Table Row
     const tr = document.createElement('tr');
@@ -904,6 +909,7 @@ function renderContentTable(channel) {
       <td class="col-restrictions">None</td>
       <td class="col-date">${dateStr}<br><span style="font-size:11px; color:var(--yt-text-secondary);">Published</span></td>
       <td class="col-views">${formatNumber(v.views)}</td>
+      <td class="col-subs"><span class="table-subs-badge">+${subsGained}</span></td>
       <td class="col-comments">${v.comments || 0}</td>
       <td class="col-likes">${v.likes || 0}</td>
     `;
@@ -939,6 +945,7 @@ function renderContentTable(channel) {
           </div>
           <div class="mobile-vid-metrics-chips">
             <span class="mobile-metric-item">👁️ ${formatNumber(v.views)}</span>
+            <span class="mobile-metric-item highlight-subs">👥 +${subsGained}</span>
             <span class="mobile-metric-item">👍 ${v.likes || 0}</span>
             <span class="mobile-metric-item">💬 ${v.comments || 0}</span>
           </div>

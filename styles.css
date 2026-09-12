@@ -1060,6 +1060,41 @@ button {
   background: var(--yt-green);
 }
 
+.col-subs {
+  width: 120px;
+  font-weight: 500;
+}
+
+.table-subs-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: #10B981;
+  background: rgba(16, 185, 129, 0.12);
+  border: 1px solid rgba(16, 185, 129, 0.25);
+  padding: 3px 8px;
+  border-radius: 12px;
+}
+
+.highlight-subs {
+  color: #10B981 !important;
+  background: rgba(16, 185, 129, 0.14) !important;
+  font-weight: 600 !important;
+  border: 1px solid rgba(16, 185, 129, 0.25) !important;
+  border-radius: 6px;
+}
+
+.top-vid-subs {
+  font-size: 11.5px;
+  font-weight: 600;
+  color: #10B981;
+  background: rgba(16, 185, 129, 0.12);
+  padding: 2px 7px;
+  border-radius: 10px;
+}
+
 /* ========================================================
    TAB 3: CHANNEL ANALYTICS VIEW
    ======================================================== */

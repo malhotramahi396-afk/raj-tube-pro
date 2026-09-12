@@ -1,36 +1,37 @@
 {
   "app_name": "Raj Tube Pro",
   "version": "6.0.0",
-  "timestamp": "2026-09-12T19:44:13.304265+00:00",
+  "timestamp": "2026-09-12T20:06:38.085306+00:00",
   "schedule": {
     "next_slot_iso": "2026-09-12T22:00:00+00:00",
-    "seconds_remaining": 8154,
-    "formatted_countdown": "02h 15m 54s",
+    "seconds_remaining": 6809,
+    "formatted_countdown": "01h 53m 29s",
     "slot_label": "06:00 PM USA (3:30 AM IST)",
-    "now_ist": "13 Sep, 01:14 AM IST"
+    "now_ist": "13 Sep, 01:36 AM IST"
   },
   "summary": {
     "total_channels": 5,
     "total_uploaded": 47,
     "total_in_queue": 547,
-    "total_subscribers": 102,
-    "total_views": 118174,
-    "total_likes": 1089,
+    "total_subscribers": 100,
+    "total_views": 119373,
+    "total_likes": 1094,
     "network_engagement": 0.9,
     "total_runway_days": 54.7,
     "system_health": "All Systems Operational",
     "issues_count": 0,
     "top_trending_video": {
       "title": "He Was Not Backing Down From Anyone #SlapFight #PowerSlap #SlapFighting #Viral #Sports.",
-      "views": 34643,
-      "likes": 353,
+      "views": 34931,
+      "likes": 352,
+      "subscribers_gained": 30,
       "youtube_url": "https://youtu.be/t5oF0IsXkN0",
       "thumbnail": "https://i.ytimg.com/vi/t5oF0IsXkN0/mqdefault.jpg",
       "channel_name": "Zyntrix07",
       "uploaded_at": "2026-09-11T16:04:35Z"
     },
     "analytics": {
-      "watch_time_hours": 496.3,
+      "watch_time_hours": 501.4,
       "avg_view_duration": "0:24",
       "top_countries": [
         {
@@ -173,10 +174,10 @@
         "is_clean": true
       },
       "view_health": {
-        "label": "YouTube API Verified: 2,514 avg views/video (118,174 total views across 47 videos)",
-        "badge": "2,514 AVG",
+        "label": "YouTube API Verified: 2,540 avg views/video (119,373 total views across 47 videos)",
+        "badge": "2,540 AVG",
         "color": "#10B981",
-        "avg_views": 2514.3,
+        "avg_views": 2539.9,
         "shorts_feed_share": "81.2%",
         "velocity_verdict": "Algorithm Reach: High"
       },
@@ -207,14 +208,14 @@
       "github_repo": "malhotramahi396-afk/yt-automation-the-hidden-lens",
       "color": "#10B981",
       "avatar_url": "https://yt3.ggpht.com/R5wyufkApz5fijH1a4mek8n6CM9y64QklZgfgjuGI-SOwbTIBjEFmmKot6aBnYkVRwOpq965=s240-c-k-c0x00ffffff-no-rj",
-      "subscribers": 26,
-      "total_views": 12567,
+      "subscribers": 25,
+      "total_views": 12988,
       "channel_total_videos": 4,
-      "avg_views_per_video": 3141.8,
+      "avg_views_per_video": 3247.0,
       "engagement_rate": 1.5,
-      "total_likes": 193,
+      "total_likes": 198,
       "analytics": {
-        "watch_time_hours": 52.8,
+        "watch_time_hours": 54.5,
         "avg_view_duration": "0:24",
         "top_countries": [
           {
@@ -357,10 +358,10 @@
           "is_clean": true
         },
         "view_health": {
-          "label": "YouTube API Verified: 3,142 avg views/video (12,567 total views across 4 videos)",
-          "badge": "3,142 AVG",
+          "label": "YouTube API Verified: 3,247 avg views/video (12,988 total views across 4 videos)",
+          "badge": "3,247 AVG",
           "color": "#10B981",
-          "avg_views": 3141.8,
+          "avg_views": 3247.0,
           "shorts_feed_share": "81.2%",
           "velocity_verdict": "Algorithm Reach: High"
         },
@@ -393,9 +394,10 @@
         "title": "Close Enough To Hear His Breath #wildlife #shorts #cameraman #viral",
         "uploaded_at": "2026-09-12T14:03:34Z",
         "thumbnail": "https://i.ytimg.com/vi/RMgm8o875X0/mqdefault.jpg",
-        "views": 1201,
-        "likes": 17,
-        "comments": 0
+        "views": 1323,
+        "likes": 21,
+        "comments": 0,
+        "subscribers_gained": 3
       },
       "uploaded_videos": [
         {
@@ -404,9 +406,10 @@
           "title": "Close Enough To Hear His Breath #wildlife #shorts #cameraman #viral",
           "uploaded_at": "2026-09-12T14:03:34Z",
           "thumbnail": "https://i.ytimg.com/vi/RMgm8o875X0/mqdefault.jpg",
-          "views": 1201,
-          "likes": 17,
-          "comments": 0
+          "views": 1323,
+          "likes": 21,
+          "comments": 0,
+          "subscribers_gained": 3
         },
         {
           "youtube_id": "EwZLPUyf2LA",
@@ -416,7 +419,8 @@
           "thumbnail": "https://i.ytimg.com/vi/EwZLPUyf2LA/mqdefault.jpg",
           "views": 1878,
           "likes": 17,
-          "comments": 0
+          "comments": 0,
+          "subscribers_gained": 3
         },
         {
           "youtube_id": "3pDpmQcqJT8",
@@ -424,9 +428,10 @@
           "title": "Breathtaking 4K Wildlife Moment #wildlifephotography #shorts #naturelovers #viral",
           "uploaded_at": "2026-09-11T14:42:29Z",
           "thumbnail": "https://i.ytimg.com/vi/3pDpmQcqJT8/mqdefault.jpg",
-          "views": 8233,
-          "likes": 153,
-          "comments": 0
+          "views": 8530,
+          "likes": 154,
+          "comments": 0,
+          "subscribers_gained": 17
         },
         {
           "youtube_id": "UoPvxQ5Gj9Q",
@@ -434,9 +439,10 @@
           "title": "A Legendary Moment In Nature #nature #wildlife #shorts #viralvideo",
           "uploaded_at": "2026-09-11T13:33:07Z",
           "thumbnail": "https://i.ytimg.com/vi/UoPvxQ5Gj9Q/mqdefault.jpg",
-          "views": 1255,
+          "views": 1257,
           "likes": 6,
-          "comments": 0
+          "comments": 0,
+          "subscribers_gained": 2
         }
       ],
       "recent_runs": [
@@ -484,13 +490,13 @@
       "color": "#F59E0B",
       "avatar_url": "https://yt3.ggpht.com/TTLhq8ijvpChRrWaVb1i96FzeFG02Gd31oOfWo4EdOtBtfqTD6h0TrRmEOTd2fE8V0kPexV6EA=s240-c-k-c0x00ffffff-no-rj",
       "subscribers": 65,
-      "total_views": 80609,
+      "total_views": 81134,
       "channel_total_videos": 11,
-      "avg_views_per_video": 7328.1,
+      "avg_views_per_video": 7375.8,
       "engagement_rate": 0.8,
       "total_likes": 609,
       "analytics": {
-        "watch_time_hours": 338.6,
+        "watch_time_hours": 340.8,
         "avg_view_duration": "0:24",
         "top_countries": [
           {
@@ -633,10 +639,10 @@
           "is_clean": true
         },
         "view_health": {
-          "label": "YouTube API Verified: 7,328 avg views/video (80,609 total views across 11 videos)",
-          "badge": "7,328 AVG",
+          "label": "YouTube API Verified: 7,376 avg views/video (81,134 total views across 11 videos)",
+          "badge": "7,376 AVG",
           "color": "#10B981",
-          "avg_views": 7328.1,
+          "avg_views": 7375.8,
           "shorts_feed_share": "81.2%",
           "velocity_verdict": "Algorithm Reach: High"
         },
@@ -669,9 +675,10 @@
         "title": "Nobody Expected That Faceoff Reaction #SlapFighting #PowerSlap #SlapBattle #CombatSports #Viral.",
         "uploaded_at": "2026-09-12T14:06:29Z",
         "thumbnail": "https://i.ytimg.com/vi/7OVj2yza4ks/mqdefault.jpg",
-        "views": 836,
+        "views": 857,
         "likes": 18,
-        "comments": 1
+        "comments": 1,
+        "subscribers_gained": 1
       },
       "uploaded_videos": [
         {
@@ -680,9 +687,10 @@
           "title": "Nobody Expected That Faceoff Reaction #SlapFighting #PowerSlap #SlapBattle #CombatSports #Viral.",
           "uploaded_at": "2026-09-12T14:06:29Z",
           "thumbnail": "https://i.ytimg.com/vi/7OVj2yza4ks/mqdefault.jpg",
-          "views": 836,
+          "views": 857,
           "likes": 18,
-          "comments": 1
+          "comments": 1,
+          "subscribers_gained": 1
         },
         {
           "youtube_id": "g-2DEoij8dY",
@@ -690,9 +698,10 @@
           "title": "His Confidence Had The Whole Crowd Talking #PowerSlap #SlapFighting #SlapFight #Viral #Sports.",
           "uploaded_at": "2026-09-11T22:07:28Z",
           "thumbnail": "https://i.ytimg.com/vi/g-2DEoij8dY/mqdefault.jpg",
-          "views": 3312,
-          "likes": 58,
-          "comments": 0
+          "views": 3445,
+          "likes": 59,
+          "comments": 0,
+          "subscribers_gained": 3
         },
         {
           "youtube_id": "t5oF0IsXkN0",
@@ -700,9 +709,10 @@
           "title": "He Was Not Backing Down From Anyone #SlapFight #PowerSlap #SlapFighting #Viral #Sports.",
           "uploaded_at": "2026-09-11T16:04:35Z",
           "thumbnail": "https://i.ytimg.com/vi/t5oF0IsXkN0/mqdefault.jpg",
-          "views": 34643,
-          "likes": 353,
-          "comments": 1
+          "views": 34931,
+          "likes": 352,
+          "comments": 1,
+          "subscribers_gained": 30
         },
         {
           "youtube_id": "WIWsbArcAp4",
@@ -710,9 +720,10 @@
           "title": "He Walked Up Like He Owned The Arena #PowerSlap #SlapFight #SlapFighting #Viral #Sports",
           "uploaded_at": "2026-09-11T09:08:50Z",
           "thumbnail": "https://i.ytimg.com/vi/WIWsbArcAp4/mqdefault.jpg",
-          "views": 1613,
+          "views": 1664,
           "likes": 12,
-          "comments": 1
+          "comments": 1,
+          "subscribers_gained": 1
         },
         {
           "youtube_id": "L7SEmcVIsS0",
@@ -720,9 +731,10 @@
           "title": "He Never Broke Eye Contact #PowerSlap #SlapFighting #SlapFight #Highlights #Viral",
           "uploaded_at": "2026-09-07T19:35:28Z",
           "thumbnail": "https://i.ytimg.com/vi/L7SEmcVIsS0/mqdefault.jpg",
-          "views": 4416,
+          "views": 4428,
           "likes": 33,
-          "comments": 0
+          "comments": 0,
+          "subscribers_gained": 4
         },
         {
           "youtube_id": "EU0lTDiLM2Y",
@@ -732,7 +744,8 @@
           "thumbnail": "https://i.ytimg.com/vi/EU0lTDiLM2Y/mqdefault.jpg",
           "views": 7307,
           "likes": 11,
-          "comments": 0
+          "comments": 0,
+          "subscribers_gained": 5
         },
         {
           "youtube_id": "ZUnBtn839WQ",
@@ -740,9 +753,10 @@
           "title": "He Looked Completely Calm Under Pressure #PowerSlap #SlapFight #CombatSports #Sports #FYP",
           "uploaded_at": "2026-09-03T19:32:51Z",
           "thumbnail": "https://i.ytimg.com/vi/ZUnBtn839WQ/mqdefault.jpg",
-          "views": 6272,
+          "views": 6277,
           "likes": 37,
-          "comments": 0
+          "comments": 0,
+          "subscribers_gained": 5
         },
         {
           "youtube_id": "BsHgPB_OMhk",
@@ -750,9 +764,10 @@
           "title": "Everyone Went Silent Before The Action #SlapFighting #PowerSlap #CombatSports #SlapFight #Viral",
           "uploaded_at": "2026-08-30T17:35:17Z",
           "thumbnail": "https://i.ytimg.com/vi/BsHgPB_OMhk/mqdefault.jpg",
-          "views": 7177,
+          "views": 7181,
           "likes": 29,
-          "comments": 0
+          "comments": 0,
+          "subscribers_gained": 5
         },
         {
           "youtube_id": "RlpaUoxwZ2k",
@@ -760,9 +775,10 @@
           "title": "Everyone Was Waiting For The First Move #SlapFight #PowerSlap #Highlights #CombatSports #FYP",
           "uploaded_at": "2026-08-27T19:50:24Z",
           "thumbnail": "https://i.ytimg.com/vi/RlpaUoxwZ2k/mqdefault.jpg",
-          "views": 4170,
+          "views": 4172,
           "likes": 16,
-          "comments": 0
+          "comments": 0,
+          "subscribers_gained": 3
         },
         {
           "youtube_id": "xwS9sXGgcaI",
@@ -770,9 +786,10 @@
           "title": "Everyone In The Crowd Was Locked In #PowerSlap #SlapFight #Highlights #Sports #FYP",
           "uploaded_at": "2026-08-26T19:38:10Z",
           "thumbnail": "https://i.ytimg.com/vi/xwS9sXGgcaI/mqdefault.jpg",
-          "views": 6214,
+          "views": 6218,
           "likes": 26,
-          "comments": 1
+          "comments": 1,
+          "subscribers_gained": 5
         },
         {
           "youtube_id": "0XG0Q-mvSg0",
@@ -780,9 +797,10 @@
           "title": "Everyone Could Feel The Pressure #SlapFighting #PowerSlap #SlapFight #Viral #Highlights",
           "uploaded_at": "2026-08-25T19:55:30Z",
           "thumbnail": "https://i.ytimg.com/vi/0XG0Q-mvSg0/mqdefault.jpg",
-          "views": 4649,
+          "views": 4654,
           "likes": 16,
-          "comments": 0
+          "comments": 0,
+          "subscribers_gained": 3
         }
       ],
       "recent_runs": [
@@ -999,7 +1017,8 @@
         "thumbnail": "https://i.ytimg.com/vi/RoTqHPenjws/mqdefault.jpg",
         "views": 0,
         "likes": 0,
-        "comments": 0
+        "comments": 0,
+        "subscribers_gained": 0
       },
       "uploaded_videos": [
         {
@@ -1010,7 +1029,8 @@
           "thumbnail": "https://i.ytimg.com/vi/RoTqHPenjws/mqdefault.jpg",
           "views": 0,
           "likes": 0,
-          "comments": 0
+          "comments": 0,
+          "subscribers_gained": 0
         },
         {
           "youtube_id": "W7MqRQt5wuI",
@@ -1020,7 +1040,8 @@
           "thumbnail": "https://i.ytimg.com/vi/W7MqRQt5wuI/mqdefault.jpg",
           "views": 0,
           "likes": 0,
-          "comments": 0
+          "comments": 0,
+          "subscribers_gained": 0
         },
         {
           "youtube_id": "ONDKse4JvC0",
@@ -1030,7 +1051,8 @@
           "thumbnail": "https://i.ytimg.com/vi/ONDKse4JvC0/mqdefault.jpg",
           "views": 0,
           "likes": 0,
-          "comments": 0
+          "comments": 0,
+          "subscribers_gained": 0
         },
         {
           "youtube_id": "F5raQIzv_Oo",
@@ -1040,7 +1062,8 @@
           "thumbnail": "https://i.ytimg.com/vi/F5raQIzv_Oo/mqdefault.jpg",
           "views": 1,
           "likes": 0,
-          "comments": 0
+          "comments": 0,
+          "subscribers_gained": 0
         },
         {
           "youtube_id": "h6lPr3VxvsA",
@@ -1050,7 +1073,8 @@
           "thumbnail": "https://i.ytimg.com/vi/h6lPr3VxvsA/mqdefault.jpg",
           "views": 2,
           "likes": 0,
-          "comments": 0
+          "comments": 0,
+          "subscribers_gained": 0
         },
         {
           "youtube_id": "e_0cwaG8aac",
@@ -1060,7 +1084,8 @@
           "thumbnail": "https://i.ytimg.com/vi/e_0cwaG8aac/mqdefault.jpg",
           "views": 2,
           "likes": 0,
-          "comments": 0
+          "comments": 0,
+          "subscribers_gained": 0
         },
         {
           "youtube_id": "llV_vJGeexE",
@@ -1070,7 +1095,8 @@
           "thumbnail": "https://i.ytimg.com/vi/llV_vJGeexE/mqdefault.jpg",
           "views": 1825,
           "likes": 39,
-          "comments": 0
+          "comments": 0,
+          "subscribers_gained": 1
         },
         {
           "youtube_id": "K08ZOr1ULpc",
@@ -1080,7 +1106,8 @@
           "thumbnail": "https://i.ytimg.com/vi/K08ZOr1ULpc/mqdefault.jpg",
           "views": 7,
           "likes": 1,
-          "comments": 0
+          "comments": 0,
+          "subscribers_gained": 0
         },
         {
           "youtube_id": "lD-2eLUY0e4",
@@ -1090,7 +1117,8 @@
           "thumbnail": "https://i.ytimg.com/vi/lD-2eLUY0e4/mqdefault.jpg",
           "views": 27,
           "likes": 1,
-          "comments": 0
+          "comments": 0,
+          "subscribers_gained": 0
         },
         {
           "youtube_id": "jw0hYw51YOA",
@@ -1100,7 +1128,8 @@
           "thumbnail": "https://i.ytimg.com/vi/jw0hYw51YOA/mqdefault.jpg",
           "views": 9769,
           "likes": 157,
-          "comments": 0
+          "comments": 0,
+          "subscribers_gained": 8
         },
         {
           "youtube_id": "Xnmu9_wghuM",
@@ -1110,7 +1139,8 @@
           "thumbnail": "https://i.ytimg.com/vi/Xnmu9_wghuM/mqdefault.jpg",
           "views": 22,
           "likes": 0,
-          "comments": 0
+          "comments": 0,
+          "subscribers_gained": 0
         },
         {
           "youtube_id": "djoP1idzHtY",
@@ -1120,7 +1150,8 @@
           "thumbnail": "https://i.ytimg.com/vi/djoP1idzHtY/mqdefault.jpg",
           "views": 15,
           "likes": 0,
-          "comments": 0
+          "comments": 0,
+          "subscribers_gained": 0
         }
       ],
       "recent_runs": [
@@ -1149,14 +1180,14 @@
       "github_repo": "malhotramahi396-afk/yt-automation-vexorush",
       "color": "#8B5CF6",
       "avatar_url": "https://yt3.ggpht.com/WKefM8i0bji48M_e159k6q0080b5zNwYExax_QloW7H3XguFARUF-SuE62a8rdPQJXvtTXxbJQ=s240-c-k-c0x00ffffff-no-rj",
-      "subscribers": 1,
-      "total_views": 588,
+      "subscribers": 0,
+      "total_views": 841,
       "channel_total_videos": 10,
-      "avg_views_per_video": 58.8,
-      "engagement_rate": 1.0,
+      "avg_views_per_video": 84.1,
+      "engagement_rate": 0.7,
       "total_likes": 6,
       "analytics": {
-        "watch_time_hours": 2.5,
+        "watch_time_hours": 3.5,
         "avg_view_duration": "0:24",
         "top_countries": [
           {
@@ -1299,10 +1330,10 @@
           "is_clean": true
         },
         "view_health": {
-          "label": "Warm-Up Phase: 59 avg views/video (588 total views across 10 videos)",
-          "badge": "59 AVG",
+          "label": "Warm-Up Phase: 84 avg views/video (841 total views across 10 videos)",
+          "badge": "84 AVG",
           "color": "#F59E0B",
-          "avg_views": 58.8,
+          "avg_views": 84.1,
           "shorts_feed_share": "81.2%",
           "velocity_verdict": "Algorithm Reach: Healthy"
         },
@@ -1335,9 +1366,10 @@
         "title": "Adorable Toddler Reacts In The Cutest Way #ToddlerLife #CutestMoments #FamilyMoments #WholesomeConte",
         "uploaded_at": "2026-09-12T17:39:42Z",
         "thumbnail": "https://i.ytimg.com/vi/goCoZBF3N_M/mqdefault.jpg",
-        "views": 581,
+        "views": 834,
         "likes": 6,
-        "comments": 0
+        "comments": 0,
+        "subscribers_gained": 0
       },
       "uploaded_videos": [
         {
@@ -1346,9 +1378,10 @@
           "title": "Adorable Toddler Reacts In The Cutest Way #ToddlerLife #CutestMoments #FamilyMoments #WholesomeConte",
           "uploaded_at": "2026-09-12T17:39:42Z",
           "thumbnail": "https://i.ytimg.com/vi/goCoZBF3N_M/mqdefault.jpg",
-          "views": 581,
+          "views": 834,
           "likes": 6,
-          "comments": 0
+          "comments": 0,
+          "subscribers_gained": 0
         },
         {
           "youtube_id": "yNvI5S6ywtk",
@@ -1358,7 +1391,8 @@
           "thumbnail": "https://i.ytimg.com/vi/yNvI5S6ywtk/mqdefault.jpg",
           "views": 0,
           "likes": 0,
-          "comments": 0
+          "comments": 0,
+          "subscribers_gained": 0
         },
         {
           "youtube_id": "fx056y8XTmo",
@@ -1368,7 +1402,8 @@
           "thumbnail": "https://i.ytimg.com/vi/fx056y8XTmo/mqdefault.jpg",
           "views": 1,
           "likes": 0,
-          "comments": 0
+          "comments": 0,
+          "subscribers_gained": 0
         },
         {
           "youtube_id": "ab7NoDGG5hM",
@@ -1378,7 +1413,8 @@
           "thumbnail": "https://i.ytimg.com/vi/ab7NoDGG5hM/mqdefault.jpg",
           "views": 0,
           "likes": 0,
-          "comments": 0
+          "comments": 0,
+          "subscribers_gained": 0
         },
         {
           "youtube_id": "DeNVaJ5X83k",
@@ -1388,7 +1424,8 @@
           "thumbnail": "https://i.ytimg.com/vi/DeNVaJ5X83k/mqdefault.jpg",
           "views": 3,
           "likes": 0,
-          "comments": 0
+          "comments": 0,
+          "subscribers_gained": 0
         },
         {
           "youtube_id": "pJiFMLs4Nrc",
@@ -1398,7 +1435,8 @@
           "thumbnail": "https://i.ytimg.com/vi/pJiFMLs4Nrc/mqdefault.jpg",
           "views": 1,
           "likes": 0,
-          "comments": 0
+          "comments": 0,
+          "subscribers_gained": 0
         },
         {
           "youtube_id": "OHtwYkmH5Hs",
@@ -1408,7 +1446,8 @@
           "thumbnail": "https://i.ytimg.com/vi/OHtwYkmH5Hs/mqdefault.jpg",
           "views": 0,
           "likes": 0,
-          "comments": 0
+          "comments": 0,
+          "subscribers_gained": 0
         },
         {
           "youtube_id": "unhVBbhAK2w",
@@ -1418,7 +1457,8 @@
           "thumbnail": "https://i.ytimg.com/vi/unhVBbhAK2w/mqdefault.jpg",
           "views": 0,
           "likes": 0,
-          "comments": 0
+          "comments": 0,
+          "subscribers_gained": 0
         },
         {
           "youtube_id": "8QtmEc_o-RQ",
@@ -1428,7 +1468,8 @@
           "thumbnail": "https://i.ytimg.com/vi/8QtmEc_o-RQ/mqdefault.jpg",
           "views": 2,
           "likes": 0,
-          "comments": 0
+          "comments": 0,
+          "subscribers_gained": 0
         },
         {
           "youtube_id": "uyjCXgfWTOY",
@@ -1438,7 +1479,8 @@
           "thumbnail": "https://i.ytimg.com/vi/uyjCXgfWTOY/mqdefault.jpg",
           "views": 0,
           "likes": 0,
-          "comments": 0
+          "comments": 0,
+          "subscribers_gained": 0
         }
       ],
       "recent_runs": [
@@ -1655,7 +1697,8 @@
         "thumbnail": "https://i.ytimg.com/vi/E7vzDp7HUIM/mqdefault.jpg",
         "views": 0,
         "likes": 0,
-        "comments": 0
+        "comments": 0,
+        "subscribers_gained": 0
       },
       "uploaded_videos": [
         {
@@ -1666,7 +1709,8 @@
           "thumbnail": "https://i.ytimg.com/vi/E7vzDp7HUIM/mqdefault.jpg",
           "views": 0,
           "likes": 0,
-          "comments": 0
+          "comments": 0,
+          "subscribers_gained": 0
         },
         {
           "youtube_id": "23fs8X8RlyM",
@@ -1676,7 +1720,8 @@
           "thumbnail": "https://i.ytimg.com/vi/23fs8X8RlyM/mqdefault.jpg",
           "views": 1260,
           "likes": 8,
-          "comments": 0
+          "comments": 0,
+          "subscribers_gained": 0
         },
         {
           "youtube_id": "nF35nkMVC2s",
@@ -1686,7 +1731,8 @@
           "thumbnail": "https://i.ytimg.com/vi/nF35nkMVC2s/mqdefault.jpg",
           "views": 1238,
           "likes": 7,
-          "comments": 0
+          "comments": 0,
+          "subscribers_gained": 0
         },
         {
           "youtube_id": "o7gOcdKnn-c",
@@ -1696,7 +1742,8 @@
           "thumbnail": "https://i.ytimg.com/vi/o7gOcdKnn-c/mqdefault.jpg",
           "views": 1558,
           "likes": 14,
-          "comments": 0
+          "comments": 0,
+          "subscribers_gained": 0
         },
         {
           "youtube_id": "fw8w3TgkU7U",
@@ -1706,7 +1753,8 @@
           "thumbnail": "https://i.ytimg.com/vi/fw8w3TgkU7U/mqdefault.jpg",
           "views": 11,
           "likes": 0,
-          "comments": 0
+          "comments": 0,
+          "subscribers_gained": 0
         },
         {
           "youtube_id": "ls-oNuVUj88",
@@ -1716,7 +1764,8 @@
           "thumbnail": "https://i.ytimg.com/vi/ls-oNuVUj88/mqdefault.jpg",
           "views": 2110,
           "likes": 12,
-          "comments": 1
+          "comments": 1,
+          "subscribers_gained": 0
         },
         {
           "youtube_id": "bbfuIfZrtqM",
@@ -1726,7 +1775,8 @@
           "thumbnail": "https://i.ytimg.com/vi/bbfuIfZrtqM/mqdefault.jpg",
           "views": 1150,
           "likes": 11,
-          "comments": 0
+          "comments": 0,
+          "subscribers_gained": 0
         },
         {
           "youtube_id": "Wk-N6p-_SvQ",
@@ -1736,7 +1786,8 @@
           "thumbnail": "https://i.ytimg.com/vi/Wk-N6p-_SvQ/mqdefault.jpg",
           "views": 2885,
           "likes": 17,
-          "comments": 2
+          "comments": 2,
+          "subscribers_gained": 1
         },
         {
           "youtube_id": "6ywkGNA2y4M",
@@ -1746,7 +1797,8 @@
           "thumbnail": "https://i.ytimg.com/vi/6ywkGNA2y4M/mqdefault.jpg",
           "views": 1242,
           "likes": 8,
-          "comments": 0
+          "comments": 0,
+          "subscribers_gained": 0
         },
         {
           "youtube_id": "pHV3j-pPwo4",
@@ -1756,7 +1808,8 @@
           "thumbnail": "https://i.ytimg.com/vi/pHV3j-pPwo4/mqdefault.jpg",
           "views": 1286,
           "likes": 6,
-          "comments": 0
+          "comments": 0,
+          "subscribers_gained": 0
         }
       ],
       "recent_runs": [
