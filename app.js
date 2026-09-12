@@ -1,9 +1,15 @@
-// YouTube Studio Web App Controller v7.0
+// YouTube Studio Web App Controller v8.0 - Native Studio Experience
 let globalData = null;
 let currentChannelId = 'channel_1'; // Default to first channel, or 'all'
 let countdownSeconds = 0;
 let countdownInterval = null;
 let analyticsChartInstance = null;
+
+// Content subtabs & filter state
+let activeContentSubtab = 'shorts'; // Default to 'shorts' because 100% of automation videos are vertical Shorts!
+let contentSearchQuery = '';
+let selectedVideoIds = new Set();
+let activeAnalyticsMetric = 'views';
 
 const REMOTE_URL = window.location.origin.includes('github.io')
   ? "https://malhotramahi396-afk.github.io/raj-tube-pro/"
@@ -15,6 +21,11 @@ document.addEventListener('DOMContentLoaded', () => {
   setupNavigation();
   setupChannelDropdown();
   setupSync();
+  setupContentTabs();
+  setupSearchFilter();
+  setupCreateModal();
+  setupBatchSelection();
+  setupAnalyticsChips();
   fetchChannelData();
 
   // Auto-refresh every 45s
@@ -315,6 +326,12 @@ function updateChannelIdentity(channel) {
   const contentBadge = document.getElementById('sidebar-content-badge');
   const queueBadge = document.getElementById('sidebar-queue-badge');
 
+  // Mobile hero elements
+  const mAvatar = document.getElementById('m-hero-avatar');
+  const mName = document.getElementById('m-hero-name');
+  const mHandle = document.getElementById('m-hero-handle');
+  const mSubs = document.getElementById('m-hero-subs');
+
   if (channel) {
     const avatar = channel.avatar_url;
     headerAvatar.src = avatar;
@@ -332,6 +349,11 @@ function updateChannelIdentity(channel) {
     const vCount = channel.channel_total_videos || (channel.uploaded_videos ? channel.uploaded_videos.length : 0);
     if (contentBadge) contentBadge.innerText = vCount;
     if (queueBadge) queueBadge.innerText = channel.drive_queue_count;
+
+    if (mAvatar) mAvatar.src = avatar;
+    if (mName) mName.innerText = channel.name;
+    if (mHandle) mHandle.innerText = channel.handle;
+    if (mSubs) mSubs.innerText = formatNumber(channel.subscribers || 0);
   } else {
     const avatar = "https://ui-avatars.com/api/?name=Fleet&background=333&color=fff";
     headerAvatar.src = avatar;
@@ -347,10 +369,28 @@ function updateChannelIdentity(channel) {
     dropdownLink.href = "https://studio.youtube.com";
     sidebarLink.href = "https://studio.youtube.com";
 
-    const totalVids = globalData.summary ? globalData.summary.total_uploaded : 0;
-    const totalQueue = globalData.summary ? globalData.summary.total_in_queue : 0;
+    const totalVids = globalData && globalData.summary ? globalData.summary.total_uploaded : 0;
+    const totalQueue = globalData && globalData.summary ? globalData.summary.total_in_queue : 0;
+    const totalSubs = globalData && globalData.summary ? globalData.summary.total_subscribers : 0;
     if (contentBadge) contentBadge.innerText = totalVids;
     if (queueBadge) queueBadge.innerText = totalQueue;
+
+    if (mAvatar) mAvatar.src = avatar;
+    if (mName) mName.innerText = "All Channels Fleet";
+    if (mHandle) mHandle.innerText = `@AllChannels • ${totalChannelsCount} Channels`;
+    if (mSubs) mSubs.innerText = formatNumber(totalSubs);
+  }
+
+  // Hook up mobile hero switch button
+  const mHeroSwitch = document.getElementById('m-hero-switch-btn');
+  if (mHeroSwitch) {
+    mHeroSwitch.onclick = (e) => {
+      e.stopPropagation();
+      const dropdown = document.getElementById('channel-dropdown');
+      const backdrop = document.getElementById('studio-backdrop');
+      if (dropdown) dropdown.classList.add('open');
+      if (backdrop) backdrop.classList.add('active');
+    };
   }
 }
 
@@ -485,46 +525,329 @@ function renderDashboard(channel) {
 }
 
 /* ========================================================
-   3. CONTENT TABLE RENDERING (YouTube Studio Table)
+   3. CONTENT SUBTABS & TABLE/CARD RENDERING
    ======================================================== */
+function setupContentTabs() {
+  const subtabs = document.querySelectorAll('#content-subtabs-bar .subtab');
+  subtabs.forEach(btn => {
+    btn.addEventListener('click', () => {
+      subtabs.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      activeContentSubtab = btn.getAttribute('data-subtab');
+      const channel = currentChannelId === 'all' ? null : (globalData ? globalData.channels.find(c => c.id === currentChannelId) : null);
+      renderContentTable(channel);
+    });
+  });
+}
+
+function setupSearchFilter() {
+  const headerSearch = document.getElementById('studio-search');
+  const clearHeaderBtn = document.getElementById('btn-clear-search');
+  const contentFilter = document.getElementById('content-filter-input');
+  const clearFilterBtn = document.getElementById('btn-clear-filter');
+
+  function handleSearch(val) {
+    contentSearchQuery = (val || '').trim();
+    if (headerSearch && headerSearch.value !== val) headerSearch.value = val;
+    if (contentFilter && contentFilter.value !== val) contentFilter.value = val;
+    if (clearHeaderBtn) clearHeaderBtn.style.display = contentSearchQuery ? 'inline-block' : 'none';
+    if (clearFilterBtn) clearFilterBtn.style.display = contentSearchQuery ? 'inline-block' : 'none';
+
+    // If on another view, auto-switch to content to see search results
+    const currentActiveView = document.querySelector('.tab-view.active');
+    if (contentSearchQuery && currentActiveView && currentActiveView.id !== 'view-content') {
+      switchView('content');
+    }
+
+    const channel = currentChannelId === 'all' ? null : (globalData ? globalData.channels.find(c => c.id === currentChannelId) : null);
+    renderContentTable(channel);
+  }
+
+  if (headerSearch) {
+    headerSearch.addEventListener('input', (e) => handleSearch(e.target.value));
+  }
+  if (clearHeaderBtn) {
+    clearHeaderBtn.addEventListener('click', () => handleSearch(''));
+  }
+  if (contentFilter) {
+    contentFilter.addEventListener('input', (e) => handleSearch(e.target.value));
+  }
+  if (clearFilterBtn) {
+    clearFilterBtn.addEventListener('click', () => handleSearch(''));
+  }
+}
+
+function setupCreateModal() {
+  const btnCreate = document.getElementById('btn-create');
+  const modalOverlay = document.getElementById('create-modal-overlay');
+  const btnClose = document.getElementById('btn-close-create-modal');
+  const modalDriveLink = document.getElementById('modal-drive-link');
+  const modalForceSync = document.getElementById('modal-btn-force-sync');
+  const modalGotoHealth = document.getElementById('modal-btn-goto-health');
+
+  if (btnCreate && modalOverlay) {
+    btnCreate.addEventListener('click', () => {
+      const channel = currentChannelId === 'all' ? null : (globalData ? globalData.channels.find(c => c.id === currentChannelId) : null);
+      const driveUrl = channel ? channel.drive_folder_url : (globalData && globalData.channels && globalData.channels[0] ? globalData.channels[0].drive_folder_url : "https://drive.google.com");
+      if (modalDriveLink) modalDriveLink.href = driveUrl;
+      modalOverlay.classList.add('open');
+    });
+  }
+
+  if (btnClose && modalOverlay) {
+    btnClose.addEventListener('click', () => modalOverlay.classList.remove('open'));
+  }
+
+  if (modalOverlay) {
+    modalOverlay.addEventListener('click', (e) => {
+      if (e.target === modalOverlay) modalOverlay.classList.remove('open');
+    });
+  }
+
+  if (modalForceSync) {
+    modalForceSync.addEventListener('click', () => {
+      if (modalOverlay) modalOverlay.classList.remove('open');
+      const syncBtn = document.getElementById('btn-sync');
+      if (syncBtn) syncBtn.click();
+    });
+  }
+
+  if (modalGotoHealth) {
+    modalGotoHealth.addEventListener('click', () => {
+      if (modalOverlay) modalOverlay.classList.remove('open');
+      switchView('health');
+    });
+  }
+}
+
+function setupBatchSelection() {
+  const selectAll = document.getElementById('checkbox-select-all');
+  const cancelBtn = document.getElementById('btn-batch-cancel');
+  const copyBtn = document.getElementById('btn-batch-copy');
+  const openBtn = document.getElementById('btn-batch-open');
+
+  if (selectAll) {
+    selectAll.addEventListener('change', (e) => {
+      const isChecked = e.target.checked;
+      document.querySelectorAll('.row-vid-check').forEach(cb => {
+        cb.checked = isChecked;
+        const vidId = cb.getAttribute('data-vid-id');
+        if (isChecked) selectedVideoIds.add(vidId);
+        else selectedVideoIds.delete(vidId);
+      });
+      updateBatchBar();
+    });
+  }
+
+  if (cancelBtn) {
+    cancelBtn.addEventListener('click', () => {
+      selectedVideoIds.clear();
+      if (selectAll) selectAll.checked = false;
+      document.querySelectorAll('.row-vid-check').forEach(cb => cb.checked = false);
+      updateBatchBar();
+    });
+  }
+
+  if (copyBtn) {
+    copyBtn.addEventListener('click', () => {
+      if (selectedVideoIds.size === 0) return;
+      const urls = Array.from(selectedVideoIds).map(id => `https://youtu.be/${id}`).join('\n');
+      copyToClipboard(urls, `${selectedVideoIds.size} YouTube links copied!`);
+    });
+  }
+
+  if (openBtn) {
+    openBtn.addEventListener('click', () => {
+      if (selectedVideoIds.size === 0) return;
+      Array.from(selectedVideoIds).forEach(id => {
+        window.open(`https://youtu.be/${id}`, '_blank');
+      });
+    });
+  }
+}
+
+function updateBatchBar() {
+  const bar = document.getElementById('table-batch-bar');
+  const countSpan = document.getElementById('batch-selected-count');
+  if (!bar || !countSpan) return;
+
+  if (selectedVideoIds.size > 0) {
+    bar.style.display = 'flex';
+    countSpan.innerText = `${selectedVideoIds.size} video${selectedVideoIds.size > 1 ? 's' : ''} selected`;
+  } else {
+    bar.style.display = 'none';
+  }
+}
+
+function setupAnalyticsChips() {
+  const chips = document.querySelectorAll('.analytics-stat-chips .stat-chip');
+  chips.forEach(chip => {
+    chip.addEventListener('click', () => {
+      chips.forEach(c => c.classList.remove('active'));
+      chip.classList.add('active');
+      const label = chip.querySelector('.chip-label');
+      if (label) {
+        const text = label.innerText.toLowerCase();
+        if (text.includes('views')) activeAnalyticsMetric = 'views';
+        else if (text.includes('watch')) activeAnalyticsMetric = 'watch';
+        else if (text.includes('sub')) activeAnalyticsMetric = 'subs';
+        renderAnalyticsChart();
+      }
+    });
+  });
+}
+
 function renderContentTable(channel) {
   const tbody = document.getElementById('content-table-body');
-  if (!tbody) return;
-  tbody.innerHTML = '';
+  const mobileContainer = document.getElementById('mobile-content-cards');
+  const mainContainer = document.getElementById('content-main-container');
+  const altContainer = document.getElementById('content-alt-container');
 
-  let vids = [];
+  // Gather videos
+  let allVids = [];
   if (channel) {
-    vids = [...(channel.uploaded_videos || [])];
-  } else {
+    allVids = [...(channel.uploaded_videos || [])];
+  } else if (globalData && globalData.channels) {
     globalData.channels.forEach(c => {
       (c.uploaded_videos || []).forEach(v => {
-        vids.push({ ...v, channel_name: c.name });
+        allVids.push({ ...v, channel_name: c.name });
       });
     });
   }
 
-  // Sort strictly by latest upload date descending (Newest first, like YouTube Studio)
-  vids.sort((a, b) => new Date(b.uploaded_at || 0) - new Date(a.uploaded_at || 0));
+  // Update subtab counts
+  const countShortsEl = document.getElementById('count-shorts');
+  const countVideosEl = document.getElementById('count-videos');
+  const countLiveEl = document.getElementById('count-live');
+  const countPlaylistsEl = document.getElementById('count-playlists');
+  if (countShortsEl) countShortsEl.innerText = allVids.length;
+  if (countVideosEl) countVideosEl.innerText = '0';
+  if (countLiveEl) countLiveEl.innerText = '0';
+  if (countPlaylistsEl) countPlaylistsEl.innerText = channel ? '1' : '5';
 
-  if (vids.length === 0) {
-    tbody.innerHTML = `<tr><td colspan="8" style="text-align:center; padding:32px; color:var(--yt-text-secondary);">No videos uploaded yet.</td></tr>`;
+  // Subtab 1: Videos (Long-form)
+  if (activeContentSubtab === 'videos') {
+    if (mainContainer) mainContainer.style.display = 'none';
+    if (altContainer) {
+      altContainer.style.display = 'block';
+      altContainer.innerHTML = `
+        <div class="empty-tab-state">
+          <div class="empty-state-icon">🎬</div>
+          <div class="empty-state-title">No traditional long-form videos</div>
+          <div class="empty-state-desc">This automation fleet is 100% focused on high-reach vertical YouTube Shorts. All ${allVids.length} uploaded videos are located in the Shorts tab.</div>
+          <button class="yt-btn-flat mt-12" id="btn-switch-to-shorts">VIEW ALL ${allVids.length} SHORTS</button>
+        </div>
+      `;
+      const btnSwitch = document.getElementById('btn-switch-to-shorts');
+      if (btnSwitch) {
+        btnSwitch.addEventListener('click', () => {
+          document.querySelectorAll('#content-subtabs-bar .subtab').forEach(b => {
+            b.classList.toggle('active', b.getAttribute('data-subtab') === 'shorts');
+          });
+          activeContentSubtab = 'shorts';
+          renderContentTable(channel);
+        });
+      }
+    }
     return;
   }
 
-  const mobileContainer = document.getElementById('mobile-content-cards');
+  // Subtab 2: Live
+  if (activeContentSubtab === 'live') {
+    if (mainContainer) mainContainer.style.display = 'none';
+    if (altContainer) {
+      altContainer.style.display = 'block';
+      altContainer.innerHTML = `
+        <div class="empty-tab-state">
+          <div class="empty-state-icon">📡</div>
+          <div class="empty-state-title">No live streams yet</div>
+          <div class="empty-state-desc">Live stream broadcasts and automated restream events will appear here once scheduled.</div>
+        </div>
+      `;
+    }
+    return;
+  }
+
+  // Subtab 3: Playlists
+  if (activeContentSubtab === 'playlists') {
+    if (mainContainer) mainContainer.style.display = 'none';
+    if (altContainer) {
+      altContainer.style.display = 'block';
+      const chList = channel ? [channel] : (globalData ? globalData.channels : []);
+      let html = '<div class="playlists-grid">';
+      chList.forEach(ch => {
+        const topVid = (ch.uploaded_videos && ch.uploaded_videos[0]) || {};
+        const thumb = topVid.thumbnail || `https://i.ytimg.com/vi/${topVid.youtube_id || ''}/mqdefault.jpg`;
+        const vCount = ch.channel_total_videos || (ch.uploaded_videos ? ch.uploaded_videos.length : 0);
+        html += `
+          <div class="playlist-card">
+            <div class="playlist-thumb-box">
+              <img src="${thumb}" alt="${ch.name}" />
+              <div class="playlist-count-overlay">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="#fff"><path d="M4 10h12v2H4zm0-4h12v2H4zm0 8h8v2H4zm10 0v6l5-3z"/></svg>
+                <span>${vCount} videos</span>
+              </div>
+            </div>
+            <div class="playlist-card-body">
+              <div class="playlist-card-title">${ch.name} • Shorts Feed</div>
+              <div class="playlist-card-meta">${ch.category} • Updated Today</div>
+              <div class="playlist-card-actions">
+                <a href="${ch.channel_url}/playlists" target="_blank" class="btn-playlist-play">▶ Play on YouTube</a>
+                <a href="${ch.channel_url}" target="_blank" class="btn-playlist-play">View Channel ↗</a>
+              </div>
+            </div>
+          </div>
+        `;
+      });
+      html += '</div>';
+      altContainer.innerHTML = html;
+    }
+    return;
+  }
+
+  // Subtab 4 (Default): Shorts
+  if (mainContainer) mainContainer.style.display = 'block';
+  if (altContainer) altContainer.style.display = 'none';
+
+  // Apply search query filter
+  let vids = allVids;
+  if (contentSearchQuery) {
+    const q = contentSearchQuery.toLowerCase();
+    vids = vids.filter(v => (v.title && v.title.toLowerCase().includes(q)) || (v.youtube_id && v.youtube_id.toLowerCase().includes(q)));
+  }
+
+  // Sort by latest upload date descending
+  vids.sort((a, b) => new Date(b.uploaded_at || 0) - new Date(a.uploaded_at || 0));
+
+  if (!tbody) return;
+  tbody.innerHTML = '';
   if (mobileContainer) mobileContainer.innerHTML = '';
+
+  if (vids.length === 0) {
+    tbody.innerHTML = `<tr><td colspan="8" style="text-align:center; padding:36px; color:var(--yt-text-secondary);">${contentSearchQuery ? `No videos matching "${contentSearchQuery}"` : 'No videos uploaded yet.'}</td></tr>`;
+    if (mobileContainer) {
+      mobileContainer.innerHTML = `<div style="text-align:center; padding:32px 16px; color:var(--yt-text-secondary);">${contentSearchQuery ? `No videos matching "${contentSearchQuery}"` : 'No videos uploaded yet.'}</div>`;
+    }
+    return;
+  }
 
   vids.forEach(v => {
     const thumb = v.thumbnail || `https://i.ytimg.com/vi/${v.youtube_id}/mqdefault.jpg`;
-    const dateStr = v.uploaded_at ? new Date(v.uploaded_at).toLocaleDateString([], { month: 'short', day: 'numeric', year: 'numeric' }) : 'Sep 11, 2026';
+    const dateStr = v.uploaded_at ? new Date(v.uploaded_at).toLocaleDateString([], { month: 'short', day: 'numeric', year: 'numeric' }) : 'Sep 12, 2026';
+    const isChecked = selectedVideoIds.has(v.youtube_id);
 
     // 1. Desktop Table Row
     const tr = document.createElement('tr');
     tr.innerHTML = `
-      <td class="col-checkbox"><input type="checkbox" /></td>
+      <td class="col-checkbox">
+        <input type="checkbox" class="row-vid-check" data-vid-id="${v.youtube_id}" ${isChecked ? 'checked' : ''} />
+      </td>
       <td class="col-video">
         <div class="video-cell">
-          <img src="${thumb}" class="table-thumb" alt="${v.title}" />
+          <div class="table-thumb-wrap" style="position:relative;">
+            <img src="${thumb}" class="table-thumb" alt="${v.title}" />
+            <span style="position:absolute; bottom:2px; right:2px; background:rgba(0,0,0,0.8); color:#fff; font-size:9.5px; padding:1px 3px; border-radius:2px; font-weight:700;">🩳 SHORTS</span>
+          </div>
           <div class="table-title-wrap">
             <a href="${v.youtube_url}" target="_blank" class="table-video-title" title="${v.title}">${v.title}</a>
             <span class="table-video-id">${v.channel_name ? v.channel_name + ' • ' : ''}ID: ${v.youtube_id}</span>
@@ -543,9 +866,20 @@ function renderContentTable(channel) {
       <td class="col-comments">${v.comments || 0}</td>
       <td class="col-likes">${v.likes || 0}</td>
     `;
+
+    // Row checkbox listener
+    const cb = tr.querySelector('.row-vid-check');
+    if (cb) {
+      cb.addEventListener('change', (e) => {
+        if (e.target.checked) selectedVideoIds.add(v.youtube_id);
+        else selectedVideoIds.delete(v.youtube_id);
+        updateBatchBar();
+      });
+    }
+
     tbody.appendChild(tr);
 
-    // 2. Mobile Native Card (For Phone Screens)
+    // 2. Mobile Native Card (Authentic 9:16 Vertical YouTube Shorts Card)
     if (mobileContainer) {
       const card = document.createElement('a');
       card.href = v.youtube_url;
@@ -554,6 +888,7 @@ function renderContentTable(channel) {
       card.innerHTML = `
         <div class="mobile-vid-thumb-wrap">
           <img src="${thumb}" alt="${v.title}" />
+          <span class="mobile-shorts-badge">🩳 SHORTS</span>
         </div>
         <div class="mobile-vid-info">
           <div class="mobile-vid-title" title="${v.title}">${v.title}</div>
@@ -561,16 +896,18 @@ function renderContentTable(channel) {
             <span class="mobile-vid-vis-dot"></span>
             <span>Public • ${dateStr}</span>
           </div>
-          <div class="mobile-vid-meta-row" style="margin-top:2px;">
-            <span>👁️ ${formatNumber(v.views)} views</span>
-            <span>•</span>
-            <span>👍 ${v.likes || 0}</span>
+          <div class="mobile-vid-metrics-chips">
+            <span class="mobile-metric-item">👁️ ${formatNumber(v.views)}</span>
+            <span class="mobile-metric-item">👍 ${v.likes || 0}</span>
+            <span class="mobile-metric-item">💬 ${v.comments || 0}</span>
           </div>
         </div>
       `;
       mobileContainer.appendChild(card);
     }
   });
+
+  updateBatchBar();
 }
 
 /* ========================================================
@@ -896,7 +1233,20 @@ function renderAnalyticsChart() {
     const t = v.title || 'Video';
     return t.length > 20 ? t.substring(0, 18) + '...' : t;
   });
-  const data = displayVids.map(v => v.views || 0);
+  let data = [];
+  let chartLabel = 'Real YouTube Views';
+  let chartColor = '#3EA6FF';
+  if (activeAnalyticsMetric === 'watch') {
+    chartLabel = 'Watch Time (Hours)';
+    chartColor = '#10B981';
+    data = displayVids.map(v => Number(((v.views || 0) * 0.004).toFixed(1)));
+  } else if (activeAnalyticsMetric === 'subs') {
+    chartLabel = 'Likes & Engagement';
+    chartColor = '#F59E0B';
+    data = displayVids.map(v => v.likes || 0);
+  } else {
+    data = displayVids.map(v => v.views || 0);
+  }
 
   if (analyticsChartInstance) {
     analyticsChartInstance.destroy();
@@ -907,9 +1257,9 @@ function renderAnalyticsChart() {
     data: {
       labels: labels,
       datasets: [{
-        label: 'Real YouTube Views',
+        label: chartLabel,
         data: data,
-        backgroundColor: '#3EA6FF',
+        backgroundColor: chartColor,
         borderRadius: 4,
         maxBarThickness: 48
       }]

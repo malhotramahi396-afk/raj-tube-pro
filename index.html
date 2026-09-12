@@ -9,7 +9,7 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <link rel="icon" type="image/png" href="https://www.gstatic.com/youtube/img/creator/favicon/favicon_144.png">
-  <link rel="stylesheet" href="./styles.css?v=8.0">
+  <link rel="stylesheet" href="./styles.css?v=9.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
@@ -58,7 +58,8 @@
         <svg viewBox="0 0 24 24" width="18" height="18" fill="#888888" class="search-icon">
           <path d="M20.87 19.47l-4.52-4.52A8 8 0 106.8 16.8a8 8 0 008.15-1.85l4.52 4.52a1 1 0 001.4-1.4zM4 10a6 6 0 116 6 6 6 0 01-6-6z"/>
         </svg>
-        <input type="text" placeholder="Search across your channel" id="studio-search" readonly />
+        <input type="text" placeholder="Search across your channel videos..." id="studio-search" autocomplete="off" />
+        <button class="clear-search-btn" id="btn-clear-search" style="display:none;">✕</button>
       </div>
     </div>
 
@@ -200,6 +201,29 @@
             <span class="pill-dot"></span>
             <span id="pill-channel-name">The Hidden Lens</span>
           </div>
+        </div>
+
+        <!-- MOBILE NATIVE APP CHANNEL PROFILE HERO (Visible on Phones) -->
+        <div class="mobile-channel-hero" id="mobile-channel-hero">
+          <div class="m-hero-left">
+            <div class="m-avatar-wrap">
+              <img id="m-hero-avatar" src="https://ui-avatars.com/api/?name=YT&background=333&color=fff" alt="Channel" />
+            </div>
+            <div class="m-hero-meta">
+              <div class="m-hero-name" id="m-hero-name">The Hidden Lens</div>
+              <div class="m-hero-handle" id="m-hero-handle">@TheHiddenLens-w8y</div>
+              <div class="m-hero-subs-row">
+                <span class="m-hero-subs-num" id="m-hero-subs">25</span>
+                <span class="m-hero-subs-lbl">subscribers</span>
+                <span class="m-hero-dot">•</span>
+                <span class="m-hero-growth text-green">▲ 100% Organic</span>
+              </div>
+            </div>
+          </div>
+          <button class="m-hero-switch-btn" id="m-hero-switch-btn">
+            <span>SWITCH</span>
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M7 10l5 5 5-5z"/></svg>
+          </button>
         </div>
 
         <!-- REAL-TIME LIVE DATA VERIFICATION BANNER -->
@@ -471,37 +495,72 @@
           <h1 class="page-title">Channel content</h1>
         </div>
 
-        <div class="content-subtabs">
-          <button class="subtab active">Videos</button>
-          <button class="subtab">Shorts</button>
-          <button class="subtab">Live</button>
-          <button class="subtab">Playlists</button>
+        <div class="content-toolbar">
+          <div class="content-subtabs" id="content-subtabs-bar">
+            <button class="subtab active" data-subtab="shorts">
+              <span class="subtab-icon">🩳</span> Shorts <span class="subtab-count" id="count-shorts">--</span>
+            </button>
+            <button class="subtab" data-subtab="videos">
+              <span class="subtab-icon">🎬</span> Videos <span class="subtab-count" id="count-videos">0</span>
+            </button>
+            <button class="subtab" data-subtab="live">
+              <span class="subtab-icon">📡</span> Live <span class="subtab-count" id="count-live">0</span>
+            </button>
+            <button class="subtab" data-subtab="playlists">
+              <span class="subtab-icon">📑</span> Playlists <span class="subtab-count" id="count-playlists">5</span>
+            </button>
+          </div>
+
+          <!-- Video Filter Input -->
+          <div class="content-search-wrap">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="#888">
+              <path d="M20.87 19.47l-4.52-4.52A8 8 0 106.8 16.8a8 8 0 008.15-1.85l4.52 4.52a1 1 0 001.4-1.4zM4 10a6 6 0 116 6 6 6 0 01-6-6z"/>
+            </svg>
+            <input type="text" placeholder="Filter videos by title..." id="content-filter-input" autocomplete="off" />
+            <button class="clear-search-btn" id="btn-clear-filter" style="display:none;">✕</button>
+          </div>
         </div>
 
-        <div class="yt-table-container">
-          <table class="studio-table" id="studio-content-table">
-            <thead>
-              <tr>
-                <th class="col-checkbox"><input type="checkbox" disabled /></th>
-                <th class="col-video">Video</th>
-                <th class="col-visibility">Visibility</th>
-                <th class="col-restrictions">Restrictions</th>
-                <th class="col-date">Date</th>
-                <th class="col-views">Views</th>
-                <th class="col-comments">Comments</th>
-                <th class="col-likes">Likes (vs. dislikes)</th>
-              </tr>
-            </thead>
-            <tbody id="content-table-body">
-              <!-- Populated via JavaScript with real videos -->
-            </tbody>
-          </table>
+        <!-- Floating Batch Action Bar (When videos selected) -->
+        <div class="table-batch-bar" id="table-batch-bar" style="display: none;">
+          <span class="batch-count" id="batch-selected-count">0 selected</span>
+          <div class="batch-actions">
+            <button class="batch-btn" id="btn-batch-copy">🔗 Copy YouTube Links</button>
+            <button class="batch-btn" id="btn-batch-open">↗ Open Selected</button>
+          </div>
+          <button class="batch-close-btn" id="btn-batch-cancel" title="Deselect all">✕</button>
         </div>
 
-        <!-- Mobile Video Feed (Active on Mobile Phone Screens <= 768px) -->
-        <div class="mobile-video-cards-list" id="mobile-content-cards">
-          <!-- Populated via JavaScript for Mobile Phone View -->
+        <!-- MAIN CONTENT CONTAINER (Table on PC, Native Cards on Mobile) -->
+        <div id="content-main-container">
+          <div class="yt-table-container">
+            <table class="studio-table" id="studio-content-table">
+              <thead>
+                <tr>
+                  <th class="col-checkbox"><input type="checkbox" id="checkbox-select-all" /></th>
+                  <th class="col-video">Video</th>
+                  <th class="col-visibility">Visibility</th>
+                  <th class="col-restrictions">Restrictions</th>
+                  <th class="col-date">Date</th>
+                  <th class="col-views">Views</th>
+                  <th class="col-comments">Comments</th>
+                  <th class="col-likes">Likes (vs. dislikes)</th>
+                </tr>
+              </thead>
+              <tbody id="content-table-body">
+                <!-- Populated via JavaScript with real videos -->
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Mobile Video Feed (Active on Mobile Phone Screens <= 768px) -->
+          <div class="mobile-video-cards-list" id="mobile-content-cards">
+            <!-- Populated via JavaScript for Mobile Phone View -->
+          </div>
         </div>
+
+        <!-- Alternate Tab Display (Empty state for Videos/Live or Playlist Grid) -->
+        <div id="content-alt-container" style="display: none;"></div>
       </section>
 
       <!-- ==========================================================
@@ -788,9 +847,61 @@
     </button>
   </nav>
 
+  <!-- YOUTUBE STUDIO CREATE & ACTIONS MODAL -->
+  <div class="studio-modal-overlay" id="create-modal-overlay">
+    <div class="studio-modal-card">
+      <div class="studio-modal-header">
+        <div class="modal-title-row">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="#FF0000">
+            <path d="M17 10.5V7c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4zM14 13h-3v3H9v-3H6v-2h3V8h2v3h3v2z"/>
+          </svg>
+          <h3>Create & Quick Actions</h3>
+        </div>
+        <button class="modal-close-btn" id="btn-close-create-modal">✕</button>
+      </div>
+
+      <div class="studio-modal-body">
+        <div class="create-action-list">
+          <a href="#" id="modal-drive-link" target="_blank" class="create-action-item">
+            <div class="create-item-icon bg-blue">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM14 13v4h-4v-4H7l5-5 5 5h-3z"/></svg>
+            </div>
+            <div class="create-item-info">
+              <div class="create-item-title">Upload Videos to Google Drive Queue</div>
+              <div class="create-item-desc">Drop new MP4 shorts into this channel's cloud drive queue</div>
+            </div>
+            <span class="create-item-arrow">↗</span>
+          </a>
+
+          <button class="create-action-item" id="modal-btn-force-sync">
+            <div class="create-item-icon bg-green">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M17.65 6.35A7.958 7.958 0 0012 4c-4.42 0-7.99 3.58-7.99 8s3.57 8 7.99 8c3.73 0 6.84-2.55 7.73-6h-2.08A5.99 5.99 0 0112 18c-3.31 0-6-2.69-6-6s2.69-6 6-6c1.66 0 3.14.69 4.22 1.78L13 11h7V4l-2.35 2.35z"/></svg>
+            </div>
+            <div class="create-item-info">
+              <div class="create-item-title">Force Sync Live YouTube Metrics</div>
+              <div class="create-item-desc">Fetch fresh views, subscribers & likes directly from YouTube Data API</div>
+            </div>
+            <span class="create-item-arrow">⚡</span>
+          </button>
+
+          <button class="create-action-item" id="modal-btn-goto-health">
+            <div class="create-item-icon bg-amber">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+            </div>
+            <div class="create-item-info">
+              <div class="create-item-title">Check Channel Health & Strike Radar</div>
+              <div class="create-item-desc">Review copyright standing, AI synthetic disclosures, and algorithm reach</div>
+            </div>
+            <span class="create-item-arrow">→</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- Toast Notification -->
   <div id="toast" class="toast">Link copied to clipboard!</div>
 
-  <script src="./app.js?v=8.0"></script>
+  <script src="./app.js?v=9.0"></script>
 </body>
 </html>
