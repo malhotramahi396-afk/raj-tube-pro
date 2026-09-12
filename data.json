@@ -1,36 +1,36 @@
 {
   "app_name": "Raj Tube Pro",
   "version": "6.0.0",
-  "timestamp": "2026-09-12T18:50:26.758275+00:00",
+  "timestamp": "2026-09-12T19:44:13.304265+00:00",
   "schedule": {
     "next_slot_iso": "2026-09-12T22:00:00+00:00",
-    "seconds_remaining": 11381,
-    "formatted_countdown": "03h 09m 41s",
+    "seconds_remaining": 8154,
+    "formatted_countdown": "02h 15m 54s",
     "slot_label": "06:00 PM USA (3:30 AM IST)",
-    "now_ist": "13 Sep, 12:20 AM IST"
+    "now_ist": "13 Sep, 01:14 AM IST"
   },
   "summary": {
     "total_channels": 5,
     "total_uploaded": 47,
     "total_in_queue": 547,
-    "total_subscribers": 101,
-    "total_views": 113472,
-    "total_likes": 1074,
+    "total_subscribers": 102,
+    "total_views": 118174,
+    "total_likes": 1089,
     "network_engagement": 0.9,
     "total_runway_days": 54.7,
     "system_health": "All Systems Operational",
     "issues_count": 0,
     "top_trending_video": {
       "title": "He Was Not Backing Down From Anyone #SlapFight #PowerSlap #SlapFighting #Viral #Sports.",
-      "views": 31201,
-      "likes": 351,
+      "views": 34643,
+      "likes": 353,
       "youtube_url": "https://youtu.be/t5oF0IsXkN0",
       "thumbnail": "https://i.ytimg.com/vi/t5oF0IsXkN0/mqdefault.jpg",
       "channel_name": "Zyntrix07",
       "uploaded_at": "2026-09-11T16:04:35Z"
     },
     "analytics": {
-      "watch_time_hours": 476.6,
+      "watch_time_hours": 496.3,
       "avg_view_duration": "0:24",
       "top_countries": [
         {
@@ -173,10 +173,10 @@
         "is_clean": true
       },
       "view_health": {
-        "label": "YouTube API Verified: 2,414 avg views/video (113,472 total views across 47 videos)",
-        "badge": "2,414 AVG",
+        "label": "YouTube API Verified: 2,514 avg views/video (118,174 total views across 47 videos)",
+        "badge": "2,514 AVG",
         "color": "#10B981",
-        "avg_views": 2414.3,
+        "avg_views": 2514.3,
         "shorts_feed_share": "81.2%",
         "velocity_verdict": "Algorithm Reach: High"
       },
@@ -207,14 +207,14 @@
       "github_repo": "malhotramahi396-afk/yt-automation-the-hidden-lens",
       "color": "#10B981",
       "avatar_url": "https://yt3.ggpht.com/R5wyufkApz5fijH1a4mek8n6CM9y64QklZgfgjuGI-SOwbTIBjEFmmKot6aBnYkVRwOpq965=s240-c-k-c0x00ffffff-no-rj",
-      "subscribers": 25,
-      "total_views": 11760,
+      "subscribers": 26,
+      "total_views": 12567,
       "channel_total_videos": 4,
-      "avg_views_per_video": 2940.0,
-      "engagement_rate": 1.6,
-      "total_likes": 183,
+      "avg_views_per_video": 3141.8,
+      "engagement_rate": 1.5,
+      "total_likes": 193,
       "analytics": {
-        "watch_time_hours": 49.4,
+        "watch_time_hours": 52.8,
         "avg_view_duration": "0:24",
         "top_countries": [
           {
@@ -357,10 +357,10 @@
           "is_clean": true
         },
         "view_health": {
-          "label": "YouTube API Verified: 2,940 avg views/video (11,760 total views across 4 videos)",
-          "badge": "2,940 AVG",
+          "label": "YouTube API Verified: 3,142 avg views/video (12,567 total views across 4 videos)",
+          "badge": "3,142 AVG",
           "color": "#10B981",
-          "avg_views": 2940.0,
+          "avg_views": 3141.8,
           "shorts_feed_share": "81.2%",
           "velocity_verdict": "Algorithm Reach: High"
         },
@@ -393,8 +393,8 @@
         "title": "Close Enough To Hear His Breath #wildlife #shorts #cameraman #viral",
         "uploaded_at": "2026-09-12T14:03:34Z",
         "thumbnail": "https://i.ytimg.com/vi/RMgm8o875X0/mqdefault.jpg",
-        "views": 1067,
-        "likes": 16,
+        "views": 1201,
+        "likes": 17,
         "comments": 0
       },
       "uploaded_videos": [
@@ -404,8 +404,8 @@
           "title": "Close Enough To Hear His Breath #wildlife #shorts #cameraman #viral",
           "uploaded_at": "2026-09-12T14:03:34Z",
           "thumbnail": "https://i.ytimg.com/vi/RMgm8o875X0/mqdefault.jpg",
-          "views": 1067,
-          "likes": 16,
+          "views": 1201,
+          "likes": 17,
           "comments": 0
         },
         {
@@ -424,8 +424,8 @@
           "title": "Breathtaking 4K Wildlife Moment #wildlifephotography #shorts #naturelovers #viral",
           "uploaded_at": "2026-09-11T14:42:29Z",
           "thumbnail": "https://i.ytimg.com/vi/3pDpmQcqJT8/mqdefault.jpg",
-          "views": 7560,
-          "likes": 144,
+          "views": 8233,
+          "likes": 153,
           "comments": 0
         },
         {
@@ -484,13 +484,13 @@
       "color": "#F59E0B",
       "avatar_url": "https://yt3.ggpht.com/TTLhq8ijvpChRrWaVb1i96FzeFG02Gd31oOfWo4EdOtBtfqTD6h0TrRmEOTd2fE8V0kPexV6EA=s240-c-k-c0x00ffffff-no-rj",
       "subscribers": 65,
-      "total_views": 76829,
+      "total_views": 80609,
       "channel_total_videos": 11,
-      "avg_views_per_video": 6984.5,
+      "avg_views_per_video": 7328.1,
       "engagement_rate": 0.8,
-      "total_likes": 605,
+      "total_likes": 609,
       "analytics": {
-        "watch_time_hours": 322.7,
+        "watch_time_hours": 338.6,
         "avg_view_duration": "0:24",
         "top_countries": [
           {
@@ -633,10 +633,10 @@
           "is_clean": true
         },
         "view_health": {
-          "label": "YouTube API Verified: 6,984 avg views/video (76,829 total views across 11 videos)",
-          "badge": "6,984 AVG",
+          "label": "YouTube API Verified: 7,328 avg views/video (80,609 total views across 11 videos)",
+          "badge": "7,328 AVG",
           "color": "#10B981",
-          "avg_views": 6984.5,
+          "avg_views": 7328.1,
           "shorts_feed_share": "81.2%",
           "velocity_verdict": "Algorithm Reach: High"
         },
@@ -669,8 +669,8 @@
         "title": "Nobody Expected That Faceoff Reaction #SlapFighting #PowerSlap #SlapBattle #CombatSports #Viral.",
         "uploaded_at": "2026-09-12T14:06:29Z",
         "thumbnail": "https://i.ytimg.com/vi/7OVj2yza4ks/mqdefault.jpg",
-        "views": 759,
-        "likes": 17,
+        "views": 836,
+        "likes": 18,
         "comments": 1
       },
       "uploaded_videos": [
@@ -680,8 +680,8 @@
           "title": "Nobody Expected That Faceoff Reaction #SlapFighting #PowerSlap #SlapBattle #CombatSports #Viral.",
           "uploaded_at": "2026-09-12T14:06:29Z",
           "thumbnail": "https://i.ytimg.com/vi/7OVj2yza4ks/mqdefault.jpg",
-          "views": 759,
-          "likes": 17,
+          "views": 836,
+          "likes": 18,
           "comments": 1
         },
         {
@@ -690,8 +690,8 @@
           "title": "His Confidence Had The Whole Crowd Talking #PowerSlap #SlapFighting #SlapFight #Viral #Sports.",
           "uploaded_at": "2026-09-11T22:07:28Z",
           "thumbnail": "https://i.ytimg.com/vi/g-2DEoij8dY/mqdefault.jpg",
-          "views": 3051,
-          "likes": 57,
+          "views": 3312,
+          "likes": 58,
           "comments": 0
         },
         {
@@ -700,8 +700,8 @@
           "title": "He Was Not Backing Down From Anyone #SlapFight #PowerSlap #SlapFighting #Viral #Sports.",
           "uploaded_at": "2026-09-11T16:04:35Z",
           "thumbnail": "https://i.ytimg.com/vi/t5oF0IsXkN0/mqdefault.jpg",
-          "views": 31201,
-          "likes": 351,
+          "views": 34643,
+          "likes": 353,
           "comments": 1
         },
         {
@@ -1150,13 +1150,13 @@
       "color": "#8B5CF6",
       "avatar_url": "https://yt3.ggpht.com/WKefM8i0bji48M_e159k6q0080b5zNwYExax_QloW7H3XguFARUF-SuE62a8rdPQJXvtTXxbJQ=s240-c-k-c0x00ffffff-no-rj",
       "subscribers": 1,
-      "total_views": 473,
+      "total_views": 588,
       "channel_total_videos": 10,
-      "avg_views_per_video": 47.3,
-      "engagement_rate": 1.1,
-      "total_likes": 5,
+      "avg_views_per_video": 58.8,
+      "engagement_rate": 1.0,
+      "total_likes": 6,
       "analytics": {
-        "watch_time_hours": 2.0,
+        "watch_time_hours": 2.5,
         "avg_view_duration": "0:24",
         "top_countries": [
           {
@@ -1299,10 +1299,10 @@
           "is_clean": true
         },
         "view_health": {
-          "label": "Warm-Up Phase: 47 avg views/video (473 total views across 10 videos)",
-          "badge": "47 AVG",
+          "label": "Warm-Up Phase: 59 avg views/video (588 total views across 10 videos)",
+          "badge": "59 AVG",
           "color": "#F59E0B",
-          "avg_views": 47.3,
+          "avg_views": 58.8,
           "shorts_feed_share": "81.2%",
           "velocity_verdict": "Algorithm Reach: Healthy"
         },
@@ -1335,8 +1335,8 @@
         "title": "Adorable Toddler Reacts In The Cutest Way #ToddlerLife #CutestMoments #FamilyMoments #WholesomeConte",
         "uploaded_at": "2026-09-12T17:39:42Z",
         "thumbnail": "https://i.ytimg.com/vi/goCoZBF3N_M/mqdefault.jpg",
-        "views": 466,
-        "likes": 5,
+        "views": 581,
+        "likes": 6,
         "comments": 0
       },
       "uploaded_videos": [
@@ -1346,8 +1346,8 @@
           "title": "Adorable Toddler Reacts In The Cutest Way #ToddlerLife #CutestMoments #FamilyMoments #WholesomeConte",
           "uploaded_at": "2026-09-12T17:39:42Z",
           "thumbnail": "https://i.ytimg.com/vi/goCoZBF3N_M/mqdefault.jpg",
-          "views": 466,
-          "likes": 5,
+          "views": 581,
+          "likes": 6,
           "comments": 0
         },
         {

@@ -2042,9 +2042,16 @@ button {
     transition: background 0.15s;
   }
 
-  .m-hero-switch-btn:active {
-    background: #333333;
-    transform: scale(0.96);
+  .mobile-channel-hero {
+    cursor: pointer;
+  }
+
+  .m-hero-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #888888;
   }
 
   /* Native Mobile Bottom Sheet for Channel Switcher */
@@ -2070,14 +2077,17 @@ button {
     background: #1e1e1e !important;
     border: 1px solid #333 !important;
     border-bottom: none !important;
-    box-shadow: 0 -8px 36px rgba(0, 0, 0, 0.8) !important;
-    z-index: 2500 !important;
+    box-shadow: 0 -8px 36px rgba(0, 0, 0, 0.85) !important;
+    z-index: 3000 !important;
     transform: translateY(100%);
     transition: transform 0.28s cubic-bezier(0.33, 1, 0.68, 1);
     display: flex !important;
+    flex-direction: column !important;
     visibility: hidden;
-    padding-bottom: env(safe-area-inset-bottom, 24px);
-    max-height: 80vh;
+    padding-bottom: env(safe-area-inset-bottom, 20px);
+    max-height: 80vh !important;
+    overflow: hidden !important;
+    overscroll-behavior: contain !important;
   }
 
   .channel-dropdown.open {
@@ -2086,10 +2096,24 @@ button {
   }
 
   .channel-options-list {
+    flex: 1 1 auto !important;
     max-height: 48vh !important;
     overflow-y: auto !important;
-    -webkit-overflow-scrolling: touch;
+    overflow-x: hidden !important;
+    -webkit-overflow-scrolling: touch !important;
+    overscroll-behavior: contain !important;
+    touch-action: pan-y !important;
   }
+
+  .channel-opt-item {
+    touch-action: pan-y !important;
+    -webkit-tap-highlight-color: transparent !important;
+  }
+}
+
+body.sheet-open {
+  overflow: hidden !important;
+  touch-action: none !important;
 }
 
 /* ========================================================
