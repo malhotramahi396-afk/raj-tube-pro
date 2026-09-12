@@ -177,6 +177,15 @@ function setupChannelDropdown() {
   if (backdrop) backdrop.addEventListener('click', closeSheet);
   if (sheetHandle) sheetHandle.addEventListener('click', closeSheet);
 
+  const dropdownSettingsBtn = document.getElementById('btn-dropdown-settings');
+  if (dropdownSettingsBtn) {
+    dropdownSettingsBtn.addEventListener('click', () => {
+      closeSheet();
+      switchView('settings');
+      showToast("Studio Settings");
+    });
+  }
+
   const copyMobileBtn = document.getElementById('btn-copy-mobile-url');
   if (copyMobileBtn) {
     copyMobileBtn.addEventListener('click', () => {

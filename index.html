@@ -15,7 +15,7 @@
   <link rel="icon" type="image/png" sizes="512x512" href="./icons/icon-512.png">
   <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png">
   <link rel="shortcut icon" href="./icons/icon-192.png">
-  <link rel="stylesheet" href="./styles.css?v=11.0">
+  <link rel="stylesheet" href="./styles.css?v=12.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
@@ -109,6 +109,9 @@
     </div>
 
     <div class="dropdown-footer">
+      <button class="btn-dropdown-action" id="btn-dropdown-settings" style="margin-bottom: 8px;">
+        <span>⚙️ Studio Settings</span>
+      </button>
       <button class="btn-dropdown-action" id="btn-copy-mobile-url">
         <span>📲 Copy Mobile 4G/5G Link</span>
       </button>
@@ -407,17 +410,22 @@
 
                 <div class="summary-section">
                   <div class="summary-heading">Summary <span class="sub-muted">Last 28 days</span></div>
-                  <div class="summary-row">
-                    <span>Views</span>
-                    <span class="summary-num" id="dash-summary-views">--</span>
-                  </div>
-                  <div class="summary-row">
-                    <span>Total Likes</span>
-                    <span class="summary-num" id="dash-summary-likes">--</span>
-                  </div>
-                  <div class="summary-row">
-                    <span>Average per video</span>
-                    <span class="summary-num" id="dash-summary-avg">--</span>
+                  <div class="dash-summary-tiles">
+                    <div class="dash-stat-tile">
+                      <span class="stat-tile-label">Views</span>
+                      <span class="stat-tile-value" id="dash-summary-views">--</span>
+                      <span class="stat-tile-delta text-green">▲ 100%</span>
+                    </div>
+                    <div class="dash-stat-tile">
+                      <span class="stat-tile-label">Total Likes</span>
+                      <span class="stat-tile-value" id="dash-summary-likes">--</span>
+                      <span class="stat-tile-delta text-green">▲ 100%</span>
+                    </div>
+                    <div class="dash-stat-tile">
+                      <span class="stat-tile-label">Avg / Video</span>
+                      <span class="stat-tile-value" id="dash-summary-avg">--</span>
+                      <span class="stat-tile-delta text-green">▲ Optimal</span>
+                    </div>
                   </div>
                 </div>
 
@@ -904,6 +912,6 @@
   <!-- Toast Notification -->
   <div id="toast" class="toast">Link copied to clipboard!</div>
 
-  <script src="./app.js?v=9.0"></script>
+  <script src="./app.js?v=12.0"></script>
 </body>
 </html>
