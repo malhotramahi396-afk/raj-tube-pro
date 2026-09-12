@@ -145,7 +145,7 @@ function closeSidebarOnMobile() {
   }
 }
 
-//* ========================================================
+/* ========================================================
    CHANNEL SWITCHER DROPDOWN / MOBILE BOTTOM SHEET
    ======================================================== */
 function setupChannelDropdown() {
@@ -231,14 +231,6 @@ function setupSync() {
       } finally {
         setTimeout(() => { syncBtn.style.transform = 'none'; }, 600);
       }
-    });
-  }
-}
-  const createBtn = document.getElementById('btn-create');
-  if (createBtn) {
-    createBtn.addEventListener('click', () => {
-      switchView('queue');
-      showToast("View scheduled upload queue and Google Drive stock below.");
     });
   }
 }
