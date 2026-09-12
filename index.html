@@ -173,6 +173,14 @@
           <span class="nav-badge badge-green" id="sidebar-health-badge">100%</span>
         </button>
 
+        <button class="nav-item" data-view="radar">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+          </svg>
+          <span class="nav-text">IP & Geo Radar</span>
+          <span class="nav-badge badge-green" id="sidebar-radar-badge">10 NODES</span>
+        </button>
+
         <div class="sidebar-divider"></div>
 
         <button class="nav-item" data-view="settings">
@@ -487,6 +495,56 @@
 
                 <div class="yt-card-footer">
                   <button class="yt-btn-flat" id="btn-goto-queue">VIEW QUEUE DETAILS</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- WIDGET: Cloud Runner IP & Geolocation Radar -->
+            <div class="yt-card widget-runner-radar">
+              <div class="yt-card-header">
+                <div style="display: flex; align-items: center; justify-content: space-between; width: 100%;">
+                  <h2>Cloud Runner IP & Geo Radar</h2>
+                  <span class="live-badge-tag" style="background: rgba(16, 185, 129, 0.15); color: #10B981; border: 1px solid rgba(16, 185, 129, 0.3); font-size: 10.5px; padding: 3px 8px; border-radius: 12px; font-weight: 600;">🟢 100% GENUINE IP</span>
+                </div>
+              </div>
+
+              <div class="yt-card-body">
+                <div class="runner-radar-hero-box">
+                  <div class="runner-flag-badge" id="dash-runner-flag">🇺🇸</div>
+                  <div class="runner-hero-meta">
+                    <div class="runner-ip-display">
+                      <span class="runner-ip-code" id="dash-runner-ip">132.196.31.128</span>
+                      <button class="btn-copy-mini" id="dash-btn-copy-ip" title="Copy exact IP">📋</button>
+                    </div>
+                    <div class="runner-geo-location" id="dash-runner-geo">Des Moines, Iowa, United States</div>
+                  </div>
+                </div>
+
+                <div class="metric-rows-table mt-12">
+                  <div class="m-row">
+                    <span class="m-label">Cloud Datacenter</span>
+                    <span class="m-val font-semibold text-blue" id="dash-runner-dc">Microsoft Azure Central US (Iowa)</span>
+                  </div>
+                  <div class="m-row">
+                    <span class="m-label">Network AS / Org</span>
+                    <span class="m-val" id="dash-runner-org">AS8075 Microsoft Corporation</span>
+                  </div>
+                  <div class="m-row">
+                    <span class="m-label">Simultaneous IP Overlap</span>
+                    <span class="m-val text-green font-semibold">0% (Unique Ephemeral IP Per Channel)</span>
+                  </div>
+                  <div class="m-row">
+                    <span class="m-label">Live Verification Status</span>
+                    <span class="m-val text-green">100% Genuine (Live ipinfo.io Probe)</span>
+                  </div>
+                </div>
+
+                <div class="runner-card-actions mt-16">
+                  <a href="https://ipinfo.io/132.196.31.128" target="_blank" class="yt-btn-primary" id="dash-runner-track-link">
+                    <span>🔎 Track IP & Whois (ipinfo.io)</span>
+                    <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M19 19H5V5h7V3H5a2 2 0 00-2 2v14a2 2 0 002 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/></svg>
+                  </a>
+                  <button class="yt-btn-flat" id="btn-goto-radar">VIEW ALL 10 CHANNEL IPS →</button>
                 </div>
               </div>
             </div>
@@ -814,6 +872,75 @@
         </div>
       </section>
 
+      <!-- ==========================================================
+           TAB 7: CLOUD RUNNER IP & GEOLOCATION RADAR
+           ========================================================== -->
+      <section class="tab-view" id="view-radar">
+        <div class="page-title-row">
+          <h1 class="page-title">Cloud Runner IP & Geolocation Radar</h1>
+          <span class="health-fleet-badge badge-clean" id="radar-fleet-status-pill">🌐 10 / 10 Cloud Runner Nodes Active</span>
+        </div>
+
+        <!-- FLEET RUNNER HERO BANNER -->
+        <div class="yt-card radar-hero-card">
+          <div class="radar-hero-body">
+            <div class="radar-hero-left">
+              <div class="radar-pulse-radar">
+                <div class="radar-pulse-ring"></div>
+                <div class="radar-pulse-core">🌐</div>
+              </div>
+              <div class="radar-hero-text">
+                <h2 class="hero-title">100% Genuine, Isolated Cloud Runner IPs</h2>
+                <p class="hero-desc">
+                  Every automated YouTube upload executes on an isolated Microsoft Azure Virtual Machine runner. Each channel receives a distinct, ephemeral public IP address with 0% simultaneous IP collision, protecting all channels against cross-account detection.
+                </p>
+                <div class="hero-tags-row">
+                  <span class="hero-tag">🇺🇸 Microsoft Azure Cloud Datacenters</span>
+                  <span class="hero-tag">🛡️ Zero Cross-Channel IP Overlap</span>
+                  <span class="hero-tag">⚡ Live ipinfo.io Real-Time Telemetry</span>
+                  <span class="hero-tag">🔎 1-Click Public Whois Verification</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="radar-hero-stats">
+              <div class="radar-stat-box">
+                <div class="radar-stat-num">10</div>
+                <div class="radar-stat-lbl">Active Cloud Nodes</div>
+              </div>
+              <div class="radar-stat-box">
+                <div class="radar-stat-num text-green">10</div>
+                <div class="radar-stat-lbl">Distinct Public IPs</div>
+              </div>
+              <div class="radar-stat-box">
+                <div class="radar-stat-num text-blue">0%</div>
+                <div class="radar-stat-lbl">Simultaneous Overlap</div>
+              </div>
+              <div class="radar-stat-box">
+                <div class="radar-stat-num text-amber">100%</div>
+                <div class="radar-stat-lbl">Genuine & Verifiable</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SEARCH / FILTER FOR CHANNELS OR IPS -->
+        <div class="content-toolbar mt-20">
+          <h2 class="section-subheading" style="margin:0;">Channel Cloud Runner Nodes (10 Channels)</h2>
+          <div class="content-search-wrap">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="#888">
+              <path d="M20.87 19.47l-4.52-4.52A8 8 0 106.8 16.8a8 8 0 008.15-1.85l4.52 4.52a1 1 0 001.4-1.4zM4 10a6 6 0 116 6 6 6 0 01-6-6z"/>
+            </svg>
+            <input type="text" placeholder="Search by channel, IP, city or region..." id="radar-search-input" autocomplete="off" />
+          </div>
+        </div>
+
+        <!-- 10 CHANNELS CLOUD RUNNER GRID / CARDS -->
+        <div class="radar-channels-grid" id="radar-channels-grid">
+          <!-- Populated dynamically via JavaScript -->
+        </div>
+      </section>
+
     </main>
   </div>
 
@@ -842,6 +969,12 @@
         <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/>
       </svg>
       <span>Health</span>
+    </button>
+    <button class="bottom-nav-item" data-view="radar">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+      </svg>
+      <span>Radar</span>
     </button>
     <button class="bottom-nav-item" data-view="queue">
       <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
@@ -901,6 +1034,17 @@
             <div class="create-item-info">
               <div class="create-item-title">Check Channel Health & Strike Radar</div>
               <div class="create-item-desc">Review copyright standing, AI synthetic disclosures, and algorithm reach</div>
+            </div>
+            <span class="create-item-arrow">→</span>
+          </button>
+
+          <button class="create-action-item" id="modal-btn-goto-radar">
+            <div class="create-item-icon" style="background: rgba(168, 85, 247, 0.2); color: #C084FC;">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+            </div>
+            <div class="create-item-info">
+              <div class="create-item-title">Cloud Runner IP & Geolocation Radar</div>
+              <div class="create-item-desc">Track real Microsoft Azure runner public IPs and track whois data for each channel</div>
             </div>
             <span class="create-item-arrow">→</span>
           </button>

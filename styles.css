@@ -2690,5 +2690,320 @@ body.sheet-open {
   }
 }
 
+/* ========================================================
+   8. CLOUD RUNNER IP & GEOLOCATION RADAR STYLES
+   ======================================================== */
+.widget-runner-radar {
+  border: 1px solid rgba(59, 130, 246, 0.25);
+  background: linear-gradient(180deg, rgba(31, 31, 31, 0.95) 0%, rgba(15, 23, 42, 0.6) 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.widget-runner-radar::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #3ea6ff, #10b981, #a855f7);
+}
+
+.runner-radar-hero-box {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  padding: 14px 16px;
+}
+
+.runner-flag-badge {
+  font-size: 34px;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.06);
+  width: 52px;
+  height: 52px;
+  border-radius: 8px;
+  flex-shrink: 0;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.runner-hero-meta {
+  flex: 1;
+  min-width: 0;
+}
+
+.runner-ip-display {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.runner-ip-code {
+  font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+  font-size: 19px;
+  font-weight: 700;
+  color: #3ea6ff;
+  letter-spacing: 0.5px;
+}
+
+.btn-copy-mini {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #e2e8f0;
+  font-size: 11.5px;
+  padding: 2px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.btn-copy-mini:hover {
+  background: rgba(62, 166, 255, 0.2);
+  border-color: #3ea6ff;
+  color: #fff;
+}
+
+.runner-geo-location {
+  font-size: 12.5px;
+  color: var(--yt-text-secondary);
+  margin-top: 2px;
+}
+
+.runner-card-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+/* RADAR TAB HERO BANNER */
+.radar-hero-card {
+  background: linear-gradient(135deg, #161c28 0%, #11141c 100%);
+  border: 1px solid rgba(59, 130, 246, 0.3);
+  margin-top: 16px;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+}
+
+.radar-hero-body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+  padding: 24px;
+  flex-wrap: wrap;
+}
+
+.radar-hero-left {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  flex: 1;
+  min-width: 300px;
+}
+
+.radar-pulse-radar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: rgba(59, 130, 246, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex-shrink: 0;
+  border: 1px solid rgba(59, 130, 246, 0.4);
+}
+
+.radar-pulse-core {
+  font-size: 26px;
+  z-index: 2;
+}
+
+.radar-pulse-ring {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 2px solid rgba(59, 130, 246, 0.5);
+  animation: pulse-ring 2s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+}
+
+@keyframes pulse-ring {
+  0% { transform: scale(0.9); opacity: 1; }
+  100% { transform: scale(1.6); opacity: 0; }
+}
+
+.radar-hero-text .hero-title {
+  font-size: 19px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 6px;
+}
+
+.radar-hero-text .hero-desc {
+  font-size: 13px;
+  color: var(--yt-text-secondary);
+  line-height: 1.5;
+  max-width: 640px;
+  margin-bottom: 12px;
+}
+
+.radar-hero-stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 16px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  min-width: 280px;
+}
+
+.radar-stat-box {
+  text-align: center;
+  padding: 6px 10px;
+}
+
+.radar-stat-num {
+  font-size: 24px;
+  font-weight: 800;
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+}
+
+.radar-stat-lbl {
+  font-size: 11px;
+  color: var(--yt-text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  margin-top: 2px;
+}
+
+/* 10 CHANNELS RADAR GRID */
+.radar-channels-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 18px;
+  margin-top: 18px;
+}
+
+.radar-channel-card {
+  background: var(--yt-bg-surface);
+  border: 1px solid var(--yt-border-subtle);
+  border-radius: 8px;
+  padding: 18px;
+  transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+}
+
+.radar-channel-card:hover {
+  border-color: rgba(62, 166, 255, 0.4);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+.radar-channel-card.selected-node {
+  border-color: #3ea6ff;
+  box-shadow: 0 0 0 1px #3ea6ff, 0 6px 20px rgba(62, 166, 255, 0.15);
+}
+
+.radar-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.active-pill-tag {
+  background: rgba(62, 166, 255, 0.2);
+  color: #3ea6ff;
+  border: 1px solid rgba(62, 166, 255, 0.35);
+  font-size: 9.5px;
+  font-weight: 700;
+  padding: 1px 6px;
+  border-radius: 4px;
+  margin-left: 6px;
+  vertical-align: middle;
+}
+
+.radar-ip-box {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: rgba(0, 0, 0, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 6px;
+  padding: 10px 14px;
+}
+
+.radar-ip-flag {
+  font-size: 26px;
+  flex-shrink: 0;
+}
+
+.radar-ip-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.radar-ip-label {
+  font-size: 10px;
+  color: var(--yt-text-disabled);
+  letter-spacing: 0.5px;
+  font-weight: 700;
+}
+
+.radar-ip-value-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2px;
+}
+
+.radar-ip-mono {
+  font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+  font-size: 16px;
+  font-weight: 700;
+  color: #10b981;
+  letter-spacing: 0.4px;
+}
+
+.radar-card-footer {
+  margin-top: auto;
+  padding-top: 14px;
+}
+
+.yt-btn-primary.full-width {
+  width: 100%;
+  justify-content: center;
+}
+
+@media (max-width: 900px) {
+  .radar-hero-body {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .radar-hero-stats {
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+  }
+  .radar-channels-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 
 
