@@ -1,37 +1,37 @@
 {
   "app_name": "Raj Tube Pro",
   "version": "6.0.0",
-  "timestamp": "2026-09-12T21:38:17.674819+00:00",
+  "timestamp": "2026-09-12T21:51:00.321296+00:00",
   "schedule": {
     "next_slot_iso": "2026-09-12T22:00:00+00:00",
-    "seconds_remaining": 1315,
-    "formatted_countdown": "00h 21m 55s",
+    "seconds_remaining": 554,
+    "formatted_countdown": "00h 09m 14s",
     "slot_label": "06:00 PM USA (3:30 AM IST)",
-    "now_ist": "13 Sep, 03:08 AM IST"
+    "now_ist": "13 Sep, 03:20 AM IST"
   },
   "summary": {
-    "total_channels": 9,
-    "total_uploaded": 153,
-    "total_in_queue": 1148,
+    "total_channels": 10,
+    "total_uploaded": 172,
+    "total_in_queue": 1277,
     "total_subscribers": 145,
-    "total_views": 159763,
-    "total_likes": 1446,
+    "total_views": 165305,
+    "total_likes": 1489,
     "network_engagement": 0.9,
-    "total_runway_days": 63.8,
+    "total_runway_days": 63.9,
     "system_health": "All Systems Operational",
     "issues_count": 0,
     "top_trending_video": {
       "title": "He Was Not Backing Down From Anyone #SlapFight #PowerSlap #SlapFighting #Viral #Sports.",
-      "views": 37304,
-      "likes": 353,
-      "subscribers_gained": 31,
+      "views": 37566,
+      "likes": 355,
+      "subscribers_gained": 32,
       "youtube_url": "https://youtu.be/t5oF0IsXkN0",
       "thumbnail": "https://i.ytimg.com/vi/t5oF0IsXkN0/mqdefault.jpg",
       "channel_name": "Zyntrix07",
       "uploaded_at": "2026-09-11T16:04:35Z"
     },
     "analytics": {
-      "watch_time_hours": 671.0,
+      "watch_time_hours": 694.3,
       "avg_view_duration": "0:24",
       "top_countries": [
         {
@@ -156,7 +156,7 @@
       "peak_hours": "6:00 PM \u2013 10:30 PM IST (Peak Global Viewing Window)"
     },
     "health": {
-      "overall_score": 100,
+      "overall_score": 99,
       "verdict": "Flawless (Optimal Standing)",
       "verdict_color": "#10B981",
       "shield_icon": "\ud83d\udee1\ufe0f",
@@ -174,10 +174,10 @@
         "is_clean": true
       },
       "view_health": {
-        "label": "YouTube API Verified: 1,044 avg views/video (159,763 total views across 153 videos)",
-        "badge": "1,044 AVG",
-        "color": "#10B981",
-        "avg_views": 1044.2,
+        "label": "YouTube API Verified: 961 avg views/video (165,305 total views across 172 videos)",
+        "badge": "961 AVG",
+        "color": "#3EA6FF",
+        "avg_views": 961.1,
         "shorts_feed_share": "81.2%",
         "velocity_verdict": "Algorithm Reach: High"
       },
@@ -190,9 +190,9 @@
       },
       "upload_engine": {
         "latest_run": "success",
-        "queue_health": "Plentiful Runway (63.8 days)",
-        "runway_days": 63.8,
-        "total_uploaded": 153
+        "queue_health": "Plentiful Runway (63.9 days)",
+        "runway_days": 63.9,
+        "total_uploaded": 172
       }
     }
   },
@@ -209,13 +209,13 @@
       "color": "#10B981",
       "avatar_url": "https://yt3.ggpht.com/R5wyufkApz5fijH1a4mek8n6CM9y64QklZgfgjuGI-SOwbTIBjEFmmKot6aBnYkVRwOpq965=s240-c-k-c0x00ffffff-no-rj",
       "subscribers": 27,
-      "total_views": 14031,
+      "total_views": 14228,
       "channel_total_videos": 4,
-      "avg_views_per_video": 3507.8,
+      "avg_views_per_video": 3557.0,
       "engagement_rate": 1.5,
-      "total_likes": 209,
+      "total_likes": 208,
       "analytics": {
-        "watch_time_hours": 58.9,
+        "watch_time_hours": 59.8,
         "avg_view_duration": "0:24",
         "top_countries": [
           {
@@ -358,10 +358,10 @@
           "is_clean": true
         },
         "view_health": {
-          "label": "YouTube API Verified: 3,508 avg views/video (14,031 total views across 4 videos)",
-          "badge": "3,508 AVG",
+          "label": "YouTube API Verified: 3,557 avg views/video (14,228 total views across 4 videos)",
+          "badge": "3,557 AVG",
           "color": "#10B981",
-          "avg_views": 3507.8,
+          "avg_views": 3557.0,
           "shorts_feed_share": "81.2%",
           "velocity_verdict": "Algorithm Reach: High"
         },
@@ -394,7 +394,7 @@
         "title": "Close Enough To Hear His Breath #wildlife #shorts #cameraman #viral",
         "uploaded_at": "2026-09-12T14:03:34Z",
         "thumbnail": "https://i.ytimg.com/vi/RMgm8o875X0/mqdefault.jpg",
-        "views": 1716,
+        "views": 1789,
         "likes": 27,
         "comments": 0,
         "subscribers_gained": 3
@@ -406,7 +406,7 @@
           "title": "Close Enough To Hear His Breath #wildlife #shorts #cameraman #viral",
           "uploaded_at": "2026-09-12T14:03:34Z",
           "thumbnail": "https://i.ytimg.com/vi/RMgm8o875X0/mqdefault.jpg",
-          "views": 1716,
+          "views": 1789,
           "likes": 27,
           "comments": 0,
           "subscribers_gained": 3
@@ -428,8 +428,8 @@
           "title": "Breathtaking 4K Wildlife Moment #wildlifephotography #shorts #naturelovers #viral",
           "uploaded_at": "2026-09-11T14:42:29Z",
           "thumbnail": "https://i.ytimg.com/vi/3pDpmQcqJT8/mqdefault.jpg",
-          "views": 9180,
-          "likes": 159,
+          "views": 9304,
+          "likes": 158,
           "comments": 1,
           "subscribers_gained": 19
         },
@@ -480,6 +480,421 @@
       "is_active": true
     },
     {
+      "id": "channel_10",
+      "name": "Zenova Drift",
+      "handle": "@ZenovaDrift",
+      "youtube_channel_id": "UCiQ61LVU0QFc2457Jfq0TmQ",
+      "channel_url": "https://www.youtube.com/channel/UCiQ61LVU0QFc2457Jfq0TmQ",
+      "category": "Gaming & Esports Legends",
+      "github_repo": "malhotramahi396-afk/yt-automation-zenovadrift",
+      "color": "#10B981",
+      "avatar_url": "https://yt3.ggpht.com/Si65r7FeRpZibwEpw60Lck09w5Qi4YjdBhvfyPC914DY68sKk7vkLYv3WdR1ByZGkg_J4FAK=s240-c-k-c0x00ffffff-no-rj",
+      "subscribers": 0,
+      "total_views": 4956,
+      "channel_total_videos": 19,
+      "avg_views_per_video": 260.8,
+      "engagement_rate": 0.8,
+      "total_likes": 41,
+      "analytics": {
+        "watch_time_hours": 20.8,
+        "avg_view_duration": "0:24",
+        "top_countries": [
+          {
+            "country": "United States",
+            "code": "US",
+            "flag": "\ud83c\uddfa\ud83c\uddf8",
+            "percent": 52.4
+          },
+          {
+            "country": "United Kingdom",
+            "code": "GB",
+            "flag": "\ud83c\uddec\ud83c\udde7",
+            "percent": 13.5
+          },
+          {
+            "country": "Germany",
+            "code": "DE",
+            "flag": "\ud83c\udde9\ud83c\uddea",
+            "percent": 9.8
+          },
+          {
+            "country": "Canada",
+            "code": "CA",
+            "flag": "\ud83c\udde8\ud83c\udde6",
+            "percent": 8.7
+          },
+          {
+            "country": "India",
+            "code": "IN",
+            "flag": "\ud83c\uddee\ud83c\uddf3",
+            "percent": 10.2
+          },
+          {
+            "country": "Other countries",
+            "code": "OTHER",
+            "flag": "\ud83c\udf10",
+            "percent": 5.4
+          }
+        ],
+        "age_distribution": [
+          {
+            "range": "13\u201317 years",
+            "percent": 14.8
+          },
+          {
+            "range": "18\u201324 years",
+            "percent": 51.0
+          },
+          {
+            "range": "25\u201334 years",
+            "percent": 25.6
+          },
+          {
+            "range": "35\u201344 years",
+            "percent": 5.8
+          },
+          {
+            "range": "45\u201354 years",
+            "percent": 2.0
+          },
+          {
+            "range": "55+ years",
+            "percent": 0.8
+          }
+        ],
+        "gender": {
+          "male": 81.2,
+          "female": 18.8
+        },
+        "traffic_sources": [
+          {
+            "source": "Shorts feed",
+            "percent": 81.2,
+            "icon": "\ud83d\udcf1"
+          },
+          {
+            "source": "YouTube search",
+            "percent": 10.6,
+            "icon": "\ud83d\udd0d"
+          },
+          {
+            "source": "Channel pages",
+            "percent": 4.4,
+            "icon": "\ud83d\udcc4"
+          },
+          {
+            "source": "Suggested videos",
+            "percent": 2.5,
+            "icon": "\ud83c\udfac"
+          },
+          {
+            "source": "External & Others",
+            "percent": 1.3,
+            "icon": "\ud83d\udd17"
+          }
+        ],
+        "subscriber_watch_time": {
+          "not_subscribed": 94.2,
+          "subscribed": 5.8
+        },
+        "viewer_types": {
+          "new_viewers": 87.6,
+          "returning_viewers": 12.4
+        },
+        "top_devices": [
+          {
+            "device": "Mobile phone",
+            "percent": 94.6,
+            "icon": "\ud83d\udcf1"
+          },
+          {
+            "device": "Computer",
+            "percent": 3.8,
+            "icon": "\ud83d\udcbb"
+          },
+          {
+            "device": "TV / Tablet",
+            "percent": 1.6,
+            "icon": "\ud83d\udcfa"
+          }
+        ],
+        "peak_hours": "5:00 PM \u2013 11:00 PM IST (Global Gaming & Esports Window)"
+      },
+      "health": {
+        "overall_score": 99,
+        "verdict": "Flawless (Optimal Standing)",
+        "verdict_color": "#10B981",
+        "shield_icon": "\ud83d\udee1\ufe0f",
+        "strikes": {
+          "count": 0,
+          "max": 3,
+          "status": "0 of 3 active strikes \u2022 Channel Active & Public (YouTube API Verified)",
+          "badge": "CLEAN",
+          "is_clean": true
+        },
+        "copyright": {
+          "count": 0,
+          "status": "0 copyright claims \u2022 100% Original Audio & Video",
+          "badge": "CLEAN",
+          "is_clean": true
+        },
+        "view_health": {
+          "label": "YouTube API Verified: 261 avg views/video (4,956 total views across 19 videos)",
+          "badge": "261 AVG",
+          "color": "#3EA6FF",
+          "avg_views": 260.8,
+          "shorts_feed_share": "81.2%",
+          "velocity_verdict": "Algorithm Reach: Healthy"
+        },
+        "compliance": {
+          "label": "YouTube Policy: AI Disclosure & COPPA Guard Active (Self-Declared)",
+          "badge": "100% OK",
+          "synthetic_media": "Self-Declared True (Compliant)",
+          "coppa_kids": "Declared False (General Audience)",
+          "is_compliant": true
+        },
+        "upload_engine": {
+          "latest_run": "idle",
+          "queue_health": "Plentiful Runway (64.5 days)",
+          "runway_days": 64.5,
+          "total_uploaded": 19
+        }
+      },
+      "drive_folder_id": "1hqcXV2-IbDWrh7QR_xvOlfnOfO6Cbi9g",
+      "drive_folder_url": "https://drive.google.com/drive/folders/1hqcXV2-IbDWrh7QR_xvOlfnOfO6Cbi9g",
+      "uploaded_count": 19,
+      "drive_queue_count": 129,
+      "runway_days": 64.5,
+      "stock_status": "Plentiful (64.5 days)",
+      "stock_color": "#10B981",
+      "latest_run_status": "idle",
+      "latest_run_time": null,
+      "latest_uploaded_video": {
+        "youtube_id": "gnl3GWZ6Hcs",
+        "youtube_url": "https://youtu.be/gnl3GWZ6Hcs",
+        "title": "Grandma Carried The Entire Team In Front Of Everyone #GrandmaGamer #Esports #Gaming #GamingLegend #P",
+        "uploaded_at": "2026-09-12T21:50:32Z",
+        "thumbnail": "https://i.ytimg.com/vi/gnl3GWZ6Hcs/mqdefault.jpg",
+        "views": 0,
+        "likes": 0,
+        "comments": 0,
+        "subscribers_gained": 0
+      },
+      "uploaded_videos": [
+        {
+          "youtube_id": "gnl3GWZ6Hcs",
+          "youtube_url": "https://youtu.be/gnl3GWZ6Hcs",
+          "title": "Grandma Carried The Entire Team In Front Of Everyone #GrandmaGamer #Esports #Gaming #GamingLegend #P",
+          "uploaded_at": "2026-09-12T21:50:32Z",
+          "thumbnail": "https://i.ytimg.com/vi/gnl3GWZ6Hcs/mqdefault.jpg",
+          "views": 0,
+          "likes": 0,
+          "comments": 0,
+          "subscribers_gained": 0
+        },
+        {
+          "youtube_id": "-AxpmOzKSp4",
+          "youtube_url": "https://youtu.be/-AxpmOzKSp4",
+          "title": "Grandma Carried The Entire Team For The Trophy #GrandmaGamer #Esports #Gaming #GamingLegend #Pro",
+          "uploaded_at": "2026-09-07T19:29:52Z",
+          "thumbnail": "https://i.ytimg.com/vi/-AxpmOzKSp4/mqdefault.jpg",
+          "views": 469,
+          "likes": 5,
+          "comments": 1,
+          "subscribers_gained": 0
+        },
+        {
+          "youtube_id": "25WeY0ADjJw",
+          "youtube_url": "https://youtu.be/25WeY0ADjJw",
+          "title": "Grandma Carried The Entire Team Before The Final Round #GrandmaGamer #Esports #Gaming #GamingLegend",
+          "uploaded_at": "2026-09-06T07:56:52Z",
+          "thumbnail": "https://i.ytimg.com/vi/25WeY0ADjJw/mqdefault.jpg",
+          "views": 762,
+          "likes": 7,
+          "comments": 1,
+          "subscribers_gained": 0
+        },
+        {
+          "youtube_id": "Snv1EqqVbHc",
+          "youtube_url": "https://youtu.be/Snv1EqqVbHc",
+          "title": "Grandma Carried The Entire Team Against All Odds #GrandmaGamer #Esports #Gaming #GamingLegend #Pro",
+          "uploaded_at": "2026-09-03T19:41:54Z",
+          "thumbnail": "https://i.ytimg.com/vi/Snv1EqqVbHc/mqdefault.jpg",
+          "views": 1107,
+          "likes": 7,
+          "comments": 0,
+          "subscribers_gained": 0
+        },
+        {
+          "youtube_id": "njyeU3r3aeo",
+          "youtube_url": "https://youtu.be/njyeU3r3aeo",
+          "title": "Everyone Laughed Until Grandma Played Without Fear #GrandmaGamer #Esports #Gaming #GamingLegend #Pro",
+          "uploaded_at": "2026-08-30T19:01:27Z",
+          "thumbnail": "https://i.ytimg.com/vi/njyeU3r3aeo/mqdefault.jpg",
+          "views": 541,
+          "likes": 3,
+          "comments": 0,
+          "subscribers_gained": 0
+        },
+        {
+          "youtube_id": "jL7BSKznBTw",
+          "youtube_url": "https://youtu.be/jL7BSKznBTw",
+          "title": "Everyone Laughed Until Grandma Played Today #GrandmaGamer #Esports #Gaming #GamingLegend #ProGaming",
+          "uploaded_at": "2026-08-18T19:58:30Z",
+          "thumbnail": "https://i.ytimg.com/vi/jL7BSKznBTw/mqdefault.jpg",
+          "views": 41,
+          "likes": 1,
+          "comments": 0,
+          "subscribers_gained": 0
+        },
+        {
+          "youtube_id": "lSp_t7DsjJw",
+          "youtube_url": "https://youtu.be/lSp_t7DsjJw",
+          "title": "Everyone Laughed Until Grandma Played Like A True Champion #GrandmaGamer #Esports #Gaming #GamingLeg",
+          "uploaded_at": "2026-08-05T16:48:34Z",
+          "thumbnail": "https://i.ytimg.com/vi/lSp_t7DsjJw/mqdefault.jpg",
+          "views": 285,
+          "likes": 2,
+          "comments": 1,
+          "subscribers_gained": 0
+        },
+        {
+          "youtube_id": "X83lLMRhm_M",
+          "youtube_url": "https://youtu.be/X83lLMRhm_M",
+          "title": "Everyone Laughed Until Grandma Played In Front Of Everyone #GrandmaGamer #Esports #Gaming #GamingLeg",
+          "uploaded_at": "2026-08-03T16:17:24Z",
+          "thumbnail": "https://i.ytimg.com/vi/X83lLMRhm_M/mqdefault.jpg",
+          "views": 1240,
+          "likes": 12,
+          "comments": 1,
+          "subscribers_gained": 0
+        },
+        {
+          "youtube_id": "rwpejPMqEYo",
+          "youtube_url": "https://youtu.be/rwpejPMqEYo",
+          "title": "Everyone Laughed Until Grandma Played For The Trophy #GrandmaGamer #Esports #Gaming #GamingLegend",
+          "uploaded_at": "2026-07-28T13:56:55Z",
+          "thumbnail": "https://i.ytimg.com/vi/rwpejPMqEYo/mqdefault.jpg",
+          "views": 204,
+          "likes": 0,
+          "comments": 0,
+          "subscribers_gained": 0
+        },
+        {
+          "youtube_id": "A-p0wryAzbM",
+          "youtube_url": "https://youtu.be/A-p0wryAzbM",
+          "title": "Everyone Laughed Until Grandma Played Before The Final Round #GrandmaGamer #Esports #Gaming #gaming",
+          "uploaded_at": "2026-07-27T07:20:13Z",
+          "thumbnail": "https://i.ytimg.com/vi/A-p0wryAzbM/mqdefault.jpg",
+          "views": 48,
+          "likes": 0,
+          "comments": 0,
+          "subscribers_gained": 0
+        },
+        {
+          "youtube_id": "VCwl7yBcbQw",
+          "youtube_url": "https://youtu.be/VCwl7yBcbQw",
+          "title": "Everyone Laughed Until Grandma Played Against All Odds #GrandmaGamer #Esports #Gaming",
+          "uploaded_at": "2026-07-24T16:50:42Z",
+          "thumbnail": "https://i.ytimg.com/vi/VCwl7yBcbQw/mqdefault.jpg",
+          "views": 6,
+          "likes": 0,
+          "comments": 0,
+          "subscribers_gained": 0
+        },
+        {
+          "youtube_id": "VcdAre2iJTU",
+          "youtube_url": "https://youtu.be/VcdAre2iJTU",
+          "title": "Every Gamer Saluted Grandma Without Fear #GrandmaGamer #Esports #Gaming #GamingLegend #ProGaming #Un",
+          "uploaded_at": "2026-07-23T14:33:10Z",
+          "thumbnail": "https://i.ytimg.com/vi/VcdAre2iJTU/mqdefault.jpg",
+          "views": 117,
+          "likes": 2,
+          "comments": 0,
+          "subscribers_gained": 0
+        },
+        {
+          "youtube_id": "YlanEulRT5Y",
+          "youtube_url": "https://youtu.be/YlanEulRT5Y",
+          "title": "Every Gamer Saluted Grandma With Incredible Skill #GrandmaGamer #Esports #Gaming #GamingLegend #pro",
+          "uploaded_at": "2026-07-21T06:55:50Z",
+          "thumbnail": "https://i.ytimg.com/vi/YlanEulRT5Y/mqdefault.jpg",
+          "views": 19,
+          "likes": 0,
+          "comments": 0,
+          "subscribers_gained": 0
+        },
+        {
+          "youtube_id": "Axhnur5Kbac",
+          "youtube_url": "https://youtu.be/Axhnur5Kbac",
+          "title": "Every Gamer Saluted Grandma Today #GrandmaGamer #Esports #Gaming #GamingLegend #ProGaming #underdog",
+          "uploaded_at": "2026-07-20T16:39:50Z",
+          "thumbnail": "https://i.ytimg.com/vi/Axhnur5Kbac/mqdefault.jpg",
+          "views": 2,
+          "likes": 0,
+          "comments": 0,
+          "subscribers_gained": 0
+        },
+        {
+          "youtube_id": "QLhNet7diuc",
+          "youtube_url": "https://youtu.be/QLhNet7diuc",
+          "title": "Every Gamer Saluted Grandma Like A True Champion #GrandmaGamer #esports #gaming #gaminglegends #pro",
+          "uploaded_at": "2026-07-19T15:18:18Z",
+          "thumbnail": "https://i.ytimg.com/vi/QLhNet7diuc/mqdefault.jpg",
+          "views": 18,
+          "likes": 0,
+          "comments": 0,
+          "subscribers_gained": 0
+        },
+        {
+          "youtube_id": "4W80s7GPDfo",
+          "youtube_url": "https://youtu.be/4W80s7GPDfo",
+          "title": "Every Gamer Saluted Grandma In Front Of Everyone #GrandmaGamer #Esports #Gaming #GamingLegend #pro",
+          "uploaded_at": "2026-07-19T08:07:55Z",
+          "thumbnail": "https://i.ytimg.com/vi/4W80s7GPDfo/mqdefault.jpg",
+          "views": 31,
+          "likes": 0,
+          "comments": 0,
+          "subscribers_gained": 0
+        },
+        {
+          "youtube_id": "EzCeL5VrOyQ",
+          "youtube_url": "https://youtu.be/EzCeL5VrOyQ",
+          "title": "Every Gamer Saluted Grandma For The Trophy #GrandmaGamer #Esports #Gaming #GamingLegend #ProGaming",
+          "uploaded_at": "2026-07-18T17:43:23Z",
+          "thumbnail": "https://i.ytimg.com/vi/EzCeL5VrOyQ/mqdefault.jpg",
+          "views": 8,
+          "likes": 1,
+          "comments": 0,
+          "subscribers_gained": 0
+        },
+        {
+          "youtube_id": "Nr7mUbl3yWc",
+          "youtube_url": "https://youtu.be/Nr7mUbl3yWc",
+          "title": "Every Gamer Saluted Grandma Before The Final Round #GrandmaGamer #Esports #Gaming #GamingLegend #Pro",
+          "uploaded_at": "2026-07-18T12:03:52Z",
+          "thumbnail": "https://i.ytimg.com/vi/Nr7mUbl3yWc/mqdefault.jpg",
+          "views": 47,
+          "likes": 1,
+          "comments": 0,
+          "subscribers_gained": 0
+        },
+        {
+          "youtube_id": "MBQZ3th9VOM",
+          "youtube_url": "https://youtu.be/MBQZ3th9VOM",
+          "title": "Every Gamer Saluted Grandma Against All Odds #GrandmaGamer #Esports #Gaming #GamingLegend #ProGaming",
+          "uploaded_at": "2026-07-17T16:04:58Z",
+          "thumbnail": "https://i.ytimg.com/vi/MBQZ3th9VOM/mqdefault.jpg",
+          "views": 11,
+          "likes": 0,
+          "comments": 0,
+          "subscribers_gained": 0
+        }
+      ],
+      "recent_runs": [],
+      "is_active": true
+    },
+    {
       "id": "channel_2",
       "name": "Zyntrix07",
       "handle": "@Zyntrix07",
@@ -490,13 +905,13 @@
       "color": "#F59E0B",
       "avatar_url": "https://yt3.ggpht.com/TTLhq8ijvpChRrWaVb1i96FzeFG02Gd31oOfWo4EdOtBtfqTD6h0TrRmEOTd2fE8V0kPexV6EA=s240-c-k-c0x00ffffff-no-rj",
       "subscribers": 67,
-      "total_views": 84952,
+      "total_views": 85301,
       "channel_total_videos": 11,
-      "avg_views_per_video": 7722.9,
+      "avg_views_per_video": 7754.6,
       "engagement_rate": 0.7,
-      "total_likes": 608,
+      "total_likes": 610,
       "analytics": {
-        "watch_time_hours": 356.8,
+        "watch_time_hours": 358.3,
         "avg_view_duration": "0:24",
         "top_countries": [
           {
@@ -639,10 +1054,10 @@
           "is_clean": true
         },
         "view_health": {
-          "label": "YouTube API Verified: 7,723 avg views/video (84,952 total views across 11 videos)",
-          "badge": "7,723 AVG",
+          "label": "YouTube API Verified: 7,755 avg views/video (85,301 total views across 11 videos)",
+          "badge": "7,755 AVG",
           "color": "#10B981",
-          "avg_views": 7722.9,
+          "avg_views": 7754.6,
           "shorts_feed_share": "81.2%",
           "velocity_verdict": "Algorithm Reach: High"
         },
@@ -675,7 +1090,7 @@
         "title": "Nobody Expected That Faceoff Reaction #SlapFighting #PowerSlap #SlapBattle #CombatSports #Viral.",
         "uploaded_at": "2026-09-12T14:06:29Z",
         "thumbnail": "https://i.ytimg.com/vi/7OVj2yza4ks/mqdefault.jpg",
-        "views": 1186,
+        "views": 1221,
         "likes": 18,
         "comments": 1,
         "subscribers_gained": 1
@@ -687,7 +1102,7 @@
           "title": "Nobody Expected That Faceoff Reaction #SlapFighting #PowerSlap #SlapBattle #CombatSports #Viral.",
           "uploaded_at": "2026-09-12T14:06:29Z",
           "thumbnail": "https://i.ytimg.com/vi/7OVj2yza4ks/mqdefault.jpg",
-          "views": 1186,
+          "views": 1221,
           "likes": 18,
           "comments": 1,
           "subscribers_gained": 1
@@ -698,7 +1113,7 @@
           "title": "His Confidence Had The Whole Crowd Talking #PowerSlap #SlapFighting #SlapFight #Viral #Sports.",
           "uploaded_at": "2026-09-11T22:07:28Z",
           "thumbnail": "https://i.ytimg.com/vi/g-2DEoij8dY/mqdefault.jpg",
-          "views": 4561,
+          "views": 4613,
           "likes": 57,
           "comments": 0,
           "subscribers_gained": 4
@@ -709,10 +1124,10 @@
           "title": "He Was Not Backing Down From Anyone #SlapFight #PowerSlap #SlapFighting #Viral #Sports.",
           "uploaded_at": "2026-09-11T16:04:35Z",
           "thumbnail": "https://i.ytimg.com/vi/t5oF0IsXkN0/mqdefault.jpg",
-          "views": 37304,
-          "likes": 353,
+          "views": 37566,
+          "likes": 355,
           "comments": 1,
-          "subscribers_gained": 31
+          "subscribers_gained": 32
         },
         {
           "youtube_id": "WIWsbArcAp4",
@@ -734,7 +1149,7 @@
           "views": 4428,
           "likes": 33,
           "comments": 0,
-          "subscribers_gained": 4
+          "subscribers_gained": 3
         },
         {
           "youtube_id": "EU0lTDiLM2Y",
@@ -1181,13 +1596,13 @@
       "color": "#8B5CF6",
       "avatar_url": "https://yt3.ggpht.com/WKefM8i0bji48M_e159k6q0080b5zNwYExax_QloW7H3XguFARUF-SuE62a8rdPQJXvtTXxbJQ=s240-c-k-c0x00ffffff-no-rj",
       "subscribers": 1,
-      "total_views": 1074,
+      "total_views": 1106,
       "channel_total_videos": 10,
-      "avg_views_per_video": 107.4,
-      "engagement_rate": 1.0,
-      "total_likes": 11,
+      "avg_views_per_video": 110.6,
+      "engagement_rate": 1.1,
+      "total_likes": 12,
       "analytics": {
-        "watch_time_hours": 4.5,
+        "watch_time_hours": 4.6,
         "avg_view_duration": "0:24",
         "top_countries": [
           {
@@ -1330,10 +1745,10 @@
           "is_clean": true
         },
         "view_health": {
-          "label": "Warm-Up Phase: 107 avg views/video (1,074 total views across 10 videos)",
-          "badge": "107 AVG",
+          "label": "Warm-Up Phase: 111 avg views/video (1,106 total views across 10 videos)",
+          "badge": "111 AVG",
           "color": "#F59E0B",
-          "avg_views": 107.4,
+          "avg_views": 110.6,
           "shorts_feed_share": "81.2%",
           "velocity_verdict": "Algorithm Reach: Healthy"
         },
@@ -1366,8 +1781,8 @@
         "title": "Adorable Toddler Reacts In The Cutest Way #ToddlerLife #CutestMoments #FamilyMoments #WholesomeConte",
         "uploaded_at": "2026-09-12T17:39:42Z",
         "thumbnail": "https://i.ytimg.com/vi/goCoZBF3N_M/mqdefault.jpg",
-        "views": 1067,
-        "likes": 11,
+        "views": 1099,
+        "likes": 12,
         "comments": 0,
         "subscribers_gained": 1
       },
@@ -1378,8 +1793,8 @@
           "title": "Adorable Toddler Reacts In The Cutest Way #ToddlerLife #CutestMoments #FamilyMoments #WholesomeConte",
           "uploaded_at": "2026-09-12T17:39:42Z",
           "thumbnail": "https://i.ytimg.com/vi/goCoZBF3N_M/mqdefault.jpg",
-          "views": 1067,
-          "likes": 11,
+          "views": 1099,
+          "likes": 12,
           "comments": 0,
           "subscribers_gained": 1
         },
@@ -2930,9 +3345,9 @@
       "color": "#8B5CF6",
       "avatar_url": "https://yt3.ggpht.com/c2et41jvboHRktLNJH-bmzbYclnu_SeQYjockP52SQB3xQtmw6jPskOSLrGMwcb7UiN4i4QybOo=s240-c-k-c0x00ffffff-no-rj",
       "subscribers": 16,
-      "total_views": 24786,
+      "total_views": 24794,
       "channel_total_videos": 27,
-      "avg_views_per_video": 918.0,
+      "avg_views_per_video": 918.3,
       "engagement_rate": 0.8,
       "total_likes": 199,
       "analytics": {
@@ -3079,10 +3494,10 @@
           "is_clean": true
         },
         "view_health": {
-          "label": "YouTube API Verified: 918 avg views/video (24,786 total views across 27 videos)",
+          "label": "YouTube API Verified: 918 avg views/video (24,794 total views across 27 videos)",
           "badge": "918 AVG",
           "color": "#3EA6FF",
-          "avg_views": 918.0,
+          "avg_views": 918.3,
           "shorts_feed_share": "81.2%",
           "velocity_verdict": "Algorithm Reach: High"
         },
@@ -3115,7 +3530,7 @@
         "title": "Behind The Biggest Scene Of The Film With Incredible Detail #BehindTheScenes #Hollywood #MovieMagic",
         "uploaded_at": "2026-09-12T21:29:37Z",
         "thumbnail": "https://i.ytimg.com/vi/1TbNIlAQsJo/mqdefault.jpg",
-        "views": 4,
+        "views": 12,
         "likes": 0,
         "comments": 0,
         "subscribers_gained": 0
@@ -3127,7 +3542,7 @@
           "title": "Behind The Biggest Scene Of The Film With Incredible Detail #BehindTheScenes #Hollywood #MovieMagic",
           "uploaded_at": "2026-09-12T21:29:37Z",
           "thumbnail": "https://i.ytimg.com/vi/1TbNIlAQsJo/mqdefault.jpg",
-          "views": 4,
+          "views": 12,
           "likes": 0,
           "comments": 0,
           "subscribers_gained": 0
