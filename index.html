@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <title>Channel dashboard - YouTube Studio</title>
+  <meta name="description" content="YouTube Studio Channel Dashboard and Management Center">
+  <meta name="theme-color" content="#0f0f0f">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="icon" type="image/png" href="https://www.gstatic.com/youtube/img/creator/favicon/favicon_144.png">
+  <link rel="stylesheet" href="./styles.css?v=7.2">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <!-- Force cache clear on mobile to prevent stale PWA cache -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.getRegistrations().then(function(regs) {
+        for (let r of regs) r.unregister();
+      });
+    }
+    if ('caches' in window) {
+      caches.keys().then(function(names) {
+        for (let n of names) caches.delete(n);
+      });
+    }
+  </script>
+</head>
+<body class="yt-studio-theme">
+
+  <!-- TOP APP HEADER (Exact YouTube Studio Top Bar) -->
+  <header class="studio-header">
+    <div class="header-left">
+      <button class="icon-btn" id="btn-toggle-sidebar" title="Guide">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="#FFFFFF">
+          <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+        </svg>
+      </button>
+
+      <div class="studio-logo" id="logo-home">
+        <!-- YouTube Studio Red Badge Icon -->
+        <svg viewBox="0 0 89 20" width="105" height="24" class="yt-studio-svg">
+          <g fill="#FF0000">
+            <path d="M19.6 2.2C17.4.4 7.6.4 5.4 2.2 3.1 3.9 2.2 7.7 2.2 10s.9 6.1 3.2 7.8c2.2 1.8 12 1.8 14.2 0 2.3-1.7 3.2-5.5 3.2-7.8s-.9-6.1-3.2-7.8z"/>
+          </g>
+          <polygon fill="#FFFFFF" points="10.5,6.5 16.5,10 10.5,13.5"/>
+          <text x="28" y="15" fill="#FFFFFF" font-family="'Roboto', sans-serif" font-weight="700" font-size="14.5" letter-spacing="-0.3">Studio</text>
+        </svg>
+      </div>
+    </div>
+
+    <!-- Center Search Bar (YouTube Studio Search) -->
+    <div class="header-center">
+      <div class="search-box">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="#888888" class="search-icon">
+          <path d="M20.87 19.47l-4.52-4.52A8 8 0 106.8 16.8a8 8 0 008.15-1.85l4.52 4.52a1 1 0 001.4-1.4zM4 10a6 6 0 116 6 6 6 0 01-6-6z"/>
+        </svg>
+        <input type="text" placeholder="Search across your channel" id="studio-search" readonly />
+      </div>
+    </div>
+
+    <!-- Right Header Actions -->
+    <div class="header-right">
+      <!-- Sync / Refresh Button -->
+      <button class="btn-refresh" id="btn-sync" title="Refresh Live Data">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="#AAAAAA">
+          <path d="M17.65 6.35A7.958 7.958 0 0012 4c-4.42 0-7.99 3.58-7.99 8s3.57 8 7.99 8c3.73 0 6.84-2.55 7.73-6h-2.08A5.99 5.99 0 0112 18c-3.31 0-6-2.69-6-6s2.69-6 6-6c1.66 0 3.14.69 4.22 1.78L13 11h7V4l-2.35 2.35z"/>
+        </svg>
+      </button>
+
+      <!-- Create Button -->
+      <button class="btn-create" id="btn-create">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="#FF0000">
+          <path d="M17 10.5V7c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4zM14 13h-3v3H9v-3H6v-2h3V8h2v3h3v2z"/>
+        </svg>
+        <span>CREATE</span>
+      </button>
+
+      <!-- Channel Switcher Trigger (Avatar & Handle) -->
+      <div class="channel-switcher-trigger" id="channel-switcher-trigger" title="Switch Channel">
+        <img id="header-avatar" src="https://ui-avatars.com/api/?name=YT&background=333&color=fff" alt="Channel" />
+        <span class="switcher-arrow">▼</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- CHANNEL SWITCHER DROPDOWN MENU (Pop-up) -->
+  <div class="channel-dropdown" id="channel-dropdown">
+    <div class="dropdown-header">
+      <div class="user-info-row">
+        <img id="dropdown-user-avatar" src="https://ui-avatars.com/api/?name=YT&background=333&color=fff" alt="Avatar" />
+        <div class="user-details">
+          <div class="user-name" id="dropdown-user-name">The Hidden Lens</div>
+          <div class="user-handle" id="dropdown-user-handle">@TheHiddenLens-w8y</div>
+        </div>
+      </div>
+      <a href="#" id="dropdown-view-channel" target="_blank" class="link-view-channel">View channel on YouTube</a>
+    </div>
+
+    <div class="dropdown-section-title">SWITCH CHANNEL</div>
+    <div class="channel-options-list" id="channel-options-list">
+      <!-- Injected via JavaScript: Channel 1, 2, 3, and All Channels -->
+    </div>
+
+    <div class="dropdown-footer">
+      <button class="btn-dropdown-action" id="btn-copy-mobile-url">
+        <span>📲 Copy Mobile 4G/5G Link</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- BACKDROP OVERLAY FOR MOBILE & DROPDOWN -->
+  <div class="studio-backdrop" id="studio-backdrop"></div>
+
+  <!-- APP SHELL: SIDEBAR + MAIN CONTENT -->
+  <div class="studio-app-shell">
+
+    <!-- LEFT NAVIGATION SIDEBAR (YouTube Studio Left Menu) -->
+    <aside class="studio-sidebar" id="studio-sidebar">
+      <div class="sidebar-channel-header">
+        <div class="channel-avatar-wrap">
+          <img id="sidebar-avatar" src="https://ui-avatars.com/api/?name=YT&background=333&color=fff" alt="Channel Avatar" />
+        </div>
+        <div class="sidebar-your-channel">Your channel</div>
+        <div class="sidebar-channel-name" id="sidebar-channel-name">The Hidden Lens</div>
+      </div>
+
+      <nav class="sidebar-nav">
+        <button class="nav-item active" data-view="dashboard">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+            <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zM7 10h2v7H7zm4-3h2v10h-2zm4 6h2v4h-2z"/>
+          </svg>
+          <span class="nav-text">Dashboard</span>
+        </button>
+
+        <button class="nav-item" data-view="content">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+            <path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8 12.5v-9l6 4.5-6 4.5z"/>
+          </svg>
+          <span class="nav-text">Content</span>
+          <span class="nav-badge" id="sidebar-content-badge">2</span>
+        </button>
+
+        <button class="nav-item" data-view="analytics">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+            <path d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z"/>
+          </svg>
+          <span class="nav-text">Analytics</span>
+        </button>
+
+        <button class="nav-item" data-view="queue">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+            <path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM14 13v4h-4v-4H7l5-5 5 5h-3z"/>
+          </svg>
+          <span class="nav-text">Drive Queue</span>
+          <span class="nav-badge badge-green" id="sidebar-queue-badge">80</span>
+        </button>
+
+        <div class="sidebar-divider"></div>
+
+        <button class="nav-item" data-view="settings">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+            <path d="M19.14 12.94c.04-.3.06-.61.06-.94 0-.32-.02-.64-.07-.94l2.03-1.58c.18-.14.23-.41.12-.61l-1.92-3.32c-.12-.22-.37-.29-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54c-.04-.24-.24-.41-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.05.3-.09.63-.09.94s.02.64.07.94l-2.03 1.58c-.18.14-.23.41-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z"/>
+          </svg>
+          <span class="nav-text">Settings</span>
+        </button>
+      </nav>
+
+      <div class="sidebar-footer">
+        <a href="#" id="sidebar-yt-link" target="_blank" class="sidebar-footer-link">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+            <path d="M19 19H5V5h7V3H5a2 2 0 00-2 2v14a2 2 0 002 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/>
+          </svg>
+          <span>Open YouTube</span>
+        </a>
+      </div>
+    </aside>
+
+    <!-- MAIN STUDIO WORKSPACE -->
+    <main class="studio-main">
+
+      <!-- ==========================================================
+           TAB 1: CHANNEL DASHBOARD (Default YouTube Studio View)
+           ========================================================== -->
+      <section class="tab-view active" id="view-dashboard">
+        <div class="page-title-row">
+          <h1 class="page-title">Channel dashboard</h1>
+          <div class="channel-quick-pill" id="current-channel-pill">
+            <span class="pill-dot"></span>
+            <span id="pill-channel-name">The Hidden Lens</span>
+          </div>
+        </div>
+
+        <!-- 2-COLUMN YOUTUBE STUDIO CARDS GRID -->
+        <div class="studio-grid-2col">
+
+          <!-- LEFT COLUMN -->
+          <div class="grid-col">
+
+            <!-- WIDGET 1: Latest video performance -->
+            <div class="yt-card widget-latest">
+              <div class="yt-card-header">
+                <h2>Latest video performance</h2>
+              </div>
+
+              <div class="yt-card-body">
+                <div class="latest-media-wrap">
+                  <div class="latest-thumb-box">
+                    <img id="dash-latest-thumb" src="" alt="Thumbnail" />
+                    <span class="badge-duration">0:45</span>
+                  </div>
+                  <div class="latest-title-wrap">
+                    <a href="#" id="dash-latest-link" target="_blank" class="dash-video-title">
+                      Loading latest video...
+                    </a>
+                    <span class="dash-video-sub" id="dash-latest-time">First 1 day</span>
+                  </div>
+                </div>
+
+                <div class="metric-rows-table">
+                  <div class="m-row">
+                    <span class="m-label">Ranking by views</span>
+                    <span class="m-val" id="dash-metric-ranking">1 of 10</span>
+                  </div>
+                  <div class="m-row">
+                    <span class="m-label">Views</span>
+                    <span class="m-val highlight" id="dash-metric-views">--</span>
+                  </div>
+                  <div class="m-row">
+                    <span class="m-label">Likes</span>
+                    <span class="m-val" id="dash-metric-likes">--</span>
+                  </div>
+                  <div class="m-row">
+                    <span class="m-label">Engagement rate</span>
+                    <span class="m-val text-green" id="dash-metric-eng">--%</span>
+                  </div>
+                </div>
+
+                <div class="yt-card-footer">
+                  <a href="#" id="btn-latest-analytics" target="_blank" class="yt-btn-flat">GO TO VIDEO ANALYTICS</a>
+                  <a href="#" id="btn-latest-watch" target="_blank" class="yt-btn-flat">WATCH ON YOUTUBE</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- WIDGET 2: Published videos (Mini Content List) -->
+            <div class="yt-card widget-recent-videos">
+              <div class="yt-card-header">
+                <h2>Published videos</h2>
+              </div>
+
+              <div class="yt-card-body p-0">
+                <div class="mini-videos-list" id="dash-mini-videos-list">
+                  <!-- Populated by JavaScript -->
+                </div>
+
+                <div class="yt-card-footer">
+                  <button class="yt-btn-flat" id="btn-goto-content">GO TO VIDEOS</button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- RIGHT COLUMN -->
+          <div class="grid-col">
+
+            <!-- WIDGET 3: Channel analytics -->
+            <div class="yt-card widget-analytics">
+              <div class="yt-card-header">
+                <h2>Channel analytics</h2>
+              </div>
+
+              <div class="yt-card-body">
+                <div class="subs-highlight-block">
+                  <div class="subs-label">Current subscribers</div>
+                  <div class="subs-count" id="dash-subs-count">--</div>
+                  <div class="subs-delta text-green">▲ 100% Organic Growth</div>
+                </div>
+
+                <div class="divider-line"></div>
+
+                <div class="summary-section">
+                  <div class="summary-heading">Summary <span class="sub-muted">Last 28 days</span></div>
+                  <div class="summary-row">
+                    <span>Views</span>
+                    <span class="summary-num" id="dash-summary-views">--</span>
+                  </div>
+                  <div class="summary-row">
+                    <span>Total Likes</span>
+                    <span class="summary-num" id="dash-summary-likes">--</span>
+                  </div>
+                  <div class="summary-row">
+                    <span>Average per video</span>
+                    <span class="summary-num" id="dash-summary-avg">--</span>
+                  </div>
+                </div>
+
+                <div class="divider-line"></div>
+
+                <div class="top-videos-section">
+                  <div class="top-heading">Top videos <span class="sub-muted">Views</span></div>
+                  <div class="top-vids-list" id="dash-top-vids-list">
+                    <!-- Top videos injected via JS -->
+                  </div>
+                </div>
+
+                <div class="yt-card-footer">
+                  <button class="yt-btn-flat" id="btn-goto-analytics">GO TO CHANNEL ANALYTICS</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- WIDGET 4: Automated Publishing & Google Drive Queue -->
+            <div class="yt-card widget-queue">
+              <div class="yt-card-header">
+                <h2>Automated Publishing Queue</h2>
+              </div>
+
+              <div class="yt-card-body">
+                <div class="queue-status-box">
+                  <div class="queue-icon-wrap">
+                    <svg viewBox="0 0 24 24" width="24" height="24" fill="#3EA6FF">
+                      <path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM14 13v4h-4v-4H7l5-5 5 5h-3z"/>
+                    </svg>
+                  </div>
+                  <div class="queue-info">
+                    <div class="queue-title" id="dash-drive-title">Drive Stock: -- Videos</div>
+                    <div class="queue-sub" id="dash-drive-runway">-- Days Runway (2 uploads/day)</div>
+                  </div>
+                </div>
+
+                <div class="mini-progress-bar">
+                  <div class="progress-bar-fill" id="dash-drive-fill" style="width: 80%;"></div>
+                </div>
+
+                <div class="metric-rows-table mt-12">
+                  <div class="m-row">
+                    <span class="m-label">Next Scheduled Slot</span>
+                    <span class="m-val text-blue" id="dash-next-slot-time">06:00 PM USA (3:30 AM IST)</span>
+                  </div>
+                  <div class="m-row">
+                    <span class="m-label">Time Remaining</span>
+                    <span class="m-val highlight" id="dash-countdown-clock">--h --m --s</span>
+                  </div>
+                  <div class="m-row">
+                    <span class="m-label">Drive Auto-Delete</span>
+                    <span class="m-val text-green">Active (Permanent Deletion)</span>
+                  </div>
+                  <div class="m-row">
+                    <span class="m-label">Runner Engine</span>
+                    <span class="m-val">USA Dedicated Cloud Runner</span>
+                  </div>
+                </div>
+
+                <div class="yt-card-footer">
+                  <button class="yt-btn-flat" id="btn-goto-queue">VIEW QUEUE DETAILS</button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ==========================================================
+           TAB 2: CHANNEL CONTENT (Full YouTube Studio Table)
+           ========================================================== -->
+      <section class="tab-view" id="view-content">
+        <div class="page-title-row">
+          <h1 class="page-title">Channel content</h1>
+        </div>
+
+        <div class="content-subtabs">
+          <button class="subtab active">Videos</button>
+          <button class="subtab">Shorts</button>
+          <button class="subtab">Live</button>
+          <button class="subtab">Playlists</button>
+        </div>
+
+        <div class="yt-table-container">
+          <table class="studio-table" id="studio-content-table">
+            <thead>
+              <tr>
+                <th class="col-checkbox"><input type="checkbox" disabled /></th>
+                <th class="col-video">Video</th>
+                <th class="col-visibility">Visibility</th>
+                <th class="col-restrictions">Restrictions</th>
+                <th class="col-date">Date</th>
+                <th class="col-views">Views</th>
+                <th class="col-comments">Comments</th>
+                <th class="col-likes">Likes (vs. dislikes)</th>
+              </tr>
+            </thead>
+            <tbody id="content-table-body">
+              <!-- Populated via JavaScript with real videos -->
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Mobile Video Feed (Active on Mobile Phone Screens <= 768px) -->
+        <div class="mobile-video-cards-list" id="mobile-content-cards">
+          <!-- Populated via JavaScript for Mobile Phone View -->
+        </div>
+      </section>
+
+      <!-- ==========================================================
+           TAB 3: CHANNEL ANALYTICS
+           ========================================================== -->
+      <section class="tab-view" id="view-analytics">
+        <div class="page-title-row">
+          <h1 class="page-title">Channel analytics</h1>
+        </div>
+
+        <div class="analytics-stat-chips">
+          <div class="stat-chip active">
+            <div class="chip-label">Views</div>
+            <div class="chip-value" id="analytics-views-chip">--</div>
+          </div>
+          <div class="stat-chip">
+            <div class="chip-label">Watch time (hours)</div>
+            <div class="chip-value" id="analytics-watch-chip">--</div>
+          </div>
+          <div class="stat-chip">
+            <div class="chip-label">Subscribers</div>
+            <div class="chip-value" id="analytics-subs-chip">--</div>
+          </div>
+        </div>
+
+        <div class="yt-card mt-16">
+          <div class="yt-card-header">
+            <h2>Real YouTube Video Views Comparison</h2>
+          </div>
+          <div class="yt-card-body">
+            <div class="chart-wrapper">
+              <canvas id="studioAnalyticsChart"></canvas>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================================
+           TAB 4: DRIVE QUEUE & AUTOMATION STATUS
+           ========================================================== -->
+      <section class="tab-view" id="view-queue">
+        <div class="page-title-row">
+          <h1 class="page-title">Drive Queue & Cloud Automation</h1>
+        </div>
+
+        <div class="queue-cards-grid" id="queue-channels-cards">
+          <!-- Injected via JavaScript for all 3 channels -->
+        </div>
+      </section>
+
+      <!-- ==========================================================
+           TAB 5: SETTINGS
+           ========================================================== -->
+      <section class="tab-view" id="view-settings">
+        <div class="page-title-row">
+          <h1 class="page-title">Settings & Automation Pipeline</h1>
+        </div>
+
+        <div class="yt-card">
+          <div class="yt-card-header">
+            <h2>Channel Configuration & Cloud Runner</h2>
+          </div>
+          <div class="yt-card-body">
+            <div class="metric-rows-table">
+              <div class="m-row">
+                <span class="m-label">Scheduled Crons</span>
+                <span class="m-val">14:00 UTC (7:30 PM IST) & 22:00 UTC (3:30 AM IST)</span>
+              </div>
+              <div class="m-row">
+                <span class="m-label">Upload Rate</span>
+                <span class="m-val">2 Videos / Day / Channel</span>
+              </div>
+              <div class="m-row">
+                <span class="m-label">Cloud Execution</span>
+                <span class="m-val text-green">GitHub Actions USA Cloud Runner</span>
+              </div>
+              <div class="m-row">
+                <span class="m-label">Google Drive Auto-Deletion</span>
+                <span class="m-val text-green">Enabled (Immediate cleanup after upload)</span>
+              </div>
+              <div class="m-row">
+                <span class="m-label">Synthetic Media Policy</span>
+                <span class="m-val text-blue">AI Disclosure Flag Active</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <!-- YOUTUBE STUDIO MOBILE BOTTOM NAVIGATION (Active on Phone screens <= 900px) -->
+  <nav class="studio-bottom-nav" id="studio-bottom-nav">
+    <button class="bottom-nav-item active" data-view="dashboard">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zM7 10h2v7H7zm4-3h2v10h-2zm4 6h2v4h-2z"/>
+      </svg>
+      <span>Dashboard</span>
+    </button>
+    <button class="bottom-nav-item" data-view="content">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+        <path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8 12.5v-9l6 4.5-6 4.5z"/>
+      </svg>
+      <span>Content</span>
+    </button>
+    <button class="bottom-nav-item" data-view="analytics">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+        <path d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z"/>
+      </svg>
+      <span>Analytics</span>
+    </button>
+    <button class="bottom-nav-item" data-view="queue">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+        <path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM14 13v4h-4v-4H7l5-5 5 5h-3z"/>
+      </svg>
+      <span>Drive</span>
+    </button>
+    <button class="bottom-nav-item" data-view="settings">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+        <path d="M19.14 12.94c.04-.3.06-.61.06-.94 0-.32-.02-.64-.07-.94l2.03-1.58c.18-.14.23-.41.12-.61l-1.92-3.32c-.12-.22-.37-.29-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54c-.04-.24-.24-.41-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.05.3-.09.63-.09.94s.02.64.07.94l-2.03 1.58c-.18.14-.23.41-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z"/>
+      </svg>
+      <span>Settings</span>
+    </button>
+  </nav>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="toast">Link copied to clipboard!</div>
+
+  <script src="./app.js?v=7.2"></script>
+</body>
+</html>

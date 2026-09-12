@@ -1,0 +1,471 @@
+{
+  "app_name": "Raj Tube Pro",
+  "version": "6.0.0",
+  "timestamp": "2026-09-12T15:59:01.342902+00:00",
+  "schedule": {
+    "next_slot_iso": "2026-09-12T22:00:00+00:00",
+    "seconds_remaining": 21663,
+    "formatted_countdown": "06h 01m 03s",
+    "slot_label": "06:00 PM USA (3:30 AM IST)",
+    "now_ist": "12 Sep, 09:28 PM IST"
+  },
+  "summary": {
+    "total_channels": 3,
+    "total_uploaded": 27,
+    "total_in_queue": 283,
+    "total_subscribers": 94,
+    "total_views": 84134,
+    "total_likes": 935,
+    "network_engagement": 1.1,
+    "total_runway_days": 47.2,
+    "system_health": "All Systems Operational",
+    "issues_count": 0,
+    "top_trending_video": {
+      "title": "He Was Not Backing Down From Anyone #SlapFight #PowerSlap #SlapFighting #Viral #Sports.",
+      "views": 18592,
+      "likes": 354,
+      "youtube_url": "https://youtu.be/t5oF0IsXkN0",
+      "thumbnail": "https://i.ytimg.com/vi/t5oF0IsXkN0/mqdefault.jpg",
+      "channel_name": "Zyntrix07",
+      "uploaded_at": "2026-09-11T16:04:35Z"
+    }
+  },
+  "issues": [],
+  "channels": [
+    {
+      "id": "channel_1",
+      "name": "The Hidden Lens",
+      "handle": "@TheHiddenLens-w8y",
+      "youtube_channel_id": "UCrYEFsnLOary-DGMb3iPsgQ",
+      "channel_url": "https://www.youtube.com/channel/UCrYEFsnLOary-DGMb3iPsgQ",
+      "category": "Wildlife & Nature POV",
+      "github_repo": "malhotramahi396-afk/yt-automation-the-hidden-lens",
+      "color": "#10B981",
+      "avatar_url": "https://yt3.ggpht.com/R5wyufkApz5fijH1a4mek8n6CM9y64QklZgfgjuGI-SOwbTIBjEFmmKot6aBnYkVRwOpq965=s240-c-k-c0x00ffffff-no-rj",
+      "subscribers": 21,
+      "total_views": 9399,
+      "channel_total_videos": 4,
+      "avg_views_per_video": 2349.8,
+      "engagement_rate": 1.7,
+      "total_likes": 159,
+      "drive_folder_id": "1f8Nj2kEchzW4gdlMEQ5S_eAazvdrQ3ai",
+      "drive_folder_url": "https://drive.google.com/drive/folders/1f8Nj2kEchzW4gdlMEQ5S_eAazvdrQ3ai",
+      "uploaded_count": 4,
+      "drive_queue_count": 78,
+      "runway_days": 39.0,
+      "stock_status": "Plentiful (39.0 days)",
+      "stock_color": "#10B981",
+      "latest_run_status": "dry_run",
+      "latest_run_time": "2026-09-11T14:42:35.417406+00:00",
+      "latest_uploaded_video": {
+        "youtube_id": "RMgm8o875X0",
+        "youtube_url": "https://youtu.be/RMgm8o875X0",
+        "title": "Close Enough To Hear His Breath #wildlife #shorts #cameraman #viral",
+        "uploaded_at": "2026-09-12T14:03:34Z",
+        "thumbnail": "https://i.ytimg.com/vi/RMgm8o875X0/mqdefault.jpg",
+        "views": 512,
+        "likes": 8,
+        "comments": 0
+      },
+      "uploaded_videos": [
+        {
+          "youtube_id": "RMgm8o875X0",
+          "youtube_url": "https://youtu.be/RMgm8o875X0",
+          "title": "Close Enough To Hear His Breath #wildlife #shorts #cameraman #viral",
+          "uploaded_at": "2026-09-12T14:03:34Z",
+          "thumbnail": "https://i.ytimg.com/vi/RMgm8o875X0/mqdefault.jpg",
+          "views": 512,
+          "likes": 8,
+          "comments": 0
+        },
+        {
+          "youtube_id": "EwZLPUyf2LA",
+          "youtube_url": "https://youtu.be/EwZLPUyf2LA",
+          "title": "Caught In 4K By The Hidden Cameraman #nature #wildlifephotography #shorts #reels",
+          "uploaded_at": "2026-09-11T22:03:59Z",
+          "thumbnail": "https://i.ytimg.com/vi/EwZLPUyf2LA/mqdefault.jpg",
+          "views": 1878,
+          "likes": 17,
+          "comments": 0
+        },
+        {
+          "youtube_id": "3pDpmQcqJT8",
+          "youtube_url": "https://youtu.be/3pDpmQcqJT8",
+          "title": "Breathtaking 4K Wildlife Moment #wildlifephotography #shorts #naturelovers #viral",
+          "uploaded_at": "2026-09-11T14:42:29Z",
+          "thumbnail": "https://i.ytimg.com/vi/3pDpmQcqJT8/mqdefault.jpg",
+          "views": 5754,
+          "likes": 128,
+          "comments": 0
+        },
+        {
+          "youtube_id": "UoPvxQ5Gj9Q",
+          "youtube_url": "https://youtu.be/UoPvxQ5Gj9Q",
+          "title": "A Legendary Moment In Nature #nature #wildlife #shorts #viralvideo",
+          "uploaded_at": "2026-09-11T13:33:07Z",
+          "thumbnail": "https://i.ytimg.com/vi/UoPvxQ5Gj9Q/mqdefault.jpg",
+          "views": 1255,
+          "likes": 6,
+          "comments": 0
+        }
+      ],
+      "recent_runs": [
+        {
+          "started_at": "2026-09-11T14:42:33.573622+00:00",
+          "finished_at": "2026-09-11T14:42:35.417406+00:00",
+          "status": "dry_run",
+          "error": null
+        },
+        {
+          "started_at": "2026-09-11T14:41:57.876444+00:00",
+          "finished_at": "2026-09-11T14:42:07.966270+00:00",
+          "status": "success",
+          "error": null
+        },
+        {
+          "started_at": "2026-09-11T14:38:30.037758+00:00",
+          "finished_at": "2026-09-11T14:38:31.803547+00:00",
+          "status": "dry_run",
+          "error": null
+        }
+      ],
+      "is_active": true
+    },
+    {
+      "id": "channel_2",
+      "name": "Zyntrix07",
+      "handle": "@Zyntrix07",
+      "youtube_channel_id": "UCGFM_waT29mp01VGlScqiMw",
+      "channel_url": "https://www.youtube.com/channel/UCGFM_waT29mp01VGlScqiMw",
+      "category": "Power Slap & Combat Sports",
+      "github_repo": "malhotramahi396-afk/yt-automation-zyntrix07",
+      "color": "#F59E0B",
+      "avatar_url": "https://yt3.ggpht.com/TTLhq8ijvpChRrWaVb1i96FzeFG02Gd31oOfWo4EdOtBtfqTD6h0TrRmEOTd2fE8V0kPexV6EA=s240-c-k-c0x00ffffff-no-rj",
+      "subscribers": 64,
+      "total_views": 63065,
+      "channel_total_videos": 11,
+      "avg_views_per_video": 5733.2,
+      "engagement_rate": 0.9,
+      "total_likes": 578,
+      "drive_folder_id": "1So3rmfL0rvojsXq7m6WoA9RYS029HXW6",
+      "drive_folder_url": "https://drive.google.com/drive/folders/1So3rmfL0rvojsXq7m6WoA9RYS029HXW6",
+      "uploaded_count": 11,
+      "drive_queue_count": 72,
+      "runway_days": 36.0,
+      "stock_status": "Plentiful (36.0 days)",
+      "stock_color": "#10B981",
+      "latest_run_status": "success",
+      "latest_run_time": "2026-09-11T16:04:13.754707+00:00",
+      "latest_uploaded_video": {
+        "youtube_id": "7OVj2yza4ks",
+        "youtube_url": "https://youtu.be/7OVj2yza4ks",
+        "title": "Nobody Expected That Faceoff Reaction #SlapFighting #PowerSlap #SlapBattle #CombatSports #Viral.",
+        "uploaded_at": "2026-09-12T14:06:29Z",
+        "thumbnail": "https://i.ytimg.com/vi/7OVj2yza4ks/mqdefault.jpg",
+        "views": 388,
+        "likes": 11,
+        "comments": 1
+      },
+      "uploaded_videos": [
+        {
+          "youtube_id": "7OVj2yza4ks",
+          "youtube_url": "https://youtu.be/7OVj2yza4ks",
+          "title": "Nobody Expected That Faceoff Reaction #SlapFighting #PowerSlap #SlapBattle #CombatSports #Viral.",
+          "uploaded_at": "2026-09-12T14:06:29Z",
+          "thumbnail": "https://i.ytimg.com/vi/7OVj2yza4ks/mqdefault.jpg",
+          "views": 388,
+          "likes": 11,
+          "comments": 1
+        },
+        {
+          "youtube_id": "g-2DEoij8dY",
+          "youtube_url": "https://youtu.be/g-2DEoij8dY",
+          "title": "His Confidence Had The Whole Crowd Talking #PowerSlap #SlapFighting #SlapFight #Viral #Sports.",
+          "uploaded_at": "2026-09-11T22:07:28Z",
+          "thumbnail": "https://i.ytimg.com/vi/g-2DEoij8dY/mqdefault.jpg",
+          "views": 2282,
+          "likes": 33,
+          "comments": 0
+        },
+        {
+          "youtube_id": "t5oF0IsXkN0",
+          "youtube_url": "https://youtu.be/t5oF0IsXkN0",
+          "title": "He Was Not Backing Down From Anyone #SlapFight #PowerSlap #SlapFighting #Viral #Sports.",
+          "uploaded_at": "2026-09-11T16:04:35Z",
+          "thumbnail": "https://i.ytimg.com/vi/t5oF0IsXkN0/mqdefault.jpg",
+          "views": 18592,
+          "likes": 354,
+          "comments": 0
+        },
+        {
+          "youtube_id": "WIWsbArcAp4",
+          "youtube_url": "https://youtu.be/WIWsbArcAp4",
+          "title": "He Walked Up Like He Owned The Arena #PowerSlap #SlapFight #SlapFighting #Viral #Sports",
+          "uploaded_at": "2026-09-11T09:08:50Z",
+          "thumbnail": "https://i.ytimg.com/vi/WIWsbArcAp4/mqdefault.jpg",
+          "views": 1610,
+          "likes": 12,
+          "comments": 1
+        },
+        {
+          "youtube_id": "L7SEmcVIsS0",
+          "youtube_url": "https://youtu.be/L7SEmcVIsS0",
+          "title": "He Never Broke Eye Contact #PowerSlap #SlapFighting #SlapFight #Highlights #Viral",
+          "uploaded_at": "2026-09-07T19:35:28Z",
+          "thumbnail": "https://i.ytimg.com/vi/L7SEmcVIsS0/mqdefault.jpg",
+          "views": 4416,
+          "likes": 33,
+          "comments": 0
+        },
+        {
+          "youtube_id": "EU0lTDiLM2Y",
+          "youtube_url": "https://youtu.be/EU0lTDiLM2Y",
+          "title": "He Looked Ready For The Biggest Hit Of His Life #PowerSlap #SlapFight #FightNight #Highlights #FYP",
+          "uploaded_at": "2026-09-06T07:20:35Z",
+          "thumbnail": "https://i.ytimg.com/vi/EU0lTDiLM2Y/mqdefault.jpg",
+          "views": 7298,
+          "likes": 11,
+          "comments": 0
+        },
+        {
+          "youtube_id": "ZUnBtn839WQ",
+          "youtube_url": "https://youtu.be/ZUnBtn839WQ",
+          "title": "He Looked Completely Calm Under Pressure #PowerSlap #SlapFight #CombatSports #Sports #FYP",
+          "uploaded_at": "2026-09-03T19:32:51Z",
+          "thumbnail": "https://i.ytimg.com/vi/ZUnBtn839WQ/mqdefault.jpg",
+          "views": 6269,
+          "likes": 37,
+          "comments": 0
+        },
+        {
+          "youtube_id": "BsHgPB_OMhk",
+          "youtube_url": "https://youtu.be/BsHgPB_OMhk",
+          "title": "Everyone Went Silent Before The Action #SlapFighting #PowerSlap #CombatSports #SlapFight #Viral",
+          "uploaded_at": "2026-08-30T17:35:17Z",
+          "thumbnail": "https://i.ytimg.com/vi/BsHgPB_OMhk/mqdefault.jpg",
+          "views": 7177,
+          "likes": 29,
+          "comments": 0
+        },
+        {
+          "youtube_id": "RlpaUoxwZ2k",
+          "youtube_url": "https://youtu.be/RlpaUoxwZ2k",
+          "title": "Everyone Was Waiting For The First Move #SlapFight #PowerSlap #Highlights #CombatSports #FYP",
+          "uploaded_at": "2026-08-27T19:50:24Z",
+          "thumbnail": "https://i.ytimg.com/vi/RlpaUoxwZ2k/mqdefault.jpg",
+          "views": 4170,
+          "likes": 16,
+          "comments": 0
+        },
+        {
+          "youtube_id": "xwS9sXGgcaI",
+          "youtube_url": "https://youtu.be/xwS9sXGgcaI",
+          "title": "Everyone In The Crowd Was Locked In #PowerSlap #SlapFight #Highlights #Sports #FYP",
+          "uploaded_at": "2026-08-26T19:38:10Z",
+          "thumbnail": "https://i.ytimg.com/vi/xwS9sXGgcaI/mqdefault.jpg",
+          "views": 6214,
+          "likes": 26,
+          "comments": 1
+        },
+        {
+          "youtube_id": "0XG0Q-mvSg0",
+          "youtube_url": "https://youtu.be/0XG0Q-mvSg0",
+          "title": "Everyone Could Feel The Pressure #SlapFighting #PowerSlap #SlapFight #Viral #Highlights",
+          "uploaded_at": "2026-08-25T19:55:30Z",
+          "thumbnail": "https://i.ytimg.com/vi/0XG0Q-mvSg0/mqdefault.jpg",
+          "views": 4649,
+          "likes": 16,
+          "comments": 0
+        }
+      ],
+      "recent_runs": [
+        {
+          "started_at": "2026-09-11T16:04:01.992130+00:00",
+          "finished_at": "2026-09-11T16:04:13.754707+00:00",
+          "status": "success",
+          "error": null
+        },
+        {
+          "started_at": "2026-09-11T16:00:13.872744+00:00",
+          "finished_at": "2026-09-11T16:00:15.397714+00:00",
+          "status": "dry_run",
+          "error": null
+        }
+      ],
+      "is_active": true
+    },
+    {
+      "id": "channel_3",
+      "name": "VibroZen",
+      "handle": "@VibroZen-m1c",
+      "youtube_channel_id": "UCv_yo4V3JasT1S2vh_3ARVA",
+      "channel_url": "https://www.youtube.com/channel/UCv_yo4V3JasT1S2vh_3ARVA",
+      "category": "Funny & Viral Shorts",
+      "github_repo": "malhotramahi396-afk/yt-automation-vibrozen",
+      "color": "#06B6D4",
+      "avatar_url": "https://yt3.ggpht.com/I2BgaCh32ZzDgRjMmIhrrlaWX0Ad9y6p-ZeztV8zOaTsejWJsGcfoac3MFJaq4IBE99L057D=s240-c-k-c0x00ffffff-no-rj",
+      "subscribers": 9,
+      "total_views": 11670,
+      "channel_total_videos": 12,
+      "avg_views_per_video": 972.5,
+      "engagement_rate": 1.7,
+      "total_likes": 198,
+      "drive_folder_id": "1oZBC0TiLWerpRuyZnhbDhNbAMAcEtdAc",
+      "drive_folder_url": "https://drive.google.com/drive/folders/1oZBC0TiLWerpRuyZnhbDhNbAMAcEtdAc",
+      "uploaded_count": 12,
+      "drive_queue_count": 133,
+      "runway_days": 66.5,
+      "stock_status": "Plentiful (66.5 days)",
+      "stock_color": "#10B981",
+      "latest_run_status": "success",
+      "latest_run_time": "2026-09-11T16:21:14.051770+00:00",
+      "latest_uploaded_video": {
+        "youtube_id": "RoTqHPenjws",
+        "youtube_url": "https://youtu.be/RoTqHPenjws",
+        "title": "He Is Sweeping With Maximum Concentration #PandaTok #Panda #AnimalTok #Funny #FYP.",
+        "uploaded_at": "2026-09-12T14:04:47Z",
+        "thumbnail": "https://i.ytimg.com/vi/RoTqHPenjws/mqdefault.jpg",
+        "views": 0,
+        "likes": 0,
+        "comments": 0
+      },
+      "uploaded_videos": [
+        {
+          "youtube_id": "RoTqHPenjws",
+          "youtube_url": "https://youtu.be/RoTqHPenjws",
+          "title": "He Is Sweeping With Maximum Concentration #PandaTok #Panda #AnimalTok #Funny #FYP.",
+          "uploaded_at": "2026-09-12T14:04:47Z",
+          "thumbnail": "https://i.ytimg.com/vi/RoTqHPenjws/mqdefault.jpg",
+          "views": 0,
+          "likes": 0,
+          "comments": 0
+        },
+        {
+          "youtube_id": "W7MqRQt5wuI",
+          "youtube_url": "https://youtu.be/W7MqRQt5wuI",
+          "title": "He Is Sweeping Like There Is No Tomorrow #Panda #FunnyAnimals #AnimalTok #Cute #FYP.",
+          "uploaded_at": "2026-09-11T22:05:13Z",
+          "thumbnail": "https://i.ytimg.com/vi/W7MqRQt5wuI/mqdefault.jpg",
+          "views": 0,
+          "likes": 0,
+          "comments": 0
+        },
+        {
+          "youtube_id": "ONDKse4JvC0",
+          "youtube_url": "https://youtu.be/ONDKse4JvC0",
+          "title": "He Is Not Letting Go Of That Broom #PandaTok #Panda #Funny #Cute #FYP.",
+          "uploaded_at": "2026-09-11T16:21:30Z",
+          "thumbnail": "https://i.ytimg.com/vi/ONDKse4JvC0/mqdefault.jpg",
+          "views": 0,
+          "likes": 0,
+          "comments": 0
+        },
+        {
+          "youtube_id": "F5raQIzv_Oo",
+          "youtube_url": "https://youtu.be/F5raQIzv_Oo",
+          "title": "He Is Giving His Best And It Shows #PandaTok #FunnyAnimals #Panda #Viral #FYP",
+          "uploaded_at": "2026-09-11T09:09:59Z",
+          "thumbnail": "https://i.ytimg.com/vi/F5raQIzv_Oo/mqdefault.jpg",
+          "views": 1,
+          "likes": 0,
+          "comments": 0
+        },
+        {
+          "youtube_id": "h6lPr3VxvsA",
+          "youtube_url": "https://youtu.be/h6lPr3VxvsA",
+          "title": "He Is Definitely The Favorite Employee #Panda #Funny #CuteAnimals #Viral #PandaTok",
+          "uploaded_at": "2026-09-07T19:35:42Z",
+          "thumbnail": "https://i.ytimg.com/vi/h6lPr3VxvsA/mqdefault.jpg",
+          "views": 2,
+          "likes": 0,
+          "comments": 0
+        },
+        {
+          "youtube_id": "e_0cwaG8aac",
+          "youtube_url": "https://youtu.be/e_0cwaG8aac",
+          "title": "He Is Definitely Taking This Job Seriously #PandaTok #Panda #AnimalTok #Funny #Cute",
+          "uploaded_at": "2026-09-06T07:20:23Z",
+          "thumbnail": "https://i.ytimg.com/vi/e_0cwaG8aac/mqdefault.jpg",
+          "views": 2,
+          "likes": 0,
+          "comments": 0
+        },
+        {
+          "youtube_id": "llV_vJGeexE",
+          "youtube_url": "https://youtu.be/llV_vJGeexE",
+          "title": "He Is Clearly The Most Dedicated Panda Here #PandaTok #Panda #FunnyAnimals #Cute #FYP",
+          "uploaded_at": "2026-09-03T19:33:57Z",
+          "thumbnail": "https://i.ytimg.com/vi/llV_vJGeexE/mqdefault.jpg",
+          "views": 1825,
+          "likes": 39,
+          "comments": 0
+        },
+        {
+          "youtube_id": "K08ZOr1ULpc",
+          "youtube_url": "https://youtu.be/K08ZOr1ULpc",
+          "title": "He Is Clearly Taking Notes From The Professionals #PandaTok #Panda #AnimalTok #FunnyAnimals #FYP",
+          "uploaded_at": "2026-08-30T17:35:25Z",
+          "thumbnail": "https://i.ytimg.com/vi/K08ZOr1ULpc/mqdefault.jpg",
+          "views": 7,
+          "likes": 1,
+          "comments": 0
+        },
+        {
+          "youtube_id": "lD-2eLUY0e4",
+          "youtube_url": "https://youtu.be/lD-2eLUY0e4",
+          "title": "He Has The Face Of A Very Serious Employee #Panda #FunnyAnimals #AnimalTok #Cute #FYP",
+          "uploaded_at": "2026-08-27T19:50:12Z",
+          "thumbnail": "https://i.ytimg.com/vi/lD-2eLUY0e4/mqdefault.jpg",
+          "views": 27,
+          "likes": 1,
+          "comments": 0
+        },
+        {
+          "youtube_id": "jw0hYw51YOA",
+          "youtube_url": "https://youtu.be/jw0hYw51YOA",
+          "title": "He Found The Perfect Tool For The Job #Panda #PandaTok #CuteAnimals #Funny #FYP",
+          "uploaded_at": "2026-08-26T19:38:07Z",
+          "thumbnail": "https://i.ytimg.com/vi/jw0hYw51YOA/mqdefault.jpg",
+          "views": 9769,
+          "likes": 157,
+          "comments": 0
+        },
+        {
+          "youtube_id": "Xnmu9_wghuM",
+          "youtube_url": "https://youtu.be/Xnmu9_wghuM",
+          "title": "Everyone Needs A Panda Like This On Their Team #PandaTok #Panda #CuteAnimals #Funny #Viral",
+          "uploaded_at": "2026-08-25T19:55:27Z",
+          "thumbnail": "https://i.ytimg.com/vi/Xnmu9_wghuM/mqdefault.jpg",
+          "views": 22,
+          "likes": 0,
+          "comments": 0
+        },
+        {
+          "youtube_id": "djoP1idzHtY",
+          "youtube_url": "https://youtu.be/djoP1idzHtY",
+          "title": "Everyone Could Use A Coworker Like This Panda #PandaTok #Panda #CuteAnimals #Funny #FYP",
+          "uploaded_at": "2026-08-24T19:00:32Z",
+          "thumbnail": "https://i.ytimg.com/vi/djoP1idzHtY/mqdefault.jpg",
+          "views": 15,
+          "likes": 0,
+          "comments": 0
+        }
+      ],
+      "recent_runs": [
+        {
+          "started_at": "2026-09-11T16:20:54.671032+00:00",
+          "finished_at": "2026-09-11T16:21:14.051770+00:00",
+          "status": "success",
+          "error": null
+        },
+        {
+          "started_at": "2026-09-11T16:20:22.671574+00:00",
+          "finished_at": "2026-09-11T16:20:25.902137+00:00",
+          "status": "dry_run",
+          "error": null
+        }
+      ],
+      "is_active": true
+    }
+  ]
+}
