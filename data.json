@@ -1,20 +1,20 @@
 {
   "app_name": "Raj Tube Pro",
   "version": "6.0.0",
-  "timestamp": "2026-09-12T20:49:41.886448+00:00",
+  "timestamp": "2026-09-12T20:50:42.224104+00:00",
   "schedule": {
     "next_slot_iso": "2026-09-12T22:00:00+00:00",
-    "seconds_remaining": 4226,
-    "formatted_countdown": "01h 10m 26s",
+    "seconds_remaining": 4166,
+    "formatted_countdown": "01h 09m 26s",
     "slot_label": "06:00 PM USA (3:30 AM IST)",
-    "now_ist": "13 Sep, 02:19 AM IST"
+    "now_ist": "13 Sep, 02:20 AM IST"
   },
   "summary": {
     "total_channels": 6,
     "total_uploaded": 73,
     "total_in_queue": 687,
     "total_subscribers": 124,
-    "total_views": 131947,
+    "total_views": 131980,
     "total_likes": 1234,
     "network_engagement": 0.9,
     "total_runway_days": 57.2,
@@ -31,7 +31,7 @@
       "uploaded_at": "2026-09-11T16:04:35Z"
     },
     "analytics": {
-      "watch_time_hours": 554.2,
+      "watch_time_hours": 554.3,
       "avg_view_duration": "0:24",
       "top_countries": [
         {
@@ -174,10 +174,10 @@
         "is_clean": true
       },
       "view_health": {
-        "label": "YouTube API Verified: 1,808 avg views/video (131,947 total views across 73 videos)",
+        "label": "YouTube API Verified: 1,808 avg views/video (131,980 total views across 73 videos)",
         "badge": "1,808 AVG",
         "color": "#10B981",
-        "avg_views": 1807.5,
+        "avg_views": 1807.9,
         "shorts_feed_share": "81.2%",
         "velocity_verdict": "Algorithm Reach: High"
       },
@@ -209,13 +209,13 @@
       "color": "#10B981",
       "avatar_url": "https://yt3.ggpht.com/R5wyufkApz5fijH1a4mek8n6CM9y64QklZgfgjuGI-SOwbTIBjEFmmKot6aBnYkVRwOpq965=s240-c-k-c0x00ffffff-no-rj",
       "subscribers": 25,
-      "total_views": 13484,
+      "total_views": 13508,
       "channel_total_videos": 4,
-      "avg_views_per_video": 3371.0,
+      "avg_views_per_video": 3377.0,
       "engagement_rate": 1.5,
       "total_likes": 202,
       "analytics": {
-        "watch_time_hours": 56.6,
+        "watch_time_hours": 56.7,
         "avg_view_duration": "0:24",
         "top_countries": [
           {
@@ -358,10 +358,10 @@
           "is_clean": true
         },
         "view_health": {
-          "label": "YouTube API Verified: 3,371 avg views/video (13,484 total views across 4 videos)",
-          "badge": "3,371 AVG",
+          "label": "YouTube API Verified: 3,377 avg views/video (13,508 total views across 4 videos)",
+          "badge": "3,377 AVG",
           "color": "#10B981",
-          "avg_views": 3371.0,
+          "avg_views": 3377.0,
           "shorts_feed_share": "81.2%",
           "velocity_verdict": "Algorithm Reach: High"
         },
@@ -428,7 +428,7 @@
           "title": "Breathtaking 4K Wildlife Moment #wildlifephotography #shorts #naturelovers #viral",
           "uploaded_at": "2026-09-11T14:42:29Z",
           "thumbnail": "https://i.ytimg.com/vi/3pDpmQcqJT8/mqdefault.jpg",
-          "views": 8823,
+          "views": 8847,
           "likes": 157,
           "comments": 1,
           "subscribers_gained": 17
@@ -1181,9 +1181,9 @@
       "color": "#8B5CF6",
       "avatar_url": "https://yt3.ggpht.com/WKefM8i0bji48M_e159k6q0080b5zNwYExax_QloW7H3XguFARUF-SuE62a8rdPQJXvtTXxbJQ=s240-c-k-c0x00ffffff-no-rj",
       "subscribers": 0,
-      "total_views": 860,
+      "total_views": 869,
       "channel_total_videos": 10,
-      "avg_views_per_video": 86.0,
+      "avg_views_per_video": 86.9,
       "engagement_rate": 0.8,
       "total_likes": 7,
       "analytics": {
@@ -1330,10 +1330,10 @@
           "is_clean": true
         },
         "view_health": {
-          "label": "Warm-Up Phase: 86 avg views/video (860 total views across 10 videos)",
-          "badge": "86 AVG",
+          "label": "Warm-Up Phase: 87 avg views/video (869 total views across 10 videos)",
+          "badge": "87 AVG",
           "color": "#F59E0B",
-          "avg_views": 86.0,
+          "avg_views": 86.9,
           "shorts_feed_share": "81.2%",
           "velocity_verdict": "Algorithm Reach: Healthy"
         },
@@ -1366,7 +1366,7 @@
         "title": "Adorable Toddler Reacts In The Cutest Way #ToddlerLife #CutestMoments #FamilyMoments #WholesomeConte",
         "uploaded_at": "2026-09-12T17:39:42Z",
         "thumbnail": "https://i.ytimg.com/vi/goCoZBF3N_M/mqdefault.jpg",
-        "views": 853,
+        "views": 862,
         "likes": 7,
         "comments": 0,
         "subscribers_gained": 0
@@ -1378,7 +1378,7 @@
           "title": "Adorable Toddler Reacts In The Cutest Way #ToddlerLife #CutestMoments #FamilyMoments #WholesomeConte",
           "uploaded_at": "2026-09-12T17:39:42Z",
           "thumbnail": "https://i.ytimg.com/vi/goCoZBF3N_M/mqdefault.jpg",
-          "views": 853,
+          "views": 862,
           "likes": 7,
           "comments": 0,
           "subscribers_gained": 0
