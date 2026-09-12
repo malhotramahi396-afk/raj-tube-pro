@@ -1,23 +1,23 @@
 {
   "app_name": "Raj Tube Pro",
   "version": "6.0.0",
-  "timestamp": "2026-09-12T20:46:26.715845+00:00",
+  "timestamp": "2026-09-12T20:49:41.886448+00:00",
   "schedule": {
     "next_slot_iso": "2026-09-12T22:00:00+00:00",
-    "seconds_remaining": 4421,
-    "formatted_countdown": "01h 13m 41s",
+    "seconds_remaining": 4226,
+    "formatted_countdown": "01h 10m 26s",
     "slot_label": "06:00 PM USA (3:30 AM IST)",
-    "now_ist": "13 Sep, 02:16 AM IST"
+    "now_ist": "13 Sep, 02:19 AM IST"
   },
   "summary": {
     "total_channels": 6,
-    "total_uploaded": 72,
-    "total_in_queue": 688,
+    "total_uploaded": 73,
+    "total_in_queue": 687,
     "total_subscribers": 124,
-    "total_views": 131847,
-    "total_likes": 1235,
+    "total_views": 131947,
+    "total_likes": 1234,
     "network_engagement": 0.9,
-    "total_runway_days": 57.3,
+    "total_runway_days": 57.2,
     "system_health": "All Systems Operational",
     "issues_count": 0,
     "top_trending_video": {
@@ -31,7 +31,7 @@
       "uploaded_at": "2026-09-11T16:04:35Z"
     },
     "analytics": {
-      "watch_time_hours": 553.8,
+      "watch_time_hours": 554.2,
       "avg_view_duration": "0:24",
       "top_countries": [
         {
@@ -174,10 +174,10 @@
         "is_clean": true
       },
       "view_health": {
-        "label": "YouTube API Verified: 1,831 avg views/video (131,847 total views across 72 videos)",
-        "badge": "1,831 AVG",
+        "label": "YouTube API Verified: 1,808 avg views/video (131,947 total views across 73 videos)",
+        "badge": "1,808 AVG",
         "color": "#10B981",
-        "avg_views": 1831.2,
+        "avg_views": 1807.5,
         "shorts_feed_share": "81.2%",
         "velocity_verdict": "Algorithm Reach: High"
       },
@@ -190,9 +190,9 @@
       },
       "upload_engine": {
         "latest_run": "success",
-        "queue_health": "Plentiful Runway (57.3 days)",
-        "runway_days": 57.3,
-        "total_uploaded": 72
+        "queue_health": "Plentiful Runway (57.2 days)",
+        "runway_days": 57.2,
+        "total_uploaded": 73
       }
     }
   },
@@ -209,13 +209,13 @@
       "color": "#10B981",
       "avatar_url": "https://yt3.ggpht.com/R5wyufkApz5fijH1a4mek8n6CM9y64QklZgfgjuGI-SOwbTIBjEFmmKot6aBnYkVRwOpq965=s240-c-k-c0x00ffffff-no-rj",
       "subscribers": 25,
-      "total_views": 13439,
+      "total_views": 13484,
       "channel_total_videos": 4,
-      "avg_views_per_video": 3359.8,
+      "avg_views_per_video": 3371.0,
       "engagement_rate": 1.5,
-      "total_likes": 201,
+      "total_likes": 202,
       "analytics": {
-        "watch_time_hours": 56.4,
+        "watch_time_hours": 56.6,
         "avg_view_duration": "0:24",
         "top_countries": [
           {
@@ -358,10 +358,10 @@
           "is_clean": true
         },
         "view_health": {
-          "label": "YouTube API Verified: 3,360 avg views/video (13,439 total views across 4 videos)",
-          "badge": "3,360 AVG",
+          "label": "YouTube API Verified: 3,371 avg views/video (13,484 total views across 4 videos)",
+          "badge": "3,371 AVG",
           "color": "#10B981",
-          "avg_views": 3359.8,
+          "avg_views": 3371.0,
           "shorts_feed_share": "81.2%",
           "velocity_verdict": "Algorithm Reach: High"
         },
@@ -394,7 +394,7 @@
         "title": "Close Enough To Hear His Breath #wildlife #shorts #cameraman #viral",
         "uploaded_at": "2026-09-12T14:03:34Z",
         "thumbnail": "https://i.ytimg.com/vi/RMgm8o875X0/mqdefault.jpg",
-        "views": 1481,
+        "views": 1526,
         "likes": 22,
         "comments": 0,
         "subscribers_gained": 3
@@ -406,7 +406,7 @@
           "title": "Close Enough To Hear His Breath #wildlife #shorts #cameraman #viral",
           "uploaded_at": "2026-09-12T14:03:34Z",
           "thumbnail": "https://i.ytimg.com/vi/RMgm8o875X0/mqdefault.jpg",
-          "views": 1481,
+          "views": 1526,
           "likes": 22,
           "comments": 0,
           "subscribers_gained": 3
@@ -429,7 +429,7 @@
           "uploaded_at": "2026-09-11T14:42:29Z",
           "thumbnail": "https://i.ytimg.com/vi/3pDpmQcqJT8/mqdefault.jpg",
           "views": 8823,
-          "likes": 156,
+          "likes": 157,
           "comments": 1,
           "subscribers_gained": 17
         },
@@ -490,13 +490,13 @@
       "color": "#F59E0B",
       "avatar_url": "https://yt3.ggpht.com/TTLhq8ijvpChRrWaVb1i96FzeFG02Gd31oOfWo4EdOtBtfqTD6h0TrRmEOTd2fE8V0kPexV6EA=s240-c-k-c0x00ffffff-no-rj",
       "subscribers": 66,
-      "total_views": 83409,
+      "total_views": 83455,
       "channel_total_videos": 11,
-      "avg_views_per_video": 7582.6,
+      "avg_views_per_video": 7586.8,
       "engagement_rate": 0.7,
-      "total_likes": 609,
+      "total_likes": 607,
       "analytics": {
-        "watch_time_hours": 350.3,
+        "watch_time_hours": 350.5,
         "avg_view_duration": "0:24",
         "top_countries": [
           {
@@ -639,10 +639,10 @@
           "is_clean": true
         },
         "view_health": {
-          "label": "YouTube API Verified: 7,583 avg views/video (83,409 total views across 11 videos)",
-          "badge": "7,583 AVG",
+          "label": "YouTube API Verified: 7,587 avg views/video (83,455 total views across 11 videos)",
+          "badge": "7,587 AVG",
           "color": "#10B981",
-          "avg_views": 7582.6,
+          "avg_views": 7586.8,
           "shorts_feed_share": "81.2%",
           "velocity_verdict": "Algorithm Reach: High"
         },
@@ -675,7 +675,7 @@
         "title": "Nobody Expected That Faceoff Reaction #SlapFighting #PowerSlap #SlapBattle #CombatSports #Viral.",
         "uploaded_at": "2026-09-12T14:06:29Z",
         "thumbnail": "https://i.ytimg.com/vi/7OVj2yza4ks/mqdefault.jpg",
-        "views": 966,
+        "views": 1012,
         "likes": 18,
         "comments": 1,
         "subscribers_gained": 1
@@ -687,7 +687,7 @@
           "title": "Nobody Expected That Faceoff Reaction #SlapFighting #PowerSlap #SlapBattle #CombatSports #Viral.",
           "uploaded_at": "2026-09-12T14:06:29Z",
           "thumbnail": "https://i.ytimg.com/vi/7OVj2yza4ks/mqdefault.jpg",
-          "views": 966,
+          "views": 1012,
           "likes": 18,
           "comments": 1,
           "subscribers_gained": 1
@@ -699,7 +699,7 @@
           "uploaded_at": "2026-09-11T22:07:28Z",
           "thumbnail": "https://i.ytimg.com/vi/g-2DEoij8dY/mqdefault.jpg",
           "views": 3992,
-          "likes": 59,
+          "likes": 57,
           "comments": 0,
           "subscribers_gained": 4
         },
@@ -1181,9 +1181,9 @@
       "color": "#8B5CF6",
       "avatar_url": "https://yt3.ggpht.com/WKefM8i0bji48M_e159k6q0080b5zNwYExax_QloW7H3XguFARUF-SuE62a8rdPQJXvtTXxbJQ=s240-c-k-c0x00ffffff-no-rj",
       "subscribers": 0,
-      "total_views": 851,
+      "total_views": 860,
       "channel_total_videos": 10,
-      "avg_views_per_video": 85.1,
+      "avg_views_per_video": 86.0,
       "engagement_rate": 0.8,
       "total_likes": 7,
       "analytics": {
@@ -1330,10 +1330,10 @@
           "is_clean": true
         },
         "view_health": {
-          "label": "Warm-Up Phase: 85 avg views/video (851 total views across 10 videos)",
-          "badge": "85 AVG",
+          "label": "Warm-Up Phase: 86 avg views/video (860 total views across 10 videos)",
+          "badge": "86 AVG",
           "color": "#F59E0B",
-          "avg_views": 85.1,
+          "avg_views": 86.0,
           "shorts_feed_share": "81.2%",
           "velocity_verdict": "Algorithm Reach: Healthy"
         },
@@ -1366,7 +1366,7 @@
         "title": "Adorable Toddler Reacts In The Cutest Way #ToddlerLife #CutestMoments #FamilyMoments #WholesomeConte",
         "uploaded_at": "2026-09-12T17:39:42Z",
         "thumbnail": "https://i.ytimg.com/vi/goCoZBF3N_M/mqdefault.jpg",
-        "views": 844,
+        "views": 853,
         "likes": 7,
         "comments": 0,
         "subscribers_gained": 0
@@ -1378,7 +1378,7 @@
           "title": "Adorable Toddler Reacts In The Cutest Way #ToddlerLife #CutestMoments #FamilyMoments #WholesomeConte",
           "uploaded_at": "2026-09-12T17:39:42Z",
           "thumbnail": "https://i.ytimg.com/vi/goCoZBF3N_M/mqdefault.jpg",
-          "views": 844,
+          "views": 853,
           "likes": 7,
           "comments": 0,
           "subscribers_gained": 0
@@ -1840,8 +1840,8 @@
       "avatar_url": "https://yt3.ggpht.com/vRLBXNb4fgjWzDfLf8ltniGaD2BlvZ1PAWugGoZaJx1nCdJ92LubM-8vy7hIgxHlCicFwpt2=s240-c-k-c0x00ffffff-no-rj",
       "subscribers": 23,
       "total_views": 9738,
-      "channel_total_videos": 25,
-      "avg_views_per_video": 389.5,
+      "channel_total_videos": 26,
+      "avg_views_per_video": 374.5,
       "engagement_rate": 1.4,
       "total_likes": 137,
       "analytics": {
@@ -1988,10 +1988,10 @@
           "is_clean": true
         },
         "view_health": {
-          "label": "YouTube API Verified: 390 avg views/video (9,738 total views across 25 videos)",
-          "badge": "390 AVG",
+          "label": "YouTube API Verified: 374 avg views/video (9,738 total views across 26 videos)",
+          "badge": "374 AVG",
           "color": "#3EA6FF",
-          "avg_views": 389.5,
+          "avg_views": 374.5,
           "shorts_feed_share": "81.2%",
           "velocity_verdict": "Algorithm Reach: Healthy"
         },
@@ -2003,33 +2003,44 @@
           "is_compliant": true
         },
         "upload_engine": {
-          "latest_run": "idle",
-          "queue_health": "Plentiful Runway (70.5 days)",
-          "runway_days": 70.5,
-          "total_uploaded": 25
+          "latest_run": "dry_run",
+          "queue_health": "Plentiful Runway (70.0 days)",
+          "runway_days": 70.0,
+          "total_uploaded": 26
         }
       },
       "drive_folder_id": "1mxwPH1BvYEfv77zDUWA5ZxiwYW2hG125",
       "drive_folder_url": "https://drive.google.com/drive/folders/1mxwPH1BvYEfv77zDUWA5ZxiwYW2hG125",
-      "uploaded_count": 25,
-      "drive_queue_count": 141,
-      "runway_days": 70.5,
-      "stock_status": "Plentiful (70.5 days)",
+      "uploaded_count": 26,
+      "drive_queue_count": 140,
+      "runway_days": 70.0,
+      "stock_status": "Plentiful (70.0 days)",
       "stock_color": "#10B981",
-      "latest_run_status": "idle",
-      "latest_run_time": null,
+      "latest_run_status": "dry_run",
+      "latest_run_time": "2026-09-12T20:46:17.129319+00:00",
       "latest_uploaded_video": {
-        "youtube_id": "8a22a48a74Q",
-        "youtube_url": "https://youtu.be/8a22a48a74Q",
-        "title": "Every Champion Has A Beginning Against All Odds #Football #Soccer #FootballStory #FootballLife #Goal",
-        "uploaded_at": "2026-09-07T19:30:16Z",
-        "thumbnail": "https://i.ytimg.com/vi/8a22a48a74Q/mqdefault.jpg",
-        "views": 8,
+        "youtube_id": "RQRckO7D9Sg",
+        "youtube_url": "https://youtu.be/RQRckO7D9Sg",
+        "title": "Every Champion Has A Beginning Before The Final Whistle #Football #Soccer #FootballStory #FootballLi",
+        "uploaded_at": "2026-09-12T20:49:22Z",
+        "thumbnail": "https://i.ytimg.com/vi/RQRckO7D9Sg/mqdefault.jpg",
+        "views": 0,
         "likes": 0,
         "comments": 0,
         "subscribers_gained": 0
       },
       "uploaded_videos": [
+        {
+          "youtube_id": "RQRckO7D9Sg",
+          "youtube_url": "https://youtu.be/RQRckO7D9Sg",
+          "title": "Every Champion Has A Beginning Before The Final Whistle #Football #Soccer #FootballStory #FootballLi",
+          "uploaded_at": "2026-09-12T20:49:22Z",
+          "thumbnail": "https://i.ytimg.com/vi/RQRckO7D9Sg/mqdefault.jpg",
+          "views": 0,
+          "likes": 0,
+          "comments": 0,
+          "subscribers_gained": 0
+        },
         {
           "youtube_id": "8a22a48a74Q",
           "youtube_url": "https://youtu.be/8a22a48a74Q",
@@ -2306,7 +2317,14 @@
           "subscribers_gained": 2
         }
       ],
-      "recent_runs": [],
+      "recent_runs": [
+        {
+          "started_at": "2026-09-12T20:46:16.287511+00:00",
+          "finished_at": "2026-09-12T20:46:17.129319+00:00",
+          "status": "dry_run",
+          "error": null
+        }
+      ],
       "is_active": true
     }
   ]
