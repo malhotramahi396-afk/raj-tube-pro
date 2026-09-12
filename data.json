@@ -1,28 +1,28 @@
 {
   "app_name": "Raj Tube Pro",
   "version": "6.0.0",
-  "timestamp": "2026-09-12T22:11:32.008594+00:00",
+  "timestamp": "2026-09-12T22:23:29.201082+00:00",
   "schedule": {
     "next_slot_iso": "2026-09-13T14:00:00+00:00",
-    "seconds_remaining": 56922,
-    "formatted_countdown": "15h 48m 42s",
+    "seconds_remaining": 56205,
+    "formatted_countdown": "15h 36m 45s",
     "slot_label": "10:00 AM USA (7:30 PM IST Tomorrow)",
-    "now_ist": "13 Sep, 03:41 AM IST"
+    "now_ist": "13 Sep, 03:53 AM IST"
   },
   "summary": {
     "total_channels": 10,
-    "total_uploaded": 177,
-    "total_in_queue": 1271,
+    "total_uploaded": 182,
+    "total_in_queue": 1267,
     "total_subscribers": 145,
-    "total_views": 166578,
-    "total_likes": 1499,
+    "total_views": 167092,
+    "total_likes": 1502,
     "network_engagement": 0.9,
-    "total_runway_days": 63.5,
+    "total_runway_days": 63.4,
     "system_health": "All Systems Operational",
     "issues_count": 0,
     "top_trending_video": {
       "title": "He Was Not Backing Down From Anyone #SlapFight #PowerSlap #SlapFighting #Viral #Sports.",
-      "views": 38147,
+      "views": 38310,
       "likes": 355,
       "subscribers_gained": 32,
       "youtube_url": "https://youtu.be/t5oF0IsXkN0",
@@ -31,7 +31,7 @@
       "uploaded_at": "2026-09-11T16:04:35Z"
     },
     "analytics": {
-      "watch_time_hours": 699.6,
+      "watch_time_hours": 701.8,
       "avg_view_duration": "0:24",
       "top_countries": [
         {
@@ -174,10 +174,10 @@
         "is_clean": true
       },
       "view_health": {
-        "label": "YouTube API Verified: 941 avg views/video (166,578 total views across 177 videos)",
-        "badge": "941 AVG",
+        "label": "YouTube API Verified: 918 avg views/video (167,092 total views across 182 videos)",
+        "badge": "918 AVG",
         "color": "#3EA6FF",
-        "avg_views": 941.1,
+        "avg_views": 918.1,
         "shorts_feed_share": "81.2%",
         "velocity_verdict": "Algorithm Reach: High"
       },
@@ -190,9 +190,9 @@
       },
       "upload_engine": {
         "latest_run": "success",
-        "queue_health": "Plentiful Runway (63.5 days)",
-        "runway_days": 63.5,
-        "total_uploaded": 177
+        "queue_health": "Plentiful Runway (63.4 days)",
+        "runway_days": 63.4,
+        "total_uploaded": 182
       }
     },
     "runner_nodes": [
@@ -202,16 +202,16 @@
         "handle": "@TheHiddenLens-w8y",
         "color": "#10B981",
         "runner_node": {
-          "ip": "103.249.233.80",
-          "city": "Ahmedabad",
-          "region": "Gujarat",
-          "country": "IN",
-          "country_code": "IN",
-          "flag": "\ud83c\udf10",
-          "org": "AS45916 Gujarat Telelink Pvt Ltd",
+          "ip": "20.46.239.183",
+          "city": "Des Moines",
+          "region": "Iowa",
+          "country": "US",
+          "country_code": "US",
+          "flag": "\ud83c\uddfa\ud83c\uddf8",
+          "org": "AS8075 Microsoft Corporation",
           "datacenter": "Microsoft Azure Cloud Runner",
-          "verified_at": "2026-09-12T22:02:13.966139+00:00",
-          "verify_url": "https://ipinfo.io/103.249.233.80"
+          "verified_at": "2026-09-12T22:22:46.282858+00:00",
+          "verify_url": "https://ipinfo.io/20.46.239.183"
         }
       },
       {
@@ -382,13 +382,13 @@
       "color": "#10B981",
       "avatar_url": "https://yt3.ggpht.com/R5wyufkApz5fijH1a4mek8n6CM9y64QklZgfgjuGI-SOwbTIBjEFmmKot6aBnYkVRwOpq965=s240-c-k-c0x00ffffff-no-rj",
       "subscribers": 27,
-      "total_views": 14576,
+      "total_views": 14715,
       "channel_total_videos": 5,
-      "avg_views_per_video": 2915.2,
+      "avg_views_per_video": 2943.0,
       "engagement_rate": 1.4,
-      "total_likes": 209,
+      "total_likes": 210,
       "analytics": {
-        "watch_time_hours": 61.2,
+        "watch_time_hours": 61.8,
         "avg_view_duration": "0:24",
         "top_countries": [
           {
@@ -531,10 +531,10 @@
           "is_clean": true
         },
         "view_health": {
-          "label": "YouTube API Verified: 2,915 avg views/video (14,576 total views across 5 videos)",
-          "badge": "2,915 AVG",
+          "label": "YouTube API Verified: 2,943 avg views/video (14,715 total views across 5 videos)",
+          "badge": "2,943 AVG",
           "color": "#10B981",
-          "avg_views": 2915.2,
+          "avg_views": 2943.0,
           "shorts_feed_share": "81.2%",
           "velocity_verdict": "Algorithm Reach: High"
         },
@@ -560,14 +560,14 @@
       "stock_status": "Plentiful (38.5 days)",
       "stock_color": "#10B981",
       "latest_run_status": "dry_run",
-      "latest_run_time": "2026-09-12T22:02:13.966139+00:00",
+      "latest_run_time": "2026-09-12T22:22:46.282858+00:00",
       "latest_uploaded_video": {
         "youtube_id": "H511dz4lsLQ",
         "youtube_url": "https://youtu.be/H511dz4lsLQ",
         "title": "Danger At Point Blank Range #wildlife #shorts #animalencounter #fyp",
         "uploaded_at": "2026-09-12T22:03:51Z",
         "thumbnail": "https://i.ytimg.com/vi/H511dz4lsLQ/mqdefault.jpg",
-        "views": 2,
+        "views": 28,
         "likes": 1,
         "comments": 0,
         "subscribers_gained": 0
@@ -579,7 +579,7 @@
           "title": "Danger At Point Blank Range #wildlife #shorts #animalencounter #fyp",
           "uploaded_at": "2026-09-12T22:03:51Z",
           "thumbnail": "https://i.ytimg.com/vi/H511dz4lsLQ/mqdefault.jpg",
-          "views": 2,
+          "views": 28,
           "likes": 1,
           "comments": 0,
           "subscribers_gained": 0
@@ -590,8 +590,8 @@
           "title": "Close Enough To Hear His Breath #wildlife #shorts #cameraman #viral",
           "uploaded_at": "2026-09-12T14:03:34Z",
           "thumbnail": "https://i.ytimg.com/vi/RMgm8o875X0/mqdefault.jpg",
-          "views": 1923,
-          "likes": 27,
+          "views": 1952,
+          "likes": 28,
           "comments": 0,
           "subscribers_gained": 4
         },
@@ -612,7 +612,7 @@
           "title": "Breathtaking 4K Wildlife Moment #wildlifephotography #shorts #naturelovers #viral",
           "uploaded_at": "2026-09-11T14:42:29Z",
           "thumbnail": "https://i.ytimg.com/vi/3pDpmQcqJT8/mqdefault.jpg",
-          "views": 9516,
+          "views": 9600,
           "likes": 158,
           "comments": 1,
           "subscribers_gained": 18
@@ -630,6 +630,12 @@
         }
       ],
       "recent_runs": [
+        {
+          "started_at": "2026-09-12T22:22:45.411888+00:00",
+          "finished_at": "2026-09-12T22:22:46.282858+00:00",
+          "status": "dry_run",
+          "error": null
+        },
         {
           "started_at": "2026-09-12T22:02:12.650339+00:00",
           "finished_at": "2026-09-12T22:02:13.966139+00:00",
@@ -653,25 +659,19 @@
           "finished_at": "2026-09-11T14:42:35.417406+00:00",
           "status": "dry_run",
           "error": null
-        },
-        {
-          "started_at": "2026-09-11T14:41:57.876444+00:00",
-          "finished_at": "2026-09-11T14:42:07.966270+00:00",
-          "status": "success",
-          "error": null
         }
       ],
       "runner_node": {
-        "ip": "103.249.233.80",
-        "city": "Ahmedabad",
-        "region": "Gujarat",
-        "country": "IN",
-        "country_code": "IN",
-        "flag": "\ud83c\udf10",
-        "org": "AS45916 Gujarat Telelink Pvt Ltd",
+        "ip": "20.46.239.183",
+        "city": "Des Moines",
+        "region": "Iowa",
+        "country": "US",
+        "country_code": "US",
+        "flag": "\ud83c\uddfa\ud83c\uddf8",
+        "org": "AS8075 Microsoft Corporation",
         "datacenter": "Microsoft Azure Cloud Runner",
-        "verified_at": "2026-09-12T22:02:13.966139+00:00",
-        "verify_url": "https://ipinfo.io/103.249.233.80"
+        "verified_at": "2026-09-12T22:22:46.282858+00:00",
+        "verify_url": "https://ipinfo.io/20.46.239.183"
       },
       "is_active": true
     },
@@ -686,13 +686,13 @@
       "color": "#10B981",
       "avatar_url": "https://yt3.ggpht.com/Si65r7FeRpZibwEpw60Lck09w5Qi4YjdBhvfyPC914DY68sKk7vkLYv3WdR1ByZGkg_J4FAK=s240-c-k-c0x00ffffff-no-rj",
       "subscribers": 0,
-      "total_views": 4991,
-      "channel_total_videos": 19,
-      "avg_views_per_video": 262.7,
+      "total_views": 5016,
+      "channel_total_videos": 20,
+      "avg_views_per_video": 250.8,
       "engagement_rate": 0.8,
-      "total_likes": 41,
+      "total_likes": 42,
       "analytics": {
-        "watch_time_hours": 21.0,
+        "watch_time_hours": 21.1,
         "avg_view_duration": "0:24",
         "top_countries": [
           {
@@ -835,10 +835,10 @@
           "is_clean": true
         },
         "view_health": {
-          "label": "YouTube API Verified: 263 avg views/video (4,991 total views across 19 videos)",
-          "badge": "263 AVG",
+          "label": "YouTube API Verified: 251 avg views/video (5,016 total views across 20 videos)",
+          "badge": "251 AVG",
           "color": "#3EA6FF",
-          "avg_views": 262.7,
+          "avg_views": 250.8,
           "shorts_feed_share": "81.2%",
           "velocity_verdict": "Algorithm Reach: Healthy"
         },
@@ -851,40 +851,51 @@
         },
         "upload_engine": {
           "latest_run": "success",
-          "queue_health": "Plentiful Runway (64.5 days)",
-          "runway_days": 64.5,
-          "total_uploaded": 19
+          "queue_health": "Plentiful Runway (64.0 days)",
+          "runway_days": 64.0,
+          "total_uploaded": 20
         }
       },
       "drive_folder_id": "1hqcXV2-IbDWrh7QR_xvOlfnOfO6Cbi9g",
       "drive_folder_url": "https://drive.google.com/drive/folders/1hqcXV2-IbDWrh7QR_xvOlfnOfO6Cbi9g",
-      "uploaded_count": 19,
-      "drive_queue_count": 129,
-      "runway_days": 64.5,
-      "stock_status": "Plentiful (64.5 days)",
+      "uploaded_count": 20,
+      "drive_queue_count": 128,
+      "runway_days": 64.0,
+      "stock_status": "Plentiful (64.0 days)",
       "stock_color": "#10B981",
       "latest_run_status": "success",
       "latest_run_time": "2026-09-12T21:50:21.040318+00:00",
       "latest_uploaded_video": {
-        "youtube_id": "gnl3GWZ6Hcs",
-        "youtube_url": "https://youtu.be/gnl3GWZ6Hcs",
-        "title": "Grandma Carried The Entire Team In Front Of Everyone #GrandmaGamer #Esports #Gaming #GamingLegend #P",
-        "uploaded_at": "2026-09-12T21:50:32Z",
-        "thumbnail": "https://i.ytimg.com/vi/gnl3GWZ6Hcs/mqdefault.jpg",
-        "views": 35,
+        "youtube_id": "dmg14otnq3A",
+        "youtube_url": "https://youtu.be/dmg14otnq3A",
+        "title": "Grandma Carried The Entire Team Like A True Champion #GrandmaGamer #Esports #Gaming #GamingLegend #P",
+        "uploaded_at": "2026-09-12T22:15:20Z",
+        "thumbnail": "https://i.ytimg.com/vi/dmg14otnq3A/mqdefault.jpg",
+        "views": 0,
         "likes": 0,
         "comments": 0,
         "subscribers_gained": 0
       },
       "uploaded_videos": [
         {
+          "youtube_id": "dmg14otnq3A",
+          "youtube_url": "https://youtu.be/dmg14otnq3A",
+          "title": "Grandma Carried The Entire Team Like A True Champion #GrandmaGamer #Esports #Gaming #GamingLegend #P",
+          "uploaded_at": "2026-09-12T22:15:20Z",
+          "thumbnail": "https://i.ytimg.com/vi/dmg14otnq3A/mqdefault.jpg",
+          "views": 0,
+          "likes": 0,
+          "comments": 0,
+          "subscribers_gained": 0
+        },
+        {
           "youtube_id": "gnl3GWZ6Hcs",
           "youtube_url": "https://youtu.be/gnl3GWZ6Hcs",
           "title": "Grandma Carried The Entire Team In Front Of Everyone #GrandmaGamer #Esports #Gaming #GamingLegend #P",
           "uploaded_at": "2026-09-12T21:50:32Z",
           "thumbnail": "https://i.ytimg.com/vi/gnl3GWZ6Hcs/mqdefault.jpg",
-          "views": 35,
-          "likes": 0,
+          "views": 60,
+          "likes": 1,
           "comments": 0,
           "subscribers_gained": 0
         },
@@ -1119,13 +1130,13 @@
       "color": "#F59E0B",
       "avatar_url": "https://yt3.ggpht.com/TTLhq8ijvpChRrWaVb1i96FzeFG02Gd31oOfWo4EdOtBtfqTD6h0TrRmEOTd2fE8V0kPexV6EA=s240-c-k-c0x00ffffff-no-rj",
       "subscribers": 67,
-      "total_views": 86005,
+      "total_views": 86227,
       "channel_total_videos": 12,
-      "avg_views_per_video": 7167.1,
+      "avg_views_per_video": 7185.6,
       "engagement_rate": 0.7,
       "total_likes": 611,
       "analytics": {
-        "watch_time_hours": 361.2,
+        "watch_time_hours": 362.2,
         "avg_view_duration": "0:24",
         "top_countries": [
           {
@@ -1268,10 +1279,10 @@
           "is_clean": true
         },
         "view_health": {
-          "label": "YouTube API Verified: 7,167 avg views/video (86,005 total views across 12 videos)",
-          "badge": "7,167 AVG",
+          "label": "YouTube API Verified: 7,186 avg views/video (86,227 total views across 12 videos)",
+          "badge": "7,186 AVG",
           "color": "#10B981",
-          "avg_views": 7167.1,
+          "avg_views": 7185.6,
           "shorts_feed_share": "81.2%",
           "velocity_verdict": "Algorithm Reach: High"
         },
@@ -1304,7 +1315,7 @@
         "title": "Nobody Wanted To Blink During This Moment #SlapFighting #PowerSlap #FightNight #FYP #Viral.",
         "uploaded_at": "2026-09-12T22:06:45Z",
         "thumbnail": "https://i.ytimg.com/vi/sEMtoFAjmrs/mqdefault.jpg",
-        "views": 0,
+        "views": 17,
         "likes": 0,
         "comments": 0,
         "subscribers_gained": 0
@@ -1316,7 +1327,7 @@
           "title": "Nobody Wanted To Blink During This Moment #SlapFighting #PowerSlap #FightNight #FYP #Viral.",
           "uploaded_at": "2026-09-12T22:06:45Z",
           "thumbnail": "https://i.ytimg.com/vi/sEMtoFAjmrs/mqdefault.jpg",
-          "views": 0,
+          "views": 17,
           "likes": 0,
           "comments": 0,
           "subscribers_gained": 0
@@ -1327,7 +1338,7 @@
           "title": "Nobody Expected That Faceoff Reaction #SlapFighting #PowerSlap #SlapBattle #CombatSports #Viral.",
           "uploaded_at": "2026-09-12T14:06:29Z",
           "thumbnail": "https://i.ytimg.com/vi/7OVj2yza4ks/mqdefault.jpg",
-          "views": 1269,
+          "views": 1282,
           "likes": 18,
           "comments": 1,
           "subscribers_gained": 1
@@ -1338,7 +1349,7 @@
           "title": "His Confidence Had The Whole Crowd Talking #PowerSlap #SlapFighting #SlapFight #Viral #Sports.",
           "uploaded_at": "2026-09-11T22:07:28Z",
           "thumbnail": "https://i.ytimg.com/vi/g-2DEoij8dY/mqdefault.jpg",
-          "views": 4665,
+          "views": 4694,
           "likes": 58,
           "comments": 0,
           "subscribers_gained": 4
@@ -1349,7 +1360,7 @@
           "title": "He Was Not Backing Down From Anyone #SlapFight #PowerSlap #SlapFighting #Viral #Sports.",
           "uploaded_at": "2026-09-11T16:04:35Z",
           "thumbnail": "https://i.ytimg.com/vi/t5oF0IsXkN0/mqdefault.jpg",
-          "views": 38147,
+          "views": 38310,
           "likes": 355,
           "comments": 1,
           "subscribers_gained": 32
@@ -1884,13 +1895,13 @@
       "color": "#8B5CF6",
       "avatar_url": "https://yt3.ggpht.com/WKefM8i0bji48M_e159k6q0080b5zNwYExax_QloW7H3XguFARUF-SuE62a8rdPQJXvtTXxbJQ=s240-c-k-c0x00ffffff-no-rj",
       "subscribers": 1,
-      "total_views": 1267,
-      "channel_total_videos": 10,
-      "avg_views_per_video": 126.7,
-      "engagement_rate": 1.4,
+      "total_views": 1334,
+      "channel_total_videos": 11,
+      "avg_views_per_video": 121.3,
+      "engagement_rate": 1.3,
       "total_likes": 18,
       "analytics": {
-        "watch_time_hours": 5.3,
+        "watch_time_hours": 5.6,
         "avg_view_duration": "0:24",
         "top_countries": [
           {
@@ -2033,10 +2044,10 @@
           "is_clean": true
         },
         "view_health": {
-          "label": "Warm-Up Phase: 127 avg views/video (1,267 total views across 10 videos)",
-          "badge": "127 AVG",
+          "label": "Warm-Up Phase: 121 avg views/video (1,334 total views across 11 videos)",
+          "badge": "121 AVG",
           "color": "#F59E0B",
-          "avg_views": 126.7,
+          "avg_views": 121.3,
           "shorts_feed_share": "81.2%",
           "velocity_verdict": "Algorithm Reach: Healthy"
         },
@@ -2049,39 +2060,50 @@
         },
         "upload_engine": {
           "latest_run": "success",
-          "queue_health": "Plentiful Runway (63.0 days)",
-          "runway_days": 63.0,
-          "total_uploaded": 10
+          "queue_health": "Plentiful Runway (62.5 days)",
+          "runway_days": 62.5,
+          "total_uploaded": 11
         }
       },
       "drive_folder_id": "1C_R0kNrMxrW5FeX241UluglGU-qUEfkS",
       "drive_folder_url": "https://drive.google.com/drive/folders/1C_R0kNrMxrW5FeX241UluglGU-qUEfkS",
-      "uploaded_count": 10,
-      "drive_queue_count": 126,
-      "runway_days": 63.0,
-      "stock_status": "Plentiful (63.0 days)",
+      "uploaded_count": 11,
+      "drive_queue_count": 125,
+      "runway_days": 62.5,
+      "stock_status": "Plentiful (62.5 days)",
       "stock_color": "#10B981",
       "latest_run_status": "success",
       "latest_run_time": "2026-09-12T17:39:26.554769+00:00",
       "latest_uploaded_video": {
-        "youtube_id": "goCoZBF3N_M",
-        "youtube_url": "https://youtu.be/goCoZBF3N_M",
-        "title": "Adorable Toddler Reacts In The Cutest Way #ToddlerLife #CutestMoments #FamilyMoments #WholesomeConte",
-        "uploaded_at": "2026-09-12T17:39:42Z",
-        "thumbnail": "https://i.ytimg.com/vi/goCoZBF3N_M/mqdefault.jpg",
-        "views": 1260,
-        "likes": 18,
+        "youtube_id": "a3keluYHTIE",
+        "youtube_url": "https://youtu.be/a3keluYHTIE",
+        "title": "Adorable Toddler Shows Pure Curiosity #ToddlerLife #CutestMoments #FamilyMoments #WholesomeContent #",
+        "uploaded_at": "2026-09-12T22:14:31Z",
+        "thumbnail": "https://i.ytimg.com/vi/a3keluYHTIE/mqdefault.jpg",
+        "views": 0,
+        "likes": 0,
         "comments": 0,
-        "subscribers_gained": 1
+        "subscribers_gained": 0
       },
       "uploaded_videos": [
+        {
+          "youtube_id": "a3keluYHTIE",
+          "youtube_url": "https://youtu.be/a3keluYHTIE",
+          "title": "Adorable Toddler Shows Pure Curiosity #ToddlerLife #CutestMoments #FamilyMoments #WholesomeContent #",
+          "uploaded_at": "2026-09-12T22:14:31Z",
+          "thumbnail": "https://i.ytimg.com/vi/a3keluYHTIE/mqdefault.jpg",
+          "views": 0,
+          "likes": 0,
+          "comments": 0,
+          "subscribers_gained": 0
+        },
         {
           "youtube_id": "goCoZBF3N_M",
           "youtube_url": "https://youtu.be/goCoZBF3N_M",
           "title": "Adorable Toddler Reacts In The Cutest Way #ToddlerLife #CutestMoments #FamilyMoments #WholesomeConte",
           "uploaded_at": "2026-09-12T17:39:42Z",
           "thumbnail": "https://i.ytimg.com/vi/goCoZBF3N_M/mqdefault.jpg",
-          "views": 1260,
+          "views": 1327,
           "likes": 18,
           "comments": 0,
           "subscribers_gained": 1
@@ -2224,13 +2246,13 @@
       "color": "#EC4899",
       "avatar_url": "https://yt3.ggpht.com/pqIrk9GBtAR6cdyBH5C_kHNWA1jlu4VT9ZLKxdYTFW6IvVQLWbtFO3OUxrSV1Jm1SR0JAyTrAA=s240-c-k-c0x00ffffff-no-rj",
       "subscribers": 1,
-      "total_views": 12741,
-      "channel_total_videos": 10,
-      "avg_views_per_video": 1274.1,
+      "total_views": 12758,
+      "channel_total_videos": 11,
+      "avg_views_per_video": 1159.8,
       "engagement_rate": 0.7,
       "total_likes": 83,
       "analytics": {
-        "watch_time_hours": 53.5,
+        "watch_time_hours": 53.6,
         "avg_view_duration": "0:24",
         "top_countries": [
           {
@@ -2373,10 +2395,10 @@
           "is_clean": true
         },
         "view_health": {
-          "label": "YouTube API Verified: 1,274 avg views/video (12,741 total views across 10 videos)",
-          "badge": "1,274 AVG",
+          "label": "YouTube API Verified: 1,160 avg views/video (12,758 total views across 11 videos)",
+          "badge": "1,160 AVG",
           "color": "#10B981",
-          "avg_views": 1274.1,
+          "avg_views": 1159.8,
           "shorts_feed_share": "81.2%",
           "velocity_verdict": "Algorithm Reach: High"
         },
@@ -2389,39 +2411,50 @@
         },
         "upload_engine": {
           "latest_run": "success",
-          "queue_health": "Plentiful Runway (69.0 days)",
-          "runway_days": 69.0,
-          "total_uploaded": 10
+          "queue_health": "Plentiful Runway (68.5 days)",
+          "runway_days": 68.5,
+          "total_uploaded": 11
         }
       },
       "drive_folder_id": "1xZSez3F82y0pLTWJbQ-ybPjbOCqY1mrW",
       "drive_folder_url": "https://drive.google.com/drive/folders/1xZSez3F82y0pLTWJbQ-ybPjbOCqY1mrW",
-      "uploaded_count": 10,
-      "drive_queue_count": 138,
-      "runway_days": 69.0,
-      "stock_status": "Plentiful (69.0 days)",
+      "uploaded_count": 11,
+      "drive_queue_count": 137,
+      "runway_days": 68.5,
+      "stock_status": "Plentiful (68.5 days)",
       "stock_color": "#10B981",
       "latest_run_status": "success",
       "latest_run_time": "2026-09-12T18:27:55.153923+00:00",
       "latest_uploaded_video": {
-        "youtube_id": "E7vzDp7HUIM",
-        "youtube_url": "https://youtu.be/E7vzDp7HUIM",
-        "title": "Everyone Stopped To Watch This Artist Work #StreetArt #Artist #Painting #ArtReels #Viral.",
-        "uploaded_at": "2026-09-12T18:28:10Z",
-        "thumbnail": "https://i.ytimg.com/vi/E7vzDp7HUIM/mqdefault.jpg",
-        "views": 0,
+        "youtube_id": "ZlNJrHYRPoU",
+        "youtube_url": "https://youtu.be/ZlNJrHYRPoU",
+        "title": "Everyone Wanted To See The Finished Canvas #Painting #ArtReels #ArtReveal #Artist #Viral.",
+        "uploaded_at": "2026-09-12T22:15:13Z",
+        "thumbnail": "https://i.ytimg.com/vi/ZlNJrHYRPoU/mqdefault.jpg",
+        "views": 16,
         "likes": 0,
         "comments": 0,
         "subscribers_gained": 0
       },
       "uploaded_videos": [
         {
+          "youtube_id": "ZlNJrHYRPoU",
+          "youtube_url": "https://youtu.be/ZlNJrHYRPoU",
+          "title": "Everyone Wanted To See The Finished Canvas #Painting #ArtReels #ArtReveal #Artist #Viral.",
+          "uploaded_at": "2026-09-12T22:15:13Z",
+          "thumbnail": "https://i.ytimg.com/vi/ZlNJrHYRPoU/mqdefault.jpg",
+          "views": 16,
+          "likes": 0,
+          "comments": 0,
+          "subscribers_gained": 0
+        },
+        {
           "youtube_id": "E7vzDp7HUIM",
           "youtube_url": "https://youtu.be/E7vzDp7HUIM",
           "title": "Everyone Stopped To Watch This Artist Work #StreetArt #Artist #Painting #ArtReels #Viral.",
           "uploaded_at": "2026-09-12T18:28:10Z",
           "thumbnail": "https://i.ytimg.com/vi/E7vzDp7HUIM/mqdefault.jpg",
-          "views": 0,
+          "views": 1,
           "likes": 0,
           "comments": 0,
           "subscribers_gained": 0
@@ -2564,13 +2597,13 @@
       "color": "#3B82F6",
       "avatar_url": "https://yt3.ggpht.com/vRLBXNb4fgjWzDfLf8ltniGaD2BlvZ1PAWugGoZaJx1nCdJ92LubM-8vy7hIgxHlCicFwpt2=s240-c-k-c0x00ffffff-no-rj",
       "subscribers": 23,
-      "total_views": 9738,
-      "channel_total_videos": 26,
-      "avg_views_per_video": 374.5,
+      "total_views": 9760,
+      "channel_total_videos": 27,
+      "avg_views_per_video": 361.5,
       "engagement_rate": 1.4,
       "total_likes": 137,
       "analytics": {
-        "watch_time_hours": 40.9,
+        "watch_time_hours": 41.0,
         "avg_view_duration": "0:24",
         "top_countries": [
           {
@@ -2713,10 +2746,10 @@
           "is_clean": true
         },
         "view_health": {
-          "label": "YouTube API Verified: 374 avg views/video (9,738 total views across 26 videos)",
-          "badge": "374 AVG",
+          "label": "YouTube API Verified: 362 avg views/video (9,760 total views across 27 videos)",
+          "badge": "362 AVG",
           "color": "#3EA6FF",
-          "avg_views": 374.5,
+          "avg_views": 361.5,
           "shorts_feed_share": "81.2%",
           "velocity_verdict": "Algorithm Reach: Healthy"
         },
@@ -2729,39 +2762,50 @@
         },
         "upload_engine": {
           "latest_run": "success",
-          "queue_health": "Plentiful Runway (70.0 days)",
-          "runway_days": 70.0,
-          "total_uploaded": 26
+          "queue_health": "Plentiful Runway (69.5 days)",
+          "runway_days": 69.5,
+          "total_uploaded": 27
         }
       },
       "drive_folder_id": "1mxwPH1BvYEfv77zDUWA5ZxiwYW2hG125",
       "drive_folder_url": "https://drive.google.com/drive/folders/1mxwPH1BvYEfv77zDUWA5ZxiwYW2hG125",
-      "uploaded_count": 26,
-      "drive_queue_count": 140,
-      "runway_days": 70.0,
-      "stock_status": "Plentiful (70.0 days)",
+      "uploaded_count": 27,
+      "drive_queue_count": 139,
+      "runway_days": 69.5,
+      "stock_status": "Plentiful (69.5 days)",
       "stock_color": "#10B981",
       "latest_run_status": "success",
       "latest_run_time": "2026-09-12T20:49:07.192408+00:00",
       "latest_uploaded_video": {
-        "youtube_id": "RQRckO7D9Sg",
-        "youtube_url": "https://youtu.be/RQRckO7D9Sg",
-        "title": "Every Champion Has A Beginning Before The Final Whistle #Football #Soccer #FootballStory #FootballLi",
-        "uploaded_at": "2026-09-12T20:49:22Z",
-        "thumbnail": "https://i.ytimg.com/vi/RQRckO7D9Sg/mqdefault.jpg",
-        "views": 0,
+        "youtube_id": "X3tV9H5ma7U",
+        "youtube_url": "https://youtu.be/X3tV9H5ma7U",
+        "title": "Every Champion Has A Beginning For The Team #Football #Soccer #FootballStory #FootballLife #Goal #Dr",
+        "uploaded_at": "2026-09-12T22:14:25Z",
+        "thumbnail": "https://i.ytimg.com/vi/X3tV9H5ma7U/mqdefault.jpg",
+        "views": 21,
         "likes": 0,
         "comments": 0,
         "subscribers_gained": 0
       },
       "uploaded_videos": [
         {
+          "youtube_id": "X3tV9H5ma7U",
+          "youtube_url": "https://youtu.be/X3tV9H5ma7U",
+          "title": "Every Champion Has A Beginning For The Team #Football #Soccer #FootballStory #FootballLife #Goal #Dr",
+          "uploaded_at": "2026-09-12T22:14:25Z",
+          "thumbnail": "https://i.ytimg.com/vi/X3tV9H5ma7U/mqdefault.jpg",
+          "views": 21,
+          "likes": 0,
+          "comments": 0,
+          "subscribers_gained": 0
+        },
+        {
           "youtube_id": "RQRckO7D9Sg",
           "youtube_url": "https://youtu.be/RQRckO7D9Sg",
           "title": "Every Champion Has A Beginning Before The Final Whistle #Football #Soccer #FootballStory #FootballLi",
           "uploaded_at": "2026-09-12T20:49:22Z",
           "thumbnail": "https://i.ytimg.com/vi/RQRckO7D9Sg/mqdefault.jpg",
-          "views": 0,
+          "views": 1,
           "likes": 0,
           "comments": 0,
           "subscribers_gained": 0
@@ -3087,8 +3131,8 @@
       "avatar_url": "https://yt3.ggpht.com/nq_ZXt9K4MP8rn_0NncY8cm8FKpJhysqk3dE-4DnBi5riAIIgaSHkyJ3peEPN45JHegO91Ws7Xg=s240-c-k-c0x00ffffff-no-rj",
       "subscribers": 0,
       "total_views": 311,
-      "channel_total_videos": 34,
-      "avg_views_per_video": 9.1,
+      "channel_total_videos": 35,
+      "avg_views_per_video": 8.9,
       "engagement_rate": 0.0,
       "total_likes": 0,
       "analytics": {
@@ -3235,10 +3279,10 @@
           "is_clean": true
         },
         "view_health": {
-          "label": "Warm-Up Phase: 9 avg views/video (311 total views across 34 videos)",
+          "label": "Warm-Up Phase: 9 avg views/video (311 total views across 35 videos)",
           "badge": "9 AVG",
           "color": "#F59E0B",
-          "avg_views": 9.1,
+          "avg_views": 8.9,
           "shorts_feed_share": "81.2%",
           "velocity_verdict": "Algorithm Reach: Healthy"
         },
@@ -3253,12 +3297,12 @@
           "latest_run": "success",
           "queue_health": "Healthy Runway",
           "runway_days": 29.5,
-          "total_uploaded": 34
+          "total_uploaded": 35
         }
       },
       "drive_folder_id": "1OLhbVXMLNQqX4vPOi9jYLgQyY5iHwBNl",
       "drive_folder_url": "https://drive.google.com/drive/folders/1OLhbVXMLNQqX4vPOi9jYLgQyY5iHwBNl",
-      "uploaded_count": 34,
+      "uploaded_count": 35,
       "drive_queue_count": 59,
       "runway_days": 29.5,
       "stock_status": "Plentiful (29.5 days)",
@@ -3266,17 +3310,28 @@
       "latest_run_status": "success",
       "latest_run_time": "2026-09-12T21:20:21.363993+00:00",
       "latest_uploaded_video": {
-        "youtube_id": "mFI2RC-9LdQ",
-        "youtube_url": "https://youtu.be/mFI2RC-9LdQ",
-        "title": "Nobody Can Be Mad At This Panda #BabyPanda #CutePanda #PandaLife #Shorts #Reels #ViralVideo #FYP #Cu",
-        "uploaded_at": "2026-09-12T21:20:35Z",
-        "thumbnail": "https://i.ytimg.com/vi/mFI2RC-9LdQ/mqdefault.jpg",
+        "youtube_id": "GghOGIsD4vQ",
+        "youtube_url": "https://youtu.be/GghOGIsD4vQ",
+        "title": "The Cutest Panda On The Internet #BabyPanda #CutePanda #PandaLife #Shorts #Reels #ViralVideo #FYP #C",
+        "uploaded_at": "2026-09-12T22:11:29Z",
+        "thumbnail": "https://i.ytimg.com/vi/GghOGIsD4vQ/mqdefault.jpg",
         "views": 0,
         "likes": 0,
         "comments": 0,
         "subscribers_gained": 0
       },
       "uploaded_videos": [
+        {
+          "youtube_id": "GghOGIsD4vQ",
+          "youtube_url": "https://youtu.be/GghOGIsD4vQ",
+          "title": "The Cutest Panda On The Internet #BabyPanda #CutePanda #PandaLife #Shorts #Reels #ViralVideo #FYP #C",
+          "uploaded_at": "2026-09-12T22:11:29Z",
+          "thumbnail": "https://i.ytimg.com/vi/GghOGIsD4vQ/mqdefault.jpg",
+          "views": 0,
+          "likes": 0,
+          "comments": 0,
+          "subscribers_gained": 0
+        },
         {
           "youtube_id": "mFI2RC-9LdQ",
           "youtube_url": "https://youtu.be/mFI2RC-9LdQ",
@@ -3684,13 +3739,13 @@
       "color": "#8B5CF6",
       "avatar_url": "https://yt3.ggpht.com/c2et41jvboHRktLNJH-bmzbYclnu_SeQYjockP52SQB3xQtmw6jPskOSLrGMwcb7UiN4i4QybOo=s240-c-k-c0x00ffffff-no-rj",
       "subscribers": 16,
-      "total_views": 24815,
+      "total_views": 24837,
       "channel_total_videos": 28,
-      "avg_views_per_video": 886.2,
+      "avg_views_per_video": 887.0,
       "engagement_rate": 0.8,
-      "total_likes": 201,
+      "total_likes": 202,
       "analytics": {
-        "watch_time_hours": 104.2,
+        "watch_time_hours": 104.3,
         "avg_view_duration": "0:24",
         "top_countries": [
           {
@@ -3833,10 +3888,10 @@
           "is_clean": true
         },
         "view_health": {
-          "label": "YouTube API Verified: 886 avg views/video (24,815 total views across 28 videos)",
-          "badge": "886 AVG",
+          "label": "YouTube API Verified: 887 avg views/video (24,837 total views across 28 videos)",
+          "badge": "887 AVG",
           "color": "#3EA6FF",
-          "avg_views": 886.2,
+          "avg_views": 887.0,
           "shorts_feed_share": "81.2%",
           "velocity_verdict": "Algorithm Reach: High"
         },
@@ -3869,7 +3924,7 @@
         "title": "Hollywood's Biggest Secret Revealed Before Release #BehindTheScenes #Hollywood #MovieMagic #FilmMaki",
         "uploaded_at": "2026-09-12T22:04:36Z",
         "thumbnail": "https://i.ytimg.com/vi/9JKlXA-ehIs/mqdefault.jpg",
-        "views": 0,
+        "views": 12,
         "likes": 0,
         "comments": 0,
         "subscribers_gained": 0
@@ -3881,7 +3936,7 @@
           "title": "Hollywood's Biggest Secret Revealed Before Release #BehindTheScenes #Hollywood #MovieMagic #FilmMaki",
           "uploaded_at": "2026-09-12T22:04:36Z",
           "thumbnail": "https://i.ytimg.com/vi/9JKlXA-ehIs/mqdefault.jpg",
-          "views": 0,
+          "views": 12,
           "likes": 0,
           "comments": 0,
           "subscribers_gained": 0
@@ -3892,8 +3947,8 @@
           "title": "Behind The Biggest Scene Of The Film With Incredible Detail #BehindTheScenes #Hollywood #MovieMagic",
           "uploaded_at": "2026-09-12T21:29:37Z",
           "thumbnail": "https://i.ytimg.com/vi/1TbNIlAQsJo/mqdefault.jpg",
-          "views": 33,
-          "likes": 2,
+          "views": 43,
+          "likes": 3,
           "comments": 0,
           "subscribers_gained": 0
         },
