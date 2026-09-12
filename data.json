@@ -1,28 +1,28 @@
 {
   "app_name": "Raj Tube Pro",
   "version": "6.0.0",
-  "timestamp": "2026-09-12T18:41:39.060860+00:00",
+  "timestamp": "2026-09-12T18:50:26.758275+00:00",
   "schedule": {
     "next_slot_iso": "2026-09-12T22:00:00+00:00",
-    "seconds_remaining": 11908,
-    "formatted_countdown": "03h 18m 28s",
+    "seconds_remaining": 11381,
+    "formatted_countdown": "03h 09m 41s",
     "slot_label": "06:00 PM USA (3:30 AM IST)",
-    "now_ist": "13 Sep, 12:11 AM IST"
+    "now_ist": "13 Sep, 12:20 AM IST"
   },
   "summary": {
     "total_channels": 5,
     "total_uploaded": 47,
     "total_in_queue": 547,
-    "total_subscribers": 100,
-    "total_views": 113083,
-    "total_likes": 1072,
+    "total_subscribers": 101,
+    "total_views": 113472,
+    "total_likes": 1074,
     "network_engagement": 0.9,
     "total_runway_days": 54.7,
     "system_health": "All Systems Operational",
     "issues_count": 0,
     "top_trending_video": {
       "title": "He Was Not Backing Down From Anyone #SlapFight #PowerSlap #SlapFighting #Viral #Sports.",
-      "views": 30982,
+      "views": 31201,
       "likes": 351,
       "youtube_url": "https://youtu.be/t5oF0IsXkN0",
       "thumbnail": "https://i.ytimg.com/vi/t5oF0IsXkN0/mqdefault.jpg",
@@ -30,7 +30,7 @@
       "uploaded_at": "2026-09-11T16:04:35Z"
     },
     "analytics": {
-      "watch_time_hours": 474.9,
+      "watch_time_hours": 476.6,
       "avg_view_duration": "0:24",
       "top_countries": [
         {
@@ -162,26 +162,26 @@
       "strikes": {
         "count": 0,
         "max": 3,
-        "status": "0 of 3 active strikes \u2022 Good standing",
+        "status": "0 of 3 active strikes \u2022 Channel Active & Public (YouTube API Verified)",
         "badge": "CLEAN",
         "is_clean": true
       },
       "copyright": {
         "count": 0,
-        "status": "0 copyright claims \u2022 Clean original audio & video",
+        "status": "0 copyright claims \u2022 100% Original Audio & Video",
         "badge": "CLEAN",
         "is_clean": true
       },
       "view_health": {
-        "label": "High Velocity (Trending in Shorts Feed)",
-        "badge": "OPTIMAL",
+        "label": "YouTube API Verified: 2,414 avg views/video (113,472 total views across 47 videos)",
+        "badge": "2,414 AVG",
         "color": "#10B981",
-        "avg_views": 2406.0,
+        "avg_views": 2414.3,
         "shorts_feed_share": "81.2%",
         "velocity_verdict": "Algorithm Reach: High"
       },
       "compliance": {
-        "label": "100% Policy Compliant (AI Synthetic Media & COPPA Guard Active)",
+        "label": "YouTube Policy: AI Disclosure & COPPA Guard Active (Self-Declared)",
         "badge": "100% OK",
         "synthetic_media": "Self-Declared True (Compliant)",
         "coppa_kids": "Declared False (General Audience)",
@@ -189,7 +189,7 @@
       },
       "upload_engine": {
         "latest_run": "success",
-        "queue_health": "Plentiful Runway",
+        "queue_health": "Plentiful Runway (54.7 days)",
         "runway_days": 54.7,
         "total_uploaded": 47
       }
@@ -346,26 +346,26 @@
         "strikes": {
           "count": 0,
           "max": 3,
-          "status": "0 of 3 active strikes \u2022 Good standing",
+          "status": "0 of 3 active strikes \u2022 Channel Active & Public (YouTube API Verified)",
           "badge": "CLEAN",
           "is_clean": true
         },
         "copyright": {
           "count": 0,
-          "status": "0 copyright claims \u2022 Clean original audio & video",
+          "status": "0 copyright claims \u2022 100% Original Audio & Video",
           "badge": "CLEAN",
           "is_clean": true
         },
         "view_health": {
-          "label": "High Velocity (Trending in Shorts Feed)",
-          "badge": "OPTIMAL",
+          "label": "YouTube API Verified: 2,940 avg views/video (11,760 total views across 4 videos)",
+          "badge": "2,940 AVG",
           "color": "#10B981",
           "avg_views": 2940.0,
           "shorts_feed_share": "81.2%",
           "velocity_verdict": "Algorithm Reach: High"
         },
         "compliance": {
-          "label": "100% Policy Compliant (AI Synthetic Media & COPPA Guard Active)",
+          "label": "YouTube Policy: AI Disclosure & COPPA Guard Active (Self-Declared)",
           "badge": "100% OK",
           "synthetic_media": "Self-Declared True (Compliant)",
           "coppa_kids": "Declared False (General Audience)",
@@ -373,7 +373,7 @@
         },
         "upload_engine": {
           "latest_run": "success",
-          "queue_health": "Plentiful Runway",
+          "queue_health": "Plentiful Runway (39.0 days)",
           "runway_days": 39.0,
           "total_uploaded": 4
         }
@@ -394,7 +394,7 @@
         "uploaded_at": "2026-09-12T14:03:34Z",
         "thumbnail": "https://i.ytimg.com/vi/RMgm8o875X0/mqdefault.jpg",
         "views": 1067,
-        "likes": 17,
+        "likes": 16,
         "comments": 0
       },
       "uploaded_videos": [
@@ -405,7 +405,7 @@
           "uploaded_at": "2026-09-12T14:03:34Z",
           "thumbnail": "https://i.ytimg.com/vi/RMgm8o875X0/mqdefault.jpg",
           "views": 1067,
-          "likes": 17,
+          "likes": 16,
           "comments": 0
         },
         {
@@ -425,7 +425,7 @@
           "uploaded_at": "2026-09-11T14:42:29Z",
           "thumbnail": "https://i.ytimg.com/vi/3pDpmQcqJT8/mqdefault.jpg",
           "views": 7560,
-          "likes": 143,
+          "likes": 144,
           "comments": 0
         },
         {
@@ -484,13 +484,13 @@
       "color": "#F59E0B",
       "avatar_url": "https://yt3.ggpht.com/TTLhq8ijvpChRrWaVb1i96FzeFG02Gd31oOfWo4EdOtBtfqTD6h0TrRmEOTd2fE8V0kPexV6EA=s240-c-k-c0x00ffffff-no-rj",
       "subscribers": 65,
-      "total_views": 76610,
+      "total_views": 76829,
       "channel_total_videos": 11,
-      "avg_views_per_video": 6964.5,
+      "avg_views_per_video": 6984.5,
       "engagement_rate": 0.8,
       "total_likes": 605,
       "analytics": {
-        "watch_time_hours": 321.8,
+        "watch_time_hours": 322.7,
         "avg_view_duration": "0:24",
         "top_countries": [
           {
@@ -622,26 +622,26 @@
         "strikes": {
           "count": 0,
           "max": 3,
-          "status": "0 of 3 active strikes \u2022 Good standing",
+          "status": "0 of 3 active strikes \u2022 Channel Active & Public (YouTube API Verified)",
           "badge": "CLEAN",
           "is_clean": true
         },
         "copyright": {
           "count": 0,
-          "status": "0 copyright claims \u2022 Clean original audio & video",
+          "status": "0 copyright claims \u2022 100% Original Audio & Video",
           "badge": "CLEAN",
           "is_clean": true
         },
         "view_health": {
-          "label": "High Velocity (Trending in Shorts Feed)",
-          "badge": "OPTIMAL",
+          "label": "YouTube API Verified: 6,984 avg views/video (76,829 total views across 11 videos)",
+          "badge": "6,984 AVG",
           "color": "#10B981",
-          "avg_views": 6964.5,
+          "avg_views": 6984.5,
           "shorts_feed_share": "81.2%",
           "velocity_verdict": "Algorithm Reach: High"
         },
         "compliance": {
-          "label": "100% Policy Compliant (AI Synthetic Media & COPPA Guard Active)",
+          "label": "YouTube Policy: AI Disclosure & COPPA Guard Active (Self-Declared)",
           "badge": "100% OK",
           "synthetic_media": "Self-Declared True (Compliant)",
           "coppa_kids": "Declared False (General Audience)",
@@ -649,7 +649,7 @@
         },
         "upload_engine": {
           "latest_run": "success",
-          "queue_health": "Plentiful Runway",
+          "queue_health": "Plentiful Runway (36.0 days)",
           "runway_days": 36.0,
           "total_uploaded": 11
         }
@@ -700,7 +700,7 @@
           "title": "He Was Not Backing Down From Anyone #SlapFight #PowerSlap #SlapFighting #Viral #Sports.",
           "uploaded_at": "2026-09-11T16:04:35Z",
           "thumbnail": "https://i.ytimg.com/vi/t5oF0IsXkN0/mqdefault.jpg",
-          "views": 30982,
+          "views": 31201,
           "likes": 351,
           "comments": 1
         },
@@ -950,26 +950,26 @@
         "strikes": {
           "count": 0,
           "max": 3,
-          "status": "0 of 3 active strikes \u2022 Good standing",
+          "status": "0 of 3 active strikes \u2022 Channel Active & Public (YouTube API Verified)",
           "badge": "CLEAN",
           "is_clean": true
         },
         "copyright": {
           "count": 0,
-          "status": "0 copyright claims \u2022 Clean original audio & video",
+          "status": "0 copyright claims \u2022 100% Original Audio & Video",
           "badge": "CLEAN",
           "is_clean": true
         },
         "view_health": {
-          "label": "Steady Growth Pace (Active Algorithm Reach)",
-          "badge": "HEALTHY",
+          "label": "YouTube API Verified: 972 avg views/video (11,670 total views across 12 videos)",
+          "badge": "972 AVG",
           "color": "#3EA6FF",
           "avg_views": 972.5,
           "shorts_feed_share": "81.2%",
           "velocity_verdict": "Algorithm Reach: High"
         },
         "compliance": {
-          "label": "100% Policy Compliant (AI Synthetic Media & COPPA Guard Active)",
+          "label": "YouTube Policy: AI Disclosure & COPPA Guard Active (Self-Declared)",
           "badge": "100% OK",
           "synthetic_media": "Self-Declared True (Compliant)",
           "coppa_kids": "Declared False (General Audience)",
@@ -977,7 +977,7 @@
         },
         "upload_engine": {
           "latest_run": "success",
-          "queue_health": "Plentiful Runway",
+          "queue_health": "Plentiful Runway (66.5 days)",
           "runway_days": 66.5,
           "total_uploaded": 12
         }
@@ -1149,14 +1149,14 @@
       "github_repo": "malhotramahi396-afk/yt-automation-vexorush",
       "color": "#8B5CF6",
       "avatar_url": "https://yt3.ggpht.com/WKefM8i0bji48M_e159k6q0080b5zNwYExax_QloW7H3XguFARUF-SuE62a8rdPQJXvtTXxbJQ=s240-c-k-c0x00ffffff-no-rj",
-      "subscribers": 0,
-      "total_views": 303,
+      "subscribers": 1,
+      "total_views": 473,
       "channel_total_videos": 10,
-      "avg_views_per_video": 30.3,
-      "engagement_rate": 1.0,
-      "total_likes": 3,
+      "avg_views_per_video": 47.3,
+      "engagement_rate": 1.1,
+      "total_likes": 5,
       "analytics": {
-        "watch_time_hours": 1.3,
+        "watch_time_hours": 2.0,
         "avg_view_duration": "0:24",
         "top_countries": [
           {
@@ -1288,26 +1288,26 @@
         "strikes": {
           "count": 0,
           "max": 3,
-          "status": "0 of 3 active strikes \u2022 Good standing",
+          "status": "0 of 3 active strikes \u2022 Channel Active & Public (YouTube API Verified)",
           "badge": "CLEAN",
           "is_clean": true
         },
         "copyright": {
           "count": 0,
-          "status": "0 copyright claims \u2022 Clean original audio & video",
+          "status": "0 copyright claims \u2022 100% Original Audio & Video",
           "badge": "CLEAN",
           "is_clean": true
         },
         "view_health": {
-          "label": "Warm-Up Phase (Building Initial Signals)",
-          "badge": "WARMING UP",
+          "label": "Warm-Up Phase: 47 avg views/video (473 total views across 10 videos)",
+          "badge": "47 AVG",
           "color": "#F59E0B",
-          "avg_views": 30.3,
+          "avg_views": 47.3,
           "shorts_feed_share": "81.2%",
           "velocity_verdict": "Algorithm Reach: Healthy"
         },
         "compliance": {
-          "label": "100% Policy Compliant (AI Synthetic Media & COPPA Guard Active)",
+          "label": "YouTube Policy: AI Disclosure & COPPA Guard Active (Self-Declared)",
           "badge": "100% OK",
           "synthetic_media": "Self-Declared True (Compliant)",
           "coppa_kids": "Declared False (General Audience)",
@@ -1315,7 +1315,7 @@
         },
         "upload_engine": {
           "latest_run": "success",
-          "queue_health": "Plentiful Runway",
+          "queue_health": "Plentiful Runway (63.0 days)",
           "runway_days": 63.0,
           "total_uploaded": 10
         }
@@ -1335,8 +1335,8 @@
         "title": "Adorable Toddler Reacts In The Cutest Way #ToddlerLife #CutestMoments #FamilyMoments #WholesomeConte",
         "uploaded_at": "2026-09-12T17:39:42Z",
         "thumbnail": "https://i.ytimg.com/vi/goCoZBF3N_M/mqdefault.jpg",
-        "views": 296,
-        "likes": 3,
+        "views": 466,
+        "likes": 5,
         "comments": 0
       },
       "uploaded_videos": [
@@ -1346,8 +1346,8 @@
           "title": "Adorable Toddler Reacts In The Cutest Way #ToddlerLife #CutestMoments #FamilyMoments #WholesomeConte",
           "uploaded_at": "2026-09-12T17:39:42Z",
           "thumbnail": "https://i.ytimg.com/vi/goCoZBF3N_M/mqdefault.jpg",
-          "views": 296,
-          "likes": 3,
+          "views": 466,
+          "likes": 5,
           "comments": 0
         },
         {
@@ -1606,26 +1606,26 @@
         "strikes": {
           "count": 0,
           "max": 3,
-          "status": "0 of 3 active strikes \u2022 Good standing",
+          "status": "0 of 3 active strikes \u2022 Channel Active & Public (YouTube API Verified)",
           "badge": "CLEAN",
           "is_clean": true
         },
         "copyright": {
           "count": 0,
-          "status": "0 copyright claims \u2022 Clean original audio & video",
+          "status": "0 copyright claims \u2022 100% Original Audio & Video",
           "badge": "CLEAN",
           "is_clean": true
         },
         "view_health": {
-          "label": "High Velocity (Trending in Shorts Feed)",
-          "badge": "OPTIMAL",
+          "label": "YouTube API Verified: 1,274 avg views/video (12,740 total views across 10 videos)",
+          "badge": "1,274 AVG",
           "color": "#10B981",
           "avg_views": 1274.0,
           "shorts_feed_share": "81.2%",
           "velocity_verdict": "Algorithm Reach: High"
         },
         "compliance": {
-          "label": "100% Policy Compliant (AI Synthetic Media & COPPA Guard Active)",
+          "label": "YouTube Policy: AI Disclosure & COPPA Guard Active (Self-Declared)",
           "badge": "100% OK",
           "synthetic_media": "Self-Declared True (Compliant)",
           "coppa_kids": "Declared False (General Audience)",
@@ -1633,7 +1633,7 @@
         },
         "upload_engine": {
           "latest_run": "success",
-          "queue_health": "Plentiful Runway",
+          "queue_health": "Plentiful Runway (69.0 days)",
           "runway_days": 69.0,
           "total_uploaded": 10
         }
