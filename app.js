@@ -1611,6 +1611,18 @@ function renderHealthView() {
 /* ========================================================
    7. CLOUD RUNNER IP & GEOLOCATION RADAR CONTROLLER
    ======================================================== */
+function formatRunTime(isoString) {
+  if (!isoString) return 'Active Today (Scheduled)';
+  try {
+    const d = new Date(isoString);
+    if (isNaN(d.getTime())) return 'Active Today';
+    return d.toLocaleDateString([], { month: 'short', day: 'numeric', year: 'numeric' }) + ', ' +
+           d.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', hour12: true });
+  } catch (e) {
+    return 'Active Today';
+  }
+}
+
 function renderRunnerRadarWidget(channel) {
   const runnerNode = channel && channel.runner_node
     ? channel.runner_node
@@ -1631,6 +1643,7 @@ function renderRunnerRadarWidget(channel) {
   const geoEl = document.getElementById('dash-runner-geo');
   const dcEl = document.getElementById('dash-runner-dc');
   const orgEl = document.getElementById('dash-runner-org');
+  const timeEl = document.getElementById('dash-runner-time');
   const linkEl = document.getElementById('dash-runner-track-link');
   const copyBtn = document.getElementById('dash-btn-copy-ip');
 
@@ -1640,6 +1653,11 @@ function renderRunnerRadarWidget(channel) {
   if (dcEl) dcEl.innerText = runnerNode.datacenter || "Microsoft Azure Central US (Iowa)";
   if (orgEl) orgEl.innerText = runnerNode.org || "AS8075 Microsoft Corporation";
   
+  if (timeEl) {
+    const runTime = (channel && channel.latest_run_time) || (channel && channel.runner_node && channel.runner_node.verified_at);
+    timeEl.innerText = formatRunTime(runTime);
+  }
+
   if (linkEl) {
     linkEl.href = runnerNode.verify_url || `https://ipinfo.io/${runnerNode.ip}`;
   }
@@ -1741,7 +1759,7 @@ function renderRadarView(channel) {
         </div>
         <div class="m-row">
           <span class="m-label">Country</span>
-          <span class="m-val">${r.country} ${r.flag || ''}</span>
+          <span class="m-val">${r.country} (${r.country_code || 'US'})</span>
         </div>
         <div class="m-row">
           <span class="m-label">Cloud Datacenter</span>
@@ -1750,6 +1768,10 @@ function renderRadarView(channel) {
         <div class="m-row">
           <span class="m-label">Network AS / Org</span>
           <span class="m-val">${r.org}</span>
+        </div>
+        <div class="m-row">
+          <span class="m-label">Last Upload Run</span>
+          <span class="m-val text-amber font-semibold">${formatRunTime(ch.latest_run_time || r.verified_at)}</span>
         </div>
         <div class="m-row">
           <span class="m-label">Simultaneous IP Overlap</span>
