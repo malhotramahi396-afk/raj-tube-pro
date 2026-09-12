@@ -1,29 +1,29 @@
 {
   "app_name": "Raj Tube Pro",
   "version": "6.0.0",
-  "timestamp": "2026-09-12T21:30:05.188377+00:00",
+  "timestamp": "2026-09-12T21:38:17.674819+00:00",
   "schedule": {
     "next_slot_iso": "2026-09-12T22:00:00+00:00",
-    "seconds_remaining": 1806,
-    "formatted_countdown": "00h 30m 06s",
+    "seconds_remaining": 1315,
+    "formatted_countdown": "00h 21m 55s",
     "slot_label": "06:00 PM USA (3:30 AM IST)",
-    "now_ist": "13 Sep, 02:59 AM IST"
+    "now_ist": "13 Sep, 03:08 AM IST"
   },
   "summary": {
-    "total_channels": 8,
-    "total_uploaded": 134,
-    "total_in_queue": 889,
-    "total_subscribers": 144,
-    "total_views": 158458,
-    "total_likes": 1443,
+    "total_channels": 9,
+    "total_uploaded": 153,
+    "total_in_queue": 1148,
+    "total_subscribers": 145,
+    "total_views": 159763,
+    "total_likes": 1446,
     "network_engagement": 0.9,
-    "total_runway_days": 55.6,
+    "total_runway_days": 63.8,
     "system_health": "All Systems Operational",
     "issues_count": 0,
     "top_trending_video": {
       "title": "He Was Not Backing Down From Anyone #SlapFight #PowerSlap #SlapFighting #Viral #Sports.",
-      "views": 36629,
-      "likes": 352,
+      "views": 37304,
+      "likes": 353,
       "subscribers_gained": 31,
       "youtube_url": "https://youtu.be/t5oF0IsXkN0",
       "thumbnail": "https://i.ytimg.com/vi/t5oF0IsXkN0/mqdefault.jpg",
@@ -31,7 +31,7 @@
       "uploaded_at": "2026-09-11T16:04:35Z"
     },
     "analytics": {
-      "watch_time_hours": 665.5,
+      "watch_time_hours": 671.0,
       "avg_view_duration": "0:24",
       "top_countries": [
         {
@@ -174,10 +174,10 @@
         "is_clean": true
       },
       "view_health": {
-        "label": "YouTube API Verified: 1,182 avg views/video (158,458 total views across 134 videos)",
-        "badge": "1,182 AVG",
+        "label": "YouTube API Verified: 1,044 avg views/video (159,763 total views across 153 videos)",
+        "badge": "1,044 AVG",
         "color": "#10B981",
-        "avg_views": 1182.5,
+        "avg_views": 1044.2,
         "shorts_feed_share": "81.2%",
         "velocity_verdict": "Algorithm Reach: High"
       },
@@ -190,9 +190,9 @@
       },
       "upload_engine": {
         "latest_run": "success",
-        "queue_health": "Plentiful Runway (55.6 days)",
-        "runway_days": 55.6,
-        "total_uploaded": 134
+        "queue_health": "Plentiful Runway (63.8 days)",
+        "runway_days": 63.8,
+        "total_uploaded": 153
       }
     }
   },
@@ -209,13 +209,13 @@
       "color": "#10B981",
       "avatar_url": "https://yt3.ggpht.com/R5wyufkApz5fijH1a4mek8n6CM9y64QklZgfgjuGI-SOwbTIBjEFmmKot6aBnYkVRwOpq965=s240-c-k-c0x00ffffff-no-rj",
       "subscribers": 27,
-      "total_views": 13928,
+      "total_views": 14031,
       "channel_total_videos": 4,
-      "avg_views_per_video": 3482.0,
+      "avg_views_per_video": 3507.8,
       "engagement_rate": 1.5,
-      "total_likes": 208,
+      "total_likes": 209,
       "analytics": {
-        "watch_time_hours": 58.5,
+        "watch_time_hours": 58.9,
         "avg_view_duration": "0:24",
         "top_countries": [
           {
@@ -358,10 +358,10 @@
           "is_clean": true
         },
         "view_health": {
-          "label": "YouTube API Verified: 3,482 avg views/video (13,928 total views across 4 videos)",
-          "badge": "3,482 AVG",
+          "label": "YouTube API Verified: 3,508 avg views/video (14,031 total views across 4 videos)",
+          "badge": "3,508 AVG",
           "color": "#10B981",
-          "avg_views": 3482.0,
+          "avg_views": 3507.8,
           "shorts_feed_share": "81.2%",
           "velocity_verdict": "Algorithm Reach: High"
         },
@@ -394,8 +394,8 @@
         "title": "Close Enough To Hear His Breath #wildlife #shorts #cameraman #viral",
         "uploaded_at": "2026-09-12T14:03:34Z",
         "thumbnail": "https://i.ytimg.com/vi/RMgm8o875X0/mqdefault.jpg",
-        "views": 1679,
-        "likes": 26,
+        "views": 1716,
+        "likes": 27,
         "comments": 0,
         "subscribers_gained": 3
       },
@@ -406,8 +406,8 @@
           "title": "Close Enough To Hear His Breath #wildlife #shorts #cameraman #viral",
           "uploaded_at": "2026-09-12T14:03:34Z",
           "thumbnail": "https://i.ytimg.com/vi/RMgm8o875X0/mqdefault.jpg",
-          "views": 1679,
-          "likes": 26,
+          "views": 1716,
+          "likes": 27,
           "comments": 0,
           "subscribers_gained": 3
         },
@@ -428,7 +428,7 @@
           "title": "Breathtaking 4K Wildlife Moment #wildlifephotography #shorts #naturelovers #viral",
           "uploaded_at": "2026-09-11T14:42:29Z",
           "thumbnail": "https://i.ytimg.com/vi/3pDpmQcqJT8/mqdefault.jpg",
-          "views": 9114,
+          "views": 9180,
           "likes": 159,
           "comments": 1,
           "subscribers_gained": 19
@@ -490,13 +490,13 @@
       "color": "#F59E0B",
       "avatar_url": "https://yt3.ggpht.com/TTLhq8ijvpChRrWaVb1i96FzeFG02Gd31oOfWo4EdOtBtfqTD6h0TrRmEOTd2fE8V0kPexV6EA=s240-c-k-c0x00ffffff-no-rj",
       "subscribers": 67,
-      "total_views": 84226,
+      "total_views": 84952,
       "channel_total_videos": 11,
-      "avg_views_per_video": 7656.9,
+      "avg_views_per_video": 7722.9,
       "engagement_rate": 0.7,
-      "total_likes": 607,
+      "total_likes": 608,
       "analytics": {
-        "watch_time_hours": 353.7,
+        "watch_time_hours": 356.8,
         "avg_view_duration": "0:24",
         "top_countries": [
           {
@@ -639,10 +639,10 @@
           "is_clean": true
         },
         "view_health": {
-          "label": "YouTube API Verified: 7,657 avg views/video (84,226 total views across 11 videos)",
-          "badge": "7,657 AVG",
+          "label": "YouTube API Verified: 7,723 avg views/video (84,952 total views across 11 videos)",
+          "badge": "7,723 AVG",
           "color": "#10B981",
-          "avg_views": 7656.9,
+          "avg_views": 7722.9,
           "shorts_feed_share": "81.2%",
           "velocity_verdict": "Algorithm Reach: High"
         },
@@ -675,7 +675,7 @@
         "title": "Nobody Expected That Faceoff Reaction #SlapFighting #PowerSlap #SlapBattle #CombatSports #Viral.",
         "uploaded_at": "2026-09-12T14:06:29Z",
         "thumbnail": "https://i.ytimg.com/vi/7OVj2yza4ks/mqdefault.jpg",
-        "views": 1176,
+        "views": 1186,
         "likes": 18,
         "comments": 1,
         "subscribers_gained": 1
@@ -687,7 +687,7 @@
           "title": "Nobody Expected That Faceoff Reaction #SlapFighting #PowerSlap #SlapBattle #CombatSports #Viral.",
           "uploaded_at": "2026-09-12T14:06:29Z",
           "thumbnail": "https://i.ytimg.com/vi/7OVj2yza4ks/mqdefault.jpg",
-          "views": 1176,
+          "views": 1186,
           "likes": 18,
           "comments": 1,
           "subscribers_gained": 1
@@ -698,7 +698,7 @@
           "title": "His Confidence Had The Whole Crowd Talking #PowerSlap #SlapFighting #SlapFight #Viral #Sports.",
           "uploaded_at": "2026-09-11T22:07:28Z",
           "thumbnail": "https://i.ytimg.com/vi/g-2DEoij8dY/mqdefault.jpg",
-          "views": 4520,
+          "views": 4561,
           "likes": 57,
           "comments": 0,
           "subscribers_gained": 4
@@ -709,8 +709,8 @@
           "title": "He Was Not Backing Down From Anyone #SlapFight #PowerSlap #SlapFighting #Viral #Sports.",
           "uploaded_at": "2026-09-11T16:04:35Z",
           "thumbnail": "https://i.ytimg.com/vi/t5oF0IsXkN0/mqdefault.jpg",
-          "views": 36629,
-          "likes": 352,
+          "views": 37304,
+          "likes": 353,
           "comments": 1,
           "subscribers_gained": 31
         },
@@ -1181,9 +1181,9 @@
       "color": "#8B5CF6",
       "avatar_url": "https://yt3.ggpht.com/WKefM8i0bji48M_e159k6q0080b5zNwYExax_QloW7H3XguFARUF-SuE62a8rdPQJXvtTXxbJQ=s240-c-k-c0x00ffffff-no-rj",
       "subscribers": 1,
-      "total_views": 1062,
+      "total_views": 1074,
       "channel_total_videos": 10,
-      "avg_views_per_video": 106.2,
+      "avg_views_per_video": 107.4,
       "engagement_rate": 1.0,
       "total_likes": 11,
       "analytics": {
@@ -1330,10 +1330,10 @@
           "is_clean": true
         },
         "view_health": {
-          "label": "Warm-Up Phase: 106 avg views/video (1,062 total views across 10 videos)",
-          "badge": "106 AVG",
+          "label": "Warm-Up Phase: 107 avg views/video (1,074 total views across 10 videos)",
+          "badge": "107 AVG",
           "color": "#F59E0B",
-          "avg_views": 106.2,
+          "avg_views": 107.4,
           "shorts_feed_share": "81.2%",
           "velocity_verdict": "Algorithm Reach: Healthy"
         },
@@ -1366,7 +1366,7 @@
         "title": "Adorable Toddler Reacts In The Cutest Way #ToddlerLife #CutestMoments #FamilyMoments #WholesomeConte",
         "uploaded_at": "2026-09-12T17:39:42Z",
         "thumbnail": "https://i.ytimg.com/vi/goCoZBF3N_M/mqdefault.jpg",
-        "views": 1055,
+        "views": 1067,
         "likes": 11,
         "comments": 0,
         "subscribers_gained": 1
@@ -1378,7 +1378,7 @@
           "title": "Adorable Toddler Reacts In The Cutest Way #ToddlerLife #CutestMoments #FamilyMoments #WholesomeConte",
           "uploaded_at": "2026-09-12T17:39:42Z",
           "thumbnail": "https://i.ytimg.com/vi/goCoZBF3N_M/mqdefault.jpg",
-          "views": 1055,
+          "views": 1067,
           "likes": 11,
           "comments": 0,
           "subscribers_gained": 1
@@ -2930,9 +2930,9 @@
       "color": "#8B5CF6",
       "avatar_url": "https://yt3.ggpht.com/c2et41jvboHRktLNJH-bmzbYclnu_SeQYjockP52SQB3xQtmw6jPskOSLrGMwcb7UiN4i4QybOo=s240-c-k-c0x00ffffff-no-rj",
       "subscribers": 16,
-      "total_views": 24782,
+      "total_views": 24786,
       "channel_total_videos": 27,
-      "avg_views_per_video": 917.9,
+      "avg_views_per_video": 918.0,
       "engagement_rate": 0.8,
       "total_likes": 199,
       "analytics": {
@@ -3079,10 +3079,10 @@
           "is_clean": true
         },
         "view_health": {
-          "label": "YouTube API Verified: 918 avg views/video (24,782 total views across 27 videos)",
+          "label": "YouTube API Verified: 918 avg views/video (24,786 total views across 27 videos)",
           "badge": "918 AVG",
           "color": "#3EA6FF",
-          "avg_views": 917.9,
+          "avg_views": 918.0,
           "shorts_feed_share": "81.2%",
           "velocity_verdict": "Algorithm Reach: High"
         },
@@ -3115,7 +3115,7 @@
         "title": "Behind The Biggest Scene Of The Film With Incredible Detail #BehindTheScenes #Hollywood #MovieMagic",
         "uploaded_at": "2026-09-12T21:29:37Z",
         "thumbnail": "https://i.ytimg.com/vi/1TbNIlAQsJo/mqdefault.jpg",
-        "views": 0,
+        "views": 4,
         "likes": 0,
         "comments": 0,
         "subscribers_gained": 0
@@ -3127,7 +3127,7 @@
           "title": "Behind The Biggest Scene Of The Film With Incredible Detail #BehindTheScenes #Hollywood #MovieMagic",
           "uploaded_at": "2026-09-12T21:29:37Z",
           "thumbnail": "https://i.ytimg.com/vi/1TbNIlAQsJo/mqdefault.jpg",
-          "views": 0,
+          "views": 4,
           "likes": 0,
           "comments": 0,
           "subscribers_gained": 0
@@ -3415,6 +3415,421 @@
           "thumbnail": "https://i.ytimg.com/vi/7sZwZUFywlY/mqdefault.jpg",
           "views": 115,
           "likes": 3,
+          "comments": 0,
+          "subscribers_gained": 0
+        }
+      ],
+      "recent_runs": [],
+      "is_active": true
+    },
+    {
+      "id": "channel_9",
+      "name": "Vortex Edge Stories",
+      "handle": "@VortexEdgeStories",
+      "youtube_channel_id": "UC19mra936EJ2dpPR5MemQMg",
+      "channel_url": "https://www.youtube.com/channel/UC19mra936EJ2dpPR5MemQMg",
+      "category": "Cinematic AI Stories & VFX",
+      "github_repo": "malhotramahi396-afk/yt-automation-vortexedgestories",
+      "color": "#06B6D4",
+      "avatar_url": "https://yt3.ggpht.com/hGhDAHGNdGFqU-PCbb1tF4adddBZunivHI8CDGZA6NJlQpKsGm0H2dEpBPSGP8sn947tF1Eq=s240-c-k-c0x00ffffff-no-rj",
+      "subscribers": 1,
+      "total_views": 460,
+      "channel_total_videos": 19,
+      "avg_views_per_video": 24.2,
+      "engagement_rate": 0.2,
+      "total_likes": 1,
+      "analytics": {
+        "watch_time_hours": 1.9,
+        "avg_view_duration": "0:24",
+        "top_countries": [
+          {
+            "country": "United States",
+            "code": "US",
+            "flag": "\ud83c\uddfa\ud83c\uddf8",
+            "percent": 49.3
+          },
+          {
+            "country": "United Kingdom",
+            "code": "GB",
+            "flag": "\ud83c\uddec\ud83c\udde7",
+            "percent": 14.8
+          },
+          {
+            "country": "Canada",
+            "code": "CA",
+            "flag": "\ud83c\udde8\ud83c\udde6",
+            "percent": 11.0
+          },
+          {
+            "country": "India",
+            "code": "IN",
+            "flag": "\ud83c\uddee\ud83c\uddf3",
+            "percent": 12.5
+          },
+          {
+            "country": "Germany",
+            "code": "DE",
+            "flag": "\ud83c\udde9\ud83c\uddea",
+            "percent": 6.8
+          },
+          {
+            "country": "Other countries",
+            "code": "OTHER",
+            "flag": "\ud83c\udf10",
+            "percent": 5.6
+          }
+        ],
+        "age_distribution": [
+          {
+            "range": "13\u201317 years",
+            "percent": 7.4
+          },
+          {
+            "range": "18\u201324 years",
+            "percent": 45.2
+          },
+          {
+            "range": "25\u201334 years",
+            "percent": 36.1
+          },
+          {
+            "range": "35\u201344 years",
+            "percent": 7.5
+          },
+          {
+            "range": "45\u201354 years",
+            "percent": 2.8
+          },
+          {
+            "range": "55+ years",
+            "percent": 1.0
+          }
+        ],
+        "gender": {
+          "male": 68.9,
+          "female": 31.1
+        },
+        "traffic_sources": [
+          {
+            "source": "Shorts feed",
+            "percent": 81.2,
+            "icon": "\ud83d\udcf1"
+          },
+          {
+            "source": "YouTube search",
+            "percent": 10.6,
+            "icon": "\ud83d\udd0d"
+          },
+          {
+            "source": "Channel pages",
+            "percent": 4.4,
+            "icon": "\ud83d\udcc4"
+          },
+          {
+            "source": "Suggested videos",
+            "percent": 2.5,
+            "icon": "\ud83c\udfac"
+          },
+          {
+            "source": "External & Others",
+            "percent": 1.3,
+            "icon": "\ud83d\udd17"
+          }
+        ],
+        "subscriber_watch_time": {
+          "not_subscribed": 94.2,
+          "subscribed": 5.8
+        },
+        "viewer_types": {
+          "new_viewers": 87.6,
+          "returning_viewers": 12.4
+        },
+        "top_devices": [
+          {
+            "device": "Mobile phone",
+            "percent": 94.6,
+            "icon": "\ud83d\udcf1"
+          },
+          {
+            "device": "Computer",
+            "percent": 3.8,
+            "icon": "\ud83d\udcbb"
+          },
+          {
+            "device": "TV / Tablet",
+            "percent": 1.6,
+            "icon": "\ud83d\udcfa"
+          }
+        ],
+        "peak_hours": "6:30 PM \u2013 11:30 PM IST (Global Sci-Fi & Storytelling Window)"
+      },
+      "health": {
+        "overall_score": 98,
+        "verdict": "Flawless (Optimal Standing)",
+        "verdict_color": "#10B981",
+        "shield_icon": "\ud83d\udee1\ufe0f",
+        "strikes": {
+          "count": 0,
+          "max": 3,
+          "status": "0 of 3 active strikes \u2022 Channel Active & Public (YouTube API Verified)",
+          "badge": "CLEAN",
+          "is_clean": true
+        },
+        "copyright": {
+          "count": 0,
+          "status": "0 copyright claims \u2022 100% Original Audio & Video",
+          "badge": "CLEAN",
+          "is_clean": true
+        },
+        "view_health": {
+          "label": "Warm-Up Phase: 24 avg views/video (460 total views across 19 videos)",
+          "badge": "24 AVG",
+          "color": "#F59E0B",
+          "avg_views": 24.2,
+          "shorts_feed_share": "81.2%",
+          "velocity_verdict": "Algorithm Reach: Healthy"
+        },
+        "compliance": {
+          "label": "YouTube Policy: AI Disclosure & COPPA Guard Active (Self-Declared)",
+          "badge": "100% OK",
+          "synthetic_media": "Self-Declared True (Compliant)",
+          "coppa_kids": "Declared False (General Audience)",
+          "is_compliant": true
+        },
+        "upload_engine": {
+          "latest_run": "idle",
+          "queue_health": "Plentiful Runway (129.5 days)",
+          "runway_days": 129.5,
+          "total_uploaded": 19
+        }
+      },
+      "drive_folder_id": "1jjoc2hHDrUb9S7seMnLQe0SUalCA3buU",
+      "drive_folder_url": "https://drive.google.com/drive/folders/1jjoc2hHDrUb9S7seMnLQe0SUalCA3buU",
+      "uploaded_count": 19,
+      "drive_queue_count": 259,
+      "runway_days": 129.5,
+      "stock_status": "Plentiful (129.5 days)",
+      "stock_color": "#10B981",
+      "latest_run_status": "idle",
+      "latest_run_time": null,
+      "latest_uploaded_video": {
+        "youtube_id": "XeWIAqcY96Q",
+        "youtube_url": "https://youtu.be/XeWIAqcY96Q",
+        "title": "Every Frame Looks Unreal Today #Cinematic #AIVideo #Storytelling #MovieScene #VisualEffects #AIFilm",
+        "uploaded_at": "2026-09-12T21:38:02Z",
+        "thumbnail": "https://i.ytimg.com/vi/XeWIAqcY96Q/mqdefault.jpg",
+        "views": 0,
+        "likes": 0,
+        "comments": 0,
+        "subscribers_gained": 0
+      },
+      "uploaded_videos": [
+        {
+          "youtube_id": "XeWIAqcY96Q",
+          "youtube_url": "https://youtu.be/XeWIAqcY96Q",
+          "title": "Every Frame Looks Unreal Today #Cinematic #AIVideo #Storytelling #MovieScene #VisualEffects #AIFilm",
+          "uploaded_at": "2026-09-12T21:38:02Z",
+          "thumbnail": "https://i.ytimg.com/vi/XeWIAqcY96Q/mqdefault.jpg",
+          "views": 0,
+          "likes": 0,
+          "comments": 0,
+          "subscribers_gained": 0
+        },
+        {
+          "youtube_id": "Iq0Skcp9R00",
+          "youtube_url": "https://youtu.be/Iq0Skcp9R00",
+          "title": "Every Frame Looks Unreal That Shocked Everyone #Cinematic #AIVideo #Storytelling #MovieScene #Visual",
+          "uploaded_at": "2026-09-07T19:29:58Z",
+          "thumbnail": "https://i.ytimg.com/vi/Iq0Skcp9R00/mqdefault.jpg",
+          "views": 3,
+          "likes": 0,
+          "comments": 0,
+          "subscribers_gained": 0
+        },
+        {
+          "youtube_id": "2h8DD29anp4",
+          "youtube_url": "https://youtu.be/2h8DD29anp4",
+          "title": "Every Frame Looks Unreal That Nobody Expected #Cinematic #AIVideo #Storytelling #MovieScene #Visual",
+          "uploaded_at": "2026-09-06T07:56:59Z",
+          "thumbnail": "https://i.ytimg.com/vi/2h8DD29anp4/mqdefault.jpg",
+          "views": 10,
+          "likes": 0,
+          "comments": 0,
+          "subscribers_gained": 0
+        },
+        {
+          "youtube_id": "Fx6OCL8Odvo",
+          "youtube_url": "https://youtu.be/Fx6OCL8Odvo",
+          "title": "Every Frame Looks Unreal That Felt Completely Real #Cinematic #AIVideo #Storytelling #MovieScene",
+          "uploaded_at": "2026-09-03T19:41:44Z",
+          "thumbnail": "https://i.ytimg.com/vi/Fx6OCL8Odvo/mqdefault.jpg",
+          "views": 8,
+          "likes": 0,
+          "comments": 0,
+          "subscribers_gained": 0
+        },
+        {
+          "youtube_id": "s_y0sfxKG1U",
+          "youtube_url": "https://youtu.be/s_y0sfxKG1U",
+          "title": "Every Frame Looks Unreal Like Never Before #Cinematic #AIVideo #Storytelling #MovieScene  #aivideo",
+          "uploaded_at": "2026-08-30T19:03:48Z",
+          "thumbnail": "https://i.ytimg.com/vi/s_y0sfxKG1U/mqdefault.jpg",
+          "views": 14,
+          "likes": 0,
+          "comments": 0,
+          "subscribers_gained": 0
+        },
+        {
+          "youtube_id": "QPRfEAVLSJo",
+          "youtube_url": "https://youtu.be/QPRfEAVLSJo",
+          "title": "Every Frame Looks Unreal In Seconds #Cinematic #AIVideo #Storytelling #MovieScene #VisualEffects #AI",
+          "uploaded_at": "2026-08-18T19:58:28Z",
+          "thumbnail": "https://i.ytimg.com/vi/QPRfEAVLSJo/mqdefault.jpg",
+          "views": 372,
+          "likes": 1,
+          "comments": 0,
+          "subscribers_gained": 1
+        },
+        {
+          "youtube_id": "g0RefIrkFb8",
+          "youtube_url": "https://youtu.be/g0RefIrkFb8",
+          "title": "Every Frame Looks Unreal Beyond Expectations #Cinematic #AIVideo #Storytelling #MovieScene #Visual",
+          "uploaded_at": "2026-08-05T16:48:25Z",
+          "thumbnail": "https://i.ytimg.com/vi/g0RefIrkFb8/mqdefault.jpg",
+          "views": 0,
+          "likes": 0,
+          "comments": 0,
+          "subscribers_gained": 0
+        },
+        {
+          "youtube_id": "akwz5Ewc-Gw",
+          "youtube_url": "https://youtu.be/akwz5Ewc-Gw",
+          "title": "Every Frame Looks Unreal Before The Ending #Cinematic #AIVideo #Storytelling #MovieScene #VisualEffe",
+          "uploaded_at": "2026-08-03T16:17:28Z",
+          "thumbnail": "https://i.ytimg.com/vi/akwz5Ewc-Gw/mqdefault.jpg",
+          "views": 45,
+          "likes": 0,
+          "comments": 0,
+          "subscribers_gained": 0
+        },
+        {
+          "youtube_id": "gdOt8gh2bNQ",
+          "youtube_url": "https://youtu.be/gdOt8gh2bNQ",
+          "title": "Can You Believe This Is AI Worth Watching Twice #Cinematic #AIVideo #Storytelling #MovieScene",
+          "uploaded_at": "2026-07-28T13:56:45Z",
+          "thumbnail": "https://i.ytimg.com/vi/gdOt8gh2bNQ/mqdefault.jpg",
+          "views": 4,
+          "likes": 0,
+          "comments": 0,
+          "subscribers_gained": 0
+        },
+        {
+          "youtube_id": "F8BdX4nLmlA",
+          "youtube_url": "https://youtu.be/F8BdX4nLmlA",
+          "title": "Can You Believe This Is AI With Incredible Detail #Cinematic #AIVideo #Storytelling #MovieScene",
+          "uploaded_at": "2026-07-27T07:20:01Z",
+          "thumbnail": "https://i.ytimg.com/vi/F8BdX4nLmlA/mqdefault.jpg",
+          "views": 0,
+          "likes": 0,
+          "comments": 0,
+          "subscribers_gained": 0
+        },
+        {
+          "youtube_id": "WkLZPR0fvdQ",
+          "youtube_url": "https://youtu.be/WkLZPR0fvdQ",
+          "title": "Can You Believe This Is AI With A Stunning Twist #Cinematic #AIVideo #Storytelling #MovieScene",
+          "uploaded_at": "2026-07-24T16:50:45Z",
+          "thumbnail": "https://i.ytimg.com/vi/WkLZPR0fvdQ/mqdefault.jpg",
+          "views": 1,
+          "likes": 0,
+          "comments": 0,
+          "subscribers_gained": 0
+        },
+        {
+          "youtube_id": "tp4469OYZ6w",
+          "youtube_url": "https://youtu.be/tp4469OYZ6w",
+          "title": "Can You Believe This Is AI Today #Cinematic #AIVideo #Storytelling #MovieScene #VisualEffects",
+          "uploaded_at": "2026-07-23T14:33:08Z",
+          "thumbnail": "https://i.ytimg.com/vi/tp4469OYZ6w/mqdefault.jpg",
+          "views": 0,
+          "likes": 0,
+          "comments": 0,
+          "subscribers_gained": 0
+        },
+        {
+          "youtube_id": "d8QK7EpRPOk",
+          "youtube_url": "https://youtu.be/d8QK7EpRPOk",
+          "title": "Can You Believe This Is AI That Shocked Everyone #Cinematic #AIVideo #Storytelling #MovieScene",
+          "uploaded_at": "2026-07-21T06:55:48Z",
+          "thumbnail": "https://i.ytimg.com/vi/d8QK7EpRPOk/mqdefault.jpg",
+          "views": 0,
+          "likes": 0,
+          "comments": 0,
+          "subscribers_gained": 0
+        },
+        {
+          "youtube_id": "caUnwFOllMQ",
+          "youtube_url": "https://youtu.be/caUnwFOllMQ",
+          "title": "Can You Believe This Is AI That Nobody Expected #Cinematic #AIVideo #Storytelling #MovieScene",
+          "uploaded_at": "2026-07-20T16:39:23Z",
+          "thumbnail": "https://i.ytimg.com/vi/caUnwFOllMQ/mqdefault.jpg",
+          "views": 0,
+          "likes": 0,
+          "comments": 0,
+          "subscribers_gained": 0
+        },
+        {
+          "youtube_id": "VPXXwKov_Jo",
+          "youtube_url": "https://youtu.be/VPXXwKov_Jo",
+          "title": "Can You Believe This Is AI That Felt Completely Real #Cinematic #AIVideo #Storytelling #MovieScene",
+          "uploaded_at": "2026-07-19T15:18:15Z",
+          "thumbnail": "https://i.ytimg.com/vi/VPXXwKov_Jo/mqdefault.jpg",
+          "views": 1,
+          "likes": 0,
+          "comments": 0,
+          "subscribers_gained": 0
+        },
+        {
+          "youtube_id": "Zyxse-FXPlA",
+          "youtube_url": "https://youtu.be/Zyxse-FXPlA",
+          "title": "Can You Believe This Is AI Like Never Before #Cinematic #AIVideo #Storytelling #MovieScene #visual",
+          "uploaded_at": "2026-07-19T08:07:46Z",
+          "thumbnail": "https://i.ytimg.com/vi/Zyxse-FXPlA/mqdefault.jpg",
+          "views": 1,
+          "likes": 0,
+          "comments": 0,
+          "subscribers_gained": 0
+        },
+        {
+          "youtube_id": "M70fp1MvVFQ",
+          "youtube_url": "https://youtu.be/M70fp1MvVFQ",
+          "title": "Can You Believe This Is AI In Seconds #Cinematic #AIVideo #Storytelling #MovieScene #VisualEffects",
+          "uploaded_at": "2026-07-18T17:43:19Z",
+          "thumbnail": "https://i.ytimg.com/vi/M70fp1MvVFQ/mqdefault.jpg",
+          "views": 1,
+          "likes": 0,
+          "comments": 0,
+          "subscribers_gained": 0
+        },
+        {
+          "youtube_id": "D-WTR5BMA0c",
+          "youtube_url": "https://youtu.be/D-WTR5BMA0c",
+          "title": "Can You Believe This Is AI Beyond Expectations #Cinematic #AIVideo #Storytelling #MovieScene #Visual",
+          "uploaded_at": "2026-07-18T12:03:46Z",
+          "thumbnail": "https://i.ytimg.com/vi/D-WTR5BMA0c/mqdefault.jpg",
+          "views": 0,
+          "likes": 0,
+          "comments": 0,
+          "subscribers_gained": 0
+        },
+        {
+          "youtube_id": "ihkPpcB-mOw",
+          "youtube_url": "https://youtu.be/ihkPpcB-mOw",
+          "title": "Can You Believe This Is AI Before The Ending #Cinematic #AIVideo #Storytelling #MovieScene #VisualEf",
+          "uploaded_at": "2026-07-17T16:05:13Z",
+          "thumbnail": "https://i.ytimg.com/vi/ihkPpcB-mOw/mqdefault.jpg",
+          "views": 0,
+          "likes": 0,
           "comments": 0,
           "subscribers_gained": 0
         }
