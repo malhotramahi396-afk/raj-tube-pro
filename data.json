@@ -1,20 +1,20 @@
 {
   "app_name": "Raj Tube Pro",
   "version": "6.0.0",
-  "timestamp": "2026-09-12T22:23:29.201082+00:00",
+  "timestamp": "2026-09-12T22:29:14.981684+00:00",
   "schedule": {
     "next_slot_iso": "2026-09-13T14:00:00+00:00",
-    "seconds_remaining": 56205,
-    "formatted_countdown": "15h 36m 45s",
+    "seconds_remaining": 55859,
+    "formatted_countdown": "15h 30m 59s",
     "slot_label": "10:00 AM USA (7:30 PM IST Tomorrow)",
-    "now_ist": "13 Sep, 03:53 AM IST"
+    "now_ist": "13 Sep, 03:59 AM IST"
   },
   "summary": {
     "total_channels": 10,
     "total_uploaded": 182,
     "total_in_queue": 1267,
     "total_subscribers": 145,
-    "total_views": 167092,
+    "total_views": 167409,
     "total_likes": 1502,
     "network_engagement": 0.9,
     "total_runway_days": 63.4,
@@ -22,7 +22,7 @@
     "issues_count": 0,
     "top_trending_video": {
       "title": "He Was Not Backing Down From Anyone #SlapFight #PowerSlap #SlapFighting #Viral #Sports.",
-      "views": 38310,
+      "views": 38392,
       "likes": 355,
       "subscribers_gained": 32,
       "youtube_url": "https://youtu.be/t5oF0IsXkN0",
@@ -31,7 +31,7 @@
       "uploaded_at": "2026-09-11T16:04:35Z"
     },
     "analytics": {
-      "watch_time_hours": 701.8,
+      "watch_time_hours": 703.1,
       "avg_view_duration": "0:24",
       "top_countries": [
         {
@@ -174,10 +174,10 @@
         "is_clean": true
       },
       "view_health": {
-        "label": "YouTube API Verified: 918 avg views/video (167,092 total views across 182 videos)",
-        "badge": "918 AVG",
+        "label": "YouTube API Verified: 920 avg views/video (167,409 total views across 182 videos)",
+        "badge": "920 AVG",
         "color": "#3EA6FF",
-        "avg_views": 918.1,
+        "avg_views": 919.8,
         "shorts_feed_share": "81.2%",
         "velocity_verdict": "Algorithm Reach: High"
       },
@@ -220,15 +220,16 @@
         "handle": "@ZenovaDrift",
         "color": "#10B981",
         "runner_node": {
-          "ip": "132.196.31.128",
-          "city": "Des Moines",
-          "region": "Iowa",
-          "country": "United States",
+          "ip": "13.71.231.34",
+          "city": "Cheyenne",
+          "region": "Wyoming",
+          "country": "US",
           "country_code": "US",
           "flag": "\ud83c\uddfa\ud83c\uddf8",
           "org": "AS8075 Microsoft Corporation",
-          "datacenter": "Microsoft Azure Central US (Iowa)",
-          "verify_url": "https://ipinfo.io/132.196.31.128"
+          "datacenter": "Microsoft Azure Cloud Runner",
+          "verified_at": "2026-09-12T22:15:04.310145+00:00",
+          "verify_url": "https://ipinfo.io/13.71.231.34"
         }
       },
       {
@@ -237,15 +238,16 @@
         "handle": "@Zyntrix07",
         "color": "#F59E0B",
         "runner_node": {
-          "ip": "20.232.188.94",
-          "city": "Des Moines",
-          "region": "Iowa",
-          "country": "United States",
+          "ip": "40.65.56.225",
+          "city": "San Jose",
+          "region": "California",
+          "country": "US",
           "country_code": "US",
           "flag": "\ud83c\uddfa\ud83c\uddf8",
           "org": "AS8075 Microsoft Corporation",
-          "datacenter": "Microsoft Azure Central US (Iowa)",
-          "verify_url": "https://ipinfo.io/20.232.188.94"
+          "datacenter": "Microsoft Azure Cloud Runner",
+          "verified_at": "2026-09-12T22:06:27.428028+00:00",
+          "verify_url": "https://ipinfo.io/40.65.56.225"
         }
       },
       {
@@ -271,15 +273,16 @@
         "handle": "@vexorush",
         "color": "#8B5CF6",
         "runner_node": {
-          "ip": "20.150.114.88",
-          "city": "Phoenix",
-          "region": "Arizona",
-          "country": "United States",
+          "ip": "172.202.102.208",
+          "city": "Des Moines",
+          "region": "Iowa",
+          "country": "US",
           "country_code": "US",
           "flag": "\ud83c\uddfa\ud83c\uddf8",
           "org": "AS8075 Microsoft Corporation",
-          "datacenter": "Microsoft Azure West US 3 (Phoenix)",
-          "verify_url": "https://ipinfo.io/20.150.114.88"
+          "datacenter": "Microsoft Azure Cloud Runner",
+          "verified_at": "2026-09-12T22:14:10.187842+00:00",
+          "verify_url": "https://ipinfo.io/172.202.102.208"
         }
       },
       {
@@ -288,15 +291,16 @@
         "handle": "@Klyvo-x5o",
         "color": "#EC4899",
         "runner_node": {
-          "ip": "20.124.89.14",
-          "city": "Boydton",
-          "region": "Virginia",
-          "country": "United States",
+          "ip": "57.154.6.36",
+          "city": "Phoenix",
+          "region": "Arizona",
+          "country": "US",
           "country_code": "US",
           "flag": "\ud83c\uddfa\ud83c\uddf8",
           "org": "AS8075 Microsoft Corporation",
-          "datacenter": "Microsoft Azure East US (Virginia)",
-          "verify_url": "https://ipinfo.io/20.124.89.14"
+          "datacenter": "Microsoft Azure Cloud Runner",
+          "verified_at": "2026-09-12T22:14:55.574494+00:00",
+          "verify_url": "https://ipinfo.io/57.154.6.36"
         }
       },
       {
@@ -305,15 +309,16 @@
         "handle": "@corevantamedia",
         "color": "#3B82F6",
         "runner_node": {
-          "ip": "13.91.120.45",
-          "city": "San Jose",
-          "region": "California",
-          "country": "United States",
+          "ip": "20.3.231.114",
+          "city": "Moses Lake",
+          "region": "Washington",
+          "country": "US",
           "country_code": "US",
           "flag": "\ud83c\uddfa\ud83c\uddf8",
           "org": "AS8075 Microsoft Corporation",
-          "datacenter": "Microsoft Azure West US (Silicon Valley)",
-          "verify_url": "https://ipinfo.io/13.91.120.45"
+          "datacenter": "Microsoft Azure Cloud Runner",
+          "verified_at": "2026-09-12T22:14:00.817365+00:00",
+          "verify_url": "https://ipinfo.io/20.3.231.114"
         }
       },
       {
@@ -322,15 +327,16 @@
         "handle": "@FireNovaVault",
         "color": "#F59E0B",
         "runner_node": {
-          "ip": "40.76.134.22",
-          "city": "Des Moines",
-          "region": "Iowa",
-          "country": "United States",
+          "ip": "20.119.95.19",
+          "city": "Dulles Town Center",
+          "region": "Virginia",
+          "country": "US",
           "country_code": "US",
           "flag": "\ud83c\uddfa\ud83c\uddf8",
           "org": "AS8075 Microsoft Corporation",
-          "datacenter": "Microsoft Azure Central US (Iowa)",
-          "verify_url": "https://ipinfo.io/40.76.134.22"
+          "datacenter": "Microsoft Azure Cloud Runner",
+          "verified_at": "2026-09-12T22:11:15.208286+00:00",
+          "verify_url": "https://ipinfo.io/20.119.95.19"
         }
       },
       {
@@ -356,15 +362,16 @@
         "handle": "@VortexEdgeStories",
         "color": "#06B6D4",
         "runner_node": {
-          "ip": "52.167.144.89",
+          "ip": "48.214.53.113",
           "city": "Boydton",
           "region": "Virginia",
-          "country": "United States",
+          "country": "US",
           "country_code": "US",
           "flag": "\ud83c\uddfa\ud83c\uddf8",
           "org": "AS8075 Microsoft Corporation",
-          "datacenter": "Microsoft Azure East US (Virginia)",
-          "verify_url": "https://ipinfo.io/52.167.144.89"
+          "datacenter": "Microsoft Azure Cloud Runner",
+          "verified_at": "2026-09-12T22:11:04.627296+00:00",
+          "verify_url": "https://ipinfo.io/48.214.53.113"
         }
       }
     ]
@@ -382,13 +389,13 @@
       "color": "#10B981",
       "avatar_url": "https://yt3.ggpht.com/R5wyufkApz5fijH1a4mek8n6CM9y64QklZgfgjuGI-SOwbTIBjEFmmKot6aBnYkVRwOpq965=s240-c-k-c0x00ffffff-no-rj",
       "subscribers": 27,
-      "total_views": 14715,
+      "total_views": 14791,
       "channel_total_videos": 5,
-      "avg_views_per_video": 2943.0,
+      "avg_views_per_video": 2958.2,
       "engagement_rate": 1.4,
       "total_likes": 210,
       "analytics": {
-        "watch_time_hours": 61.8,
+        "watch_time_hours": 62.1,
         "avg_view_duration": "0:24",
         "top_countries": [
           {
@@ -531,10 +538,10 @@
           "is_clean": true
         },
         "view_health": {
-          "label": "YouTube API Verified: 2,943 avg views/video (14,715 total views across 5 videos)",
-          "badge": "2,943 AVG",
+          "label": "YouTube API Verified: 2,958 avg views/video (14,791 total views across 5 videos)",
+          "badge": "2,958 AVG",
           "color": "#10B981",
-          "avg_views": 2943.0,
+          "avg_views": 2958.2,
           "shorts_feed_share": "81.2%",
           "velocity_verdict": "Algorithm Reach: High"
         },
@@ -567,7 +574,7 @@
         "title": "Danger At Point Blank Range #wildlife #shorts #animalencounter #fyp",
         "uploaded_at": "2026-09-12T22:03:51Z",
         "thumbnail": "https://i.ytimg.com/vi/H511dz4lsLQ/mqdefault.jpg",
-        "views": 28,
+        "views": 42,
         "likes": 1,
         "comments": 0,
         "subscribers_gained": 0
@@ -579,7 +586,7 @@
           "title": "Danger At Point Blank Range #wildlife #shorts #animalencounter #fyp",
           "uploaded_at": "2026-09-12T22:03:51Z",
           "thumbnail": "https://i.ytimg.com/vi/H511dz4lsLQ/mqdefault.jpg",
-          "views": 28,
+          "views": 42,
           "likes": 1,
           "comments": 0,
           "subscribers_gained": 0
@@ -590,7 +597,7 @@
           "title": "Close Enough To Hear His Breath #wildlife #shorts #cameraman #viral",
           "uploaded_at": "2026-09-12T14:03:34Z",
           "thumbnail": "https://i.ytimg.com/vi/RMgm8o875X0/mqdefault.jpg",
-          "views": 1952,
+          "views": 1969,
           "likes": 28,
           "comments": 0,
           "subscribers_gained": 4
@@ -612,7 +619,7 @@
           "title": "Breathtaking 4K Wildlife Moment #wildlifephotography #shorts #naturelovers #viral",
           "uploaded_at": "2026-09-11T14:42:29Z",
           "thumbnail": "https://i.ytimg.com/vi/3pDpmQcqJT8/mqdefault.jpg",
-          "views": 9600,
+          "views": 9645,
           "likes": 158,
           "comments": 1,
           "subscribers_gained": 18
@@ -686,9 +693,9 @@
       "color": "#10B981",
       "avatar_url": "https://yt3.ggpht.com/Si65r7FeRpZibwEpw60Lck09w5Qi4YjdBhvfyPC914DY68sKk7vkLYv3WdR1ByZGkg_J4FAK=s240-c-k-c0x00ffffff-no-rj",
       "subscribers": 0,
-      "total_views": 5016,
+      "total_views": 5022,
       "channel_total_videos": 20,
-      "avg_views_per_video": 250.8,
+      "avg_views_per_video": 251.1,
       "engagement_rate": 0.8,
       "total_likes": 42,
       "analytics": {
@@ -835,10 +842,10 @@
           "is_clean": true
         },
         "view_health": {
-          "label": "YouTube API Verified: 251 avg views/video (5,016 total views across 20 videos)",
+          "label": "YouTube API Verified: 251 avg views/video (5,022 total views across 20 videos)",
           "badge": "251 AVG",
           "color": "#3EA6FF",
-          "avg_views": 250.8,
+          "avg_views": 251.1,
           "shorts_feed_share": "81.2%",
           "velocity_verdict": "Algorithm Reach: Healthy"
         },
@@ -864,14 +871,14 @@
       "stock_status": "Plentiful (64.0 days)",
       "stock_color": "#10B981",
       "latest_run_status": "success",
-      "latest_run_time": "2026-09-12T21:50:21.040318+00:00",
+      "latest_run_time": "2026-09-12T22:15:04.310145+00:00",
       "latest_uploaded_video": {
         "youtube_id": "dmg14otnq3A",
         "youtube_url": "https://youtu.be/dmg14otnq3A",
         "title": "Grandma Carried The Entire Team Like A True Champion #GrandmaGamer #Esports #Gaming #GamingLegend #P",
         "uploaded_at": "2026-09-12T22:15:20Z",
         "thumbnail": "https://i.ytimg.com/vi/dmg14otnq3A/mqdefault.jpg",
-        "views": 0,
+        "views": 3,
         "likes": 0,
         "comments": 0,
         "subscribers_gained": 0
@@ -883,7 +890,7 @@
           "title": "Grandma Carried The Entire Team Like A True Champion #GrandmaGamer #Esports #Gaming #GamingLegend #P",
           "uploaded_at": "2026-09-12T22:15:20Z",
           "thumbnail": "https://i.ytimg.com/vi/dmg14otnq3A/mqdefault.jpg",
-          "views": 0,
+          "views": 3,
           "likes": 0,
           "comments": 0,
           "subscribers_gained": 0
@@ -894,7 +901,7 @@
           "title": "Grandma Carried The Entire Team In Front Of Everyone #GrandmaGamer #Esports #Gaming #GamingLegend #P",
           "uploaded_at": "2026-09-12T21:50:32Z",
           "thumbnail": "https://i.ytimg.com/vi/gnl3GWZ6Hcs/mqdefault.jpg",
-          "views": 60,
+          "views": 63,
           "likes": 1,
           "comments": 0,
           "subscribers_gained": 0
@@ -1100,6 +1107,18 @@
       ],
       "recent_runs": [
         {
+          "started_at": "2026-09-12T22:15:00.778302+00:00",
+          "finished_at": "2026-09-12T22:15:04.310145+00:00",
+          "status": "success",
+          "error": null
+        },
+        {
+          "started_at": "2026-09-12T22:05:15.550125+00:00",
+          "finished_at": "2026-09-12T22:05:16.532290+00:00",
+          "status": "dry_run",
+          "error": null
+        },
+        {
           "started_at": "2026-09-12T21:50:14.902886+00:00",
           "finished_at": "2026-09-12T21:50:21.040318+00:00",
           "status": "success",
@@ -1107,15 +1126,16 @@
         }
       ],
       "runner_node": {
-        "ip": "132.196.31.128",
-        "city": "Des Moines",
-        "region": "Iowa",
-        "country": "United States",
+        "ip": "13.71.231.34",
+        "city": "Cheyenne",
+        "region": "Wyoming",
+        "country": "US",
         "country_code": "US",
         "flag": "\ud83c\uddfa\ud83c\uddf8",
         "org": "AS8075 Microsoft Corporation",
-        "datacenter": "Microsoft Azure Central US (Iowa)",
-        "verify_url": "https://ipinfo.io/132.196.31.128"
+        "datacenter": "Microsoft Azure Cloud Runner",
+        "verified_at": "2026-09-12T22:15:04.310145+00:00",
+        "verify_url": "https://ipinfo.io/13.71.231.34"
       },
       "is_active": true
     },
@@ -1130,13 +1150,13 @@
       "color": "#F59E0B",
       "avatar_url": "https://yt3.ggpht.com/TTLhq8ijvpChRrWaVb1i96FzeFG02Gd31oOfWo4EdOtBtfqTD6h0TrRmEOTd2fE8V0kPexV6EA=s240-c-k-c0x00ffffff-no-rj",
       "subscribers": 67,
-      "total_views": 86227,
+      "total_views": 86367,
       "channel_total_videos": 12,
-      "avg_views_per_video": 7185.6,
+      "avg_views_per_video": 7197.2,
       "engagement_rate": 0.7,
       "total_likes": 611,
       "analytics": {
-        "watch_time_hours": 362.2,
+        "watch_time_hours": 362.7,
         "avg_view_duration": "0:24",
         "top_countries": [
           {
@@ -1279,10 +1299,10 @@
           "is_clean": true
         },
         "view_health": {
-          "label": "YouTube API Verified: 7,186 avg views/video (86,227 total views across 12 videos)",
-          "badge": "7,186 AVG",
+          "label": "YouTube API Verified: 7,197 avg views/video (86,367 total views across 12 videos)",
+          "badge": "7,197 AVG",
           "color": "#10B981",
-          "avg_views": 7185.6,
+          "avg_views": 7197.2,
           "shorts_feed_share": "81.2%",
           "velocity_verdict": "Algorithm Reach: High"
         },
@@ -1308,14 +1328,14 @@
       "stock_status": "Plentiful (35.5 days)",
       "stock_color": "#10B981",
       "latest_run_status": "success",
-      "latest_run_time": "2026-09-12T14:06:09.055391+00:00",
+      "latest_run_time": "2026-09-12T22:06:27.428028+00:00",
       "latest_uploaded_video": {
         "youtube_id": "sEMtoFAjmrs",
         "youtube_url": "https://youtu.be/sEMtoFAjmrs",
         "title": "Nobody Wanted To Blink During This Moment #SlapFighting #PowerSlap #FightNight #FYP #Viral.",
         "uploaded_at": "2026-09-12T22:06:45Z",
         "thumbnail": "https://i.ytimg.com/vi/sEMtoFAjmrs/mqdefault.jpg",
-        "views": 17,
+        "views": 26,
         "likes": 0,
         "comments": 0,
         "subscribers_gained": 0
@@ -1327,7 +1347,7 @@
           "title": "Nobody Wanted To Blink During This Moment #SlapFighting #PowerSlap #FightNight #FYP #Viral.",
           "uploaded_at": "2026-09-12T22:06:45Z",
           "thumbnail": "https://i.ytimg.com/vi/sEMtoFAjmrs/mqdefault.jpg",
-          "views": 17,
+          "views": 26,
           "likes": 0,
           "comments": 0,
           "subscribers_gained": 0
@@ -1338,7 +1358,7 @@
           "title": "Nobody Expected That Faceoff Reaction #SlapFighting #PowerSlap #SlapBattle #CombatSports #Viral.",
           "uploaded_at": "2026-09-12T14:06:29Z",
           "thumbnail": "https://i.ytimg.com/vi/7OVj2yza4ks/mqdefault.jpg",
-          "views": 1282,
+          "views": 1284,
           "likes": 18,
           "comments": 1,
           "subscribers_gained": 1
@@ -1349,7 +1369,7 @@
           "title": "His Confidence Had The Whole Crowd Talking #PowerSlap #SlapFighting #SlapFight #Viral #Sports.",
           "uploaded_at": "2026-09-11T22:07:28Z",
           "thumbnail": "https://i.ytimg.com/vi/g-2DEoij8dY/mqdefault.jpg",
-          "views": 4694,
+          "views": 4703,
           "likes": 58,
           "comments": 0,
           "subscribers_gained": 4
@@ -1360,7 +1380,7 @@
           "title": "He Was Not Backing Down From Anyone #SlapFight #PowerSlap #SlapFighting #Viral #Sports.",
           "uploaded_at": "2026-09-11T16:04:35Z",
           "thumbnail": "https://i.ytimg.com/vi/t5oF0IsXkN0/mqdefault.jpg",
-          "views": 38310,
+          "views": 38392,
           "likes": 355,
           "comments": 1,
           "subscribers_gained": 32
@@ -1371,7 +1391,7 @@
           "title": "He Walked Up Like He Owned The Arena #PowerSlap #SlapFight #SlapFighting #Viral #Sports",
           "uploaded_at": "2026-09-11T09:08:50Z",
           "thumbnail": "https://i.ytimg.com/vi/WIWsbArcAp4/mqdefault.jpg",
-          "views": 1664,
+          "views": 1702,
           "likes": 12,
           "comments": 1,
           "subscribers_gained": 1
@@ -1456,6 +1476,12 @@
       ],
       "recent_runs": [
         {
+          "started_at": "2026-09-12T22:06:16.813404+00:00",
+          "finished_at": "2026-09-12T22:06:27.428028+00:00",
+          "status": "success",
+          "error": null
+        },
+        {
           "started_at": "2026-09-12T14:05:57.449698+00:00",
           "finished_at": "2026-09-12T14:06:09.055391+00:00",
           "status": "success",
@@ -1481,15 +1507,16 @@
         }
       ],
       "runner_node": {
-        "ip": "20.232.188.94",
-        "city": "Des Moines",
-        "region": "Iowa",
-        "country": "United States",
+        "ip": "40.65.56.225",
+        "city": "San Jose",
+        "region": "California",
+        "country": "US",
         "country_code": "US",
         "flag": "\ud83c\uddfa\ud83c\uddf8",
         "org": "AS8075 Microsoft Corporation",
-        "datacenter": "Microsoft Azure Central US (Iowa)",
-        "verify_url": "https://ipinfo.io/20.232.188.94"
+        "datacenter": "Microsoft Azure Cloud Runner",
+        "verified_at": "2026-09-12T22:06:27.428028+00:00",
+        "verify_url": "https://ipinfo.io/40.65.56.225"
       },
       "is_active": true
     },
@@ -1895,13 +1922,13 @@
       "color": "#8B5CF6",
       "avatar_url": "https://yt3.ggpht.com/WKefM8i0bji48M_e159k6q0080b5zNwYExax_QloW7H3XguFARUF-SuE62a8rdPQJXvtTXxbJQ=s240-c-k-c0x00ffffff-no-rj",
       "subscribers": 1,
-      "total_views": 1334,
+      "total_views": 1361,
       "channel_total_videos": 11,
-      "avg_views_per_video": 121.3,
+      "avg_views_per_video": 123.7,
       "engagement_rate": 1.3,
       "total_likes": 18,
       "analytics": {
-        "watch_time_hours": 5.6,
+        "watch_time_hours": 5.7,
         "avg_view_duration": "0:24",
         "top_countries": [
           {
@@ -2044,10 +2071,10 @@
           "is_clean": true
         },
         "view_health": {
-          "label": "Warm-Up Phase: 121 avg views/video (1,334 total views across 11 videos)",
-          "badge": "121 AVG",
+          "label": "Warm-Up Phase: 124 avg views/video (1,361 total views across 11 videos)",
+          "badge": "124 AVG",
           "color": "#F59E0B",
-          "avg_views": 121.3,
+          "avg_views": 123.7,
           "shorts_feed_share": "81.2%",
           "velocity_verdict": "Algorithm Reach: Healthy"
         },
@@ -2073,7 +2100,7 @@
       "stock_status": "Plentiful (62.5 days)",
       "stock_color": "#10B981",
       "latest_run_status": "success",
-      "latest_run_time": "2026-09-12T17:39:26.554769+00:00",
+      "latest_run_time": "2026-09-12T22:14:10.187842+00:00",
       "latest_uploaded_video": {
         "youtube_id": "a3keluYHTIE",
         "youtube_url": "https://youtu.be/a3keluYHTIE",
@@ -2103,7 +2130,7 @@
           "title": "Adorable Toddler Reacts In The Cutest Way #ToddlerLife #CutestMoments #FamilyMoments #WholesomeConte",
           "uploaded_at": "2026-09-12T17:39:42Z",
           "thumbnail": "https://i.ytimg.com/vi/goCoZBF3N_M/mqdefault.jpg",
-          "views": 1327,
+          "views": 1354,
           "likes": 18,
           "comments": 0,
           "subscribers_gained": 1
@@ -2210,6 +2237,12 @@
       ],
       "recent_runs": [
         {
+          "started_at": "2026-09-12T22:13:54.290045+00:00",
+          "finished_at": "2026-09-12T22:14:10.187842+00:00",
+          "status": "success",
+          "error": null
+        },
+        {
           "started_at": "2026-09-12T17:39:07.566302+00:00",
           "finished_at": "2026-09-12T17:39:26.554769+00:00",
           "status": "success",
@@ -2223,15 +2256,16 @@
         }
       ],
       "runner_node": {
-        "ip": "20.150.114.88",
-        "city": "Phoenix",
-        "region": "Arizona",
-        "country": "United States",
+        "ip": "172.202.102.208",
+        "city": "Des Moines",
+        "region": "Iowa",
+        "country": "US",
         "country_code": "US",
         "flag": "\ud83c\uddfa\ud83c\uddf8",
         "org": "AS8075 Microsoft Corporation",
-        "datacenter": "Microsoft Azure West US 3 (Phoenix)",
-        "verify_url": "https://ipinfo.io/20.150.114.88"
+        "datacenter": "Microsoft Azure Cloud Runner",
+        "verified_at": "2026-09-12T22:14:10.187842+00:00",
+        "verify_url": "https://ipinfo.io/172.202.102.208"
       },
       "is_active": true
     },
@@ -2246,13 +2280,13 @@
       "color": "#EC4899",
       "avatar_url": "https://yt3.ggpht.com/pqIrk9GBtAR6cdyBH5C_kHNWA1jlu4VT9ZLKxdYTFW6IvVQLWbtFO3OUxrSV1Jm1SR0JAyTrAA=s240-c-k-c0x00ffffff-no-rj",
       "subscribers": 1,
-      "total_views": 12758,
+      "total_views": 12795,
       "channel_total_videos": 11,
-      "avg_views_per_video": 1159.8,
-      "engagement_rate": 0.7,
+      "avg_views_per_video": 1163.2,
+      "engagement_rate": 0.6,
       "total_likes": 83,
       "analytics": {
-        "watch_time_hours": 53.6,
+        "watch_time_hours": 53.7,
         "avg_view_duration": "0:24",
         "top_countries": [
           {
@@ -2395,10 +2429,10 @@
           "is_clean": true
         },
         "view_health": {
-          "label": "YouTube API Verified: 1,160 avg views/video (12,758 total views across 11 videos)",
-          "badge": "1,160 AVG",
+          "label": "YouTube API Verified: 1,163 avg views/video (12,795 total views across 11 videos)",
+          "badge": "1,163 AVG",
           "color": "#10B981",
-          "avg_views": 1159.8,
+          "avg_views": 1163.2,
           "shorts_feed_share": "81.2%",
           "velocity_verdict": "Algorithm Reach: High"
         },
@@ -2424,14 +2458,14 @@
       "stock_status": "Plentiful (68.5 days)",
       "stock_color": "#10B981",
       "latest_run_status": "success",
-      "latest_run_time": "2026-09-12T18:27:55.153923+00:00",
+      "latest_run_time": "2026-09-12T22:14:55.574494+00:00",
       "latest_uploaded_video": {
         "youtube_id": "ZlNJrHYRPoU",
         "youtube_url": "https://youtu.be/ZlNJrHYRPoU",
         "title": "Everyone Wanted To See The Finished Canvas #Painting #ArtReels #ArtReveal #Artist #Viral.",
         "uploaded_at": "2026-09-12T22:15:13Z",
         "thumbnail": "https://i.ytimg.com/vi/ZlNJrHYRPoU/mqdefault.jpg",
-        "views": 16,
+        "views": 52,
         "likes": 0,
         "comments": 0,
         "subscribers_gained": 0
@@ -2443,7 +2477,7 @@
           "title": "Everyone Wanted To See The Finished Canvas #Painting #ArtReels #ArtReveal #Artist #Viral.",
           "uploaded_at": "2026-09-12T22:15:13Z",
           "thumbnail": "https://i.ytimg.com/vi/ZlNJrHYRPoU/mqdefault.jpg",
-          "views": 16,
+          "views": 52,
           "likes": 0,
           "comments": 0,
           "subscribers_gained": 0
@@ -2454,7 +2488,7 @@
           "title": "Everyone Stopped To Watch This Artist Work #StreetArt #Artist #Painting #ArtReels #Viral.",
           "uploaded_at": "2026-09-12T18:28:10Z",
           "thumbnail": "https://i.ytimg.com/vi/E7vzDp7HUIM/mqdefault.jpg",
-          "views": 1,
+          "views": 2,
           "likes": 0,
           "comments": 0,
           "subscribers_gained": 0
@@ -2561,6 +2595,12 @@
       ],
       "recent_runs": [
         {
+          "started_at": "2026-09-12T22:14:42.124605+00:00",
+          "finished_at": "2026-09-12T22:14:55.574494+00:00",
+          "status": "success",
+          "error": null
+        },
+        {
           "started_at": "2026-09-12T18:27:44.594167+00:00",
           "finished_at": "2026-09-12T18:27:55.153923+00:00",
           "status": "success",
@@ -2574,15 +2614,16 @@
         }
       ],
       "runner_node": {
-        "ip": "20.124.89.14",
-        "city": "Boydton",
-        "region": "Virginia",
-        "country": "United States",
+        "ip": "57.154.6.36",
+        "city": "Phoenix",
+        "region": "Arizona",
+        "country": "US",
         "country_code": "US",
         "flag": "\ud83c\uddfa\ud83c\uddf8",
         "org": "AS8075 Microsoft Corporation",
-        "datacenter": "Microsoft Azure East US (Virginia)",
-        "verify_url": "https://ipinfo.io/20.124.89.14"
+        "datacenter": "Microsoft Azure Cloud Runner",
+        "verified_at": "2026-09-12T22:14:55.574494+00:00",
+        "verify_url": "https://ipinfo.io/57.154.6.36"
       },
       "is_active": true
     },
@@ -2597,13 +2638,13 @@
       "color": "#3B82F6",
       "avatar_url": "https://yt3.ggpht.com/vRLBXNb4fgjWzDfLf8ltniGaD2BlvZ1PAWugGoZaJx1nCdJ92LubM-8vy7hIgxHlCicFwpt2=s240-c-k-c0x00ffffff-no-rj",
       "subscribers": 23,
-      "total_views": 9760,
+      "total_views": 9784,
       "channel_total_videos": 27,
-      "avg_views_per_video": 361.5,
+      "avg_views_per_video": 362.4,
       "engagement_rate": 1.4,
       "total_likes": 137,
       "analytics": {
-        "watch_time_hours": 41.0,
+        "watch_time_hours": 41.1,
         "avg_view_duration": "0:24",
         "top_countries": [
           {
@@ -2746,10 +2787,10 @@
           "is_clean": true
         },
         "view_health": {
-          "label": "YouTube API Verified: 362 avg views/video (9,760 total views across 27 videos)",
+          "label": "YouTube API Verified: 362 avg views/video (9,784 total views across 27 videos)",
           "badge": "362 AVG",
           "color": "#3EA6FF",
-          "avg_views": 361.5,
+          "avg_views": 362.4,
           "shorts_feed_share": "81.2%",
           "velocity_verdict": "Algorithm Reach: Healthy"
         },
@@ -2775,14 +2816,14 @@
       "stock_status": "Plentiful (69.5 days)",
       "stock_color": "#10B981",
       "latest_run_status": "success",
-      "latest_run_time": "2026-09-12T20:49:07.192408+00:00",
+      "latest_run_time": "2026-09-12T22:14:00.817365+00:00",
       "latest_uploaded_video": {
         "youtube_id": "X3tV9H5ma7U",
         "youtube_url": "https://youtu.be/X3tV9H5ma7U",
         "title": "Every Champion Has A Beginning For The Team #Football #Soccer #FootballStory #FootballLife #Goal #Dr",
         "uploaded_at": "2026-09-12T22:14:25Z",
         "thumbnail": "https://i.ytimg.com/vi/X3tV9H5ma7U/mqdefault.jpg",
-        "views": 21,
+        "views": 45,
         "likes": 0,
         "comments": 0,
         "subscribers_gained": 0
@@ -2794,7 +2835,7 @@
           "title": "Every Champion Has A Beginning For The Team #Football #Soccer #FootballStory #FootballLife #Goal #Dr",
           "uploaded_at": "2026-09-12T22:14:25Z",
           "thumbnail": "https://i.ytimg.com/vi/X3tV9H5ma7U/mqdefault.jpg",
-          "views": 21,
+          "views": 45,
           "likes": 0,
           "comments": 0,
           "subscribers_gained": 0
@@ -3088,6 +3129,12 @@
       ],
       "recent_runs": [
         {
+          "started_at": "2026-09-12T22:13:56.692127+00:00",
+          "finished_at": "2026-09-12T22:14:00.817365+00:00",
+          "status": "success",
+          "error": null
+        },
+        {
           "started_at": "2026-09-12T20:49:02.769907+00:00",
           "finished_at": "2026-09-12T20:49:07.192408+00:00",
           "status": "success",
@@ -3107,15 +3154,16 @@
         }
       ],
       "runner_node": {
-        "ip": "13.91.120.45",
-        "city": "San Jose",
-        "region": "California",
-        "country": "United States",
+        "ip": "20.3.231.114",
+        "city": "Moses Lake",
+        "region": "Washington",
+        "country": "US",
         "country_code": "US",
         "flag": "\ud83c\uddfa\ud83c\uddf8",
         "org": "AS8075 Microsoft Corporation",
-        "datacenter": "Microsoft Azure West US (Silicon Valley)",
-        "verify_url": "https://ipinfo.io/13.91.120.45"
+        "datacenter": "Microsoft Azure Cloud Runner",
+        "verified_at": "2026-09-12T22:14:00.817365+00:00",
+        "verify_url": "https://ipinfo.io/20.3.231.114"
       },
       "is_active": true
     },
@@ -3308,7 +3356,7 @@
       "stock_status": "Plentiful (29.5 days)",
       "stock_color": "#10B981",
       "latest_run_status": "success",
-      "latest_run_time": "2026-09-12T21:20:21.363993+00:00",
+      "latest_run_time": "2026-09-12T22:11:15.208286+00:00",
       "latest_uploaded_video": {
         "youtube_id": "GghOGIsD4vQ",
         "youtube_url": "https://youtu.be/GghOGIsD4vQ",
@@ -3709,6 +3757,12 @@
       ],
       "recent_runs": [
         {
+          "started_at": "2026-09-12T22:11:11.595006+00:00",
+          "finished_at": "2026-09-12T22:11:15.208286+00:00",
+          "status": "success",
+          "error": null
+        },
+        {
           "started_at": "2026-09-12T21:20:17.518663+00:00",
           "finished_at": "2026-09-12T21:20:21.363993+00:00",
           "status": "success",
@@ -3716,15 +3770,16 @@
         }
       ],
       "runner_node": {
-        "ip": "40.76.134.22",
-        "city": "Des Moines",
-        "region": "Iowa",
-        "country": "United States",
+        "ip": "20.119.95.19",
+        "city": "Dulles Town Center",
+        "region": "Virginia",
+        "country": "US",
         "country_code": "US",
         "flag": "\ud83c\uddfa\ud83c\uddf8",
         "org": "AS8075 Microsoft Corporation",
-        "datacenter": "Microsoft Azure Central US (Iowa)",
-        "verify_url": "https://ipinfo.io/40.76.134.22"
+        "datacenter": "Microsoft Azure Cloud Runner",
+        "verified_at": "2026-09-12T22:11:15.208286+00:00",
+        "verify_url": "https://ipinfo.io/20.119.95.19"
       },
       "is_active": true
     },
@@ -3739,9 +3794,9 @@
       "color": "#8B5CF6",
       "avatar_url": "https://yt3.ggpht.com/c2et41jvboHRktLNJH-bmzbYclnu_SeQYjockP52SQB3xQtmw6jPskOSLrGMwcb7UiN4i4QybOo=s240-c-k-c0x00ffffff-no-rj",
       "subscribers": 16,
-      "total_views": 24837,
+      "total_views": 24844,
       "channel_total_videos": 28,
-      "avg_views_per_video": 887.0,
+      "avg_views_per_video": 887.3,
       "engagement_rate": 0.8,
       "total_likes": 202,
       "analytics": {
@@ -3888,10 +3943,10 @@
           "is_clean": true
         },
         "view_health": {
-          "label": "YouTube API Verified: 887 avg views/video (24,837 total views across 28 videos)",
+          "label": "YouTube API Verified: 887 avg views/video (24,844 total views across 28 videos)",
           "badge": "887 AVG",
           "color": "#3EA6FF",
-          "avg_views": 887.0,
+          "avg_views": 887.3,
           "shorts_feed_share": "81.2%",
           "velocity_verdict": "Algorithm Reach: High"
         },
@@ -3924,7 +3979,7 @@
         "title": "Hollywood's Biggest Secret Revealed Before Release #BehindTheScenes #Hollywood #MovieMagic #FilmMaki",
         "uploaded_at": "2026-09-12T22:04:36Z",
         "thumbnail": "https://i.ytimg.com/vi/9JKlXA-ehIs/mqdefault.jpg",
-        "views": 12,
+        "views": 16,
         "likes": 0,
         "comments": 0,
         "subscribers_gained": 0
@@ -3936,7 +3991,7 @@
           "title": "Hollywood's Biggest Secret Revealed Before Release #BehindTheScenes #Hollywood #MovieMagic #FilmMaki",
           "uploaded_at": "2026-09-12T22:04:36Z",
           "thumbnail": "https://i.ytimg.com/vi/9JKlXA-ehIs/mqdefault.jpg",
-          "views": 12,
+          "views": 16,
           "likes": 0,
           "comments": 0,
           "subscribers_gained": 0
@@ -3947,7 +4002,7 @@
           "title": "Behind The Biggest Scene Of The Film With Incredible Detail #BehindTheScenes #Hollywood #MovieMagic",
           "uploaded_at": "2026-09-12T21:29:37Z",
           "thumbnail": "https://i.ytimg.com/vi/1TbNIlAQsJo/mqdefault.jpg",
-          "views": 43,
+          "views": 46,
           "likes": 3,
           "comments": 0,
           "subscribers_gained": 0
@@ -4455,7 +4510,7 @@
       "stock_status": "Plentiful (129.0 days)",
       "stock_color": "#10B981",
       "latest_run_status": "success",
-      "latest_run_time": "2026-09-12T21:37:43.379124+00:00",
+      "latest_run_time": "2026-09-12T22:11:04.627296+00:00",
       "latest_uploaded_video": {
         "youtube_id": "ln4l6hK_w1U",
         "youtube_url": "https://youtu.be/ln4l6hK_w1U",
@@ -4691,6 +4746,12 @@
       ],
       "recent_runs": [
         {
+          "started_at": "2026-09-12T22:10:59.402071+00:00",
+          "finished_at": "2026-09-12T22:11:04.627296+00:00",
+          "status": "success",
+          "error": null
+        },
+        {
           "started_at": "2026-09-12T21:37:37.603826+00:00",
           "finished_at": "2026-09-12T21:37:43.379124+00:00",
           "status": "success",
@@ -4698,15 +4759,16 @@
         }
       ],
       "runner_node": {
-        "ip": "52.167.144.89",
+        "ip": "48.214.53.113",
         "city": "Boydton",
         "region": "Virginia",
-        "country": "United States",
+        "country": "US",
         "country_code": "US",
         "flag": "\ud83c\uddfa\ud83c\uddf8",
         "org": "AS8075 Microsoft Corporation",
-        "datacenter": "Microsoft Azure East US (Virginia)",
-        "verify_url": "https://ipinfo.io/52.167.144.89"
+        "datacenter": "Microsoft Azure Cloud Runner",
+        "verified_at": "2026-09-12T22:11:04.627296+00:00",
+        "verify_url": "https://ipinfo.io/48.214.53.113"
       },
       "is_active": true
     }
