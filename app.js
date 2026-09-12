@@ -580,6 +580,132 @@ function renderAnalyticsStats(channel) {
   if (subsChip) subsChip.innerText = `+${subs}`;
 
   renderAnalyticsChart();
+  renderDemographics(channel);
+}
+
+function renderDemographics(channel) {
+  const isAll = currentChannelId === 'all';
+  const ch = isAll ? null : (channel || globalData.channels.find(c => c.id === currentChannelId));
+  const analytics = ch && ch.analytics ? ch.analytics : (globalData.summary && globalData.summary.analytics ? globalData.summary.analytics : null);
+
+  if (!analytics) return;
+
+  // 1. Top Geographies (Countries)
+  const countriesContainer = document.getElementById('analytics-countries-list');
+  if (countriesContainer && analytics.top_countries) {
+    countriesContainer.innerHTML = '';
+    analytics.top_countries.forEach(c => {
+      const item = document.createElement('div');
+      item.className = 'progress-item';
+      item.style.marginBottom = '10px';
+      item.innerHTML = `
+        <div class="prog-row">
+          <span>${c.flag || ''} ${c.country}</span>
+          <span class="prog-val">${c.percent}%</span>
+        </div>
+        <div class="prog-bar"><div class="prog-fill" style="width: ${c.percent}%; background: var(--yt-blue);"></div></div>
+      `;
+      countriesContainer.appendChild(item);
+    });
+  }
+
+  // 2. Age and Gender
+  if (analytics.gender) {
+    const maleLabel = document.getElementById('gender-male-label');
+    const femaleLabel = document.getElementById('gender-female-label');
+    const maleFill = document.getElementById('gender-male-fill');
+    const femaleFill = document.getElementById('gender-female-fill');
+
+    if (maleLabel) maleLabel.innerText = `Male: ${analytics.gender.male}%`;
+    if (femaleLabel) femaleLabel.innerText = `Female: ${analytics.gender.female}%`;
+    if (maleFill) maleFill.style.width = `${analytics.gender.male}%`;
+    if (femaleFill) femaleFill.style.width = `${analytics.gender.female}%`;
+  }
+
+  const ageContainer = document.getElementById('analytics-age-list');
+  if (ageContainer && analytics.age_distribution) {
+    ageContainer.innerHTML = '';
+    analytics.age_distribution.forEach(a => {
+      const item = document.createElement('div');
+      item.className = 'progress-item';
+      item.innerHTML = `
+        <div class="prog-row">
+          <span>${a.range}</span>
+          <span class="prog-val">${a.percent}%</span>
+        </div>
+        <div class="prog-bar"><div class="prog-fill" style="width: ${Math.min(100, a.percent * 2)}%; background: #3EA6FF;"></div></div>
+      `;
+      ageContainer.appendChild(item);
+    });
+  }
+
+  // 3. Traffic Sources
+  const trafficContainer = document.getElementById('analytics-traffic-list');
+  if (trafficContainer && analytics.traffic_sources) {
+    trafficContainer.innerHTML = '';
+    analytics.traffic_sources.forEach(t => {
+      const item = document.createElement('div');
+      item.className = 'progress-item';
+      item.style.marginBottom = '10px';
+      item.innerHTML = `
+        <div class="prog-row">
+          <span>${t.icon || ''} ${t.source}</span>
+          <span class="prog-val">${t.percent}%</span>
+        </div>
+        <div class="prog-bar"><div class="prog-fill" style="width: ${t.percent}%; background: var(--yt-green);"></div></div>
+      `;
+      trafficContainer.appendChild(item);
+    });
+  }
+
+  // 4. Watch time from subscribers & viewer retention
+  if (analytics.subscriber_watch_time) {
+    const notSubEl = document.getElementById('subs-watch-notsub');
+    const subEl = document.getElementById('subs-watch-sub');
+    const notSubFill = document.getElementById('subs-fill-notsub');
+    const subFill = document.getElementById('subs-fill-sub');
+
+    if (notSubEl) notSubEl.innerText = `${analytics.subscriber_watch_time.not_subscribed}%`;
+    if (subEl) subEl.innerText = `${analytics.subscriber_watch_time.subscribed}%`;
+    if (notSubFill) notSubFill.style.width = `${analytics.subscriber_watch_time.not_subscribed}%`;
+    if (subFill) subFill.style.width = `${analytics.subscriber_watch_time.subscribed}%`;
+  }
+
+  if (analytics.viewer_types) {
+    const newEl = document.getElementById('viewers-new-val');
+    const retEl = document.getElementById('viewers-ret-val');
+    const newFill = document.getElementById('viewers-new-fill');
+    const retFill = document.getElementById('viewers-ret-fill');
+
+    if (newEl) newEl.innerText = `${analytics.viewer_types.new_viewers}%`;
+    if (retEl) retEl.innerText = `${analytics.viewer_types.returning_viewers}%`;
+    if (newFill) newFill.style.width = `${analytics.viewer_types.new_viewers}%`;
+    if (retFill) retFill.style.width = `${analytics.viewer_types.returning_viewers}%`;
+  }
+
+  // 5. Devices & Peak Hours
+  const devicesContainer = document.getElementById('analytics-devices-list');
+  if (devicesContainer && analytics.top_devices) {
+    devicesContainer.innerHTML = '';
+    analytics.top_devices.forEach(d => {
+      const item = document.createElement('div');
+      item.className = 'progress-item';
+      item.style.marginBottom = '8px';
+      item.innerHTML = `
+        <div class="prog-row">
+          <span>${d.icon || ''} ${d.device}</span>
+          <span class="prog-val">${d.percent}%</span>
+        </div>
+        <div class="prog-bar"><div class="prog-fill" style="width: ${d.percent}%; background: #F59E0B;"></div></div>
+      `;
+      devicesContainer.appendChild(item);
+    });
+  }
+
+  const peakEl = document.getElementById('analytics-peak-hours');
+  if (peakEl && analytics.peak_hours) {
+    peakEl.innerText = `🕒 ${analytics.peak_hours}`;
+  }
 }
 
 function renderAnalyticsChart() {

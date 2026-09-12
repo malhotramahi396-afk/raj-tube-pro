@@ -441,6 +441,122 @@
             </div>
           </div>
         </div>
+
+        <!-- AUDIENCE & DEMOGRAPHICS (YouTube Studio Exact Layout) -->
+        <div class="analytics-section-title">
+          <h2 class="analytics-subheading">Audience & Demographics</h2>
+          <span class="sub-muted">Last 28 days • Real YouTube Studio Telemetry</span>
+        </div>
+
+        <div class="analytics-cards-grid">
+          <!-- Card 1: Top Geographies (Countries) -->
+          <div class="yt-card">
+            <div class="yt-card-header">
+              <h2>Top geographies</h2>
+              <span class="card-subtitle">Views % by Country</span>
+            </div>
+            <div class="yt-card-body" id="analytics-countries-list">
+              <!-- Injected via JavaScript -->
+            </div>
+          </div>
+
+          <!-- Card 2: Age and Gender -->
+          <div class="yt-card">
+            <div class="yt-card-header">
+              <h2>Age and gender</h2>
+              <span class="card-subtitle">Viewer Demographics</span>
+            </div>
+            <div class="yt-card-body">
+              <div class="gender-bar-wrapper">
+                <div class="gender-bar-labels">
+                  <span id="gender-male-label">Male: 76.5%</span>
+                  <span id="gender-female-label">Female: 23.5%</span>
+                </div>
+                <div class="gender-bar-visual">
+                  <div class="gender-fill-male" id="gender-male-fill" style="width: 76.5%;"></div>
+                  <div class="gender-fill-female" id="gender-female-fill" style="width: 23.5%;"></div>
+                </div>
+              </div>
+              <div class="divider-line" style="margin: 14px 0 10px 0;"></div>
+              <div class="demographic-age-list" id="analytics-age-list">
+                <!-- Injected via JavaScript -->
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: Traffic Sources -->
+          <div class="yt-card">
+            <div class="yt-card-header">
+              <h2>How viewers find your videos</h2>
+              <span class="card-subtitle">Traffic Sources</span>
+            </div>
+            <div class="yt-card-body" id="analytics-traffic-list">
+              <!-- Injected via JavaScript -->
+            </div>
+          </div>
+
+          <!-- Card 4: Watch Time & Returning Viewers -->
+          <div class="yt-card">
+            <div class="yt-card-header">
+              <h2>Watch time & Retention</h2>
+              <span class="card-subtitle">Subscribers & Loyalty</span>
+            </div>
+            <div class="yt-card-body">
+              <div class="metric-block-title">Watch time from subscribers</div>
+              <div class="progress-item" style="margin-top:8px;">
+                <div class="prog-row">
+                  <span>Not subscribed</span>
+                  <span class="prog-val" id="subs-watch-notsub">--</span>
+                </div>
+                <div class="prog-bar"><div class="prog-fill" id="subs-fill-notsub" style="width:94%; background:var(--yt-blue);"></div></div>
+              </div>
+              <div class="progress-item" style="margin-top:8px;">
+                <div class="prog-row">
+                  <span>Subscribed</span>
+                  <span class="prog-val" id="subs-watch-sub">--</span>
+                </div>
+                <div class="prog-bar"><div class="prog-fill" id="subs-fill-sub" style="width:6%; background:var(--yt-green);"></div></div>
+              </div>
+
+              <div class="divider-line" style="margin: 14px 0;"></div>
+
+              <div class="metric-block-title">Viewer Types</div>
+              <div class="progress-item" style="margin-top:8px;">
+                <div class="prog-row">
+                  <span>New viewers</span>
+                  <span class="prog-val" id="viewers-new-val">--</span>
+                </div>
+                <div class="prog-bar"><div class="prog-fill" id="viewers-new-fill" style="width:87%; background:#8B5CF6;"></div></div>
+              </div>
+              <div class="progress-item" style="margin-top:8px;">
+                <div class="prog-row">
+                  <span>Returning viewers</span>
+                  <span class="prog-val" id="viewers-ret-val">--</span>
+                </div>
+                <div class="prog-bar"><div class="prog-fill" id="viewers-ret-fill" style="width:13%; background:#EC4899;"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 5: Devices & Peak Active Hours -->
+          <div class="yt-card">
+            <div class="yt-card-header">
+              <h2>Devices & Viewer Timing</h2>
+              <span class="card-subtitle">Viewing Patterns</span>
+            </div>
+            <div class="yt-card-body">
+              <div class="metric-block-title">Top Device Types</div>
+              <div id="analytics-devices-list" style="margin-top:8px;">
+                <!-- Injected via JavaScript -->
+              </div>
+              <div class="divider-line" style="margin: 14px 0;"></div>
+              <div class="metric-block-title">When your viewers are on YouTube</div>
+              <div class="peak-hours-badge" id="analytics-peak-hours" style="margin-top:8px;">
+                🕒 --
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
       <!-- ==========================================================

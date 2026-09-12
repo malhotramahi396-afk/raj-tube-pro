@@ -1,33 +1,158 @@
 {
   "app_name": "Raj Tube Pro",
   "version": "6.0.0",
-  "timestamp": "2026-09-12T15:59:01.342902+00:00",
+  "timestamp": "2026-09-12T16:41:32.738265+00:00",
   "schedule": {
     "next_slot_iso": "2026-09-12T22:00:00+00:00",
-    "seconds_remaining": 21663,
-    "formatted_countdown": "06h 01m 03s",
+    "seconds_remaining": 19112,
+    "formatted_countdown": "05h 18m 32s",
     "slot_label": "06:00 PM USA (3:30 AM IST)",
-    "now_ist": "12 Sep, 09:28 PM IST"
+    "now_ist": "12 Sep, 10:11 PM IST"
   },
   "summary": {
     "total_channels": 3,
     "total_uploaded": 27,
     "total_in_queue": 283,
-    "total_subscribers": 94,
-    "total_views": 84134,
-    "total_likes": 935,
+    "total_subscribers": 98,
+    "total_views": 90568,
+    "total_likes": 955,
     "network_engagement": 1.1,
     "total_runway_days": 47.2,
     "system_health": "All Systems Operational",
     "issues_count": 0,
     "top_trending_video": {
       "title": "He Was Not Backing Down From Anyone #SlapFight #PowerSlap #SlapFighting #Viral #Sports.",
-      "views": 18592,
-      "likes": 354,
+      "views": 23830,
+      "likes": 347,
       "youtube_url": "https://youtu.be/t5oF0IsXkN0",
       "thumbnail": "https://i.ytimg.com/vi/t5oF0IsXkN0/mqdefault.jpg",
       "channel_name": "Zyntrix07",
       "uploaded_at": "2026-09-11T16:04:35Z"
+    },
+    "analytics": {
+      "watch_time_hours": 380.4,
+      "avg_view_duration": "0:24",
+      "top_countries": [
+        {
+          "country": "United States",
+          "code": "US",
+          "flag": "\ud83c\uddfa\ud83c\uddf8",
+          "percent": 45.0
+        },
+        {
+          "country": "India",
+          "code": "IN",
+          "flag": "\ud83c\uddee\ud83c\uddf3",
+          "percent": 27.5
+        },
+        {
+          "country": "United Kingdom",
+          "code": "GB",
+          "flag": "\ud83c\uddec\ud83c\udde7",
+          "percent": 11.3
+        },
+        {
+          "country": "Canada",
+          "code": "CA",
+          "flag": "\ud83c\udde8\ud83c\udde6",
+          "percent": 7.4
+        },
+        {
+          "country": "Germany",
+          "code": "DE",
+          "flag": "\ud83c\udde9\ud83c\uddea",
+          "percent": 4.2
+        },
+        {
+          "country": "Other countries",
+          "code": "OTHER",
+          "flag": "\ud83c\udf10",
+          "percent": 4.6
+        }
+      ],
+      "age_distribution": [
+        {
+          "range": "13\u201317 years",
+          "percent": 5.5
+        },
+        {
+          "range": "18\u201324 years",
+          "percent": 40.2
+        },
+        {
+          "range": "25\u201334 years",
+          "percent": 41.3
+        },
+        {
+          "range": "35\u201344 years",
+          "percent": 8.8
+        },
+        {
+          "range": "45\u201354 years",
+          "percent": 2.9
+        },
+        {
+          "range": "55+ years",
+          "percent": 1.3
+        }
+      ],
+      "gender": {
+        "male": 75.8,
+        "female": 24.2
+      },
+      "traffic_sources": [
+        {
+          "source": "Shorts feed",
+          "percent": 81.2,
+          "icon": "\ud83d\udcf1"
+        },
+        {
+          "source": "YouTube search",
+          "percent": 10.6,
+          "icon": "\ud83d\udd0d"
+        },
+        {
+          "source": "Channel pages",
+          "percent": 4.4,
+          "icon": "\ud83d\udcc4"
+        },
+        {
+          "source": "Suggested videos",
+          "percent": 2.5,
+          "icon": "\ud83c\udfac"
+        },
+        {
+          "source": "External & Others",
+          "percent": 1.3,
+          "icon": "\ud83d\udd17"
+        }
+      ],
+      "subscriber_watch_time": {
+        "not_subscribed": 94.2,
+        "subscribed": 5.8
+      },
+      "viewer_types": {
+        "new_viewers": 87.6,
+        "returning_viewers": 12.4
+      },
+      "top_devices": [
+        {
+          "device": "Mobile phone",
+          "percent": 94.6,
+          "icon": "\ud83d\udcf1"
+        },
+        {
+          "device": "Computer",
+          "percent": 3.8,
+          "icon": "\ud83d\udcbb"
+        },
+        {
+          "device": "TV / Tablet",
+          "percent": 1.6,
+          "icon": "\ud83d\udcfa"
+        }
+      ],
+      "peak_hours": "6:00 PM \u2013 10:30 PM IST (Peak Global Viewing Window)"
     }
   },
   "issues": [],
@@ -42,12 +167,137 @@
       "github_repo": "malhotramahi396-afk/yt-automation-the-hidden-lens",
       "color": "#10B981",
       "avatar_url": "https://yt3.ggpht.com/R5wyufkApz5fijH1a4mek8n6CM9y64QklZgfgjuGI-SOwbTIBjEFmmKot6aBnYkVRwOpq965=s240-c-k-c0x00ffffff-no-rj",
-      "subscribers": 21,
-      "total_views": 9399,
+      "subscribers": 23,
+      "total_views": 10197,
       "channel_total_videos": 4,
-      "avg_views_per_video": 2349.8,
-      "engagement_rate": 1.7,
-      "total_likes": 159,
+      "avg_views_per_video": 2549.2,
+      "engagement_rate": 1.6,
+      "total_likes": 165,
+      "analytics": {
+        "watch_time_hours": 42.8,
+        "avg_view_duration": "0:24",
+        "top_countries": [
+          {
+            "country": "United States",
+            "code": "US",
+            "flag": "\ud83c\uddfa\ud83c\uddf8",
+            "percent": 48.2
+          },
+          {
+            "country": "India",
+            "code": "IN",
+            "flag": "\ud83c\uddee\ud83c\uddf3",
+            "percent": 21.4
+          },
+          {
+            "country": "United Kingdom",
+            "code": "GB",
+            "flag": "\ud83c\uddec\ud83c\udde7",
+            "percent": 11.6
+          },
+          {
+            "country": "Canada",
+            "code": "CA",
+            "flag": "\ud83c\udde8\ud83c\udde6",
+            "percent": 8.3
+          },
+          {
+            "country": "Germany",
+            "code": "DE",
+            "flag": "\ud83c\udde9\ud83c\uddea",
+            "percent": 4.7
+          },
+          {
+            "country": "Other countries",
+            "code": "OTHER",
+            "flag": "\ud83c\udf10",
+            "percent": 5.8
+          }
+        ],
+        "age_distribution": [
+          {
+            "range": "13\u201317 years",
+            "percent": 3.5
+          },
+          {
+            "range": "18\u201324 years",
+            "percent": 34.2
+          },
+          {
+            "range": "25\u201334 years",
+            "percent": 44.8
+          },
+          {
+            "range": "35\u201344 years",
+            "percent": 11.6
+          },
+          {
+            "range": "45\u201354 years",
+            "percent": 4.1
+          },
+          {
+            "range": "55+ years",
+            "percent": 1.8
+          }
+        ],
+        "gender": {
+          "male": 68.4,
+          "female": 31.6
+        },
+        "traffic_sources": [
+          {
+            "source": "Shorts feed",
+            "percent": 81.2,
+            "icon": "\ud83d\udcf1"
+          },
+          {
+            "source": "YouTube search",
+            "percent": 10.6,
+            "icon": "\ud83d\udd0d"
+          },
+          {
+            "source": "Channel pages",
+            "percent": 4.4,
+            "icon": "\ud83d\udcc4"
+          },
+          {
+            "source": "Suggested videos",
+            "percent": 2.5,
+            "icon": "\ud83c\udfac"
+          },
+          {
+            "source": "External & Others",
+            "percent": 1.3,
+            "icon": "\ud83d\udd17"
+          }
+        ],
+        "subscriber_watch_time": {
+          "not_subscribed": 94.2,
+          "subscribed": 5.8
+        },
+        "viewer_types": {
+          "new_viewers": 87.6,
+          "returning_viewers": 12.4
+        },
+        "top_devices": [
+          {
+            "device": "Mobile phone",
+            "percent": 94.6,
+            "icon": "\ud83d\udcf1"
+          },
+          {
+            "device": "Computer",
+            "percent": 3.8,
+            "icon": "\ud83d\udcbb"
+          },
+          {
+            "device": "TV / Tablet",
+            "percent": 1.6,
+            "icon": "\ud83d\udcfa"
+          }
+        ],
+        "peak_hours": "7:00 PM \u2013 11:00 PM IST (09:30 AM \u2013 01:30 PM USA / Best Wildlife Timing)"
+      },
       "drive_folder_id": "1f8Nj2kEchzW4gdlMEQ5S_eAazvdrQ3ai",
       "drive_folder_url": "https://drive.google.com/drive/folders/1f8Nj2kEchzW4gdlMEQ5S_eAazvdrQ3ai",
       "uploaded_count": 4,
@@ -55,16 +305,16 @@
       "runway_days": 39.0,
       "stock_status": "Plentiful (39.0 days)",
       "stock_color": "#10B981",
-      "latest_run_status": "dry_run",
-      "latest_run_time": "2026-09-11T14:42:35.417406+00:00",
+      "latest_run_status": "success",
+      "latest_run_time": "2026-09-12T14:03:17.485529+00:00",
       "latest_uploaded_video": {
         "youtube_id": "RMgm8o875X0",
         "youtube_url": "https://youtu.be/RMgm8o875X0",
         "title": "Close Enough To Hear His Breath #wildlife #shorts #cameraman #viral",
         "uploaded_at": "2026-09-12T14:03:34Z",
         "thumbnail": "https://i.ytimg.com/vi/RMgm8o875X0/mqdefault.jpg",
-        "views": 512,
-        "likes": 8,
+        "views": 717,
+        "likes": 14,
         "comments": 0
       },
       "uploaded_videos": [
@@ -74,8 +324,8 @@
           "title": "Close Enough To Hear His Breath #wildlife #shorts #cameraman #viral",
           "uploaded_at": "2026-09-12T14:03:34Z",
           "thumbnail": "https://i.ytimg.com/vi/RMgm8o875X0/mqdefault.jpg",
-          "views": 512,
-          "likes": 8,
+          "views": 717,
+          "likes": 14,
           "comments": 0
         },
         {
@@ -94,7 +344,7 @@
           "title": "Breathtaking 4K Wildlife Moment #wildlifephotography #shorts #naturelovers #viral",
           "uploaded_at": "2026-09-11T14:42:29Z",
           "thumbnail": "https://i.ytimg.com/vi/3pDpmQcqJT8/mqdefault.jpg",
-          "views": 5754,
+          "views": 6347,
           "likes": 128,
           "comments": 0
         },
@@ -110,6 +360,18 @@
         }
       ],
       "recent_runs": [
+        {
+          "started_at": "2026-09-12T14:03:12.626071+00:00",
+          "finished_at": "2026-09-12T14:03:17.485529+00:00",
+          "status": "success",
+          "error": null
+        },
+        {
+          "started_at": "2026-09-11T22:03:31.913611+00:00",
+          "finished_at": "2026-09-11T22:03:38.461363+00:00",
+          "status": "success",
+          "error": null
+        },
         {
           "started_at": "2026-09-11T14:42:33.573622+00:00",
           "finished_at": "2026-09-11T14:42:35.417406+00:00",
@@ -141,12 +403,137 @@
       "github_repo": "malhotramahi396-afk/yt-automation-zyntrix07",
       "color": "#F59E0B",
       "avatar_url": "https://yt3.ggpht.com/TTLhq8ijvpChRrWaVb1i96FzeFG02Gd31oOfWo4EdOtBtfqTD6h0TrRmEOTd2fE8V0kPexV6EA=s240-c-k-c0x00ffffff-no-rj",
-      "subscribers": 64,
-      "total_views": 63065,
+      "subscribers": 66,
+      "total_views": 68701,
       "channel_total_videos": 11,
-      "avg_views_per_video": 5733.2,
+      "avg_views_per_video": 6245.5,
       "engagement_rate": 0.9,
-      "total_likes": 578,
+      "total_likes": 592,
+      "analytics": {
+        "watch_time_hours": 288.5,
+        "avg_view_duration": "0:24",
+        "top_countries": [
+          {
+            "country": "United States",
+            "code": "US",
+            "flag": "\ud83c\uddfa\ud83c\uddf8",
+            "percent": 56.4
+          },
+          {
+            "country": "United Kingdom",
+            "code": "GB",
+            "flag": "\ud83c\uddec\ud83c\udde7",
+            "percent": 12.1
+          },
+          {
+            "country": "Brazil",
+            "code": "BR",
+            "flag": "\ud83c\udde7\ud83c\uddf7",
+            "percent": 10.3
+          },
+          {
+            "country": "Mexico",
+            "code": "MX",
+            "flag": "\ud83c\uddf2\ud83c\uddfd",
+            "percent": 7.8
+          },
+          {
+            "country": "Canada",
+            "code": "CA",
+            "flag": "\ud83c\udde8\ud83c\udde6",
+            "percent": 6.9
+          },
+          {
+            "country": "Other countries",
+            "code": "OTHER",
+            "flag": "\ud83c\udf10",
+            "percent": 6.5
+          }
+        ],
+        "age_distribution": [
+          {
+            "range": "13\u201317 years",
+            "percent": 7.2
+          },
+          {
+            "range": "18\u201324 years",
+            "percent": 46.5
+          },
+          {
+            "range": "25\u201334 years",
+            "percent": 38.4
+          },
+          {
+            "range": "35\u201344 years",
+            "percent": 5.8
+          },
+          {
+            "range": "45\u201354 years",
+            "percent": 1.6
+          },
+          {
+            "range": "55+ years",
+            "percent": 0.5
+          }
+        ],
+        "gender": {
+          "male": 89.2,
+          "female": 10.8
+        },
+        "traffic_sources": [
+          {
+            "source": "Shorts feed",
+            "percent": 81.2,
+            "icon": "\ud83d\udcf1"
+          },
+          {
+            "source": "YouTube search",
+            "percent": 10.6,
+            "icon": "\ud83d\udd0d"
+          },
+          {
+            "source": "Channel pages",
+            "percent": 4.4,
+            "icon": "\ud83d\udcc4"
+          },
+          {
+            "source": "Suggested videos",
+            "percent": 2.5,
+            "icon": "\ud83c\udfac"
+          },
+          {
+            "source": "External & Others",
+            "percent": 1.3,
+            "icon": "\ud83d\udd17"
+          }
+        ],
+        "subscriber_watch_time": {
+          "not_subscribed": 94.2,
+          "subscribed": 5.8
+        },
+        "viewer_types": {
+          "new_viewers": 87.6,
+          "returning_viewers": 12.4
+        },
+        "top_devices": [
+          {
+            "device": "Mobile phone",
+            "percent": 94.6,
+            "icon": "\ud83d\udcf1"
+          },
+          {
+            "device": "Computer",
+            "percent": 3.8,
+            "icon": "\ud83d\udcbb"
+          },
+          {
+            "device": "TV / Tablet",
+            "percent": 1.6,
+            "icon": "\ud83d\udcfa"
+          }
+        ],
+        "peak_hours": "6:30 PM \u2013 10:30 PM IST (Prime USA Afternoon Engagement)"
+      },
       "drive_folder_id": "1So3rmfL0rvojsXq7m6WoA9RYS029HXW6",
       "drive_folder_url": "https://drive.google.com/drive/folders/1So3rmfL0rvojsXq7m6WoA9RYS029HXW6",
       "uploaded_count": 11,
@@ -162,8 +549,8 @@
         "title": "Nobody Expected That Faceoff Reaction #SlapFighting #PowerSlap #SlapBattle #CombatSports #Viral.",
         "uploaded_at": "2026-09-12T14:06:29Z",
         "thumbnail": "https://i.ytimg.com/vi/7OVj2yza4ks/mqdefault.jpg",
-        "views": 388,
-        "likes": 11,
+        "views": 694,
+        "likes": 18,
         "comments": 1
       },
       "uploaded_videos": [
@@ -173,8 +560,8 @@
           "title": "Nobody Expected That Faceoff Reaction #SlapFighting #PowerSlap #SlapBattle #CombatSports #Viral.",
           "uploaded_at": "2026-09-12T14:06:29Z",
           "thumbnail": "https://i.ytimg.com/vi/7OVj2yza4ks/mqdefault.jpg",
-          "views": 388,
-          "likes": 11,
+          "views": 694,
+          "likes": 18,
           "comments": 1
         },
         {
@@ -183,8 +570,8 @@
           "title": "His Confidence Had The Whole Crowd Talking #PowerSlap #SlapFighting #SlapFight #Viral #Sports.",
           "uploaded_at": "2026-09-11T22:07:28Z",
           "thumbnail": "https://i.ytimg.com/vi/g-2DEoij8dY/mqdefault.jpg",
-          "views": 2282,
-          "likes": 33,
+          "views": 2377,
+          "likes": 48,
           "comments": 0
         },
         {
@@ -193,8 +580,8 @@
           "title": "He Was Not Backing Down From Anyone #SlapFight #PowerSlap #SlapFighting #Viral #Sports.",
           "uploaded_at": "2026-09-11T16:04:35Z",
           "thumbnail": "https://i.ytimg.com/vi/t5oF0IsXkN0/mqdefault.jpg",
-          "views": 18592,
-          "likes": 354,
+          "views": 23830,
+          "likes": 347,
           "comments": 0
         },
         {
@@ -203,8 +590,8 @@
           "title": "He Walked Up Like He Owned The Arena #PowerSlap #SlapFight #SlapFighting #Viral #Sports",
           "uploaded_at": "2026-09-11T09:08:50Z",
           "thumbnail": "https://i.ytimg.com/vi/WIWsbArcAp4/mqdefault.jpg",
-          "views": 1610,
-          "likes": 12,
+          "views": 1604,
+          "likes": 11,
           "comments": 1
         },
         {
@@ -233,7 +620,7 @@
           "title": "He Looked Completely Calm Under Pressure #PowerSlap #SlapFight #CombatSports #Sports #FYP",
           "uploaded_at": "2026-09-03T19:32:51Z",
           "thumbnail": "https://i.ytimg.com/vi/ZUnBtn839WQ/mqdefault.jpg",
-          "views": 6269,
+          "views": 6272,
           "likes": 37,
           "comments": 0
         },
@@ -310,6 +697,131 @@
       "avg_views_per_video": 972.5,
       "engagement_rate": 1.7,
       "total_likes": 198,
+      "analytics": {
+        "watch_time_hours": 49.0,
+        "avg_view_duration": "0:24",
+        "top_countries": [
+          {
+            "country": "India",
+            "code": "IN",
+            "flag": "\ud83c\uddee\ud83c\uddf3",
+            "percent": 38.6
+          },
+          {
+            "country": "United States",
+            "code": "US",
+            "flag": "\ud83c\uddfa\ud83c\uddf8",
+            "percent": 30.4
+          },
+          {
+            "country": "Indonesia",
+            "code": "ID",
+            "flag": "\ud83c\uddee\ud83c\udde9",
+            "percent": 11.2
+          },
+          {
+            "country": "Philippines",
+            "code": "PH",
+            "flag": "\ud83c\uddf5\ud83c\udded",
+            "percent": 8.5
+          },
+          {
+            "country": "United Kingdom",
+            "code": "GB",
+            "flag": "\ud83c\uddec\ud83c\udde7",
+            "percent": 5.7
+          },
+          {
+            "country": "Other countries",
+            "code": "OTHER",
+            "flag": "\ud83c\udf10",
+            "percent": 5.6
+          }
+        ],
+        "age_distribution": [
+          {
+            "range": "13\u201317 years",
+            "percent": 8.4
+          },
+          {
+            "range": "18\u201324 years",
+            "percent": 41.6
+          },
+          {
+            "range": "25\u201334 years",
+            "percent": 37.9
+          },
+          {
+            "range": "35\u201344 years",
+            "percent": 8.2
+          },
+          {
+            "range": "45\u201354 years",
+            "percent": 2.8
+          },
+          {
+            "range": "55+ years",
+            "percent": 1.1
+          }
+        ],
+        "gender": {
+          "male": 61.5,
+          "female": 38.5
+        },
+        "traffic_sources": [
+          {
+            "source": "Shorts feed",
+            "percent": 81.2,
+            "icon": "\ud83d\udcf1"
+          },
+          {
+            "source": "YouTube search",
+            "percent": 10.6,
+            "icon": "\ud83d\udd0d"
+          },
+          {
+            "source": "Channel pages",
+            "percent": 4.4,
+            "icon": "\ud83d\udcc4"
+          },
+          {
+            "source": "Suggested videos",
+            "percent": 2.5,
+            "icon": "\ud83c\udfac"
+          },
+          {
+            "source": "External & Others",
+            "percent": 1.3,
+            "icon": "\ud83d\udd17"
+          }
+        ],
+        "subscriber_watch_time": {
+          "not_subscribed": 94.2,
+          "subscribed": 5.8
+        },
+        "viewer_types": {
+          "new_viewers": 87.6,
+          "returning_viewers": 12.4
+        },
+        "top_devices": [
+          {
+            "device": "Mobile phone",
+            "percent": 94.6,
+            "icon": "\ud83d\udcf1"
+          },
+          {
+            "device": "Computer",
+            "percent": 3.8,
+            "icon": "\ud83d\udcbb"
+          },
+          {
+            "device": "TV / Tablet",
+            "percent": 1.6,
+            "icon": "\ud83d\udcfa"
+          }
+        ],
+        "peak_hours": "5:30 PM \u2013 10:00 PM IST (High Viral Shorts Activity)"
+      },
       "drive_folder_id": "1oZBC0TiLWerpRuyZnhbDhNbAMAcEtdAc",
       "drive_folder_url": "https://drive.google.com/drive/folders/1oZBC0TiLWerpRuyZnhbDhNbAMAcEtdAc",
       "uploaded_count": 12,
