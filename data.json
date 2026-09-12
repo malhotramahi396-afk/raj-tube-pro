@@ -1,28 +1,28 @@
 {
   "app_name": "Raj Tube Pro",
   "version": "6.0.0",
-  "timestamp": "2026-09-12T21:20:52.726164+00:00",
+  "timestamp": "2026-09-12T21:30:05.188377+00:00",
   "schedule": {
     "next_slot_iso": "2026-09-12T22:00:00+00:00",
-    "seconds_remaining": 2357,
-    "formatted_countdown": "00h 39m 17s",
+    "seconds_remaining": 1806,
+    "formatted_countdown": "00h 30m 06s",
     "slot_label": "06:00 PM USA (3:30 AM IST)",
-    "now_ist": "13 Sep, 02:50 AM IST"
+    "now_ist": "13 Sep, 02:59 AM IST"
   },
   "summary": {
-    "total_channels": 7,
-    "total_uploaded": 107,
-    "total_in_queue": 747,
-    "total_subscribers": 126,
-    "total_views": 133851,
-    "total_likes": 1242,
+    "total_channels": 8,
+    "total_uploaded": 134,
+    "total_in_queue": 889,
+    "total_subscribers": 144,
+    "total_views": 158458,
+    "total_likes": 1443,
     "network_engagement": 0.9,
-    "total_runway_days": 53.4,
+    "total_runway_days": 55.6,
     "system_health": "All Systems Operational",
     "issues_count": 0,
     "top_trending_video": {
       "title": "He Was Not Backing Down From Anyone #SlapFight #PowerSlap #SlapFighting #Viral #Sports.",
-      "views": 37011,
+      "views": 36629,
       "likes": 352,
       "subscribers_gained": 31,
       "youtube_url": "https://youtu.be/t5oF0IsXkN0",
@@ -31,7 +31,7 @@
       "uploaded_at": "2026-09-11T16:04:35Z"
     },
     "analytics": {
-      "watch_time_hours": 562.2,
+      "watch_time_hours": 665.5,
       "avg_view_duration": "0:24",
       "top_countries": [
         {
@@ -174,10 +174,10 @@
         "is_clean": true
       },
       "view_health": {
-        "label": "YouTube API Verified: 1,251 avg views/video (133,851 total views across 107 videos)",
-        "badge": "1,251 AVG",
+        "label": "YouTube API Verified: 1,182 avg views/video (158,458 total views across 134 videos)",
+        "badge": "1,182 AVG",
         "color": "#10B981",
-        "avg_views": 1250.9,
+        "avg_views": 1182.5,
         "shorts_feed_share": "81.2%",
         "velocity_verdict": "Algorithm Reach: High"
       },
@@ -190,9 +190,9 @@
       },
       "upload_engine": {
         "latest_run": "success",
-        "queue_health": "Plentiful Runway (53.4 days)",
-        "runway_days": 53.4,
-        "total_uploaded": 107
+        "queue_health": "Plentiful Runway (55.6 days)",
+        "runway_days": 55.6,
+        "total_uploaded": 134
       }
     }
   },
@@ -208,14 +208,14 @@
       "github_repo": "malhotramahi396-afk/yt-automation-the-hidden-lens",
       "color": "#10B981",
       "avatar_url": "https://yt3.ggpht.com/R5wyufkApz5fijH1a4mek8n6CM9y64QklZgfgjuGI-SOwbTIBjEFmmKot6aBnYkVRwOpq965=s240-c-k-c0x00ffffff-no-rj",
-      "subscribers": 25,
-      "total_views": 13839,
+      "subscribers": 27,
+      "total_views": 13928,
       "channel_total_videos": 4,
-      "avg_views_per_video": 3459.8,
+      "avg_views_per_video": 3482.0,
       "engagement_rate": 1.5,
-      "total_likes": 206,
+      "total_likes": 208,
       "analytics": {
-        "watch_time_hours": 58.1,
+        "watch_time_hours": 58.5,
         "avg_view_duration": "0:24",
         "top_countries": [
           {
@@ -358,10 +358,10 @@
           "is_clean": true
         },
         "view_health": {
-          "label": "YouTube API Verified: 3,460 avg views/video (13,839 total views across 4 videos)",
-          "badge": "3,460 AVG",
+          "label": "YouTube API Verified: 3,482 avg views/video (13,928 total views across 4 videos)",
+          "badge": "3,482 AVG",
           "color": "#10B981",
-          "avg_views": 3459.8,
+          "avg_views": 3482.0,
           "shorts_feed_share": "81.2%",
           "velocity_verdict": "Algorithm Reach: High"
         },
@@ -394,8 +394,8 @@
         "title": "Close Enough To Hear His Breath #wildlife #shorts #cameraman #viral",
         "uploaded_at": "2026-09-12T14:03:34Z",
         "thumbnail": "https://i.ytimg.com/vi/RMgm8o875X0/mqdefault.jpg",
-        "views": 1653,
-        "likes": 25,
+        "views": 1679,
+        "likes": 26,
         "comments": 0,
         "subscribers_gained": 3
       },
@@ -406,8 +406,8 @@
           "title": "Close Enough To Hear His Breath #wildlife #shorts #cameraman #viral",
           "uploaded_at": "2026-09-12T14:03:34Z",
           "thumbnail": "https://i.ytimg.com/vi/RMgm8o875X0/mqdefault.jpg",
-          "views": 1653,
-          "likes": 25,
+          "views": 1679,
+          "likes": 26,
           "comments": 0,
           "subscribers_gained": 3
         },
@@ -428,10 +428,10 @@
           "title": "Breathtaking 4K Wildlife Moment #wildlifephotography #shorts #naturelovers #viral",
           "uploaded_at": "2026-09-11T14:42:29Z",
           "thumbnail": "https://i.ytimg.com/vi/3pDpmQcqJT8/mqdefault.jpg",
-          "views": 9051,
-          "likes": 158,
+          "views": 9114,
+          "likes": 159,
           "comments": 1,
-          "subscribers_gained": 17
+          "subscribers_gained": 19
         },
         {
           "youtube_id": "UoPvxQ5Gj9Q",
@@ -490,13 +490,13 @@
       "color": "#F59E0B",
       "avatar_url": "https://yt3.ggpht.com/TTLhq8ijvpChRrWaVb1i96FzeFG02Gd31oOfWo4EdOtBtfqTD6h0TrRmEOTd2fE8V0kPexV6EA=s240-c-k-c0x00ffffff-no-rj",
       "subscribers": 67,
-      "total_views": 84497,
+      "total_views": 84226,
       "channel_total_videos": 11,
-      "avg_views_per_video": 7681.5,
+      "avg_views_per_video": 7656.9,
       "engagement_rate": 0.7,
       "total_likes": 607,
       "analytics": {
-        "watch_time_hours": 354.9,
+        "watch_time_hours": 353.7,
         "avg_view_duration": "0:24",
         "top_countries": [
           {
@@ -639,10 +639,10 @@
           "is_clean": true
         },
         "view_health": {
-          "label": "YouTube API Verified: 7,682 avg views/video (84,497 total views across 11 videos)",
-          "badge": "7,682 AVG",
+          "label": "YouTube API Verified: 7,657 avg views/video (84,226 total views across 11 videos)",
+          "badge": "7,657 AVG",
           "color": "#10B981",
-          "avg_views": 7681.5,
+          "avg_views": 7656.9,
           "shorts_feed_share": "81.2%",
           "velocity_verdict": "Algorithm Reach: High"
         },
@@ -675,7 +675,7 @@
         "title": "Nobody Expected That Faceoff Reaction #SlapFighting #PowerSlap #SlapBattle #CombatSports #Viral.",
         "uploaded_at": "2026-09-12T14:06:29Z",
         "thumbnail": "https://i.ytimg.com/vi/7OVj2yza4ks/mqdefault.jpg",
-        "views": 1161,
+        "views": 1176,
         "likes": 18,
         "comments": 1,
         "subscribers_gained": 1
@@ -687,7 +687,7 @@
           "title": "Nobody Expected That Faceoff Reaction #SlapFighting #PowerSlap #SlapBattle #CombatSports #Viral.",
           "uploaded_at": "2026-09-12T14:06:29Z",
           "thumbnail": "https://i.ytimg.com/vi/7OVj2yza4ks/mqdefault.jpg",
-          "views": 1161,
+          "views": 1176,
           "likes": 18,
           "comments": 1,
           "subscribers_gained": 1
@@ -698,7 +698,7 @@
           "title": "His Confidence Had The Whole Crowd Talking #PowerSlap #SlapFighting #SlapFight #Viral #Sports.",
           "uploaded_at": "2026-09-11T22:07:28Z",
           "thumbnail": "https://i.ytimg.com/vi/g-2DEoij8dY/mqdefault.jpg",
-          "views": 4424,
+          "views": 4520,
           "likes": 57,
           "comments": 0,
           "subscribers_gained": 4
@@ -709,7 +709,7 @@
           "title": "He Was Not Backing Down From Anyone #SlapFight #PowerSlap #SlapFighting #Viral #Sports.",
           "uploaded_at": "2026-09-11T16:04:35Z",
           "thumbnail": "https://i.ytimg.com/vi/t5oF0IsXkN0/mqdefault.jpg",
-          "views": 37011,
+          "views": 36629,
           "likes": 352,
           "comments": 1,
           "subscribers_gained": 31
@@ -1181,13 +1181,13 @@
       "color": "#8B5CF6",
       "avatar_url": "https://yt3.ggpht.com/WKefM8i0bji48M_e159k6q0080b5zNwYExax_QloW7H3XguFARUF-SuE62a8rdPQJXvtTXxbJQ=s240-c-k-c0x00ffffff-no-rj",
       "subscribers": 1,
-      "total_views": 1055,
+      "total_views": 1062,
       "channel_total_videos": 10,
-      "avg_views_per_video": 105.5,
+      "avg_views_per_video": 106.2,
       "engagement_rate": 1.0,
       "total_likes": 11,
       "analytics": {
-        "watch_time_hours": 4.4,
+        "watch_time_hours": 4.5,
         "avg_view_duration": "0:24",
         "top_countries": [
           {
@@ -1330,10 +1330,10 @@
           "is_clean": true
         },
         "view_health": {
-          "label": "Warm-Up Phase: 106 avg views/video (1,055 total views across 10 videos)",
+          "label": "Warm-Up Phase: 106 avg views/video (1,062 total views across 10 videos)",
           "badge": "106 AVG",
           "color": "#F59E0B",
-          "avg_views": 105.5,
+          "avg_views": 106.2,
           "shorts_feed_share": "81.2%",
           "velocity_verdict": "Algorithm Reach: Healthy"
         },
@@ -1366,7 +1366,7 @@
         "title": "Adorable Toddler Reacts In The Cutest Way #ToddlerLife #CutestMoments #FamilyMoments #WholesomeConte",
         "uploaded_at": "2026-09-12T17:39:42Z",
         "thumbnail": "https://i.ytimg.com/vi/goCoZBF3N_M/mqdefault.jpg",
-        "views": 1048,
+        "views": 1055,
         "likes": 11,
         "comments": 0,
         "subscribers_gained": 1
@@ -1378,7 +1378,7 @@
           "title": "Adorable Toddler Reacts In The Cutest Way #ToddlerLife #CutestMoments #FamilyMoments #WholesomeConte",
           "uploaded_at": "2026-09-12T17:39:42Z",
           "thumbnail": "https://i.ytimg.com/vi/goCoZBF3N_M/mqdefault.jpg",
-          "views": 1048,
+          "views": 1055,
           "likes": 11,
           "comments": 0,
           "subscribers_gained": 1
@@ -2912,6 +2912,509 @@
           "thumbnail": "https://i.ytimg.com/vi/V07QhrUpdKw/mqdefault.jpg",
           "views": 2,
           "likes": 0,
+          "comments": 0,
+          "subscribers_gained": 0
+        }
+      ],
+      "recent_runs": [],
+      "is_active": true
+    },
+    {
+      "id": "channel_8",
+      "name": "Hyperflux Motion",
+      "handle": "@HyperfluxMotion",
+      "youtube_channel_id": "UCjdDyGzQbAIa_d14dxFc76g",
+      "channel_url": "https://www.youtube.com/channel/UCjdDyGzQbAIa_d14dxFc76g",
+      "category": "Cinema & VFX Behind The Scenes",
+      "github_repo": "malhotramahi396-afk/yt-automation-hyperfluxmotion",
+      "color": "#8B5CF6",
+      "avatar_url": "https://yt3.ggpht.com/c2et41jvboHRktLNJH-bmzbYclnu_SeQYjockP52SQB3xQtmw6jPskOSLrGMwcb7UiN4i4QybOo=s240-c-k-c0x00ffffff-no-rj",
+      "subscribers": 16,
+      "total_views": 24782,
+      "channel_total_videos": 27,
+      "avg_views_per_video": 917.9,
+      "engagement_rate": 0.8,
+      "total_likes": 199,
+      "analytics": {
+        "watch_time_hours": 104.1,
+        "avg_view_duration": "0:24",
+        "top_countries": [
+          {
+            "country": "United States",
+            "code": "US",
+            "flag": "\ud83c\uddfa\ud83c\uddf8",
+            "percent": 48.7
+          },
+          {
+            "country": "United Kingdom",
+            "code": "GB",
+            "flag": "\ud83c\uddec\ud83c\udde7",
+            "percent": 15.3
+          },
+          {
+            "country": "Canada",
+            "code": "CA",
+            "flag": "\ud83c\udde8\ud83c\udde6",
+            "percent": 10.4
+          },
+          {
+            "country": "Germany",
+            "code": "DE",
+            "flag": "\ud83c\udde9\ud83c\uddea",
+            "percent": 8.1
+          },
+          {
+            "country": "India",
+            "code": "IN",
+            "flag": "\ud83c\uddee\ud83c\uddf3",
+            "percent": 11.2
+          },
+          {
+            "country": "Other countries",
+            "code": "OTHER",
+            "flag": "\ud83c\udf10",
+            "percent": 6.3
+          }
+        ],
+        "age_distribution": [
+          {
+            "range": "13\u201317 years",
+            "percent": 8.1
+          },
+          {
+            "range": "18\u201324 years",
+            "percent": 43.5
+          },
+          {
+            "range": "25\u201334 years",
+            "percent": 35.8
+          },
+          {
+            "range": "35\u201344 years",
+            "percent": 8.2
+          },
+          {
+            "range": "45\u201354 years",
+            "percent": 3.1
+          },
+          {
+            "range": "55+ years",
+            "percent": 1.3
+          }
+        ],
+        "gender": {
+          "male": 72.4,
+          "female": 27.6
+        },
+        "traffic_sources": [
+          {
+            "source": "Shorts feed",
+            "percent": 81.2,
+            "icon": "\ud83d\udcf1"
+          },
+          {
+            "source": "YouTube search",
+            "percent": 10.6,
+            "icon": "\ud83d\udd0d"
+          },
+          {
+            "source": "Channel pages",
+            "percent": 4.4,
+            "icon": "\ud83d\udcc4"
+          },
+          {
+            "source": "Suggested videos",
+            "percent": 2.5,
+            "icon": "\ud83c\udfac"
+          },
+          {
+            "source": "External & Others",
+            "percent": 1.3,
+            "icon": "\ud83d\udd17"
+          }
+        ],
+        "subscriber_watch_time": {
+          "not_subscribed": 94.2,
+          "subscribed": 5.8
+        },
+        "viewer_types": {
+          "new_viewers": 87.6,
+          "returning_viewers": 12.4
+        },
+        "top_devices": [
+          {
+            "device": "Mobile phone",
+            "percent": 94.6,
+            "icon": "\ud83d\udcf1"
+          },
+          {
+            "device": "Computer",
+            "percent": 3.8,
+            "icon": "\ud83d\udcbb"
+          },
+          {
+            "device": "TV / Tablet",
+            "percent": 1.6,
+            "icon": "\ud83d\udcfa"
+          }
+        ],
+        "peak_hours": "6:00 PM \u2013 11:30 PM IST (Global Movie Buffs & Entertainment Window)"
+      },
+      "health": {
+        "overall_score": 99,
+        "verdict": "Flawless (Optimal Standing)",
+        "verdict_color": "#10B981",
+        "shield_icon": "\ud83d\udee1\ufe0f",
+        "strikes": {
+          "count": 0,
+          "max": 3,
+          "status": "0 of 3 active strikes \u2022 Channel Active & Public (YouTube API Verified)",
+          "badge": "CLEAN",
+          "is_clean": true
+        },
+        "copyright": {
+          "count": 0,
+          "status": "0 copyright claims \u2022 100% Original Audio & Video",
+          "badge": "CLEAN",
+          "is_clean": true
+        },
+        "view_health": {
+          "label": "YouTube API Verified: 918 avg views/video (24,782 total views across 27 videos)",
+          "badge": "918 AVG",
+          "color": "#3EA6FF",
+          "avg_views": 917.9,
+          "shorts_feed_share": "81.2%",
+          "velocity_verdict": "Algorithm Reach: High"
+        },
+        "compliance": {
+          "label": "YouTube Policy: AI Disclosure & COPPA Guard Active (Self-Declared)",
+          "badge": "100% OK",
+          "synthetic_media": "Self-Declared True (Compliant)",
+          "coppa_kids": "Declared False (General Audience)",
+          "is_compliant": true
+        },
+        "upload_engine": {
+          "latest_run": "idle",
+          "queue_health": "Plentiful Runway (71.0 days)",
+          "runway_days": 71.0,
+          "total_uploaded": 27
+        }
+      },
+      "drive_folder_id": "1Gg_7t0r1W59nhLOvilGfOttuSa_T5tWd",
+      "drive_folder_url": "https://drive.google.com/drive/folders/1Gg_7t0r1W59nhLOvilGfOttuSa_T5tWd",
+      "uploaded_count": 27,
+      "drive_queue_count": 142,
+      "runway_days": 71.0,
+      "stock_status": "Plentiful (71.0 days)",
+      "stock_color": "#10B981",
+      "latest_run_status": "idle",
+      "latest_run_time": null,
+      "latest_uploaded_video": {
+        "youtube_id": "1TbNIlAQsJo",
+        "youtube_url": "https://youtu.be/1TbNIlAQsJo",
+        "title": "Behind The Biggest Scene Of The Film With Incredible Detail #BehindTheScenes #Hollywood #MovieMagic",
+        "uploaded_at": "2026-09-12T21:29:37Z",
+        "thumbnail": "https://i.ytimg.com/vi/1TbNIlAQsJo/mqdefault.jpg",
+        "views": 0,
+        "likes": 0,
+        "comments": 0,
+        "subscribers_gained": 0
+      },
+      "uploaded_videos": [
+        {
+          "youtube_id": "1TbNIlAQsJo",
+          "youtube_url": "https://youtu.be/1TbNIlAQsJo",
+          "title": "Behind The Biggest Scene Of The Film With Incredible Detail #BehindTheScenes #Hollywood #MovieMagic",
+          "uploaded_at": "2026-09-12T21:29:37Z",
+          "thumbnail": "https://i.ytimg.com/vi/1TbNIlAQsJo/mqdefault.jpg",
+          "views": 0,
+          "likes": 0,
+          "comments": 0,
+          "subscribers_gained": 0
+        },
+        {
+          "youtube_id": "uOoNLJWxFY4",
+          "youtube_url": "https://youtu.be/uOoNLJWxFY4",
+          "title": "Behind The Biggest Scene Of The Film Today #BehindTheScenes #Hollywood #MovieMagic #FilmMaking #VFX",
+          "uploaded_at": "2026-09-07T19:30:03Z",
+          "thumbnail": "https://i.ytimg.com/vi/uOoNLJWxFY4/mqdefault.jpg",
+          "views": 424,
+          "likes": 6,
+          "comments": 0,
+          "subscribers_gained": 0
+        },
+        {
+          "youtube_id": "FbaeJ9PIUnY",
+          "youtube_url": "https://youtu.be/FbaeJ9PIUnY",
+          "title": "Behind The Biggest Scene Of The Film That Shocked Everyone #BehindTheScenes #Hollywood #MovieMagic",
+          "uploaded_at": "2026-09-06T07:57:02Z",
+          "thumbnail": "https://i.ytimg.com/vi/FbaeJ9PIUnY/mqdefault.jpg",
+          "views": 231,
+          "likes": 1,
+          "comments": 0,
+          "subscribers_gained": 0
+        },
+        {
+          "youtube_id": "iNXYv89didk",
+          "youtube_url": "https://youtu.be/iNXYv89didk",
+          "title": "Behind The Biggest Scene Of The Film Like Never Before #BehindTheScenes #Hollywood #MovieMagic #Film",
+          "uploaded_at": "2026-09-03T19:41:35Z",
+          "thumbnail": "https://i.ytimg.com/vi/iNXYv89didk/mqdefault.jpg",
+          "views": 1157,
+          "likes": 10,
+          "comments": 0,
+          "subscribers_gained": 1
+        },
+        {
+          "youtube_id": "XXDpSOyRXHw",
+          "youtube_url": "https://youtu.be/XXDpSOyRXHw",
+          "title": "Behind The Biggest Scene Of The Film In Front Of The Cameras #BehindTheScenes #Hollywood #MovieMagic",
+          "uploaded_at": "2026-08-30T18:53:13Z",
+          "thumbnail": "https://i.ytimg.com/vi/XXDpSOyRXHw/mqdefault.jpg",
+          "views": 955,
+          "likes": 11,
+          "comments": 0,
+          "subscribers_gained": 1
+        },
+        {
+          "youtube_id": "hTkxZuO-HRo",
+          "youtube_url": "https://youtu.be/hTkxZuO-HRo",
+          "title": "Behind The Biggest Scene Of The Film Behind Closed Doors #BehindTheScenes #Hollywood #MovieMagic",
+          "uploaded_at": "2026-08-18T20:04:58Z",
+          "thumbnail": "https://i.ytimg.com/vi/hTkxZuO-HRo/mqdefault.jpg",
+          "views": 1372,
+          "likes": 20,
+          "comments": 0,
+          "subscribers_gained": 1
+        },
+        {
+          "youtube_id": "5w0o3SRstoI",
+          "youtube_url": "https://youtu.be/5w0o3SRstoI",
+          "title": "Behind The Biggest Scene Of The Film Before Release #BehindTheScenes #Hollywood #MovieMagic #film",
+          "uploaded_at": "2026-08-06T21:13:26Z",
+          "thumbnail": "https://i.ytimg.com/vi/5w0o3SRstoI/mqdefault.jpg",
+          "views": 1665,
+          "likes": 7,
+          "comments": 0,
+          "subscribers_gained": 1
+        },
+        {
+          "youtube_id": "HJZzR3XJqxA",
+          "youtube_url": "https://youtu.be/HJZzR3XJqxA",
+          "title": "Behind Every Epic Scene With Incredible Detail #BehindTheScenes #Hollywood #MovieMagic #FilmMaking",
+          "uploaded_at": "2026-08-05T16:44:06Z",
+          "thumbnail": "https://i.ytimg.com/vi/HJZzR3XJqxA/mqdefault.jpg",
+          "views": 1825,
+          "likes": 6,
+          "comments": 0,
+          "subscribers_gained": 1
+        },
+        {
+          "youtube_id": "YFh7hlb2U08",
+          "youtube_url": "https://youtu.be/YFh7hlb2U08",
+          "title": "Behind Every Epic Scene Today #BehindTheScenes #Hollywood #MovieMagic #FilmMaking #VFX #FilmSet",
+          "uploaded_at": "2026-08-03T16:11:01Z",
+          "thumbnail": "https://i.ytimg.com/vi/YFh7hlb2U08/mqdefault.jpg",
+          "views": 364,
+          "likes": 3,
+          "comments": 1,
+          "subscribers_gained": 0
+        },
+        {
+          "youtube_id": "UfGZ0c_6V7w",
+          "youtube_url": "https://youtu.be/UfGZ0c_6V7w",
+          "title": "Behind Every Epic Scene That Shocked Everyone #BehindTheScenes #Hollywood #MovieMagic #FilmMaking",
+          "uploaded_at": "2026-07-28T13:43:05Z",
+          "thumbnail": "https://i.ytimg.com/vi/UfGZ0c_6V7w/mqdefault.jpg",
+          "views": 337,
+          "likes": 1,
+          "comments": 0,
+          "subscribers_gained": 0
+        },
+        {
+          "youtube_id": "BVqXgYMjvY8",
+          "youtube_url": "https://youtu.be/BVqXgYMjvY8",
+          "title": "Behind Every Epic Scene Like Never Before #BehindTheScenes #Hollywood #MovieMagic #FilmMaking #VFX",
+          "uploaded_at": "2026-07-27T07:15:57Z",
+          "thumbnail": "https://i.ytimg.com/vi/BVqXgYMjvY8/mqdefault.jpg",
+          "views": 1659,
+          "likes": 18,
+          "comments": 5,
+          "subscribers_gained": 1
+        },
+        {
+          "youtube_id": "fsddfIYCAOg",
+          "youtube_url": "https://youtu.be/fsddfIYCAOg",
+          "title": "Behind Every Epic Scene In Front Of The Cameras #BehindTheScenes #Hollywood #MovieMagic #FilmMaking",
+          "uploaded_at": "2026-07-24T16:32:41Z",
+          "thumbnail": "https://i.ytimg.com/vi/fsddfIYCAOg/mqdefault.jpg",
+          "views": 207,
+          "likes": 1,
+          "comments": 0,
+          "subscribers_gained": 0
+        },
+        {
+          "youtube_id": "NxOl0iK0BOo",
+          "youtube_url": "https://youtu.be/NxOl0iK0BOo",
+          "title": "Behind Every Epic Scene Behind Closed Doors #BehindTheScenes #Hollywood #MovieMagic #FilmMaking #VFX",
+          "uploaded_at": "2026-07-23T14:28:31Z",
+          "thumbnail": "https://i.ytimg.com/vi/NxOl0iK0BOo/mqdefault.jpg",
+          "views": 382,
+          "likes": 3,
+          "comments": 0,
+          "subscribers_gained": 0
+        },
+        {
+          "youtube_id": "_BQVHE7Yok0",
+          "youtube_url": "https://youtu.be/_BQVHE7Yok0",
+          "title": "Behind Every Epic Scene Before Release #BehindTheScenes #Hollywood #MovieMagic #FilmMaking #VFX",
+          "uploaded_at": "2026-07-21T06:52:18Z",
+          "thumbnail": "https://i.ytimg.com/vi/_BQVHE7Yok0/mqdefault.jpg",
+          "views": 1254,
+          "likes": 14,
+          "comments": 0,
+          "subscribers_gained": 1
+        },
+        {
+          "youtube_id": "qS4b8RkTINw",
+          "youtube_url": "https://youtu.be/qS4b8RkTINw",
+          "title": "Before The Director Said Action With Incredible Detail #BehindTheScenes #Hollywood #MovieMagic #Film",
+          "uploaded_at": "2026-07-20T16:08:04Z",
+          "thumbnail": "https://i.ytimg.com/vi/qS4b8RkTINw/mqdefault.jpg",
+          "views": 309,
+          "likes": 3,
+          "comments": 0,
+          "subscribers_gained": 0
+        },
+        {
+          "youtube_id": "6qi1ZOEW_cY",
+          "youtube_url": "https://youtu.be/6qi1ZOEW_cY",
+          "title": "Before The Director Said Action Today #behindthescenes  #Hollywood  #filmmaking  #vfx  #film",
+          "uploaded_at": "2026-07-19T14:34:20Z",
+          "thumbnail": "https://i.ytimg.com/vi/6qi1ZOEW_cY/mqdefault.jpg",
+          "views": 1327,
+          "likes": 10,
+          "comments": 2,
+          "subscribers_gained": 1
+        },
+        {
+          "youtube_id": "ncGlQ0UTibU",
+          "youtube_url": "https://youtu.be/ncGlQ0UTibU",
+          "title": "Before The Director Said Action Like Never Before #BehindTheScenes #Hollywood #moviemagic #shorts",
+          "uploaded_at": "2026-07-19T07:58:33Z",
+          "thumbnail": "https://i.ytimg.com/vi/ncGlQ0UTibU/mqdefault.jpg",
+          "views": 1458,
+          "likes": 17,
+          "comments": 0,
+          "subscribers_gained": 1
+        },
+        {
+          "youtube_id": "K71S3DYdtuQ",
+          "youtube_url": "https://youtu.be/K71S3DYdtuQ",
+          "title": "Before The Director Said Action In Front Of The Cameras #BehindTheScenes #Hollywood #MovieMagic",
+          "uploaded_at": "2026-07-18T17:36:11Z",
+          "thumbnail": "https://i.ytimg.com/vi/K71S3DYdtuQ/mqdefault.jpg",
+          "views": 1335,
+          "likes": 2,
+          "comments": 1,
+          "subscribers_gained": 1
+        },
+        {
+          "youtube_id": "v-WLt0vB63Y",
+          "youtube_url": "https://youtu.be/v-WLt0vB63Y",
+          "title": "Before The Director Said Action Behind Closed Doors #BehindTheScenes #Hollywood #MovieMagic #FilmMak",
+          "uploaded_at": "2026-07-18T11:48:53Z",
+          "thumbnail": "https://i.ytimg.com/vi/v-WLt0vB63Y/mqdefault.jpg",
+          "views": 1497,
+          "likes": 6,
+          "comments": 0,
+          "subscribers_gained": 1
+        },
+        {
+          "youtube_id": "EqfL_pWKdgo",
+          "youtube_url": "https://youtu.be/EqfL_pWKdgo",
+          "title": "Before The Director Said Action Before Release #BehindTheScenes #Hollywood #MovieMagic #FilmMaking #",
+          "uploaded_at": "2026-07-17T12:17:17Z",
+          "thumbnail": "https://i.ytimg.com/vi/EqfL_pWKdgo/mqdefault.jpg",
+          "views": 1364,
+          "likes": 3,
+          "comments": 0,
+          "subscribers_gained": 1
+        },
+        {
+          "youtube_id": "tO_S85jb5JA",
+          "youtube_url": "https://youtu.be/tO_S85jb5JA",
+          "title": "Before CGI Changed Everything With Incredible Detail #BehindTheScenes #Hollywood #MovieMagic #FilmMa",
+          "uploaded_at": "2026-07-15T14:27:39Z",
+          "thumbnail": "https://i.ytimg.com/vi/tO_S85jb5JA/mqdefault.jpg",
+          "views": 603,
+          "likes": 16,
+          "comments": 0,
+          "subscribers_gained": 1
+        },
+        {
+          "youtube_id": "RbgZvHHIrJw",
+          "youtube_url": "https://youtu.be/RbgZvHHIrJw",
+          "title": "Before CGI Changed Everything Today #BehindTheScenes #Hollywood #MovieMagic #FilmMaking #VFX #FilmSe",
+          "uploaded_at": "2026-07-15T06:20:39Z",
+          "thumbnail": "https://i.ytimg.com/vi/RbgZvHHIrJw/mqdefault.jpg",
+          "views": 68,
+          "likes": 2,
+          "comments": 0,
+          "subscribers_gained": 0
+        },
+        {
+          "youtube_id": "V8M1xv5lFEU",
+          "youtube_url": "https://youtu.be/V8M1xv5lFEU",
+          "title": "Before CGI Changed Everything That Shocked Everyone #BehindTheScenes #Hollywood #MovieMagic #FilmMak",
+          "uploaded_at": "2026-07-14T20:29:57Z",
+          "thumbnail": "https://i.ytimg.com/vi/V8M1xv5lFEU/mqdefault.jpg",
+          "views": 4168,
+          "likes": 17,
+          "comments": 0,
+          "subscribers_gained": 3
+        },
+        {
+          "youtube_id": "RoEfCZDfylM",
+          "youtube_url": "https://youtu.be/RoEfCZDfylM",
+          "title": "Before CGI Changed Everything Like Never Before #BehindTheScenes #Hollywood #MovieMagic #FilmMaking",
+          "uploaded_at": "2026-07-14T15:57:57Z",
+          "thumbnail": "https://i.ytimg.com/vi/RoEfCZDfylM/mqdefault.jpg",
+          "views": 224,
+          "likes": 7,
+          "comments": 0,
+          "subscribers_gained": 0
+        },
+        {
+          "youtube_id": "ocFhJbRIBsc",
+          "youtube_url": "https://youtu.be/ocFhJbRIBsc",
+          "title": "Before CGI Changed Everything In Front Of The Cameras #BehindTheScenes #Hollywood #MovieMagic #film",
+          "uploaded_at": "2026-07-14T06:10:19Z",
+          "thumbnail": "https://i.ytimg.com/vi/ocFhJbRIBsc/mqdefault.jpg",
+          "views": 279,
+          "likes": 4,
+          "comments": 0,
+          "subscribers_gained": 0
+        },
+        {
+          "youtube_id": "FIA94acRumo",
+          "youtube_url": "https://youtu.be/FIA94acRumo",
+          "title": "Before CGI Changed Everything Behind Closed Doors #BehindTheScenes #Hollywood #MovieMagic #FilmMakin",
+          "uploaded_at": "2026-07-13T18:48:01Z",
+          "thumbnail": "https://i.ytimg.com/vi/FIA94acRumo/mqdefault.jpg",
+          "views": 203,
+          "likes": 8,
+          "comments": 0,
+          "subscribers_gained": 0
+        },
+        {
+          "youtube_id": "7sZwZUFywlY",
+          "youtube_url": "https://youtu.be/7sZwZUFywlY",
+          "title": "Before CGI Changed Everything Before Release #BehindTheScenes #Hollywood #MovieMagic #FilmMaking #VF",
+          "uploaded_at": "2026-07-13T15:10:53Z",
+          "thumbnail": "https://i.ytimg.com/vi/7sZwZUFywlY/mqdefault.jpg",
+          "views": 115,
+          "likes": 3,
           "comments": 0,
           "subscribers_gained": 0
         }
