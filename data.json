@@ -1,20 +1,20 @@
 {
   "app_name": "Raj Tube Pro",
   "version": "6.0.0",
-  "timestamp": "2026-09-12T21:17:49.248129+00:00",
+  "timestamp": "2026-09-12T21:20:52.726164+00:00",
   "schedule": {
     "next_slot_iso": "2026-09-12T22:00:00+00:00",
-    "seconds_remaining": 2540,
-    "formatted_countdown": "00h 42m 20s",
+    "seconds_remaining": 2357,
+    "formatted_countdown": "00h 39m 17s",
     "slot_label": "06:00 PM USA (3:30 AM IST)",
-    "now_ist": "13 Sep, 02:47 AM IST"
+    "now_ist": "13 Sep, 02:50 AM IST"
   },
   "summary": {
     "total_channels": 7,
-    "total_uploaded": 106,
-    "total_in_queue": 748,
+    "total_uploaded": 107,
+    "total_in_queue": 747,
     "total_subscribers": 126,
-    "total_views": 133788,
+    "total_views": 133851,
     "total_likes": 1242,
     "network_engagement": 0.9,
     "total_runway_days": 53.4,
@@ -31,7 +31,7 @@
       "uploaded_at": "2026-09-11T16:04:35Z"
     },
     "analytics": {
-      "watch_time_hours": 561.9,
+      "watch_time_hours": 562.2,
       "avg_view_duration": "0:24",
       "top_countries": [
         {
@@ -174,10 +174,10 @@
         "is_clean": true
       },
       "view_health": {
-        "label": "YouTube API Verified: 1,262 avg views/video (133,788 total views across 106 videos)",
-        "badge": "1,262 AVG",
+        "label": "YouTube API Verified: 1,251 avg views/video (133,851 total views across 107 videos)",
+        "badge": "1,251 AVG",
         "color": "#10B981",
-        "avg_views": 1262.2,
+        "avg_views": 1250.9,
         "shorts_feed_share": "81.2%",
         "velocity_verdict": "Algorithm Reach: High"
       },
@@ -192,7 +192,7 @@
         "latest_run": "success",
         "queue_health": "Plentiful Runway (53.4 days)",
         "runway_days": 53.4,
-        "total_uploaded": 106
+        "total_uploaded": 107
       }
     }
   },
@@ -209,13 +209,13 @@
       "color": "#10B981",
       "avatar_url": "https://yt3.ggpht.com/R5wyufkApz5fijH1a4mek8n6CM9y64QklZgfgjuGI-SOwbTIBjEFmmKot6aBnYkVRwOpq965=s240-c-k-c0x00ffffff-no-rj",
       "subscribers": 25,
-      "total_views": 13802,
+      "total_views": 13839,
       "channel_total_videos": 4,
-      "avg_views_per_video": 3450.5,
+      "avg_views_per_video": 3459.8,
       "engagement_rate": 1.5,
       "total_likes": 206,
       "analytics": {
-        "watch_time_hours": 58.0,
+        "watch_time_hours": 58.1,
         "avg_view_duration": "0:24",
         "top_countries": [
           {
@@ -358,10 +358,10 @@
           "is_clean": true
         },
         "view_health": {
-          "label": "YouTube API Verified: 3,450 avg views/video (13,802 total views across 4 videos)",
-          "badge": "3,450 AVG",
+          "label": "YouTube API Verified: 3,460 avg views/video (13,839 total views across 4 videos)",
+          "badge": "3,460 AVG",
           "color": "#10B981",
-          "avg_views": 3450.5,
+          "avg_views": 3459.8,
           "shorts_feed_share": "81.2%",
           "velocity_verdict": "Algorithm Reach: High"
         },
@@ -394,7 +394,7 @@
         "title": "Close Enough To Hear His Breath #wildlife #shorts #cameraman #viral",
         "uploaded_at": "2026-09-12T14:03:34Z",
         "thumbnail": "https://i.ytimg.com/vi/RMgm8o875X0/mqdefault.jpg",
-        "views": 1652,
+        "views": 1653,
         "likes": 25,
         "comments": 0,
         "subscribers_gained": 3
@@ -406,7 +406,7 @@
           "title": "Close Enough To Hear His Breath #wildlife #shorts #cameraman #viral",
           "uploaded_at": "2026-09-12T14:03:34Z",
           "thumbnail": "https://i.ytimg.com/vi/RMgm8o875X0/mqdefault.jpg",
-          "views": 1652,
+          "views": 1653,
           "likes": 25,
           "comments": 0,
           "subscribers_gained": 3
@@ -428,7 +428,7 @@
           "title": "Breathtaking 4K Wildlife Moment #wildlifephotography #shorts #naturelovers #viral",
           "uploaded_at": "2026-09-11T14:42:29Z",
           "thumbnail": "https://i.ytimg.com/vi/3pDpmQcqJT8/mqdefault.jpg",
-          "views": 9015,
+          "views": 9051,
           "likes": 158,
           "comments": 1,
           "subscribers_gained": 17
@@ -490,13 +490,13 @@
       "color": "#F59E0B",
       "avatar_url": "https://yt3.ggpht.com/TTLhq8ijvpChRrWaVb1i96FzeFG02Gd31oOfWo4EdOtBtfqTD6h0TrRmEOTd2fE8V0kPexV6EA=s240-c-k-c0x00ffffff-no-rj",
       "subscribers": 67,
-      "total_views": 84482,
+      "total_views": 84497,
       "channel_total_videos": 11,
-      "avg_views_per_video": 7680.2,
+      "avg_views_per_video": 7681.5,
       "engagement_rate": 0.7,
       "total_likes": 607,
       "analytics": {
-        "watch_time_hours": 354.8,
+        "watch_time_hours": 354.9,
         "avg_view_duration": "0:24",
         "top_countries": [
           {
@@ -639,10 +639,10 @@
           "is_clean": true
         },
         "view_health": {
-          "label": "YouTube API Verified: 7,680 avg views/video (84,482 total views across 11 videos)",
-          "badge": "7,680 AVG",
+          "label": "YouTube API Verified: 7,682 avg views/video (84,497 total views across 11 videos)",
+          "badge": "7,682 AVG",
           "color": "#10B981",
-          "avg_views": 7680.2,
+          "avg_views": 7681.5,
           "shorts_feed_share": "81.2%",
           "velocity_verdict": "Algorithm Reach: High"
         },
@@ -675,7 +675,7 @@
         "title": "Nobody Expected That Faceoff Reaction #SlapFighting #PowerSlap #SlapBattle #CombatSports #Viral.",
         "uploaded_at": "2026-09-12T14:06:29Z",
         "thumbnail": "https://i.ytimg.com/vi/7OVj2yza4ks/mqdefault.jpg",
-        "views": 1146,
+        "views": 1161,
         "likes": 18,
         "comments": 1,
         "subscribers_gained": 1
@@ -687,7 +687,7 @@
           "title": "Nobody Expected That Faceoff Reaction #SlapFighting #PowerSlap #SlapBattle #CombatSports #Viral.",
           "uploaded_at": "2026-09-12T14:06:29Z",
           "thumbnail": "https://i.ytimg.com/vi/7OVj2yza4ks/mqdefault.jpg",
-          "views": 1146,
+          "views": 1161,
           "likes": 18,
           "comments": 1,
           "subscribers_gained": 1
@@ -1181,10 +1181,10 @@
       "color": "#8B5CF6",
       "avatar_url": "https://yt3.ggpht.com/WKefM8i0bji48M_e159k6q0080b5zNwYExax_QloW7H3XguFARUF-SuE62a8rdPQJXvtTXxbJQ=s240-c-k-c0x00ffffff-no-rj",
       "subscribers": 1,
-      "total_views": 1044,
+      "total_views": 1055,
       "channel_total_videos": 10,
-      "avg_views_per_video": 104.4,
-      "engagement_rate": 1.1,
+      "avg_views_per_video": 105.5,
+      "engagement_rate": 1.0,
       "total_likes": 11,
       "analytics": {
         "watch_time_hours": 4.4,
@@ -1330,10 +1330,10 @@
           "is_clean": true
         },
         "view_health": {
-          "label": "Warm-Up Phase: 104 avg views/video (1,044 total views across 10 videos)",
-          "badge": "104 AVG",
+          "label": "Warm-Up Phase: 106 avg views/video (1,055 total views across 10 videos)",
+          "badge": "106 AVG",
           "color": "#F59E0B",
-          "avg_views": 104.4,
+          "avg_views": 105.5,
           "shorts_feed_share": "81.2%",
           "velocity_verdict": "Algorithm Reach: Healthy"
         },
@@ -1366,7 +1366,7 @@
         "title": "Adorable Toddler Reacts In The Cutest Way #ToddlerLife #CutestMoments #FamilyMoments #WholesomeConte",
         "uploaded_at": "2026-09-12T17:39:42Z",
         "thumbnail": "https://i.ytimg.com/vi/goCoZBF3N_M/mqdefault.jpg",
-        "views": 1037,
+        "views": 1048,
         "likes": 11,
         "comments": 0,
         "subscribers_gained": 1
@@ -1378,7 +1378,7 @@
           "title": "Adorable Toddler Reacts In The Cutest Way #ToddlerLife #CutestMoments #FamilyMoments #WholesomeConte",
           "uploaded_at": "2026-09-12T17:39:42Z",
           "thumbnail": "https://i.ytimg.com/vi/goCoZBF3N_M/mqdefault.jpg",
-          "views": 1037,
+          "views": 1048,
           "likes": 11,
           "comments": 0,
           "subscribers_gained": 1
@@ -2351,8 +2351,8 @@
       "avatar_url": "https://yt3.ggpht.com/nq_ZXt9K4MP8rn_0NncY8cm8FKpJhysqk3dE-4DnBi5riAIIgaSHkyJ3peEPN45JHegO91Ws7Xg=s240-c-k-c0x00ffffff-no-rj",
       "subscribers": 0,
       "total_views": 311,
-      "channel_total_videos": 33,
-      "avg_views_per_video": 9.4,
+      "channel_total_videos": 34,
+      "avg_views_per_video": 9.1,
       "engagement_rate": 0.0,
       "total_likes": 0,
       "analytics": {
@@ -2499,10 +2499,10 @@
           "is_clean": true
         },
         "view_health": {
-          "label": "Warm-Up Phase: 9 avg views/video (311 total views across 33 videos)",
+          "label": "Warm-Up Phase: 9 avg views/video (311 total views across 34 videos)",
           "badge": "9 AVG",
           "color": "#F59E0B",
-          "avg_views": 9.4,
+          "avg_views": 9.1,
           "shorts_feed_share": "81.2%",
           "velocity_verdict": "Algorithm Reach: Healthy"
         },
@@ -2515,32 +2515,43 @@
         },
         "upload_engine": {
           "latest_run": "idle",
-          "queue_health": "Plentiful Runway (30.5 days)",
-          "runway_days": 30.5,
-          "total_uploaded": 33
+          "queue_health": "Plentiful Runway (30.0 days)",
+          "runway_days": 30.0,
+          "total_uploaded": 34
         }
       },
       "drive_folder_id": "1OLhbVXMLNQqX4vPOi9jYLgQyY5iHwBNl",
       "drive_folder_url": "https://drive.google.com/drive/folders/1OLhbVXMLNQqX4vPOi9jYLgQyY5iHwBNl",
-      "uploaded_count": 33,
-      "drive_queue_count": 61,
-      "runway_days": 30.5,
-      "stock_status": "Plentiful (30.5 days)",
+      "uploaded_count": 34,
+      "drive_queue_count": 60,
+      "runway_days": 30.0,
+      "stock_status": "Plentiful (30.0 days)",
       "stock_color": "#10B981",
       "latest_run_status": "idle",
       "latest_run_time": null,
       "latest_uploaded_video": {
-        "youtube_id": "Oo5FN94GDvs",
-        "youtube_url": "https://youtu.be/Oo5FN94GDvs",
-        "title": "Little Panda Tried Its Best #BabyPanda #CutePanda #PandaLife #Shorts #Reels #ViralVideo #FYP #Cute",
-        "uploaded_at": "2026-09-07T19:30:11Z",
-        "thumbnail": "https://i.ytimg.com/vi/Oo5FN94GDvs/mqdefault.jpg",
-        "views": 49,
+        "youtube_id": "mFI2RC-9LdQ",
+        "youtube_url": "https://youtu.be/mFI2RC-9LdQ",
+        "title": "Nobody Can Be Mad At This Panda #BabyPanda #CutePanda #PandaLife #Shorts #Reels #ViralVideo #FYP #Cu",
+        "uploaded_at": "2026-09-12T21:20:35Z",
+        "thumbnail": "https://i.ytimg.com/vi/mFI2RC-9LdQ/mqdefault.jpg",
+        "views": 0,
         "likes": 0,
         "comments": 0,
         "subscribers_gained": 0
       },
       "uploaded_videos": [
+        {
+          "youtube_id": "mFI2RC-9LdQ",
+          "youtube_url": "https://youtu.be/mFI2RC-9LdQ",
+          "title": "Nobody Can Be Mad At This Panda #BabyPanda #CutePanda #PandaLife #Shorts #Reels #ViralVideo #FYP #Cu",
+          "uploaded_at": "2026-09-12T21:20:35Z",
+          "thumbnail": "https://i.ytimg.com/vi/mFI2RC-9LdQ/mqdefault.jpg",
+          "views": 0,
+          "likes": 0,
+          "comments": 0,
+          "subscribers_gained": 0
+        },
         {
           "youtube_id": "Oo5FN94GDvs",
           "youtube_url": "https://youtu.be/Oo5FN94GDvs",
