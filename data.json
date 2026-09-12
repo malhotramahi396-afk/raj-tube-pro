@@ -1,36 +1,36 @@
 {
   "app_name": "Raj Tube Pro",
   "version": "6.0.0",
-  "timestamp": "2026-09-12T17:55:16.230015+00:00",
+  "timestamp": "2026-09-12T18:22:01.358512+00:00",
   "schedule": {
     "next_slot_iso": "2026-09-12T22:00:00+00:00",
-    "seconds_remaining": 14690,
-    "formatted_countdown": "04h 04m 50s",
+    "seconds_remaining": 13085,
+    "formatted_countdown": "03h 38m 05s",
     "slot_label": "06:00 PM USA (3:30 AM IST)",
-    "now_ist": "12 Sep, 11:25 PM IST"
+    "now_ist": "12 Sep, 11:51 PM IST"
   },
   "summary": {
     "total_channels": 5,
     "total_uploaded": 46,
-    "total_in_queue": 409,
+    "total_in_queue": 548,
     "total_subscribers": 99,
-    "total_views": 109022,
-    "total_likes": 1060,
+    "total_views": 111158,
+    "total_likes": 1069,
     "network_engagement": 1.0,
-    "total_runway_days": 40.9,
+    "total_runway_days": 54.8,
     "system_health": "All Systems Operational",
     "issues_count": 0,
     "top_trending_video": {
       "title": "He Was Not Backing Down From Anyone #SlapFight #PowerSlap #SlapFighting #Viral #Sports.",
-      "views": 28121,
-      "likes": 350,
+      "views": 29658,
+      "likes": 351,
       "youtube_url": "https://youtu.be/t5oF0IsXkN0",
       "thumbnail": "https://i.ytimg.com/vi/t5oF0IsXkN0/mqdefault.jpg",
       "channel_name": "Zyntrix07",
       "uploaded_at": "2026-09-11T16:04:35Z"
     },
     "analytics": {
-      "watch_time_hours": 457.9,
+      "watch_time_hours": 466.9,
       "avg_view_duration": "0:24",
       "top_countries": [
         {
@@ -168,13 +168,13 @@
       "color": "#10B981",
       "avatar_url": "https://yt3.ggpht.com/R5wyufkApz5fijH1a4mek8n6CM9y64QklZgfgjuGI-SOwbTIBjEFmmKot6aBnYkVRwOpq965=s240-c-k-c0x00ffffff-no-rj",
       "subscribers": 24,
-      "total_views": 11088,
+      "total_views": 11436,
       "channel_total_videos": 4,
-      "avg_views_per_video": 2772.0,
+      "avg_views_per_video": 2859.0,
       "engagement_rate": 1.6,
-      "total_likes": 175,
+      "total_likes": 180,
       "analytics": {
-        "watch_time_hours": 46.6,
+        "watch_time_hours": 48.0,
         "avg_view_duration": "0:24",
         "top_countries": [
           {
@@ -313,7 +313,7 @@
         "title": "Close Enough To Hear His Breath #wildlife #shorts #cameraman #viral",
         "uploaded_at": "2026-09-12T14:03:34Z",
         "thumbnail": "https://i.ytimg.com/vi/RMgm8o875X0/mqdefault.jpg",
-        "views": 912,
+        "views": 988,
         "likes": 17,
         "comments": 0
       },
@@ -324,7 +324,7 @@
           "title": "Close Enough To Hear His Breath #wildlife #shorts #cameraman #viral",
           "uploaded_at": "2026-09-12T14:03:34Z",
           "thumbnail": "https://i.ytimg.com/vi/RMgm8o875X0/mqdefault.jpg",
-          "views": 912,
+          "views": 988,
           "likes": 17,
           "comments": 0
         },
@@ -344,8 +344,8 @@
           "title": "Breathtaking 4K Wildlife Moment #wildlifephotography #shorts #naturelovers #viral",
           "uploaded_at": "2026-09-11T14:42:29Z",
           "thumbnail": "https://i.ytimg.com/vi/3pDpmQcqJT8/mqdefault.jpg",
-          "views": 7043,
-          "likes": 135,
+          "views": 7315,
+          "likes": 140,
           "comments": 0
         },
         {
@@ -404,13 +404,13 @@
       "color": "#F59E0B",
       "avatar_url": "https://yt3.ggpht.com/TTLhq8ijvpChRrWaVb1i96FzeFG02Gd31oOfWo4EdOtBtfqTD6h0TrRmEOTd2fE8V0kPexV6EA=s240-c-k-c0x00ffffff-no-rj",
       "subscribers": 65,
-      "total_views": 73296,
+      "total_views": 75010,
       "channel_total_videos": 11,
-      "avg_views_per_video": 6663.3,
+      "avg_views_per_video": 6819.1,
       "engagement_rate": 0.8,
-      "total_likes": 603,
+      "total_likes": 605,
       "analytics": {
-        "watch_time_hours": 307.8,
+        "watch_time_hours": 315.0,
         "avg_view_duration": "0:24",
         "top_countries": [
           {
@@ -549,7 +549,7 @@
         "title": "Nobody Expected That Faceoff Reaction #SlapFighting #PowerSlap #SlapBattle #CombatSports #Viral.",
         "uploaded_at": "2026-09-12T14:06:29Z",
         "thumbnail": "https://i.ytimg.com/vi/7OVj2yza4ks/mqdefault.jpg",
-        "views": 727,
+        "views": 735,
         "likes": 17,
         "comments": 1
       },
@@ -560,7 +560,7 @@
           "title": "Nobody Expected That Faceoff Reaction #SlapFighting #PowerSlap #SlapBattle #CombatSports #Viral.",
           "uploaded_at": "2026-09-12T14:06:29Z",
           "thumbnail": "https://i.ytimg.com/vi/7OVj2yza4ks/mqdefault.jpg",
-          "views": 727,
+          "views": 735,
           "likes": 17,
           "comments": 1
         },
@@ -570,8 +570,8 @@
           "title": "His Confidence Had The Whole Crowd Talking #PowerSlap #SlapFighting #SlapFight #Viral #Sports.",
           "uploaded_at": "2026-09-11T22:07:28Z",
           "thumbnail": "https://i.ytimg.com/vi/g-2DEoij8dY/mqdefault.jpg",
-          "views": 2642,
-          "likes": 56,
+          "views": 2811,
+          "likes": 57,
           "comments": 0
         },
         {
@@ -580,8 +580,8 @@
           "title": "He Was Not Backing Down From Anyone #SlapFight #PowerSlap #SlapFighting #Viral #Sports.",
           "uploaded_at": "2026-09-11T16:04:35Z",
           "thumbnail": "https://i.ytimg.com/vi/t5oF0IsXkN0/mqdefault.jpg",
-          "views": 28121,
-          "likes": 350,
+          "views": 29658,
+          "likes": 351,
           "comments": 1
         },
         {
@@ -990,13 +990,13 @@
       "color": "#8B5CF6",
       "avatar_url": "https://yt3.ggpht.com/WKefM8i0bji48M_e159k6q0080b5zNwYExax_QloW7H3XguFARUF-SuE62a8rdPQJXvtTXxbJQ=s240-c-k-c0x00ffffff-no-rj",
       "subscribers": 0,
-      "total_views": 229,
+      "total_views": 302,
       "channel_total_videos": 10,
-      "avg_views_per_video": 22.9,
-      "engagement_rate": 0.4,
-      "total_likes": 1,
+      "avg_views_per_video": 30.2,
+      "engagement_rate": 1.0,
+      "total_likes": 3,
       "analytics": {
-        "watch_time_hours": 1.0,
+        "watch_time_hours": 1.3,
         "avg_view_duration": "0:24",
         "top_countries": [
           {
@@ -1135,8 +1135,8 @@
         "title": "Adorable Toddler Reacts In The Cutest Way #ToddlerLife #CutestMoments #FamilyMoments #WholesomeConte",
         "uploaded_at": "2026-09-12T17:39:42Z",
         "thumbnail": "https://i.ytimg.com/vi/goCoZBF3N_M/mqdefault.jpg",
-        "views": 222,
-        "likes": 1,
+        "views": 295,
+        "likes": 3,
         "comments": 0
       },
       "uploaded_videos": [
@@ -1146,8 +1146,8 @@
           "title": "Adorable Toddler Reacts In The Cutest Way #ToddlerLife #CutestMoments #FamilyMoments #WholesomeConte",
           "uploaded_at": "2026-09-12T17:39:42Z",
           "thumbnail": "https://i.ytimg.com/vi/goCoZBF3N_M/mqdefault.jpg",
-          "views": 222,
-          "likes": 1,
+          "views": 295,
+          "likes": 3,
           "comments": 0
         },
         {
@@ -1268,9 +1268,9 @@
       "color": "#EC4899",
       "avatar_url": "https://yt3.ggpht.com/pqIrk9GBtAR6cdyBH5C_kHNWA1jlu4VT9ZLKxdYTFW6IvVQLWbtFO3OUxrSV1Jm1SR0JAyTrAA=s240-c-k-c0x00ffffff-no-rj",
       "subscribers": 1,
-      "total_views": 12739,
+      "total_views": 12740,
       "channel_total_videos": 9,
-      "avg_views_per_video": 1415.4,
+      "avg_views_per_video": 1415.6,
       "engagement_rate": 0.7,
       "total_likes": 83,
       "analytics": {
@@ -1398,22 +1398,22 @@
         ],
         "peak_hours": "6:00 PM \u2013 10:30 PM IST (Peak Global Viewing Window)"
       },
-      "drive_folder_id": "",
-      "drive_folder_url": null,
+      "drive_folder_id": "1xZSez3F82y0pLTWJbQ-ybPjbOCqY1mrW",
+      "drive_folder_url": "https://drive.google.com/drive/folders/1xZSez3F82y0pLTWJbQ-ybPjbOCqY1mrW",
       "uploaded_count": 9,
-      "drive_queue_count": 0,
-      "runway_days": 0,
-      "stock_status": "Healthy",
+      "drive_queue_count": 139,
+      "runway_days": 69.5,
+      "stock_status": "Plentiful (69.5 days)",
       "stock_color": "#10B981",
-      "latest_run_status": "idle",
-      "latest_run_time": null,
+      "latest_run_status": "dry_run",
+      "latest_run_time": "2026-09-12T18:21:24.203025+00:00",
       "latest_uploaded_video": {
         "youtube_id": "23fs8X8RlyM",
         "youtube_url": "https://youtu.be/23fs8X8RlyM",
         "title": "Every Stroke Brings The Scene Closer To Life #Painting #ArtReels #Artist #ArtTransformation #Satisfy",
         "uploaded_at": "2026-09-11T09:08:18Z",
         "thumbnail": "https://i.ytimg.com/vi/23fs8X8RlyM/mqdefault.jpg",
-        "views": 1259,
+        "views": 1260,
         "likes": 8,
         "comments": 0
       },
@@ -1424,7 +1424,7 @@
           "title": "Every Stroke Brings The Scene Closer To Life #Painting #ArtReels #Artist #ArtTransformation #Satisfy",
           "uploaded_at": "2026-09-11T09:08:18Z",
           "thumbnail": "https://i.ytimg.com/vi/23fs8X8RlyM/mqdefault.jpg",
-          "views": 1259,
+          "views": 1260,
           "likes": 8,
           "comments": 0
         },
@@ -1509,7 +1509,20 @@
           "comments": 0
         }
       ],
-      "recent_runs": [],
+      "recent_runs": [
+        {
+          "started_at": "2026-09-12T18:21:22.107400+00:00",
+          "finished_at": "2026-09-12T18:21:24.203025+00:00",
+          "status": "dry_run",
+          "error": null
+        },
+        {
+          "started_at": "2026-09-12T18:21:10.178788+00:00",
+          "finished_at": "2026-09-12T18:21:10.186419+00:00",
+          "status": "failed",
+          "error": "Google Drive service account credentials missing (set GDRIVE_SERVICE_ACCOUNT_JSON env var)."
+        }
+      ],
       "is_active": true
     }
   ]
