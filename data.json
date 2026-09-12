@@ -1,28 +1,28 @@
 {
   "app_name": "Raj Tube Pro",
   "version": "6.0.0",
-  "timestamp": "2026-09-12T20:50:42.224104+00:00",
+  "timestamp": "2026-09-12T20:52:00.025651+00:00",
   "schedule": {
     "next_slot_iso": "2026-09-12T22:00:00+00:00",
-    "seconds_remaining": 4166,
-    "formatted_countdown": "01h 09m 26s",
+    "seconds_remaining": 4088,
+    "formatted_countdown": "01h 08m 08s",
     "slot_label": "06:00 PM USA (3:30 AM IST)",
-    "now_ist": "13 Sep, 02:20 AM IST"
+    "now_ist": "13 Sep, 02:21 AM IST"
   },
   "summary": {
     "total_channels": 6,
     "total_uploaded": 73,
     "total_in_queue": 687,
     "total_subscribers": 124,
-    "total_views": 131980,
-    "total_likes": 1234,
+    "total_views": 132145,
+    "total_likes": 1235,
     "network_engagement": 0.9,
     "total_runway_days": 57.2,
     "system_health": "All Systems Operational",
     "issues_count": 0,
     "top_trending_video": {
       "title": "He Was Not Backing Down From Anyone #SlapFight #PowerSlap #SlapFighting #Viral #Sports.",
-      "views": 36550,
+      "views": 36629,
       "likes": 352,
       "subscribers_gained": 30,
       "youtube_url": "https://youtu.be/t5oF0IsXkN0",
@@ -31,7 +31,7 @@
       "uploaded_at": "2026-09-11T16:04:35Z"
     },
     "analytics": {
-      "watch_time_hours": 554.3,
+      "watch_time_hours": 555.0,
       "avg_view_duration": "0:24",
       "top_countries": [
         {
@@ -174,10 +174,10 @@
         "is_clean": true
       },
       "view_health": {
-        "label": "YouTube API Verified: 1,808 avg views/video (131,980 total views across 73 videos)",
-        "badge": "1,808 AVG",
+        "label": "YouTube API Verified: 1,810 avg views/video (132,145 total views across 73 videos)",
+        "badge": "1,810 AVG",
         "color": "#10B981",
-        "avg_views": 1807.9,
+        "avg_views": 1810.2,
         "shorts_feed_share": "81.2%",
         "velocity_verdict": "Algorithm Reach: High"
       },
@@ -213,7 +213,7 @@
       "channel_total_videos": 4,
       "avg_views_per_video": 3377.0,
       "engagement_rate": 1.5,
-      "total_likes": 202,
+      "total_likes": 203,
       "analytics": {
         "watch_time_hours": 56.7,
         "avg_view_duration": "0:24",
@@ -395,7 +395,7 @@
         "uploaded_at": "2026-09-12T14:03:34Z",
         "thumbnail": "https://i.ytimg.com/vi/RMgm8o875X0/mqdefault.jpg",
         "views": 1526,
-        "likes": 22,
+        "likes": 23,
         "comments": 0,
         "subscribers_gained": 3
       },
@@ -407,7 +407,7 @@
           "uploaded_at": "2026-09-12T14:03:34Z",
           "thumbnail": "https://i.ytimg.com/vi/RMgm8o875X0/mqdefault.jpg",
           "views": 1526,
-          "likes": 22,
+          "likes": 23,
           "comments": 0,
           "subscribers_gained": 3
         },
@@ -490,13 +490,13 @@
       "color": "#F59E0B",
       "avatar_url": "https://yt3.ggpht.com/TTLhq8ijvpChRrWaVb1i96FzeFG02Gd31oOfWo4EdOtBtfqTD6h0TrRmEOTd2fE8V0kPexV6EA=s240-c-k-c0x00ffffff-no-rj",
       "subscribers": 66,
-      "total_views": 83455,
+      "total_views": 83611,
       "channel_total_videos": 11,
-      "avg_views_per_video": 7586.8,
+      "avg_views_per_video": 7601.0,
       "engagement_rate": 0.7,
       "total_likes": 607,
       "analytics": {
-        "watch_time_hours": 350.5,
+        "watch_time_hours": 351.2,
         "avg_view_duration": "0:24",
         "top_countries": [
           {
@@ -639,10 +639,10 @@
           "is_clean": true
         },
         "view_health": {
-          "label": "YouTube API Verified: 7,587 avg views/video (83,455 total views across 11 videos)",
-          "badge": "7,587 AVG",
+          "label": "YouTube API Verified: 7,601 avg views/video (83,611 total views across 11 videos)",
+          "badge": "7,601 AVG",
           "color": "#10B981",
-          "avg_views": 7586.8,
+          "avg_views": 7601.0,
           "shorts_feed_share": "81.2%",
           "velocity_verdict": "Algorithm Reach: High"
         },
@@ -698,7 +698,7 @@
           "title": "His Confidence Had The Whole Crowd Talking #PowerSlap #SlapFighting #SlapFight #Viral #Sports.",
           "uploaded_at": "2026-09-11T22:07:28Z",
           "thumbnail": "https://i.ytimg.com/vi/g-2DEoij8dY/mqdefault.jpg",
-          "views": 3992,
+          "views": 4069,
           "likes": 57,
           "comments": 0,
           "subscribers_gained": 4
@@ -709,7 +709,7 @@
           "title": "He Was Not Backing Down From Anyone #SlapFight #PowerSlap #SlapFighting #Viral #Sports.",
           "uploaded_at": "2026-09-11T16:04:35Z",
           "thumbnail": "https://i.ytimg.com/vi/t5oF0IsXkN0/mqdefault.jpg",
-          "views": 36550,
+          "views": 36629,
           "likes": 352,
           "comments": 1,
           "subscribers_gained": 30
@@ -1181,13 +1181,13 @@
       "color": "#8B5CF6",
       "avatar_url": "https://yt3.ggpht.com/WKefM8i0bji48M_e159k6q0080b5zNwYExax_QloW7H3XguFARUF-SuE62a8rdPQJXvtTXxbJQ=s240-c-k-c0x00ffffff-no-rj",
       "subscribers": 0,
-      "total_views": 869,
+      "total_views": 878,
       "channel_total_videos": 10,
-      "avg_views_per_video": 86.9,
+      "avg_views_per_video": 87.8,
       "engagement_rate": 0.8,
       "total_likes": 7,
       "analytics": {
-        "watch_time_hours": 3.6,
+        "watch_time_hours": 3.7,
         "avg_view_duration": "0:24",
         "top_countries": [
           {
@@ -1330,10 +1330,10 @@
           "is_clean": true
         },
         "view_health": {
-          "label": "Warm-Up Phase: 87 avg views/video (869 total views across 10 videos)",
-          "badge": "87 AVG",
+          "label": "Warm-Up Phase: 88 avg views/video (878 total views across 10 videos)",
+          "badge": "88 AVG",
           "color": "#F59E0B",
-          "avg_views": 86.9,
+          "avg_views": 87.8,
           "shorts_feed_share": "81.2%",
           "velocity_verdict": "Algorithm Reach: Healthy"
         },
@@ -1366,7 +1366,7 @@
         "title": "Adorable Toddler Reacts In The Cutest Way #ToddlerLife #CutestMoments #FamilyMoments #WholesomeConte",
         "uploaded_at": "2026-09-12T17:39:42Z",
         "thumbnail": "https://i.ytimg.com/vi/goCoZBF3N_M/mqdefault.jpg",
-        "views": 862,
+        "views": 871,
         "likes": 7,
         "comments": 0,
         "subscribers_gained": 0
@@ -1378,7 +1378,7 @@
           "title": "Adorable Toddler Reacts In The Cutest Way #ToddlerLife #CutestMoments #FamilyMoments #WholesomeConte",
           "uploaded_at": "2026-09-12T17:39:42Z",
           "thumbnail": "https://i.ytimg.com/vi/goCoZBF3N_M/mqdefault.jpg",
-          "views": 862,
+          "views": 871,
           "likes": 7,
           "comments": 0,
           "subscribers_gained": 0
@@ -2003,7 +2003,7 @@
           "is_compliant": true
         },
         "upload_engine": {
-          "latest_run": "dry_run",
+          "latest_run": "success",
           "queue_health": "Plentiful Runway (70.0 days)",
           "runway_days": 70.0,
           "total_uploaded": 26
@@ -2016,8 +2016,8 @@
       "runway_days": 70.0,
       "stock_status": "Plentiful (70.0 days)",
       "stock_color": "#10B981",
-      "latest_run_status": "dry_run",
-      "latest_run_time": "2026-09-12T20:46:17.129319+00:00",
+      "latest_run_status": "success",
+      "latest_run_time": "2026-09-12T20:49:12Z",
       "latest_uploaded_video": {
         "youtube_id": "RQRckO7D9Sg",
         "youtube_url": "https://youtu.be/RQRckO7D9Sg",
@@ -2318,6 +2318,12 @@
         }
       ],
       "recent_runs": [
+        {
+          "started_at": "2026-09-12T20:48:44Z",
+          "finished_at": "2026-09-12T20:49:12Z",
+          "status": "success",
+          "error": null
+        },
         {
           "started_at": "2026-09-12T20:46:16.287511+00:00",
           "finished_at": "2026-09-12T20:46:17.129319+00:00",
