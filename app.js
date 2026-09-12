@@ -146,27 +146,41 @@ function closeSidebarOnMobile() {
 }
 
 /* ========================================================
-   CHANNEL SWITCHER DROPDOWN
+   CHANNEL SWITCHER DROPDOWN / MOBILE BOTTOM SHEET
    ======================================================== */
 function setupChannelDropdown() {
   const trigger = document.getElementById('channel-switcher-trigger');
+  const mobileSwitchBtn = document.getElementById('m-hero-switch-btn');
   const dropdown = document.getElementById('channel-dropdown');
   const backdrop = document.getElementById('studio-backdrop');
+  const sheetHandle = document.getElementById('bottom-sheet-handle');
 
-  if (trigger) {
-    trigger.addEventListener('click', (e) => {
-      e.stopPropagation();
-      const isOpen = dropdown.classList.contains('open');
-      dropdown.classList.toggle('open', !isOpen);
-      backdrop.classList.toggle('active', !isOpen);
-    });
-  }
+  const openSheet = () => {
+    dropdown.classList.add('open');
+    backdrop.classList.add('active');
+  };
+
+  const closeSheet = () => {
+    dropdown.classList.remove('open');
+    backdrop.classList.remove('active');
+  };
+
+  const toggleSheet = (e) => {
+    if (e) e.stopPropagation();
+    const isOpen = dropdown.classList.contains('open');
+    if (isOpen) closeSheet();
+    else openSheet();
+  };
+
+  if (trigger) trigger.addEventListener('click', toggleSheet);
+  if (mobileSwitchBtn) mobileSwitchBtn.addEventListener('click', toggleSheet);
+  if (backdrop) backdrop.addEventListener('click', closeSheet);
+  if (sheetHandle) sheetHandle.addEventListener('click', closeSheet);
 
   const copyMobileBtn = document.getElementById('btn-copy-mobile-url');
   if (copyMobileBtn) {
     copyMobileBtn.addEventListener('click', () => {
-      dropdown.classList.remove('open');
-      backdrop.classList.remove('active');
+      closeSheet();
       copyToClipboard(REMOTE_URL, "Mobile 4G/5G URL copied to clipboard!");
     });
   }

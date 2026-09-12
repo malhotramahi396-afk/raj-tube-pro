@@ -1,5 +1,5 @@
-// Service Worker for Raj Tube Pro - v4.0 Network First
-const CACHE_NAME = 'raj-tube-pro-v4';
+// Service Worker for Raj Tube Pro - v5.0 Network First
+const CACHE_NAME = 'raj-tube-pro-v5';
 
 self.addEventListener('install', (event) => {
   self.skipWaiting();

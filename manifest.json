@@ -1,21 +1,22 @@
 {
-  "name": "Raj Tube Pro - Autonomous YouTube Studio",
-  "short_name": "RajTubePro",
-  "description": "Autonomous YouTube Automation Command Center & Real-Time Channel Telemetry",
-  "start_url": "/",
+  "name": "YouTube Studio",
+  "short_name": "Studio",
+  "description": "YouTube Studio Channel Dashboard & Management Center",
+  "start_url": "./",
+  "scope": "./",
   "display": "standalone",
-  "background_color": "#0B0F19",
-  "theme_color": "#EF4444",
+  "background_color": "#0f0f0f",
+  "theme_color": "#0f0f0f",
   "orientation": "portrait-primary",
   "icons": [
     {
-      "src": "/icons/icon-192.png",
+      "src": "./icons/icon-192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "/icons/icon-512.png",
+      "src": "./icons/icon-512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"

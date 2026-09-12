@@ -201,6 +201,10 @@ button {
 /* ========================================================
    CHANNEL SWITCHER DROPDOWN POPUP
    ======================================================== */
+.bottom-sheet-handle {
+  display: none;
+}
+
 .channel-dropdown {
   position: fixed;
   top: 60px;
@@ -1302,24 +1306,47 @@ button {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 768px) {
   .analytics-stat-chips {
     flex-direction: column;
     gap: 10px;
   }
 
+  /* Compact Horizontal YouTube Shorts Layout for Mobile Phone */
   .latest-media-wrap {
-    flex-direction: column;
-    gap: 10px;
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: flex-start !important;
+    gap: 12px !important;
+    margin-bottom: 12px !important;
   }
 
   .latest-thumb-box {
-    width: 100%;
-    aspect-ratio: 16 / 9;
+    width: 72px !important;
+    height: 112px !important;
+    aspect-ratio: 9 / 16 !important;
+    border-radius: 8px !important;
+    overflow: hidden !important;
+    flex-shrink: 0 !important;
+    position: relative !important;
+    background: #000 !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5) !important;
+  }
+
+  .latest-thumb-box img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    display: block !important;
   }
 
   .studio-header {
     padding: 0 12px;
+    height: 48px;
+  }
+
+  #btn-toggle-sidebar {
+    display: none !important;
   }
 
   .btn-create span {
@@ -1329,12 +1356,8 @@ button {
   .btn-create {
     padding: 0 8px;
     width: 36px;
+    height: 34px;
     justify-content: center;
-  }
-
-  .channel-dropdown {
-    width: calc(100vw - 24px);
-    right: 12px;
   }
 }
 
@@ -1810,16 +1833,26 @@ button {
   display: none;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 768px) {
+  /* Hide redundant desktop headers & large banners on mobile phone */
+  .page-title-row {
+    display: none !important;
+  }
+
+  .live-data-badge-banner {
+    display: none !important;
+  }
+
+  /* Authentic YouTube Studio Mobile Channel Profile Bar */
   .mobile-channel-hero {
-    display: flex;
+    display: flex !important;
     align-items: center;
     justify-content: space-between;
     background: #181818;
     border: 1px solid #282828;
     border-radius: 12px;
-    padding: 12px 14px;
-    margin-bottom: 14px;
+    padding: 10px 14px;
+    margin-bottom: 12px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
     gap: 10px;
   }
@@ -1829,24 +1862,33 @@ button {
     align-items: center;
     gap: 12px;
     min-width: 0;
+    flex: 1;
   }
 
+  /* Strict circular sizing for avatar to prevent giant images on mobile */
+  .m-avatar-wrap,
   .m-hero-avatar-box {
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    overflow: hidden;
-    flex-shrink: 0;
-    border: 2px solid var(--yt-red);
-    box-shadow: 0 0 10px rgba(255, 0, 0, 0.3);
+    width: 44px !important;
+    height: 44px !important;
+    min-width: 44px !important;
+    max-width: 44px !important;
+    border-radius: 50% !important;
+    overflow: hidden !important;
+    flex-shrink: 0 !important;
+    border: 2px solid var(--yt-red) !important;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.3) !important;
+    background: #222;
   }
 
+  .m-avatar-wrap img,
   .m-hero-avatar-box img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    display: block !important;
   }
 
+  .m-hero-meta,
   .m-hero-info {
     display: flex;
     flex-direction: column;
@@ -1917,6 +1959,50 @@ button {
   .m-hero-switch-btn:active {
     background: #333333;
     transform: scale(0.96);
+  }
+
+  /* Native Mobile Bottom Sheet for Channel Switcher */
+  .bottom-sheet-handle {
+    display: block !important;
+    width: 38px;
+    height: 4px;
+    background: #555;
+    border-radius: 2px;
+    margin: 10px auto 4px auto;
+    cursor: pointer;
+  }
+
+  .channel-dropdown {
+    position: fixed !important;
+    top: auto !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    border-radius: 20px 20px 0 0 !important;
+    background: #1e1e1e !important;
+    border: 1px solid #333 !important;
+    border-bottom: none !important;
+    box-shadow: 0 -8px 36px rgba(0, 0, 0, 0.8) !important;
+    z-index: 2500 !important;
+    transform: translateY(100%);
+    transition: transform 0.28s cubic-bezier(0.33, 1, 0.68, 1);
+    display: flex !important;
+    visibility: hidden;
+    padding-bottom: env(safe-area-inset-bottom, 24px);
+    max-height: 80vh;
+  }
+
+  .channel-dropdown.open {
+    transform: translateY(0) !important;
+    visibility: visible !important;
+  }
+
+  .channel-options-list {
+    max-height: 48vh !important;
+    overflow-y: auto !important;
+    -webkit-overflow-scrolling: touch;
   }
 }
 

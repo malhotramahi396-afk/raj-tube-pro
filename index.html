@@ -3,28 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
-  <title>Channel dashboard - YouTube Studio</title>
+  <title>YouTube Studio</title>
   <meta name="description" content="YouTube Studio Channel Dashboard and Management Center">
   <meta name="theme-color" content="#0f0f0f">
+  <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <link rel="icon" type="image/png" href="https://www.gstatic.com/youtube/img/creator/favicon/favicon_144.png">
-  <link rel="stylesheet" href="./styles.css?v=9.0">
+  <meta name="apple-mobile-web-app-title" content="Studio">
+  <link rel="manifest" href="./manifest.json">
+  <link rel="icon" type="image/png" sizes="192x192" href="./icons/icon-192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="./icons/icon-512.png">
+  <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png">
+  <link rel="shortcut icon" href="./icons/icon-192.png">
+  <link rel="stylesheet" href="./styles.css?v=11.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <!-- Chart.js -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <!-- Force cache clear on mobile to prevent stale PWA cache -->
+  <!-- Register PWA Service Worker for Native App Installation -->
   <script>
     if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.getRegistrations().then(function(regs) {
-        for (let r of regs) r.unregister();
-      });
-    }
-    if ('caches' in window) {
-      caches.keys().then(function(names) {
-        for (let n of names) caches.delete(n);
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('./sw.js?v=4.2').catch(() => {});
       });
     }
   </script>
@@ -88,8 +89,9 @@
     </div>
   </header>
 
-  <!-- CHANNEL SWITCHER DROPDOWN MENU (Pop-up) -->
+  <!-- CHANNEL SWITCHER DROPDOWN MENU / MOBILE BOTTOM SHEET -->
   <div class="channel-dropdown" id="channel-dropdown">
+    <div class="bottom-sheet-handle" id="bottom-sheet-handle"></div>
     <div class="dropdown-header">
       <div class="user-info-row">
         <img id="dropdown-user-avatar" src="https://ui-avatars.com/api/?name=YT&background=333&color=fff" alt="Avatar" />
