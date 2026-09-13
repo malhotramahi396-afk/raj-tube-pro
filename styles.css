@@ -552,13 +552,20 @@ button {
    ======================================================== */
 .studio-main {
   flex: 1;
-  padding: 24px 32px 48px 32px;
-  max-width: 1400px;
+  min-width: 0;
+  width: 100%;
+  padding: 20px 24px 48px 24px;
+  max-width: 100%;
+  box-sizing: border-box;
   overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .tab-view {
   display: none;
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
 }
 
 .tab-view.active {
@@ -569,11 +576,15 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
+  width: 100%;
+  min-width: 0;
+  flex-wrap: wrap;
+  gap: 12px;
 }
 
 .page-title {
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 500;
   letter-spacing: -0.01em;
   color: var(--yt-text-primary);
@@ -603,14 +614,20 @@ button {
    ======================================================== */
 .studio-grid-2col {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 24px;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 20px;
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
 }
 
 .grid-col {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 20px;
+  min-width: 0;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 /* ========================================================
@@ -623,6 +640,9 @@ button {
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  min-width: 0;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .yt-card-header {
@@ -870,20 +890,26 @@ button {
 
 .dash-summary-tiles {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 8px;
   margin-top: 8px;
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
 }
 
 .dash-stat-tile {
   background: #181818;
   border: 1px solid #282828;
   border-radius: 8px;
-  padding: 10px 8px;
+  padding: 10px 6px;
   text-align: center;
   display: flex;
   flex-direction: column;
   gap: 3px;
+  min-width: 0;
+  overflow: hidden;
+  box-sizing: border-box;
 }
 
 .stat-tile-label {
@@ -1249,6 +1275,46 @@ button {
 /* Mobile Content Cards (Hidden on PC/Laptop) */
 .mobile-video-cards-list {
   display: none;
+}
+
+/* ========================================================
+   RESPONSIVE DESIGN: LAPTOP & MEDIUM SCREENS (901px - 1280px)
+   ======================================================== */
+@media (max-width: 1280px) {
+  :root {
+    --sidebar-width: 220px;
+  }
+  .studio-main {
+    padding: 18px 20px 48px 20px;
+  }
+  .studio-grid-2col {
+    gap: 16px;
+  }
+  .grid-col {
+    gap: 16px;
+  }
+  .header-center {
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 1080px) {
+  :root {
+    --sidebar-width: 200px;
+  }
+  .studio-main {
+    padding: 16px 16px 48px 16px;
+  }
+  .live-badge-text {
+    display: none;
+  }
+}
+
+@media (max-width: 980px) {
+  .studio-grid-2col {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 16px;
+  }
 }
 
 /* ========================================================
