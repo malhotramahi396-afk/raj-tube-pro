@@ -151,6 +151,15 @@ button {
   background: rgba(255, 255, 255, 0.1);
 }
 
+.btn-refresh.spinning svg {
+  animation: ytSpin 1s linear infinite;
+}
+
+@keyframes ytSpin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
 .btn-create {
   background: transparent;
   border: 1px solid #333333;
