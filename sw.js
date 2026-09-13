@@ -1,5 +1,5 @@
-// Service Worker for Raj Tube Pro - v19.0 (Strict Zero-Stale Data Cache)
-const CACHE_NAME = 'raj-tube-pro-v19';
+// Service Worker for Raj Tube Pro - v20.0 (Strict Zero-Stale Data Cache)
+const CACHE_NAME = 'raj-tube-pro-v20';
 
 self.addEventListener('install', (event) => {
   self.skipWaiting();
