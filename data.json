@@ -1,13 +1,13 @@
 {
   "app_name": "Raj Tube Pro",
   "version": "6.0.0",
-  "timestamp": "2026-09-13T21:40:56.672047+00:00",
+  "timestamp": "2026-09-13T22:14:48.420684+00:00",
   "schedule": {
     "next_slot_iso": "2026-09-14T14:00:00+00:00",
-    "seconds_remaining": 58743,
-    "formatted_countdown": "16h 19m 03s",
+    "seconds_remaining": 56711,
+    "formatted_countdown": "15h 45m 11s",
     "slot_label": "10:00 AM USA (7:30 PM IST Tomorrow)",
-    "now_ist": "14 Sep, 03:10 AM IST"
+    "now_ist": "14 Sep, 03:44 AM IST"
   },
   "summary": {
     "total_channels": 10,
@@ -15,7 +15,7 @@
     "total_in_queue": 1257,
     "total_subscribers": 266,
     "total_views": 202497,
-    "total_likes": 2401,
+    "total_likes": 2403,
     "network_engagement": 0.9,
     "total_runway_days": 62.9,
     "system_health": "All Systems Operational",
@@ -394,7 +394,7 @@
       "subscribers": 72,
       "total_views": 24039,
       "channel_total_videos": 7,
-      "avg_views_per_video": 7396,
+      "avg_views_per_video": 7501,
       "engagement_rate": 1.3,
       "total_likes": 543,
       "analytics": {
@@ -589,7 +589,7 @@
           "title": "Dangerous Stare Caught On 4K Camera #wildlife #cameraman #shorts #viral",
           "uploaded_at": "2026-09-13T14:03:47Z",
           "thumbnail": "https://i.ytimg.com/vi/7M2CTdKBQ6M/mqdefault.jpg",
-          "views": 699,
+          "views": 641,
           "likes": 10,
           "comments": 0,
           "subscribers_gained": 1
@@ -600,7 +600,7 @@
           "title": "Danger At Point Blank Range #wildlife #shorts #animalencounter #fyp",
           "uploaded_at": "2026-09-12T22:03:51Z",
           "thumbnail": "https://i.ytimg.com/vi/H511dz4lsLQ/mqdefault.jpg",
-          "views": 2050,
+          "views": 2066,
           "likes": 13,
           "comments": 0,
           "subscribers_gained": 3
@@ -611,7 +611,7 @@
           "title": "Close Enough To Hear His Breath #wildlife #shorts #cameraman #viral",
           "uploaded_at": "2026-09-12T14:03:34Z",
           "thumbnail": "https://i.ytimg.com/vi/RMgm8o875X0/mqdefault.jpg",
-          "views": 23060,
+          "views": 23664,
           "likes": 303,
           "comments": 1,
           "subscribers_gained": 38
@@ -622,7 +622,7 @@
           "title": "Caught In 4K By The Hidden Cameraman #nature #wildlifephotography #shorts #reels",
           "uploaded_at": "2026-09-11T22:03:59Z",
           "thumbnail": "https://i.ytimg.com/vi/EwZLPUyf2LA/mqdefault.jpg",
-          "views": 1893,
+          "views": 1883,
           "likes": 17,
           "comments": 0,
           "subscribers_gained": 3
@@ -633,7 +633,7 @@
           "title": "Breathtaking 4K Wildlife Moment #wildlifephotography #shorts #naturelovers #viral",
           "uploaded_at": "2026-09-11T14:42:29Z",
           "thumbnail": "https://i.ytimg.com/vi/3pDpmQcqJT8/mqdefault.jpg",
-          "views": 15393,
+          "views": 15469,
           "likes": 194,
           "comments": 1,
           "subscribers_gained": 26
@@ -709,9 +709,9 @@
       "subscribers": 4,
       "total_views": 4962,
       "channel_total_videos": 22,
-      "avg_views_per_video": 318,
+      "avg_views_per_video": 319,
       "engagement_rate": 0.7,
-      "total_likes": 53,
+      "total_likes": 52,
       "analytics": {
         "watch_time_hours": 28.0,
         "avg_view_duration": "0:24",
@@ -915,8 +915,8 @@
           "title": "Grandma Carried The Entire Team Like A True Champion #GrandmaGamer #Esports #Gaming #GamingLegend #P",
           "uploaded_at": "2026-09-12T22:15:20Z",
           "thumbnail": "https://i.ytimg.com/vi/dmg14otnq3A/mqdefault.jpg",
-          "views": 147,
-          "likes": 1,
+          "views": 164,
+          "likes": 0,
           "comments": 0,
           "subscribers_gained": 0
         },
@@ -948,7 +948,7 @@
           "title": "Grandma Carried The Entire Team Before The Final Round #GrandmaGamer #Esports #Gaming #GamingLegend",
           "uploaded_at": "2026-09-06T07:56:52Z",
           "thumbnail": "https://i.ytimg.com/vi/25WeY0ADjJw/mqdefault.jpg",
-          "views": 763,
+          "views": 762,
           "likes": 7,
           "comments": 1,
           "subscribers_gained": 0
@@ -959,7 +959,7 @@
           "title": "Grandma Carried The Entire Team Against All Odds #GrandmaGamer #Esports #Gaming #GamingLegend #Pro",
           "uploaded_at": "2026-09-03T19:41:54Z",
           "thumbnail": "https://i.ytimg.com/vi/Snv1EqqVbHc/mqdefault.jpg",
-          "views": 1107,
+          "views": 1108,
           "likes": 7,
           "comments": 0,
           "subscribers_gained": 1
@@ -970,7 +970,7 @@
           "title": "Everyone Laughed Until Grandma Played Without Fear #GrandmaGamer #Esports #Gaming #GamingLegend #Pro",
           "uploaded_at": "2026-08-30T19:01:27Z",
           "thumbnail": "https://i.ytimg.com/vi/njyeU3r3aeo/mqdefault.jpg",
-          "views": 542,
+          "views": 541,
           "likes": 3,
           "comments": 0,
           "subscribers_gained": 0
@@ -1183,9 +1183,9 @@
       "subscribers": 93,
       "total_views": 92442,
       "channel_total_videos": 15,
-      "avg_views_per_video": 7659,
+      "avg_views_per_video": 7695,
       "engagement_rate": 0.7,
-      "total_likes": 817,
+      "total_likes": 820,
       "analytics": {
         "watch_time_hours": 431.6,
         "avg_view_duration": "0:24",
@@ -1382,8 +1382,8 @@
           "title": "Nobody Wanted To Miss The Next Second #SlapFight #SlapFighting #PowerSlap #Viral #CombatSports.",
           "uploaded_at": "2026-09-13T14:13:36Z",
           "thumbnail": "https://i.ytimg.com/vi/jcBToYBlKTA/mqdefault.jpg",
-          "views": 1733,
-          "likes": 28,
+          "views": 1878,
+          "likes": 30,
           "comments": 2,
           "subscribers_gained": 1
         },
@@ -1404,7 +1404,7 @@
           "title": "Nobody Wanted To Blink During This Moment #SlapFighting #PowerSlap #FightNight #FYP #Viral.",
           "uploaded_at": "2026-09-12T22:06:45Z",
           "thumbnail": "https://i.ytimg.com/vi/sEMtoFAjmrs/mqdefault.jpg",
-          "views": 1944,
+          "views": 1969,
           "likes": 19,
           "comments": 0,
           "subscribers_gained": 2
@@ -1415,7 +1415,7 @@
           "title": "Nobody Expected That Faceoff Reaction #SlapFighting #PowerSlap #SlapBattle #CombatSports #Viral.",
           "uploaded_at": "2026-09-12T14:06:29Z",
           "thumbnail": "https://i.ytimg.com/vi/7OVj2yza4ks/mqdefault.jpg",
-          "views": 3568,
+          "views": 3570,
           "likes": 33,
           "comments": 2,
           "subscribers_gained": 3
@@ -1426,7 +1426,7 @@
           "title": "His Confidence Had The Whole Crowd Talking #PowerSlap #SlapFighting #SlapFight #Viral #Sports.",
           "uploaded_at": "2026-09-11T22:07:28Z",
           "thumbnail": "https://i.ytimg.com/vi/g-2DEoij8dY/mqdefault.jpg",
-          "views": 13628,
+          "views": 13843,
           "likes": 182,
           "comments": 0,
           "subscribers_gained": 10
@@ -1437,8 +1437,8 @@
           "title": "He Was Not Backing Down From Anyone #SlapFight #PowerSlap #SlapFighting #Viral #Sports.",
           "uploaded_at": "2026-09-11T16:04:35Z",
           "thumbnail": "https://i.ytimg.com/vi/t5oF0IsXkN0/mqdefault.jpg",
-          "views": 42820,
-          "likes": 360,
+          "views": 42915,
+          "likes": 361,
           "comments": 1,
           "subscribers_gained": 35
         },
@@ -1448,7 +1448,7 @@
           "title": "He Walked Up Like He Owned The Arena #PowerSlap #SlapFight #SlapFighting #Viral #Sports",
           "uploaded_at": "2026-09-11T09:08:50Z",
           "thumbnail": "https://i.ytimg.com/vi/WIWsbArcAp4/mqdefault.jpg",
-          "views": 1800,
+          "views": 1830,
           "likes": 13,
           "comments": 1,
           "subscribers_gained": 1
@@ -1459,7 +1459,7 @@
           "title": "He Never Broke Eye Contact #PowerSlap #SlapFighting #SlapFight #Highlights #Viral",
           "uploaded_at": "2026-09-07T19:35:28Z",
           "thumbnail": "https://i.ytimg.com/vi/L7SEmcVIsS0/mqdefault.jpg",
-          "views": 4448,
+          "views": 4445,
           "likes": 33,
           "comments": 0,
           "subscribers_gained": 4
@@ -1470,7 +1470,7 @@
           "title": "He Looked Ready For The Biggest Hit Of His Life #PowerSlap #SlapFight #FightNight #Highlights #FYP",
           "uploaded_at": "2026-09-06T07:20:35Z",
           "thumbnail": "https://i.ytimg.com/vi/EU0lTDiLM2Y/mqdefault.jpg",
-          "views": 7351,
+          "views": 7350,
           "likes": 11,
           "comments": 0,
           "subscribers_gained": 5
@@ -1525,7 +1525,7 @@
           "title": "Everyone Could Feel The Pressure #SlapFighting #PowerSlap #SlapFight #Viral #Highlights",
           "uploaded_at": "2026-08-25T19:55:30Z",
           "thumbnail": "https://i.ytimg.com/vi/0XG0Q-mvSg0/mqdefault.jpg",
-          "views": 4655,
+          "views": 4654,
           "likes": 16,
           "comments": 0,
           "subscribers_gained": 4
@@ -1785,7 +1785,7 @@
           "title": "He Is Working Harder Than Everyone Around Him #PandaTok #Panda #Funny #Viral #CuteAnimals.",
           "uploaded_at": "2026-09-13T14:05:00Z",
           "thumbnail": "https://i.ytimg.com/vi/IRd-62lVRrk/mqdefault.jpg",
-          "views": 0,
+          "views": 3,
           "likes": 0,
           "comments": 0,
           "subscribers_gained": 0
@@ -1993,7 +1993,7 @@
       "subscribers": 42,
       "total_views": 21156,
       "channel_total_videos": 13,
-      "avg_views_per_video": 2969,
+      "avg_views_per_video": 3007,
       "engagement_rate": 0.8,
       "total_likes": 281,
       "analytics": {
@@ -2210,7 +2210,7 @@
           "title": "Adorable Toddler Reacts In The Cutest Way #ToddlerLife #CutestMoments #FamilyMoments #WholesomeConte",
           "uploaded_at": "2026-09-12T17:39:42Z",
           "thumbnail": "https://i.ytimg.com/vi/goCoZBF3N_M/mqdefault.jpg",
-          "views": 35045,
+          "views": 35499,
           "likes": 279,
           "comments": 3,
           "subscribers_gained": 42
@@ -2309,7 +2309,7 @@
           "title": "Adorable Toddler Discovers Something New #ToddlerLife #CutestMoments #FamilyMoments #WholesomeConten",
           "uploaded_at": "2026-08-24T18:51:19Z",
           "thumbnail": "https://i.ytimg.com/vi/uyjCXgfWTOY/mqdefault.jpg",
-          "views": 44,
+          "views": 45,
           "likes": 0,
           "comments": 0,
           "subscribers_gained": 0
@@ -2368,7 +2368,7 @@
       "subscribers": 5,
       "total_views": 12933,
       "channel_total_videos": 13,
-      "avg_views_per_video": 1267,
+      "avg_views_per_video": 1279,
       "engagement_rate": 0.9,
       "total_likes": 140,
       "analytics": {
@@ -2563,7 +2563,7 @@
           "title": "From Empty Canvas To A Beautiful Landmark #Painting #ArtReels #ArtTransformation #Artist #ViralArt.",
           "uploaded_at": "2026-09-13T14:15:33Z",
           "thumbnail": "https://i.ytimg.com/vi/vvKBBEExuYQ/mqdefault.jpg",
-          "views": 5,
+          "views": 6,
           "likes": 0,
           "comments": 0,
           "subscribers_gained": 0
@@ -2574,7 +2574,7 @@
           "title": "Everyone Wanted To See The Finished Canvas #Painting #ArtReels #ArtReveal #Artist #Viral.",
           "uploaded_at": "2026-09-12T22:15:13Z",
           "thumbnail": "https://i.ytimg.com/vi/ZlNJrHYRPoU/mqdefault.jpg",
-          "views": 1525,
+          "views": 1541,
           "likes": 26,
           "comments": 1,
           "subscribers_gained": 0
@@ -2585,7 +2585,7 @@
           "title": "Everyone Stopped To Watch This Artist Work #StreetArt #Artist #Painting #ArtReels #Viral.",
           "uploaded_at": "2026-09-12T18:28:10Z",
           "thumbnail": "https://i.ytimg.com/vi/E7vzDp7HUIM/mqdefault.jpg",
-          "views": 908,
+          "views": 1025,
           "likes": 31,
           "comments": 1,
           "subscribers_gained": 0
@@ -2596,7 +2596,7 @@
           "title": "Every Stroke Brings The Scene Closer To Life #Painting #ArtReels #Artist #ArtTransformation #Satisfy",
           "uploaded_at": "2026-09-11T09:08:18Z",
           "thumbnail": "https://i.ytimg.com/vi/23fs8X8RlyM/mqdefault.jpg",
-          "views": 1292,
+          "views": 1294,
           "likes": 8,
           "comments": 0,
           "subscribers_gained": 0
@@ -2960,7 +2960,7 @@
           "title": "Every Champion Has A Beginning Before The Final Whistle #Football #Soccer #FootballStory #FootballLi",
           "uploaded_at": "2026-09-12T20:49:22Z",
           "thumbnail": "https://i.ytimg.com/vi/RQRckO7D9Sg/mqdefault.jpg",
-          "views": 16,
+          "views": 18,
           "likes": 0,
           "comments": 0,
           "subscribers_gained": 0
@@ -3495,7 +3495,7 @@
           "title": "The Most Precious Panda Moment #BabyPanda #CutePanda #PandaLife #Shorts #Reels #ViralVideo #FYP #Cut",
           "uploaded_at": "2026-09-13T12:15:05Z",
           "thumbnail": "https://i.ytimg.com/vi/vIKxeWBswiQ/mqdefault.jpg",
-          "views": 2,
+          "views": 7,
           "likes": 0,
           "comments": 0,
           "subscribers_gained": 0
@@ -3517,7 +3517,7 @@
           "title": "Nobody Can Be Mad At This Panda #BabyPanda #CutePanda #PandaLife #Shorts #Reels #ViralVideo #FYP #Cu",
           "uploaded_at": "2026-09-12T21:20:35Z",
           "thumbnail": "https://i.ytimg.com/vi/mFI2RC-9LdQ/mqdefault.jpg",
-          "views": 6,
+          "views": 9,
           "likes": 0,
           "comments": 0,
           "subscribers_gained": 0
@@ -3933,7 +3933,7 @@
       "subscribers": 17,
       "total_views": 24782,
       "channel_total_videos": 30,
-      "avg_views_per_video": 939,
+      "avg_views_per_video": 938,
       "engagement_rate": 0.8,
       "total_likes": 229,
       "analytics": {
@@ -4128,7 +4128,7 @@
           "title": "Hollywood's Biggest Secret Revealed Behind Closed Doors #BehindTheScenes #Hollywood #MovieMagic #Fil",
           "uploaded_at": "2026-09-13T12:05:10Z",
           "thumbnail": "https://i.ytimg.com/vi/zi3GOAA3zqA/mqdefault.jpg",
-          "views": 425,
+          "views": 426,
           "likes": 4,
           "comments": 0,
           "subscribers_gained": 0
@@ -4139,7 +4139,7 @@
           "title": "Hollywood's Biggest Secret Revealed Before Release #BehindTheScenes #Hollywood #MovieMagic #FilmMaki",
           "uploaded_at": "2026-09-12T22:04:36Z",
           "thumbnail": "https://i.ytimg.com/vi/9JKlXA-ehIs/mqdefault.jpg",
-          "views": 878,
+          "views": 836,
           "likes": 12,
           "comments": 0,
           "subscribers_gained": 0
