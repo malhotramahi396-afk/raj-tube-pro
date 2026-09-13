@@ -1,5 +1,5 @@
-// Service Worker for Raj Tube Pro - v22.0 (Responsive Layout Perfect Fit)
-const CACHE_NAME = 'raj-tube-pro-v22';
+// Service Worker for Raj Tube Pro - v23.0 (Master Brand Logo & Cyber Neon Glow)
+const CACHE_NAME = 'raj-tube-pro-v23';
 
 self.addEventListener('install', (event) => {
   self.skipWaiting();

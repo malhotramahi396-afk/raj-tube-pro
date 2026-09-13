@@ -478,7 +478,7 @@ function updateChannelIdentity(channel) {
     if (mHandle) mHandle.innerText = channel.handle;
     if (mSubs) mSubs.innerText = formatNumber(channel.subscribers || 0);
   } else {
-    const avatar = "https://ui-avatars.com/api/?name=Fleet&background=333&color=fff";
+    const avatar = "./logo.png";
     headerAvatar.src = avatar;
     sidebarAvatar.src = avatar;
     dropdownAvatar.src = avatar;
