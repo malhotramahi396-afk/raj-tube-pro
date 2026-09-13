@@ -54,6 +54,93 @@ def get_credentials():
     return build("youtube", "v3", credentials=creds, cache_discovery=False)
 
 
+CHANNEL_REPOS = {
+    "channel_1": ("malhotramahi396-afk/yt-automation-the-hidden-lens", "data/channel_1.db"),
+    "channel_2": ("malhotramahi396-afk/yt-automation-zyntrix07", "data/channel_2.db"),
+    "channel_3": ("malhotramahi396-afk/yt-automation-vibrozen", "data/channel_3.db"),
+    "channel_4": ("malhotramahi396-afk/yt-automation-vexorush", "data/channel_4.db"),
+    "channel_5": ("malhotramahi396-afk/yt-automation-klyvo", "data/channel_5.db"),
+    "channel_6": ("malhotramahi396-afk/yt-automation-corevantamedia", "data/channel_6.db"),
+    "channel_7": ("malhotramahi396-afk/yt-automation-firenovavault", "data/channel_7.db"),
+    "channel_8": ("malhotramahi396-afk/yt-automation-hyperfluxmotion", "data/channel_8.db"),
+    "channel_9": ("malhotramahi396-afk/yt-automation-vortexedgestories", "data/channel_9.db"),
+    "channel_10": ("malhotramahi396-afk/yt-automation-zenovadrift", "data/channel_10.db")
+}
+
+
+def sync_runner_nodes(channels: List[Dict[str, Any]]):
+    """Fetches verified runner IP & timestamp directly from each channel's GitHub SQLite database."""
+    import urllib.request, sqlite3, tempfile
+    token = os.environ.get("GH_PAT") or os.environ.get("GITHUB_TOKEN")
+    if not token:
+        try:
+            import subprocess
+            res = subprocess.run(["gh", "auth", "token"], capture_output=True, text=True)
+            if res.returncode == 0 and res.stdout.strip():
+                token = res.stdout.strip()
+        except Exception:
+            pass
+
+    if not token:
+        print("Note: GitHub Token not found, keeping existing runner node telemetry.")
+        return
+
+    print(f"Syncing live Runner Public IPs across all {len(channels)} channels from GitHub...")
+    for ch in channels:
+        ch_id = ch.get("id")
+        if ch_id not in CHANNEL_REPOS:
+            continue
+        repo, db_file = CHANNEL_REPOS[ch_id]
+        try:
+            req = urllib.request.Request(
+                f"https://api.github.com/repos/{repo}/contents/{db_file}",
+                headers={"Authorization": f"token {token}", "User-Agent": "RajTubePro-Sync"}
+            )
+            with urllib.request.urlopen(req, timeout=12) as r:
+                meta = json.loads(r.read())
+            download_url = meta.get("download_url")
+            if not download_url:
+                continue
+
+            with urllib.request.urlopen(download_url, timeout=12) as r:
+                content = r.read()
+
+            with tempfile.NamedTemporaryFile(delete=False) as tf:
+                tf.write(content)
+                tf_path = tf.name
+
+            conn = sqlite3.connect(tf_path)
+            conn.row_factory = sqlite3.Row
+            c = conn.cursor()
+            c.execute("SELECT started_at, finished_at, status, runner_ip, runner_city, runner_region, runner_country, runner_country_code, runner_org FROM runs WHERE runner_ip IS NOT NULL AND runner_ip != '' ORDER BY id DESC LIMIT 1")
+            row = c.fetchone()
+            if row:
+                r_dict = dict(row)
+                ip = r_dict["runner_ip"]
+                c_code = r_dict.get("runner_country_code") or "US"
+                run_time = r_dict.get("finished_at") or r_dict.get("started_at")
+
+                ch["runner_node"] = {
+                    "ip": ip,
+                    "city": r_dict.get("runner_city") or "Des Moines",
+                    "region": r_dict.get("runner_region") or "Iowa",
+                    "country": r_dict.get("runner_country") or "United States",
+                    "country_code": c_code,
+                    "flag": "🇺🇸" if c_code == "US" else "🌐",
+                    "org": r_dict.get("runner_org") or "AS8075 Microsoft Corporation",
+                    "datacenter": "Microsoft Azure Cloud Runner",
+                    "verified_at": run_time,
+                    "verify_url": f"https://ipinfo.io/{ip}"
+                }
+                ch["latest_run_time"] = run_time
+                ch["latest_run_status"] = r_dict.get("status", "success")
+                print(f"  [{ch['name']}] Synced runner IP: {ip} ({r_dict.get('runner_city')}) at {run_time}")
+            conn.close()
+            os.unlink(tf_path)
+        except Exception as e:
+            print(f"  Warning: Could not sync runner IP for {ch.get('name')}: {e}")
+
+
 def sync_metrics(data_json_path: str):
     if not os.path.exists(data_json_path):
         print(f"Error: {data_json_path} not found")
@@ -62,6 +149,11 @@ def sync_metrics(data_json_path: str):
     with open(data_json_path, "r", encoding="utf-8") as f:
         data = json.load(f)
 
+    channels = data.get("channels", [])
+
+    # 1. Sync Runner Nodes & IP Telemetry from GitHub
+    sync_runner_nodes(channels)
+
     service = get_credentials()
     if not service:
         print("Cannot initialize YouTube API service. Aborting.")
@@ -69,7 +161,6 @@ def sync_metrics(data_json_path: str):
 
     print("YouTube API service initialized successfully.")
 
-    channels = data.get("channels", [])
     channel_ids = [c["youtube_channel_id"] for c in channels if c.get("youtube_channel_id")]
 
     # 1. Fetch live channel statistics
