@@ -1,5 +1,5 @@
-// Service Worker for Raj Tube Pro - v23.0 (Master Brand Logo & Cyber Neon Glow)
-const CACHE_NAME = 'raj-tube-pro-v23';
+// Service Worker for Raj Tube Pro - v24.0 (Multi-Channel All-Fleet Sync & Master State Cache)
+const CACHE_NAME = 'raj-tube-pro-v24';
 
 self.addEventListener('install', (event) => {
   self.skipWaiting();

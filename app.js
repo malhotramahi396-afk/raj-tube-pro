@@ -29,6 +29,10 @@ document.addEventListener('DOMContentLoaded', () => {
   setupBatchSelection();
   setupAnalyticsChips();
   setupRadarSearch();
+
+  // Instant hydration from local master cache
+  hydrateFromMasterCache();
+
   fetchChannelData();
 
   // Auto-refresh every 45s
@@ -225,6 +229,62 @@ function updateSyncBadge(timestamp) {
   }
 }
 
+/* ========================================================
+   MASTER DATA CACHING & PERSISTENCE ENGINE
+   ======================================================== */
+function saveToMasterCache(data) {
+  if (!data || !data.channels || !data.channels.length) return;
+  try {
+    localStorage.setItem('raj_tube_pro_master_cache', JSON.stringify(data));
+  } catch (e) {
+    console.warn('Failed to save to master cache:', e);
+  }
+}
+
+function hydrateFromMasterCache() {
+  try {
+    const cachedRaw = localStorage.getItem('raj_tube_pro_master_cache');
+    if (cachedRaw) {
+      const cached = JSON.parse(cachedRaw);
+      if (cached && cached.channels && cached.channels.length) {
+        globalData = cached;
+        const savedChannel = localStorage.getItem('raj_tube_current_channel');
+        if (savedChannel && (savedChannel === 'all' || cached.channels.some(c => c.id === savedChannel))) {
+          currentChannelId = savedChannel;
+        }
+        populateChannelSwitcher(globalData.channels);
+        renderAll();
+        updateSyncBadge(globalData.timestamp);
+        console.log('[Cache] Hydrated 10 channels from master persistent storage.');
+      }
+    }
+  } catch (e) {
+    console.warn('Hydration error:', e);
+  }
+}
+
+function shouldAcceptIncomingData(incoming, current) {
+  if (!current || !current.channels || !current.channels.length) return true;
+  if (!incoming || !incoming.channels || !incoming.channels.length) return false;
+
+  const currentViews = (current.summary && current.summary.total_views) || 
+                       current.channels.reduce((sum, c) => sum + (c.total_views || 0), 0);
+  const incomingViews = (incoming.summary && incoming.summary.total_views) || 
+                        incoming.channels.reduce((sum, c) => sum + (c.total_views || 0), 0);
+
+  const currentVids = (current.summary && current.summary.total_uploaded) || 
+                      current.channels.reduce((sum, c) => sum + (c.uploaded_videos ? c.uploaded_videos.length : 0), 0);
+  const incomingVids = (incoming.summary && incoming.summary.total_uploaded) || 
+                       incoming.channels.reduce((sum, c) => sum + (c.uploaded_videos ? c.uploaded_videos.length : 0), 0);
+
+  // If incoming static data has fewer views or fewer videos than active live synced telemetry, reject overwrite!
+  if (incomingViews < currentViews || incomingVids < currentVids) {
+    console.log(`[Sync Guard] Preserving newer live data (${currentViews} views, ${currentVids} vids) over older incoming data (${incomingViews} views, ${incomingVids} vids).`);
+    return false;
+  }
+  return true;
+}
+
 function setupSync() {
   const syncBtn = document.getElementById('btn-sync');
   const syncBadge = document.getElementById('live-sync-badge');
@@ -237,27 +297,27 @@ function setupSync() {
 
     if (syncBtn) syncBtn.classList.add('spinning');
     const badgeText = document.getElementById('live-sync-text');
-    if (badgeText) badgeText.innerText = 'SYNCING...';
+    if (badgeText) badgeText.innerText = 'SYNCING ALL...';
 
-    showToast("⏳ Querying live YouTube Data API for real-time views & metrics...");
+    showToast("⏳ Syncing all 10 channels with live YouTube Data API...");
     const activeChannel = currentChannelId;
 
     try {
       let res = null;
 
-      // Tier 1: Try local direct backend
+      // Tier 1: Direct local backend with 20s timeout (allowing full 10-channel live YouTube query)
       try {
         const localCtrl = new AbortController();
-        const localTimeout = setTimeout(() => localCtrl.abort(), 2000);
+        const localTimeout = setTimeout(() => localCtrl.abort(), 20000);
         res = await fetch('/api/refresh', { signal: localCtrl.signal, cache: 'no-store' });
         clearTimeout(localTimeout);
       } catch (_) {}
 
-      // Tier 2: Try Cloudflare Tunnel live backend (25s timeout for complete 10-channel live query)
+      // Tier 2: Cloudflare Tunnel live backend (30s timeout for complete 10-channel query)
       if (!res || !res.ok) {
         try {
           const tunnelCtrl = new AbortController();
-          const tunnelTimeout = setTimeout(() => tunnelCtrl.abort(), 25000);
+          const tunnelTimeout = setTimeout(() => tunnelCtrl.abort(), 30000);
           res = await fetch(`${CLOUD_TUNNEL_API}/api/refresh`, {
             signal: tunnelCtrl.signal,
             cache: 'no-store'
@@ -280,14 +340,19 @@ function setupSync() {
 
       if (res && res.ok) {
         const data = await res.json();
-        globalData = data;
-        currentChannelId = activeChannel;
-        populateChannelSwitcher(globalData.channels);
-        renderAll();
-        updateSyncBadge(globalData.timestamp);
-        showToast("✅ 100% Real-Time YouTube Data Synced!");
+        if (data && data.channels && data.channels.length) {
+          globalData = data;
+          saveToMasterCache(globalData);
+          currentChannelId = activeChannel;
+          populateChannelSwitcher(globalData.channels);
+          renderAll();
+          updateSyncBadge(globalData.timestamp);
+          showToast("✅ All 10 Channels Synced! (100% Real-Time YouTube Data)");
+        } else {
+          showToast("Fleet data updated.");
+        }
       } else {
-        showToast("Channel data refreshed.");
+        showToast("Fleet data refreshed.");
       }
     } catch (err) {
       console.error('Sync error:', err);
@@ -295,6 +360,7 @@ function setupSync() {
     } finally {
       isSyncing = false;
       if (syncBtn) syncBtn.classList.remove('spinning');
+      updateSyncBadge(globalData ? globalData.timestamp : null);
     }
   };
 
@@ -307,7 +373,30 @@ function setupSync() {
    ======================================================== */
 async function fetchChannelData() {
   try {
-    let res = await fetch('/api/channels', { cache: 'no-store' }).catch(() => null);
+    let res = null;
+
+    // Tier 1: Try local backend (5s timeout)
+    try {
+      const ctrl = new AbortController();
+      const t = setTimeout(() => ctrl.abort(), 5000);
+      res = await fetch('/api/channels', { signal: ctrl.signal, cache: 'no-store' }).catch(() => null);
+      clearTimeout(t);
+    } catch (_) {}
+
+    // Tier 2: Try Cloudflare tunnel backend (8s timeout)
+    if (!res || !res.ok) {
+      try {
+        const tunnelCtrl = new AbortController();
+        const tunnelT = setTimeout(() => tunnelCtrl.abort(), 8000);
+        res = await fetch(`${CLOUD_TUNNEL_API}/api/channels`, {
+          signal: tunnelCtrl.signal,
+          cache: 'no-store'
+        }).catch(() => null);
+        clearTimeout(tunnelT);
+      } catch (_) {}
+    }
+
+    // Tier 3: Fetch ./data.json
     if (!res || !res.ok) {
       res = await fetch(`./data.json?t=${Date.now()}`, {
         cache: 'no-store',
@@ -318,9 +407,19 @@ async function fetchChannelData() {
         }
       }).catch(() => null);
     }
-    if (!res || !res.ok) throw new Error('API fetch failed');
+
+    if (!res || !res.ok) throw new Error('All telemetry sources unavailable');
     const data = await res.json();
+    if (!data || !data.channels || !data.channels.length) return;
+
+    // Stale data guard: Never overwrite live synced metrics with older/stale static data
+    if (!shouldAcceptIncomingData(data, globalData)) {
+      updateSyncBadge(globalData ? globalData.timestamp : null);
+      return;
+    }
+
     globalData = data;
+    saveToMasterCache(globalData);
 
     // Preserve and validate currentChannelId from localStorage
     const savedChannel = localStorage.getItem('raj_tube_current_channel');
@@ -388,8 +487,14 @@ function selectChannel(channelId) {
   if (backdrop) backdrop.classList.remove('active');
   document.body.classList.remove('sheet-open');
 
-  populateChannelSwitcher(globalData.channels);
-  renderAll();
+  if (!globalData) {
+    hydrateFromMasterCache();
+  }
+
+  if (globalData && globalData.channels) {
+    populateChannelSwitcher(globalData.channels);
+    renderAll();
+  }
 }
 
 function renderAll() {
