@@ -558,7 +558,9 @@ function renderDashboard(channel) {
 
     if (latestVid.uploaded_at) {
       const d = new Date(latestVid.uploaded_at);
-      timeEl.innerText = `Published ${d.toLocaleDateString([], { month: 'short', day: 'numeric', year: 'numeric' })}`;
+      const dDate = d.toLocaleDateString([], { month: 'short', day: 'numeric', year: 'numeric' });
+      const dTime = d.toLocaleTimeString([], { hour: 'numeric', minute: '2-digit', hour12: true });
+      timeEl.innerText = `Published ${dDate} • ${dTime}`;
     }
 
     analyticsLink.href = latestVid.youtube_url;
@@ -967,7 +969,13 @@ function renderContentTable(channel) {
 
   vids.forEach(v => {
     const thumb = v.thumbnail || `https://i.ytimg.com/vi/${v.youtube_id}/mqdefault.jpg`;
-    const dateStr = v.uploaded_at ? new Date(v.uploaded_at).toLocaleDateString([], { month: 'short', day: 'numeric', year: 'numeric' }) : 'Sep 12, 2026';
+    let dateStr = 'Sep 13, 2026';
+    let timeStr = '';
+    if (v.uploaded_at) {
+      const d = new Date(v.uploaded_at);
+      dateStr = d.toLocaleDateString([], { month: 'short', day: 'numeric', year: 'numeric' });
+      timeStr = d.toLocaleTimeString([], { hour: 'numeric', minute: '2-digit', hour12: true });
+    }
     const isChecked = selectedVideoIds.has(v.youtube_id);
     const subsGained = v.subscribers_gained !== undefined ? v.subscribers_gained : 0;
 
@@ -996,7 +1004,12 @@ function renderContentTable(channel) {
         </div>
       </td>
       <td class="col-restrictions">None</td>
-      <td class="col-date">${dateStr}<br><span style="font-size:11px; color:var(--yt-text-secondary);">Published</span></td>
+      <td class="col-date">
+        <div>${dateStr}</div>
+        <div style="font-size:11px; color:var(--yt-text-secondary); margin-top:2px;">
+          ${timeStr ? `<span style="color:#3EA6FF; font-weight:500;">${timeStr}</span> • ` : ''}Published
+        </div>
+      </td>
       <td class="col-views">${formatNumber(v.views)}</td>
       <td class="col-subs"><span class="table-subs-badge">+${subsGained}</span></td>
       <td class="col-comments">${v.comments || 0}</td>
@@ -1030,7 +1043,7 @@ function renderContentTable(channel) {
           <div class="mobile-vid-title" title="${v.title}">${v.title}</div>
           <div class="mobile-vid-meta-row">
             <span class="mobile-vid-vis-dot"></span>
-            <span>Public • ${dateStr}</span>
+            <span>Public • ${dateStr}${timeStr ? ' at ' + timeStr : ''}</span>
           </div>
           <div class="mobile-vid-metrics-chips">
             <span class="mobile-metric-item">👁️ ${formatNumber(v.views)}</span>
