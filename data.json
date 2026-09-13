@@ -1,7 +1,7 @@
 {
   "app_name": "Raj Tube Pro",
   "version": "6.0.0",
-  "timestamp": "2026-09-13T15:07:47.593686+00:00",
+  "timestamp": "2026-09-13T15:14:23.785013+00:00",
   "schedule": {
     "next_slot_iso": "2026-09-13T22:00:00+00:00",
     "seconds_remaining": 24754,
@@ -14,7 +14,7 @@
     "total_uploaded": 193,
     "total_in_queue": 1257,
     "total_subscribers": 251,
-    "total_views": 240001,
+    "total_views": 181342,
     "total_likes": 2229,
     "network_engagement": 0.9,
     "total_runway_days": 62.9,
@@ -37,59 +37,59 @@
         {
           "country": "United States",
           "code": "US",
-          "flag": "\ud83c\uddfa\ud83c\uddf8",
+          "flag": "🇺🇸",
           "percent": 45.0
         },
         {
           "country": "India",
           "code": "IN",
-          "flag": "\ud83c\uddee\ud83c\uddf3",
+          "flag": "🇮🇳",
           "percent": 27.5
         },
         {
           "country": "United Kingdom",
           "code": "GB",
-          "flag": "\ud83c\uddec\ud83c\udde7",
+          "flag": "🇬🇧",
           "percent": 11.3
         },
         {
           "country": "Canada",
           "code": "CA",
-          "flag": "\ud83c\udde8\ud83c\udde6",
+          "flag": "🇨🇦",
           "percent": 7.4
         },
         {
           "country": "Germany",
           "code": "DE",
-          "flag": "\ud83c\udde9\ud83c\uddea",
+          "flag": "🇩🇪",
           "percent": 4.2
         },
         {
           "country": "Other countries",
           "code": "OTHER",
-          "flag": "\ud83c\udf10",
+          "flag": "🌐",
           "percent": 4.6
         }
       ],
       "age_distribution": [
         {
-          "range": "13\u201317 years",
+          "range": "13–17 years",
           "percent": 5.5
         },
         {
-          "range": "18\u201324 years",
+          "range": "18–24 years",
           "percent": 40.2
         },
         {
-          "range": "25\u201334 years",
+          "range": "25–34 years",
           "percent": 41.3
         },
         {
-          "range": "35\u201344 years",
+          "range": "35–44 years",
           "percent": 8.8
         },
         {
-          "range": "45\u201354 years",
+          "range": "45–54 years",
           "percent": 2.9
         },
         {
@@ -105,27 +105,27 @@
         {
           "source": "Shorts feed",
           "percent": 81.2,
-          "icon": "\ud83d\udcf1"
+          "icon": "📱"
         },
         {
           "source": "YouTube search",
           "percent": 10.6,
-          "icon": "\ud83d\udd0d"
+          "icon": "🔍"
         },
         {
           "source": "Channel pages",
           "percent": 4.4,
-          "icon": "\ud83d\udcc4"
+          "icon": "📄"
         },
         {
           "source": "Suggested videos",
           "percent": 2.5,
-          "icon": "\ud83c\udfac"
+          "icon": "🎬"
         },
         {
           "source": "External & Others",
           "percent": 1.3,
-          "icon": "\ud83d\udd17"
+          "icon": "🔗"
         }
       ],
       "subscriber_watch_time": {
@@ -140,36 +140,36 @@
         {
           "device": "Mobile phone",
           "percent": 94.6,
-          "icon": "\ud83d\udcf1"
+          "icon": "📱"
         },
         {
           "device": "Computer",
           "percent": 3.8,
-          "icon": "\ud83d\udcbb"
+          "icon": "💻"
         },
         {
           "device": "TV / Tablet",
           "percent": 1.6,
-          "icon": "\ud83d\udcfa"
+          "icon": "📺"
         }
       ],
-      "peak_hours": "6:00 PM \u2013 10:30 PM IST (Peak Global Viewing Window)"
+      "peak_hours": "6:00 PM – 10:30 PM IST (Peak Global Viewing Window)"
     },
     "health": {
       "overall_score": 100,
       "verdict": "Flawless (Optimal Standing)",
       "verdict_color": "#10B981",
-      "shield_icon": "\ud83d\udee1\ufe0f",
+      "shield_icon": "🛡️",
       "strikes": {
         "count": 0,
         "max": 3,
-        "status": "0 of 3 active strikes \u2022 Channel Active & Public (YouTube API Verified)",
+        "status": "0 of 3 active strikes • Channel Active & Public (YouTube API Verified)",
         "badge": "CLEAN",
         "is_clean": true
       },
       "copyright": {
         "count": 0,
-        "status": "0 copyright claims \u2022 100% Original Audio & Video",
+        "status": "0 copyright claims • 100% Original Audio & Video",
         "badge": "CLEAN",
         "is_clean": true
       },
@@ -207,7 +207,7 @@
           "region": "Iowa",
           "country": "US",
           "country_code": "US",
-          "flag": "\ud83c\uddfa\ud83c\uddf8",
+          "flag": "🇺🇸",
           "org": "AS8075 Microsoft Corporation",
           "datacenter": "Microsoft Azure Cloud Runner",
           "verified_at": "2026-09-12T22:22:46.282858+00:00",
@@ -225,7 +225,7 @@
           "region": "Wyoming",
           "country": "US",
           "country_code": "US",
-          "flag": "\ud83c\uddfa\ud83c\uddf8",
+          "flag": "🇺🇸",
           "org": "AS8075 Microsoft Corporation",
           "datacenter": "Microsoft Azure Cloud Runner",
           "verified_at": "2026-09-12T22:15:04.310145+00:00",
@@ -243,7 +243,7 @@
           "region": "California",
           "country": "US",
           "country_code": "US",
-          "flag": "\ud83c\uddfa\ud83c\uddf8",
+          "flag": "🇺🇸",
           "org": "AS8075 Microsoft Corporation",
           "datacenter": "Microsoft Azure Cloud Runner",
           "verified_at": "2026-09-12T22:06:27.428028+00:00",
@@ -261,7 +261,7 @@
           "region": "Iowa",
           "country": "United States",
           "country_code": "US",
-          "flag": "\ud83c\uddfa\ud83c\uddf8",
+          "flag": "🇺🇸",
           "org": "AS8075 Microsoft Corporation",
           "datacenter": "Microsoft Azure Central US (Iowa)",
           "verify_url": "https://ipinfo.io/20.232.145.102"
@@ -278,7 +278,7 @@
           "region": "Iowa",
           "country": "US",
           "country_code": "US",
-          "flag": "\ud83c\uddfa\ud83c\uddf8",
+          "flag": "🇺🇸",
           "org": "AS8075 Microsoft Corporation",
           "datacenter": "Microsoft Azure Cloud Runner",
           "verified_at": "2026-09-12T22:14:10.187842+00:00",
@@ -296,7 +296,7 @@
           "region": "Arizona",
           "country": "US",
           "country_code": "US",
-          "flag": "\ud83c\uddfa\ud83c\uddf8",
+          "flag": "🇺🇸",
           "org": "AS8075 Microsoft Corporation",
           "datacenter": "Microsoft Azure Cloud Runner",
           "verified_at": "2026-09-12T22:14:55.574494+00:00",
@@ -314,7 +314,7 @@
           "region": "Washington",
           "country": "US",
           "country_code": "US",
-          "flag": "\ud83c\uddfa\ud83c\uddf8",
+          "flag": "🇺🇸",
           "org": "AS8075 Microsoft Corporation",
           "datacenter": "Microsoft Azure Cloud Runner",
           "verified_at": "2026-09-12T22:14:00.817365+00:00",
@@ -332,7 +332,7 @@
           "region": "Virginia",
           "country": "US",
           "country_code": "US",
-          "flag": "\ud83c\uddfa\ud83c\uddf8",
+          "flag": "🇺🇸",
           "org": "AS8075 Microsoft Corporation",
           "datacenter": "Microsoft Azure Cloud Runner",
           "verified_at": "2026-09-12T22:11:15.208286+00:00",
@@ -350,7 +350,7 @@
           "region": "California",
           "country": "United States",
           "country_code": "US",
-          "flag": "\ud83c\uddfa\ud83c\uddf8",
+          "flag": "🇺🇸",
           "org": "AS8075 Microsoft Corporation",
           "datacenter": "Microsoft Azure West US (Silicon Valley)",
           "verify_url": "https://ipinfo.io/40.118.232.12"
@@ -367,14 +367,15 @@
           "region": "Virginia",
           "country": "US",
           "country_code": "US",
-          "flag": "\ud83c\uddfa\ud83c\uddf8",
+          "flag": "🇺🇸",
           "org": "AS8075 Microsoft Corporation",
           "datacenter": "Microsoft Azure Cloud Runner",
           "verified_at": "2026-09-12T22:11:04.627296+00:00",
           "verify_url": "https://ipinfo.io/48.214.53.113"
         }
       }
-    ]
+    ],
+    "avg_views_per_channel": 18134
   },
   "issues": [],
   "channels": [
@@ -389,9 +390,9 @@
       "color": "#10B981",
       "avatar_url": "https://yt3.ggpht.com/R5wyufkApz5fijH1a4mek8n6CM9y64QklZgfgjuGI-SOwbTIBjEFmmKot6aBnYkVRwOpq965=s240-c-k-c0x00ffffff-no-rj",
       "subscribers": 69,
-      "total_views": 35776,
+      "total_views": 24039,
       "channel_total_videos": 6,
-      "avg_views_per_video": 5962.7,
+      "avg_views_per_video": 6011,
       "engagement_rate": 1.4,
       "total_likes": 488,
       "analytics": {
@@ -401,59 +402,59 @@
           {
             "country": "United States",
             "code": "US",
-            "flag": "\ud83c\uddfa\ud83c\uddf8",
+            "flag": "🇺🇸",
             "percent": 48.2
           },
           {
             "country": "India",
             "code": "IN",
-            "flag": "\ud83c\uddee\ud83c\uddf3",
+            "flag": "🇮🇳",
             "percent": 21.4
           },
           {
             "country": "United Kingdom",
             "code": "GB",
-            "flag": "\ud83c\uddec\ud83c\udde7",
+            "flag": "🇬🇧",
             "percent": 11.6
           },
           {
             "country": "Canada",
             "code": "CA",
-            "flag": "\ud83c\udde8\ud83c\udde6",
+            "flag": "🇨🇦",
             "percent": 8.3
           },
           {
             "country": "Germany",
             "code": "DE",
-            "flag": "\ud83c\udde9\ud83c\uddea",
+            "flag": "🇩🇪",
             "percent": 4.7
           },
           {
             "country": "Other countries",
             "code": "OTHER",
-            "flag": "\ud83c\udf10",
+            "flag": "🌐",
             "percent": 5.8
           }
         ],
         "age_distribution": [
           {
-            "range": "13\u201317 years",
+            "range": "13–17 years",
             "percent": 3.5
           },
           {
-            "range": "18\u201324 years",
+            "range": "18–24 years",
             "percent": 34.2
           },
           {
-            "range": "25\u201334 years",
+            "range": "25–34 years",
             "percent": 44.8
           },
           {
-            "range": "35\u201344 years",
+            "range": "35–44 years",
             "percent": 11.6
           },
           {
-            "range": "45\u201354 years",
+            "range": "45–54 years",
             "percent": 4.1
           },
           {
@@ -469,27 +470,27 @@
           {
             "source": "Shorts feed",
             "percent": 81.2,
-            "icon": "\ud83d\udcf1"
+            "icon": "📱"
           },
           {
             "source": "YouTube search",
             "percent": 10.6,
-            "icon": "\ud83d\udd0d"
+            "icon": "🔍"
           },
           {
             "source": "Channel pages",
             "percent": 4.4,
-            "icon": "\ud83d\udcc4"
+            "icon": "📄"
           },
           {
             "source": "Suggested videos",
             "percent": 2.5,
-            "icon": "\ud83c\udfac"
+            "icon": "🎬"
           },
           {
             "source": "External & Others",
             "percent": 1.3,
-            "icon": "\ud83d\udd17"
+            "icon": "🔗"
           }
         ],
         "subscriber_watch_time": {
@@ -504,36 +505,36 @@
           {
             "device": "Mobile phone",
             "percent": 94.6,
-            "icon": "\ud83d\udcf1"
+            "icon": "📱"
           },
           {
             "device": "Computer",
             "percent": 3.8,
-            "icon": "\ud83d\udcbb"
+            "icon": "💻"
           },
           {
             "device": "TV / Tablet",
             "percent": 1.6,
-            "icon": "\ud83d\udcfa"
+            "icon": "📺"
           }
         ],
-        "peak_hours": "7:00 PM \u2013 11:00 PM IST (09:30 AM \u2013 01:30 PM USA / Best Wildlife Timing)"
+        "peak_hours": "7:00 PM – 11:00 PM IST (09:30 AM – 01:30 PM USA / Best Wildlife Timing)"
       },
       "health": {
         "overall_score": 100,
         "verdict": "Flawless (Optimal Standing)",
         "verdict_color": "#10B981",
-        "shield_icon": "\ud83d\udee1\ufe0f",
+        "shield_icon": "🛡️",
         "strikes": {
           "count": 0,
           "max": 3,
-          "status": "0 of 3 active strikes \u2022 Channel Active & Public (YouTube API Verified)",
+          "status": "0 of 3 active strikes • Channel Active & Public (YouTube API Verified)",
           "badge": "CLEAN",
           "is_clean": true
         },
         "copyright": {
           "count": 0,
-          "status": "0 copyright claims \u2022 100% Original Audio & Video",
+          "status": "0 copyright claims • 100% Original Audio & Video",
           "badge": "CLEAN",
           "is_clean": true
         },
@@ -586,7 +587,7 @@
           "title": "Dangerous Stare Caught On 4K Camera #wildlife #cameraman #shorts #viral",
           "uploaded_at": "2026-09-13T14:03:47Z",
           "thumbnail": "https://i.ytimg.com/vi/7M2CTdKBQ6M/mqdefault.jpg",
-          "views": 39,
+          "views": 76,
           "likes": 1,
           "comments": 0,
           "subscribers_gained": 0
@@ -597,7 +598,7 @@
           "title": "Danger At Point Blank Range #wildlife #shorts #animalencounter #fyp",
           "uploaded_at": "2026-09-12T22:03:51Z",
           "thumbnail": "https://i.ytimg.com/vi/H511dz4lsLQ/mqdefault.jpg",
-          "views": 1651,
+          "views": 1841,
           "likes": 13,
           "comments": 0,
           "subscribers_gained": 3
@@ -608,7 +609,7 @@
           "title": "Close Enough To Hear His Breath #wildlife #shorts #cameraman #viral",
           "uploaded_at": "2026-09-12T14:03:34Z",
           "thumbnail": "https://i.ytimg.com/vi/RMgm8o875X0/mqdefault.jpg",
-          "views": 17198,
+          "views": 17240,
           "likes": 265,
           "comments": 1,
           "subscribers_gained": 35
@@ -619,7 +620,7 @@
           "title": "Caught In 4K By The Hidden Cameraman #nature #wildlifephotography #shorts #reels",
           "uploaded_at": "2026-09-11T22:03:59Z",
           "thumbnail": "https://i.ytimg.com/vi/EwZLPUyf2LA/mqdefault.jpg",
-          "views": 1878,
+          "views": 1881,
           "likes": 17,
           "comments": 0,
           "subscribers_gained": 3
@@ -630,7 +631,7 @@
           "title": "Breathtaking 4K Wildlife Moment #wildlifephotography #shorts #naturelovers #viral",
           "uploaded_at": "2026-09-11T14:42:29Z",
           "thumbnail": "https://i.ytimg.com/vi/3pDpmQcqJT8/mqdefault.jpg",
-          "views": 13730,
+          "views": 13745,
           "likes": 186,
           "comments": 1,
           "subscribers_gained": 26
@@ -641,7 +642,7 @@
           "title": "A Legendary Moment In Nature #nature #wildlife #shorts #viralvideo",
           "uploaded_at": "2026-09-11T13:33:07Z",
           "thumbnail": "https://i.ytimg.com/vi/UoPvxQ5Gj9Q/mqdefault.jpg",
-          "views": 1280,
+          "views": 1283,
           "likes": 6,
           "comments": 0,
           "subscribers_gained": 2
@@ -685,7 +686,7 @@
         "region": "Iowa",
         "country": "US",
         "country_code": "US",
-        "flag": "\ud83c\uddfa\ud83c\uddf8",
+        "flag": "🇺🇸",
         "org": "AS8075 Microsoft Corporation",
         "datacenter": "Microsoft Azure Cloud Runner",
         "verified_at": "2026-09-12T22:22:46.282858+00:00",
@@ -704,9 +705,9 @@
       "color": "#10B981",
       "avatar_url": "https://yt3.ggpht.com/Si65r7FeRpZibwEpw60Lck09w5Qi4YjdBhvfyPC914DY68sKk7vkLYv3WdR1ByZGkg_J4FAK=s240-c-k-c0x00ffffff-no-rj",
       "subscribers": 3,
-      "total_views": 6309,
+      "total_views": 4956,
       "channel_total_videos": 21,
-      "avg_views_per_video": 300.4,
+      "avg_views_per_video": 303,
       "engagement_rate": 0.7,
       "total_likes": 46,
       "analytics": {
@@ -716,59 +717,59 @@
           {
             "country": "United States",
             "code": "US",
-            "flag": "\ud83c\uddfa\ud83c\uddf8",
+            "flag": "🇺🇸",
             "percent": 52.4
           },
           {
             "country": "United Kingdom",
             "code": "GB",
-            "flag": "\ud83c\uddec\ud83c\udde7",
+            "flag": "🇬🇧",
             "percent": 13.5
           },
           {
             "country": "Germany",
             "code": "DE",
-            "flag": "\ud83c\udde9\ud83c\uddea",
+            "flag": "🇩🇪",
             "percent": 9.8
           },
           {
             "country": "Canada",
             "code": "CA",
-            "flag": "\ud83c\udde8\ud83c\udde6",
+            "flag": "🇨🇦",
             "percent": 8.7
           },
           {
             "country": "India",
             "code": "IN",
-            "flag": "\ud83c\uddee\ud83c\uddf3",
+            "flag": "🇮🇳",
             "percent": 10.2
           },
           {
             "country": "Other countries",
             "code": "OTHER",
-            "flag": "\ud83c\udf10",
+            "flag": "🌐",
             "percent": 5.4
           }
         ],
         "age_distribution": [
           {
-            "range": "13\u201317 years",
+            "range": "13–17 years",
             "percent": 14.8
           },
           {
-            "range": "18\u201324 years",
+            "range": "18–24 years",
             "percent": 51.0
           },
           {
-            "range": "25\u201334 years",
+            "range": "25–34 years",
             "percent": 25.6
           },
           {
-            "range": "35\u201344 years",
+            "range": "35–44 years",
             "percent": 5.8
           },
           {
-            "range": "45\u201354 years",
+            "range": "45–54 years",
             "percent": 2.0
           },
           {
@@ -784,27 +785,27 @@
           {
             "source": "Shorts feed",
             "percent": 81.2,
-            "icon": "\ud83d\udcf1"
+            "icon": "📱"
           },
           {
             "source": "YouTube search",
             "percent": 10.6,
-            "icon": "\ud83d\udd0d"
+            "icon": "🔍"
           },
           {
             "source": "Channel pages",
             "percent": 4.4,
-            "icon": "\ud83d\udcc4"
+            "icon": "📄"
           },
           {
             "source": "Suggested videos",
             "percent": 2.5,
-            "icon": "\ud83c\udfac"
+            "icon": "🎬"
           },
           {
             "source": "External & Others",
             "percent": 1.3,
-            "icon": "\ud83d\udd17"
+            "icon": "🔗"
           }
         ],
         "subscriber_watch_time": {
@@ -819,36 +820,36 @@
           {
             "device": "Mobile phone",
             "percent": 94.6,
-            "icon": "\ud83d\udcf1"
+            "icon": "📱"
           },
           {
             "device": "Computer",
             "percent": 3.8,
-            "icon": "\ud83d\udcbb"
+            "icon": "💻"
           },
           {
             "device": "TV / Tablet",
             "percent": 1.6,
-            "icon": "\ud83d\udcfa"
+            "icon": "📺"
           }
         ],
-        "peak_hours": "5:00 PM \u2013 11:00 PM IST (Global Gaming & Esports Window)"
+        "peak_hours": "5:00 PM – 11:00 PM IST (Global Gaming & Esports Window)"
       },
       "health": {
         "overall_score": 99,
         "verdict": "Flawless (Optimal Standing)",
         "verdict_color": "#10B981",
-        "shield_icon": "\ud83d\udee1\ufe0f",
+        "shield_icon": "🛡️",
         "strikes": {
           "count": 0,
           "max": 3,
-          "status": "0 of 3 active strikes \u2022 Channel Active & Public (YouTube API Verified)",
+          "status": "0 of 3 active strikes • Channel Active & Public (YouTube API Verified)",
           "badge": "CLEAN",
           "is_clean": true
         },
         "copyright": {
           "count": 0,
-          "status": "0 copyright claims \u2022 100% Original Audio & Video",
+          "status": "0 copyright claims • 100% Original Audio & Video",
           "badge": "CLEAN",
           "is_clean": true
         },
@@ -901,7 +902,7 @@
           "title": "Grandma Carried The Entire Team Today #GrandmaGamer #Esports #Gaming #GamingLegend #ProGaming #Under",
           "uploaded_at": "2026-09-13T12:20:36Z",
           "thumbnail": "https://i.ytimg.com/vi/yKKvEzJL_64/mqdefault.jpg",
-          "views": 71,
+          "views": 114,
           "likes": 0,
           "comments": 0,
           "subscribers_gained": 0
@@ -912,7 +913,7 @@
           "title": "Grandma Carried The Entire Team Like A True Champion #GrandmaGamer #Esports #Gaming #GamingLegend #P",
           "uploaded_at": "2026-09-12T22:15:20Z",
           "thumbnail": "https://i.ytimg.com/vi/dmg14otnq3A/mqdefault.jpg",
-          "views": 113,
+          "views": 126,
           "likes": 0,
           "comments": 0,
           "subscribers_gained": 0
@@ -1153,7 +1154,7 @@
         "region": "Wyoming",
         "country": "US",
         "country_code": "US",
-        "flag": "\ud83c\uddfa\ud83c\uddf8",
+        "flag": "🇺🇸",
         "org": "AS8075 Microsoft Corporation",
         "datacenter": "Microsoft Azure Cloud Runner",
         "verified_at": "2026-09-12T22:15:04.310145+00:00",
@@ -1172,9 +1173,9 @@
       "color": "#F59E0B",
       "avatar_url": "https://yt3.ggpht.com/TTLhq8ijvpChRrWaVb1i96FzeFG02Gd31oOfWo4EdOtBtfqTD6h0TrRmEOTd2fE8V0kPexV6EA=s240-c-k-c0x00ffffff-no-rj",
       "subscribers": 83,
-      "total_views": 99430,
+      "total_views": 92442,
       "channel_total_videos": 14,
-      "avg_views_per_video": 7102.1,
+      "avg_views_per_video": 7099,
       "engagement_rate": 0.7,
       "total_likes": 736,
       "analytics": {
@@ -1184,63 +1185,63 @@
           {
             "country": "United States",
             "code": "US",
-            "flag": "\ud83c\uddfa\ud83c\uddf8",
+            "flag": "🇺🇸",
             "percent": 15.7
           },
           {
             "country": "Germany",
             "code": "DE",
-            "flag": "\ud83c\udde9\ud83c\uddea",
+            "flag": "🇩🇪",
             "percent": 2.2
           },
           {
             "country": "Uzbekistan",
             "code": "UZ",
-            "flag": "\ud83c\uddfa\ud83c\uddff",
+            "flag": "🇺🇿",
             "percent": 2.1
           },
           {
             "country": "Indonesia",
             "code": "ID",
-            "flag": "\ud83c\uddee\ud83c\udde9",
+            "flag": "🇮🇩",
             "percent": 2.0
           },
           {
             "country": "Mexico",
             "code": "MX",
-            "flag": "\ud83c\uddf2\ud83c\uddfd",
+            "flag": "🇲🇽",
             "percent": 1.3
           },
           {
             "country": "Other countries",
             "code": "OTHER",
-            "flag": "\ud83c\udf10",
+            "flag": "🌐",
             "percent": 76.7
           }
         ],
         "age_distribution": [
           {
-            "range": "13\u201317 years",
+            "range": "13–17 years",
             "percent": 3.4
           },
           {
-            "range": "18\u201324 years",
+            "range": "18–24 years",
             "percent": 3.6
           },
           {
-            "range": "25\u201334 years",
+            "range": "25–34 years",
             "percent": 17.6
           },
           {
-            "range": "35\u201344 years",
+            "range": "35–44 years",
             "percent": 19.0
           },
           {
-            "range": "45\u201354 years",
+            "range": "45–54 years",
             "percent": 17.6
           },
           {
-            "range": "55\u201364 years",
+            "range": "55–64 years",
             "percent": 18.2
           },
           {
@@ -1256,27 +1257,27 @@
           {
             "source": "Shorts feed",
             "percent": 81.2,
-            "icon": "\ud83d\udcf1"
+            "icon": "📱"
           },
           {
             "source": "YouTube search",
             "percent": 10.6,
-            "icon": "\ud83d\udd0d"
+            "icon": "🔍"
           },
           {
             "source": "Channel pages",
             "percent": 4.4,
-            "icon": "\ud83d\udcc4"
+            "icon": "📄"
           },
           {
             "source": "Suggested videos",
             "percent": 2.5,
-            "icon": "\ud83c\udfac"
+            "icon": "🎬"
           },
           {
             "source": "External & Others",
             "percent": 1.3,
-            "icon": "\ud83d\udd17"
+            "icon": "🔗"
           }
         ],
         "subscriber_watch_time": {
@@ -1291,36 +1292,36 @@
           {
             "device": "Mobile phone",
             "percent": 94.6,
-            "icon": "\ud83d\udcf1"
+            "icon": "📱"
           },
           {
             "device": "Computer",
             "percent": 3.8,
-            "icon": "\ud83d\udcbb"
+            "icon": "💻"
           },
           {
             "device": "TV / Tablet",
             "percent": 1.6,
-            "icon": "\ud83d\udcfa"
+            "icon": "📺"
           }
         ],
-        "peak_hours": "6:30 PM \u2013 10:30 PM IST (Prime Global Engagement)"
+        "peak_hours": "6:30 PM – 10:30 PM IST (Prime Global Engagement)"
       },
       "health": {
         "overall_score": 100,
         "verdict": "Flawless (Optimal Standing)",
         "verdict_color": "#10B981",
-        "shield_icon": "\ud83d\udee1\ufe0f",
+        "shield_icon": "🛡️",
         "strikes": {
           "count": 0,
           "max": 3,
-          "status": "0 of 3 active strikes \u2022 Channel Active & Public (YouTube API Verified)",
+          "status": "0 of 3 active strikes • Channel Active & Public (YouTube API Verified)",
           "badge": "CLEAN",
           "is_clean": true
         },
         "copyright": {
           "count": 0,
-          "status": "0 copyright claims \u2022 100% Original Audio & Video",
+          "status": "0 copyright claims • 100% Original Audio & Video",
           "badge": "CLEAN",
           "is_clean": true
         },
@@ -1373,7 +1374,7 @@
           "title": "Nobody Wanted To Miss The Next Second #SlapFight #SlapFighting #PowerSlap #Viral #CombatSports.",
           "uploaded_at": "2026-09-13T14:13:36Z",
           "thumbnail": "https://i.ytimg.com/vi/jcBToYBlKTA/mqdefault.jpg",
-          "views": 291,
+          "views": 260,
           "likes": 9,
           "comments": 0,
           "subscribers_gained": 0
@@ -1395,7 +1396,7 @@
           "title": "Nobody Wanted To Blink During This Moment #SlapFighting #PowerSlap #FightNight #FYP #Viral.",
           "uploaded_at": "2026-09-12T22:06:45Z",
           "thumbnail": "https://i.ytimg.com/vi/sEMtoFAjmrs/mqdefault.jpg",
-          "views": 1597,
+          "views": 1588,
           "likes": 17,
           "comments": 0,
           "subscribers_gained": 1
@@ -1406,7 +1407,7 @@
           "title": "Nobody Expected That Faceoff Reaction #SlapFighting #PowerSlap #SlapBattle #CombatSports #Viral.",
           "uploaded_at": "2026-09-12T14:06:29Z",
           "thumbnail": "https://i.ytimg.com/vi/7OVj2yza4ks/mqdefault.jpg",
-          "views": 3501,
+          "views": 3507,
           "likes": 32,
           "comments": 2,
           "subscribers_gained": 3
@@ -1417,7 +1418,7 @@
           "title": "His Confidence Had The Whole Crowd Talking #PowerSlap #SlapFighting #SlapFight #Viral #Sports.",
           "uploaded_at": "2026-09-11T22:07:28Z",
           "thumbnail": "https://i.ytimg.com/vi/g-2DEoij8dY/mqdefault.jpg",
-          "views": 9458,
+          "views": 9464,
           "likes": 132,
           "comments": 0,
           "subscribers_gained": 9
@@ -1428,7 +1429,7 @@
           "title": "He Was Not Backing Down From Anyone #SlapFight #PowerSlap #SlapFighting #Viral #Sports.",
           "uploaded_at": "2026-09-11T16:04:35Z",
           "thumbnail": "https://i.ytimg.com/vi/t5oF0IsXkN0/mqdefault.jpg",
-          "views": 41786,
+          "views": 41774,
           "likes": 357,
           "comments": 1,
           "subscribers_gained": 36
@@ -1439,7 +1440,7 @@
           "title": "He Walked Up Like He Owned The Arena #PowerSlap #SlapFight #SlapFighting #Viral #Sports",
           "uploaded_at": "2026-09-11T09:08:50Z",
           "thumbnail": "https://i.ytimg.com/vi/WIWsbArcAp4/mqdefault.jpg",
-          "views": 1785,
+          "views": 1779,
           "likes": 13,
           "comments": 1,
           "subscribers_gained": 1
@@ -1461,7 +1462,7 @@
           "title": "He Looked Ready For The Biggest Hit Of His Life #PowerSlap #SlapFight #FightNight #Highlights #FYP",
           "uploaded_at": "2026-09-06T07:20:35Z",
           "thumbnail": "https://i.ytimg.com/vi/EU0lTDiLM2Y/mqdefault.jpg",
-          "views": 7347,
+          "views": 7348,
           "likes": 11,
           "comments": 0,
           "subscribers_gained": 5
@@ -1472,7 +1473,7 @@
           "title": "He Looked Completely Calm Under Pressure #PowerSlap #SlapFight #CombatSports #Sports #FYP",
           "uploaded_at": "2026-09-03T19:32:51Z",
           "thumbnail": "https://i.ytimg.com/vi/ZUnBtn839WQ/mqdefault.jpg",
-          "views": 6284,
+          "views": 6286,
           "likes": 37,
           "comments": 0,
           "subscribers_gained": 5
@@ -1560,7 +1561,7 @@
         "region": "California",
         "country": "US",
         "country_code": "US",
-        "flag": "\ud83c\uddfa\ud83c\uddf8",
+        "flag": "🇺🇸",
         "org": "AS8075 Microsoft Corporation",
         "datacenter": "Microsoft Azure Cloud Runner",
         "verified_at": "2026-09-12T22:06:27.428028+00:00",
@@ -1581,7 +1582,7 @@
       "subscribers": 9,
       "total_views": 11670,
       "channel_total_videos": 14,
-      "avg_views_per_video": 833.6,
+      "avg_views_per_video": 834,
       "engagement_rate": 1.7,
       "total_likes": 198,
       "analytics": {
@@ -1591,59 +1592,59 @@
           {
             "country": "India",
             "code": "IN",
-            "flag": "\ud83c\uddee\ud83c\uddf3",
+            "flag": "🇮🇳",
             "percent": 38.6
           },
           {
             "country": "United States",
             "code": "US",
-            "flag": "\ud83c\uddfa\ud83c\uddf8",
+            "flag": "🇺🇸",
             "percent": 30.4
           },
           {
             "country": "Indonesia",
             "code": "ID",
-            "flag": "\ud83c\uddee\ud83c\udde9",
+            "flag": "🇮🇩",
             "percent": 11.2
           },
           {
             "country": "Philippines",
             "code": "PH",
-            "flag": "\ud83c\uddf5\ud83c\udded",
+            "flag": "🇵🇭",
             "percent": 8.5
           },
           {
             "country": "United Kingdom",
             "code": "GB",
-            "flag": "\ud83c\uddec\ud83c\udde7",
+            "flag": "🇬🇧",
             "percent": 5.7
           },
           {
             "country": "Other countries",
             "code": "OTHER",
-            "flag": "\ud83c\udf10",
+            "flag": "🌐",
             "percent": 5.6
           }
         ],
         "age_distribution": [
           {
-            "range": "13\u201317 years",
+            "range": "13–17 years",
             "percent": 8.4
           },
           {
-            "range": "18\u201324 years",
+            "range": "18–24 years",
             "percent": 41.6
           },
           {
-            "range": "25\u201334 years",
+            "range": "25–34 years",
             "percent": 37.9
           },
           {
-            "range": "35\u201344 years",
+            "range": "35–44 years",
             "percent": 8.2
           },
           {
-            "range": "45\u201354 years",
+            "range": "45–54 years",
             "percent": 2.8
           },
           {
@@ -1659,27 +1660,27 @@
           {
             "source": "Shorts feed",
             "percent": 81.2,
-            "icon": "\ud83d\udcf1"
+            "icon": "📱"
           },
           {
             "source": "YouTube search",
             "percent": 10.6,
-            "icon": "\ud83d\udd0d"
+            "icon": "🔍"
           },
           {
             "source": "Channel pages",
             "percent": 4.4,
-            "icon": "\ud83d\udcc4"
+            "icon": "📄"
           },
           {
             "source": "Suggested videos",
             "percent": 2.5,
-            "icon": "\ud83c\udfac"
+            "icon": "🎬"
           },
           {
             "source": "External & Others",
             "percent": 1.3,
-            "icon": "\ud83d\udd17"
+            "icon": "🔗"
           }
         ],
         "subscriber_watch_time": {
@@ -1694,36 +1695,36 @@
           {
             "device": "Mobile phone",
             "percent": 94.6,
-            "icon": "\ud83d\udcf1"
+            "icon": "📱"
           },
           {
             "device": "Computer",
             "percent": 3.8,
-            "icon": "\ud83d\udcbb"
+            "icon": "💻"
           },
           {
             "device": "TV / Tablet",
             "percent": 1.6,
-            "icon": "\ud83d\udcfa"
+            "icon": "📺"
           }
         ],
-        "peak_hours": "5:30 PM \u2013 10:00 PM IST (High Viral Shorts Activity)"
+        "peak_hours": "5:30 PM – 10:00 PM IST (High Viral Shorts Activity)"
       },
       "health": {
         "overall_score": 99,
         "verdict": "Flawless (Optimal Standing)",
         "verdict_color": "#10B981",
-        "shield_icon": "\ud83d\udee1\ufe0f",
+        "shield_icon": "🛡️",
         "strikes": {
           "count": 0,
           "max": 3,
-          "status": "0 of 3 active strikes \u2022 Channel Active & Public (YouTube API Verified)",
+          "status": "0 of 3 active strikes • Channel Active & Public (YouTube API Verified)",
           "badge": "CLEAN",
           "is_clean": true
         },
         "copyright": {
           "count": 0,
-          "status": "0 copyright claims \u2022 100% Original Audio & Video",
+          "status": "0 copyright claims • 100% Original Audio & Video",
           "badge": "CLEAN",
           "is_clean": true
         },
@@ -1963,7 +1964,7 @@
         "region": "Iowa",
         "country": "United States",
         "country_code": "US",
-        "flag": "\ud83c\uddfa\ud83c\uddf8",
+        "flag": "🇺🇸",
         "org": "AS8075 Microsoft Corporation",
         "datacenter": "Microsoft Azure Central US (Iowa)",
         "verify_url": "https://ipinfo.io/20.232.145.102"
@@ -1981,9 +1982,9 @@
       "color": "#8B5CF6",
       "avatar_url": "https://yt3.ggpht.com/WKefM8i0bji48M_e159k6q0080b5zNwYExax_QloW7H3XguFARUF-SuE62a8rdPQJXvtTXxbJQ=s240-c-k-c0x00ffffff-no-rj",
       "subscribers": 42,
-      "total_views": 34700,
+      "total_views": 7,
       "channel_total_videos": 12,
-      "avg_views_per_video": 2891.7,
+      "avg_views_per_video": 2895,
       "engagement_rate": 0.8,
       "total_likes": 277,
       "analytics": {
@@ -1993,59 +1994,59 @@
           {
             "country": "United States",
             "code": "US",
-            "flag": "\ud83c\uddfa\ud83c\uddf8",
+            "flag": "🇺🇸",
             "percent": 53.4
           },
           {
             "country": "United Kingdom",
             "code": "GB",
-            "flag": "\ud83c\uddec\ud83c\udde7",
+            "flag": "🇬🇧",
             "percent": 13.8
           },
           {
             "country": "Canada",
             "code": "CA",
-            "flag": "\ud83c\udde8\ud83c\udde6",
+            "flag": "🇨🇦",
             "percent": 9.2
           },
           {
             "country": "Germany",
             "code": "DE",
-            "flag": "\ud83c\udde9\ud83c\uddea",
+            "flag": "🇩🇪",
             "percent": 7.1
           },
           {
             "country": "Australia",
             "code": "AU",
-            "flag": "\ud83c\udde6\ud83c\uddfa",
+            "flag": "🇦🇺",
             "percent": 6.3
           },
           {
             "country": "Other countries",
             "code": "OTHER",
-            "flag": "\ud83c\udf10",
+            "flag": "🌐",
             "percent": 10.2
           }
         ],
         "age_distribution": [
           {
-            "range": "13\u201317 years",
+            "range": "13–17 years",
             "percent": 6.8
           },
           {
-            "range": "18\u201324 years",
+            "range": "18–24 years",
             "percent": 48.4
           },
           {
-            "range": "25\u201334 years",
+            "range": "25–34 years",
             "percent": 36.8
           },
           {
-            "range": "35\u201344 years",
+            "range": "35–44 years",
             "percent": 5.4
           },
           {
-            "range": "45\u201354 years",
+            "range": "45–54 years",
             "percent": 1.9
           },
           {
@@ -2061,27 +2062,27 @@
           {
             "source": "Shorts feed",
             "percent": 81.2,
-            "icon": "\ud83d\udcf1"
+            "icon": "📱"
           },
           {
             "source": "YouTube search",
             "percent": 10.6,
-            "icon": "\ud83d\udd0d"
+            "icon": "🔍"
           },
           {
             "source": "Channel pages",
             "percent": 4.4,
-            "icon": "\ud83d\udcc4"
+            "icon": "📄"
           },
           {
             "source": "Suggested videos",
             "percent": 2.5,
-            "icon": "\ud83c\udfac"
+            "icon": "🎬"
           },
           {
             "source": "External & Others",
             "percent": 1.3,
-            "icon": "\ud83d\udd17"
+            "icon": "🔗"
           }
         ],
         "subscriber_watch_time": {
@@ -2096,36 +2097,36 @@
           {
             "device": "Mobile phone",
             "percent": 94.6,
-            "icon": "\ud83d\udcf1"
+            "icon": "📱"
           },
           {
             "device": "Computer",
             "percent": 3.8,
-            "icon": "\ud83d\udcbb"
+            "icon": "💻"
           },
           {
             "device": "TV / Tablet",
             "percent": 1.6,
-            "icon": "\ud83d\udcfa"
+            "icon": "📺"
           }
         ],
-        "peak_hours": "6:00 PM \u2013 10:30 PM IST (Prime US/UK Fast Action Window)"
+        "peak_hours": "6:00 PM – 10:30 PM IST (Prime US/UK Fast Action Window)"
       },
       "health": {
         "overall_score": 100,
         "verdict": "Flawless (Optimal Standing)",
         "verdict_color": "#10B981",
-        "shield_icon": "\ud83d\udee1\ufe0f",
+        "shield_icon": "🛡️",
         "strikes": {
           "count": 0,
           "max": 3,
-          "status": "0 of 3 active strikes \u2022 Channel Active & Public (YouTube API Verified)",
+          "status": "0 of 3 active strikes • Channel Active & Public (YouTube API Verified)",
           "badge": "CLEAN",
           "is_clean": true
         },
         "copyright": {
           "count": 0,
-          "status": "0 copyright claims \u2022 100% Original Audio & Video",
+          "status": "0 copyright claims • 100% Original Audio & Video",
           "badge": "CLEAN",
           "is_clean": true
         },
@@ -2189,7 +2190,7 @@
           "title": "Adorable Toddler Shows Pure Curiosity #ToddlerLife #CutestMoments #FamilyMoments #WholesomeContent #",
           "uploaded_at": "2026-09-12T22:14:31Z",
           "thumbnail": "https://i.ytimg.com/vi/a3keluYHTIE/mqdefault.jpg",
-          "views": 42,
+          "views": 43,
           "likes": 0,
           "comments": 0,
           "subscribers_gained": 0
@@ -2200,7 +2201,7 @@
           "title": "Adorable Toddler Reacts In The Cutest Way #ToddlerLife #CutestMoments #FamilyMoments #WholesomeConte",
           "uploaded_at": "2026-09-12T17:39:42Z",
           "thumbnail": "https://i.ytimg.com/vi/goCoZBF3N_M/mqdefault.jpg",
-          "views": 34180,
+          "views": 34196,
           "likes": 275,
           "comments": 3,
           "subscribers_gained": 42
@@ -2211,7 +2212,7 @@
           "title": "Adorable Toddler Makes Everyone Smile #ToddlerLife #CutestMoments #FamilyMoments #WholesomeContent #",
           "uploaded_at": "2026-09-11T09:09:05Z",
           "thumbnail": "https://i.ytimg.com/vi/yNvI5S6ywtk/mqdefault.jpg",
-          "views": 59,
+          "views": 56,
           "likes": 0,
           "comments": 0,
           "subscribers_gained": 0
@@ -2233,7 +2234,7 @@
           "title": "Adorable Toddler Is The Star Of The Day #ToddlerLife #CutestMoments #FamilyMoments #WholesomeContent",
           "uploaded_at": "2026-09-06T07:17:06Z",
           "thumbnail": "https://i.ytimg.com/vi/ab7NoDGG5hM/mqdefault.jpg",
-          "views": 49,
+          "views": 51,
           "likes": 0,
           "comments": 0,
           "subscribers_gained": 0
@@ -2244,7 +2245,7 @@
           "title": "Adorable Toddler Is Simply Adorable Today #ToddlerLife #CutestMoments #FamilyMoments #WholesomeConte",
           "uploaded_at": "2026-09-03T19:33:09Z",
           "thumbnail": "https://i.ytimg.com/vi/DeNVaJ5X83k/mqdefault.jpg",
-          "views": 53,
+          "views": 55,
           "likes": 1,
           "comments": 0,
           "subscribers_gained": 0
@@ -2255,7 +2256,7 @@
           "title": "Adorable Toddler Has The Best Day Ever #ToddlerLife #CutestMoments #FamilyMoments #WholesomeContent",
           "uploaded_at": "2026-08-30T17:35:30Z",
           "thumbnail": "https://i.ytimg.com/vi/pJiFMLs4Nrc/mqdefault.jpg",
-          "views": 43,
+          "views": 47,
           "likes": 0,
           "comments": 0,
           "subscribers_gained": 0
@@ -2266,7 +2267,7 @@
           "title": "Adorable Toddler Finds Joy In Everything #ToddlerLife #CutestMoments #FamilyMoments #WholesomeConten",
           "uploaded_at": "2026-08-27T19:50:02Z",
           "thumbnail": "https://i.ytimg.com/vi/OHtwYkmH5Hs/mqdefault.jpg",
-          "views": 30,
+          "views": 38,
           "likes": 0,
           "comments": 0,
           "subscribers_gained": 0
@@ -2277,7 +2278,7 @@
           "title": "Adorable Toddler Fills The Day With Joy #ToddlerLife #CutestMoments #FamilyMoments #WholesomeContent",
           "uploaded_at": "2026-08-26T19:38:04Z",
           "thumbnail": "https://i.ytimg.com/vi/unhVBbhAK2w/mqdefault.jpg",
-          "views": 39,
+          "views": 44,
           "likes": 0,
           "comments": 0,
           "subscribers_gained": 0
@@ -2288,7 +2289,7 @@
           "title": "Adorable Toddler Explores With Wide Eyes #ToddlerLife #CutestMoments #FamilyMoments #WholesomeConten",
           "uploaded_at": "2026-08-25T19:55:25Z",
           "thumbnail": "https://i.ytimg.com/vi/8QtmEc_o-RQ/mqdefault.jpg",
-          "views": 33,
+          "views": 35,
           "likes": 0,
           "comments": 0,
           "subscribers_gained": 0
@@ -2331,7 +2332,7 @@
         "region": "Iowa",
         "country": "US",
         "country_code": "US",
-        "flag": "\ud83c\uddfa\ud83c\uddf8",
+        "flag": "🇺🇸",
         "org": "AS8075 Microsoft Corporation",
         "datacenter": "Microsoft Azure Cloud Runner",
         "verified_at": "2026-09-12T22:14:10.187842+00:00",
@@ -2350,9 +2351,9 @@
       "color": "#EC4899",
       "avatar_url": "https://yt3.ggpht.com/pqIrk9GBtAR6cdyBH5C_kHNWA1jlu4VT9ZLKxdYTFW6IvVQLWbtFO3OUxrSV1Jm1SR0JAyTrAA=s240-c-k-c0x00ffffff-no-rj",
       "subscribers": 4,
-      "total_views": 14543,
+      "total_views": 12933,
       "channel_total_videos": 12,
-      "avg_views_per_video": 1211.9,
+      "avg_views_per_video": 1212,
       "engagement_rate": 0.8,
       "total_likes": 117,
       "analytics": {
@@ -2362,59 +2363,59 @@
           {
             "country": "United States",
             "code": "US",
-            "flag": "\ud83c\uddfa\ud83c\uddf8",
+            "flag": "🇺🇸",
             "percent": 41.2
           },
           {
             "country": "United Kingdom",
             "code": "GB",
-            "flag": "\ud83c\uddec\ud83c\udde7",
+            "flag": "🇬🇧",
             "percent": 16.4
           },
           {
             "country": "India",
             "code": "IN",
-            "flag": "\ud83c\uddee\ud83c\uddf3",
+            "flag": "🇮🇳",
             "percent": 14.8
           },
           {
             "country": "France",
             "code": "FR",
-            "flag": "\ud83c\uddeb\ud83c\uddf7",
+            "flag": "🇫🇷",
             "percent": 8.5
           },
           {
             "country": "Germany",
             "code": "DE",
-            "flag": "\ud83c\udde9\ud83c\uddea",
+            "flag": "🇩🇪",
             "percent": 6.9
           },
           {
             "country": "Other countries",
             "code": "OTHER",
-            "flag": "\ud83c\udf10",
+            "flag": "🌐",
             "percent": 12.2
           }
         ],
         "age_distribution": [
           {
-            "range": "13\u201317 years",
+            "range": "13–17 years",
             "percent": 11.5
           },
           {
-            "range": "18\u201324 years",
+            "range": "18–24 years",
             "percent": 38.2
           },
           {
-            "range": "25\u201334 years",
+            "range": "25–34 years",
             "percent": 32.7
           },
           {
-            "range": "35\u201344 years",
+            "range": "35–44 years",
             "percent": 10.4
           },
           {
-            "range": "45\u201354 years",
+            "range": "45–54 years",
             "percent": 5.1
           },
           {
@@ -2430,27 +2431,27 @@
           {
             "source": "Shorts feed",
             "percent": 81.2,
-            "icon": "\ud83d\udcf1"
+            "icon": "📱"
           },
           {
             "source": "YouTube search",
             "percent": 10.6,
-            "icon": "\ud83d\udd0d"
+            "icon": "🔍"
           },
           {
             "source": "Channel pages",
             "percent": 4.4,
-            "icon": "\ud83d\udcc4"
+            "icon": "📄"
           },
           {
             "source": "Suggested videos",
             "percent": 2.5,
-            "icon": "\ud83c\udfac"
+            "icon": "🎬"
           },
           {
             "source": "External & Others",
             "percent": 1.3,
-            "icon": "\ud83d\udd17"
+            "icon": "🔗"
           }
         ],
         "subscriber_watch_time": {
@@ -2465,36 +2466,36 @@
           {
             "device": "Mobile phone",
             "percent": 94.6,
-            "icon": "\ud83d\udcf1"
+            "icon": "📱"
           },
           {
             "device": "Computer",
             "percent": 3.8,
-            "icon": "\ud83d\udcbb"
+            "icon": "💻"
           },
           {
             "device": "TV / Tablet",
             "percent": 1.6,
-            "icon": "\ud83d\udcfa"
+            "icon": "📺"
           }
         ],
-        "peak_hours": "4:30 PM \u2013 9:30 PM IST (Global Art & Creative Window)"
+        "peak_hours": "4:30 PM – 9:30 PM IST (Global Art & Creative Window)"
       },
       "health": {
         "overall_score": 100,
         "verdict": "Flawless (Optimal Standing)",
         "verdict_color": "#10B981",
-        "shield_icon": "\ud83d\udee1\ufe0f",
+        "shield_icon": "🛡️",
         "strikes": {
           "count": 0,
           "max": 3,
-          "status": "0 of 3 active strikes \u2022 Channel Active & Public (YouTube API Verified)",
+          "status": "0 of 3 active strikes • Channel Active & Public (YouTube API Verified)",
           "badge": "CLEAN",
           "is_clean": true
         },
         "copyright": {
           "count": 0,
-          "status": "0 copyright claims \u2022 100% Original Audio & Video",
+          "status": "0 copyright claims • 100% Original Audio & Video",
           "badge": "CLEAN",
           "is_clean": true
         },
@@ -2558,7 +2559,7 @@
           "title": "Everyone Wanted To See The Finished Canvas #Painting #ArtReels #ArtReveal #Artist #Viral.",
           "uploaded_at": "2026-09-12T22:15:13Z",
           "thumbnail": "https://i.ytimg.com/vi/ZlNJrHYRPoU/mqdefault.jpg",
-          "views": 1432,
+          "views": 1428,
           "likes": 25,
           "comments": 0,
           "subscribers_gained": 0
@@ -2569,7 +2570,7 @@
           "title": "Everyone Stopped To Watch This Artist Work #StreetArt #Artist #Painting #ArtReels #Viral.",
           "uploaded_at": "2026-09-12T18:28:10Z",
           "thumbnail": "https://i.ytimg.com/vi/E7vzDp7HUIM/mqdefault.jpg",
-          "views": 345,
+          "views": 351,
           "likes": 9,
           "comments": 1,
           "subscribers_gained": 0
@@ -2580,7 +2581,7 @@
           "title": "Every Stroke Brings The Scene Closer To Life #Painting #ArtReels #Artist #ArtTransformation #Satisfy",
           "uploaded_at": "2026-09-11T09:08:18Z",
           "thumbnail": "https://i.ytimg.com/vi/23fs8X8RlyM/mqdefault.jpg",
-          "views": 1287,
+          "views": 1289,
           "likes": 8,
           "comments": 0,
           "subscribers_gained": 0
@@ -2700,7 +2701,7 @@
         "region": "Arizona",
         "country": "US",
         "country_code": "US",
-        "flag": "\ud83c\uddfa\ud83c\uddf8",
+        "flag": "🇺🇸",
         "org": "AS8075 Microsoft Corporation",
         "datacenter": "Microsoft Azure Cloud Runner",
         "verified_at": "2026-09-12T22:14:55.574494+00:00",
@@ -2719,9 +2720,9 @@
       "color": "#3B82F6",
       "avatar_url": "https://yt3.ggpht.com/vRLBXNb4fgjWzDfLf8ltniGaD2BlvZ1PAWugGoZaJx1nCdJ92LubM-8vy7hIgxHlCicFwpt2=s240-c-k-c0x00ffffff-no-rj",
       "subscribers": 23,
-      "total_views": 10060,
+      "total_views": 9742,
       "channel_total_videos": 28,
-      "avg_views_per_video": 359.3,
+      "avg_views_per_video": 360,
       "engagement_rate": 1.4,
       "total_likes": 137,
       "analytics": {
@@ -2731,59 +2732,59 @@
           {
             "country": "United States",
             "code": "US",
-            "flag": "\ud83c\uddfa\ud83c\uddf8",
+            "flag": "🇺🇸",
             "percent": 42.1
           },
           {
             "country": "United Kingdom",
             "code": "GB",
-            "flag": "\ud83c\uddec\ud83c\udde7",
+            "flag": "🇬🇧",
             "percent": 18.5
           },
           {
             "country": "Brazil",
             "code": "BR",
-            "flag": "\ud83c\udde7\ud83c\uddf7",
+            "flag": "🇧🇷",
             "percent": 14.2
           },
           {
             "country": "Germany",
             "code": "DE",
-            "flag": "\ud83c\udde9\ud83c\uddea",
+            "flag": "🇩🇪",
             "percent": 9.4
           },
           {
             "country": "India",
             "code": "IN",
-            "flag": "\ud83c\uddee\ud83c\uddf3",
+            "flag": "🇮🇳",
             "percent": 8.6
           },
           {
             "country": "Other countries",
             "code": "OTHER",
-            "flag": "\ud83c\udf10",
+            "flag": "🌐",
             "percent": 7.2
           }
         ],
         "age_distribution": [
           {
-            "range": "13\u201317 years",
+            "range": "13–17 years",
             "percent": 9.2
           },
           {
-            "range": "18\u201324 years",
+            "range": "18–24 years",
             "percent": 46.5
           },
           {
-            "range": "25\u201334 years",
+            "range": "25–34 years",
             "percent": 34.2
           },
           {
-            "range": "35\u201344 years",
+            "range": "35–44 years",
             "percent": 6.8
           },
           {
-            "range": "45\u201354 years",
+            "range": "45–54 years",
             "percent": 2.3
           },
           {
@@ -2799,27 +2800,27 @@
           {
             "source": "Shorts feed",
             "percent": 81.2,
-            "icon": "\ud83d\udcf1"
+            "icon": "📱"
           },
           {
             "source": "YouTube search",
             "percent": 10.6,
-            "icon": "\ud83d\udd0d"
+            "icon": "🔍"
           },
           {
             "source": "Channel pages",
             "percent": 4.4,
-            "icon": "\ud83d\udcc4"
+            "icon": "📄"
           },
           {
             "source": "Suggested videos",
             "percent": 2.5,
-            "icon": "\ud83c\udfac"
+            "icon": "🎬"
           },
           {
             "source": "External & Others",
             "percent": 1.3,
-            "icon": "\ud83d\udd17"
+            "icon": "🔗"
           }
         ],
         "subscriber_watch_time": {
@@ -2834,36 +2835,36 @@
           {
             "device": "Mobile phone",
             "percent": 94.6,
-            "icon": "\ud83d\udcf1"
+            "icon": "📱"
           },
           {
             "device": "Computer",
             "percent": 3.8,
-            "icon": "\ud83d\udcbb"
+            "icon": "💻"
           },
           {
             "device": "TV / Tablet",
             "percent": 1.6,
-            "icon": "\ud83d\udcfa"
+            "icon": "📺"
           }
         ],
-        "peak_hours": "6:00 PM \u2013 11:00 PM IST (Prime Global Matchdays & Sports Window)"
+        "peak_hours": "6:00 PM – 11:00 PM IST (Prime Global Matchdays & Sports Window)"
       },
       "health": {
         "overall_score": 99,
         "verdict": "Flawless (Optimal Standing)",
         "verdict_color": "#10B981",
-        "shield_icon": "\ud83d\udee1\ufe0f",
+        "shield_icon": "🛡️",
         "strikes": {
           "count": 0,
           "max": 3,
-          "status": "0 of 3 active strikes \u2022 Channel Active & Public (YouTube API Verified)",
+          "status": "0 of 3 active strikes • Channel Active & Public (YouTube API Verified)",
           "badge": "CLEAN",
           "is_clean": true
         },
         "copyright": {
           "count": 0,
-          "status": "0 copyright claims \u2022 100% Original Audio & Video",
+          "status": "0 copyright claims • 100% Original Audio & Video",
           "badge": "CLEAN",
           "is_clean": true
         },
@@ -2916,7 +2917,7 @@
           "title": "Every Champion Has A Beginning Forever #Football #Soccer #FootballStory #FootballLife #Goal #Dream #",
           "uploaded_at": "2026-09-13T14:15:19Z",
           "thumbnail": "https://i.ytimg.com/vi/lHgG7YDjn-Q/mqdefault.jpg",
-          "views": 68,
+          "views": 77,
           "likes": 0,
           "comments": 0,
           "subscribers_gained": 0
@@ -2938,7 +2939,7 @@
           "title": "Every Champion Has A Beginning Before The Final Whistle #Football #Soccer #FootballStory #FootballLi",
           "uploaded_at": "2026-09-12T20:49:22Z",
           "thumbnail": "https://i.ytimg.com/vi/RQRckO7D9Sg/mqdefault.jpg",
-          "views": 4,
+          "views": 8,
           "likes": 0,
           "comments": 0,
           "subscribers_gained": 0
@@ -3251,7 +3252,7 @@
         "region": "Washington",
         "country": "US",
         "country_code": "US",
-        "flag": "\ud83c\uddfa\ud83c\uddf8",
+        "flag": "🇺🇸",
         "org": "AS8075 Microsoft Corporation",
         "datacenter": "Microsoft Azure Cloud Runner",
         "verified_at": "2026-09-12T22:14:00.817365+00:00",
@@ -3270,9 +3271,9 @@
       "color": "#F59E0B",
       "avatar_url": "https://yt3.ggpht.com/nq_ZXt9K4MP8rn_0NncY8cm8FKpJhysqk3dE-4DnBi5riAIIgaSHkyJ3peEPN45JHegO91Ws7Xg=s240-c-k-c0x00ffffff-no-rj",
       "subscribers": 0,
-      "total_views": 315,
+      "total_views": 311,
       "channel_total_videos": 36,
-      "avg_views_per_video": 8.8,
+      "avg_views_per_video": 9,
       "engagement_rate": 0.0,
       "total_likes": 0,
       "analytics": {
@@ -3282,59 +3283,59 @@
           {
             "country": "United States",
             "code": "US",
-            "flag": "\ud83c\uddfa\ud83c\uddf8",
+            "flag": "🇺🇸",
             "percent": 51.4
           },
           {
             "country": "United Kingdom",
             "code": "GB",
-            "flag": "\ud83c\uddec\ud83c\udde7",
+            "flag": "🇬🇧",
             "percent": 16.2
           },
           {
             "country": "Canada",
             "code": "CA",
-            "flag": "\ud83c\udde8\ud83c\udde6",
+            "flag": "🇨🇦",
             "percent": 11.8
           },
           {
             "country": "Australia",
             "code": "AU",
-            "flag": "\ud83c\udde6\ud83c\uddfa",
+            "flag": "🇦🇺",
             "percent": 8.5
           },
           {
             "country": "India",
             "code": "IN",
-            "flag": "\ud83c\uddee\ud83c\uddf3",
+            "flag": "🇮🇳",
             "percent": 6.9
           },
           {
             "country": "Other countries",
             "code": "OTHER",
-            "flag": "\ud83c\udf10",
+            "flag": "🌐",
             "percent": 5.2
           }
         ],
         "age_distribution": [
           {
-            "range": "13\u201317 years",
+            "range": "13–17 years",
             "percent": 14.5
           },
           {
-            "range": "18\u201324 years",
+            "range": "18–24 years",
             "percent": 41.2
           },
           {
-            "range": "25\u201334 years",
+            "range": "25–34 years",
             "percent": 28.6
           },
           {
-            "range": "35\u201344 years",
+            "range": "35–44 years",
             "percent": 9.7
           },
           {
-            "range": "45\u201354 years",
+            "range": "45–54 years",
             "percent": 4.1
           },
           {
@@ -3350,27 +3351,27 @@
           {
             "source": "Shorts feed",
             "percent": 81.2,
-            "icon": "\ud83d\udcf1"
+            "icon": "📱"
           },
           {
             "source": "YouTube search",
             "percent": 10.6,
-            "icon": "\ud83d\udd0d"
+            "icon": "🔍"
           },
           {
             "source": "Channel pages",
             "percent": 4.4,
-            "icon": "\ud83d\udcc4"
+            "icon": "📄"
           },
           {
             "source": "Suggested videos",
             "percent": 2.5,
-            "icon": "\ud83c\udfac"
+            "icon": "🎬"
           },
           {
             "source": "External & Others",
             "percent": 1.3,
-            "icon": "\ud83d\udd17"
+            "icon": "🔗"
           }
         ],
         "subscriber_watch_time": {
@@ -3385,36 +3386,36 @@
           {
             "device": "Mobile phone",
             "percent": 94.6,
-            "icon": "\ud83d\udcf1"
+            "icon": "📱"
           },
           {
             "device": "Computer",
             "percent": 3.8,
-            "icon": "\ud83d\udcbb"
+            "icon": "💻"
           },
           {
             "device": "TV / Tablet",
             "percent": 1.6,
-            "icon": "\ud83d\udcfa"
+            "icon": "📺"
           }
         ],
-        "peak_hours": "5:00 PM \u2013 10:00 PM IST (Global Family & Pet Lovers Window)"
+        "peak_hours": "5:00 PM – 10:00 PM IST (Global Family & Pet Lovers Window)"
       },
       "health": {
         "overall_score": 97,
         "verdict": "Flawless (Optimal Standing)",
         "verdict_color": "#10B981",
-        "shield_icon": "\ud83d\udee1\ufe0f",
+        "shield_icon": "🛡️",
         "strikes": {
           "count": 0,
           "max": 3,
-          "status": "0 of 3 active strikes \u2022 Channel Active & Public (YouTube API Verified)",
+          "status": "0 of 3 active strikes • Channel Active & Public (YouTube API Verified)",
           "badge": "CLEAN",
           "is_clean": true
         },
         "copyright": {
           "count": 0,
-          "status": "0 copyright claims \u2022 100% Original Audio & Video",
+          "status": "0 copyright claims • 100% Original Audio & Video",
           "badge": "CLEAN",
           "is_clean": true
         },
@@ -3878,7 +3879,7 @@
         "region": "Virginia",
         "country": "US",
         "country_code": "US",
-        "flag": "\ud83c\uddfa\ud83c\uddf8",
+        "flag": "🇺🇸",
         "org": "AS8075 Microsoft Corporation",
         "datacenter": "Microsoft Azure Cloud Runner",
         "verified_at": "2026-09-12T22:11:15.208286+00:00",
@@ -3897,9 +3898,9 @@
       "color": "#8B5CF6",
       "avatar_url": "https://yt3.ggpht.com/c2et41jvboHRktLNJH-bmzbYclnu_SeQYjockP52SQB3xQtmw6jPskOSLrGMwcb7UiN4i4QybOo=s240-c-k-c0x00ffffff-no-rj",
       "subscribers": 17,
-      "total_views": 26684,
+      "total_views": 24782,
       "channel_total_videos": 29,
-      "avg_views_per_video": 920.1,
+      "avg_views_per_video": 920,
       "engagement_rate": 0.9,
       "total_likes": 229,
       "analytics": {
@@ -3909,59 +3910,59 @@
           {
             "country": "United States",
             "code": "US",
-            "flag": "\ud83c\uddfa\ud83c\uddf8",
+            "flag": "🇺🇸",
             "percent": 48.7
           },
           {
             "country": "United Kingdom",
             "code": "GB",
-            "flag": "\ud83c\uddec\ud83c\udde7",
+            "flag": "🇬🇧",
             "percent": 15.3
           },
           {
             "country": "Canada",
             "code": "CA",
-            "flag": "\ud83c\udde8\ud83c\udde6",
+            "flag": "🇨🇦",
             "percent": 10.4
           },
           {
             "country": "Germany",
             "code": "DE",
-            "flag": "\ud83c\udde9\ud83c\uddea",
+            "flag": "🇩🇪",
             "percent": 8.1
           },
           {
             "country": "India",
             "code": "IN",
-            "flag": "\ud83c\uddee\ud83c\uddf3",
+            "flag": "🇮🇳",
             "percent": 11.2
           },
           {
             "country": "Other countries",
             "code": "OTHER",
-            "flag": "\ud83c\udf10",
+            "flag": "🌐",
             "percent": 6.3
           }
         ],
         "age_distribution": [
           {
-            "range": "13\u201317 years",
+            "range": "13–17 years",
             "percent": 8.1
           },
           {
-            "range": "18\u201324 years",
+            "range": "18–24 years",
             "percent": 43.5
           },
           {
-            "range": "25\u201334 years",
+            "range": "25–34 years",
             "percent": 35.8
           },
           {
-            "range": "35\u201344 years",
+            "range": "35–44 years",
             "percent": 8.2
           },
           {
-            "range": "45\u201354 years",
+            "range": "45–54 years",
             "percent": 3.1
           },
           {
@@ -3977,27 +3978,27 @@
           {
             "source": "Shorts feed",
             "percent": 81.2,
-            "icon": "\ud83d\udcf1"
+            "icon": "📱"
           },
           {
             "source": "YouTube search",
             "percent": 10.6,
-            "icon": "\ud83d\udd0d"
+            "icon": "🔍"
           },
           {
             "source": "Channel pages",
             "percent": 4.4,
-            "icon": "\ud83d\udcc4"
+            "icon": "📄"
           },
           {
             "source": "Suggested videos",
             "percent": 2.5,
-            "icon": "\ud83c\udfac"
+            "icon": "🎬"
           },
           {
             "source": "External & Others",
             "percent": 1.3,
-            "icon": "\ud83d\udd17"
+            "icon": "🔗"
           }
         ],
         "subscriber_watch_time": {
@@ -4012,36 +4013,36 @@
           {
             "device": "Mobile phone",
             "percent": 94.6,
-            "icon": "\ud83d\udcf1"
+            "icon": "📱"
           },
           {
             "device": "Computer",
             "percent": 3.8,
-            "icon": "\ud83d\udcbb"
+            "icon": "💻"
           },
           {
             "device": "TV / Tablet",
             "percent": 1.6,
-            "icon": "\ud83d\udcfa"
+            "icon": "📺"
           }
         ],
-        "peak_hours": "6:00 PM \u2013 11:30 PM IST (Global Movie Buffs & Entertainment Window)"
+        "peak_hours": "6:00 PM – 11:30 PM IST (Global Movie Buffs & Entertainment Window)"
       },
       "health": {
         "overall_score": 99,
         "verdict": "Flawless (Optimal Standing)",
         "verdict_color": "#10B981",
-        "shield_icon": "\ud83d\udee1\ufe0f",
+        "shield_icon": "🛡️",
         "strikes": {
           "count": 0,
           "max": 3,
-          "status": "0 of 3 active strikes \u2022 Channel Active & Public (YouTube API Verified)",
+          "status": "0 of 3 active strikes • Channel Active & Public (YouTube API Verified)",
           "badge": "CLEAN",
           "is_clean": true
         },
         "copyright": {
           "count": 0,
-          "status": "0 copyright claims \u2022 100% Original Audio & Video",
+          "status": "0 copyright claims • 100% Original Audio & Video",
           "badge": "CLEAN",
           "is_clean": true
         },
@@ -4094,7 +4095,7 @@
           "title": "Hollywood's Biggest Secret Revealed Behind Closed Doors #BehindTheScenes #Hollywood #MovieMagic #Fil",
           "uploaded_at": "2026-09-13T12:05:10Z",
           "thumbnail": "https://i.ytimg.com/vi/zi3GOAA3zqA/mqdefault.jpg",
-          "views": 270,
+          "views": 272,
           "likes": 4,
           "comments": 0,
           "subscribers_gained": 0
@@ -4116,7 +4117,7 @@
           "title": "Behind The Biggest Scene Of The Film With Incredible Detail #BehindTheScenes #Hollywood #MovieMagic",
           "uploaded_at": "2026-09-12T21:29:37Z",
           "thumbnail": "https://i.ytimg.com/vi/1TbNIlAQsJo/mqdefault.jpg",
-          "views": 1146,
+          "views": 1144,
           "likes": 14,
           "comments": 0,
           "subscribers_gained": 1
@@ -4428,7 +4429,7 @@
         "region": "California",
         "country": "United States",
         "country_code": "US",
-        "flag": "\ud83c\uddfa\ud83c\uddf8",
+        "flag": "🇺🇸",
         "org": "AS8075 Microsoft Corporation",
         "datacenter": "Microsoft Azure West US (Silicon Valley)",
         "verify_url": "https://ipinfo.io/40.118.232.12"
@@ -4446,9 +4447,9 @@
       "color": "#06B6D4",
       "avatar_url": "https://yt3.ggpht.com/hGhDAHGNdGFqU-PCbb1tF4adddBZunivHI8CDGZA6NJlQpKsGm0H2dEpBPSGP8sn947tF1Eq=s240-c-k-c0x00ffffff-no-rj",
       "subscribers": 1,
-      "total_views": 514,
+      "total_views": 460,
       "channel_total_videos": 21,
-      "avg_views_per_video": 24.5,
+      "avg_views_per_video": 24,
       "engagement_rate": 0.2,
       "total_likes": 1,
       "analytics": {
@@ -4458,59 +4459,59 @@
           {
             "country": "United States",
             "code": "US",
-            "flag": "\ud83c\uddfa\ud83c\uddf8",
+            "flag": "🇺🇸",
             "percent": 49.3
           },
           {
             "country": "United Kingdom",
             "code": "GB",
-            "flag": "\ud83c\uddec\ud83c\udde7",
+            "flag": "🇬🇧",
             "percent": 14.8
           },
           {
             "country": "Canada",
             "code": "CA",
-            "flag": "\ud83c\udde8\ud83c\udde6",
+            "flag": "🇨🇦",
             "percent": 11.0
           },
           {
             "country": "India",
             "code": "IN",
-            "flag": "\ud83c\uddee\ud83c\uddf3",
+            "flag": "🇮🇳",
             "percent": 12.5
           },
           {
             "country": "Germany",
             "code": "DE",
-            "flag": "\ud83c\udde9\ud83c\uddea",
+            "flag": "🇩🇪",
             "percent": 6.8
           },
           {
             "country": "Other countries",
             "code": "OTHER",
-            "flag": "\ud83c\udf10",
+            "flag": "🌐",
             "percent": 5.6
           }
         ],
         "age_distribution": [
           {
-            "range": "13\u201317 years",
+            "range": "13–17 years",
             "percent": 7.4
           },
           {
-            "range": "18\u201324 years",
+            "range": "18–24 years",
             "percent": 45.2
           },
           {
-            "range": "25\u201334 years",
+            "range": "25–34 years",
             "percent": 36.1
           },
           {
-            "range": "35\u201344 years",
+            "range": "35–44 years",
             "percent": 7.5
           },
           {
-            "range": "45\u201354 years",
+            "range": "45–54 years",
             "percent": 2.8
           },
           {
@@ -4526,27 +4527,27 @@
           {
             "source": "Shorts feed",
             "percent": 81.2,
-            "icon": "\ud83d\udcf1"
+            "icon": "📱"
           },
           {
             "source": "YouTube search",
             "percent": 10.6,
-            "icon": "\ud83d\udd0d"
+            "icon": "🔍"
           },
           {
             "source": "Channel pages",
             "percent": 4.4,
-            "icon": "\ud83d\udcc4"
+            "icon": "📄"
           },
           {
             "source": "Suggested videos",
             "percent": 2.5,
-            "icon": "\ud83c\udfac"
+            "icon": "🎬"
           },
           {
             "source": "External & Others",
             "percent": 1.3,
-            "icon": "\ud83d\udd17"
+            "icon": "🔗"
           }
         ],
         "subscriber_watch_time": {
@@ -4561,36 +4562,36 @@
           {
             "device": "Mobile phone",
             "percent": 94.6,
-            "icon": "\ud83d\udcf1"
+            "icon": "📱"
           },
           {
             "device": "Computer",
             "percent": 3.8,
-            "icon": "\ud83d\udcbb"
+            "icon": "💻"
           },
           {
             "device": "TV / Tablet",
             "percent": 1.6,
-            "icon": "\ud83d\udcfa"
+            "icon": "📺"
           }
         ],
-        "peak_hours": "6:30 PM \u2013 11:30 PM IST (Global Sci-Fi & Storytelling Window)"
+        "peak_hours": "6:30 PM – 11:30 PM IST (Global Sci-Fi & Storytelling Window)"
       },
       "health": {
         "overall_score": 98,
         "verdict": "Flawless (Optimal Standing)",
         "verdict_color": "#10B981",
-        "shield_icon": "\ud83d\udee1\ufe0f",
+        "shield_icon": "🛡️",
         "strikes": {
           "count": 0,
           "max": 3,
-          "status": "0 of 3 active strikes \u2022 Channel Active & Public (YouTube API Verified)",
+          "status": "0 of 3 active strikes • Channel Active & Public (YouTube API Verified)",
           "badge": "CLEAN",
           "is_clean": true
         },
         "copyright": {
           "count": 0,
-          "status": "0 copyright claims \u2022 100% Original Audio & Video",
+          "status": "0 copyright claims • 100% Original Audio & Video",
           "badge": "CLEAN",
           "is_clean": true
         },
@@ -4889,7 +4890,7 @@
         "region": "Virginia",
         "country": "US",
         "country_code": "US",
-        "flag": "\ud83c\uddfa\ud83c\uddf8",
+        "flag": "🇺🇸",
         "org": "AS8075 Microsoft Corporation",
         "datacenter": "Microsoft Azure Cloud Runner",
         "verified_at": "2026-09-12T22:11:04.627296+00:00",
