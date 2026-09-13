@@ -1,0 +1,41 @@
+name: 24/7 Live YouTube Metrics Sync
+
+on:
+  schedule:
+    # Runs automatically every 30 minutes 24/7
+    - cron: '*/30 * * * *'
+  workflow_dispatch:
+    # Allows manual trigger at any time
+
+permissions:
+  contents: write
+
+jobs:
+  sync-metrics:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Google API dependencies
+        run: |
+          pip install google-api-python-client google-auth-httplib2 google-auth-oauthlib
+
+      - name: Run Live YouTube Metrics Sync
+        env:
+          YOUTUBE_CLIENT_SECRET_JSON: ${{ secrets.YOUTUBE_CLIENT_SECRET_JSON }}
+          YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
+        run: |
+          python sync_live_metrics.py
+
+      - name: Commit and Push Updated Live Metrics
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add data.json
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-sync live YouTube metrics (24/7 Cloud Engine)" && git push)

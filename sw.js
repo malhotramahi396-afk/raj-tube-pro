@@ -1,5 +1,5 @@
-// Service Worker for Raj Tube Pro - v16.0 Network First
-const CACHE_NAME = 'raj-tube-pro-v16';
+// Service Worker for Raj Tube Pro - v17.0 (Strict Zero-Stale Data Cache)
+const CACHE_NAME = 'raj-tube-pro-v17';
 
 self.addEventListener('install', (event) => {
   self.skipWaiting();
@@ -9,21 +9,26 @@ self.addEventListener('activate', (event) => {
   event.waitUntil(
     caches.keys().then((keys) => {
       return Promise.all(
-        keys.map((k) => {
-          if (k !== CACHE_NAME) return caches.delete(k);
-        })
+        keys.map((k) => caches.delete(k)) // Purge all old caches completely!
       );
     })
   );
   self.clients.claim();
 });
 
-// Network First strategy: always try fetching fresh content, fallback to cache only when offline
+// Network First strategy for static assets, ZERO cache for data.json / API calls
 self.addEventListener('fetch', (event) => {
+  const url = event.request.url;
+
+  // Never cache or intercept data.json or API requests - ALWAYS live from network
+  if (url.includes('data.json') || url.includes('/api/')) {
+    event.respondWith(fetch(event.request, { cache: 'no-store' }));
+    return;
+  }
+
   event.respondWith(
     fetch(event.request)
       .then((response) => {
-        // Cache successful responses for offline
         if (response && response.status === 200 && event.request.method === 'GET') {
           const resClone = response.clone();
           caches.open(CACHE_NAME).then((cache) => {

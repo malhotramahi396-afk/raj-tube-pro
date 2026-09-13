@@ -203,42 +203,69 @@ function setupChannelDropdown() {
   }
 }
 
+function updateSyncBadge(timestamp) {
+  const badgeText = document.getElementById('live-sync-text');
+  if (!badgeText) return;
+  if (!timestamp) {
+    badgeText.innerText = 'LIVE SYNC';
+    return;
+  }
+  const syncDate = new Date(timestamp);
+  const now = new Date();
+  const diffMinutes = Math.max(0, Math.round((now - syncDate) / (1000 * 60)));
+  if (diffMinutes <= 1) {
+    badgeText.innerText = 'LIVE • Just Now';
+  } else if (diffMinutes < 60) {
+    badgeText.innerText = `LIVE • ${diffMinutes}m ago`;
+  } else {
+    const diffHours = Math.round(diffMinutes / 60);
+    badgeText.innerText = `LIVE • ${diffHours}h ago`;
+  }
+}
+
 function setupSync() {
   const syncBtn = document.getElementById('btn-sync');
-  if (syncBtn) {
-    syncBtn.addEventListener('click', async () => {
-      syncBtn.style.transform = 'rotate(360deg)';
-      const activeChannel = currentChannelId; // Preserve user's current selected channel!
+  const syncBadge = document.getElementById('live-sync-badge');
 
-      try {
-        let res = await fetch('/api/refresh').catch(() => null);
-        if (!res || !res.ok) {
-          const tunnelRefresh = "https://study-noon-incredible-utilization.trycloudflare.com/api/refresh";
-          res = await fetch(tunnelRefresh).catch(() => null);
-        }
-        if (!res || !res.ok) {
-          res = await fetch(`./data.json?t=${Date.now()}`).catch(() => null);
-        }
+  const triggerSync = async () => {
+    if (syncBtn) syncBtn.style.transform = 'rotate(360deg)';
+    const activeChannel = currentChannelId; // Preserve user's current selected channel!
 
-        if (res && res.ok) {
-          const data = await res.json();
-          globalData = data;
-          // Maintain the selected channel - NEVER jump back to 'all' on refresh!
-          currentChannelId = activeChannel;
-          populateChannelSwitcher(globalData.channels);
-          renderAll();
-          showToast("Live channel metrics updated directly from YouTube Data API!");
-        } else {
-          showToast("Channel data refreshed.");
-        }
-      } catch (err) {
-        console.error('Sync error:', err);
-        showToast("Sync completed.");
-      } finally {
-        setTimeout(() => { syncBtn.style.transform = 'none'; }, 600);
+    try {
+      let res = await fetch('/api/refresh', { cache: 'no-store' }).catch(() => null);
+      if (!res || !res.ok) {
+        res = await fetch(`./data.json?t=${Date.now()}`, {
+          cache: 'no-store',
+          headers: {
+            'Cache-Control': 'no-cache, no-store, must-revalidate',
+            'Pragma': 'no-cache',
+            'Expires': '0'
+          }
+        }).catch(() => null);
       }
-    });
-  }
+
+      if (res && res.ok) {
+        const data = await res.json();
+        globalData = data;
+        // Maintain the selected channel - NEVER jump back to 'all' on refresh!
+        currentChannelId = activeChannel;
+        populateChannelSwitcher(globalData.channels);
+        renderAll();
+        updateSyncBadge(globalData.timestamp);
+        showToast("Live channel metrics updated directly from YouTube Data API!");
+      } else {
+        showToast("Channel data refreshed.");
+      }
+    } catch (err) {
+      console.error('Sync error:', err);
+      showToast("Sync completed.");
+    } finally {
+      if (syncBtn) setTimeout(() => { syncBtn.style.transform = 'none'; }, 600);
+    }
+  };
+
+  if (syncBtn) syncBtn.addEventListener('click', triggerSync);
+  if (syncBadge) syncBadge.addEventListener('click', triggerSync);
 }
 
 /* ========================================================
@@ -246,9 +273,16 @@ function setupSync() {
    ======================================================== */
 async function fetchChannelData() {
   try {
-    let res = await fetch('/api/channels').catch(() => null);
+    let res = await fetch('/api/channels', { cache: 'no-store' }).catch(() => null);
     if (!res || !res.ok) {
-      res = await fetch('./data.json').catch(() => null);
+      res = await fetch(`./data.json?t=${Date.now()}`, {
+        cache: 'no-store',
+        headers: {
+          'Cache-Control': 'no-cache, no-store, must-revalidate',
+          'Pragma': 'no-cache',
+          'Expires': '0'
+        }
+      }).catch(() => null);
     }
     if (!res || !res.ok) throw new Error('API fetch failed');
     const data = await res.json();
@@ -264,6 +298,7 @@ async function fetchChannelData() {
 
     populateChannelSwitcher(data.channels);
     renderAll();
+    updateSyncBadge(data.timestamp);
   } catch (err) {
     console.error('Data fetch error:', err);
   }
