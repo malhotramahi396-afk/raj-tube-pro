@@ -425,6 +425,10 @@ function renderAll() {
   if (globalData.schedule) {
     countdownSeconds = globalData.schedule.seconds_remaining;
     startCountdown();
+    const slotEl = document.getElementById('dash-next-slot-time');
+    if (slotEl && globalData.schedule.slot_label) {
+      slotEl.innerText = globalData.schedule.slot_label;
+    }
   }
 }
 

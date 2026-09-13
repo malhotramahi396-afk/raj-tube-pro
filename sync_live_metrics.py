@@ -260,8 +260,39 @@ def sync_metrics(data_json_path: str):
         if len(channels) > 0:
             data["summary"]["avg_views_per_channel"] = round(total_network_views / len(channels))
 
-    # 6. Update timestamp
-    now_utc = datetime.now(timezone.utc).isoformat()
+    # 6. Update schedule & countdown
+    from datetime import timedelta
+    now_dt = datetime.now(timezone.utc)
+    today = now_dt.date()
+    slot_1 = datetime(today.year, today.month, today.day, 14, 0, 0, tzinfo=timezone.utc)
+    slot_2 = datetime(today.year, today.month, today.day, 21, 0, 0, tzinfo=timezone.utc)
+    tomorrow_slot_1 = slot_1 + timedelta(days=1)
+
+    if now_dt < slot_1:
+        next_slot = slot_1
+        slot_label = "10:00 AM USA (7:30 PM IST)"
+    elif now_dt < slot_2:
+        next_slot = slot_2
+        slot_label = "05:00 PM USA (2:30 AM IST)"
+    else:
+        next_slot = tomorrow_slot_1
+        slot_label = "10:00 AM USA (7:30 PM IST Tomorrow)"
+
+    sec_rem = max(0, int((next_slot - now_dt).total_seconds()))
+    h = sec_rem // 3600
+    m = (sec_rem % 3600) // 60
+    s = sec_rem % 60
+
+    data["schedule"] = {
+        "next_slot_iso": next_slot.isoformat(),
+        "seconds_remaining": sec_rem,
+        "formatted_countdown": f"{h:02d}h {m:02d}m {s:02d}s",
+        "slot_label": slot_label,
+        "now_ist": (now_dt + timedelta(hours=5, minutes=30)).strftime("%d %b, %I:%M %p IST")
+    }
+
+    # 7. Update timestamp
+    now_utc = now_dt.isoformat()
     data["timestamp"] = now_utc
 
     # Write back
