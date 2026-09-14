@@ -2282,12 +2282,15 @@ async function handleExecutePostNow() {
 
     const data = await res.json();
 
-    if (data.status === 'success' && data.result && data.result.status === 'success') {
-      const vid = data.result;
+    if (data.status === 'success') {
+      const vid = data.result || data;
+      const ytUrl = vid.youtube_url || (vid.youtube_video_id ? `https://youtu.be/${vid.youtube_video_id}` : (vid.youtube_id ? `https://youtu.be/${vid.youtube_id}` : ''));
+      const ytTitle = vid.title || vid.filename || 'Published Short';
+
       if (logs) {
         appendTerminalLine(logs, `[SUCCESS] ✅ Video published live to YouTube!`, 'success');
-        appendTerminalLine(logs, `[TITLE] 🎬 "${vid.title}"`, 'success');
-        appendTerminalLine(logs, `[YOUTUBE URL] 🔗 ${vid.youtube_url}`, 'success');
+        appendTerminalLine(logs, `[TITLE] 🎬 "${ytTitle}"`, 'success');
+        if (ytUrl) appendTerminalLine(logs, `[YOUTUBE URL] 🔗 ${ytUrl}`, 'success');
         appendTerminalLine(logs, `[DRIVE] 🗑️ Processed file removed from Drive queue.`, 'info');
         appendTerminalLine(logs, `[STATUS] 🛡️ Schedule guards intact. Pipeline ready.`, 'info');
       }
@@ -2295,8 +2298,8 @@ async function handleExecutePostNow() {
       if (successBanner) {
         const titleEl = document.getElementById('postnow-success-title');
         const linkEl = document.getElementById('postnow-success-link');
-        if (titleEl) titleEl.innerText = vid.title || 'Published Short';
-        if (linkEl) linkEl.href = vid.youtube_url || `https://youtu.be/${vid.youtube_video_id}`;
+        if (titleEl) titleEl.innerText = ytTitle;
+        if (linkEl && ytUrl) linkEl.href = ytUrl;
         successBanner.style.display = 'flex';
       }
 
