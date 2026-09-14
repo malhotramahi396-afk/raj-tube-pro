@@ -11,7 +11,7 @@ let contentSearchQuery = '';
 let selectedVideoIds = new Set();
 let activeAnalyticsMetric = 'views';
 
-const CLOUD_TUNNEL_API = "https://intelligence-rights-limited-underground.trycloudflare.com";
+const CLOUD_TUNNEL_API = "https://champions-blackjack-pad-occupied.trycloudflare.com";
 
 const REMOTE_URL = window.location.origin.includes('github.io')
   ? "https://malhotramahi396-afk.github.io/raj-tube-pro/"
