@@ -2378,7 +2378,14 @@ async function handleExecutePostNow() {
   const logs = document.getElementById('postnow-terminal-logs');
   const successBanner = document.getElementById('postnow-success-banner');
 
-  if (btn) btn.disabled = true;
+  if (btn) {
+    btn.disabled = true;
+    btn.classList.add('postnow-uploading');
+  }
+  document.querySelectorAll('.postnow-channel-card, #postnow-master-checkbox').forEach(el => {
+    el.classList.add('upload-locked');
+  });
+
   if (successBanner) successBanner.style.display = 'none';
   if (terminal) terminal.style.display = 'block';
   if (logs) {
@@ -2418,23 +2425,39 @@ async function handleExecutePostNow() {
 
     try {
       let res = null;
+      let lastErr = null;
 
-      // Tier 1: Try baseApi
-      try {
-        res = await fetch(`${baseApi}/api/upload-now?channel=${ch.id}`, {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' }
-        });
-      } catch (_) {}
-
-      // Tier 2: Try CLOUD_TUNNEL_API if baseApi was local and failed
-      if ((!res || !res.ok) && baseApi !== CLOUD_TUNNEL_API) {
+      for (let attempt = 1; attempt <= 2; attempt++) {
+        // Tier 1: Try baseApi
         try {
-          res = await fetch(`${CLOUD_TUNNEL_API}/api/upload-now?channel=${ch.id}`, {
+          res = await fetch(`${baseApi}/api/upload-now?channel=${ch.id}`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' }
           });
-        } catch (_) {}
+          if (res && res.ok) break;
+        } catch (e1) {
+          lastErr = e1;
+        }
+
+        // Tier 2: Try CLOUD_TUNNEL_API if baseApi was local and failed
+        if ((!res || !res.ok) && baseApi !== CLOUD_TUNNEL_API) {
+          try {
+            res = await fetch(`${CLOUD_TUNNEL_API}/api/upload-now?channel=${ch.id}`, {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' }
+            });
+            if (res && res.ok) break;
+          } catch (e2) {
+            lastErr = e2;
+          }
+        }
+
+        if (attempt < 2 && (!res || !res.ok)) {
+          if (logs) {
+            appendTerminalLine(logs, `[CHANNEL ${chNum}/${count}] ⚠️ Server reconnecting, retrying in 3s (attempt ${attempt + 1}/2)...`, 'warn');
+          }
+          await new Promise(r => setTimeout(r, 3000));
+        }
       }
 
       if (progressTimer) {
@@ -2442,7 +2465,7 @@ async function handleExecutePostNow() {
         progressTimer = null;
       }
 
-      if (!res) throw new Error("Could not connect to server daemon");
+      if (!res) throw new Error((lastErr && lastErr.message) || "Could not connect to server daemon");
 
       const data = await res.json();
 
@@ -2530,7 +2553,13 @@ async function handleExecutePostNow() {
   }
 
   isUploadingNow = false;
-  if (btn) btn.disabled = false;
+  if (btn) {
+    btn.disabled = false;
+    btn.classList.remove('postnow-uploading');
+  }
+  document.querySelectorAll('.postnow-channel-card, #postnow-master-checkbox').forEach(el => {
+    el.classList.remove('upload-locked');
+  });
   if (btnText) {
     btnText.innerText = count === 1 ? "🚀 PUBLISH VIDEO NOW TO YOUTUBE" : `🚀 PUBLISH ${count} VIDEOS NOW TO YOUTUBE`;
   }
