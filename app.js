@@ -2407,6 +2407,15 @@ async function handleExecutePostNow() {
       appendTerminalLine(logs, `[CHANNEL ${chNum}/${count}] 📂 Connecting to Drive folder for ${ch.handle}...`, 'info');
     }
 
+    let progressTimer = null;
+    let elapsedSec = 0;
+    if (logs) {
+      progressTimer = setInterval(() => {
+        elapsedSec += 10;
+        appendTerminalLine(logs, `[CHANNEL ${chNum}/${count}] ⏳ Processing: Downloading video from Drive & uploading to YouTube (${elapsedSec}s elapsed)...`, 'info');
+      }, 10000);
+    }
+
     try {
       let res = null;
 
@@ -2426,6 +2435,11 @@ async function handleExecutePostNow() {
             headers: { 'Content-Type': 'application/json' }
           });
         } catch (_) {}
+      }
+
+      if (progressTimer) {
+        clearInterval(progressTimer);
+        progressTimer = null;
       }
 
       if (!res) throw new Error("Could not connect to server daemon");
@@ -2456,9 +2470,17 @@ async function handleExecutePostNow() {
         }
       }
     } catch (err) {
+      if (progressTimer) {
+        clearInterval(progressTimer);
+        progressTimer = null;
+      }
       failedUploads.push({ channel: ch.name, error: err.message });
       if (logs) {
         appendTerminalLine(logs, `[CHANNEL ${chNum}/${count}: ${ch.name}] ❌ Network error: ${err.message}`, 'error');
+      }
+    } finally {
+      if (progressTimer) {
+        clearInterval(progressTimer);
       }
     }
   }
