@@ -11,7 +11,7 @@ let contentSearchQuery = '';
 let selectedVideoIds = new Set();
 let activeAnalyticsMetric = 'views';
 
-const CLOUD_TUNNEL_API = "https://assists-suburban-upload-taught.trycloudflare.com";
+const CLOUD_TUNNEL_API = "https://intelligence-rights-limited-underground.trycloudflare.com";
 
 const REMOTE_URL = window.location.origin.includes('github.io')
   ? "https://malhotramahi396-afk.github.io/raj-tube-pro/"
@@ -29,6 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
   setupBatchSelection();
   setupAnalyticsChips();
   setupRadarSearch();
+  setupPostNowView();
 
   // Instant hydration from local master cache
   hydrateFromMasterCache();
@@ -87,6 +88,11 @@ function setupNavigation() {
     btnGotoRadar.addEventListener('click', () => switchView('radar'));
   }
 
+  const btnGotoPostNow = document.getElementById('btn-goto-postnow');
+  if (btnGotoPostNow) {
+    btnGotoPostNow.addEventListener('click', () => switchView('post-now'));
+  }
+
   // Hamburger toggle on mobile
   const btnToggleSidebar = document.getElementById('btn-toggle-sidebar');
   const sidebar = document.getElementById('studio-sidebar');
@@ -143,6 +149,10 @@ function switchView(viewName) {
 
   if (viewName === 'analytics') {
     renderAnalyticsChart();
+  }
+
+  if (viewName === 'post-now') {
+    renderPostNowView();
   }
 
   window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -526,7 +536,10 @@ function renderAll() {
   // 7. Tab 7: IP & Geolocation Radar View
   renderRadarView(activeChannel);
 
-  // 8. Schedule Countdown
+  // 8. Tab 8: Instant Post Console
+  renderPostNowView();
+
+  // 9. Schedule Countdown
   if (globalData.schedule) {
     countdownSeconds = globalData.schedule.seconds_remaining;
     startCountdown();
@@ -861,6 +874,14 @@ function setupCreateModal() {
     modalGotoRadar.addEventListener('click', () => {
       if (modalOverlay) modalOverlay.classList.remove('open');
       switchView('radar');
+    });
+  }
+
+  const modalGotoPostNow = document.getElementById('modal-btn-goto-postnow');
+  if (modalGotoPostNow) {
+    modalGotoPostNow.addEventListener('click', () => {
+      if (modalOverlay) modalOverlay.classList.remove('open');
+      switchView('post-now');
     });
   }
 }
@@ -1996,3 +2017,332 @@ function renderRadarView(channel) {
     grid.appendChild(card);
   });
 }
+
+/* ========================================================
+   TAB 8: INSTANT POST CONSOLE (ON-DEMAND SHORTS PUBLISHER)
+   ======================================================== */
+let selectedPostNowChannelId = 'channel_1';
+let isUploadingNow = false;
+let currentPreviewController = null;
+
+function getBackendApiUrl() {
+  if (window.location.origin.includes('localhost') || window.location.origin.includes('127.0.0.1')) {
+    return window.location.origin;
+  }
+  return CLOUD_TUNNEL_API;
+}
+
+function setupPostNowView() {
+  const btnGotoPostNow = document.getElementById('btn-goto-postnow');
+  if (btnGotoPostNow) {
+    btnGotoPostNow.addEventListener('click', () => switchView('post-now'));
+  }
+
+  const modalGotoPostNow = document.getElementById('modal-btn-goto-postnow');
+  if (modalGotoPostNow) {
+    modalGotoPostNow.addEventListener('click', () => {
+      const modalOverlay = document.getElementById('create-modal-overlay');
+      if (modalOverlay) modalOverlay.classList.remove('open');
+      switchView('post-now');
+    });
+  }
+
+  const btnExecute = document.getElementById('btn-execute-postnow');
+  if (btnExecute) {
+    btnExecute.addEventListener('click', handleExecutePostNow);
+  }
+
+  const btnCopySuccessLink = document.getElementById('postnow-btn-copy-link');
+  if (btnCopySuccessLink) {
+    btnCopySuccessLink.addEventListener('click', () => {
+      const linkEl = document.getElementById('postnow-success-link');
+      if (linkEl && linkEl.href && !linkEl.href.endsWith('#')) {
+        copyToClipboard(linkEl.href, "YouTube Short URL copied to clipboard!");
+      }
+    });
+  }
+}
+
+function renderPostNowView() {
+  const grid = document.getElementById('postnow-channel-grid');
+  if (!grid) return;
+
+  const channels = (globalData && globalData.channels && globalData.channels.length)
+    ? globalData.channels
+    : [];
+
+  if (!channels.length) return;
+
+  // If current channel selected in app is not 'all', sync with selectedPostNowChannelId
+  if (!selectedPostNowChannelId || selectedPostNowChannelId === 'all') {
+    selectedPostNowChannelId = (currentChannelId && currentChannelId !== 'all') ? currentChannelId : 'channel_1';
+  }
+
+  // Render 10 channel selector cards
+  grid.innerHTML = '';
+  channels.forEach(ch => {
+    const isSelected = ch.id === selectedPostNowChannelId;
+    const card = document.createElement('div');
+    card.className = `postnow-ch-card ${isSelected ? 'active' : ''}`;
+    card.setAttribute('data-channel-id', ch.id);
+
+    const stock = ch.drive_queue_count !== undefined ? `${ch.drive_queue_count} in Drive` : 'Active';
+
+    card.innerHTML = `
+      <img src="${ch.avatar_url || './logo.png'}" alt="${ch.name}" class="postnow-ch-avatar" />
+      <div class="postnow-ch-info">
+        <div class="postnow-ch-name">${ch.name}</div>
+        <div class="postnow-ch-meta">${ch.handle} • <span style="color: var(--yt-green); font-weight: 600;">${stock}</span></div>
+      </div>
+      <span class="postnow-select-pill">${isSelected ? 'SELECTED' : 'SELECT'}</span>
+    `;
+
+    card.addEventListener('click', () => {
+      if (isUploadingNow) return;
+      selectPostNowChannel(ch.id);
+    });
+
+    grid.appendChild(card);
+  });
+
+  updatePostNowStaging(selectedPostNowChannelId);
+}
+
+function selectPostNowChannel(channelId) {
+  selectedPostNowChannelId = channelId;
+
+  // Update card active classes & labels
+  const cards = document.querySelectorAll('.postnow-ch-card');
+  cards.forEach(c => {
+    const cId = c.getAttribute('data-channel-id');
+    const pill = c.querySelector('.postnow-select-pill');
+    if (cId === channelId) {
+      c.classList.add('active');
+      if (pill) pill.innerText = 'SELECTED';
+    } else {
+      c.classList.remove('active');
+      if (pill) pill.innerText = 'SELECT';
+    }
+  });
+
+  updatePostNowStaging(channelId);
+}
+
+async function updatePostNowStaging(channelId) {
+  const channel = globalData && globalData.channels ? globalData.channels.find(c => c.id === channelId) : null;
+  if (!channel) return;
+
+  const avatarEl = document.getElementById('postnow-stage-avatar');
+  const nameEl = document.getElementById('postnow-stage-name');
+  const metaEl = document.getElementById('postnow-stage-meta');
+  const badgeEl = document.getElementById('postnow-drive-stock-badge');
+  const filenameEl = document.getElementById('postnow-next-filename');
+  const fileMetaEl = document.getElementById('postnow-next-meta');
+
+  if (avatarEl) avatarEl.src = channel.avatar_url || './logo.png';
+  if (nameEl) nameEl.innerText = channel.name;
+  if (metaEl) metaEl.innerText = `${channel.handle} • ${channel.category || 'Shorts'}`;
+  if (badgeEl) badgeEl.innerText = `${channel.drive_queue_count || 0} VIDEOS IN DRIVE`;
+
+  // Hide success banner on channel switch
+  const successBanner = document.getElementById('postnow-success-banner');
+  if (successBanner) successBanner.style.display = 'none';
+
+  // Abort any in-flight preview query
+  if (currentPreviewController) {
+    currentPreviewController.abort();
+  }
+  currentPreviewController = new AbortController();
+
+  if (filenameEl) filenameEl.innerText = "Connecting to Google Drive...";
+  if (fileMetaEl) fileMetaEl.innerText = "Querying queued video file...";
+
+  try {
+    let res = null;
+    const baseApi = getBackendApiUrl();
+
+    // Tier 1: Try baseApi (local or tunnel)
+    try {
+      res = await fetch(`${baseApi}/api/queue-preview?channel=${channelId}`, {
+        signal: currentPreviewController.signal,
+        cache: 'no-store'
+      });
+    } catch (_) {}
+
+    // Tier 2: If failed and baseApi was local, try CLOUD_TUNNEL_API
+    if ((!res || !res.ok) && baseApi !== CLOUD_TUNNEL_API) {
+      try {
+        res = await fetch(`${CLOUD_TUNNEL_API}/api/queue-preview?channel=${channelId}`, {
+          signal: currentPreviewController.signal,
+          cache: 'no-store'
+        });
+      } catch (_) {}
+    }
+
+    if (res && res.ok) {
+      const data = await res.json();
+      if (data.status === 'ok' && data.next_video) {
+        if (filenameEl) filenameEl.innerText = data.next_video.title_preview || data.next_video.filename;
+        if (fileMetaEl) fileMetaEl.innerText = `Google Drive Ready • ${data.next_video.filename}`;
+        if (badgeEl) badgeEl.innerText = `${data.total_in_drive} VIDEOS IN DRIVE`;
+        return;
+      } else if (data.status === 'empty') {
+        if (filenameEl) filenameEl.innerText = data.message || "No videos currently in Drive queue";
+        if (fileMetaEl) fileMetaEl.innerText = "Upload new videos to Google Drive folder to replenish";
+        if (badgeEl) badgeEl.innerText = `0 VIDEOS IN DRIVE`;
+        return;
+      }
+    }
+  } catch (err) {
+    if (err.name === 'AbortError') return;
+    console.warn('Queue preview fetch error:', err);
+  }
+
+  // Fallback if network preview call failed or offline
+  if (filenameEl) filenameEl.innerText = "Next scheduled video in queue (Ready for Upload)";
+  if (fileMetaEl) fileMetaEl.innerText = "Google Drive Cloud Storage • Auto-selected on trigger";
+}
+
+async function handleExecutePostNow() {
+  if (isUploadingNow) return;
+
+  const channel = globalData && globalData.channels ? globalData.channels.find(c => c.id === selectedPostNowChannelId) : null;
+  const chName = channel ? channel.name : selectedPostNowChannelId;
+
+  const confirmed = window.confirm(
+    `⚡ INSTANT UPLOAD CONFIRMATION\n\nChannel: "${chName}"\n\nAre you sure you want to publish the next queued Google Drive video right now?\n\nThis will trigger the YouTube Data API immediately. Your 2x daily automated schedule will continue normally without conflict.`
+  );
+
+  if (!confirmed) return;
+
+  isUploadingNow = true;
+  const btn = document.getElementById('btn-execute-postnow');
+  const btnText = document.getElementById('btn-postnow-text');
+  const terminal = document.getElementById('postnow-terminal');
+  const logs = document.getElementById('postnow-terminal-logs');
+  const successBanner = document.getElementById('postnow-success-banner');
+
+  if (btn) btn.disabled = true;
+  if (btnText) btnText.innerText = "⏳ PUBLISHING TO YOUTUBE... PLEASE WAIT";
+  if (successBanner) successBanner.style.display = 'none';
+
+  if (terminal) terminal.style.display = 'block';
+  if (logs) {
+    logs.innerHTML = '';
+    appendTerminalLine(logs, `[INIT] ⚡ Initializing Instant Upload Pipeline for "${chName}"...`, 'info');
+  }
+
+  showToast(`🚀 Uploading video to ${chName}...`);
+
+  // Simulated realistic step-by-step progress lines while backend executes
+  const t1 = setTimeout(() => {
+    if (logs) appendTerminalLine(logs, `[DRIVE] 📂 Connecting to Google Drive & locating next queued MP4...`, 'info');
+  }, 1200);
+
+  const t2 = setTimeout(() => {
+    if (logs) appendTerminalLine(logs, `[DOWNLOAD] ⬇️ Downloading video binary & verifying format...`, 'info');
+  }, 3500);
+
+  const t3 = setTimeout(() => {
+    if (logs) appendTerminalLine(logs, `[YOUTUBE] 📤 Uploading video stream to YouTube API v3...`, 'info');
+  }, 6000);
+
+  const t4 = setTimeout(() => {
+    if (logs) appendTerminalLine(logs, `[METADATA] 🏷️ Applying Title, Tags, Category, AI Disclosure & COPPA Compliance...`, 'info');
+  }, 9000);
+
+  try {
+    let res = null;
+    const baseApi = getBackendApiUrl();
+
+    // Tier 1: Try baseApi
+    try {
+      res = await fetch(`${baseApi}/api/upload-now?channel=${selectedPostNowChannelId}`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' }
+      });
+    } catch (_) {}
+
+    // Tier 2: Try CLOUD_TUNNEL_API if baseApi was local and failed
+    if ((!res || !res.ok) && baseApi !== CLOUD_TUNNEL_API) {
+      try {
+        res = await fetch(`${CLOUD_TUNNEL_API}/api/upload-now?channel=${selectedPostNowChannelId}`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' }
+        });
+      } catch (_) {}
+    }
+
+    clearTimeout(t1);
+    clearTimeout(t2);
+    clearTimeout(t3);
+    clearTimeout(t4);
+
+    if (!res) throw new Error("Could not connect to upload server daemon");
+
+    const data = await res.json();
+
+    if (data.status === 'success' && data.result && data.result.status === 'success') {
+      const vid = data.result;
+      if (logs) {
+        appendTerminalLine(logs, `[SUCCESS] ✅ Video published live to YouTube!`, 'success');
+        appendTerminalLine(logs, `[TITLE] 🎬 "${vid.title}"`, 'success');
+        appendTerminalLine(logs, `[YOUTUBE URL] 🔗 ${vid.youtube_url}`, 'success');
+        appendTerminalLine(logs, `[DRIVE] 🗑️ Processed file removed from Drive queue.`, 'info');
+        appendTerminalLine(logs, `[STATUS] 🛡️ Schedule guards intact. Pipeline ready.`, 'info');
+      }
+
+      if (successBanner) {
+        const titleEl = document.getElementById('postnow-success-title');
+        const linkEl = document.getElementById('postnow-success-link');
+        if (titleEl) titleEl.innerText = vid.title || 'Published Short';
+        if (linkEl) linkEl.href = vid.youtube_url || `https://youtu.be/${vid.youtube_video_id}`;
+        successBanner.style.display = 'flex';
+      }
+
+      showToast(`🎉 Upload Successful! Published to YouTube.`);
+
+      // Trigger telemetry sync in background to update all views
+      const syncBtn = document.getElementById('btn-sync');
+      if (syncBtn) {
+        setTimeout(() => syncBtn.click(), 1000);
+      }
+
+      // Re-fetch queue preview after 2.5s
+      setTimeout(() => {
+        updatePostNowStaging(selectedPostNowChannelId);
+      }, 2500);
+
+    } else {
+      const errMsg = (data.result && data.result.error) || data.message || 'Upload failed';
+      if (logs) {
+        appendTerminalLine(logs, `[ERROR] ❌ Upload failed: ${errMsg}`, 'error');
+      }
+      showToast(`❌ Upload failed: ${errMsg}`);
+    }
+  } catch (err) {
+    clearTimeout(t1);
+    clearTimeout(t2);
+    clearTimeout(t3);
+    clearTimeout(t4);
+    console.error('Execute upload now error:', err);
+    if (logs) {
+      appendTerminalLine(logs, `[NETWORK ERROR] ❌ Connection error: ${err.message}`, 'error');
+      appendTerminalLine(logs, `[TIP] Verify the local server daemon or tunnel is online.`, 'error');
+    }
+    showToast(`❌ Network error: ${err.message}`);
+  } finally {
+    isUploadingNow = false;
+    if (btn) btn.disabled = false;
+    if (btnText) btnText.innerText = "🚀 PUBLISH VIDEO NOW TO YOUTUBE";
+  }
+}
+
+function appendTerminalLine(container, text, type = 'info') {
+  const line = document.createElement('div');
+  line.className = `terminal-line ${type}`;
+  line.innerText = text;
+  container.appendChild(line);
+  container.scrollTop = container.scrollHeight;
+}
+

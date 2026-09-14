@@ -3134,5 +3134,362 @@ body.sheet-open {
   }
 }
 
+/* ========================================================
+   INSTANT POST NOW CONSOLE & ENGINE
+   ======================================================== */
+.postnow-cta-banner {
+  background: linear-gradient(135deg, rgba(239, 68, 68, 0.12) 0%, rgba(16, 185, 129, 0.08) 100%);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  padding: 20px 24px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.postnow-cta-left {
+  flex: 1;
+}
+
+.postnow-cta-badge {
+  display: inline-block;
+  background: rgba(239, 68, 68, 0.2);
+  color: #EF4444;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  padding: 3px 8px;
+  border-radius: 10px;
+  margin-bottom: 6px;
+}
+
+.postnow-cta-heading {
+  font-size: 17px;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin: 0 0 4px 0;
+}
+
+.postnow-cta-sub {
+  font-size: 13px;
+  color: var(--yt-text-secondary);
+  margin: 0;
+  line-height: 1.4;
+}
+
+.postnow-open-btn {
+  background: linear-gradient(135deg, #EF4444 0%, #DC2626 100%);
+  color: #FFFFFF;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 13.5px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+  box-shadow: 0 4px 14px rgba(239, 68, 68, 0.35);
+  transition: all 0.2s ease;
+  cursor: pointer;
+  border: none;
+}
+
+.postnow-open-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(239, 68, 68, 0.5);
+}
+
+.postnow-console-layout {
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+.postnow-channel-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-height: 640px;
+  overflow-y: auto;
+  padding-right: 4px;
+}
+
+.postnow-ch-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--yt-border);
+  border-radius: 10px;
+  padding: 12px 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: left;
+  width: 100%;
+}
+
+.postnow-ch-card:hover {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.postnow-ch-card.active {
+  background: rgba(16, 185, 129, 0.08);
+  border: 1.5px solid #10B981;
+  box-shadow: 0 0 16px rgba(16, 185, 129, 0.2);
+}
+
+.postnow-ch-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.postnow-ch-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.postnow-ch-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #FFFFFF;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.postnow-ch-meta {
+  font-size: 12px;
+  color: var(--yt-text-secondary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 2px;
+}
+
+.postnow-select-pill {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  padding: 4px 10px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--yt-text-secondary);
+  flex-shrink: 0;
+  transition: all 0.2s ease;
+}
+
+.postnow-ch-card.active .postnow-select-pill {
+  background: rgba(16, 185, 129, 0.2);
+  color: #10B981;
+  border: 1px solid rgba(16, 185, 129, 0.4);
+}
+
+.postnow-stage-card {
+  background: var(--yt-card-bg);
+  border: 1px solid var(--yt-border);
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.postnow-selected-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid var(--yt-border);
+}
+
+.postnow-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #10B981;
+}
+
+.postnow-stage-name {
+  font-size: 18px;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.postnow-stage-meta {
+  font-size: 13px;
+  color: var(--yt-text-secondary);
+  margin-top: 2px;
+}
+
+.postnow-preview-box {
+  background: rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  padding: 16px;
+}
+
+.preview-box-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  color: #3EA6FF;
+  margin-bottom: 10px;
+}
+
+.preview-video-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.preview-video-icon {
+  font-size: 28px;
+  line-height: 1;
+}
+
+.preview-video-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.preview-video-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: #FFFFFF;
+  line-height: 1.4;
+  word-break: break-word;
+}
+
+.preview-video-meta {
+  font-size: 12px;
+  color: #10B981;
+  margin-top: 4px;
+}
+
+.postnow-big-btn {
+  width: 100%;
+  padding: 16px 24px;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  background: linear-gradient(135deg, #FF0000 0%, #CC0000 100%);
+  color: #FFFFFF;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  box-shadow: 0 4px 20px rgba(255, 0, 0, 0.4);
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.postnow-big-btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 28px rgba(255, 0, 0, 0.6);
+}
+
+.postnow-big-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.postnow-terminal {
+  background: #090D14;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+}
+
+.terminal-header {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.terminal-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+.terminal-dot.red { background: #EF4444; }
+.terminal-dot.yellow { background: #F59E0B; }
+.terminal-dot.green { background: #10B981; }
+
+.terminal-title {
+  font-size: 11px;
+  font-weight: 600;
+  color: #888;
+  margin-left: 8px;
+  letter-spacing: 0.5px;
+}
+
+.terminal-body {
+  padding: 12px 16px;
+  font-size: 12.5px;
+  color: #10B981;
+  max-height: 180px;
+  overflow-y: auto;
+  line-height: 1.6;
+}
+
+.terminal-line {
+  margin: 3px 0;
+}
+.terminal-line.info { color: #3EA6FF; }
+.terminal-line.success { color: #10B981; font-weight: 600; }
+.terminal-line.warn { color: #F59E0B; }
+.terminal-line.error { color: #EF4444; }
+
+.postnow-success-banner {
+  background: rgba(16, 185, 129, 0.12);
+  border: 1.5px solid #10B981;
+  border-radius: 10px;
+  padding: 16px;
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.success-icon {
+  font-size: 28px;
+}
+
+.success-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #10B981;
+}
+
+.success-sub {
+  font-size: 13.5px;
+  color: #FFFFFF;
+  margin-top: 4px;
+}
+
+@media (max-width: 900px) {
+  .postnow-cta-banner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .postnow-console-layout {
+    grid-template-columns: 1fr;
+  }
+  .postnow-channel-grid {
+    max-height: 320px;
+  }
+}
+
 
 

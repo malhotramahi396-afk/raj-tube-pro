@@ -15,7 +15,7 @@
   <link rel="icon" type="image/png" sizes="512x512" href="./icons/icon-512.png">
   <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png">
   <link rel="shortcut icon" href="./icons/icon-192.png">
-  <link rel="stylesheet" href="./styles.css?v=24.0">
+  <link rel="stylesheet" href="./styles.css?v=25.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
@@ -187,6 +187,14 @@
           <span class="nav-badge badge-green" id="sidebar-radar-badge">10 NODES</span>
         </button>
 
+        <button class="nav-item" data-view="post-now">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+            <path d="M5 18h14v2H5v-2zm7-14l6 6h-4v6h-4v-6H6l6-6z"/>
+          </svg>
+          <span class="nav-text">Post Now</span>
+          <span class="nav-badge" style="background: rgba(239, 68, 68, 0.2); color: #EF4444; font-weight: 700;">INSTANT</span>
+        </button>
+
         <div class="sidebar-divider"></div>
 
         <button class="nav-item" data-view="settings">
@@ -254,6 +262,21 @@
           </div>
           <div class="live-badge-right">
             <span class="live-badge-tag">🟢 YOUTUBE API v3 VERIFIED</span>
+          </div>
+        </div>
+
+        <!-- INSTANT POST ENGINE BANNER CARD (On-Demand Upload Box) -->
+        <div class="yt-card postnow-cta-banner mt-16 mb-20" id="dash-postnow-banner">
+          <div class="postnow-cta-left">
+            <div class="postnow-cta-badge">⚡ ON-DEMAND ENGINE</div>
+            <h2 class="postnow-cta-heading">Need to post right now? (Instant Upload Console)</h2>
+            <p class="postnow-cta-sub">Publish the next ready Google Drive video directly to YouTube without waiting for scheduled upload times.</p>
+          </div>
+          <div class="postnow-cta-right">
+            <button class="postnow-open-btn" id="btn-goto-postnow">
+              <span>🚀 OPEN POST NOW BOX</span>
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M5 18h14v2H5v-2zm7-14l6 6h-4v6h-4v-6H6l6-6z"/></svg>
+            </button>
           </div>
         </div>
 
@@ -951,6 +974,120 @@
         </div>
       </section>
 
+      <!-- ==========================================================
+           TAB 8: INSTANT POST CONSOLE (On-Demand Shorts Publisher)
+           ========================================================== -->
+      <section class="tab-view" id="view-post-now">
+        <div class="view-header">
+          <div class="header-title-wrap">
+            <h1 class="page-title">⚡ Instant Post Console</h1>
+            <span class="health-fleet-badge badge-clean">ON-DEMAND SHORTS PUBLISHER</span>
+          </div>
+          <p class="section-desc mt-8" style="color: var(--yt-text-secondary); font-size: 13.5px; line-height: 1.5;">
+            Select any channel and instantly publish its next queued Google Drive video to YouTube. Daily automated schedules (10:00 AM & 5:00 PM USA Eastern) remain 100% active and protected.
+          </p>
+        </div>
+
+        <!-- 2-COL / RESPONSIVE POST CONSOLE LAYOUT -->
+        <div class="postnow-console-layout mt-20">
+          
+          <!-- LEFT: 10-CHANNEL SELECTOR GRID -->
+          <div class="postnow-channels-col">
+            <h2 class="section-subheading mb-12">1. Select Target Channel</h2>
+            <div class="postnow-channel-grid" id="postnow-channel-grid">
+              <!-- Injected via JavaScript for all 10 channels -->
+            </div>
+          </div>
+
+          <!-- RIGHT: STAGING & ACTION CONSOLE -->
+          <div class="postnow-action-col">
+            <h2 class="section-subheading mb-12">2. Staging & Execution Console</h2>
+            
+            <div class="yt-card postnow-stage-card" id="postnow-stage-card">
+              <!-- Selected Channel Banner -->
+              <div class="postnow-selected-header">
+                <img id="postnow-stage-avatar" src="./logo.png" alt="Channel Avatar" class="postnow-avatar" />
+                <div>
+                  <div class="postnow-stage-name" id="postnow-stage-name">The Hidden Lens</div>
+                  <div class="postnow-stage-meta" id="postnow-stage-meta">@TheHiddenLens-w8y • Wildlife & Nature POV</div>
+                </div>
+                <span class="health-pill badge-clean" id="postnow-drive-stock-badge">75 VIDEOS IN DRIVE</span>
+              </div>
+
+              <!-- Next Video Preview Box -->
+              <div class="postnow-preview-box mt-16">
+                <div class="preview-box-label">NEXT QUEUED GOOGLE DRIVE VIDEO</div>
+                <div class="preview-video-row">
+                  <div class="preview-video-icon">🎬</div>
+                  <div class="preview-video-info">
+                    <div class="preview-video-title" id="postnow-next-filename">Loading next queued video...</div>
+                    <div class="preview-video-meta" id="postnow-next-meta">Google Drive Cloud Storage • Next Ready for Upload</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Pipeline Security & Compliance Badges -->
+              <div class="metric-rows-table mt-16">
+                <div class="m-row">
+                  <span class="m-label">Destination</span>
+                  <span class="m-val text-blue font-semibold" id="postnow-dest-label">YouTube Shorts (Vertical Feed)</span>
+                </div>
+                <div class="m-row">
+                  <span class="m-label">AI Disclosure Tag</span>
+                  <span class="m-val text-green font-semibold">Self-Declared (Compliant)</span>
+                </div>
+                <div class="m-row">
+                  <span class="m-label">COPPA Kids Tag</span>
+                  <span class="m-val text-green font-semibold">Not Made for Kids (Compliant)</span>
+                </div>
+                <div class="m-row">
+                  <span class="m-label">Scheduled Automation</span>
+                  <span class="m-val text-amber font-semibold">Protected & Active (No Conflict)</span>
+                </div>
+              </div>
+
+              <!-- Live Execution Output / Progress Terminal -->
+              <div class="postnow-terminal mt-16" id="postnow-terminal" style="display:none;">
+                <div class="terminal-header">
+                  <span class="terminal-dot red"></span>
+                  <span class="terminal-dot yellow"></span>
+                  <span class="terminal-dot green"></span>
+                  <span class="terminal-title">LIVE UPLOAD PIPELINE CONSOLE</span>
+                </div>
+                <div class="terminal-body" id="postnow-terminal-logs">
+                  <div class="terminal-line info">[Ready] Standing by for manual trigger...</div>
+                </div>
+              </div>
+
+              <!-- Action Buttons -->
+              <div class="postnow-actions-row mt-20">
+                <button class="yt-btn-primary postnow-big-btn" id="btn-execute-postnow">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                    <path d="M5 18h14v2H5v-2zm7-14l6 6h-4v6h-4v-6H6l6-6z"/>
+                  </svg>
+                  <span id="btn-postnow-text">🚀 PUBLISH VIDEO NOW TO YOUTUBE</span>
+                </button>
+              </div>
+
+              <!-- Success Banner with direct link -->
+              <div class="postnow-success-banner mt-16" id="postnow-success-banner" style="display:none;">
+                <div class="success-icon">🎉</div>
+                <div class="success-details">
+                  <div class="success-title">Video Published Successfully to YouTube!</div>
+                  <div class="success-sub" id="postnow-success-title">Video Title</div>
+                  <div class="success-actions mt-8">
+                    <a href="#" id="postnow-success-link" target="_blank" class="yt-btn-flat" style="font-weight:700; color:#10B981;">WATCH ON YOUTUBE ↗</a>
+                    <button class="yt-btn-flat" id="postnow-btn-copy-link">COPY LINK 📋</button>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </section>
+
     </main>
   </div>
 
@@ -961,6 +1098,12 @@
         <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zM7 10h2v7H7zm4-3h2v10h-2zm4 6h2v4h-2z"/>
       </svg>
       <span>Dashboard</span>
+    </button>
+    <button class="bottom-nav-item" data-view="post-now">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+        <path d="M5 18h14v2H5v-2zm7-14l6 6h-4v6h-4v-6H6l6-6z"/>
+      </svg>
+      <span>Post Now</span>
     </button>
     <button class="bottom-nav-item" data-view="content">
       <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
@@ -1015,6 +1158,17 @@
 
       <div class="studio-modal-body">
         <div class="create-action-list">
+          <button class="create-action-item" id="modal-btn-goto-postnow">
+            <div class="create-item-icon" style="background: rgba(239, 68, 68, 0.2); color: #EF4444;">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M5 18h14v2H5v-2zm7-14l6 6h-4v6h-4v-6H6l6-6z"/></svg>
+            </div>
+            <div class="create-item-info">
+              <div class="create-item-title">Post Short Video Now (On-Demand)</div>
+              <div class="create-item-desc">Publish next queued Google Drive video to YouTube immediately</div>
+            </div>
+            <span class="create-item-arrow">🚀</span>
+          </button>
+
           <a href="#" id="modal-drive-link" target="_blank" class="create-action-item">
             <div class="create-item-icon bg-blue">
               <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM14 13v4h-4v-4H7l5-5 5 5h-3z"/></svg>
@@ -1066,6 +1220,6 @@
   <!-- Toast Notification -->
   <div id="toast" class="toast">Link copied to clipboard!</div>
 
-  <script src="./app.js?v=24.0"></script>
+  <script src="./app.js?v=25.0"></script>
 </body>
 </html>
