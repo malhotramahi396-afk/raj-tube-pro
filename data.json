@@ -1,21 +1,21 @@
 {
   "app_name": "Raj Tube Pro",
   "version": "6.0.0",
-  "timestamp": "2026-09-14T02:43:37.203385+00:00",
+  "timestamp": "2026-09-14T03:16:23.989986+00:00",
   "schedule": {
     "next_slot_iso": "2026-09-14T14:00:00+00:00",
-    "seconds_remaining": 40582,
-    "formatted_countdown": "11h 16m 22s",
+    "seconds_remaining": 38616,
+    "formatted_countdown": "10h 43m 36s",
     "slot_label": "10:00 AM USA (7:30 PM IST)",
-    "now_ist": "14 Sep, 08:13 AM IST"
+    "now_ist": "14 Sep, 08:46 AM IST"
   },
   "summary": {
     "total_channels": 10,
     "total_uploaded": 203,
     "total_in_queue": 1247,
-    "total_subscribers": 278,
-    "total_views": 233119,
-    "total_likes": 2514,
+    "total_subscribers": 280,
+    "total_views": 251646,
+    "total_likes": 2522,
     "network_engagement": 0.9,
     "total_runway_days": 62.4,
     "system_health": "All Systems Operational",
@@ -377,7 +377,7 @@
         }
       }
     ],
-    "avg_views_per_channel": 23312
+    "avg_views_per_channel": 25165
   },
   "issues": [],
   "channels": [
@@ -394,9 +394,9 @@
       "subscribers": 75,
       "total_views": 42565,
       "channel_total_videos": 7,
-      "avg_views_per_video": 6878,
+      "avg_views_per_video": 6908,
       "engagement_rate": 1.2,
-      "total_likes": 561,
+      "total_likes": 565,
       "analytics": {
         "watch_time_hours": 189.7,
         "avg_view_duration": "0:24",
@@ -600,7 +600,7 @@
           "title": "Dangerous Stare Caught On 4K Camera #wildlife #cameraman #shorts #viral",
           "uploaded_at": "2026-09-13T14:03:47Z",
           "thumbnail": "https://i.ytimg.com/vi/7M2CTdKBQ6M/mqdefault.jpg",
-          "views": 1366,
+          "views": 1367,
           "likes": 11,
           "comments": 0,
           "subscribers_gained": 1
@@ -611,8 +611,8 @@
           "title": "Danger At Point Blank Range #wildlife #shorts #animalencounter #fyp",
           "uploaded_at": "2026-09-12T22:03:51Z",
           "thumbnail": "https://i.ytimg.com/vi/H511dz4lsLQ/mqdefault.jpg",
-          "views": 2127,
-          "likes": 13,
+          "views": 2168,
+          "likes": 14,
           "comments": 0,
           "subscribers_gained": 3
         },
@@ -622,8 +622,8 @@
           "title": "Close Enough To Hear His Breath #wildlife #shorts #cameraman #viral",
           "uploaded_at": "2026-09-12T14:03:34Z",
           "thumbnail": "https://i.ytimg.com/vi/RMgm8o875X0/mqdefault.jpg",
-          "views": 25439,
-          "likes": 311,
+          "views": 25471,
+          "likes": 314,
           "comments": 1,
           "subscribers_gained": 38
         },
@@ -644,7 +644,7 @@
           "title": "Breathtaking 4K Wildlife Moment #wildlifephotography #shorts #naturelovers #viral",
           "uploaded_at": "2026-09-11T14:42:29Z",
           "thumbnail": "https://i.ytimg.com/vi/3pDpmQcqJT8/mqdefault.jpg",
-          "views": 15729,
+          "views": 15868,
           "likes": 194,
           "comments": 1,
           "subscribers_gained": 25
@@ -717,12 +717,12 @@
       "github_repo": "malhotramahi396-afk/yt-automation-zenovadrift",
       "color": "#10B981",
       "avatar_url": "https://yt3.ggpht.com/Si65r7FeRpZibwEpw60Lck09w5Qi4YjdBhvfyPC914DY68sKk7vkLYv3WdR1ByZGkg_J4FAK=s240-c-k-c0x00ffffff-no-rj",
-      "subscribers": 4,
-      "total_views": 4962,
+      "subscribers": 5,
+      "total_views": 6729,
       "channel_total_videos": 22,
-      "avg_views_per_video": 333,
+      "avg_views_per_video": 336,
       "engagement_rate": 0.8,
-      "total_likes": 56,
+      "total_likes": 55,
       "analytics": {
         "watch_time_hours": 28.9,
         "avg_view_duration": "0:24",
@@ -916,7 +916,7 @@
           "uploaded_at": "2026-09-13T21:05:30Z",
           "thumbnail": "https://i.ytimg.com/vi/i-SHfq4WX30/mqdefault.jpg",
           "views": 374,
-          "likes": 3,
+          "likes": 2,
           "comments": 0,
           "subscribers_gained": 0
         },
@@ -926,7 +926,7 @@
           "title": "Grandma Carried The Entire Team Today #GrandmaGamer #Esports #Gaming #GamingLegend #ProGaming #Under",
           "uploaded_at": "2026-09-13T12:20:36Z",
           "thumbnail": "https://i.ytimg.com/vi/yKKvEzJL_64/mqdefault.jpg",
-          "views": 645,
+          "views": 725,
           "likes": 7,
           "comments": 0,
           "subscribers_gained": 0
@@ -937,7 +937,7 @@
           "title": "Grandma Carried The Entire Team Like A True Champion #GrandmaGamer #Esports #Gaming #GamingLegend #P",
           "uploaded_at": "2026-09-12T22:15:20Z",
           "thumbnail": "https://i.ytimg.com/vi/dmg14otnq3A/mqdefault.jpg",
-          "views": 167,
+          "views": 166,
           "likes": 0,
           "comments": 0,
           "subscribers_gained": 0
@@ -970,7 +970,7 @@
           "title": "Grandma Carried The Entire Team Before The Final Round #GrandmaGamer #Esports #Gaming #GamingLegend",
           "uploaded_at": "2026-09-06T07:56:52Z",
           "thumbnail": "https://i.ytimg.com/vi/25WeY0ADjJw/mqdefault.jpg",
-          "views": 762,
+          "views": 763,
           "likes": 7,
           "comments": 1,
           "subscribers_gained": 0
@@ -1202,12 +1202,12 @@
       "github_repo": "malhotramahi396-afk/yt-automation-zyntrix07",
       "color": "#F59E0B",
       "avatar_url": "https://yt3.ggpht.com/TTLhq8ijvpChRrWaVb1i96FzeFG02Gd31oOfWo4EdOtBtfqTD6h0TrRmEOTd2fE8V0kPexV6EA=s240-c-k-c0x00ffffff-no-rj",
-      "subscribers": 98,
+      "subscribers": 99,
       "total_views": 104273,
       "channel_total_videos": 15,
-      "avg_views_per_video": 7726,
+      "avg_views_per_video": 7733,
       "engagement_rate": 0.8,
-      "total_likes": 878,
+      "total_likes": 881,
       "analytics": {
         "watch_time_hours": 453.2,
         "avg_view_duration": "0:24",
@@ -1401,7 +1401,7 @@
           "uploaded_at": "2026-09-13T21:09:17Z",
           "thumbnail": "https://i.ytimg.com/vi/kdh_Ba5O-UU/mqdefault.jpg",
           "views": 697,
-          "likes": 12,
+          "likes": 11,
           "comments": 1,
           "subscribers_gained": 0
         },
@@ -1411,8 +1411,8 @@
           "title": "Nobody Wanted To Miss The Next Second #SlapFight #SlapFighting #PowerSlap #Viral #CombatSports.",
           "uploaded_at": "2026-09-13T14:13:36Z",
           "thumbnail": "https://i.ytimg.com/vi/jcBToYBlKTA/mqdefault.jpg",
-          "views": 3485,
-          "likes": 56,
+          "views": 3548,
+          "likes": 60,
           "comments": 2,
           "subscribers_gained": 2
         },
@@ -1422,7 +1422,7 @@
           "title": "Both Fighters Looked Completely Ready #SlapFight #PowerSlap #CombatSports #Sports #FYP",
           "uploaded_at": "2026-09-13T11:52:26Z",
           "thumbnail": "https://i.ytimg.com/vi/128Ysq4RtSw/mqdefault.jpg",
-          "views": 1978,
+          "views": 1973,
           "likes": 19,
           "comments": 1,
           "subscribers_gained": 1
@@ -1433,8 +1433,8 @@
           "title": "Nobody Wanted To Blink During This Moment #SlapFighting #PowerSlap #FightNight #FYP #Viral.",
           "uploaded_at": "2026-09-12T22:06:45Z",
           "thumbnail": "https://i.ytimg.com/vi/sEMtoFAjmrs/mqdefault.jpg",
-          "views": 2242,
-          "likes": 21,
+          "views": 2233,
+          "likes": 20,
           "comments": 0,
           "subscribers_gained": 2
         },
@@ -1444,7 +1444,7 @@
           "title": "Nobody Expected That Faceoff Reaction #SlapFighting #PowerSlap #SlapBattle #CombatSports #Viral.",
           "uploaded_at": "2026-09-12T14:06:29Z",
           "thumbnail": "https://i.ytimg.com/vi/7OVj2yza4ks/mqdefault.jpg",
-          "views": 3592,
+          "views": 3602,
           "likes": 33,
           "comments": 2,
           "subscribers_gained": 3
@@ -1455,8 +1455,8 @@
           "title": "His Confidence Had The Whole Crowd Talking #PowerSlap #SlapFighting #SlapFight #Viral #Sports.",
           "uploaded_at": "2026-09-11T22:07:28Z",
           "thumbnail": "https://i.ytimg.com/vi/g-2DEoij8dY/mqdefault.jpg",
-          "views": 17875,
-          "likes": 193,
+          "views": 17930,
+          "likes": 194,
           "comments": 0,
           "subscribers_gained": 13
         },
@@ -1521,7 +1521,7 @@
           "title": "Everyone Went Silent Before The Action #SlapFighting #PowerSlap #CombatSports #SlapFight #Viral",
           "uploaded_at": "2026-08-30T17:35:17Z",
           "thumbnail": "https://i.ytimg.com/vi/BsHgPB_OMhk/mqdefault.jpg",
-          "views": 7189,
+          "views": 7187,
           "likes": 29,
           "comments": 0,
           "subscribers_gained": 6
@@ -1554,7 +1554,7 @@
           "title": "Everyone Could Feel The Pressure #SlapFighting #PowerSlap #SlapFight #Viral #Highlights",
           "uploaded_at": "2026-08-25T19:55:30Z",
           "thumbnail": "https://i.ytimg.com/vi/0XG0Q-mvSg0/mqdefault.jpg",
-          "views": 4656,
+          "views": 4655,
           "likes": 16,
           "comments": 0,
           "subscribers_gained": 4
@@ -1825,7 +1825,7 @@
           "title": "He Is Working Harder Than Everyone Around Him #PandaTok #Panda #Funny #Viral #CuteAnimals.",
           "uploaded_at": "2026-09-13T14:05:00Z",
           "thumbnail": "https://i.ytimg.com/vi/IRd-62lVRrk/mqdefault.jpg",
-          "views": 4,
+          "views": 3,
           "likes": 0,
           "comments": 0,
           "subscribers_gained": 0
@@ -2031,9 +2031,9 @@
       "color": "#8B5CF6",
       "avatar_url": "https://yt3.ggpht.com/WKefM8i0bji48M_e159k6q0080b5zNwYExax_QloW7H3XguFARUF-SuE62a8rdPQJXvtTXxbJQ=s240-c-k-c0x00ffffff-no-rj",
       "subscribers": 42,
-      "total_views": 21156,
+      "total_views": 35727,
       "channel_total_videos": 13,
-      "avg_views_per_video": 2792,
+      "avg_views_per_video": 2793,
       "engagement_rate": 0.8,
       "total_likes": 281,
       "analytics": {
@@ -2261,7 +2261,7 @@
           "title": "Adorable Toddler Reacts In The Cutest Way #ToddlerLife #CutestMoments #FamilyMoments #WholesomeConte",
           "uploaded_at": "2026-09-12T17:39:42Z",
           "thumbnail": "https://i.ytimg.com/vi/goCoZBF3N_M/mqdefault.jpg",
-          "views": 35717,
+          "views": 35723,
           "likes": 279,
           "comments": 3,
           "subscribers_gained": 42
@@ -2417,11 +2417,11 @@
       "color": "#EC4899",
       "avatar_url": "https://yt3.ggpht.com/pqIrk9GBtAR6cdyBH5C_kHNWA1jlu4VT9ZLKxdYTFW6IvVQLWbtFO3OUxrSV1Jm1SR0JAyTrAA=s240-c-k-c0x00ffffff-no-rj",
       "subscribers": 7,
-      "total_views": 12933,
+      "total_views": 15111,
       "channel_total_videos": 13,
-      "avg_views_per_video": 1305,
+      "avg_views_per_video": 1308,
       "engagement_rate": 0.9,
-      "total_likes": 161,
+      "total_likes": 163,
       "analytics": {
         "watch_time_hours": 65.7,
         "avg_view_duration": "0:24",
@@ -2614,7 +2614,7 @@
           "title": "From First Color To Final Masterpiece #Painting #ArtTransformation #ArtReels #Artist #Viral.",
           "uploaded_at": "2026-09-13T21:06:49Z",
           "thumbnail": "https://i.ytimg.com/vi/3ee4FdtH10w/mqdefault.jpg",
-          "views": 1163,
+          "views": 1164,
           "likes": 11,
           "comments": 0,
           "subscribers_gained": 0
@@ -2647,8 +2647,8 @@
           "title": "Everyone Stopped To Watch This Artist Work #StreetArt #Artist #Painting #ArtReels #Viral.",
           "uploaded_at": "2026-09-12T18:28:10Z",
           "thumbnail": "https://i.ytimg.com/vi/E7vzDp7HUIM/mqdefault.jpg",
-          "views": 1433,
-          "likes": 40,
+          "views": 1465,
+          "likes": 42,
           "comments": 1,
           "subscribers_gained": 0
         },
@@ -3371,7 +3371,7 @@
       "color": "#F59E0B",
       "avatar_url": "https://yt3.ggpht.com/nq_ZXt9K4MP8rn_0NncY8cm8FKpJhysqk3dE-4DnBi5riAIIgaSHkyJ3peEPN45JHegO91Ws7Xg=s240-c-k-c0x00ffffff-no-rj",
       "subscribers": 0,
-      "total_views": 311,
+      "total_views": 322,
       "channel_total_videos": 37,
       "avg_views_per_video": 9,
       "engagement_rate": 0.0,
