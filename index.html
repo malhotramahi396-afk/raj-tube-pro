@@ -15,7 +15,7 @@
   <link rel="icon" type="image/png" sizes="512x512" href="./icons/icon-512.png">
   <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png">
   <link rel="shortcut icon" href="./icons/icon-192.png">
-  <link rel="stylesheet" href="./styles.css?v=26.0">
+  <link rel="stylesheet" href="./styles.css?v=27.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
@@ -262,21 +262,6 @@
           </div>
           <div class="live-badge-right">
             <span class="live-badge-tag">🟢 YOUTUBE API v3 VERIFIED</span>
-          </div>
-        </div>
-
-        <!-- INSTANT POST ENGINE BANNER CARD (On-Demand Upload Box) -->
-        <div class="yt-card postnow-cta-banner mt-16 mb-20" id="dash-postnow-banner">
-          <div class="postnow-cta-left">
-            <div class="postnow-cta-badge">⚡ ON-DEMAND ENGINE</div>
-            <h2 class="postnow-cta-heading">Need to post right now? (Instant Upload Console)</h2>
-            <p class="postnow-cta-sub">Publish the next ready Google Drive video directly to YouTube without waiting for scheduled upload times.</p>
-          </div>
-          <div class="postnow-cta-right">
-            <button class="postnow-open-btn" id="btn-goto-postnow">
-              <span>🚀 OPEN POST NOW BOX</span>
-              <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M5 18h14v2H5v-2zm7-14l6 6h-4v6h-4v-6H6l6-6z"/></svg>
-            </button>
           </div>
         </div>
 
@@ -994,15 +979,11 @@
           <!-- LEFT: 10-CHANNEL SELECTOR GRID -->
           <div class="postnow-channels-col">
             <div class="postnow-channels-header mb-12">
-              <div class="postnow-header-title-wrap">
-                <h2 class="section-subheading" style="margin:0;">1. Select Channels</h2>
-                <span class="postnow-count-badge" id="postnow-selected-count-badge">1 Channel Selected</span>
-              </div>
-              <div class="postnow-quick-select-actions">
-                <button type="button" class="postnow-mini-action-btn" id="postnow-btn-select-all">All (10)</button>
-                <button type="button" class="postnow-mini-action-btn" id="postnow-btn-select-5">Top 5</button>
-                <button type="button" class="postnow-mini-action-btn" id="postnow-btn-clear-all">Reset (1)</button>
-              </div>
+              <label class="postnow-master-select-wrap" id="postnow-master-select-wrap" title="Select / Deselect All Channels">
+                <input type="checkbox" class="postnow-master-checkbox" id="postnow-master-checkbox" />
+                <span class="postnow-master-label">Select All Channels</span>
+              </label>
+              <span class="postnow-count-badge" id="postnow-selected-count-badge">1 Channel Selected</span>
             </div>
             <div class="postnow-channel-grid" id="postnow-channel-grid">
               <!-- Injected via JavaScript for all 10 channels with stylish select boxes -->
@@ -1238,6 +1219,6 @@
   <!-- Toast Notification -->
   <div id="toast" class="toast">Link copied to clipboard!</div>
 
-  <script src="./app.js?v=26.0"></script>
+  <script src="./app.js?v=27.0"></script>
 </body>
 </html>

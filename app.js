@@ -2047,32 +2047,16 @@ function setupPostNowView() {
     });
   }
 
-  // Quick Select Presets
-  const btnSelectAll = document.getElementById('postnow-btn-select-all');
-  if (btnSelectAll) {
-    btnSelectAll.addEventListener('click', () => {
+  // Master Select All / Deselect All Checkbox
+  const masterCheckbox = document.getElementById('postnow-master-checkbox');
+  if (masterCheckbox) {
+    masterCheckbox.addEventListener('change', () => {
       if (isUploadingNow || !globalData || !globalData.channels) return;
-      selectedPostNowChannelIds = new Set(globalData.channels.map(c => c.id));
-      renderPostNowView();
-    });
-  }
-
-  const btnSelect5 = document.getElementById('postnow-btn-select-5');
-  if (btnSelect5) {
-    btnSelect5.addEventListener('click', () => {
-      if (isUploadingNow || !globalData || !globalData.channels) return;
-      const top5 = globalData.channels.slice(0, 5).map(c => c.id);
-      selectedPostNowChannelIds = new Set(top5);
-      renderPostNowView();
-    });
-  }
-
-  const btnClearAll = document.getElementById('postnow-btn-clear-all');
-  if (btnClearAll) {
-    btnClearAll.addEventListener('click', () => {
-      if (isUploadingNow || !globalData || !globalData.channels) return;
-      const defaultId = (currentChannelId && currentChannelId !== 'all') ? currentChannelId : (globalData.channels[0] ? globalData.channels[0].id : 'channel_1');
-      selectedPostNowChannelIds = new Set([defaultId]);
+      if (masterCheckbox.checked) {
+        selectedPostNowChannelIds = new Set(globalData.channels.map(c => c.id));
+      } else {
+        selectedPostNowChannelIds.clear();
+      }
       renderPostNowView();
     });
   }
@@ -2104,7 +2088,7 @@ function renderPostNowView() {
   if (!channels.length) return;
 
   // Initialize from currentChannelId if not yet set
-  if (!selectedPostNowChannelIds || selectedPostNowChannelIds.size === 0) {
+  if (!selectedPostNowChannelIds) {
     const initId = (currentChannelId && currentChannelId !== 'all') ? currentChannelId : 'channel_1';
     selectedPostNowChannelIds = new Set([initId]);
   }
@@ -2113,10 +2097,13 @@ function renderPostNowView() {
   const countBadge = document.getElementById('postnow-selected-count-badge');
   if (countBadge) {
     const count = selectedPostNowChannelIds.size;
-    countBadge.innerText = `${count} Channel${count > 1 ? 's' : ''} Selected`;
+    countBadge.innerText = `${count} Channel${count === 1 ? '' : 's'} Selected`;
   }
 
-  // Render 10 channel selector cards with checkboxes
+  // Update master checkbox
+  updateMasterCheckboxState();
+
+  // Render 10 channel selector cards with individual checkboxes
   grid.innerHTML = '';
   channels.forEach(ch => {
     const isSelected = selectedPostNowChannelIds.has(ch.id);
@@ -2164,12 +2151,7 @@ function renderPostNowView() {
 
 function togglePostNowChannel(channelId) {
   if (selectedPostNowChannelIds.has(channelId)) {
-    if (selectedPostNowChannelIds.size > 1) {
-      selectedPostNowChannelIds.delete(channelId);
-    } else {
-      showToast("At least 1 channel must remain selected.");
-      return;
-    }
+    selectedPostNowChannelIds.delete(channelId);
   } else {
     selectedPostNowChannelIds.add(channelId);
   }
@@ -2195,10 +2177,28 @@ function togglePostNowChannel(channelId) {
   const countBadge = document.getElementById('postnow-selected-count-badge');
   if (countBadge) {
     const count = selectedPostNowChannelIds.size;
-    countBadge.innerText = `${count} Channel${count > 1 ? 's' : ''} Selected`;
+    countBadge.innerText = `${count} Channel${count === 1 ? '' : 's'} Selected`;
   }
 
+  updateMasterCheckboxState();
   updatePostNowStaging();
+}
+
+function updateMasterCheckboxState() {
+  const masterCheckbox = document.getElementById('postnow-master-checkbox');
+  if (!masterCheckbox || !globalData || !globalData.channels) return;
+  const total = globalData.channels.length;
+  const count = selectedPostNowChannelIds.size;
+  if (count === total && total > 0) {
+    masterCheckbox.checked = true;
+    masterCheckbox.indeterminate = false;
+  } else if (count === 0) {
+    masterCheckbox.checked = false;
+    masterCheckbox.indeterminate = false;
+  } else {
+    masterCheckbox.checked = false;
+    masterCheckbox.indeterminate = true;
+  }
 }
 
 async function updatePostNowStaging() {
@@ -2214,12 +2214,34 @@ async function updatePostNowStaging() {
   const batchPreviewBox = document.getElementById('postnow-preview-box-batch');
   const batchListEl = document.getElementById('postnow-batch-preview-list');
   const batchLabelEl = document.getElementById('postnow-batch-preview-label');
+  const btn = document.getElementById('btn-execute-postnow');
   const btnText = document.getElementById('btn-postnow-text');
   const destLabel = document.getElementById('postnow-dest-label');
 
   // Hide success banner on selection switch
   const successBanner = document.getElementById('postnow-success-banner');
   if (successBanner) successBanner.style.display = 'none';
+
+  if (selectedCount === 0) {
+    if (avatarEl) avatarEl.src = './logo.png';
+    if (nameEl) nameEl.innerText = "No Channels Selected";
+    if (metaEl) metaEl.innerText = "Check one or more channels on the left or use 'Select All Channels'";
+    if (badgeEl) badgeEl.innerText = "0 CHANNELS SELECTED";
+    if (destLabel) destLabel.innerText = "None (Select Channels)";
+    if (btnText) btnText.innerText = "⚠️ SELECT CHANNELS TO PUBLISH";
+    if (btn) btn.disabled = true;
+
+    if (singlePreviewBox) singlePreviewBox.style.display = 'block';
+    if (batchPreviewBox) batchPreviewBox.style.display = 'none';
+
+    const filenameEl = document.getElementById('postnow-next-filename');
+    const fileMetaEl = document.getElementById('postnow-next-meta');
+    if (filenameEl) filenameEl.innerText = "No channel selected";
+    if (fileMetaEl) fileMetaEl.innerText = "Tick any channel's checkbox on the left to preview next queued video";
+    return;
+  }
+
+  if (btn) btn.disabled = false;
 
   if (selectedCount === 1) {
     const channel = selectedChannels[0] || channels[0];

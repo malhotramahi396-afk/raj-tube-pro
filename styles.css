@@ -3232,27 +3232,35 @@ body.sheet-open {
   border: 1px solid rgba(16, 185, 129, 0.3);
 }
 
-.postnow-quick-select-actions {
-  display: flex;
+.postnow-master-select-wrap {
+  display: inline-flex;
   align-items: center;
-  gap: 5px;
-}
-
-.postnow-mini-action-btn {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid var(--yt-border);
-  color: #CBD5E1;
-  padding: 4px 9px;
-  border-radius: 14px;
-  font-size: 11px;
-  font-weight: 600;
+  gap: 8px;
   cursor: pointer;
+  user-select: none;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--yt-border);
+  padding: 5px 12px;
+  border-radius: 8px;
   transition: all 0.2s ease;
 }
 
-.postnow-mini-action-btn:hover {
-  background: rgba(255, 255, 255, 0.12);
+.postnow-master-select-wrap:hover {
+  background: rgba(255, 255, 255, 0.08);
   border-color: rgba(255, 255, 255, 0.25);
+}
+
+.postnow-master-checkbox {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  accent-color: #10B981;
+  border-radius: 4px;
+}
+
+.postnow-master-label {
+  font-size: 13px;
+  font-weight: 600;
   color: #FFFFFF;
 }
 
