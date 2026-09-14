@@ -1,21 +1,21 @@
 {
   "app_name": "Raj Tube Pro",
   "version": "6.0.0",
-  "timestamp": "2026-09-14T17:13:42.941515+00:00",
+  "timestamp": "2026-09-14T17:43:20.233253+00:00",
   "schedule": {
     "next_slot_iso": "2026-09-14T21:00:00+00:00",
-    "seconds_remaining": 13577,
-    "formatted_countdown": "03h 46m 17s",
+    "seconds_remaining": 11799,
+    "formatted_countdown": "03h 16m 39s",
     "slot_label": "05:00 PM USA (2:30 AM IST)",
-    "now_ist": "14 Sep, 10:43 PM IST"
+    "now_ist": "14 Sep, 11:13 PM IST"
   },
   "summary": {
     "total_channels": 10,
     "total_uploaded": 208,
     "total_in_queue": 1242,
-    "total_subscribers": 312,
-    "total_views": 254157,
-    "total_likes": 2828,
+    "total_subscribers": 313,
+    "total_views": 270283,
+    "total_likes": 2832,
     "network_engagement": 0.9,
     "total_runway_days": 62.1,
     "system_health": "All Systems Operational",
@@ -377,7 +377,7 @@
         }
       }
     ],
-    "avg_views_per_channel": 25416
+    "avg_views_per_channel": 27028
   },
   "issues": [],
   "channels": [
@@ -394,7 +394,7 @@
       "subscribers": 82,
       "total_views": 42565,
       "channel_total_videos": 9,
-      "avg_views_per_video": 6461,
+      "avg_views_per_video": 6470,
       "engagement_rate": 1.2,
       "total_likes": 598,
       "analytics": {
@@ -633,7 +633,7 @@
           "title": "Close Enough To Hear His Breath #wildlife #shorts #cameraman #viral",
           "uploaded_at": "2026-09-12T14:03:34Z",
           "thumbnail": "https://i.ytimg.com/vi/RMgm8o875X0/mqdefault.jpg",
-          "views": 26993,
+          "views": 27064,
           "likes": 324,
           "comments": 1,
           "subscribers_gained": 41
@@ -1225,11 +1225,11 @@
       "color": "#F59E0B",
       "avatar_url": "https://yt3.ggpht.com/TTLhq8ijvpChRrWaVb1i96FzeFG02Gd31oOfWo4EdOtBtfqTD6h0TrRmEOTd2fE8V0kPexV6EA=s240-c-k-c0x00ffffff-no-rj",
       "subscribers": 124,
-      "total_views": 104273,
+      "total_views": 120399,
       "channel_total_videos": 17,
-      "avg_views_per_video": 8476,
+      "avg_views_per_video": 8525,
       "engagement_rate": 0.8,
-      "total_likes": 1124,
+      "total_likes": 1128,
       "analytics": {
         "watch_time_hours": 510.7,
         "avg_view_duration": "0:24",
@@ -1448,8 +1448,8 @@
           "title": "Nobody Wanted To Miss The Next Second #SlapFight #SlapFighting #PowerSlap #Viral #CombatSports.",
           "uploaded_at": "2026-09-13T14:13:36Z",
           "thumbnail": "https://i.ytimg.com/vi/jcBToYBlKTA/mqdefault.jpg",
-          "views": 18457,
-          "likes": 271,
+          "views": 19128,
+          "likes": 273,
           "comments": 3,
           "subscribers_gained": 7
         },
@@ -1459,7 +1459,7 @@
           "title": "Both Fighters Looked Completely Ready #SlapFight #PowerSlap #CombatSports #Sports #FYP",
           "uploaded_at": "2026-09-13T11:52:26Z",
           "thumbnail": "https://i.ytimg.com/vi/128Ysq4RtSw/mqdefault.jpg",
-          "views": 2053,
+          "views": 2068,
           "likes": 23,
           "comments": 1,
           "subscribers_gained": 2
@@ -1492,8 +1492,8 @@
           "title": "His Confidence Had The Whole Crowd Talking #PowerSlap #SlapFighting #SlapFight #Viral #Sports.",
           "uploaded_at": "2026-09-11T22:07:28Z",
           "thumbnail": "https://i.ytimg.com/vi/g-2DEoij8dY/mqdefault.jpg",
-          "views": 21006,
-          "likes": 210,
+          "views": 21082,
+          "likes": 211,
           "comments": 0,
           "subscribers_gained": 18
         },
@@ -1514,8 +1514,8 @@
           "title": "He Walked Up Like He Owned The Arena #PowerSlap #SlapFight #SlapFighting #Viral #Sports",
           "uploaded_at": "2026-09-11T09:08:50Z",
           "thumbnail": "https://i.ytimg.com/vi/WIWsbArcAp4/mqdefault.jpg",
-          "views": 1944,
-          "likes": 14,
+          "views": 1969,
+          "likes": 15,
           "comments": 1,
           "subscribers_gained": 2
         },
@@ -2478,7 +2478,7 @@
       "subscribers": 7,
       "total_views": 15111,
       "channel_total_videos": 14,
-      "avg_views_per_video": 1395,
+      "avg_views_per_video": 1394,
       "engagement_rate": 1.0,
       "total_likes": 182,
       "analytics": {
@@ -2684,7 +2684,7 @@
           "title": "From Empty Canvas To A Beautiful Landmark #Painting #ArtReels #ArtTransformation #Artist #ViralArt.",
           "uploaded_at": "2026-09-13T14:15:33Z",
           "thumbnail": "https://i.ytimg.com/vi/vvKBBEExuYQ/mqdefault.jpg",
-          "views": 92,
+          "views": 86,
           "likes": 1,
           "comments": 0,
           "subscribers_gained": 0
@@ -2695,7 +2695,7 @@
           "title": "Everyone Wanted To See The Finished Canvas #Painting #ArtReels #ArtReveal #Artist #Viral.",
           "uploaded_at": "2026-09-12T22:15:13Z",
           "thumbnail": "https://i.ytimg.com/vi/ZlNJrHYRPoU/mqdefault.jpg",
-          "views": 1619,
+          "views": 1603,
           "likes": 26,
           "comments": 1,
           "subscribers_gained": 1
@@ -2861,10 +2861,10 @@
       "github_repo": "malhotramahi396-afk/yt-automation-corevantamedia",
       "color": "#3B82F6",
       "avatar_url": "https://yt3.ggpht.com/vRLBXNb4fgjWzDfLf8ltniGaD2BlvZ1PAWugGoZaJx1nCdJ92LubM-8vy7hIgxHlCicFwpt2=s240-c-k-c0x00ffffff-no-rj",
-      "subscribers": 24,
+      "subscribers": 25,
       "total_views": 10007,
       "channel_total_videos": 30,
-      "avg_views_per_video": 382,
+      "avg_views_per_video": 381,
       "engagement_rate": 1.3,
       "total_likes": 149,
       "analytics": {
@@ -3059,7 +3059,7 @@
           "title": "Every Champion Has A Beginning On The Biggest Stage #Football #Soccer #FootballStory #FootballLife #",
           "uploaded_at": "2026-09-13T21:06:42Z",
           "thumbnail": "https://i.ytimg.com/vi/pxbeMgUNEWM/mqdefault.jpg",
-          "views": 814,
+          "views": 808,
           "likes": 9,
           "comments": 0,
           "subscribers_gained": 2
@@ -3070,7 +3070,7 @@
           "title": "Every Champion Has A Beginning Forever #Football #Soccer #FootballStory #FootballLife #Goal #Dream #",
           "uploaded_at": "2026-09-13T14:15:19Z",
           "thumbnail": "https://i.ytimg.com/vi/lHgG7YDjn-Q/mqdefault.jpg",
-          "views": 233,
+          "views": 230,
           "likes": 3,
           "comments": 0,
           "subscribers_gained": 0
@@ -4271,7 +4271,7 @@
           "title": "Hollywood's Biggest Secret Revealed In Front Of The Cameras #BehindTheScenes #Hollywood #MovieMagic",
           "uploaded_at": "2026-09-13T21:11:04Z",
           "thumbnail": "https://i.ytimg.com/vi/VLOPbff4HRM/mqdefault.jpg",
-          "views": 101,
+          "views": 97,
           "likes": 1,
           "comments": 0,
           "subscribers_gained": 0
@@ -4282,7 +4282,7 @@
           "title": "Hollywood's Biggest Secret Revealed Behind Closed Doors #BehindTheScenes #Hollywood #MovieMagic #Fil",
           "uploaded_at": "2026-09-13T12:05:10Z",
           "thumbnail": "https://i.ytimg.com/vi/zi3GOAA3zqA/mqdefault.jpg",
-          "views": 520,
+          "views": 519,
           "likes": 5,
           "comments": 0,
           "subscribers_gained": 0
