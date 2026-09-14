@@ -1,21 +1,21 @@
 {
   "app_name": "Raj Tube Pro",
   "version": "6.0.0",
-  "timestamp": "2026-09-14T07:16:54.488035+00:00",
+  "timestamp": "2026-09-14T07:44:57.975780+00:00",
   "schedule": {
     "next_slot_iso": "2026-09-14T14:00:00+00:00",
-    "seconds_remaining": 24185,
-    "formatted_countdown": "06h 43m 05s",
+    "seconds_remaining": 22502,
+    "formatted_countdown": "06h 15m 02s",
     "slot_label": "10:00 AM USA (7:30 PM IST)",
-    "now_ist": "14 Sep, 12:46 PM IST"
+    "now_ist": "14 Sep, 01:14 PM IST"
   },
   "summary": {
     "total_channels": 10,
     "total_uploaded": 203,
     "total_in_queue": 1247,
-    "total_subscribers": 286,
+    "total_subscribers": 287,
     "total_views": 254157,
-    "total_likes": 2616,
+    "total_likes": 2621,
     "network_engagement": 0.9,
     "total_runway_days": 62.4,
     "system_health": "All Systems Operational",
@@ -394,7 +394,7 @@
       "subscribers": 76,
       "total_views": 42565,
       "channel_total_videos": 7,
-      "avg_views_per_video": 7058,
+      "avg_views_per_video": 7041,
       "engagement_rate": 1.2,
       "total_likes": 571,
       "analytics": {
@@ -589,7 +589,7 @@
           "title": "Extreme Cameraman Survival Mode #cameraman #wildlifephotography #shorts #viral",
           "uploaded_at": "2026-09-13T21:06:44Z",
           "thumbnail": "https://i.ytimg.com/vi/KNePoSbw9mU/mqdefault.jpg",
-          "views": 422,
+          "views": 415,
           "likes": 10,
           "comments": 0,
           "subscribers_gained": 0
@@ -600,8 +600,8 @@
           "title": "Dangerous Stare Caught On 4K Camera #wildlife #cameraman #shorts #viral",
           "uploaded_at": "2026-09-13T14:03:47Z",
           "thumbnail": "https://i.ytimg.com/vi/7M2CTdKBQ6M/mqdefault.jpg",
-          "views": 1487,
-          "likes": 12,
+          "views": 1441,
+          "likes": 11,
           "comments": 0,
           "subscribers_gained": 1
         },
@@ -611,7 +611,7 @@
           "title": "Danger At Point Blank Range #wildlife #shorts #animalencounter #fyp",
           "uploaded_at": "2026-09-12T22:03:51Z",
           "thumbnail": "https://i.ytimg.com/vi/H511dz4lsLQ/mqdefault.jpg",
-          "views": 2281,
+          "views": 2215,
           "likes": 14,
           "comments": 0,
           "subscribers_gained": 3
@@ -622,8 +622,8 @@
           "title": "Close Enough To Hear His Breath #wildlife #shorts #cameraman #viral",
           "uploaded_at": "2026-09-12T14:03:34Z",
           "thumbnail": "https://i.ytimg.com/vi/RMgm8o875X0/mqdefault.jpg",
-          "views": 26119,
-          "likes": 317,
+          "views": 26142,
+          "likes": 318,
           "comments": 1,
           "subscribers_gained": 38
         },
@@ -644,7 +644,7 @@
           "title": "Breathtaking 4K Wildlife Moment #wildlifephotography #shorts #naturelovers #viral",
           "uploaded_at": "2026-09-11T14:42:29Z",
           "thumbnail": "https://i.ytimg.com/vi/3pDpmQcqJT8/mqdefault.jpg",
-          "views": 15906,
+          "views": 15883,
           "likes": 195,
           "comments": 1,
           "subscribers_gained": 25
@@ -720,7 +720,7 @@
       "subscribers": 5,
       "total_views": 6729,
       "channel_total_videos": 22,
-      "avg_views_per_video": 346,
+      "avg_views_per_video": 345,
       "engagement_rate": 0.8,
       "total_likes": 56,
       "analytics": {
@@ -915,7 +915,7 @@
           "title": "Grandma Carried The Entire Team With Incredible Skill #GrandmaGamer #Esports #Gaming #GamingLegend #",
           "uploaded_at": "2026-09-13T21:05:30Z",
           "thumbnail": "https://i.ytimg.com/vi/i-SHfq4WX30/mqdefault.jpg",
-          "views": 534,
+          "views": 535,
           "likes": 3,
           "comments": 0,
           "subscribers_gained": 0
@@ -926,7 +926,7 @@
           "title": "Grandma Carried The Entire Team Today #GrandmaGamer #Esports #Gaming #GamingLegend #ProGaming #Under",
           "uploaded_at": "2026-09-13T12:20:36Z",
           "thumbnail": "https://i.ytimg.com/vi/yKKvEzJL_64/mqdefault.jpg",
-          "views": 767,
+          "views": 766,
           "likes": 7,
           "comments": 1,
           "subscribers_gained": 0
@@ -937,7 +937,7 @@
           "title": "Grandma Carried The Entire Team Like A True Champion #GrandmaGamer #Esports #Gaming #GamingLegend #P",
           "uploaded_at": "2026-09-12T22:15:20Z",
           "thumbnail": "https://i.ytimg.com/vi/dmg14otnq3A/mqdefault.jpg",
-          "views": 169,
+          "views": 168,
           "likes": 0,
           "comments": 0,
           "subscribers_gained": 0
@@ -1202,12 +1202,12 @@
       "github_repo": "malhotramahi396-afk/yt-automation-zyntrix07",
       "color": "#F59E0B",
       "avatar_url": "https://yt3.ggpht.com/TTLhq8ijvpChRrWaVb1i96FzeFG02Gd31oOfWo4EdOtBtfqTD6h0TrRmEOTd2fE8V0kPexV6EA=s240-c-k-c0x00ffffff-no-rj",
-      "subscribers": 105,
+      "subscribers": 106,
       "total_views": 104273,
       "channel_total_videos": 15,
-      "avg_views_per_video": 7957,
+      "avg_views_per_video": 7979,
       "engagement_rate": 0.8,
-      "total_likes": 962,
+      "total_likes": 967,
       "analytics": {
         "watch_time_hours": 453.2,
         "avg_view_duration": "0:24",
@@ -1400,7 +1400,7 @@
           "title": "Nobody Was Laughing After This Faceoff #PowerSlap #SlapFighting #SlapFight #Viral #FightNight.",
           "uploaded_at": "2026-09-13T21:09:17Z",
           "thumbnail": "https://i.ytimg.com/vi/kdh_Ba5O-UU/mqdefault.jpg",
-          "views": 1074,
+          "views": 1082,
           "likes": 12,
           "comments": 1,
           "subscribers_gained": 0
@@ -1411,8 +1411,8 @@
           "title": "Nobody Wanted To Miss The Next Second #SlapFight #SlapFighting #PowerSlap #Viral #CombatSports.",
           "uploaded_at": "2026-09-13T14:13:36Z",
           "thumbnail": "https://i.ytimg.com/vi/jcBToYBlKTA/mqdefault.jpg",
-          "views": 5193,
-          "likes": 122,
+          "views": 5399,
+          "likes": 129,
           "comments": 2,
           "subscribers_gained": 2
         },
@@ -1422,7 +1422,7 @@
           "title": "Both Fighters Looked Completely Ready #SlapFight #PowerSlap #CombatSports #Sports #FYP",
           "uploaded_at": "2026-09-13T11:52:26Z",
           "thumbnail": "https://i.ytimg.com/vi/128Ysq4RtSw/mqdefault.jpg",
-          "views": 2014,
+          "views": 2015,
           "likes": 21,
           "comments": 1,
           "subscribers_gained": 1
@@ -1433,8 +1433,8 @@
           "title": "Nobody Wanted To Blink During This Moment #SlapFighting #PowerSlap #FightNight #FYP #Viral.",
           "uploaded_at": "2026-09-12T22:06:45Z",
           "thumbnail": "https://i.ytimg.com/vi/sEMtoFAjmrs/mqdefault.jpg",
-          "views": 2297,
-          "likes": 23,
+          "views": 2274,
+          "likes": 21,
           "comments": 0,
           "subscribers_gained": 2
         },
@@ -1444,7 +1444,7 @@
           "title": "Nobody Expected That Faceoff Reaction #SlapFighting #PowerSlap #SlapBattle #CombatSports #Viral.",
           "uploaded_at": "2026-09-12T14:06:29Z",
           "thumbnail": "https://i.ytimg.com/vi/7OVj2yza4ks/mqdefault.jpg",
-          "views": 3624,
+          "views": 3622,
           "likes": 33,
           "comments": 2,
           "subscribers_gained": 3
@@ -1455,7 +1455,7 @@
           "title": "His Confidence Had The Whole Crowd Talking #PowerSlap #SlapFighting #SlapFight #Viral #Sports.",
           "uploaded_at": "2026-09-11T22:07:28Z",
           "thumbnail": "https://i.ytimg.com/vi/g-2DEoij8dY/mqdefault.jpg",
-          "views": 18918,
+          "views": 19037,
           "likes": 203,
           "comments": 0,
           "subscribers_gained": 13
@@ -1466,8 +1466,8 @@
           "title": "He Was Not Backing Down From Anyone #SlapFight #PowerSlap #SlapFighting #Viral #Sports.",
           "uploaded_at": "2026-09-11T16:04:35Z",
           "thumbnail": "https://i.ytimg.com/vi/t5oF0IsXkN0/mqdefault.jpg",
-          "views": 43995,
-          "likes": 366,
+          "views": 44029,
+          "likes": 367,
           "comments": 1,
           "subscribers_gained": 37
         },
@@ -1477,8 +1477,8 @@
           "title": "He Walked Up Like He Owned The Arena #PowerSlap #SlapFight #SlapFighting #Viral #Sports",
           "uploaded_at": "2026-09-11T09:08:50Z",
           "thumbnail": "https://i.ytimg.com/vi/WIWsbArcAp4/mqdefault.jpg",
-          "views": 1895,
-          "likes": 14,
+          "views": 1884,
+          "likes": 13,
           "comments": 1,
           "subscribers_gained": 2
         },
@@ -1521,7 +1521,7 @@
           "title": "Everyone Went Silent Before The Action #SlapFighting #PowerSlap #CombatSports #SlapFight #Viral",
           "uploaded_at": "2026-08-30T17:35:17Z",
           "thumbnail": "https://i.ytimg.com/vi/BsHgPB_OMhk/mqdefault.jpg",
-          "views": 7190,
+          "views": 7189,
           "likes": 29,
           "comments": 0,
           "subscribers_gained": 6
@@ -1554,7 +1554,7 @@
           "title": "Everyone Could Feel The Pressure #SlapFighting #PowerSlap #SlapFight #Viral #Highlights",
           "uploaded_at": "2026-08-25T19:55:30Z",
           "thumbnail": "https://i.ytimg.com/vi/0XG0Q-mvSg0/mqdefault.jpg",
-          "views": 4657,
+          "views": 4656,
           "likes": 16,
           "comments": 0,
           "subscribers_gained": 4
@@ -1619,7 +1619,7 @@
       "subscribers": 9,
       "total_views": 11670,
       "channel_total_videos": 15,
-      "avg_views_per_video": 779,
+      "avg_views_per_video": 778,
       "engagement_rate": 1.7,
       "total_likes": 198,
       "analytics": {
@@ -1825,7 +1825,7 @@
           "title": "He Is Working Harder Than Everyone Around Him #PandaTok #Panda #Funny #Viral #CuteAnimals.",
           "uploaded_at": "2026-09-13T14:05:00Z",
           "thumbnail": "https://i.ytimg.com/vi/IRd-62lVRrk/mqdefault.jpg",
-          "views": 8,
+          "views": 6,
           "likes": 0,
           "comments": 0,
           "subscribers_gained": 0
@@ -4223,7 +4223,7 @@
           "title": "Hollywood's Biggest Secret Revealed Behind Closed Doors #BehindTheScenes #Hollywood #MovieMagic #Fil",
           "uploaded_at": "2026-09-13T12:05:10Z",
           "thumbnail": "https://i.ytimg.com/vi/zi3GOAA3zqA/mqdefault.jpg",
-          "views": 464,
+          "views": 474,
           "likes": 4,
           "comments": 0,
           "subscribers_gained": 0
