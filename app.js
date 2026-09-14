@@ -2021,7 +2021,7 @@ function renderRadarView(channel) {
 /* ========================================================
    TAB 8: INSTANT POST CONSOLE (ON-DEMAND SHORTS PUBLISHER)
    ======================================================== */
-let selectedPostNowChannelId = 'channel_1';
+let selectedPostNowChannelIds = new Set(['channel_1']);
 let isUploadingNow = false;
 let currentPreviewController = null;
 
@@ -2044,6 +2044,36 @@ function setupPostNowView() {
       const modalOverlay = document.getElementById('create-modal-overlay');
       if (modalOverlay) modalOverlay.classList.remove('open');
       switchView('post-now');
+    });
+  }
+
+  // Quick Select Presets
+  const btnSelectAll = document.getElementById('postnow-btn-select-all');
+  if (btnSelectAll) {
+    btnSelectAll.addEventListener('click', () => {
+      if (isUploadingNow || !globalData || !globalData.channels) return;
+      selectedPostNowChannelIds = new Set(globalData.channels.map(c => c.id));
+      renderPostNowView();
+    });
+  }
+
+  const btnSelect5 = document.getElementById('postnow-btn-select-5');
+  if (btnSelect5) {
+    btnSelect5.addEventListener('click', () => {
+      if (isUploadingNow || !globalData || !globalData.channels) return;
+      const top5 = globalData.channels.slice(0, 5).map(c => c.id);
+      selectedPostNowChannelIds = new Set(top5);
+      renderPostNowView();
+    });
+  }
+
+  const btnClearAll = document.getElementById('postnow-btn-clear-all');
+  if (btnClearAll) {
+    btnClearAll.addEventListener('click', () => {
+      if (isUploadingNow || !globalData || !globalData.channels) return;
+      const defaultId = (currentChannelId && currentChannelId !== 'all') ? currentChannelId : (globalData.channels[0] ? globalData.channels[0].id : 'channel_1');
+      selectedPostNowChannelIds = new Set([defaultId]);
+      renderPostNowView();
     });
   }
 
@@ -2073,15 +2103,23 @@ function renderPostNowView() {
 
   if (!channels.length) return;
 
-  // If current channel selected in app is not 'all', sync with selectedPostNowChannelId
-  if (!selectedPostNowChannelId || selectedPostNowChannelId === 'all') {
-    selectedPostNowChannelId = (currentChannelId && currentChannelId !== 'all') ? currentChannelId : 'channel_1';
+  // Initialize from currentChannelId if not yet set
+  if (!selectedPostNowChannelIds || selectedPostNowChannelIds.size === 0) {
+    const initId = (currentChannelId && currentChannelId !== 'all') ? currentChannelId : 'channel_1';
+    selectedPostNowChannelIds = new Set([initId]);
   }
 
-  // Render 10 channel selector cards
+  // Update count badge
+  const countBadge = document.getElementById('postnow-selected-count-badge');
+  if (countBadge) {
+    const count = selectedPostNowChannelIds.size;
+    countBadge.innerText = `${count} Channel${count > 1 ? 's' : ''} Selected`;
+  }
+
+  // Render 10 channel selector cards with checkboxes
   grid.innerHTML = '';
   channels.forEach(ch => {
-    const isSelected = ch.id === selectedPostNowChannelId;
+    const isSelected = selectedPostNowChannelIds.has(ch.id);
     const card = document.createElement('div');
     card.className = `postnow-ch-card ${isSelected ? 'active' : ''}`;
     card.setAttribute('data-channel-id', ch.id);
@@ -2089,6 +2127,9 @@ function renderPostNowView() {
     const stock = ch.drive_queue_count !== undefined ? `${ch.drive_queue_count} in Drive` : 'Active';
 
     card.innerHTML = `
+      <label class="postnow-checkbox-wrap" onclick="event.stopPropagation()">
+        <input type="checkbox" class="postnow-ch-checkbox" data-channel-id="${ch.id}" ${isSelected ? 'checked' : ''} />
+      </label>
       <img src="${ch.avatar_url || './logo.png'}" alt="${ch.name}" class="postnow-ch-avatar" />
       <div class="postnow-ch-info">
         <div class="postnow-ch-name">${ch.name}</div>
@@ -2097,26 +2138,51 @@ function renderPostNowView() {
       <span class="postnow-select-pill">${isSelected ? 'SELECTED' : 'SELECT'}</span>
     `;
 
+    // Clicking anywhere on the card toggles selection
     card.addEventListener('click', () => {
       if (isUploadingNow) return;
-      selectPostNowChannel(ch.id);
+      togglePostNowChannel(ch.id);
     });
+
+    // Direct checkbox listener
+    const cb = card.querySelector('.postnow-ch-checkbox');
+    if (cb) {
+      cb.addEventListener('change', (e) => {
+        if (isUploadingNow) {
+          e.preventDefault();
+          return;
+        }
+        togglePostNowChannel(ch.id);
+      });
+    }
 
     grid.appendChild(card);
   });
 
-  updatePostNowStaging(selectedPostNowChannelId);
+  updatePostNowStaging();
 }
 
-function selectPostNowChannel(channelId) {
-  selectedPostNowChannelId = channelId;
+function togglePostNowChannel(channelId) {
+  if (selectedPostNowChannelIds.has(channelId)) {
+    if (selectedPostNowChannelIds.size > 1) {
+      selectedPostNowChannelIds.delete(channelId);
+    } else {
+      showToast("At least 1 channel must remain selected.");
+      return;
+    }
+  } else {
+    selectedPostNowChannelIds.add(channelId);
+  }
 
-  // Update card active classes & labels
+  // Update card classes & pills without rebuilding entire DOM
   const cards = document.querySelectorAll('.postnow-ch-card');
   cards.forEach(c => {
     const cId = c.getAttribute('data-channel-id');
+    const isSel = selectedPostNowChannelIds.has(cId);
+    const cb = c.querySelector('.postnow-ch-checkbox');
     const pill = c.querySelector('.postnow-select-pill');
-    if (cId === channelId) {
+    if (cb) cb.checked = isSel;
+    if (isSel) {
       c.classList.add('active');
       if (pill) pill.innerText = 'SELECTED';
     } else {
@@ -2125,94 +2191,162 @@ function selectPostNowChannel(channelId) {
     }
   });
 
-  updatePostNowStaging(channelId);
+  // Update count badge
+  const countBadge = document.getElementById('postnow-selected-count-badge');
+  if (countBadge) {
+    const count = selectedPostNowChannelIds.size;
+    countBadge.innerText = `${count} Channel${count > 1 ? 's' : ''} Selected`;
+  }
+
+  updatePostNowStaging();
 }
 
-async function updatePostNowStaging(channelId) {
-  const channel = globalData && globalData.channels ? globalData.channels.find(c => c.id === channelId) : null;
-  if (!channel) return;
+async function updatePostNowStaging() {
+  const selectedCount = selectedPostNowChannelIds.size;
+  const channels = globalData && globalData.channels ? globalData.channels : [];
+  const selectedChannels = channels.filter(c => selectedPostNowChannelIds.has(c.id));
 
   const avatarEl = document.getElementById('postnow-stage-avatar');
   const nameEl = document.getElementById('postnow-stage-name');
   const metaEl = document.getElementById('postnow-stage-meta');
   const badgeEl = document.getElementById('postnow-drive-stock-badge');
-  const filenameEl = document.getElementById('postnow-next-filename');
-  const fileMetaEl = document.getElementById('postnow-next-meta');
+  const singlePreviewBox = document.getElementById('postnow-preview-box-single');
+  const batchPreviewBox = document.getElementById('postnow-preview-box-batch');
+  const batchListEl = document.getElementById('postnow-batch-preview-list');
+  const batchLabelEl = document.getElementById('postnow-batch-preview-label');
+  const btnText = document.getElementById('btn-postnow-text');
+  const destLabel = document.getElementById('postnow-dest-label');
 
-  if (avatarEl) avatarEl.src = channel.avatar_url || './logo.png';
-  if (nameEl) nameEl.innerText = channel.name;
-  if (metaEl) metaEl.innerText = `${channel.handle} • ${channel.category || 'Shorts'}`;
-  if (badgeEl) badgeEl.innerText = `${channel.drive_queue_count || 0} VIDEOS IN DRIVE`;
-
-  // Hide success banner on channel switch
+  // Hide success banner on selection switch
   const successBanner = document.getElementById('postnow-success-banner');
   if (successBanner) successBanner.style.display = 'none';
 
-  // Abort any in-flight preview query
-  if (currentPreviewController) {
-    currentPreviewController.abort();
-  }
-  currentPreviewController = new AbortController();
+  if (selectedCount === 1) {
+    const channel = selectedChannels[0] || channels[0];
+    if (!channel) return;
 
-  if (filenameEl) filenameEl.innerText = "Connecting to Google Drive...";
-  if (fileMetaEl) fileMetaEl.innerText = "Querying queued video file...";
+    if (avatarEl) avatarEl.src = channel.avatar_url || './logo.png';
+    if (nameEl) nameEl.innerText = channel.name;
+    if (metaEl) metaEl.innerText = `${channel.handle} • ${channel.category || 'Shorts'}`;
+    if (badgeEl) badgeEl.innerText = `${channel.drive_queue_count || 0} VIDEOS IN DRIVE`;
+    if (destLabel) destLabel.innerText = "YouTube Shorts (Vertical Feed)";
+    if (btnText) btnText.innerText = "🚀 PUBLISH VIDEO NOW TO YOUTUBE";
 
-  try {
-    let res = null;
-    const baseApi = getBackendApiUrl();
+    if (singlePreviewBox) singlePreviewBox.style.display = 'block';
+    if (batchPreviewBox) batchPreviewBox.style.display = 'none';
 
-    // Tier 1: Try baseApi (local or tunnel)
+    // Abort in-flight query
+    if (currentPreviewController) currentPreviewController.abort();
+    currentPreviewController = new AbortController();
+
+    const filenameEl = document.getElementById('postnow-next-filename');
+    const fileMetaEl = document.getElementById('postnow-next-meta');
+    if (filenameEl) filenameEl.innerText = "Connecting to Google Drive...";
+    if (fileMetaEl) fileMetaEl.innerText = "Querying queued video file...";
+
     try {
-      res = await fetch(`${baseApi}/api/queue-preview?channel=${channelId}`, {
-        signal: currentPreviewController.signal,
-        cache: 'no-store'
-      });
-    } catch (_) {}
+      let res = null;
+      const baseApi = getBackendApiUrl();
 
-    // Tier 2: If failed and baseApi was local, try CLOUD_TUNNEL_API
-    if ((!res || !res.ok) && baseApi !== CLOUD_TUNNEL_API) {
       try {
-        res = await fetch(`${CLOUD_TUNNEL_API}/api/queue-preview?channel=${channelId}`, {
+        res = await fetch(`${baseApi}/api/queue-preview?channel=${channel.id}`, {
           signal: currentPreviewController.signal,
           cache: 'no-store'
         });
       } catch (_) {}
-    }
 
-    if (res && res.ok) {
-      const data = await res.json();
-      if (data.status === 'ok' && data.next_video) {
-        if (filenameEl) filenameEl.innerText = data.next_video.title_preview || data.next_video.filename;
-        if (fileMetaEl) fileMetaEl.innerText = `Google Drive Ready • ${data.next_video.filename}`;
-        if (badgeEl) badgeEl.innerText = `${data.total_in_drive} VIDEOS IN DRIVE`;
-        return;
-      } else if (data.status === 'empty') {
-        if (filenameEl) filenameEl.innerText = data.message || "No videos currently in Drive queue";
-        if (fileMetaEl) fileMetaEl.innerText = "Upload new videos to Google Drive folder to replenish";
-        if (badgeEl) badgeEl.innerText = `0 VIDEOS IN DRIVE`;
-        return;
+      if ((!res || !res.ok) && baseApi !== CLOUD_TUNNEL_API) {
+        try {
+          res = await fetch(`${CLOUD_TUNNEL_API}/api/queue-preview?channel=${channel.id}`, {
+            signal: currentPreviewController.signal,
+            cache: 'no-store'
+          });
+        } catch (_) {}
       }
-    }
-  } catch (err) {
-    if (err.name === 'AbortError') return;
-    console.warn('Queue preview fetch error:', err);
-  }
 
-  // Fallback if network preview call failed or offline
-  if (filenameEl) filenameEl.innerText = "Next scheduled video in queue (Ready for Upload)";
-  if (fileMetaEl) fileMetaEl.innerText = "Google Drive Cloud Storage • Auto-selected on trigger";
+      if (res && res.ok) {
+        const data = await res.json();
+        if (data.status === 'ok' && data.next_video) {
+          if (filenameEl) filenameEl.innerText = data.next_video.title_preview || data.next_video.filename;
+          if (fileMetaEl) fileMetaEl.innerText = `Google Drive Ready • ${data.next_video.filename}`;
+          if (badgeEl) badgeEl.innerText = `${data.total_in_drive} VIDEOS IN DRIVE`;
+          return;
+        } else if (data.status === 'empty') {
+          if (filenameEl) filenameEl.innerText = data.message || "No videos currently in Drive queue";
+          if (fileMetaEl) fileMetaEl.innerText = "Upload new videos to Google Drive folder to replenish";
+          if (badgeEl) badgeEl.innerText = `0 VIDEOS IN DRIVE`;
+          return;
+        }
+      }
+    } catch (err) {
+      if (err.name === 'AbortError') return;
+      console.warn('Queue preview fetch error:', err);
+    }
+
+    if (filenameEl) filenameEl.innerText = "Next scheduled video in queue (Ready for Upload)";
+    if (fileMetaEl) fileMetaEl.innerText = "Google Drive Cloud Storage • Auto-selected on trigger";
+
+  } else {
+    // Multi-channel batch mode (e.g. 5 channels or all 10)
+    const totalStock = selectedChannels.reduce((sum, c) => sum + (c.drive_queue_count || 0), 0);
+
+    if (avatarEl) avatarEl.src = './logo.png';
+    if (nameEl) nameEl.innerText = `Batch Engine (${selectedCount} Channels Selected)`;
+    if (metaEl) metaEl.innerText = `Sequential Multi-Channel Upload • ${selectedCount} Distinct Feeds`;
+    if (badgeEl) badgeEl.innerText = `${totalStock} TOTAL DRIVE VIDEOS`;
+    if (destLabel) destLabel.innerText = `YouTube Shorts (${selectedCount} Channels)`;
+    if (btnText) btnText.innerText = `🚀 PUBLISH ${selectedCount} VIDEOS NOW TO YOUTUBE`;
+
+    if (singlePreviewBox) singlePreviewBox.style.display = 'none';
+    if (batchPreviewBox) batchPreviewBox.style.display = 'block';
+
+    if (batchLabelEl) {
+      batchLabelEl.innerText = `QUEUED GOOGLE DRIVE VIDEOS ACROSS ${selectedCount} SELECTED CHANNELS`;
+    }
+
+    if (batchListEl) {
+      batchListEl.innerHTML = '';
+      selectedChannels.forEach(ch => {
+        const item = document.createElement('div');
+        item.className = 'postnow-batch-item';
+        const stockCount = ch.drive_queue_count !== undefined ? `${ch.drive_queue_count} in Drive` : 'Active';
+        item.innerHTML = `
+          <img src="${ch.avatar_url || './logo.png'}" alt="${ch.name}" class="postnow-batch-avatar" />
+          <div class="postnow-batch-item-info">
+            <div class="postnow-batch-item-title">${ch.name}</div>
+            <div class="postnow-batch-item-sub">${ch.handle} • Ready to Publish Next Queued Video</div>
+          </div>
+          <span class="postnow-batch-badge">${stockCount}</span>
+        `;
+        batchListEl.appendChild(item);
+      });
+    }
+  }
 }
 
 async function handleExecutePostNow() {
   if (isUploadingNow) return;
 
-  const channel = globalData && globalData.channels ? globalData.channels.find(c => c.id === selectedPostNowChannelId) : null;
-  const chName = channel ? channel.name : selectedPostNowChannelId;
+  const count = selectedPostNowChannelIds.size;
+  if (count === 0) {
+    showToast("Please select at least 1 channel.");
+    return;
+  }
 
-  const confirmed = window.confirm(
-    `⚡ INSTANT UPLOAD CONFIRMATION\n\nChannel: "${chName}"\n\nAre you sure you want to publish the next queued Google Drive video right now?\n\nThis will trigger the YouTube Data API immediately. Your 2x daily automated schedule will continue normally without conflict.`
-  );
+  const channels = globalData && globalData.channels ? globalData.channels : [];
+  const selectedChannels = channels.filter(c => selectedPostNowChannelIds.has(c.id));
 
+  // Build confirmation message listing all channels
+  let confirmMsg = "";
+  if (count === 1) {
+    const ch = selectedChannels[0] || { name: 'channel_1' };
+    confirmMsg = `⚡ INSTANT UPLOAD CONFIRMATION\n\nChannel: "${ch.name}"\n\nAre you sure you want to publish the next queued Google Drive video right now?\n\nThis will trigger the YouTube Data API immediately. Your automated schedule remains active and protected.`;
+  } else {
+    const listNames = selectedChannels.map((c, i) => `${i + 1}. ${c.name} (${c.handle})`).join('\n');
+    confirmMsg = `⚡ BATCH INSTANT UPLOAD CONFIRMATION\n\nYou have selected ${count} channels for instant publishing:\n\n${listNames}\n\nEach channel will immediately publish its next queued Google Drive video to YouTube Shorts.\nAutomated schedules (10:00 AM & 5:00 PM USA Eastern) remain 100% active and protected.\n\nProceed with publishing ${count} videos?`;
+  }
+
+  const confirmed = window.confirm(confirmMsg);
   if (!confirmed) return;
 
   isUploadingNow = true;
@@ -2223,121 +2357,138 @@ async function handleExecutePostNow() {
   const successBanner = document.getElementById('postnow-success-banner');
 
   if (btn) btn.disabled = true;
-  if (btnText) btnText.innerText = "⏳ PUBLISHING TO YOUTUBE... PLEASE WAIT";
   if (successBanner) successBanner.style.display = 'none';
-
   if (terminal) terminal.style.display = 'block';
   if (logs) {
     logs.innerHTML = '';
-    appendTerminalLine(logs, `[INIT] ⚡ Initializing Instant Upload Pipeline for "${chName}"...`, 'info');
+    appendTerminalLine(logs, `[INIT] ⚡ Initializing Instant Batch Upload Engine for ${count} channel(s)...`, 'info');
   }
 
-  showToast(`🚀 Uploading video to ${chName}...`);
+  showToast(`🚀 Starting upload across ${count} channel(s)...`);
 
-  // Simulated realistic step-by-step progress lines while backend executes
-  const t1 = setTimeout(() => {
-    if (logs) appendTerminalLine(logs, `[DRIVE] 📂 Connecting to Google Drive & locating next queued MP4...`, 'info');
-  }, 1200);
+  const successfulUploads = [];
+  const failedUploads = [];
+  const baseApi = getBackendApiUrl();
 
-  const t2 = setTimeout(() => {
-    if (logs) appendTerminalLine(logs, `[DOWNLOAD] ⬇️ Downloading video binary & verifying format...`, 'info');
-  }, 3500);
+  // Execute channels sequentially
+  for (let i = 0; i < selectedChannels.length; i++) {
+    const ch = selectedChannels[i];
+    const chNum = i + 1;
 
-  const t3 = setTimeout(() => {
-    if (logs) appendTerminalLine(logs, `[YOUTUBE] 📤 Uploading video stream to YouTube API v3...`, 'info');
-  }, 6000);
+    if (btnText) {
+      btnText.innerText = `⏳ PUBLISHING ${chNum} OF ${count}: ${ch.name}...`;
+    }
 
-  const t4 = setTimeout(() => {
-    if (logs) appendTerminalLine(logs, `[METADATA] 🏷️ Applying Title, Tags, Category, AI Disclosure & COPPA Compliance...`, 'info');
-  }, 9000);
+    if (logs) {
+      appendTerminalLine(logs, `--------------------------------------------------------`, 'info');
+      appendTerminalLine(logs, `[CHANNEL ${chNum}/${count}: ${ch.name}] 🚀 Starting upload pipeline...`, 'info');
+      appendTerminalLine(logs, `[CHANNEL ${chNum}/${count}] 📂 Connecting to Drive folder for ${ch.handle}...`, 'info');
+    }
 
-  try {
-    let res = null;
-    const baseApi = getBackendApiUrl();
-
-    // Tier 1: Try baseApi
     try {
-      res = await fetch(`${baseApi}/api/upload-now?channel=${selectedPostNowChannelId}`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' }
-      });
-    } catch (_) {}
+      let res = null;
 
-    // Tier 2: Try CLOUD_TUNNEL_API if baseApi was local and failed
-    if ((!res || !res.ok) && baseApi !== CLOUD_TUNNEL_API) {
+      // Tier 1: Try baseApi
       try {
-        res = await fetch(`${CLOUD_TUNNEL_API}/api/upload-now?channel=${selectedPostNowChannelId}`, {
+        res = await fetch(`${baseApi}/api/upload-now?channel=${ch.id}`, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' }
         });
       } catch (_) {}
-    }
 
-    clearTimeout(t1);
-    clearTimeout(t2);
-    clearTimeout(t3);
-    clearTimeout(t4);
+      // Tier 2: Try CLOUD_TUNNEL_API if baseApi was local and failed
+      if ((!res || !res.ok) && baseApi !== CLOUD_TUNNEL_API) {
+        try {
+          res = await fetch(`${CLOUD_TUNNEL_API}/api/upload-now?channel=${ch.id}`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' }
+          });
+        } catch (_) {}
+      }
 
-    if (!res) throw new Error("Could not connect to upload server daemon");
+      if (!res) throw new Error("Could not connect to server daemon");
 
-    const data = await res.json();
+      const data = await res.json();
 
-    if (data.status === 'success') {
-      const vid = data.result || data;
-      const ytUrl = vid.youtube_url || (vid.youtube_video_id ? `https://youtu.be/${vid.youtube_video_id}` : (vid.youtube_id ? `https://youtu.be/${vid.youtube_id}` : ''));
-      const ytTitle = vid.title || vid.filename || 'Published Short';
+      if (data.status === 'success') {
+        const vid = data.result || data;
+        const ytUrl = vid.youtube_url || (vid.youtube_video_id ? `https://youtu.be/${vid.youtube_video_id}` : (vid.youtube_id ? `https://youtu.be/${vid.youtube_id}` : ''));
+        const ytTitle = vid.title || vid.filename || 'Published Short';
 
+        successfulUploads.push({
+          channel: ch.name,
+          title: ytTitle,
+          url: ytUrl
+        });
+
+        if (logs) {
+          appendTerminalLine(logs, `[CHANNEL ${chNum}/${count}: ${ch.name}] ✅ Live on YouTube!`, 'success');
+          appendTerminalLine(logs, `[TITLE] 🎬 "${ytTitle}"`, 'success');
+          if (ytUrl) appendTerminalLine(logs, `[URL] 🔗 ${ytUrl}`, 'success');
+        }
+      } else {
+        const errMsg = (data.result && data.result.error) || data.message || 'Upload failed';
+        failedUploads.push({ channel: ch.name, error: errMsg });
+        if (logs) {
+          appendTerminalLine(logs, `[CHANNEL ${chNum}/${count}: ${ch.name}] ❌ Upload error: ${errMsg}`, 'error');
+        }
+      }
+    } catch (err) {
+      failedUploads.push({ channel: ch.name, error: err.message });
       if (logs) {
-        appendTerminalLine(logs, `[SUCCESS] ✅ Video published live to YouTube!`, 'success');
-        appendTerminalLine(logs, `[TITLE] 🎬 "${ytTitle}"`, 'success');
-        if (ytUrl) appendTerminalLine(logs, `[YOUTUBE URL] 🔗 ${ytUrl}`, 'success');
-        appendTerminalLine(logs, `[DRIVE] 🗑️ Processed file removed from Drive queue.`, 'info');
-        appendTerminalLine(logs, `[STATUS] 🛡️ Schedule guards intact. Pipeline ready.`, 'info');
+        appendTerminalLine(logs, `[CHANNEL ${chNum}/${count}: ${ch.name}] ❌ Network error: ${err.message}`, 'error');
       }
-
-      if (successBanner) {
-        const titleEl = document.getElementById('postnow-success-title');
-        const linkEl = document.getElementById('postnow-success-link');
-        if (titleEl) titleEl.innerText = ytTitle;
-        if (linkEl && ytUrl) linkEl.href = ytUrl;
-        successBanner.style.display = 'flex';
-      }
-
-      showToast(`🎉 Upload Successful! Published to YouTube.`);
-
-      // Trigger telemetry sync in background to update all views
-      const syncBtn = document.getElementById('btn-sync');
-      if (syncBtn) {
-        setTimeout(() => syncBtn.click(), 1000);
-      }
-
-      // Re-fetch queue preview after 2.5s
-      setTimeout(() => {
-        updatePostNowStaging(selectedPostNowChannelId);
-      }, 2500);
-
-    } else {
-      const errMsg = (data.result && data.result.error) || data.message || 'Upload failed';
-      if (logs) {
-        appendTerminalLine(logs, `[ERROR] ❌ Upload failed: ${errMsg}`, 'error');
-      }
-      showToast(`❌ Upload failed: ${errMsg}`);
     }
-  } catch (err) {
-    clearTimeout(t1);
-    clearTimeout(t2);
-    clearTimeout(t3);
-    clearTimeout(t4);
-    console.error('Execute upload now error:', err);
-    if (logs) {
-      appendTerminalLine(logs, `[NETWORK ERROR] ❌ Connection error: ${err.message}`, 'error');
-      appendTerminalLine(logs, `[TIP] Verify the local server daemon or tunnel is online.`, 'error');
+  }
+
+  // Batch Completion Summary
+  if (logs) {
+    appendTerminalLine(logs, `========================================================`, 'info');
+    appendTerminalLine(logs, `[BATCH COMPLETE] 🎯 ${successfulUploads.length} of ${count} videos successfully published!`, successfulUploads.length > 0 ? 'success' : 'error');
+  }
+
+  if (successfulUploads.length > 0) {
+    if (successBanner) {
+      const titleEl = document.getElementById('postnow-success-title');
+      const linkEl = document.getElementById('postnow-success-link');
+
+      if (successfulUploads.length === 1) {
+        if (titleEl) titleEl.innerText = `${successfulUploads[0].channel}: ${successfulUploads[0].title}`;
+        if (linkEl && successfulUploads[0].url) linkEl.href = successfulUploads[0].url;
+      } else {
+        if (titleEl) {
+          titleEl.innerHTML = successfulUploads.map(item => `
+            <div style="margin-top:6px; font-size:12.5px;">
+              <strong>${item.channel}</strong>: ${item.title} 
+              ${item.url ? `<a href="${item.url}" target="_blank" style="color:#3EA6FF; font-weight:700; margin-left:6px;">Watch ↗</a>` : ''}
+            </div>
+          `).join('');
+        }
+        if (linkEl && successfulUploads[0].url) linkEl.href = successfulUploads[0].url;
+      }
+      successBanner.style.display = 'flex';
     }
-    showToast(`❌ Network error: ${err.message}`);
-  } finally {
-    isUploadingNow = false;
-    if (btn) btn.disabled = false;
-    if (btnText) btnText.innerText = "🚀 PUBLISH VIDEO NOW TO YOUTUBE";
+
+    showToast(`🎉 Batch complete! ${successfulUploads.length} video(s) live on YouTube.`);
+
+    // Trigger sync in background to update fleet telemetry
+    const syncBtn = document.getElementById('btn-sync');
+    if (syncBtn) {
+      setTimeout(() => syncBtn.click(), 1000);
+    }
+
+    // Refresh staging
+    setTimeout(() => {
+      updatePostNowStaging();
+    }, 2500);
+  } else {
+    showToast(`❌ Batch upload completed with errors. See terminal.`);
+  }
+
+  isUploadingNow = false;
+  if (btn) btn.disabled = false;
+  if (btnText) {
+    btnText.innerText = count === 1 ? "🚀 PUBLISH VIDEO NOW TO YOUTUBE" : `🚀 PUBLISH ${count} VIDEOS NOW TO YOUTUBE`;
   }
 }
 

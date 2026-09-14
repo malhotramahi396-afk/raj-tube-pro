@@ -1,5 +1,5 @@
-// Service Worker for Raj Tube Pro - v25.0 (Instant Post Console & On-Demand Shorts Engine)
-const CACHE_NAME = 'raj-tube-pro-v25';
+// Service Worker for Raj Tube Pro - v26.0 (Multi-Channel Select Box & Batch Post Engine)
+const CACHE_NAME = 'raj-tube-pro-v26';
 
 self.addEventListener('install', (event) => {
   self.skipWaiting();

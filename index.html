@@ -15,7 +15,7 @@
   <link rel="icon" type="image/png" sizes="512x512" href="./icons/icon-512.png">
   <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png">
   <link rel="shortcut icon" href="./icons/icon-192.png">
-  <link rel="stylesheet" href="./styles.css?v=25.0">
+  <link rel="stylesheet" href="./styles.css?v=26.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
@@ -993,9 +993,19 @@
           
           <!-- LEFT: 10-CHANNEL SELECTOR GRID -->
           <div class="postnow-channels-col">
-            <h2 class="section-subheading mb-12">1. Select Target Channel</h2>
+            <div class="postnow-channels-header mb-12">
+              <div class="postnow-header-title-wrap">
+                <h2 class="section-subheading" style="margin:0;">1. Select Channels</h2>
+                <span class="postnow-count-badge" id="postnow-selected-count-badge">1 Channel Selected</span>
+              </div>
+              <div class="postnow-quick-select-actions">
+                <button type="button" class="postnow-mini-action-btn" id="postnow-btn-select-all">All (10)</button>
+                <button type="button" class="postnow-mini-action-btn" id="postnow-btn-select-5">Top 5</button>
+                <button type="button" class="postnow-mini-action-btn" id="postnow-btn-clear-all">Reset (1)</button>
+              </div>
+            </div>
             <div class="postnow-channel-grid" id="postnow-channel-grid">
-              <!-- Injected via JavaScript for all 10 channels -->
+              <!-- Injected via JavaScript for all 10 channels with stylish select boxes -->
             </div>
           </div>
 
@@ -1004,7 +1014,7 @@
             <h2 class="section-subheading mb-12">2. Staging & Execution Console</h2>
             
             <div class="yt-card postnow-stage-card" id="postnow-stage-card">
-              <!-- Selected Channel Banner -->
+              <!-- Selected Channel / Batch Header -->
               <div class="postnow-selected-header">
                 <img id="postnow-stage-avatar" src="./logo.png" alt="Channel Avatar" class="postnow-avatar" />
                 <div>
@@ -1014,8 +1024,8 @@
                 <span class="health-pill badge-clean" id="postnow-drive-stock-badge">75 VIDEOS IN DRIVE</span>
               </div>
 
-              <!-- Next Video Preview Box -->
-              <div class="postnow-preview-box mt-16">
+              <!-- Next Video Preview Box (Single Channel View) -->
+              <div class="postnow-preview-box mt-16" id="postnow-preview-box-single">
                 <div class="preview-box-label">NEXT QUEUED GOOGLE DRIVE VIDEO</div>
                 <div class="preview-video-row">
                   <div class="preview-video-icon">🎬</div>
@@ -1023,6 +1033,14 @@
                     <div class="preview-video-title" id="postnow-next-filename">Loading next queued video...</div>
                     <div class="preview-video-meta" id="postnow-next-meta">Google Drive Cloud Storage • Next Ready for Upload</div>
                   </div>
+                </div>
+              </div>
+
+              <!-- Batch Queue Preview Box (Shown when >1 channels selected) -->
+              <div class="postnow-preview-box mt-16" id="postnow-preview-box-batch" style="display:none;">
+                <div class="preview-box-label" id="postnow-batch-preview-label">QUEUED VIDEOS ACROSS 5 SELECTED CHANNELS</div>
+                <div class="postnow-batch-preview-container mt-8" id="postnow-batch-preview-list">
+                  <!-- Injected via JS -->
                 </div>
               </div>
 
@@ -1220,6 +1238,6 @@
   <!-- Toast Notification -->
   <div id="toast" class="toast">Link copied to clipboard!</div>
 
-  <script src="./app.js?v=25.0"></script>
+  <script src="./app.js?v=26.0"></script>
 </body>
 </html>
