@@ -1,21 +1,21 @@
 {
   "app_name": "Raj Tube Pro",
   "version": "6.0.0",
-  "timestamp": "2026-09-15T12:47:29.621190+00:00",
+  "timestamp": "2026-09-15T13:16:57.733598+00:00",
   "schedule": {
     "next_slot_iso": "2026-09-15T14:00:00+00:00",
-    "seconds_remaining": 4350,
-    "formatted_countdown": "01h 12m 30s",
+    "seconds_remaining": 2582,
+    "formatted_countdown": "00h 43m 02s",
     "slot_label": "10:00 AM USA (7:30 PM IST)",
-    "now_ist": "15 Sep, 06:17 PM IST"
+    "now_ist": "15 Sep, 06:46 PM IST"
   },
   "summary": {
     "total_channels": 10,
     "total_uploaded": 208,
     "total_in_queue": 1242,
-    "total_subscribers": 354,
+    "total_subscribers": 355,
     "total_views": 301221,
-    "total_likes": 2970,
+    "total_likes": 2971,
     "network_engagement": 0.9,
     "total_runway_days": 62.1,
     "system_health": "All Systems Operational",
@@ -394,9 +394,9 @@
       "subscribers": 101,
       "total_views": 50746,
       "channel_total_videos": 10,
-      "avg_views_per_video": 6709,
+      "avg_views_per_video": 6716,
       "engagement_rate": 1.2,
-      "total_likes": 605,
+      "total_likes": 606,
       "analytics": {
         "watch_time_hours": 209.3,
         "avg_view_duration": "0:24",
@@ -633,8 +633,8 @@
           "title": "Close Enough To Hear His Breath #wildlife #shorts #cameraman #viral",
           "uploaded_at": "2026-09-12T14:03:34Z",
           "thumbnail": "https://i.ytimg.com/vi/RMgm8o875X0/mqdefault.jpg",
-          "views": 27999,
-          "likes": 325,
+          "views": 28056,
+          "likes": 326,
           "comments": 1,
           "subscribers_gained": 41
         },
@@ -1224,12 +1224,12 @@
       "github_repo": "malhotramahi396-afk/yt-automation-zyntrix07",
       "color": "#F59E0B",
       "avatar_url": "https://yt3.ggpht.com/TTLhq8ijvpChRrWaVb1i96FzeFG02Gd31oOfWo4EdOtBtfqTD6h0TrRmEOTd2fE8V0kPexV6EA=s240-c-k-c0x00ffffff-no-rj",
-      "subscribers": 142,
+      "subscribers": 143,
       "total_views": 136250,
       "channel_total_videos": 18,
-      "avg_views_per_video": 9447,
+      "avg_views_per_video": 9452,
       "engagement_rate": 0.8,
-      "total_likes": 1244,
+      "total_likes": 1245,
       "analytics": {
         "watch_time_hours": 510.7,
         "avg_view_duration": "0:24",
@@ -1426,7 +1426,7 @@
           "title": "One Final Stare Before The Action Starts #PowerSlap #SlapFight #CombatSports #Highlights #FYP.",
           "uploaded_at": "2026-09-14T08:28:28Z",
           "thumbnail": "https://i.ytimg.com/vi/q_Epxwmpr1w/mqdefault.jpg",
-          "views": 1001,
+          "views": 1005,
           "likes": 10,
           "comments": 0,
           "subscribers_gained": 0
@@ -1448,8 +1448,8 @@
           "title": "Nobody Wanted To Miss The Next Second #SlapFight #SlapFighting #PowerSlap #Viral #CombatSports.",
           "uploaded_at": "2026-09-13T14:13:36Z",
           "thumbnail": "https://i.ytimg.com/vi/jcBToYBlKTA/mqdefault.jpg",
-          "views": 29666,
-          "likes": 361,
+          "views": 29752,
+          "likes": 362,
           "comments": 3,
           "subscribers_gained": 7
         },
@@ -2478,7 +2478,7 @@
       "subscribers": 8,
       "total_views": 18216,
       "channel_total_videos": 15,
-      "avg_views_per_video": 1446,
+      "avg_views_per_video": 1451,
       "engagement_rate": 1.0,
       "total_likes": 191,
       "analytics": {
@@ -2673,7 +2673,7 @@
           "title": "From First Color To Final Masterpiece #Painting #ArtTransformation #ArtReels #Artist #Viral.",
           "uploaded_at": "2026-09-13T21:06:49Z",
           "thumbnail": "https://i.ytimg.com/vi/3ee4FdtH10w/mqdefault.jpg",
-          "views": 1442,
+          "views": 1448,
           "likes": 13,
           "comments": 0,
           "subscribers_gained": 1
@@ -2706,7 +2706,7 @@
           "title": "Everyone Stopped To Watch This Artist Work #StreetArt #Artist #Painting #ArtReels #Viral.",
           "uploaded_at": "2026-09-12T18:28:10Z",
           "thumbnail": "https://i.ytimg.com/vi/E7vzDp7HUIM/mqdefault.jpg",
-          "views": 2779,
+          "views": 2832,
           "likes": 66,
           "comments": 1,
           "subscribers_gained": 1
@@ -2717,7 +2717,7 @@
           "title": "Every Stroke Brings The Scene Closer To Life #Painting #ArtReels #Artist #ArtTransformation #Satisfy",
           "uploaded_at": "2026-09-11T09:08:18Z",
           "thumbnail": "https://i.ytimg.com/vi/23fs8X8RlyM/mqdefault.jpg",
-          "views": 1302,
+          "views": 1304,
           "likes": 8,
           "comments": 0,
           "subscribers_gained": 0
@@ -3070,7 +3070,7 @@
           "title": "Every Champion Has A Beginning Forever #Football #Soccer #FootballStory #FootballLife #Goal #Dream #",
           "uploaded_at": "2026-09-13T14:15:19Z",
           "thumbnail": "https://i.ytimg.com/vi/lHgG7YDjn-Q/mqdefault.jpg",
-          "views": 273,
+          "views": 277,
           "likes": 3,
           "comments": 0,
           "subscribers_gained": 0
@@ -3638,7 +3638,7 @@
           "title": "The Most Precious Panda Moment #BabyPanda #CutePanda #PandaLife #Shorts #Reels #ViralVideo #FYP #Cut",
           "uploaded_at": "2026-09-13T12:15:05Z",
           "thumbnail": "https://i.ytimg.com/vi/vIKxeWBswiQ/mqdefault.jpg",
-          "views": 47,
+          "views": 46,
           "likes": 0,
           "comments": 0,
           "subscribers_gained": 0
@@ -4078,7 +4078,7 @@
       "channel_total_videos": 33,
       "avg_views_per_video": 932,
       "engagement_rate": 0.8,
-      "total_likes": 233,
+      "total_likes": 232,
       "analytics": {
         "watch_time_hours": 115.6,
         "avg_view_duration": "0:24",
@@ -4271,7 +4271,7 @@
           "title": "Hollywood's Biggest Secret Revealed In Front Of The Cameras #BehindTheScenes #Hollywood #MovieMagic",
           "uploaded_at": "2026-09-13T21:11:04Z",
           "thumbnail": "https://i.ytimg.com/vi/VLOPbff4HRM/mqdefault.jpg",
-          "views": 172,
+          "views": 171,
           "likes": 1,
           "comments": 0,
           "subscribers_gained": 0
@@ -4282,8 +4282,8 @@
           "title": "Hollywood's Biggest Secret Revealed Behind Closed Doors #BehindTheScenes #Hollywood #MovieMagic #Fil",
           "uploaded_at": "2026-09-13T12:05:10Z",
           "thumbnail": "https://i.ytimg.com/vi/zi3GOAA3zqA/mqdefault.jpg",
-          "views": 678,
-          "likes": 6,
+          "views": 677,
+          "likes": 5,
           "comments": 0,
           "subscribers_gained": 0
         },
@@ -4304,7 +4304,7 @@
           "title": "Behind The Biggest Scene Of The Film With Incredible Detail #BehindTheScenes #Hollywood #MovieMagic",
           "uploaded_at": "2026-09-12T21:29:37Z",
           "thumbnail": "https://i.ytimg.com/vi/1TbNIlAQsJo/mqdefault.jpg",
-          "views": 1203,
+          "views": 1204,
           "likes": 15,
           "comments": 0,
           "subscribers_gained": 1
