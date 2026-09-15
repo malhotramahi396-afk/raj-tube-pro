@@ -1,20 +1,20 @@
 {
   "app_name": "Raj Tube Pro",
   "version": "6.1.0",
-  "timestamp": "2026-09-15T21:34:57.485337+00:00",
+  "timestamp": "2026-09-15T21:36:58.670499+00:00",
   "schedule": {
     "next_slot_iso": "2026-09-16T14:00:00+00:00",
-    "seconds_remaining": 59123,
-    "formatted_countdown": "16h 25m 23s",
+    "seconds_remaining": 59003,
+    "formatted_countdown": "16h 23m 23s",
     "slot_label": "10:00 AM USA (7:30 PM IST Tomorrow)",
-    "now_ist": "16 Sep, 03:04 AM IST"
+    "now_ist": "16 Sep, 03:06 AM IST"
   },
   "summary": {
     "total_channels": 10,
     "total_uploaded": 250,
     "total_in_queue": 1200,
     "total_subscribers": 365,
-    "total_views": 355262,
+    "total_views": 355359,
     "total_likes": 3232,
     "network_engagement": 0.9,
     "total_runway_days": 60.0,
@@ -24,14 +24,14 @@
       "title": "He Was Not Backing Down From Anyone #SlapFight #PowerSlap #SlapFighting #Viral #Sports.",
       "views": 45667,
       "likes": 377,
-      "subscribers_gained": 43,
+      "subscribers_gained": 42,
       "youtube_url": "https://youtu.be/t5oF0IsXkN0",
       "thumbnail": "https://i.ytimg.com/vi/t5oF0IsXkN0/mqdefault.jpg",
       "channel_name": "Zyntrix07",
       "uploaded_at": "2026-09-11T16:04:35Z"
     },
     "analytics": {
-      "watch_time_hours": 1492.1,
+      "watch_time_hours": 1492.5,
       "avg_view_duration": "0:24",
       "top_countries": [
         {
@@ -176,10 +176,10 @@
         "flagged_videos": []
       },
       "view_health": {
-        "label": "YouTube API Verified: 1,421 avg views/video (355,262 total views across 250 videos)",
+        "label": "YouTube API Verified: 1,421 avg views/video (355,359 total views across 250 videos)",
         "badge": "1,421 AVG",
         "color": "#10B981",
-        "avg_views": 1421.0,
+        "avg_views": 1421.4,
         "shorts_feed_share": "81.2%",
         "velocity_verdict": "Algorithm Reach: High"
       },
@@ -399,13 +399,13 @@
       "color": "#10B981",
       "avatar_url": "https://yt3.ggpht.com/R5wyufkApz5fijH1a4mek8n6CM9y64QklZgfgjuGI-SOwbTIBjEFmmKot6aBnYkVRwOpq965=s240-c-k-c0x00ffffff-no-rj",
       "subscribers": 107,
-      "total_views": 79602,
+      "total_views": 79622,
       "channel_total_videos": 12,
-      "avg_views_per_video": 6633.5,
+      "avg_views_per_video": 6635.2,
       "engagement_rate": 1.0,
       "total_likes": 786,
       "analytics": {
-        "watch_time_hours": 334.3,
+        "watch_time_hours": 334.4,
         "avg_view_duration": "0:24",
         "top_countries": [
           {
@@ -550,10 +550,10 @@
           "flagged_videos": []
         },
         "view_health": {
-          "label": "YouTube API Verified: 6,634 avg views/video (79,602 total views across 12 videos)",
-          "badge": "6,634 AVG",
+          "label": "YouTube API Verified: 6,635 avg views/video (79,622 total views across 12 videos)",
+          "badge": "6,635 AVG",
           "color": "#10B981",
-          "avg_views": 6633.5,
+          "avg_views": 6635.2,
           "shorts_feed_share": "81.2%",
           "velocity_verdict": "Algorithm Reach: High"
         },
@@ -676,7 +676,7 @@
           "title": "Extreme Wildlife Cameraman POV #animalencounter #shorts #viralvideo #wildlife",
           "uploaded_at": "2026-09-14T14:07:40Z",
           "thumbnail": "https://i.ytimg.com/vi/8RpJqvOH1bQ/mqdefault.jpg",
-          "views": 23434,
+          "views": 23454,
           "likes": 153,
           "comments": 1,
           "upload_status": "processed",
@@ -1781,13 +1781,13 @@
       "color": "#F59E0B",
       "avatar_url": "https://yt3.ggpht.com/TTLhq8ijvpChRrWaVb1i96FzeFG02Gd31oOfWo4EdOtBtfqTD6h0TrRmEOTd2fE8V0kPexV6EA=s240-c-k-c0x00ffffff-no-rj",
       "subscribers": 144,
-      "total_views": 155594,
+      "total_views": 155641,
       "channel_total_videos": 20,
-      "avg_views_per_video": 7779.7,
+      "avg_views_per_video": 7782.1,
       "engagement_rate": 0.8,
       "total_likes": 1278,
       "analytics": {
-        "watch_time_hours": 653.5,
+        "watch_time_hours": 653.7,
         "avg_view_duration": "0:24",
         "top_countries": [
           {
@@ -1936,10 +1936,10 @@
           "flagged_videos": []
         },
         "view_health": {
-          "label": "YouTube API Verified: 7,780 avg views/video (155,594 total views across 20 videos)",
-          "badge": "7,780 AVG",
+          "label": "YouTube API Verified: 7,782 avg views/video (155,641 total views across 20 videos)",
+          "badge": "7,782 AVG",
           "color": "#10B981",
-          "avg_views": 7779.7,
+          "avg_views": 7782.1,
           "shorts_feed_share": "81.2%",
           "velocity_verdict": "Algorithm Reach: High"
         },
@@ -1973,7 +1973,7 @@
         "title": "One Table One Belt And Huge Pressure #SlapFight #PowerSlap #Championship #CombatSports #FYP.",
         "uploaded_at": "2026-09-15T21:09:27Z",
         "thumbnail": "https://i.ytimg.com/vi/74d1M_ceEM0/mqdefault.jpg",
-        "views": 410,
+        "views": 454,
         "likes": 9,
         "comments": 0,
         "upload_status": "processed",
@@ -1986,7 +1986,7 @@
         "health_badge": "100% CLEAN",
         "health_color": "#10B981",
         "channel_name": "Zyntrix07",
-        "subscribers_gained": 0
+        "subscribers_gained": 1
       },
       "uploaded_videos": [
         {
@@ -1996,7 +1996,7 @@
           "title": "One Table One Belt And Huge Pressure #SlapFight #PowerSlap #Championship #CombatSports #FYP.",
           "uploaded_at": "2026-09-15T21:09:27Z",
           "thumbnail": "https://i.ytimg.com/vi/74d1M_ceEM0/mqdefault.jpg",
-          "views": 410,
+          "views": 454,
           "likes": 9,
           "comments": 0,
           "upload_status": "processed",
@@ -2009,7 +2009,7 @@
           "health_badge": "100% CLEAN",
           "health_color": "#10B981",
           "channel_name": "Zyntrix07",
-          "subscribers_gained": 0
+          "subscribers_gained": 1
         },
         {
           "youtube_id": "GDCFdis0OhU",
@@ -2018,7 +2018,7 @@
           "title": "One Step Closer And The Crowd Explodes #SlapFight #PowerSlap #SlapFighting #Viral #Fight.",
           "uploaded_at": "2026-09-15T14:10:27Z",
           "thumbnail": "https://i.ytimg.com/vi/GDCFdis0OhU/mqdefault.jpg",
-          "views": 33,
+          "views": 31,
           "likes": 1,
           "comments": 0,
           "upload_status": "processed",
@@ -2062,7 +2062,7 @@
           "title": "One Look And You Know This Will Hurt #SlapFight #PowerSlap #CombatSports #Highlights #FYP.",
           "uploaded_at": "2026-09-14T14:11:15Z",
           "thumbnail": "https://i.ytimg.com/vi/_WQiHPH5TWw/mqdefault.jpg",
-          "views": 27,
+          "views": 28,
           "likes": 0,
           "comments": 0,
           "upload_status": "processed",
@@ -2084,7 +2084,7 @@
           "title": "One Final Stare Before The Action Starts #PowerSlap #SlapFight #CombatSports #Highlights #FYP.",
           "uploaded_at": "2026-09-14T08:28:28Z",
           "thumbnail": "https://i.ytimg.com/vi/q_Epxwmpr1w/mqdefault.jpg",
-          "views": 1020,
+          "views": 1019,
           "likes": 10,
           "comments": 0,
           "upload_status": "processed",
@@ -2106,7 +2106,7 @@
           "title": "Nobody Was Laughing After This Faceoff #PowerSlap #SlapFighting #SlapFight #Viral #FightNight.",
           "uploaded_at": "2026-09-13T21:09:17Z",
           "thumbnail": "https://i.ytimg.com/vi/kdh_Ba5O-UU/mqdefault.jpg",
-          "views": 1419,
+          "views": 1418,
           "likes": 14,
           "comments": 1,
           "upload_status": "processed",
@@ -2172,7 +2172,7 @@
           "title": "Nobody Wanted To Blink During This Moment #SlapFighting #PowerSlap #FightNight #FYP #Viral.",
           "uploaded_at": "2026-09-12T22:06:45Z",
           "thumbnail": "https://i.ytimg.com/vi/sEMtoFAjmrs/mqdefault.jpg",
-          "views": 2370,
+          "views": 2368,
           "likes": 23,
           "comments": 0,
           "upload_status": "processed",
@@ -2216,7 +2216,7 @@
           "title": "His Confidence Had The Whole Crowd Talking #PowerSlap #SlapFighting #SlapFight #Viral #Sports.",
           "uploaded_at": "2026-09-11T22:07:28Z",
           "thumbnail": "https://i.ytimg.com/vi/g-2DEoij8dY/mqdefault.jpg",
-          "views": 23503,
+          "views": 23511,
           "likes": 215,
           "comments": 0,
           "upload_status": "processed",
@@ -2251,7 +2251,7 @@
           "health_badge": "100% CLEAN",
           "health_color": "#10B981",
           "channel_name": "Zyntrix07",
-          "subscribers_gained": 43
+          "subscribers_gained": 42
         },
         {
           "youtube_id": "WIWsbArcAp4",
@@ -3869,13 +3869,13 @@
       "color": "#EC4899",
       "avatar_url": "https://yt3.ggpht.com/pqIrk9GBtAR6cdyBH5C_kHNWA1jlu4VT9ZLKxdYTFW6IvVQLWbtFO3OUxrSV1Jm1SR0JAyTrAA=s240-c-k-c0x00ffffff-no-rj",
       "subscribers": 9,
-      "total_views": 19335,
+      "total_views": 19354,
       "channel_total_videos": 17,
-      "avg_views_per_video": 1137.4,
+      "avg_views_per_video": 1138.5,
       "engagement_rate": 1.0,
       "total_likes": 203,
       "analytics": {
-        "watch_time_hours": 81.2,
+        "watch_time_hours": 81.3,
         "avg_view_duration": "0:24",
         "top_countries": [
           {
@@ -4020,10 +4020,10 @@
           "flagged_videos": []
         },
         "view_health": {
-          "label": "YouTube API Verified: 1,137 avg views/video (19,335 total views across 17 videos)",
-          "badge": "1,137 AVG",
+          "label": "YouTube API Verified: 1,138 avg views/video (19,354 total views across 17 videos)",
+          "badge": "1,138 AVG",
           "color": "#10B981",
-          "avg_views": 1137.4,
+          "avg_views": 1138.5,
           "shorts_feed_share": "81.2%",
           "velocity_verdict": "Algorithm Reach: High"
         },
@@ -4057,7 +4057,7 @@
         "title": "He Added One Tiny Detail And Changed Everything #Painting #ArtReveal #Satisfying #Artist #ArtReels.",
         "uploaded_at": "2026-09-15T21:07:42Z",
         "thumbnail": "https://i.ytimg.com/vi/b373gjPjUMk/mqdefault.jpg",
-        "views": 198,
+        "views": 217,
         "likes": 4,
         "comments": 0,
         "upload_status": "processed",
@@ -4080,7 +4080,7 @@
           "title": "He Added One Tiny Detail And Changed Everything #Painting #ArtReveal #Satisfying #Artist #ArtReels.",
           "uploaded_at": "2026-09-15T21:07:42Z",
           "thumbnail": "https://i.ytimg.com/vi/b373gjPjUMk/mqdefault.jpg",
-          "views": 198,
+          "views": 217,
           "likes": 4,
           "comments": 0,
           "upload_status": "processed",
@@ -4505,9 +4505,9 @@
       "color": "#3B82F6",
       "avatar_url": "https://yt3.ggpht.com/vRLBXNb4fgjWzDfLf8ltniGaD2BlvZ1PAWugGoZaJx1nCdJ92LubM-8vy7hIgxHlCicFwpt2=s240-c-k-c0x00ffffff-no-rj",
       "subscribers": 29,
-      "total_views": 13215,
+      "total_views": 13225,
       "channel_total_videos": 33,
-      "avg_views_per_video": 400.5,
+      "avg_views_per_video": 400.8,
       "engagement_rate": 1.3,
       "total_likes": 169,
       "analytics": {
@@ -4656,10 +4656,10 @@
           "flagged_videos": []
         },
         "view_health": {
-          "label": "YouTube API Verified: 400 avg views/video (13,215 total views across 33 videos)",
-          "badge": "400 AVG",
+          "label": "YouTube API Verified: 401 avg views/video (13,225 total views across 33 videos)",
+          "badge": "401 AVG",
           "color": "#3EA6FF",
-          "avg_views": 400.5,
+          "avg_views": 400.8,
           "shorts_feed_share": "81.2%",
           "velocity_verdict": "Algorithm Reach: Healthy"
         },
@@ -4693,7 +4693,7 @@
         "title": "Every Champion Has A Beginning With Pure Determination #Football #Soccer #FootballStory #FootballLif",
         "uploaded_at": "2026-09-15T21:06:26Z",
         "thumbnail": "https://i.ytimg.com/vi/hBKIpcPGv4c/mqdefault.jpg",
-        "views": 193,
+        "views": 204,
         "likes": 3,
         "comments": 0,
         "upload_status": "processed",
@@ -4716,7 +4716,7 @@
           "title": "Every Champion Has A Beginning With Pure Determination #Football #Soccer #FootballStory #FootballLif",
           "uploaded_at": "2026-09-15T21:06:26Z",
           "thumbnail": "https://i.ytimg.com/vi/hBKIpcPGv4c/mqdefault.jpg",
-          "views": 193,
+          "views": 204,
           "likes": 3,
           "comments": 0,
           "upload_status": "processed",
@@ -4760,7 +4760,7 @@
           "title": "Every Champion Has A Beginning Until The End #Football #Soccer #FootballStory #FootballLife #Goal #D",
           "uploaded_at": "2026-09-14T21:06:39Z",
           "thumbnail": "https://i.ytimg.com/vi/r8r4hu_Y5zw/mqdefault.jpg",
-          "views": 3,
+          "views": 1,
           "likes": 1,
           "comments": 0,
           "upload_status": "processed",
@@ -4782,7 +4782,7 @@
           "title": "Every Champion Has A Beginning Today #Football #Soccer #FootballStory #FootballLife #Goal #Dream #Ch",
           "uploaded_at": "2026-09-14T14:07:59Z",
           "thumbnail": "https://i.ytimg.com/vi/_wKWqiH1E24/mqdefault.jpg",
-          "views": 1147,
+          "views": 1148,
           "likes": 6,
           "comments": 0,
           "upload_status": "processed",
@@ -7689,7 +7689,7 @@
       "color": "#06B6D4",
       "avatar_url": "https://yt3.ggpht.com/hGhDAHGNdGFqU-PCbb1tF4adddBZunivHI8CDGZA6NJlQpKsGm0H2dEpBPSGP8sn947tF1Eq=s240-c-k-c0x00ffffff-no-rj",
       "subscribers": 1,
-      "total_views": 519,
+      "total_views": 520,
       "channel_total_videos": 26,
       "avg_views_per_video": 20.0,
       "engagement_rate": 0.4,
@@ -7840,7 +7840,7 @@
           "flagged_videos": []
         },
         "view_health": {
-          "label": "Warm-Up Phase: 20 avg views/video (519 total views across 26 videos)",
+          "label": "Warm-Up Phase: 20 avg views/video (520 total views across 26 videos)",
           "badge": "20 AVG",
           "color": "#F59E0B",
           "avg_views": 20.0,
@@ -7988,7 +7988,7 @@
           "title": "Every Frame Looks Unreal Worth Watching Twice #Cinematic #AIVideo #Storytelling #MovieScene #VisualE",
           "uploaded_at": "2026-09-13T21:06:26Z",
           "thumbnail": "https://i.ytimg.com/vi/Hm77i2MFOqE/mqdefault.jpg",
-          "views": 4,
+          "views": 5,
           "likes": 1,
           "comments": 0,
           "upload_status": "processed",
