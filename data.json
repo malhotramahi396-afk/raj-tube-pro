@@ -1,11 +1,11 @@
 {
   "app_name": "Raj Tube Pro",
   "version": "6.1.0",
-  "timestamp": "2026-09-15T21:28:00.313310+00:00",
+  "timestamp": "2026-09-15T21:28:09.624149+00:00",
   "schedule": {
     "next_slot_iso": "2026-09-16T14:00:00+00:00",
-    "seconds_remaining": 59552,
-    "formatted_countdown": "16h 32m 32s",
+    "seconds_remaining": 59542,
+    "formatted_countdown": "16h 32m 22s",
     "slot_label": "10:00 AM USA (7:30 PM IST Tomorrow)",
     "now_ist": "16 Sep, 02:57 AM IST"
   },
@@ -14,7 +14,7 @@
     "total_uploaded": 250,
     "total_in_queue": 1200,
     "total_subscribers": 364,
-    "total_views": 354860,
+    "total_views": 354876,
     "total_likes": 3224,
     "network_engagement": 0.9,
     "total_runway_days": 60.0,
@@ -31,7 +31,7 @@
       "uploaded_at": "2026-09-11T16:04:35Z"
     },
     "analytics": {
-      "watch_time_hours": 1490.4,
+      "watch_time_hours": 1490.5,
       "avg_view_duration": "0:24",
       "top_countries": [
         {
@@ -176,10 +176,10 @@
         "flagged_videos": []
       },
       "view_health": {
-        "label": "YouTube API Verified: 1,419 avg views/video (354,860 total views across 250 videos)",
-        "badge": "1,419 AVG",
+        "label": "YouTube API Verified: 1,420 avg views/video (354,876 total views across 250 videos)",
+        "badge": "1,420 AVG",
         "color": "#10B981",
-        "avg_views": 1419.4,
+        "avg_views": 1419.5,
         "shorts_feed_share": "81.2%",
         "velocity_verdict": "Algorithm Reach: High"
       },
@@ -1781,7 +1781,7 @@
       "color": "#F59E0B",
       "avatar_url": "https://yt3.ggpht.com/TTLhq8ijvpChRrWaVb1i96FzeFG02Gd31oOfWo4EdOtBtfqTD6h0TrRmEOTd2fE8V0kPexV6EA=s240-c-k-c0x00ffffff-no-rj",
       "subscribers": 143,
-      "total_views": 155423,
+      "total_views": 155422,
       "channel_total_videos": 20,
       "avg_views_per_video": 7771.1,
       "engagement_rate": 0.8,
@@ -1936,7 +1936,7 @@
           "flagged_videos": []
         },
         "view_health": {
-          "label": "YouTube API Verified: 7,771 avg views/video (155,423 total views across 20 videos)",
+          "label": "YouTube API Verified: 7,771 avg views/video (155,422 total views across 20 videos)",
           "badge": "7,771 AVG",
           "color": "#10B981",
           "avg_views": 7771.1,
@@ -2084,7 +2084,7 @@
           "title": "One Final Stare Before The Action Starts #PowerSlap #SlapFight #CombatSports #Highlights #FYP.",
           "uploaded_at": "2026-09-14T08:28:28Z",
           "thumbnail": "https://i.ytimg.com/vi/q_Epxwmpr1w/mqdefault.jpg",
-          "views": 1020,
+          "views": 1019,
           "likes": 10,
           "comments": 0,
           "upload_status": "processed",
@@ -3189,9 +3189,9 @@
       "color": "#8B5CF6",
       "avatar_url": "https://yt3.ggpht.com/WKefM8i0bji48M_e159k6q0080b5zNwYExax_QloW7H3XguFARUF-SuE62a8rdPQJXvtTXxbJQ=s240-c-k-c0x00ffffff-no-rj",
       "subscribers": 43,
-      "total_views": 37406,
+      "total_views": 37415,
       "channel_total_videos": 19,
-      "avg_views_per_video": 1968.7,
+      "avg_views_per_video": 1969.2,
       "engagement_rate": 0.8,
       "total_likes": 290,
       "analytics": {
@@ -3340,10 +3340,10 @@
           "flagged_videos": []
         },
         "view_health": {
-          "label": "YouTube API Verified: 1,969 avg views/video (37,406 total views across 19 videos)",
+          "label": "YouTube API Verified: 1,969 avg views/video (37,415 total views across 19 videos)",
           "badge": "1,969 AVG",
           "color": "#10B981",
-          "avg_views": 1968.7,
+          "avg_views": 1969.2,
           "shorts_feed_share": "81.2%",
           "velocity_verdict": "Algorithm Reach: High"
         },
@@ -3488,7 +3488,7 @@
           "title": "Curious Toddler Explores With Wide Eyes #ToddlerLife #CutestMoments #FamilyMoments #WholesomeContent",
           "uploaded_at": "2026-09-14T09:05:53Z",
           "thumbnail": "https://i.ytimg.com/vi/IbD-bYsMf4M/mqdefault.jpg",
-          "views": 1342,
+          "views": 1359,
           "likes": 9,
           "comments": 1,
           "upload_status": "processed",
@@ -3869,10 +3869,10 @@
       "color": "#EC4899",
       "avatar_url": "https://yt3.ggpht.com/pqIrk9GBtAR6cdyBH5C_kHNWA1jlu4VT9ZLKxdYTFW6IvVQLWbtFO3OUxrSV1Jm1SR0JAyTrAA=s240-c-k-c0x00ffffff-no-rj",
       "subscribers": 9,
-      "total_views": 19236,
+      "total_views": 19244,
       "channel_total_videos": 17,
-      "avg_views_per_video": 1131.5,
-      "engagement_rate": 1.1,
+      "avg_views_per_video": 1132.0,
+      "engagement_rate": 1.0,
       "total_likes": 202,
       "analytics": {
         "watch_time_hours": 80.8,
@@ -4020,10 +4020,10 @@
           "flagged_videos": []
         },
         "view_health": {
-          "label": "YouTube API Verified: 1,132 avg views/video (19,236 total views across 17 videos)",
+          "label": "YouTube API Verified: 1,132 avg views/video (19,244 total views across 17 videos)",
           "badge": "1,132 AVG",
           "color": "#10B981",
-          "avg_views": 1131.5,
+          "avg_views": 1132.0,
           "shorts_feed_share": "81.2%",
           "velocity_verdict": "Algorithm Reach: High"
         },
@@ -4057,7 +4057,7 @@
         "title": "He Added One Tiny Detail And Changed Everything #Painting #ArtReveal #Satisfying #Artist #ArtReels.",
         "uploaded_at": "2026-09-15T21:07:42Z",
         "thumbnail": "https://i.ytimg.com/vi/b373gjPjUMk/mqdefault.jpg",
-        "views": 100,
+        "views": 108,
         "likes": 3,
         "comments": 0,
         "upload_status": "processed",
@@ -4080,7 +4080,7 @@
           "title": "He Added One Tiny Detail And Changed Everything #Painting #ArtReveal #Satisfying #Artist #ArtReels.",
           "uploaded_at": "2026-09-15T21:07:42Z",
           "thumbnail": "https://i.ytimg.com/vi/b373gjPjUMk/mqdefault.jpg",
-          "views": 100,
+          "views": 108,
           "likes": 3,
           "comments": 0,
           "upload_status": "processed",
