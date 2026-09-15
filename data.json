@@ -1,21 +1,21 @@
 {
   "app_name": "Raj Tube Pro",
   "version": "6.1.0",
-  "timestamp": "2026-09-15T21:24:05.473370+00:00",
+  "timestamp": "2026-09-15T21:25:51.619349+00:00",
   "schedule": {
     "next_slot_iso": "2026-09-16T14:00:00+00:00",
-    "seconds_remaining": 59770,
-    "formatted_countdown": "16h 36m 10s",
+    "seconds_remaining": 59664,
+    "formatted_countdown": "16h 34m 24s",
     "slot_label": "10:00 AM USA (7:30 PM IST Tomorrow)",
-    "now_ist": "16 Sep, 02:53 AM IST"
+    "now_ist": "16 Sep, 02:55 AM IST"
   },
   "summary": {
     "total_channels": 10,
     "total_uploaded": 250,
     "total_in_queue": 1200,
     "total_subscribers": 364,
-    "total_views": 354759,
-    "total_likes": 3222,
+    "total_views": 354780,
+    "total_likes": 3224,
     "network_engagement": 0.9,
     "total_runway_days": 60.0,
     "system_health": "All Systems Operational",
@@ -31,7 +31,7 @@
       "uploaded_at": "2026-09-11T16:04:35Z"
     },
     "analytics": {
-      "watch_time_hours": 1490.0,
+      "watch_time_hours": 1490.1,
       "avg_view_duration": "0:24",
       "top_countries": [
         {
@@ -176,10 +176,10 @@
         "flagged_videos": []
       },
       "view_health": {
-        "label": "YouTube API Verified: 1,419 avg views/video (354,759 total views across 250 videos)",
+        "label": "YouTube API Verified: 1,419 avg views/video (354,780 total views across 250 videos)",
         "badge": "1,419 AVG",
         "color": "#10B981",
-        "avg_views": 1419.0,
+        "avg_views": 1419.1,
         "shorts_feed_share": "81.2%",
         "velocity_verdict": "Algorithm Reach: High"
       },
@@ -925,7 +925,7 @@
       "color": "#10B981",
       "avatar_url": "https://yt3.ggpht.com/Si65r7FeRpZibwEpw60Lck09w5Qi4YjdBhvfyPC914DY68sKk7vkLYv3WdR1ByZGkg_J4FAK=s240-c-k-c0x00ffffff-no-rj",
       "subscribers": 6,
-      "total_views": 8771,
+      "total_views": 8773,
       "channel_total_videos": 27,
       "avg_views_per_video": 324.9,
       "engagement_rate": 0.8,
@@ -1076,7 +1076,7 @@
           "flagged_videos": []
         },
         "view_health": {
-          "label": "YouTube API Verified: 325 avg views/video (8,771 total views across 27 videos)",
+          "label": "YouTube API Verified: 325 avg views/video (8,773 total views across 27 videos)",
           "badge": "325 AVG",
           "color": "#3EA6FF",
           "avg_views": 324.9,
@@ -1113,7 +1113,7 @@
         "title": "Grandma Changed The Whole Tournament In Front Of Everyone #GrandmaGamer #Esports #Gaming #GamingLege",
         "uploaded_at": "2026-09-15T21:04:03Z",
         "thumbnail": "https://i.ytimg.com/vi/lx8g_-8zcLQ/mqdefault.jpg",
-        "views": 12,
+        "views": 14,
         "likes": 0,
         "comments": 0,
         "upload_status": "processed",
@@ -1136,7 +1136,7 @@
           "title": "Grandma Changed The Whole Tournament In Front Of Everyone #GrandmaGamer #Esports #Gaming #GamingLege",
           "uploaded_at": "2026-09-15T21:04:03Z",
           "thumbnail": "https://i.ytimg.com/vi/lx8g_-8zcLQ/mqdefault.jpg",
-          "views": 12,
+          "views": 14,
           "likes": 0,
           "comments": 0,
           "upload_status": "processed",
@@ -1781,9 +1781,9 @@
       "color": "#F59E0B",
       "avatar_url": "https://yt3.ggpht.com/TTLhq8ijvpChRrWaVb1i96FzeFG02Gd31oOfWo4EdOtBtfqTD6h0TrRmEOTd2fE8V0kPexV6EA=s240-c-k-c0x00ffffff-no-rj",
       "subscribers": 143,
-      "total_views": 155394,
+      "total_views": 155403,
       "channel_total_videos": 20,
-      "avg_views_per_video": 7769.7,
+      "avg_views_per_video": 7770.1,
       "engagement_rate": 0.8,
       "total_likes": 1272,
       "analytics": {
@@ -1936,10 +1936,10 @@
           "flagged_videos": []
         },
         "view_health": {
-          "label": "YouTube API Verified: 7,770 avg views/video (155,394 total views across 20 videos)",
+          "label": "YouTube API Verified: 7,770 avg views/video (155,403 total views across 20 videos)",
           "badge": "7,770 AVG",
           "color": "#10B981",
-          "avg_views": 7769.7,
+          "avg_views": 7770.1,
           "shorts_feed_share": "81.2%",
           "velocity_verdict": "Algorithm Reach: High"
         },
@@ -1973,7 +1973,7 @@
         "title": "One Table One Belt And Huge Pressure #SlapFight #PowerSlap #Championship #CombatSports #FYP.",
         "uploaded_at": "2026-09-15T21:09:27Z",
         "thumbnail": "https://i.ytimg.com/vi/74d1M_ceEM0/mqdefault.jpg",
-        "views": 231,
+        "views": 240,
         "likes": 4,
         "comments": 0,
         "upload_status": "processed",
@@ -1996,7 +1996,7 @@
           "title": "One Table One Belt And Huge Pressure #SlapFight #PowerSlap #Championship #CombatSports #FYP.",
           "uploaded_at": "2026-09-15T21:09:27Z",
           "thumbnail": "https://i.ytimg.com/vi/74d1M_ceEM0/mqdefault.jpg",
-          "views": 231,
+          "views": 240,
           "likes": 4,
           "comments": 0,
           "upload_status": "processed",
@@ -3189,9 +3189,9 @@
       "color": "#8B5CF6",
       "avatar_url": "https://yt3.ggpht.com/WKefM8i0bji48M_e159k6q0080b5zNwYExax_QloW7H3XguFARUF-SuE62a8rdPQJXvtTXxbJQ=s240-c-k-c0x00ffffff-no-rj",
       "subscribers": 43,
-      "total_views": 37415,
+      "total_views": 37406,
       "channel_total_videos": 19,
-      "avg_views_per_video": 1969.2,
+      "avg_views_per_video": 1968.7,
       "engagement_rate": 0.8,
       "total_likes": 290,
       "analytics": {
@@ -3340,10 +3340,10 @@
           "flagged_videos": []
         },
         "view_health": {
-          "label": "YouTube API Verified: 1,969 avg views/video (37,415 total views across 19 videos)",
+          "label": "YouTube API Verified: 1,969 avg views/video (37,406 total views across 19 videos)",
           "badge": "1,969 AVG",
           "color": "#10B981",
-          "avg_views": 1969.2,
+          "avg_views": 1968.7,
           "shorts_feed_share": "81.2%",
           "velocity_verdict": "Algorithm Reach: High"
         },
@@ -3488,7 +3488,7 @@
           "title": "Curious Toddler Explores With Wide Eyes #ToddlerLife #CutestMoments #FamilyMoments #WholesomeContent",
           "uploaded_at": "2026-09-14T09:05:53Z",
           "thumbnail": "https://i.ytimg.com/vi/IbD-bYsMf4M/mqdefault.jpg",
-          "views": 1359,
+          "views": 1342,
           "likes": 9,
           "comments": 1,
           "upload_status": "processed",
@@ -3869,13 +3869,13 @@
       "color": "#EC4899",
       "avatar_url": "https://yt3.ggpht.com/pqIrk9GBtAR6cdyBH5C_kHNWA1jlu4VT9ZLKxdYTFW6IvVQLWbtFO3OUxrSV1Jm1SR0JAyTrAA=s240-c-k-c0x00ffffff-no-rj",
       "subscribers": 9,
-      "total_views": 19198,
+      "total_views": 19216,
       "channel_total_videos": 17,
-      "avg_views_per_video": 1129.3,
-      "engagement_rate": 1.0,
-      "total_likes": 201,
+      "avg_views_per_video": 1130.4,
+      "engagement_rate": 1.1,
+      "total_likes": 202,
       "analytics": {
-        "watch_time_hours": 80.6,
+        "watch_time_hours": 80.7,
         "avg_view_duration": "0:24",
         "top_countries": [
           {
@@ -4020,10 +4020,10 @@
           "flagged_videos": []
         },
         "view_health": {
-          "label": "YouTube API Verified: 1,129 avg views/video (19,198 total views across 17 videos)",
-          "badge": "1,129 AVG",
+          "label": "YouTube API Verified: 1,130 avg views/video (19,216 total views across 17 videos)",
+          "badge": "1,130 AVG",
           "color": "#10B981",
-          "avg_views": 1129.3,
+          "avg_views": 1130.4,
           "shorts_feed_share": "81.2%",
           "velocity_verdict": "Algorithm Reach: High"
         },
@@ -4057,8 +4057,8 @@
         "title": "He Added One Tiny Detail And Changed Everything #Painting #ArtReveal #Satisfying #Artist #ArtReels.",
         "uploaded_at": "2026-09-15T21:07:42Z",
         "thumbnail": "https://i.ytimg.com/vi/b373gjPjUMk/mqdefault.jpg",
-        "views": 62,
-        "likes": 2,
+        "views": 80,
+        "likes": 3,
         "comments": 0,
         "upload_status": "processed",
         "privacy_status": "public",
@@ -4080,8 +4080,8 @@
           "title": "He Added One Tiny Detail And Changed Everything #Painting #ArtReveal #Satisfying #Artist #ArtReels.",
           "uploaded_at": "2026-09-15T21:07:42Z",
           "thumbnail": "https://i.ytimg.com/vi/b373gjPjUMk/mqdefault.jpg",
-          "views": 62,
-          "likes": 2,
+          "views": 80,
+          "likes": 3,
           "comments": 0,
           "upload_status": "processed",
           "privacy_status": "public",
@@ -4505,11 +4505,11 @@
       "color": "#3B82F6",
       "avatar_url": "https://yt3.ggpht.com/vRLBXNb4fgjWzDfLf8ltniGaD2BlvZ1PAWugGoZaJx1nCdJ92LubM-8vy7hIgxHlCicFwpt2=s240-c-k-c0x00ffffff-no-rj",
       "subscribers": 29,
-      "total_views": 13177,
+      "total_views": 13178,
       "channel_total_videos": 33,
       "avg_views_per_video": 399.3,
       "engagement_rate": 1.3,
-      "total_likes": 167,
+      "total_likes": 168,
       "analytics": {
         "watch_time_hours": 55.3,
         "avg_view_duration": "0:24",
@@ -4656,7 +4656,7 @@
           "flagged_videos": []
         },
         "view_health": {
-          "label": "YouTube API Verified: 399 avg views/video (13,177 total views across 33 videos)",
+          "label": "YouTube API Verified: 399 avg views/video (13,178 total views across 33 videos)",
           "badge": "399 AVG",
           "color": "#3EA6FF",
           "avg_views": 399.3,
@@ -4693,8 +4693,8 @@
         "title": "Every Champion Has A Beginning With Pure Determination #Football #Soccer #FootballStory #FootballLif",
         "uploaded_at": "2026-09-15T21:06:26Z",
         "thumbnail": "https://i.ytimg.com/vi/hBKIpcPGv4c/mqdefault.jpg",
-        "views": 158,
-        "likes": 1,
+        "views": 159,
+        "likes": 2,
         "comments": 0,
         "upload_status": "processed",
         "privacy_status": "public",
@@ -4716,8 +4716,8 @@
           "title": "Every Champion Has A Beginning With Pure Determination #Football #Soccer #FootballStory #FootballLif",
           "uploaded_at": "2026-09-15T21:06:26Z",
           "thumbnail": "https://i.ytimg.com/vi/hBKIpcPGv4c/mqdefault.jpg",
-          "views": 158,
-          "likes": 1,
+          "views": 159,
+          "likes": 2,
           "comments": 0,
           "upload_status": "processed",
           "privacy_status": "public",
