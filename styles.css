@@ -9,6 +9,8 @@
   --yt-bg-surface-hover: #272727;
   --yt-border-subtle: #282828;
   --yt-border-divider: #303030;
+  --yt-card-bg: #181818;
+  --yt-card-border: #282828;
   
   --yt-text-primary: #f1f1f1;
   --yt-text-secondary: #aaaaaa;
@@ -29,6 +31,11 @@
   padding: 0;
 }
 
+html {
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
 body.yt-studio-theme {
   background-color: var(--yt-bg-base);
   color: var(--yt-text-primary);
@@ -36,6 +43,8 @@ body.yt-studio-theme {
   font-size: 14px;
   line-height: 1.5;
   overflow-x: hidden;
+  max-width: 100vw;
+  width: 100%;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -1757,40 +1766,50 @@ button {
 .health-item-row {
   display: flex;
   align-items: center;
-  gap: 12px;
-  padding: 10px 0;
-  border-bottom: 1px solid #242424;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 9px 0;
+  border-bottom: 1px solid #232323;
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
 }
 
 .health-item-row:last-of-type {
   border-bottom: none;
+  padding-bottom: 0;
 }
 
 .health-item-icon {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 32px;
-  height: 32px;
-  background: #1e1e1e;
+  width: 30px;
+  height: 30px;
+  min-width: 30px;
+  background: #202020;
   border-radius: 50%;
   flex-shrink: 0;
 }
 
 .health-item-info {
-  flex: 1;
+  flex: 1 1 0%;
   min-width: 0;
+  overflow: hidden;
 }
 
 .health-item-title {
-  font-size: 13px;
-  font-weight: 500;
+  font-size: 12.5px;
+  font-weight: 600;
   color: var(--yt-text-primary);
   margin-bottom: 2px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .health-item-desc {
-  font-size: 11.5px;
+  font-size: 11px;
   color: var(--yt-text-secondary);
   white-space: nowrap;
   overflow: hidden;
@@ -1798,12 +1817,13 @@ button {
 }
 
 .health-pill {
-  font-size: 10.5px;
+  font-size: 10px;
   font-weight: 700;
-  padding: 2px 8px;
+  padding: 3px 8px;
   border-radius: 4px;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.4px;
   flex-shrink: 0;
+  white-space: nowrap;
 }
 
 .badge-passed {
@@ -1942,50 +1962,84 @@ button {
 
 .health-radar-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr));
+  gap: 16px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .channel-health-card {
-  background: var(--yt-card-bg);
-  border: 1px solid var(--yt-card-border);
-  border-radius: 8px;
-  padding: 18px;
+  background: #181818;
+  border: 1px solid #282828;
+  border-radius: 12px;
+  padding: 14px 16px;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  transition: border-color 0.2s, transform 0.15s;
+}
+
+.channel-health-card:hover {
+  border-color: #383838;
+}
+
+.channel-health-card.card-health-attention {
+  border-color: rgba(239, 68, 68, 0.5);
+  background: linear-gradient(180deg, #181818 0%, rgba(239, 68, 68, 0.05) 100%);
 }
 
 .channel-health-card-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-bottom: 10px;
-  border-bottom: 1px solid #272727;
+  padding-bottom: 11px;
+  border-bottom: 1px solid #262626;
+  gap: 10px;
+  min-width: 0;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .ch-health-title-box {
   display: flex;
   align-items: center;
   gap: 10px;
+  min-width: 0;
+  flex: 1 1 0%;
 }
 
 .ch-health-avatar {
   width: 36px;
   height: 36px;
+  min-width: 36px;
   border-radius: 50%;
   object-fit: cover;
+  border: 1.5px solid #333333;
+  flex-shrink: 0;
 }
 
 .ch-health-name {
-  font-size: 14.5px;
+  font-size: 14px;
   font-weight: 700;
   color: var(--yt-text-primary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.2;
 }
 
 .ch-health-handle {
-  font-size: 12px;
+  font-size: 11.5px;
   color: var(--yt-text-secondary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 2px;
 }
 
 @media (max-width: 768px) {
@@ -4052,6 +4106,37 @@ body.sheet-open {
 /* ========================================================
    MOBILE PHONE RESPONSIVE ADJUSTMENTS (<= 768px & <= 480px)
    ======================================================== */
+@media (max-width: 900px) {
+  .health-radar-grid {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    gap: 14px !important;
+    box-sizing: border-box !important;
+  }
+  .channel-health-card {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    padding: 14px 14px !important;
+    border-radius: 12px !important;
+  }
+  .health-item-row {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+  .health-item-info {
+    flex: 1 1 0% !important;
+    min-width: 0 !important;
+  }
+  .health-pill {
+    flex-shrink: 0 !important;
+    white-space: nowrap !important;
+  }
+}
+
 @media (max-width: 768px) {
   .content-safety-banner {
     flex-direction: column;
@@ -4076,11 +4161,40 @@ body.sheet-open {
 
 @media (max-width: 480px) {
   .health-radar-grid {
-    grid-template-columns: 1fr !important;
-    gap: 12px;
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    gap: 12px !important;
   }
   .channel-health-card {
-    padding: 12px;
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 12px 12px !important;
+  }
+  .health-item-row {
+    gap: 8px !important;
+    padding: 8px 0 !important;
+  }
+  .health-item-icon {
+    width: 26px !important;
+    height: 26px !important;
+    min-width: 26px !important;
+  }
+  .health-item-icon svg {
+    width: 14px !important;
+    height: 14px !important;
+  }
+  .health-item-title {
+    font-size: 12px !important;
+  }
+  .health-item-desc {
+    font-size: 10.5px !important;
+  }
+  .health-pill {
+    font-size: 9.5px !important;
+    padding: 2px 6px !important;
+    flex-shrink: 0 !important;
   }
   .flagged-video-card {
     flex-direction: column;

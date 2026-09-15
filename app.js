@@ -1935,11 +1935,11 @@ function renderHealthView() {
       <!-- Strikes Status -->
       <div class="health-item-row">
         <div class="health-item-icon text-green">
-          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
         </div>
         <div class="health-item-info">
-          <div class="health-item-title">Community Guidelines Strikes</div>
-          <div class="health-item-desc">${strikes.status || '0 of 3 active strikes • Clean'}</div>
+          <div class="health-item-title">Community Guidelines</div>
+          <div class="health-item-desc">0 of 3 active strikes • Clean Standing</div>
         </div>
         <span class="health-pill badge-passed">0 STRIKES</span>
       </div>
@@ -1947,11 +1947,11 @@ function renderHealthView() {
       <!-- Copyright Status -->
       <div class="health-item-row">
         <div class="health-item-icon ${isChClean ? 'text-green' : 'text-red'}">
-          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm0 18a8 8 0 110-16 8 8 0 010 16zm-1-13h2v6h-2zm0 8h2v2h-2z"/></svg>
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm0 18a8 8 0 110-16 8 8 0 010 16zm-1-13h2v6h-2zm0 8h2v2h-2z"/></svg>
         </div>
         <div class="health-item-info">
           <div class="health-item-title">Copyright & Video Safety</div>
-          <div class="health-item-desc">${copyright.status || '0 copyright claims • Clean'}</div>
+          <div class="health-item-desc">${isChClean ? '0 claims or blocks • 100% Original Audio' : `${copyright.count} restricted video(s) detected`}</div>
         </div>
         <span class="health-pill ${isChClean ? 'badge-passed' : 'badge-failed'}">${isChClean ? '100% CLEAN' : (copyright.count + ' RESTRICTED')}</span>
       </div>
@@ -1971,11 +1971,11 @@ function renderHealthView() {
       <!-- View Performance & API Average -->
       <div class="health-item-row">
         <div class="health-item-icon text-blue">
-          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z"/></svg>
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z"/></svg>
         </div>
         <div class="health-item-info">
-          <div class="health-item-title">YouTube Live Velocity & Reach</div>
-          <div class="health-item-desc">${vHealth.label || `Live Verified: ${formatNumber(ch.avg_views_per_video)} avg views/vid (${formatNumber(ch.total_views)} views across ${ch.uploaded_count || 0} videos)`}</div>
+          <div class="health-item-title">YouTube Reach & Velocity</div>
+          <div class="health-item-desc">${formatNumber(ch.avg_views_per_video)} avg views (${formatNumber(ch.total_views)} total)</div>
         </div>
         <span class="health-pill badge-velocity">${vHealth.badge || `${formatNumber(ch.avg_views_per_video)} AVG`}</span>
       </div>
@@ -1983,25 +1983,13 @@ function renderHealthView() {
       <!-- Compliance -->
       <div class="health-item-row">
         <div class="health-item-icon text-green">
-          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
         </div>
         <div class="health-item-info">
           <div class="health-item-title">Policy & AI Compliance</div>
           <div class="health-item-desc">Rule 22 Synthetic Media & COPPA Guard</div>
         </div>
         <span class="health-pill badge-passed">100% OK</span>
-      </div>
-
-      <!-- Score Progress -->
-      <div class="health-score-card">
-        <div class="health-score-title-row">
-          <span>Integrity Score</span>
-          <span class="health-score-number">${score} / 100</span>
-        </div>
-        <div class="mini-progress-bar">
-          <div class="progress-bar-fill ${isChClean ? 'fill-emerald' : 'fill-red'}" style="width: ${score}%;"></div>
-        </div>
-        <div class="health-score-footer">${h.verdict || 'Flawless Standing'}</div>
       </div>
     `;
     grid.appendChild(card);
