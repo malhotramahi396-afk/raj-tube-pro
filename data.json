@@ -1,13 +1,13 @@
 {
   "app_name": "Raj Tube Pro",
   "version": "6.0.0",
-  "timestamp": "2026-09-15T07:17:39.936695+00:00",
+  "timestamp": "2026-09-15T07:45:20.896467+00:00",
   "schedule": {
     "next_slot_iso": "2026-09-15T14:00:00+00:00",
-    "seconds_remaining": 24140,
-    "formatted_countdown": "06h 42m 20s",
+    "seconds_remaining": 22479,
+    "formatted_countdown": "06h 14m 39s",
     "slot_label": "10:00 AM USA (7:30 PM IST)",
-    "now_ist": "15 Sep, 12:47 PM IST"
+    "now_ist": "15 Sep, 01:15 PM IST"
   },
   "summary": {
     "total_channels": 10,
@@ -1227,7 +1227,7 @@
       "subscribers": 142,
       "total_views": 136250,
       "channel_total_videos": 18,
-      "avg_views_per_video": 9354,
+      "avg_views_per_video": 9360,
       "engagement_rate": 0.8,
       "total_likes": 1242,
       "analytics": {
@@ -1448,7 +1448,7 @@
           "title": "Nobody Wanted To Miss The Next Second #SlapFight #SlapFighting #PowerSlap #Viral #CombatSports.",
           "uploaded_at": "2026-09-13T14:13:36Z",
           "thumbnail": "https://i.ytimg.com/vi/jcBToYBlKTA/mqdefault.jpg",
-          "views": 28696,
+          "views": 28776,
           "likes": 361,
           "comments": 3,
           "subscribers_gained": 7
@@ -1503,7 +1503,7 @@
           "title": "He Was Not Backing Down From Anyone #SlapFight #PowerSlap #SlapFighting #Viral #Sports.",
           "uploaded_at": "2026-09-11T16:04:35Z",
           "thumbnail": "https://i.ytimg.com/vi/t5oF0IsXkN0/mqdefault.jpg",
-          "views": 45346,
+          "views": 45363,
           "likes": 375,
           "comments": 1,
           "subscribers_gained": 39
@@ -2478,7 +2478,7 @@
       "subscribers": 8,
       "total_views": 18216,
       "channel_total_videos": 15,
-      "avg_views_per_video": 1438,
+      "avg_views_per_video": 1437,
       "engagement_rate": 1.0,
       "total_likes": 191,
       "analytics": {
@@ -2673,7 +2673,7 @@
           "title": "From First Color To Final Masterpiece #Painting #ArtTransformation #ArtReels #Artist #Viral.",
           "uploaded_at": "2026-09-13T21:06:49Z",
           "thumbnail": "https://i.ytimg.com/vi/3ee4FdtH10w/mqdefault.jpg",
-          "views": 1435,
+          "views": 1430,
           "likes": 13,
           "comments": 0,
           "subscribers_gained": 1
@@ -4271,7 +4271,7 @@
           "title": "Hollywood's Biggest Secret Revealed In Front Of The Cameras #BehindTheScenes #Hollywood #MovieMagic",
           "uploaded_at": "2026-09-13T21:11:04Z",
           "thumbnail": "https://i.ytimg.com/vi/VLOPbff4HRM/mqdefault.jpg",
-          "views": 162,
+          "views": 165,
           "likes": 1,
           "comments": 0,
           "subscribers_gained": 0
