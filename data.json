@@ -1,20 +1,20 @@
 {
   "app_name": "Raj Tube Pro",
   "version": "6.0.0",
-  "timestamp": "2026-09-15T04:45:15.652400+00:00",
+  "timestamp": "2026-09-15T05:15:21.629898+00:00",
   "schedule": {
     "next_slot_iso": "2026-09-15T14:00:00+00:00",
-    "seconds_remaining": 33284,
-    "formatted_countdown": "09h 14m 44s",
+    "seconds_remaining": 31478,
+    "formatted_countdown": "08h 44m 38s",
     "slot_label": "10:00 AM USA (7:30 PM IST)",
-    "now_ist": "15 Sep, 10:15 AM IST"
+    "now_ist": "15 Sep, 10:45 AM IST"
   },
   "summary": {
     "total_channels": 10,
     "total_uploaded": 208,
     "total_in_queue": 1242,
     "total_subscribers": 348,
-    "total_views": 301221,
+    "total_views": 301124,
     "total_likes": 2960,
     "network_engagement": 0.9,
     "total_runway_days": 62.1,
@@ -377,7 +377,7 @@
         }
       }
     ],
-    "avg_views_per_channel": 30122
+    "avg_views_per_channel": 30112
   },
   "issues": [],
   "channels": [
@@ -394,7 +394,7 @@
       "subscribers": 95,
       "total_views": 50746,
       "channel_total_videos": 10,
-      "avg_views_per_video": 6655,
+      "avg_views_per_video": 6656,
       "engagement_rate": 1.2,
       "total_likes": 602,
       "analytics": {
@@ -611,7 +611,7 @@
           "title": "Dangerous Stare Caught On 4K Camera #wildlife #cameraman #shorts #viral",
           "uploaded_at": "2026-09-13T14:03:47Z",
           "thumbnail": "https://i.ytimg.com/vi/7M2CTdKBQ6M/mqdefault.jpg",
-          "views": 1741,
+          "views": 1737,
           "likes": 11,
           "comments": 0,
           "subscribers_gained": 2
@@ -633,7 +633,7 @@
           "title": "Close Enough To Hear His Breath #wildlife #shorts #cameraman #viral",
           "uploaded_at": "2026-09-12T14:03:34Z",
           "thumbnail": "https://i.ytimg.com/vi/RMgm8o875X0/mqdefault.jpg",
-          "views": 27787,
+          "views": 27798,
           "likes": 325,
           "comments": 1,
           "subscribers_gained": 41
@@ -655,7 +655,7 @@
           "title": "Breathtaking 4K Wildlife Moment #wildlifephotography #shorts #naturelovers #viral",
           "uploaded_at": "2026-09-11T14:42:29Z",
           "thumbnail": "https://i.ytimg.com/vi/3pDpmQcqJT8/mqdefault.jpg",
-          "views": 16059,
+          "views": 16057,
           "likes": 196,
           "comments": 1,
           "subscribers_gained": 25
@@ -666,7 +666,7 @@
           "title": "A Legendary Moment In Nature #nature #wildlife #shorts #viralvideo",
           "uploaded_at": "2026-09-11T13:33:07Z",
           "thumbnail": "https://i.ytimg.com/vi/UoPvxQ5Gj9Q/mqdefault.jpg",
-          "views": 1298,
+          "views": 1300,
           "likes": 6,
           "comments": 0,
           "subscribers_gained": 2
@@ -959,7 +959,7 @@
           "title": "Grandma Carried The Entire Team Like A True Champion #GrandmaGamer #Esports #Gaming #GamingLegend #P",
           "uploaded_at": "2026-09-12T22:15:20Z",
           "thumbnail": "https://i.ytimg.com/vi/dmg14otnq3A/mqdefault.jpg",
-          "views": 214,
+          "views": 215,
           "likes": 1,
           "comments": 0,
           "subscribers_gained": 0
@@ -970,7 +970,7 @@
           "title": "Grandma Carried The Entire Team In Front Of Everyone #GrandmaGamer #Esports #Gaming #GamingLegend #P",
           "uploaded_at": "2026-09-12T21:50:32Z",
           "thumbnail": "https://i.ytimg.com/vi/gnl3GWZ6Hcs/mqdefault.jpg",
-          "views": 1218,
+          "views": 1217,
           "likes": 6,
           "comments": 0,
           "subscribers_gained": 1
@@ -1227,7 +1227,7 @@
       "subscribers": 142,
       "total_views": 136250,
       "channel_total_videos": 18,
-      "avg_views_per_video": 9311,
+      "avg_views_per_video": 9322,
       "engagement_rate": 0.8,
       "total_likes": 1239,
       "analytics": {
@@ -1426,7 +1426,7 @@
           "title": "One Final Stare Before The Action Starts #PowerSlap #SlapFight #CombatSports #Highlights #FYP.",
           "uploaded_at": "2026-09-14T08:28:28Z",
           "thumbnail": "https://i.ytimg.com/vi/q_Epxwmpr1w/mqdefault.jpg",
-          "views": 886,
+          "views": 925,
           "likes": 10,
           "comments": 0,
           "subscribers_gained": 0
@@ -1437,7 +1437,7 @@
           "title": "Nobody Was Laughing After This Faceoff #PowerSlap #SlapFighting #SlapFight #Viral #FightNight.",
           "uploaded_at": "2026-09-13T21:09:17Z",
           "thumbnail": "https://i.ytimg.com/vi/kdh_Ba5O-UU/mqdefault.jpg",
-          "views": 1391,
+          "views": 1376,
           "likes": 14,
           "comments": 1,
           "subscribers_gained": 1
@@ -1448,7 +1448,7 @@
           "title": "Nobody Wanted To Miss The Next Second #SlapFight #SlapFighting #PowerSlap #Viral #CombatSports.",
           "uploaded_at": "2026-09-13T14:13:36Z",
           "thumbnail": "https://i.ytimg.com/vi/jcBToYBlKTA/mqdefault.jpg",
-          "views": 28199,
+          "views": 28349,
           "likes": 359,
           "comments": 3,
           "subscribers_gained": 7
@@ -1470,7 +1470,7 @@
           "title": "Nobody Wanted To Blink During This Moment #SlapFighting #PowerSlap #FightNight #FYP #Viral.",
           "uploaded_at": "2026-09-12T22:06:45Z",
           "thumbnail": "https://i.ytimg.com/vi/sEMtoFAjmrs/mqdefault.jpg",
-          "views": 2370,
+          "views": 2369,
           "likes": 23,
           "comments": 0,
           "subscribers_gained": 2
@@ -1481,7 +1481,7 @@
           "title": "Nobody Expected That Faceoff Reaction #SlapFighting #PowerSlap #SlapBattle #CombatSports #Viral.",
           "uploaded_at": "2026-09-12T14:06:29Z",
           "thumbnail": "https://i.ytimg.com/vi/7OVj2yza4ks/mqdefault.jpg",
-          "views": 3845,
+          "views": 3848,
           "likes": 34,
           "comments": 2,
           "subscribers_gained": 3
@@ -1492,7 +1492,7 @@
           "title": "His Confidence Had The Whole Crowd Talking #PowerSlap #SlapFighting #SlapFight #Viral #Sports.",
           "uploaded_at": "2026-09-11T22:07:28Z",
           "thumbnail": "https://i.ytimg.com/vi/g-2DEoij8dY/mqdefault.jpg",
-          "views": 22399,
+          "views": 22401,
           "likes": 214,
           "comments": 0,
           "subscribers_gained": 18
@@ -1503,7 +1503,7 @@
           "title": "He Was Not Backing Down From Anyone #SlapFight #PowerSlap #SlapFighting #Viral #Sports.",
           "uploaded_at": "2026-09-11T16:04:35Z",
           "thumbnail": "https://i.ytimg.com/vi/t5oF0IsXkN0/mqdefault.jpg",
-          "views": 45289,
+          "views": 45292,
           "likes": 374,
           "comments": 1,
           "subscribers_gained": 39
@@ -1514,7 +1514,7 @@
           "title": "He Walked Up Like He Owned The Arena #PowerSlap #SlapFight #SlapFighting #Viral #Sports",
           "uploaded_at": "2026-09-11T09:08:50Z",
           "thumbnail": "https://i.ytimg.com/vi/WIWsbArcAp4/mqdefault.jpg",
-          "views": 2080,
+          "views": 2077,
           "likes": 14,
           "comments": 1,
           "subscribers_gained": 2
@@ -1536,7 +1536,7 @@
           "title": "He Looked Ready For The Biggest Hit Of His Life #PowerSlap #SlapFight #FightNight #Highlights #FYP",
           "uploaded_at": "2026-09-06T07:20:35Z",
           "thumbnail": "https://i.ytimg.com/vi/EU0lTDiLM2Y/mqdefault.jpg",
-          "views": 7354,
+          "views": 7352,
           "likes": 11,
           "comments": 0,
           "subscribers_gained": 6
@@ -2298,7 +2298,7 @@
           "title": "Adorable Toddler Takes It All In #ToddlerLife #CutestMoments #FamilyMoments #WholesomeContent #Paren",
           "uploaded_at": "2026-09-13T14:15:34Z",
           "thumbnail": "https://i.ytimg.com/vi/eJ1-GU4-yTM/mqdefault.jpg",
-          "views": 82,
+          "views": 80,
           "likes": 0,
           "comments": 0,
           "subscribers_gained": 0
@@ -2862,7 +2862,7 @@
       "color": "#3B82F6",
       "avatar_url": "https://yt3.ggpht.com/vRLBXNb4fgjWzDfLf8ltniGaD2BlvZ1PAWugGoZaJx1nCdJ92LubM-8vy7hIgxHlCicFwpt2=s240-c-k-c0x00ffffff-no-rj",
       "subscribers": 28,
-      "total_views": 11085,
+      "total_views": 10988,
       "channel_total_videos": 31,
       "avg_views_per_video": 387,
       "engagement_rate": 1.3,
