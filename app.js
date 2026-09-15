@@ -2011,6 +2011,19 @@ function formatRunTime(isoString) {
   }
 }
 
+function getEffectiveRunTime(channel, runnerNode) {
+  let runTime = (channel && channel.latest_run_time) || (runnerNode && runnerNode.verified_at);
+  if (channel && channel.uploaded_videos && channel.uploaded_videos.length > 0) {
+    const latestVidTime = channel.uploaded_videos[0].uploaded_at;
+    if (latestVidTime) {
+      if (!runTime || new Date(latestVidTime).getTime() > new Date(runTime).getTime()) {
+        runTime = latestVidTime;
+      }
+    }
+  }
+  return runTime;
+}
+
 function renderRunnerRadarWidget(channel) {
   const runnerNode = channel && channel.runner_node
     ? channel.runner_node
@@ -2042,7 +2055,7 @@ function renderRunnerRadarWidget(channel) {
   if (orgEl) orgEl.innerText = runnerNode.org || "AS8075 Microsoft Corporation";
   
   if (timeEl) {
-    const runTime = (channel && channel.latest_run_time) || (channel && channel.runner_node && channel.runner_node.verified_at);
+    const runTime = getEffectiveRunTime(channel, runnerNode);
     timeEl.innerText = formatRunTime(runTime);
   }
 
@@ -2159,7 +2172,7 @@ function renderRadarView(channel) {
         </div>
         <div class="m-row">
           <span class="m-label">Last Upload Run</span>
-          <span class="m-val text-amber font-semibold">${formatRunTime(ch.latest_run_time || r.verified_at)}</span>
+          <span class="m-val text-amber font-semibold">${formatRunTime(getEffectiveRunTime(ch, r))}</span>
         </div>
         <div class="m-row">
           <span class="m-label">Simultaneous IP Overlap</span>
