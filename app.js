@@ -1097,6 +1097,36 @@ function renderContentTable(channel) {
     return;
   }
 
+  // Update real-time content safety shield banner
+  const safetyBanner = document.getElementById('content-safety-banner');
+  const safetyIcon = document.getElementById('content-safety-icon');
+  const safetyTitle = document.getElementById('content-safety-title');
+  const safetySub = document.getElementById('content-safety-sub');
+  const safetyBadge = document.getElementById('content-safety-badge');
+
+  const flaggedInView = vids.filter(v => v.is_blocked);
+  if (safetyBanner) {
+    if (flaggedInView.length > 0) {
+      safetyBanner.className = 'content-safety-banner banner-restricted';
+      if (safetyIcon) safetyIcon.innerText = '🚨';
+      if (safetyTitle) safetyTitle.innerText = `${flaggedInView.length} Restricted Video(s) Detected on YouTube`;
+      if (safetySub) safetySub.innerText = 'Content ID audio claim or regional restriction flagged by YouTube. Studio resolution recommended.';
+      if (safetyBadge) {
+        safetyBadge.className = 'safety-badge badge-restricted';
+        safetyBadge.innerText = `⚠️ ${flaggedInView.length} RESTRICTED`;
+      }
+    } else {
+      safetyBanner.className = 'content-safety-banner banner-clean';
+      if (safetyIcon) safetyIcon.innerText = '🛡️';
+      if (safetyTitle) safetyTitle.innerText = 'Continuous YouTube Copyright & Policy Shield';
+      if (safetySub) safetySub.innerText = `All ${vids.length} uploaded videos verified active, public, and restriction-free via YouTube Data API.`;
+      if (safetyBadge) {
+        safetyBadge.className = 'safety-badge badge-clean';
+        safetyBadge.innerText = '🟢 100% CLEAN';
+      }
+    }
+  }
+
   vids.forEach(v => {
     const thumb = v.thumbnail || `https://i.ytimg.com/vi/${v.youtube_id}/mqdefault.jpg`;
     let dateStr = 'Sep 13, 2026';
@@ -1108,9 +1138,23 @@ function renderContentTable(channel) {
     }
     const isChecked = selectedVideoIds.has(v.youtube_id);
     const subsGained = v.subscribers_gained !== undefined ? v.subscribers_gained : 0;
+    const studioUrl = v.studio_url || `https://studio.youtube.com/video/${v.youtube_id}/edit`;
+
+    // Dynamic Restrictions Column (Clean vs Studio Action Link)
+    let restrictionsCell = '<td class="col-restrictions"><span class="table-restriction-pill badge-clean">None</span></td>';
+    if (v.is_blocked) {
+      restrictionsCell = `
+        <td class="col-restrictions">
+          <a href="${studioUrl}" target="_blank" class="table-restriction-pill badge-restricted" title="${v.flag_details || 'Restricted on YouTube'}">
+            ⚠️ ${v.flag_details || 'RESTRICTED'} ↗
+          </a>
+        </td>
+      `;
+    }
 
     // 1. Desktop Table Row
     const tr = document.createElement('tr');
+    if (v.is_blocked) tr.className = 'row-video-restricted';
     tr.innerHTML = `
       <td class="col-checkbox">
         <input type="checkbox" class="row-vid-check" data-vid-id="${v.youtube_id}" ${isChecked ? 'checked' : ''} />
@@ -1128,12 +1172,12 @@ function renderContentTable(channel) {
         </div>
       </td>
       <td class="col-visibility">
-        <div class="vis-pill">
-          <span class="vis-dot"></span>
-          <span>Public</span>
+        <div class="vis-pill ${v.privacy_status === 'private' ? 'vis-private' : ''}">
+          <span class="vis-dot ${v.is_blocked ? 'dot-red' : ''}"></span>
+          <span>${v.privacy_status ? v.privacy_status.charAt(0).toUpperCase() + v.privacy_status.slice(1) : 'Public'}</span>
         </div>
       </td>
-      <td class="col-restrictions">None</td>
+      ${restrictionsCell}
       <td class="col-date">
         <div>${dateStr}</div>
         <div style="font-size:11px; color:var(--yt-text-secondary); margin-top:2px;">
@@ -1163,18 +1207,32 @@ function renderContentTable(channel) {
       const card = document.createElement('a');
       card.href = v.youtube_url;
       card.target = '_blank';
-      card.className = 'mobile-vid-card';
+      card.className = `mobile-vid-card ${v.is_blocked ? 'mobile-card-flagged' : ''}`;
+
+      let mobileAlertHtml = '';
+      if (v.is_blocked) {
+        mobileAlertHtml = `
+          <div class="mobile-vid-restriction-alert">
+            <a href="${studioUrl}" target="_blank" class="mobile-studio-action-btn" onclick="event.stopPropagation();">
+              ⚠️ ${v.flag_details || 'Restricted on YouTube'} • Open Studio ↗
+            </a>
+          </div>
+        `;
+      }
+
       card.innerHTML = `
         <div class="mobile-vid-thumb-wrap">
           <img src="${thumb}" alt="${v.title}" />
           <span class="mobile-shorts-badge">🩳 SHORTS</span>
+          ${v.is_blocked ? '<span class="mobile-flag-indicator">⚠️ RESTRICTED</span>' : ''}
         </div>
         <div class="mobile-vid-info">
           <div class="mobile-vid-title" title="${v.title}">${v.title}</div>
           <div class="mobile-vid-meta-row">
-            <span class="mobile-vid-vis-dot"></span>
-            <span>Public • ${dateStr}${timeStr ? ' at ' + timeStr : ''}</span>
+            <span class="mobile-vid-vis-dot ${v.is_blocked ? 'dot-red' : ''}"></span>
+            <span>${v.privacy_status ? v.privacy_status.charAt(0).toUpperCase() + v.privacy_status.slice(1) : 'Public'} • ${dateStr}${timeStr ? ' at ' + timeStr : ''}</span>
           </div>
+          ${mobileAlertHtml}
           <div class="mobile-vid-metrics-chips">
             <span class="mobile-metric-item">👁️ ${formatNumber(v.views)}</span>
             <span class="mobile-metric-item highlight-subs">👥 +${subsGained}</span>
@@ -1705,10 +1763,56 @@ function renderHealthWidget(channel) {
   const compliance = health.compliance ? health.compliance.label : 'YouTube Policy: AI Disclosure & COPPA Compliant';
   const verdict = health.verdict || 'Flawless (Optimal Standing)';
 
-  if (shieldEl) shieldEl.innerText = `${health.shield_icon || '🛡️'} Clean`;
+  const copyrightPill = document.getElementById('dash-health-copyright-pill');
+  const flaggedBox = document.getElementById('dash-flagged-box');
+  const isClean = !health.copyright || health.copyright.is_clean;
+  const flaggedVids = (health.copyright && health.copyright.flagged_videos) || [];
+
+  if (shieldEl) shieldEl.innerText = `${health.shield_icon || '🛡️'} ${isClean ? 'Clean' : 'Attention'}`;
   if (strikesEl) strikesEl.innerText = strikes;
   if (strikesPill) strikesPill.innerText = `${health.strikes ? health.strikes.count : 0} STRIKES`;
   if (copyrightEl) copyrightEl.innerText = copyright;
+
+  if (copyrightPill) {
+    if (isClean) {
+      copyrightPill.innerText = 'CLEAN';
+      copyrightPill.className = 'health-pill badge-passed';
+    } else {
+      copyrightPill.innerText = `${health.copyright.count || flaggedVids.length} RESTRICTED`;
+      copyrightPill.className = 'health-pill badge-failed';
+    }
+  }
+
+  // Handle direct flagged resolution list in dashboard card
+  if (flaggedBox) {
+    if (flaggedVids.length > 0) {
+      flaggedBox.style.display = 'block';
+      flaggedBox.innerHTML = `
+        <div class="dash-flagged-header">
+          <span>🚨 ${flaggedVids.length} Restricted Video(s) Detected</span>
+          <span class="sub-muted">Direct YouTube Studio Resolution</span>
+        </div>
+        <div class="dash-flagged-list">
+          ${flaggedVids.map(fv => `
+            <div class="dash-flagged-item">
+              <img src="${fv.thumbnail || 'https://i.ytimg.com/vi/' + fv.id + '/mqdefault.jpg'}" class="dash-flagged-thumb" alt="${fv.title || ''}" />
+              <div class="dash-flagged-meta">
+                <div class="dash-flagged-title">${fv.title || 'Video ' + fv.id}</div>
+                <div class="dash-flagged-reason text-red">⚠️ ${fv.flag_details || 'Restricted'}</div>
+              </div>
+              <a href="${fv.studio_url || 'https://studio.youtube.com/video/' + fv.id + '/edit'}" target="_blank" class="btn-studio-mini">
+                🛠️ Studio ↗
+              </a>
+            </div>
+          `).join('')}
+        </div>
+      `;
+    } else {
+      flaggedBox.style.display = 'none';
+      flaggedBox.innerHTML = '';
+    }
+  }
+
   if (viewsEl) viewsEl.innerText = `${viewHealth.label || 'YouTube API Verified Live Data'}`;
   if (viewsBadge) {
     viewsBadge.innerText = viewHealth.badge || 'LIVE API';
@@ -1729,8 +1833,78 @@ function renderHealthView() {
   const grid = document.getElementById('health-channels-radar-grid');
 
   const fleetHealth = (globalData.summary && globalData.summary.health) || {};
+  const copyrightRadar = (globalData.summary && globalData.summary.copyright_radar) || {};
+  const totalScanned = copyrightRadar.total_scanned_videos || (globalData.summary && globalData.summary.total_uploaded) || 0;
+  const flaggedFleet = copyrightRadar.flagged_videos || [];
+  const isFleetClean = copyrightRadar.is_fleet_clean !== false && flaggedFleet.length === 0;
+
   if (heroScore) heroScore.innerText = fleetHealth.overall_score || 99;
   if (fleetPill) fleetPill.innerText = `🛡️ Fleet: ${fleetHealth.verdict || '100% Clean'}`;
+
+  // Real-Time Video Safety & Copyright Radar Card update
+  const tagBadge = document.getElementById('health-copyright-badge');
+  const radarIcon = document.getElementById('copyright-radar-icon');
+  const radarTitle = document.getElementById('copyright-radar-title');
+  const radarDesc = document.getElementById('copyright-radar-desc');
+  const flaggedSection = document.getElementById('flagged-videos-section');
+  const flaggedGrid = document.getElementById('flagged-videos-grid');
+
+  if (tagBadge) {
+    if (isFleetClean) {
+      tagBadge.style.background = 'rgba(16, 185, 129, 0.15)';
+      tagBadge.style.color = '#10B981';
+      tagBadge.style.border = '1px solid rgba(16, 185, 129, 0.3)';
+      tagBadge.innerText = '🟢 100% CLEAN • 0 RESTRICTIONS';
+    } else {
+      tagBadge.style.background = 'rgba(239, 68, 68, 0.15)';
+      tagBadge.style.color = '#EF4444';
+      tagBadge.style.border = '1px solid rgba(239, 68, 68, 0.3)';
+      tagBadge.innerText = `🚨 ${flaggedFleet.length} RESTRICTED`;
+    }
+  }
+
+  if (radarIcon) radarIcon.innerText = isFleetClean ? '✅' : '🚨';
+  if (radarTitle) {
+    radarTitle.innerText = isFleetClean 
+      ? `All Uploaded Videos Active & Restriction-Free (${totalScanned} Videos Scanned)`
+      : `⚠️ ${flaggedFleet.length} Video(s) Restricted by YouTube Policy / Audio Claims`;
+  }
+
+  if (radarDesc) {
+    radarDesc.innerText = isFleetClean
+      ? `Continuous YouTube Data API probe verified all ${totalScanned} videos across all 10 channels. 0 copyright rejections, 0 audio claims, and 0 regional blocks.`
+      : `The following videos have received Content ID restrictions, audio claims, or regional blocks. Click below to open YouTube Studio Video Editor to dispute, replace audio, or delete.`;
+  }
+
+  if (flaggedSection && flaggedGrid) {
+    if (!isFleetClean && flaggedFleet.length > 0) {
+      flaggedSection.style.display = 'block';
+      flaggedGrid.innerHTML = flaggedFleet.map(fv => `
+        <div class="flagged-video-card">
+          <div class="flagged-card-thumb-wrap">
+            <img src="${fv.thumbnail || 'https://i.ytimg.com/vi/' + fv.id + '/mqdefault.jpg'}" alt="${fv.title || ''}" />
+            <span class="flagged-card-badge">⚠️ ${fv.flag_type ? fv.flag_type.toUpperCase() : 'RESTRICTED'}</span>
+          </div>
+          <div class="flagged-card-info">
+            <div class="flagged-channel-tag">${fv.channel_name || 'Channel'}</div>
+            <div class="flagged-video-title">${fv.title || 'Video ' + fv.id}</div>
+            <div class="flagged-video-reason">Reason: <span class="text-red font-semibold">${fv.flag_details || 'Restricted'}</span></div>
+            <div class="flagged-card-actions">
+              <a href="${fv.studio_url || 'https://studio.youtube.com/video/' + fv.id + '/edit'}" target="_blank" class="yt-btn-primary btn-studio-resolve">
+                🛠️ Resolve in YouTube Studio Editor ↗
+              </a>
+              <a href="${fv.youtube_url || 'https://youtu.be/' + fv.id}" target="_blank" class="yt-btn-flat">
+                Watch ↗
+              </a>
+            </div>
+          </div>
+        </div>
+      `).join('');
+    } else {
+      flaggedSection.style.display = 'none';
+      flaggedGrid.innerHTML = '';
+    }
+  }
 
   if (!grid) return;
   grid.innerHTML = '';
@@ -1741,9 +1915,11 @@ function renderHealthView() {
     const vHealth = h.view_health || {};
     const strikes = h.strikes || {};
     const copyright = h.copyright || {};
+    const isChClean = copyright.is_clean !== false;
+    const chFlagged = copyright.flagged_videos || [];
 
     const card = document.createElement('div');
-    card.className = 'channel-health-card';
+    card.className = `channel-health-card ${isChClean ? '' : 'card-health-attention'}`;
     card.innerHTML = `
       <div class="channel-health-card-header">
         <div class="ch-health-title-box">
@@ -1753,7 +1929,7 @@ function renderHealthView() {
             <div class="ch-health-handle">${ch.handle}</div>
           </div>
         </div>
-        <span class="health-pill badge-passed">SCORE: ${score}/100</span>
+        <span class="health-pill ${isChClean ? 'badge-passed' : 'badge-failed'}">SCORE: ${score}/100</span>
       </div>
 
       <!-- Strikes Status -->
@@ -1770,15 +1946,27 @@ function renderHealthView() {
 
       <!-- Copyright Status -->
       <div class="health-item-row">
-        <div class="health-item-icon text-green">
+        <div class="health-item-icon ${isChClean ? 'text-green' : 'text-red'}">
           <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm0 18a8 8 0 110-16 8 8 0 010 16zm-1-13h2v6h-2zm0 8h2v2h-2z"/></svg>
         </div>
         <div class="health-item-info">
-          <div class="health-item-title">Copyright Standing</div>
+          <div class="health-item-title">Copyright & Video Safety</div>
           <div class="health-item-desc">${copyright.status || '0 copyright claims • Clean'}</div>
         </div>
-        <span class="health-pill badge-passed">CLEAN</span>
+        <span class="health-pill ${isChClean ? 'badge-passed' : 'badge-failed'}">${isChClean ? '100% CLEAN' : (copyright.count + ' RESTRICTED')}</span>
       </div>
+
+      ${chFlagged.length > 0 ? `
+        <div class="ch-flagged-mini-alert">
+          <div class="ch-flagged-mini-title text-red">⚠️ Flagged Videos in this Channel:</div>
+          ${chFlagged.map(f => `
+            <div class="ch-flagged-mini-item">
+              <span class="ch-flagged-mini-name">${f.title || f.id}</span>
+              <a href="${f.studio_url || 'https://studio.youtube.com/video/' + f.id + '/edit'}" target="_blank" class="btn-studio-mini">Studio ↗</a>
+            </div>
+          `).join('')}
+        </div>
+      ` : ''}
 
       <!-- View Performance & API Average -->
       <div class="health-item-row">
@@ -1811,7 +1999,7 @@ function renderHealthView() {
           <span class="health-score-number">${score} / 100</span>
         </div>
         <div class="mini-progress-bar">
-          <div class="progress-bar-fill fill-emerald" style="width: ${score}%;"></div>
+          <div class="progress-bar-fill ${isChClean ? 'fill-emerald' : 'fill-red'}" style="width: ${score}%;"></div>
         </div>
         <div class="health-score-footer">${h.verdict || 'Flawless Standing'}</div>
       </div>

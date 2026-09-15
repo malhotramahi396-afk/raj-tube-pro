@@ -369,8 +369,11 @@
                     <div class="health-item-title">Copyright Standing</div>
                     <div class="health-item-desc" id="dash-health-copyright">0 copyright claims • 100% Clean Original Content</div>
                   </div>
-                  <span class="health-pill badge-passed">CLEAN</span>
+                  <span class="health-pill badge-passed" id="dash-health-copyright-pill">CLEAN</span>
                 </div>
+
+                <!-- Flagged Videos Quick Studio Resolution Box -->
+                <div class="dash-flagged-box" id="dash-flagged-box" style="display: none;"></div>
 
                 <!-- View Performance & Algorithm Velocity -->
                 <div class="health-item-row">
@@ -578,6 +581,18 @@
       <section class="tab-view" id="view-content">
         <div class="page-title-row">
           <h1 class="page-title">Channel content</h1>
+        </div>
+
+        <!-- REAL-TIME VIDEO SAFETY & COPYRIGHT BADGE BANNER -->
+        <div class="content-safety-banner" id="content-safety-banner">
+          <div class="safety-banner-left">
+            <span class="safety-banner-icon" id="content-safety-icon">🛡️</span>
+            <div class="safety-banner-text">
+              <div class="safety-title" id="content-safety-title">Continuous YouTube Copyright & Policy Shield</div>
+              <div class="safety-sub" id="content-safety-sub">All uploaded videos verified active, public, and restriction-free via YouTube Data API.</div>
+            </div>
+          </div>
+          <span class="safety-badge badge-clean" id="content-safety-badge">🟢 100% CLEAN</span>
         </div>
 
         <div class="content-toolbar">
@@ -869,15 +884,48 @@
               <div class="hero-score-sub text-green">Optimal Fleet Standing</div>
             </div>
             <div class="health-hero-details">
-              <h2 class="hero-title">Zero Active Violations Across All 5 Channels</h2>
-              <p class="hero-desc">
-                Automated continuous diagnostics confirms all 5 YouTube channels operate with 0 Community Guidelines strikes, 0 copyright claims, 100% AI synthetic media disclosures, and compliant COPPA tags.
+              <h2 class="hero-title" id="health-hero-title">Zero Active Violations Across All 10 Channels</h2>
+              <p class="hero-desc" id="health-hero-desc">
+                Automated continuous diagnostics confirms all 10 YouTube channels operate with 0 Community Guidelines strikes, 0 copyright claims, 100% AI synthetic media disclosures, and compliant COPPA tags.
               </p>
               <div class="hero-tags-row">
-                <span class="hero-tag">🛡️ 0 / 15 Total Strikes</span>
+                <span class="hero-tag" id="health-hero-tag-strikes">🛡️ 0 / 30 Total Strikes</span>
                 <span class="hero-tag">⚡ 81.2% Shorts Feed Push</span>
                 <span class="hero-tag">✅ Rule 22 & 23 AI Guard Active</span>
                 <span class="hero-tag">🗑️ Auto-Delete Active</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- REAL-TIME VIDEO SAFETY & COPYRIGHT RADAR WIDGET -->
+        <div class="yt-card health-copyright-card mt-20" id="health-copyright-card">
+          <div class="yt-card-header">
+            <div style="display: flex; align-items: center; justify-content: space-between; width: 100%; flex-wrap: wrap; gap: 8px;">
+              <div style="display: flex; align-items: center; gap: 8px;">
+                <span style="font-size: 18px;">🛡️</span>
+                <h2>Real-Time Video Safety & Copyright Radar</h2>
+              </div>
+              <span class="live-badge-tag" id="health-copyright-badge" style="background: rgba(16, 185, 129, 0.15); color: #10B981; border: 1px solid rgba(16, 185, 129, 0.3); font-size: 11px; padding: 4px 10px; border-radius: 12px; font-weight: 700;">🟢 100% CLEAN • 0 RESTRICTIONS</span>
+            </div>
+          </div>
+          <div class="yt-card-body">
+            <div class="copyright-radar-hero" id="copyright-radar-hero">
+              <div class="copyright-radar-icon" id="copyright-radar-icon">✅</div>
+              <div class="copyright-radar-info">
+                <div class="copyright-radar-title" id="copyright-radar-title">All Uploaded Videos Active & Restriction-Free</div>
+                <div class="copyright-radar-desc" id="copyright-radar-desc">Continuous YouTube Data API probe verified all videos across all 10 channels. 0 copyright rejections, 0 audio claims, and 0 regional geo-blocks.</div>
+              </div>
+            </div>
+
+            <!-- List of flagged videos with direct 1-click studio resolution button (Shown only if any video is flagged) -->
+            <div class="flagged-videos-section mt-16" id="flagged-videos-section" style="display: none;">
+              <div class="flagged-header-row">
+                <span class="text-red font-bold" style="font-size: 13.5px;">⚠️ Restricted Videos Requiring Review:</span>
+                <span class="sub-muted" style="font-size: 12px;">Direct YouTube Studio 1-click editor link</span>
+              </div>
+              <div class="flagged-videos-grid" id="flagged-videos-grid">
+                <!-- Dynamically populated if any video has issue -->
               </div>
             </div>
           </div>

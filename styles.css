@@ -3640,5 +3640,457 @@ body.sheet-open {
   opacity: 0.65 !important;
 }
 
+/* ========================================================
+   REAL-TIME COPYRIGHT & VIDEO SAFETY RADAR STYLES
+   ======================================================== */
+
+/* 1. Content Tab Safety Banner */
+.content-safety-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 12px 18px;
+  border-radius: 10px;
+  margin-bottom: 16px;
+  transition: all 0.2s ease;
+  box-sizing: border-box;
+}
+
+.content-safety-banner.banner-clean {
+  background: rgba(16, 185, 129, 0.08);
+  border: 1px solid rgba(16, 185, 129, 0.25);
+}
+
+.content-safety-banner.banner-restricted {
+  background: rgba(239, 68, 68, 0.12);
+  border: 1px solid rgba(239, 68, 68, 0.4);
+  box-shadow: 0 0 15px rgba(239, 68, 68, 0.15);
+}
+
+.safety-banner-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+  min-width: 0;
+}
+
+.safety-banner-icon {
+  font-size: 22px;
+  flex-shrink: 0;
+}
+
+.safety-banner-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.safety-title {
+  font-size: 13.5px;
+  font-weight: 700;
+  color: var(--yt-text-primary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.safety-sub {
+  font-size: 12px;
+  color: var(--yt-text-secondary);
+  line-height: 1.35;
+}
+
+.safety-badge {
+  padding: 4px 12px;
+  border-radius: 14px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+.safety-badge.badge-clean {
+  background: rgba(16, 185, 129, 0.2);
+  color: #10b981;
+  border: 1px solid rgba(16, 185, 129, 0.4);
+}
+
+.safety-badge.badge-restricted {
+  background: rgba(239, 68, 68, 0.25);
+  color: #ef4444;
+  border: 1px solid rgba(239, 68, 68, 0.5);
+}
+
+/* 2. Desktop Table Restrictions Column */
+.table-restriction-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 3px 8px;
+  border-radius: 6px;
+  transition: all 0.15s ease;
+}
+
+.table-restriction-pill.badge-clean {
+  color: var(--yt-text-secondary);
+}
+
+.table-restriction-pill.badge-restricted {
+  background: rgba(239, 68, 68, 0.15);
+  color: #ef4444;
+  border: 1px solid rgba(239, 68, 68, 0.35);
+  font-weight: 600;
+}
+
+.table-restriction-pill.badge-restricted:hover {
+  background: #ef4444;
+  color: #ffffff;
+}
+
+.row-video-restricted {
+  background: rgba(239, 68, 68, 0.04) !important;
+}
+
+/* 3. Mobile Native Video Card Restrictions Alert */
+.mobile-card-flagged {
+  border-color: rgba(239, 68, 68, 0.4) !important;
+  background: rgba(239, 68, 68, 0.03) !important;
+}
+
+.mobile-flag-indicator {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  background: #ef4444;
+  color: #fff;
+  font-size: 9px;
+  padding: 1px 5px;
+  border-radius: 3px;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+}
+
+.mobile-vid-restriction-alert {
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+.mobile-studio-action-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(239, 68, 68, 0.2);
+  border: 1px solid rgba(239, 68, 68, 0.5);
+  color: #ef4444;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 6px;
+  text-decoration: none;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.mobile-studio-action-btn:active {
+  background: #ef4444;
+  color: #ffffff;
+}
+
+/* 4. Dashboard Health Widget Flagged Resolution Box */
+.dash-flagged-box {
+  background: rgba(239, 68, 68, 0.08);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  border-radius: 8px;
+  padding: 10px 12px;
+  margin-top: 10px;
+}
+
+.dash-flagged-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12px;
+  font-weight: 700;
+  color: #ef4444;
+  margin-bottom: 8px;
+}
+
+.dash-flagged-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.dash-flagged-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #181818;
+  padding: 6px 8px;
+  border-radius: 6px;
+  border: 1px solid #282828;
+}
+
+.dash-flagged-thumb {
+  width: 44px;
+  height: 32px;
+  border-radius: 4px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.dash-flagged-meta {
+  flex: 1;
+  min-width: 0;
+}
+
+.dash-flagged-title {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--yt-text-primary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.dash-flagged-reason {
+  font-size: 10.5px;
+  margin-top: 2px;
+}
+
+.btn-studio-mini {
+  background: #ef4444;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 3px 8px;
+  border-radius: 4px;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+/* 5. Health & Policy Radar Copyright Card */
+.health-copyright-card {
+  border: 1px solid #2e2e2e;
+}
+
+.copyright-radar-hero {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 14px 16px;
+  background: #141414;
+  border-radius: 8px;
+  border: 1px solid #242424;
+}
+
+.copyright-radar-icon {
+  font-size: 24px;
+  line-height: 1;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.copyright-radar-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.copyright-radar-title {
+  font-size: 14.5px;
+  font-weight: 700;
+  color: var(--yt-text-primary);
+  margin-bottom: 4px;
+}
+
+.copyright-radar-desc {
+  font-size: 12.5px;
+  color: var(--yt-text-secondary);
+  line-height: 1.45;
+}
+
+.flagged-videos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.flagged-video-card {
+  display: flex;
+  gap: 12px;
+  background: #181818;
+  border: 1px solid rgba(239, 68, 68, 0.35);
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.flagged-card-thumb-wrap {
+  position: relative;
+  width: 90px;
+  height: 60px;
+  flex-shrink: 0;
+}
+
+.flagged-card-thumb-wrap img {
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+.flagged-card-badge {
+  position: absolute;
+  bottom: 2px;
+  left: 2px;
+  background: rgba(0, 0, 0, 0.85);
+  color: #ef4444;
+  font-size: 9px;
+  font-weight: 700;
+  padding: 1px 4px;
+  border-radius: 2px;
+}
+
+.flagged-card-info {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.flagged-channel-tag {
+  font-size: 10.5px;
+  font-weight: 700;
+  color: #3ea6ff;
+  text-transform: uppercase;
+}
+
+.flagged-video-title {
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--yt-text-primary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 2px 0;
+}
+
+.flagged-video-reason {
+  font-size: 11px;
+  color: var(--yt-text-secondary);
+  margin-bottom: 6px;
+}
+
+.flagged-card-actions {
+  display: flex;
+  gap: 6px;
+}
+
+.btn-studio-resolve {
+  background: #ef4444 !important;
+  color: #ffffff !important;
+  font-size: 11px !important;
+  padding: 4px 10px !important;
+  border-radius: 4px !important;
+  text-decoration: none !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 4px !important;
+  font-weight: 600 !important;
+}
+
+.btn-studio-resolve:hover {
+  background: #dc2626 !important;
+}
+
+.card-health-attention {
+  border-color: rgba(239, 68, 68, 0.4) !important;
+}
+
+.fill-red {
+  background: #ef4444 !important;
+}
+
+.ch-flagged-mini-alert {
+  background: rgba(239, 68, 68, 0.08);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  border-radius: 6px;
+  padding: 8px 10px;
+  margin-top: 4px;
+}
+
+.ch-flagged-mini-title {
+  font-size: 11.5px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.ch-flagged-mini-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 11px;
+  color: var(--yt-text-primary);
+  padding: 2px 0;
+}
+
+.ch-flagged-mini-name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 200px;
+}
+
+/* ========================================================
+   MOBILE PHONE RESPONSIVE ADJUSTMENTS (<= 768px & <= 480px)
+   ======================================================== */
+@media (max-width: 768px) {
+  .content-safety-banner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 10px 14px;
+  }
+  .safety-title {
+    white-space: normal;
+  }
+  .safety-badge {
+    align-self: flex-start;
+  }
+  .copyright-radar-hero {
+    flex-direction: column;
+    gap: 8px;
+  }
+  .flagged-videos-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .health-radar-grid {
+    grid-template-columns: 1fr !important;
+    gap: 12px;
+  }
+  .channel-health-card {
+    padding: 12px;
+  }
+  .flagged-video-card {
+    flex-direction: column;
+  }
+  .flagged-card-thumb-wrap {
+    width: 100%;
+    height: 120px;
+  }
+}
+
+
 
 
