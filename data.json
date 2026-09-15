@@ -1,21 +1,21 @@
 {
   "app_name": "Raj Tube Pro",
   "version": "6.0.0",
-  "timestamp": "2026-09-15T09:17:35.306588+00:00",
+  "timestamp": "2026-09-15T09:46:53.239219+00:00",
   "schedule": {
     "next_slot_iso": "2026-09-15T14:00:00+00:00",
-    "seconds_remaining": 16944,
-    "formatted_countdown": "04h 42m 24s",
+    "seconds_remaining": 15186,
+    "formatted_countdown": "04h 13m 06s",
     "slot_label": "10:00 AM USA (7:30 PM IST)",
-    "now_ist": "15 Sep, 02:47 PM IST"
+    "now_ist": "15 Sep, 03:16 PM IST"
   },
   "summary": {
     "total_channels": 10,
     "total_uploaded": 208,
     "total_in_queue": 1242,
-    "total_subscribers": 351,
-    "total_views": 284171,
-    "total_likes": 2968,
+    "total_subscribers": 352,
+    "total_views": 301221,
+    "total_likes": 2969,
     "network_engagement": 0.9,
     "total_runway_days": 62.1,
     "system_health": "All Systems Operational",
@@ -377,7 +377,7 @@
         }
       }
     ],
-    "avg_views_per_channel": 28417
+    "avg_views_per_channel": 30122
   },
   "issues": [],
   "channels": [
@@ -394,7 +394,7 @@
       "subscribers": 99,
       "total_views": 50746,
       "channel_total_videos": 10,
-      "avg_views_per_video": 6683,
+      "avg_views_per_video": 6686,
       "engagement_rate": 1.2,
       "total_likes": 605,
       "analytics": {
@@ -611,7 +611,7 @@
           "title": "Dangerous Stare Caught On 4K Camera #wildlife #cameraman #shorts #viral",
           "uploaded_at": "2026-09-13T14:03:47Z",
           "thumbnail": "https://i.ytimg.com/vi/7M2CTdKBQ6M/mqdefault.jpg",
-          "views": 1742,
+          "views": 1769,
           "likes": 11,
           "comments": 0,
           "subscribers_gained": 2
@@ -729,7 +729,7 @@
       "color": "#10B981",
       "avatar_url": "https://yt3.ggpht.com/Si65r7FeRpZibwEpw60Lck09w5Qi4YjdBhvfyPC914DY68sKk7vkLYv3WdR1ByZGkg_J4FAK=s240-c-k-c0x00ffffff-no-rj",
       "subscribers": 5,
-      "total_views": 7629,
+      "total_views": 8379,
       "channel_total_videos": 25,
       "avg_views_per_video": 374,
       "engagement_rate": 0.7,
@@ -1224,12 +1224,12 @@
       "github_repo": "malhotramahi396-afk/yt-automation-zyntrix07",
       "color": "#F59E0B",
       "avatar_url": "https://yt3.ggpht.com/TTLhq8ijvpChRrWaVb1i96FzeFG02Gd31oOfWo4EdOtBtfqTD6h0TrRmEOTd2fE8V0kPexV6EA=s240-c-k-c0x00ffffff-no-rj",
-      "subscribers": 141,
-      "total_views": 120399,
+      "subscribers": 142,
+      "total_views": 136250,
       "channel_total_videos": 18,
-      "avg_views_per_video": 9384,
+      "avg_views_per_video": 9403,
       "engagement_rate": 0.8,
-      "total_likes": 1243,
+      "total_likes": 1244,
       "analytics": {
         "watch_time_hours": 510.7,
         "avg_view_duration": "0:24",
@@ -1426,7 +1426,7 @@
           "title": "One Final Stare Before The Action Starts #PowerSlap #SlapFight #CombatSports #Highlights #FYP.",
           "uploaded_at": "2026-09-14T08:28:28Z",
           "thumbnail": "https://i.ytimg.com/vi/q_Epxwmpr1w/mqdefault.jpg",
-          "views": 930,
+          "views": 1001,
           "likes": 10,
           "comments": 0,
           "subscribers_gained": 0
@@ -1437,7 +1437,7 @@
           "title": "Nobody Was Laughing After This Faceoff #PowerSlap #SlapFighting #SlapFight #Viral #FightNight.",
           "uploaded_at": "2026-09-13T21:09:17Z",
           "thumbnail": "https://i.ytimg.com/vi/kdh_Ba5O-UU/mqdefault.jpg",
-          "views": 1395,
+          "views": 1401,
           "likes": 14,
           "comments": 1,
           "subscribers_gained": 1
@@ -1448,7 +1448,7 @@
           "title": "Nobody Wanted To Miss The Next Second #SlapFight #SlapFighting #PowerSlap #Viral #CombatSports.",
           "uploaded_at": "2026-09-13T14:13:36Z",
           "thumbnail": "https://i.ytimg.com/vi/jcBToYBlKTA/mqdefault.jpg",
-          "views": 29042,
+          "views": 29208,
           "likes": 361,
           "comments": 3,
           "subscribers_gained": 7
@@ -1503,8 +1503,8 @@
           "title": "He Was Not Backing Down From Anyone #SlapFight #PowerSlap #SlapFighting #Viral #Sports.",
           "uploaded_at": "2026-09-11T16:04:35Z",
           "thumbnail": "https://i.ytimg.com/vi/t5oF0IsXkN0/mqdefault.jpg",
-          "views": 45393,
-          "likes": 376,
+          "views": 45451,
+          "likes": 377,
           "comments": 1,
           "subscribers_gained": 39
         },
@@ -2476,9 +2476,9 @@
       "color": "#EC4899",
       "avatar_url": "https://yt3.ggpht.com/pqIrk9GBtAR6cdyBH5C_kHNWA1jlu4VT9ZLKxdYTFW6IvVQLWbtFO3OUxrSV1Jm1SR0JAyTrAA=s240-c-k-c0x00ffffff-no-rj",
       "subscribers": 8,
-      "total_views": 17767,
+      "total_views": 18216,
       "channel_total_videos": 15,
-      "avg_views_per_video": 1445,
+      "avg_views_per_video": 1446,
       "engagement_rate": 1.0,
       "total_likes": 191,
       "analytics": {
@@ -2673,7 +2673,7 @@
           "title": "From First Color To Final Masterpiece #Painting #ArtTransformation #ArtReels #Artist #Viral.",
           "uploaded_at": "2026-09-13T21:06:49Z",
           "thumbnail": "https://i.ytimg.com/vi/3ee4FdtH10w/mqdefault.jpg",
-          "views": 1435,
+          "views": 1442,
           "likes": 13,
           "comments": 0,
           "subscribers_gained": 1
@@ -2717,7 +2717,7 @@
           "title": "Every Stroke Brings The Scene Closer To Life #Painting #ArtReels #Artist #ArtTransformation #Satisfy",
           "uploaded_at": "2026-09-11T09:08:18Z",
           "thumbnail": "https://i.ytimg.com/vi/23fs8X8RlyM/mqdefault.jpg",
-          "views": 1305,
+          "views": 1302,
           "likes": 8,
           "comments": 0,
           "subscribers_gained": 0
@@ -4076,7 +4076,7 @@
       "subscribers": 17,
       "total_views": 27647,
       "channel_total_videos": 33,
-      "avg_views_per_video": 929,
+      "avg_views_per_video": 931,
       "engagement_rate": 0.8,
       "total_likes": 232,
       "analytics": {
@@ -4282,7 +4282,7 @@
           "title": "Hollywood's Biggest Secret Revealed Behind Closed Doors #BehindTheScenes #Hollywood #MovieMagic #Fil",
           "uploaded_at": "2026-09-13T12:05:10Z",
           "thumbnail": "https://i.ytimg.com/vi/zi3GOAA3zqA/mqdefault.jpg",
-          "views": 600,
+          "views": 660,
           "likes": 5,
           "comments": 0,
           "subscribers_gained": 0
