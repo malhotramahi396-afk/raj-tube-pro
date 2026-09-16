@@ -33,7 +33,8 @@
 
 html {
   overflow-x: hidden;
-  max-width: 100vw;
+  max-width: 100%;
+  width: 100%;
 }
 
 body.yt-studio-theme {
@@ -43,7 +44,7 @@ body.yt-studio-theme {
   font-size: 14px;
   line-height: 1.5;
   overflow-x: hidden;
-  max-width: 100vw;
+  max-width: 100%;
   width: 100%;
   -webkit-font-smoothing: antialiased;
 }
@@ -779,6 +780,8 @@ button {
 .metric-rows-table {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .m-row {
@@ -788,6 +791,10 @@ button {
   padding: 10px 0;
   border-bottom: 1px solid var(--yt-border-subtle);
   font-size: 13.5px;
+  min-width: 0;
+  width: 100%;
+  box-sizing: border-box;
+  gap: 10px;
 }
 
 .m-row:last-child {
@@ -796,11 +803,15 @@ button {
 
 .m-label {
   color: var(--yt-text-secondary);
+  flex-shrink: 0;
 }
 
 .m-val {
   color: var(--yt-text-primary);
   font-weight: 500;
+  text-align: right;
+  word-break: break-word;
+  min-width: 0;
 }
 
 .m-val.highlight {
@@ -1639,8 +1650,10 @@ button {
 
 .analytics-cards-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
   gap: 20px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .card-subtitle {
@@ -2993,7 +3006,7 @@ body.sheet-open {
   align-items: flex-start;
   gap: 20px;
   flex: 1;
-  min-width: 300px;
+  min-width: 0;
 }
 
 .radar-pulse-radar {
@@ -3051,7 +3064,8 @@ body.sheet-open {
   padding: 16px;
   border-radius: 8px;
   border: 1px solid rgba(255, 255, 255, 0.08);
-  min-width: 280px;
+  min-width: 0;
+  box-sizing: border-box;
 }
 
 .radar-stat-box {
@@ -3077,9 +3091,11 @@ body.sheet-open {
 /* 10 CHANNELS RADAR GRID */
 .radar-channels-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr));
   gap: 18px;
   margin-top: 18px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .radar-channel-card {
@@ -4104,9 +4120,264 @@ body.sheet-open {
 }
 
 /* ========================================================
-   MOBILE PHONE RESPONSIVE ADJUSTMENTS (<= 768px & <= 480px)
+   COMPREHENSIVE MOBILE VIEWPORT ZERO-OVERFLOW ENGINE
+   (<= 900px, <= 768px & <= 480px)
    ======================================================== */
 @media (max-width: 900px) {
+  /* Prevent any horizontal overflow on any container */
+  html, body, .studio-app-shell, .studio-main, .tab-view {
+    max-width: 100% !important;
+    width: 100% !important;
+    overflow-x: hidden !important;
+    box-sizing: border-box !important;
+  }
+
+  .studio-main {
+    padding: 10px 10px 76px 10px !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    overflow-x: hidden !important;
+    box-sizing: border-box !important;
+  }
+
+  .yt-card {
+    max-width: 100% !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+  }
+
+  .yt-card-header {
+    padding: 12px 14px !important;
+  }
+
+  .yt-card-header > div {
+    flex-wrap: wrap !important;
+    gap: 8px !important;
+  }
+
+  .yt-card-body {
+    padding: 14px 14px !important;
+  }
+
+  /* Universal Metric Row Auto-Wrap on Mobile (Fixes IP widget, Settings, Post-now, Latest Video) */
+  .metric-rows-table {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .m-row {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: flex-start !important;
+    flex-wrap: wrap !important;
+    gap: 4px 10px !important;
+    padding: 8px 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    min-width: 0 !important;
+  }
+
+  .m-label {
+    font-size: 12.5px !important;
+    flex-shrink: 0 !important;
+    max-width: 100% !important;
+  }
+
+  .m-val {
+    font-size: 12.5px !important;
+    text-align: right !important;
+    word-break: break-word !important;
+    overflow-wrap: anywhere !important;
+    flex: 1 1 auto !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+  }
+
+  /* 1. CLOUD RUNNER IP & GEOLOCATION RADAR WIDGET (DASHBOARD) */
+  .widget-runner-radar {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .runner-radar-hero-box {
+    padding: 10px 12px !important;
+    gap: 12px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .runner-flag-badge {
+    width: 44px !important;
+    height: 44px !important;
+    font-size: 26px !important;
+  }
+
+  .runner-hero-meta {
+    min-width: 0 !important;
+    flex: 1 1 0% !important;
+  }
+
+  .runner-ip-display {
+    min-width: 0 !important;
+    flex-wrap: wrap !important;
+    gap: 6px !important;
+  }
+
+  .runner-ip-code {
+    font-size: 16px !important;
+    word-break: break-all !important;
+  }
+
+  .runner-geo-location {
+    font-size: 11.5px !important;
+    word-break: break-word !important;
+  }
+
+  .runner-card-actions {
+    flex-direction: column !important;
+    width: 100% !important;
+    gap: 8px !important;
+  }
+
+  .runner-card-actions a.yt-btn-primary,
+  .runner-card-actions button.yt-btn-flat {
+    width: 100% !important;
+    justify-content: center !important;
+    text-align: center !important;
+    box-sizing: border-box !important;
+  }
+
+  /* 2. DEDICATED IP & GEOLOCATION RADAR TAB */
+  .radar-hero-card {
+    margin-top: 10px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .radar-hero-body {
+    flex-direction: column !important;
+    padding: 14px 12px !important;
+    gap: 14px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .radar-hero-left {
+    min-width: 0 !important;
+    width: 100% !important;
+    gap: 12px !important;
+  }
+
+  .radar-pulse-radar {
+    width: 46px !important;
+    height: 46px !important;
+  }
+
+  .radar-pulse-core {
+    font-size: 20px !important;
+  }
+
+  .radar-hero-text .hero-title {
+    font-size: 16px !important;
+  }
+
+  .radar-hero-text .hero-desc {
+    font-size: 12px !important;
+  }
+
+  .radar-hero-stats {
+    min-width: 0 !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    padding: 12px !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  .radar-stat-num {
+    font-size: 20px !important;
+  }
+
+  .radar-channels-grid {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    gap: 12px !important;
+    box-sizing: border-box !important;
+  }
+
+  .radar-channel-card {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    padding: 12px 12px !important;
+    border-radius: 10px !important;
+  }
+
+  .radar-card-header {
+    width: 100% !important;
+    min-width: 0 !important;
+    gap: 8px !important;
+  }
+
+  .radar-card-header .ch-health-title-box {
+    min-width: 0 !important;
+    flex: 1 1 0% !important;
+  }
+
+  .radar-card-header .ch-health-name {
+    font-size: 13.5px !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+  }
+
+  .radar-card-header .ch-health-handle {
+    font-size: 11px !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+  }
+
+  .radar-ip-box {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    padding: 8px 10px !important;
+    gap: 8px !important;
+  }
+
+  .radar-ip-flag {
+    font-size: 22px !important;
+  }
+
+  .radar-ip-info {
+    min-width: 0 !important;
+    flex: 1 1 0% !important;
+  }
+
+  .radar-ip-mono {
+    font-size: 14.5px !important;
+    word-break: break-all !important;
+  }
+
+  .radar-card-footer a.yt-btn-primary.full-width {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    font-size: 12.5px !important;
+    padding: 8px 10px !important;
+    justify-content: center !important;
+    text-align: center !important;
+  }
+
+  /* 3. CHANNEL HEALTH RADAR */
   .health-radar-grid {
     display: flex !important;
     flex-direction: column !important;
@@ -4115,6 +4386,7 @@ body.sheet-open {
     gap: 14px !important;
     box-sizing: border-box !important;
   }
+
   .channel-health-card {
     width: 100% !important;
     max-width: 100% !important;
@@ -4122,40 +4394,201 @@ body.sheet-open {
     padding: 14px 14px !important;
     border-radius: 12px !important;
   }
+
   .health-item-row {
     width: 100% !important;
     max-width: 100% !important;
     box-sizing: border-box !important;
   }
+
   .health-item-info {
     flex: 1 1 0% !important;
     min-width: 0 !important;
   }
+
   .health-pill {
     flex-shrink: 0 !important;
     white-space: nowrap !important;
+  }
+
+  /* 4. INSTANT POST CONSOLE (TAB 8) */
+  .postnow-cta-banner {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    padding: 14px 14px !important;
+    gap: 12px !important;
+  }
+
+  .postnow-open-btn {
+    width: 100% !important;
+    justify-content: center !important;
+    text-align: center !important;
+    box-sizing: border-box !important;
+  }
+
+  .postnow-console-layout {
+    grid-template-columns: 1fr !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    gap: 16px !important;
+  }
+
+  .postnow-channel-grid {
+    max-height: 280px !important;
+    width: 100% !important;
+  }
+
+  .postnow-ch-card {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    padding: 10px 10px !important;
+    gap: 10px !important;
+  }
+
+  .postnow-stage-card {
+    padding: 14px 12px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .postnow-selected-header {
+    flex-wrap: wrap !important;
+    gap: 10px !important;
+    padding-bottom: 12px !important;
+  }
+
+  .postnow-selected-header > div {
+    min-width: 0 !important;
+    flex: 1 1 0% !important;
+  }
+
+  .postnow-stage-name {
+    font-size: 15px !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+  }
+
+  .postnow-stage-meta {
+    font-size: 11.5px !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+  }
+
+  .postnow-selected-header .health-pill {
+    align-self: flex-start !important;
+    font-size: 9.5px !important;
+    padding: 2px 6px !important;
+  }
+
+  .postnow-preview-box {
+    padding: 12px 10px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .preview-video-title {
+    font-size: 13.5px !important;
+  }
+
+  .postnow-execute-wrap button {
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  /* 5. ANALYTICS GRID */
+  .analytics-cards-grid {
+    grid-template-columns: 1fr !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    gap: 12px !important;
+  }
+
+  .chart-wrapper {
+    height: 220px !important;
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+
+  /* 6. QUEUE GRID */
+  .queue-cards-grid {
+    grid-template-columns: 1fr !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    gap: 12px !important;
+  }
+
+  .queue-channel-card {
+    padding: 14px 12px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  /* 7. CHANNEL SWITCHER DROPDOWN */
+  .channel-dropdown {
+    width: calc(100vw - 24px) !important;
+    max-width: 340px !important;
+    right: 12px !important;
+    left: 12px !important;
+    margin: 0 auto !important;
+    box-sizing: border-box !important;
+  }
+
+  /* 8. CONTENT TAB SUBTABS SCROLL */
+  .content-subtabs {
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+    flex-wrap: nowrap !important;
+    max-width: 100% !important;
+    gap: 6px !important;
+    padding-bottom: 4px !important;
+  }
+
+  .content-subtabs::-webkit-scrollbar {
+    display: none !important;
+  }
+
+  .content-search-wrap {
+    min-width: 0 !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
   }
 }
 
 @media (max-width: 768px) {
   .content-safety-banner {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 8px;
-    padding: 10px 14px;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 8px !important;
+    padding: 10px 14px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
   }
+
   .safety-title {
-    white-space: normal;
+    white-space: normal !important;
   }
+
   .safety-badge {
-    align-self: flex-start;
+    align-self: flex-start !important;
   }
+
   .copyright-radar-hero {
-    flex-direction: column;
-    gap: 8px;
+    flex-direction: column !important;
+    gap: 8px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
   }
+
   .flagged-videos-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
   }
 }
 
@@ -4167,41 +4600,64 @@ body.sheet-open {
     max-width: 100% !important;
     gap: 12px !important;
   }
+
   .channel-health-card {
     width: 100% !important;
     max-width: 100% !important;
     padding: 12px 12px !important;
   }
+
   .health-item-row {
     gap: 8px !important;
     padding: 8px 0 !important;
   }
+
   .health-item-icon {
     width: 26px !important;
     height: 26px !important;
     min-width: 26px !important;
   }
+
   .health-item-icon svg {
     width: 14px !important;
     height: 14px !important;
   }
+
   .health-item-title {
     font-size: 12px !important;
   }
+
   .health-item-desc {
     font-size: 10.5px !important;
   }
+
   .health-pill {
     font-size: 9.5px !important;
     padding: 2px 6px !important;
     flex-shrink: 0 !important;
   }
+
   .flagged-video-card {
-    flex-direction: column;
+    flex-direction: column !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
   }
+
   .flagged-card-thumb-wrap {
-    width: 100%;
-    height: 120px;
+    width: 100% !important;
+    height: 120px !important;
+  }
+
+  .m-row {
+    padding: 6px 0 !important;
+  }
+
+  .m-label {
+    font-size: 12px !important;
+  }
+
+  .m-val {
+    font-size: 12px !important;
   }
 }
 
