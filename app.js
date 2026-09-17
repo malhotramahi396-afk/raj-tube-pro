@@ -1287,22 +1287,22 @@ function getDefaultAnalytics(chId) {
   if (chId === 'channel_1') {
     return {
       top_countries: [
-        { country: "United States", flag: "🇺🇸", percent: 48.2 },
-        { country: "India", flag: "🇮🇳", percent: 21.4 },
-        { country: "United Kingdom", flag: "🇬🇧", percent: 11.6 },
-        { country: "Canada", flag: "🇨🇦", percent: 8.3 },
-        { country: "Germany", flag: "🇩🇪", percent: 4.7 },
-        { country: "Other countries", flag: "🌐", percent: 5.8 }
+        { country: "India", flag: "🇮🇳", percent: 17.5 },
+        { country: "Uzbekistan", flag: "🇺🇿", percent: 6.1 },
+        { country: "Indonesia", flag: "🇮🇩", percent: 3.3 },
+        { country: "United States", flag: "🇺🇸", percent: 3.1 },
+        { country: "Myanmar (Burma)", flag: "🇲🇲", percent: 2.3 },
+        { country: "Other countries", flag: "🌐", percent: 67.7 }
       ],
       age_distribution: [
-        { range: "13–17 years", percent: 3.5 },
-        { range: "18–24 years", percent: 34.2 },
-        { range: "25–34 years", percent: 44.8 },
-        { range: "35–44 years", percent: 11.6 },
-        { range: "45–54 years", percent: 4.1 },
-        { range: "55+ years", percent: 1.8 }
+        { range: "18–24 years", percent: 9.8 },
+        { range: "25–34 years", percent: 29.4 },
+        { range: "35–44 years", percent: 20.3 },
+        { range: "45–54 years", percent: 13.5 },
+        { range: "55–64 years", percent: 12.7 },
+        { range: "65+ years", percent: 14.3 }
       ],
-      gender: { male: 68.4, female: 31.6 },
+      gender: { male: 74.2, female: 25.8 },
       traffic_sources: [
         { source: "Shorts feed", icon: "📱", percent: 82.4 },
         { source: "YouTube search", icon: "🔍", percent: 10.2 },
