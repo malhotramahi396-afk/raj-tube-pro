@@ -481,12 +481,20 @@ function populateChannelSwitcher(channels) {
   channels.forEach(ch => {
     const opt = document.createElement('button');
     opt.className = `channel-opt-item ${currentChannelId === ch.id ? 'active' : ''}`;
+    const isTerminated = ch.is_terminated || ch.is_suspended || (ch.health && ch.health.view_health_badge === 'TERMINATED');
     const vCount = ch.channel_total_videos || (ch.uploaded_videos ? ch.uploaded_videos.length : 0);
+    const badgeHtml = isTerminated 
+      ? `<span style="background:#EF4444; color:#fff; font-size:10px; padding:2px 6px; border-radius:4px; font-weight:700; margin-left:6px;">DELETED BY YT</span>` 
+      : '';
+    const metaHtml = isTerminated
+      ? `<div class="opt-meta" style="color:#EF4444; font-weight:600;">⚠️ Account Terminated / Deleted by YouTube</div>`
+      : `<div class="opt-meta">${ch.handle} • ${vCount} Videos • ${formatNumber(ch.total_views)} views</div>`;
+
     opt.innerHTML = `
-      <img src="${ch.avatar_url}" alt="${ch.name}" />
+      <img src="${ch.avatar_url}" alt="${ch.name}" style="${isTerminated ? 'filter: grayscale(1); opacity: 0.6;' : ''}" />
       <div class="opt-details">
-        <div class="opt-name">${ch.name}</div>
-        <div class="opt-meta">${ch.handle} • ${vCount} Videos • ${formatNumber(ch.total_views)} views</div>
+        <div class="opt-name">${ch.name} ${badgeHtml}</div>
+        ${metaHtml}
       </div>
     `;
     opt.addEventListener('click', () => selectChannel(ch.id));
@@ -1920,38 +1928,40 @@ function renderHealthView() {
   grid.innerHTML = '';
 
   globalData.channels.forEach(ch => {
+    const isTerminated = ch.is_terminated || ch.is_suspended || (ch.health && ch.health.view_health_badge === 'TERMINATED');
     const h = ch.health || {};
-    const score = h.overall_score || 98;
+    const score = isTerminated ? 0 : (h.overall_score || 98);
     const vHealth = h.view_health || {};
     const strikes = h.strikes || {};
     const copyright = h.copyright || {};
-    const isChClean = copyright.is_clean !== false;
+    const isChClean = !isTerminated && copyright.is_clean !== false;
     const chFlagged = copyright.flagged_videos || [];
 
     const card = document.createElement('div');
     card.className = `channel-health-card ${isChClean ? '' : 'card-health-attention'}`;
+    card.style = isTerminated ? 'border: 1px solid rgba(239, 68, 68, 0.4); background: rgba(239, 68, 68, 0.03);' : '';
     card.innerHTML = `
       <div class="channel-health-card-header">
         <div class="ch-health-title-box">
-          <img src="${ch.avatar_url}" class="ch-health-avatar" alt="${ch.name}" />
+          <img src="${ch.avatar_url}" class="ch-health-avatar" alt="${ch.name}" style="${isTerminated ? 'filter: grayscale(1); opacity: 0.5;' : ''}" />
           <div>
-            <div class="ch-health-name">${ch.name}</div>
+            <div class="ch-health-name">${ch.name} ${isTerminated ? '<span style="background:#EF4444; color:#fff; font-size:10px; padding:2px 6px; border-radius:4px; font-weight:700; margin-left:6px;">DELETED BY YT</span>' : ''}</div>
             <div class="ch-health-handle">${ch.handle}</div>
           </div>
         </div>
-        <span class="health-pill ${isChClean ? 'badge-passed' : 'badge-failed'}">SCORE: ${score}/100</span>
+        <span class="health-pill ${isChClean ? 'badge-passed' : 'badge-failed'}">${isTerminated ? 'TERMINATED' : `SCORE: ${score}/100`}</span>
       </div>
 
       <!-- Strikes Status -->
       <div class="health-item-row">
-        <div class="health-item-icon text-green">
+        <div class="health-item-icon ${isTerminated ? 'text-red' : 'text-green'}">
           <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
         </div>
         <div class="health-item-info">
           <div class="health-item-title">Community Guidelines</div>
-          <div class="health-item-desc">0 of 3 active strikes • Clean Standing</div>
+          <div class="health-item-desc" style="${isTerminated ? 'color:#EF4444; font-weight:600;' : ''}">${isTerminated ? 'Account Suspended / Deleted by YouTube' : '0 of 3 active strikes • Clean Standing'}</div>
         </div>
-        <span class="health-pill badge-passed">0 STRIKES</span>
+        <span class="health-pill ${isTerminated ? 'badge-failed' : 'badge-passed'}">${isTerminated ? 'TERMINATED' : '0 STRIKES'}</span>
       </div>
 
       <!-- Copyright Status -->

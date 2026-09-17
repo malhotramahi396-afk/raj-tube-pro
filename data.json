@@ -1,13 +1,13 @@
 {
   "app_name": "Raj Tube Pro",
   "version": "6.1.0",
-  "timestamp": "2026-09-17T19:20:03.600983+00:00",
+  "timestamp": "2026-09-17T19:24:13.209824+00:00",
   "schedule": {
     "next_slot_iso": "2026-09-18T08:00:00+00:00",
-    "seconds_remaining": 45596,
-    "formatted_countdown": "12h 39m 56s",
+    "seconds_remaining": 45346,
+    "formatted_countdown": "12h 35m 46s",
     "slot_label": "01:30 PM IST Tomorrow (Lunch Break)",
-    "now_ist": "18 Sep, 12:50 AM IST"
+    "now_ist": "18 Sep, 12:54 AM IST"
   },
   "summary": {
     "total_channels": 10,
@@ -15,7 +15,7 @@
     "total_in_queue": 1171,
     "total_subscribers": 413,
     "total_views": 434680,
-    "total_likes": 3746,
+    "total_likes": 3747,
     "network_engagement": 0.8,
     "total_runway_days": 58.5,
     "system_health": "All Systems Operational",
@@ -745,7 +745,7 @@
           "title": "Extreme Wildlife Cameraman POV #animalencounter #shorts #viralvideo #wildlife",
           "uploaded_at": "2026-09-14T14:07:40Z",
           "thumbnail": "https://i.ytimg.com/vi/8RpJqvOH1bQ/mqdefault.jpg",
-          "views": 26003,
+          "views": 26004,
           "likes": 157,
           "comments": 1,
           "upload_status": "processed",
@@ -981,7 +981,8 @@
         "verified_at": "2026-09-17T14:07:13.722466+00:00",
         "verify_url": "https://ipinfo.io/57.154.7.97"
       },
-      "is_active": true
+      "is_active": true,
+      "is_terminated": false
     },
     {
       "id": "channel_10",
@@ -1174,7 +1175,7 @@
         "title": "Grandma Changed The Whole Tournament With Incredible Skill #GrandmaGamer #Esports #Gaming #GamingLeg",
         "uploaded_at": "2026-09-17T14:04:34Z",
         "thumbnail": "https://i.ytimg.com/vi/EiKNndBaH8c/mqdefault.jpg",
-        "views": 14,
+        "views": 15,
         "likes": 0,
         "comments": 0,
         "upload_status": "processed",
@@ -1197,7 +1198,7 @@
           "title": "Grandma Changed The Whole Tournament With Incredible Skill #GrandmaGamer #Esports #Gaming #GamingLeg",
           "uploaded_at": "2026-09-17T14:04:34Z",
           "thumbnail": "https://i.ytimg.com/vi/EiKNndBaH8c/mqdefault.jpg",
-          "views": 14,
+          "views": 15,
           "likes": 0,
           "comments": 0,
           "upload_status": "processed",
@@ -1895,7 +1896,8 @@
         "verified_at": "2026-09-17T14:04:10.957515+00:00",
         "verify_url": "https://ipinfo.io/64.236.192.147"
       },
-      "is_active": true
+      "is_active": true,
+      "is_terminated": false
     },
     {
       "id": "channel_2",
@@ -1910,7 +1912,7 @@
       "subscribers": 170,
       "total_views": 201413,
       "channel_total_videos": 23,
-      "avg_views_per_video": 9065,
+      "avg_views_per_video": 9068,
       "engagement_rate": 0.8,
       "total_likes": 1640,
       "analytics": {
@@ -2100,7 +2102,7 @@
         "title": "That Championship Belt Changed The Whole Faceoff #PowerSlap #SlapFight #Championship #CombatSports #",
         "uploaded_at": "2026-09-17T14:11:02Z",
         "thumbnail": "https://i.ytimg.com/vi/D8s-tKl9wSg/mqdefault.jpg",
-        "views": 912,
+        "views": 959,
         "likes": 24,
         "comments": 3,
         "upload_status": "processed",
@@ -2123,7 +2125,7 @@
           "title": "That Championship Belt Changed The Whole Faceoff #PowerSlap #SlapFight #Championship #CombatSports #",
           "uploaded_at": "2026-09-17T14:11:02Z",
           "thumbnail": "https://i.ytimg.com/vi/D8s-tKl9wSg/mqdefault.jpg",
-          "views": 912,
+          "views": 959,
           "likes": 24,
           "comments": 3,
           "upload_status": "processed",
@@ -2145,7 +2147,7 @@
           "title": "That Belt Is The Prize Everyone Wants #PowerSlap #SlapFight #Championship #CombatSports #FYP.",
           "uploaded_at": "2026-09-16T21:10:07Z",
           "thumbnail": "https://i.ytimg.com/vi/LM4pQ-P7QkI/mqdefault.jpg",
-          "views": 1507,
+          "views": 1517,
           "likes": 17,
           "comments": 1,
           "upload_status": "processed",
@@ -2189,7 +2191,7 @@
           "title": "One Table One Belt And Huge Pressure #SlapFight #PowerSlap #Championship #CombatSports #FYP.",
           "uploaded_at": "2026-09-15T21:09:27Z",
           "thumbnail": "https://i.ytimg.com/vi/74d1M_ceEM0/mqdefault.jpg",
-          "views": 44767,
+          "views": 44786,
           "likes": 357,
           "comments": 11,
           "upload_status": "processed",
@@ -2299,7 +2301,7 @@
           "title": "Nobody Was Laughing After This Faceoff #PowerSlap #SlapFighting #SlapFight #Viral #FightNight.",
           "uploaded_at": "2026-09-13T21:09:17Z",
           "thumbnail": "https://i.ytimg.com/vi/kdh_Ba5O-UU/mqdefault.jpg",
-          "views": 1562,
+          "views": 1561,
           "likes": 16,
           "comments": 1,
           "upload_status": "processed",
@@ -2667,7 +2669,8 @@
         "verified_at": "2026-09-17T14:10:46.627090+00:00",
         "verify_url": "https://ipinfo.io/48.211.210.116"
       },
-      "is_active": true
+      "is_active": true,
+      "is_terminated": false
     },
     {
       "id": "channel_3",
@@ -3439,7 +3442,8 @@
         "verified_at": "2026-09-17T14:17:04.457299+00:00",
         "verify_url": "https://ipinfo.io/20.168.111.71"
       },
-      "is_active": true
+      "is_active": true,
+      "is_terminated": false
     },
     {
       "id": "channel_4",
@@ -4189,7 +4193,8 @@
         "verified_at": "2026-09-17T14:08:07.093542+00:00",
         "verify_url": "https://ipinfo.io/64.236.142.145"
       },
-      "is_active": true
+      "is_active": true,
+      "is_terminated": false
     },
     {
       "id": "channel_5",
@@ -4204,9 +4209,9 @@
       "subscribers": 16,
       "total_views": 21841,
       "channel_total_videos": 20,
-      "avg_views_per_video": 1184,
+      "avg_views_per_video": 1187,
       "engagement_rate": 1.0,
-      "total_likes": 249,
+      "total_likes": 250,
       "analytics": {
         "watch_time_hours": 96.7,
         "avg_view_duration": "0:24",
@@ -4394,8 +4399,8 @@
         "title": "He Found The Perfect Spot To Paint This View #StreetArt #Painting #Artist #ArtReels #Creative.",
         "uploaded_at": "2026-09-17T14:07:32Z",
         "thumbnail": "https://i.ytimg.com/vi/88cO37UjZ7w/mqdefault.jpg",
-        "views": 758,
-        "likes": 22,
+        "views": 795,
+        "likes": 23,
         "comments": 0,
         "upload_status": "processed",
         "privacy_status": "public",
@@ -4417,8 +4422,8 @@
           "title": "He Found The Perfect Spot To Paint This View #StreetArt #Painting #Artist #ArtReels #Creative.",
           "uploaded_at": "2026-09-17T14:07:32Z",
           "thumbnail": "https://i.ytimg.com/vi/88cO37UjZ7w/mqdefault.jpg",
-          "views": 758,
-          "likes": 22,
+          "views": 795,
+          "likes": 23,
           "comments": 0,
           "upload_status": "processed",
           "privacy_status": "public",
@@ -4439,7 +4444,7 @@
           "title": "He Captured The Entire Scene On One Canvas #Painting #Artist #ArtReels #StreetArt #Viral.",
           "uploaded_at": "2026-09-16T21:06:48Z",
           "thumbnail": "https://i.ytimg.com/vi/oHD72N-B63M/mqdefault.jpg",
-          "views": 855,
+          "views": 861,
           "likes": 8,
           "comments": 0,
           "upload_status": "processed",
@@ -4461,7 +4466,7 @@
           "title": "He Captured A Famous Landmark With Just Paint #Painting #Artist #Architecture #ArtReels #ViralArt.",
           "uploaded_at": "2026-09-16T14:07:52Z",
           "thumbnail": "https://i.ytimg.com/vi/dIjwAvkghGo/mqdefault.jpg",
-          "views": 73,
+          "views": 86,
           "likes": 1,
           "comments": 0,
           "upload_status": "processed",
@@ -4895,7 +4900,8 @@
         "verified_at": "2026-09-17T14:07:17.405346+00:00",
         "verify_url": "https://ipinfo.io/20.80.108.161"
       },
-      "is_active": true
+      "is_active": true,
+      "is_terminated": false
     },
     {
       "id": "channel_6",
@@ -4910,7 +4916,7 @@
       "subscribers": 32,
       "total_views": 16308,
       "channel_total_videos": 36,
-      "avg_views_per_video": 503,
+      "avg_views_per_video": 504,
       "engagement_rate": 1.1,
       "total_likes": 192,
       "analytics": {
@@ -5199,7 +5205,7 @@
           "title": "Every Champion Has A Beginning When Nobody Believed #Football #Soccer #FootballStory #FootballLife #",
           "uploaded_at": "2026-09-15T14:06:53Z",
           "thumbnail": "https://i.ytimg.com/vi/vy8pD5LTR0Q/mqdefault.jpg",
-          "views": 698,
+          "views": 702,
           "likes": 3,
           "comments": 0,
           "upload_status": "processed",
@@ -5941,7 +5947,8 @@
         "verified_at": "2026-09-17T14:07:34.532399+00:00",
         "verify_url": "https://ipinfo.io/172.203.196.184"
       },
-      "is_active": true
+      "is_active": true,
+      "is_terminated": false
     },
     {
       "id": "channel_7",
@@ -6085,46 +6092,17 @@
         "peak_hours": "5:00 PM – 10:00 PM IST (Global Family & Pet Lovers Window)"
       },
       "health": {
-        "overall_score": 97,
-        "verdict": "Flawless (Optimal Standing)",
-        "verdict_color": "#10B981",
-        "shield_icon": "🛡️",
-        "strikes": {
-          "count": 0,
-          "max": 3,
-          "status": "0 of 3 active strikes • Channel Active & Public (YouTube API Verified)",
-          "badge": "CLEAN",
-          "is_clean": true
-        },
-        "copyright": {
-          "count": 0,
-          "status": "0 copyright restrictions across 10 videos • 100% Active & Public (YouTube API Verified)",
-          "badge": "100% CLEAN",
-          "color": "#10B981",
-          "is_clean": true,
-          "flagged_videos": []
-        },
-        "view_health": {
-          "label": "Algorithm Indexing: 10 videos uploaded, initial views synchronizing",
-          "badge": "INDEXING",
-          "color": "#A855F7",
-          "avg_views": 0.0,
-          "shorts_feed_share": "81.2%",
-          "velocity_verdict": "Algorithm Reach: Healthy"
-        },
-        "compliance": {
-          "label": "YouTube Policy: AI Disclosure & COPPA Guard Active (Self-Declared)",
-          "badge": "100% OK",
-          "synthetic_media": "Self-Declared True (Compliant)",
-          "coppa_kids": "Declared False (General Audience)",
-          "is_compliant": true
-        },
-        "upload_engine": {
-          "latest_run": "failed",
-          "queue_health": "Healthy Runway",
-          "runway_days": 25.5,
-          "total_uploaded": 10
-        }
+        "overall_score": 0,
+        "verdict": "Channel Terminated / Deleted by YouTube",
+        "verdict_color": "#EF4444",
+        "view_health_badge": "TERMINATED",
+        "view_health_label": "Account Deleted / Suspended by YouTube",
+        "view_health_color": "#EF4444",
+        "copyright_status": "Account Terminated / Deleted by YouTube",
+        "copyright_badge": "TERMINATED",
+        "copyright_color": "#EF4444",
+        "strikes_status": "Account Suspended / Terminated by YouTube",
+        "is_clean": false
       },
       "drive_folder_id": "1OLhbVXMLNQqX4vPOi9jYLgQyY5iHwBNl",
       "drive_folder_url": "https://drive.google.com/drive/folders/1OLhbVXMLNQqX4vPOi9jYLgQyY5iHwBNl",
@@ -6357,7 +6335,12 @@
         "verified_at": "2026-09-17T14:10:54.700699+00:00",
         "verify_url": "https://ipinfo.io/134.33.78.217"
       },
-      "is_active": true
+      "is_active": false,
+      "is_terminated": true,
+      "is_suspended": true,
+      "status_badge": "TERMINATED",
+      "status_label": "Channel Terminated / Deleted by YouTube",
+      "status_color": "#EF4444"
     },
     {
       "id": "channel_8",
@@ -6621,7 +6604,7 @@
           "title": "How Hollywood Really Made This Scene Behind Closed Doors #BehindTheScenes #Hollywood #MovieMagic #Fi",
           "uploaded_at": "2026-09-16T14:12:44Z",
           "thumbnail": "https://i.ytimg.com/vi/pQUvVSUgprI/mqdefault.jpg",
-          "views": 445,
+          "views": 452,
           "likes": 6,
           "comments": 0,
           "upload_status": "processed",
@@ -7451,7 +7434,8 @@
         "verified_at": "2026-09-17T14:13:05.978973+00:00",
         "verify_url": "https://ipinfo.io/57.154.5.248"
       },
-      "is_active": true
+      "is_active": true,
+      "is_terminated": false
     },
     {
       "id": "channel_9",
@@ -8351,7 +8335,8 @@
         "verified_at": "2026-09-17T14:06:06.167846+00:00",
         "verify_url": "https://ipinfo.io/20.189.188.5"
       },
-      "is_active": true
+      "is_active": true,
+      "is_terminated": false
     }
   ]
 }
