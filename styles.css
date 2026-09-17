@@ -2447,6 +2447,53 @@ body.sheet-open {
   font-size: 12px;
 }
 
+.content-toolbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.btn-live-sync-content {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background: linear-gradient(135deg, rgba(62, 166, 255, 0.15) 0%, rgba(37, 99, 235, 0.25) 100%);
+  color: #3ea6ff;
+  border: 1px solid rgba(62, 166, 255, 0.45);
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 12.5px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  user-select: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  white-space: nowrap;
+}
+
+.btn-live-sync-content:hover {
+  background: linear-gradient(135deg, #3ea6ff 0%, #2563eb 100%);
+  color: #ffffff;
+  border-color: #3ea6ff;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 14px rgba(62, 166, 255, 0.35);
+}
+
+.btn-live-sync-content:active {
+  transform: translateY(0);
+}
+
+.btn-live-sync-content.spinning .sync-icon-svg {
+  animation: ytSpin 0.9s linear infinite;
+}
+
+.sync-icon-svg {
+  transition: transform 0.2s;
+  flex-shrink: 0;
+}
+
 /* Floating Batch Action Bar */
 .table-batch-bar {
   display: flex;
@@ -2879,6 +2926,20 @@ body.sheet-open {
   .content-toolbar {
     flex-direction: column;
     align-items: stretch;
+    gap: 10px;
+  }
+
+  .content-toolbar-actions {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .btn-live-sync-content {
+    width: 100%;
+    justify-content: center;
+    padding: 8px 14px;
   }
 
   .content-search-wrap {
@@ -3091,21 +3152,58 @@ body.sheet-open {
 /* 10 CHANNELS RADAR GRID */
 .radar-channels-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr));
-  gap: 18px;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 350px), 1fr));
+  gap: 16px;
   margin-top: 18px;
   width: 100%;
+  max-width: 100%;
   box-sizing: border-box;
+  min-width: 0;
 }
 
 .radar-channel-card {
   background: var(--yt-bg-surface);
   border: 1px solid var(--yt-border-subtle);
   border-radius: 8px;
-  padding: 18px;
+  padding: 16px;
   transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
   display: flex;
   flex-direction: column;
+  min-width: 0;
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.radar-channel-card .metric-rows-table {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+.radar-channel-card .m-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+.radar-channel-card .m-val {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@media (max-width: 1300px) {
+  .radar-channels-grid {
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr));
+  }
 }
 
 .radar-channel-card:hover {

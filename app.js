@@ -277,19 +277,20 @@ function shouldAcceptIncomingData(incoming, current) {
   if (!current || !current.channels || !current.channels.length) return true;
   if (!incoming || !incoming.channels || !incoming.channels.length) return false;
 
-  const currentViews = (current.summary && current.summary.total_views) || 
-                       current.channels.reduce((sum, c) => sum + (c.total_views || 0), 0);
-  const incomingViews = (incoming.summary && incoming.summary.total_views) || 
-                        incoming.channels.reduce((sum, c) => sum + (c.total_views || 0), 0);
+  // If incoming has a newer or equal timestamp, always accept
+  if (incoming.timestamp && current.timestamp) {
+    if (new Date(incoming.timestamp) >= new Date(current.timestamp)) return true;
+  }
 
   const currentVids = (current.summary && current.summary.total_uploaded) || 
                       current.channels.reduce((sum, c) => sum + (c.uploaded_videos ? c.uploaded_videos.length : 0), 0);
   const incomingVids = (incoming.summary && incoming.summary.total_uploaded) || 
                        incoming.channels.reduce((sum, c) => sum + (c.uploaded_videos ? c.uploaded_videos.length : 0), 0);
 
-  // If incoming static data has fewer views or fewer videos than active live synced telemetry, reject overwrite!
-  if (incomingViews < currentViews || incomingVids < currentVids) {
-    console.log(`[Sync Guard] Preserving newer live data (${currentViews} views, ${currentVids} vids) over older incoming data (${incomingViews} views, ${incomingVids} vids).`);
+  if (incomingVids >= currentVids) return true;
+
+  if (incomingVids < (currentVids / 2)) {
+    console.log(`[Sync Guard] Preserving newer live data (${currentVids} vids) over truncated incoming data (${incomingVids} vids).`);
     return false;
   }
   return true;
@@ -297,6 +298,7 @@ function shouldAcceptIncomingData(incoming, current) {
 
 function setupSync() {
   const syncBtn = document.getElementById('btn-sync');
+  const contentSyncBtn = document.getElementById('btn-content-live-sync');
   const syncBadge = document.getElementById('live-sync-badge');
 
   let isSyncing = false;
@@ -306,37 +308,39 @@ function setupSync() {
     isSyncing = true;
 
     if (syncBtn) syncBtn.classList.add('spinning');
+    if (contentSyncBtn) contentSyncBtn.classList.add('spinning');
     const badgeText = document.getElementById('live-sync-text');
     if (badgeText) badgeText.innerText = 'SYNCING ALL...';
 
-    showToast("⏳ Syncing all 10 channels with live YouTube Data API...");
+    showToast("⏳ Fetching real-time YouTube Data...");
     const activeChannel = currentChannelId;
 
     try {
       let res = null;
+      const isGitHubPages = window.location.origin.includes('github.io');
 
-      // Tier 1: Direct local backend with 20s timeout (allowing full 10-channel live YouTube query)
-      try {
-        const localCtrl = new AbortController();
-        const localTimeout = setTimeout(() => localCtrl.abort(), 20000);
-        res = await fetch('/api/refresh', { signal: localCtrl.signal, cache: 'no-store' });
-        clearTimeout(localTimeout);
-      } catch (_) {}
-
-      // Tier 2: Cloudflare Tunnel live backend (30s timeout for complete 10-channel query)
-      if (!res || !res.ok) {
+      if (!isGitHubPages) {
         try {
-          const tunnelCtrl = new AbortController();
-          const tunnelTimeout = setTimeout(() => tunnelCtrl.abort(), 30000);
-          res = await fetch(`${CLOUD_TUNNEL_API}/api/refresh`, {
-            signal: tunnelCtrl.signal,
-            cache: 'no-store'
-          });
-          clearTimeout(tunnelTimeout);
+          const localCtrl = new AbortController();
+          const localTimeout = setTimeout(() => localCtrl.abort(), 3000);
+          res = await fetch('/api/refresh', { signal: localCtrl.signal, cache: 'no-store' });
+          clearTimeout(localTimeout);
         } catch (_) {}
+
+        if (!res || !res.ok) {
+          try {
+            const tunnelCtrl = new AbortController();
+            const tunnelTimeout = setTimeout(() => tunnelCtrl.abort(), 4000);
+            res = await fetch(`${CLOUD_TUNNEL_API}/api/refresh`, {
+              signal: tunnelCtrl.signal,
+              cache: 'no-store'
+            });
+            clearTimeout(tunnelTimeout);
+          } catch (_) {}
+        }
       }
 
-      // Tier 3: Fetch fresh data.json bypassing all CDN & browser caches
+      // Fetch fresh data.json bypassing all CDN & browser caches
       if (!res || !res.ok) {
         res = await fetch(`./data.json?t=${Date.now()}`, {
           cache: 'no-store',
@@ -352,12 +356,16 @@ function setupSync() {
         const data = await res.json();
         if (data && data.channels && data.channels.length) {
           globalData = data;
-          saveToMasterCache(globalData);
+          try {
+            localStorage.removeItem('raj_tube_pro_master_cache');
+            localStorage.setItem('raj_tube_pro_master_cache', JSON.stringify(data));
+          } catch (e) {}
+
           currentChannelId = activeChannel;
           populateChannelSwitcher(globalData.channels);
           renderAll();
-          updateSyncBadge(globalData.timestamp);
-          showToast("✅ All 10 Channels Synced! (100% Real-Time YouTube Data)");
+          updateSyncBadge(new Date().toISOString());
+          showToast("✅ Real-Time YouTube Data Refreshed! Latest videos loaded.");
         } else {
           showToast("Fleet data updated.");
         }
@@ -370,11 +378,13 @@ function setupSync() {
     } finally {
       isSyncing = false;
       if (syncBtn) syncBtn.classList.remove('spinning');
+      if (contentSyncBtn) contentSyncBtn.classList.remove('spinning');
       updateSyncBadge(globalData ? globalData.timestamp : null);
     }
   };
 
   if (syncBtn) syncBtn.addEventListener('click', triggerSync);
+  if (contentSyncBtn) contentSyncBtn.addEventListener('click', triggerSync);
   if (syncBadge) syncBadge.addEventListener('click', triggerSync);
 }
 

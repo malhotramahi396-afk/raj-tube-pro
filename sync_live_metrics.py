@@ -135,6 +135,43 @@ def sync_runner_nodes(channels: List[Dict[str, Any]]):
                 ch["latest_run_time"] = run_time
                 ch["latest_run_status"] = r_dict.get("status", "success")
                 print(f"  [{ch['name']}] Synced runner IP: {ip} ({r_dict.get('runner_city')}) at {run_time}")
+
+            # Also sync any newly recorded videos from the channel's SQLite DB
+            try:
+                c.execute("SELECT filename, youtube_video_id, uploaded_at, status FROM videos WHERE status = 'uploaded' ORDER BY id DESC LIMIT 50")
+                db_v_rows = c.fetchall()
+                if db_v_rows:
+                    vids = ch.get("uploaded_videos", [])
+                    v_map = {v.get("youtube_id"): v for v in vids if v.get("youtube_id")}
+                    added = 0
+                    for vr in db_v_rows:
+                        y_id = vr["youtube_video_id"]
+                        if y_id and y_id not in v_map:
+                            item = {
+                                "title": vr["filename"].replace(".mp4", "").replace(".mov", "").strip(),
+                                "youtube_id": y_id,
+                                "youtube_url": f"https://youtu.be/{y_id}",
+                                "studio_url": f"https://studio.youtube.com/video/{y_id}/edit",
+                                "uploaded_at": vr["uploaded_at"],
+                                "thumbnail": f"https://i.ytimg.com/vi/{y_id}/mqdefault.jpg",
+                                "views": 0,
+                                "likes": 0,
+                                "comments": 0,
+                                "is_clean": True,
+                                "health_badge": "100% CLEAN",
+                                "flag_details": "None (Clean)",
+                                "channel_name": ch.get("name", "")
+                            }
+                            vids.append(item)
+                            v_map[y_id] = item
+                            added += 1
+                    if added > 0:
+                        print(f"  [{ch['name']}] Merged {added} new videos from cloud SQLite DB")
+                        ch["uploaded_videos"] = vids
+                        ch["uploaded_count"] = max(ch.get("uploaded_count", 0), len(vids))
+            except Exception as v_err:
+                print(f"  Warning: SQLite video sync error for {ch.get('name')}: {v_err}")
+
             conn.close()
             os.unlink(tf_path)
         except Exception as e:
@@ -151,7 +188,7 @@ def sync_metrics(data_json_path: str):
 
     channels = data.get("channels", [])
 
-    # 1. Sync Runner Nodes & IP Telemetry from GitHub
+    # 1. Sync Runner Nodes & IP Telemetry from GitHub SQLite databases
     sync_runner_nodes(channels)
 
     service = get_credentials()
@@ -163,7 +200,7 @@ def sync_metrics(data_json_path: str):
 
     channel_ids = [c["youtube_channel_id"] for c in channels if c.get("youtube_channel_id")]
 
-    # 1. Fetch live channel statistics
+    # 2. Fetch live channel statistics
     print(f"Fetching channel stats for {len(channel_ids)} channels...")
     try:
         ch_res = service.channels().list(
@@ -190,40 +227,141 @@ def sync_metrics(data_json_path: str):
     except Exception as e:
         print(f"Warning: Channel stats fetch failed: {e}")
 
-    # 2. Collect all video IDs across all channels
+    # 3. Query YouTube Uploads Playlists directly to catch newly uploaded videos
+    print("Checking YouTube upload playlists across all channels for fresh uploads...")
+    for ch in channels:
+        cid = ch.get("youtube_channel_id")
+        if not cid:
+            continue
+        try:
+            uploads_pl_id = None
+            try:
+                ch_list_res = service.channels().list(part="contentDetails", id=cid).execute()
+                items = ch_list_res.get("items", [])
+                if items:
+                    uploads_pl_id = items[0].get("contentDetails", {}).get("relatedPlaylists", {}).get("uploads")
+            except Exception:
+                pass
+            if not uploads_pl_id:
+                uploads_pl_id = "UU" + cid[2:]
+
+            pl_res = service.playlistItems().list(
+                playlistId=uploads_pl_id,
+                part="snippet,contentDetails",
+                maxResults=50
+            ).execute()
+
+            vids = ch.get("uploaded_videos", [])
+            v_map = {v.get("youtube_id"): v for v in vids if v.get("youtube_id")}
+            new_yt_count = 0
+            for item in pl_res.get("items", []):
+                vid_id = item.get("contentDetails", {}).get("videoId")
+                if not vid_id:
+                    continue
+                snip = item.get("snippet", {})
+                pub_at = snip.get("publishedAt") or item.get("contentDetails", {}).get("videoPublishedAt")
+                title = snip.get("title", "Untitled Video")
+                thumbs = snip.get("thumbnails", {})
+                thumb_url = (
+                    thumbs.get("medium", {}).get("url") or 
+                    thumbs.get("high", {}).get("url") or 
+                    f"https://i.ytimg.com/vi/{vid_id}/mqdefault.jpg"
+                )
+
+                if vid_id not in v_map:
+                    new_vid = {
+                        "title": title,
+                        "youtube_id": vid_id,
+                        "youtube_url": f"https://youtu.be/{vid_id}",
+                        "studio_url": f"https://studio.youtube.com/video/{vid_id}/edit",
+                        "uploaded_at": pub_at,
+                        "thumbnail": thumb_url,
+                        "views": 0,
+                        "likes": 0,
+                        "comments": 0,
+                        "is_clean": True,
+                        "health_badge": "100% CLEAN",
+                        "flag_details": "None (Clean)",
+                        "channel_name": ch.get("name", "")
+                    }
+                    vids.append(new_vid)
+                    v_map[vid_id] = new_vid
+                    new_yt_count += 1
+                else:
+                    if not v_map[vid_id].get("title") or v_map[vid_id].get("title") == vid_id:
+                        v_map[vid_id]["title"] = title
+                    if thumb_url and not v_map[vid_id].get("thumbnail"):
+                        v_map[vid_id]["thumbnail"] = thumb_url
+                    if pub_at and not v_map[vid_id].get("uploaded_at"):
+                        v_map[vid_id]["uploaded_at"] = pub_at
+
+            if new_yt_count > 0:
+                print(f"  [{ch['name']}] Found and added {new_yt_count} fresh YouTube uploads from playlist!")
+            ch["uploaded_videos"] = vids
+            ch["uploaded_count"] = max(ch.get("uploaded_count", 0), len(vids))
+        except Exception as yt_pl_err:
+            print(f"  Note: Playlist lookup for {ch.get('name')} ({cid}): {yt_pl_err}")
+
+    # 4. Collect all video IDs across all channels
     all_vids = []
     for ch in channels:
         for v in ch.get("uploaded_videos", []):
             vid = v.get("youtube_id")
-            if vid:
+            if vid and vid not in all_vids:
                 all_vids.append(vid)
 
-    print(f"Fetching real-time metrics for {len(all_vids)} videos...")
+    print(f"Fetching real-time metrics and safety checks for {len(all_vids)} videos...")
 
-    # 3. Batch query videos in chunks of 50
+    # 5. Batch query videos in chunks of 50
     video_metrics_map = {}
     for i in range(0, len(all_vids), 50):
         chunk = all_vids[i:i+50]
         try:
             v_res = service.videos().list(
-                part="statistics,snippet",
+                part="statistics,snippet,status,contentDetails",
                 id=",".join(chunk)
             ).execute()
 
             for item in v_res.get("items", []):
                 vid = item["id"]
                 stat = item.get("statistics", {})
+                snip = item.get("snippet", {})
+                st = item.get("status", {})
+                cd = item.get("contentDetails", {})
+                thumbs = snip.get("thumbnails", {})
+                thumb_url = (
+                    thumbs.get("medium", {}).get("url") or 
+                    thumbs.get("high", {}).get("url") or 
+                    f"https://i.ytimg.com/vi/{vid}/mqdefault.jpg"
+                )
+
+                upload_status = st.get("uploadStatus", "processed")
+                privacy_status = st.get("privacyStatus", "public")
+                rejection_reason = st.get("rejectionReason")
+                region_restriction = cd.get("regionRestriction", {}) or {}
+                blocked_regions = region_restriction.get("blocked", []) if isinstance(region_restriction, dict) else []
+                is_blocked = (upload_status == "rejected") or (privacy_status not in ["public", "unlisted"]) or len(blocked_regions) > 50
+                health_badge = "100% CLEAN" if not is_blocked else "RESTRICTED"
+                flag_details = f"Blocked in {len(blocked_regions)} regions" if blocked_regions else (rejection_reason or "None (Clean)")
+
                 video_metrics_map[vid] = {
+                    "title": snip.get("title"),
                     "views": int(stat.get("viewCount", 0)),
                     "likes": int(stat.get("likeCount", 0)),
-                    "comments": int(stat.get("commentCount", 0))
+                    "comments": int(stat.get("commentCount", 0)),
+                    "thumbnail": thumb_url,
+                    "is_blocked": is_blocked,
+                    "health_badge": health_badge,
+                    "flag_details": flag_details,
+                    "privacy_status": privacy_status,
+                    "upload_status": upload_status
                 }
         except Exception as e:
             print(f"Warning: Video metrics chunk {i} failed: {e}")
 
     print(f"Successfully retrieved live metrics for {len(video_metrics_map)} videos.")
 
-    # 4. Update videos in each channel
+    # 6. Update videos in each channel and sort descending by date
     total_network_views = 0
     total_network_subs = 0
     total_network_likes = 0
@@ -239,7 +377,21 @@ def sync_metrics(data_json_path: str):
                 v["views"] = m["views"]
                 v["likes"] = m["likes"]
                 v["comments"] = m["comments"]
+                if m.get("title") and (not v.get("title") or v.get("title") == vid):
+                    v["title"] = m["title"]
+                if m.get("thumbnail"):
+                    v["thumbnail"] = m["thumbnail"]
+                v["is_blocked"] = m.get("is_blocked", False)
+                v["health_badge"] = m.get("health_badge", "100% CLEAN")
+                v["flag_details"] = m.get("flag_details", "None (Clean)")
                 ch_likes += m["likes"]
+
+        # Sort channel videos by latest upload first
+        vids.sort(key=lambda x: x.get("uploaded_at") or "", reverse=True)
+        ch["uploaded_videos"] = vids
+        ch["uploaded_count"] = max(ch.get("uploaded_count", 0), len(vids))
+        if vids:
+            ch["latest_uploaded_video"] = vids[0]
 
         ch["total_likes"] = ch_likes
         if len(vids) > 0:

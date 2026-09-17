@@ -611,13 +611,23 @@
             </button>
           </div>
 
-          <!-- Video Filter Input -->
-          <div class="content-search-wrap">
-            <svg viewBox="0 0 24 24" width="16" height="16" fill="#888">
-              <path d="M20.87 19.47l-4.52-4.52A8 8 0 106.8 16.8a8 8 0 008.15-1.85l4.52 4.52a1 1 0 001.4-1.4zM4 10a6 6 0 116 6 6 6 0 01-6-6z"/>
-            </svg>
-            <input type="text" placeholder="Filter videos by title..." id="content-filter-input" autocomplete="off" />
-            <button class="clear-search-btn" id="btn-clear-filter" style="display:none;">✕</button>
+          <div class="content-toolbar-actions">
+            <!-- Dedicated Real-Time YouTube Data Refresh Button -->
+            <button class="btn-live-sync-content" id="btn-content-live-sync" title="Fetch live real-time YouTube Data API videos immediately">
+              <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" class="sync-icon-svg">
+                <path d="M17.65 6.35A7.958 7.958 0 0012 4c-4.42 0-7.99 3.58-7.99 8s3.57 8 7.99 8c3.73 0 6.84-2.55 7.73-6h-2.08A5.99 5.99 0 0112 18c-3.31 0-6-2.69-6-6s2.69-6 6-6c1.66 0 3.14.69 4.22 1.78L13 11h7V4l-2.35 2.35z"/>
+              </svg>
+              <span>LIVE REFRESH</span>
+            </button>
+
+            <!-- Video Filter Input -->
+            <div class="content-search-wrap">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="#888">
+                <path d="M20.87 19.47l-4.52-4.52A8 8 0 106.8 16.8a8 8 0 008.15-1.85l4.52 4.52a1 1 0 001.4-1.4zM4 10a6 6 0 116 6 6 6 0 01-6-6z"/>
+              </svg>
+              <input type="text" placeholder="Filter videos by title..." id="content-filter-input" autocomplete="off" />
+              <button class="clear-search-btn" id="btn-clear-filter" style="display:none;">✕</button>
+            </div>
           </div>
         </div>
 
