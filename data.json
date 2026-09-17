@@ -1,21 +1,21 @@
 {
   "app_name": "Raj Tube Pro",
   "version": "6.1.0",
-  "timestamp": "2026-09-17T19:13:32.909104+00:00",
+  "timestamp": "2026-09-17T19:20:03.600983+00:00",
   "schedule": {
-    "next_slot_iso": "2026-09-17T21:00:00+00:00",
-    "seconds_remaining": 6387,
-    "formatted_countdown": "01h 46m 27s",
-    "slot_label": "05:00 PM USA (2:30 AM IST)",
-    "now_ist": "18 Sep, 12:43 AM IST"
+    "next_slot_iso": "2026-09-18T08:00:00+00:00",
+    "seconds_remaining": 45596,
+    "formatted_countdown": "12h 39m 56s",
+    "slot_label": "01:30 PM IST Tomorrow (Lunch Break)",
+    "now_ist": "18 Sep, 12:50 AM IST"
   },
   "summary": {
     "total_channels": 10,
     "total_uploaded": 246,
     "total_in_queue": 1171,
-    "total_subscribers": 412,
-    "total_views": 433914,
-    "total_likes": 3744,
+    "total_subscribers": 413,
+    "total_views": 434680,
+    "total_likes": 3746,
     "network_engagement": 0.8,
     "total_runway_days": 58.5,
     "system_health": "All Systems Operational",
@@ -385,7 +385,7 @@
         }
       }
     ],
-    "avg_views_per_channel": 43391
+    "avg_views_per_channel": 43468
   },
   "issues": [],
   "channels": [
@@ -657,7 +657,7 @@
           "title": "He Came Closer Than Expected #nature #wildlifephotography #shorts #viralreels",
           "uploaded_at": "2026-09-16T14:07:48Z",
           "thumbnail": "https://i.ytimg.com/vi/2MjdytOmLBk/mqdefault.jpg",
-          "views": 354,
+          "views": 352,
           "likes": 9,
           "comments": 0,
           "upload_status": "processed",
@@ -745,7 +745,7 @@
           "title": "Extreme Wildlife Cameraman POV #animalencounter #shorts #viralvideo #wildlife",
           "uploaded_at": "2026-09-14T14:07:40Z",
           "thumbnail": "https://i.ytimg.com/vi/8RpJqvOH1bQ/mqdefault.jpg",
-          "views": 26004,
+          "views": 26003,
           "likes": 157,
           "comments": 1,
           "upload_status": "processed",
@@ -899,7 +899,7 @@
           "title": "Breathtaking 4K Wildlife Moment #wildlifephotography #shorts #naturelovers #viral",
           "uploaded_at": "2026-09-11T14:42:29Z",
           "thumbnail": "https://i.ytimg.com/vi/3pDpmQcqJT8/mqdefault.jpg",
-          "views": 16103,
+          "views": 16099,
           "likes": 166,
           "comments": 1,
           "upload_status": "processed",
@@ -1007,68 +1007,60 @@
             "country": "United States",
             "code": "US",
             "flag": "🇺🇸",
-            "percent": 52.4
+            "percent": 70.0
           },
           {
-            "country": "United Kingdom",
-            "code": "GB",
-            "flag": "🇬🇧",
-            "percent": 13.5
-          },
-          {
-            "country": "Germany",
-            "code": "DE",
-            "flag": "🇩🇪",
-            "percent": 9.8
-          },
-          {
-            "country": "Canada",
-            "code": "CA",
-            "flag": "🇨🇦",
-            "percent": 8.7
-          },
-          {
-            "country": "India",
-            "code": "IN",
-            "flag": "🇮🇳",
+            "country": "Indonesia",
+            "code": "ID",
+            "flag": "🇮🇩",
             "percent": 10.2
+          },
+          {
+            "country": "KR",
+            "code": "KR",
+            "flag": "🌐",
+            "percent": 6.6
+          },
+          {
+            "country": "Philippines",
+            "code": "PH",
+            "flag": "🇵🇭",
+            "percent": 4.6
+          },
+          {
+            "country": "IQ",
+            "code": "IQ",
+            "flag": "🌐",
+            "percent": 2.3
           },
           {
             "country": "Other countries",
             "code": "OTHER",
             "flag": "🌐",
-            "percent": 5.4
+            "percent": 6.3
           }
         ],
         "age_distribution": [
           {
             "range": "13–17 years",
-            "percent": 14.8
-          },
-          {
-            "range": "18–24 years",
-            "percent": 51.0
+            "percent": 6.3
           },
           {
             "range": "25–34 years",
-            "percent": 25.6
+            "percent": 53.5
           },
           {
             "range": "35–44 years",
-            "percent": 5.8
+            "percent": 32.5
           },
           {
             "range": "45–54 years",
-            "percent": 2.0
-          },
-          {
-            "range": "55+ years",
-            "percent": 0.8
+            "percent": 7.9
           }
         ],
         "gender": {
-          "male": 81.2,
-          "female": 18.8
+          "male": 56.8,
+          "female": 43.2
         },
         "traffic_sources": [
           {
@@ -1182,7 +1174,7 @@
         "title": "Grandma Changed The Whole Tournament With Incredible Skill #GrandmaGamer #Esports #Gaming #GamingLeg",
         "uploaded_at": "2026-09-17T14:04:34Z",
         "thumbnail": "https://i.ytimg.com/vi/EiKNndBaH8c/mqdefault.jpg",
-        "views": 10,
+        "views": 14,
         "likes": 0,
         "comments": 0,
         "upload_status": "processed",
@@ -1205,7 +1197,7 @@
           "title": "Grandma Changed The Whole Tournament With Incredible Skill #GrandmaGamer #Esports #Gaming #GamingLeg",
           "uploaded_at": "2026-09-17T14:04:34Z",
           "thumbnail": "https://i.ytimg.com/vi/EiKNndBaH8c/mqdefault.jpg",
-          "views": 10,
+          "views": 14,
           "likes": 0,
           "comments": 0,
           "upload_status": "processed",
@@ -1915,12 +1907,12 @@
       "github_repo": "malhotramahi396-afk/yt-automation-zyntrix07",
       "color": "#F59E0B",
       "avatar_url": "https://yt3.ggpht.com/TTLhq8ijvpChRrWaVb1i96FzeFG02Gd31oOfWo4EdOtBtfqTD6h0TrRmEOTd2fE8V0kPexV6EA=s240-c-k-c0x00ffffff-no-rj",
-      "subscribers": 169,
+      "subscribers": 170,
       "total_views": 201413,
       "channel_total_videos": 23,
-      "avg_views_per_video": 9066,
+      "avg_views_per_video": 9065,
       "engagement_rate": 0.8,
-      "total_likes": 1639,
+      "total_likes": 1640,
       "analytics": {
         "watch_time_hours": 870.0,
         "avg_view_duration": "0:24",
@@ -2108,7 +2100,7 @@
         "title": "That Championship Belt Changed The Whole Faceoff #PowerSlap #SlapFight #Championship #CombatSports #",
         "uploaded_at": "2026-09-17T14:11:02Z",
         "thumbnail": "https://i.ytimg.com/vi/D8s-tKl9wSg/mqdefault.jpg",
-        "views": 907,
+        "views": 912,
         "likes": 24,
         "comments": 3,
         "upload_status": "processed",
@@ -2131,7 +2123,7 @@
           "title": "That Championship Belt Changed The Whole Faceoff #PowerSlap #SlapFight #Championship #CombatSports #",
           "uploaded_at": "2026-09-17T14:11:02Z",
           "thumbnail": "https://i.ytimg.com/vi/D8s-tKl9wSg/mqdefault.jpg",
-          "views": 907,
+          "views": 912,
           "likes": 24,
           "comments": 3,
           "upload_status": "processed",
@@ -2153,7 +2145,7 @@
           "title": "That Belt Is The Prize Everyone Wants #PowerSlap #SlapFight #Championship #CombatSports #FYP.",
           "uploaded_at": "2026-09-16T21:10:07Z",
           "thumbnail": "https://i.ytimg.com/vi/LM4pQ-P7QkI/mqdefault.jpg",
-          "views": 1529,
+          "views": 1507,
           "likes": 17,
           "comments": 1,
           "upload_status": "processed",
@@ -2175,7 +2167,7 @@
           "title": "One Table Two Warriors And Massive Tension #PowerSlap #SlapFight #CombatSports #Highlights #FYP.",
           "uploaded_at": "2026-09-16T14:10:37Z",
           "thumbnail": "https://i.ytimg.com/vi/6qqoGmiQqkI/mqdefault.jpg",
-          "views": 1375,
+          "views": 1372,
           "likes": 20,
           "comments": 0,
           "upload_status": "processed",
@@ -2197,8 +2189,8 @@
           "title": "One Table One Belt And Huge Pressure #SlapFight #PowerSlap #Championship #CombatSports #FYP.",
           "uploaded_at": "2026-09-15T21:09:27Z",
           "thumbnail": "https://i.ytimg.com/vi/74d1M_ceEM0/mqdefault.jpg",
-          "views": 44754,
-          "likes": 356,
+          "views": 44767,
+          "likes": 357,
           "comments": 11,
           "upload_status": "processed",
           "privacy_status": "public",
@@ -2219,7 +2211,7 @@
           "title": "One Step Closer And The Crowd Explodes #SlapFight #PowerSlap #SlapFighting #Viral #Fight.",
           "uploaded_at": "2026-09-15T14:10:27Z",
           "thumbnail": "https://i.ytimg.com/vi/GDCFdis0OhU/mqdefault.jpg",
-          "views": 200,
+          "views": 197,
           "likes": 3,
           "comments": 0,
           "upload_status": "processed",
@@ -2263,7 +2255,7 @@
           "title": "One Look And You Know This Will Hurt #SlapFight #PowerSlap #CombatSports #Highlights #FYP.",
           "uploaded_at": "2026-09-14T14:11:15Z",
           "thumbnail": "https://i.ytimg.com/vi/_WQiHPH5TWw/mqdefault.jpg",
-          "views": 55,
+          "views": 53,
           "likes": 3,
           "comments": 0,
           "upload_status": "processed",
@@ -2285,7 +2277,7 @@
           "title": "One Final Stare Before The Action Starts #PowerSlap #SlapFight #CombatSports #Highlights #FYP.",
           "uploaded_at": "2026-09-14T08:28:28Z",
           "thumbnail": "https://i.ytimg.com/vi/q_Epxwmpr1w/mqdefault.jpg",
-          "views": 1054,
+          "views": 1052,
           "likes": 11,
           "comments": 0,
           "upload_status": "processed",
@@ -2329,7 +2321,7 @@
           "title": "Nobody Wanted To Miss The Next Second #SlapFight #SlapFighting #PowerSlap #Viral #CombatSports.",
           "uploaded_at": "2026-09-13T14:13:36Z",
           "thumbnail": "https://i.ytimg.com/vi/jcBToYBlKTA/mqdefault.jpg",
-          "views": 32714,
+          "views": 32713,
           "likes": 378,
           "comments": 3,
           "upload_status": "processed",
@@ -2417,7 +2409,7 @@
           "title": "His Confidence Had The Whole Crowd Talking #PowerSlap #SlapFighting #SlapFight #Viral #Sports.",
           "uploaded_at": "2026-09-11T22:07:28Z",
           "thumbnail": "https://i.ytimg.com/vi/g-2DEoij8dY/mqdefault.jpg",
-          "views": 23864,
+          "views": 23866,
           "likes": 200,
           "comments": 0,
           "upload_status": "processed",
@@ -3462,7 +3454,7 @@
       "subscribers": 44,
       "total_views": 37405,
       "channel_total_videos": 22,
-      "avg_views_per_video": 1728,
+      "avg_views_per_video": 1729,
       "engagement_rate": 0.8,
       "total_likes": 310,
       "analytics": {
@@ -3473,68 +3465,72 @@
             "country": "United States",
             "code": "US",
             "flag": "🇺🇸",
-            "percent": 53.4
+            "percent": 62.1
+          },
+          {
+            "country": "Philippines",
+            "code": "PH",
+            "flag": "🇵🇭",
+            "percent": 10.6
           },
           {
             "country": "United Kingdom",
             "code": "GB",
             "flag": "🇬🇧",
-            "percent": 13.8
+            "percent": 10.5
           },
           {
-            "country": "Canada",
-            "code": "CA",
-            "flag": "🇨🇦",
-            "percent": 9.2
-          },
-          {
-            "country": "Germany",
-            "code": "DE",
-            "flag": "🇩🇪",
-            "percent": 7.1
+            "country": "India",
+            "code": "IN",
+            "flag": "🇮🇳",
+            "percent": 5.4
           },
           {
             "country": "Australia",
             "code": "AU",
             "flag": "🇦🇺",
-            "percent": 6.3
+            "percent": 5.2
           },
           {
             "country": "Other countries",
             "code": "OTHER",
             "flag": "🌐",
-            "percent": 10.2
+            "percent": 6.2
           }
         ],
         "age_distribution": [
           {
             "range": "13–17 years",
-            "percent": 6.8
+            "percent": 8.4
           },
           {
             "range": "18–24 years",
-            "percent": 48.4
+            "percent": 6.5
           },
           {
             "range": "25–34 years",
-            "percent": 36.8
+            "percent": 33.8
           },
           {
             "range": "35–44 years",
-            "percent": 5.4
+            "percent": 27.0
           },
           {
             "range": "45–54 years",
-            "percent": 1.9
+            "percent": 8.7
           },
           {
-            "range": "55+ years",
-            "percent": 0.7
+            "range": "55–64 years",
+            "percent": 6.4
+          },
+          {
+            "range": "65+ years",
+            "percent": 9.2
           }
         ],
         "gender": {
-          "male": 84.6,
-          "female": 15.4
+          "male": 33.2,
+          "female": 66.8
         },
         "traffic_sources": [
           {
@@ -3693,7 +3689,7 @@
           "title": "Curious Toddler Makes A Simple Outing Magical #ToddlerLife #CutestMoments #FamilyMoments #WholesomeC",
           "uploaded_at": "2026-09-16T21:08:06Z",
           "thumbnail": "https://i.ytimg.com/vi/2cj1YqqA6pk/mqdefault.jpg",
-          "views": 0,
+          "views": 3,
           "likes": 0,
           "comments": 0,
           "upload_status": "processed",
@@ -3737,7 +3733,7 @@
           "title": "Curious Toddler Is Simply Adorable Today #ToddlerLife #CutestMoments #FamilyMoments #WholesomeConten",
           "uploaded_at": "2026-09-15T21:07:14Z",
           "thumbnail": "https://i.ytimg.com/vi/pbGpf9Du75Q/mqdefault.jpg",
-          "views": 1,
+          "views": 3,
           "likes": 0,
           "comments": 0,
           "upload_status": "processed",
@@ -3759,7 +3755,7 @@
           "title": "Curious Toddler Is Having The Time Of Their Life #ToddlerLife #CutestMoments #FamilyMoments #Wholeso",
           "uploaded_at": "2026-09-15T14:07:46Z",
           "thumbnail": "https://i.ytimg.com/vi/bn1sNM1_K3g/mqdefault.jpg",
-          "views": 0,
+          "views": 3,
           "likes": 0,
           "comments": 0,
           "upload_status": "processed",
@@ -3781,7 +3777,7 @@
           "title": "Curious Toddler Is All Smiles Today #ToddlerLife #CutestMoments #FamilyMoments #WholesomeContent #Pa",
           "uploaded_at": "2026-09-14T21:07:42Z",
           "thumbnail": "https://i.ytimg.com/vi/dKVc68KvSWs/mqdefault.jpg",
-          "views": 0,
+          "views": 1,
           "likes": 0,
           "comments": 0,
           "upload_status": "processed",
@@ -3803,7 +3799,7 @@
           "title": "Curious Toddler Has The Best Day Ever #ToddlerLife #CutestMoments #FamilyMoments #WholesomeContent #",
           "uploaded_at": "2026-09-14T14:08:34Z",
           "thumbnail": "https://i.ytimg.com/vi/3gZbOljV8H8/mqdefault.jpg",
-          "views": 0,
+          "views": 1,
           "likes": 0,
           "comments": 0,
           "upload_status": "processed",
@@ -3847,7 +3843,7 @@
           "title": "Curious Toddler Enjoys A Simple Little Moment #ToddlerLife #CutestMoments #FamilyMoments #WholesomeC",
           "uploaded_at": "2026-09-14T08:40:12Z",
           "thumbnail": "https://i.ytimg.com/vi/WvHIwfckSow/mqdefault.jpg",
-          "views": 0,
+          "views": 2,
           "likes": 0,
           "comments": 0,
           "upload_status": "processed",
@@ -4208,9 +4204,9 @@
       "subscribers": 16,
       "total_views": 21841,
       "channel_total_videos": 20,
-      "avg_views_per_video": 1182,
+      "avg_views_per_video": 1184,
       "engagement_rate": 1.0,
-      "total_likes": 248,
+      "total_likes": 249,
       "analytics": {
         "watch_time_hours": 96.7,
         "avg_view_duration": "0:24",
@@ -4219,68 +4215,72 @@
             "country": "United States",
             "code": "US",
             "flag": "🇺🇸",
-            "percent": 41.2
+            "percent": 72.6
           },
           {
-            "country": "United Kingdom",
-            "code": "GB",
-            "flag": "🇬🇧",
-            "percent": 16.4
+            "country": "JP",
+            "code": "JP",
+            "flag": "🌐",
+            "percent": 9.2
+          },
+          {
+            "country": "Indonesia",
+            "code": "ID",
+            "flag": "🇮🇩",
+            "percent": 6.2
           },
           {
             "country": "India",
             "code": "IN",
             "flag": "🇮🇳",
-            "percent": 14.8
+            "percent": 4.0
           },
           {
-            "country": "France",
-            "code": "FR",
-            "flag": "🇫🇷",
-            "percent": 8.5
-          },
-          {
-            "country": "Germany",
-            "code": "DE",
-            "flag": "🇩🇪",
-            "percent": 6.9
+            "country": "Philippines",
+            "code": "PH",
+            "flag": "🇵🇭",
+            "percent": 2.7
           },
           {
             "country": "Other countries",
             "code": "OTHER",
             "flag": "🌐",
-            "percent": 12.2
+            "percent": 5.3
           }
         ],
         "age_distribution": [
           {
             "range": "13–17 years",
-            "percent": 11.5
+            "percent": 8.6
           },
           {
             "range": "18–24 years",
-            "percent": 38.2
+            "percent": 5.6
           },
           {
             "range": "25–34 years",
-            "percent": 32.7
+            "percent": 33.1
           },
           {
             "range": "35–44 years",
-            "percent": 10.4
+            "percent": 26.8
           },
           {
             "range": "45–54 years",
-            "percent": 5.1
+            "percent": 11.0
           },
           {
-            "range": "55+ years",
-            "percent": 2.1
+            "range": "55–64 years",
+            "percent": 7.6
+          },
+          {
+            "range": "65+ years",
+            "percent": 7.3
           }
         ],
         "gender": {
-          "male": 52.4,
-          "female": 47.6
+          "male": 52.2,
+          "female": 47.8
         },
         "traffic_sources": [
           {
@@ -4394,8 +4394,8 @@
         "title": "He Found The Perfect Spot To Paint This View #StreetArt #Painting #Artist #ArtReels #Creative.",
         "uploaded_at": "2026-09-17T14:07:32Z",
         "thumbnail": "https://i.ytimg.com/vi/88cO37UjZ7w/mqdefault.jpg",
-        "views": 710,
-        "likes": 21,
+        "views": 758,
+        "likes": 22,
         "comments": 0,
         "upload_status": "processed",
         "privacy_status": "public",
@@ -4417,8 +4417,8 @@
           "title": "He Found The Perfect Spot To Paint This View #StreetArt #Painting #Artist #ArtReels #Creative.",
           "uploaded_at": "2026-09-17T14:07:32Z",
           "thumbnail": "https://i.ytimg.com/vi/88cO37UjZ7w/mqdefault.jpg",
-          "views": 710,
-          "likes": 21,
+          "views": 758,
+          "likes": 22,
           "comments": 0,
           "upload_status": "processed",
           "privacy_status": "public",
@@ -4439,7 +4439,7 @@
           "title": "He Captured The Entire Scene On One Canvas #Painting #Artist #ArtReels #StreetArt #Viral.",
           "uploaded_at": "2026-09-16T21:06:48Z",
           "thumbnail": "https://i.ytimg.com/vi/oHD72N-B63M/mqdefault.jpg",
-          "views": 856,
+          "views": 855,
           "likes": 8,
           "comments": 0,
           "upload_status": "processed",
@@ -4461,7 +4461,7 @@
           "title": "He Captured A Famous Landmark With Just Paint #Painting #Artist #Architecture #ArtReels #ViralArt.",
           "uploaded_at": "2026-09-16T14:07:52Z",
           "thumbnail": "https://i.ytimg.com/vi/dIjwAvkghGo/mqdefault.jpg",
-          "views": 72,
+          "views": 73,
           "likes": 1,
           "comments": 0,
           "upload_status": "processed",
@@ -4483,7 +4483,7 @@
           "title": "He Added One Tiny Detail And Changed Everything #Painting #ArtReveal #Satisfying #Artist #ArtReels.",
           "uploaded_at": "2026-09-15T21:07:42Z",
           "thumbnail": "https://i.ytimg.com/vi/b373gjPjUMk/mqdefault.jpg",
-          "views": 1369,
+          "views": 1364,
           "likes": 12,
           "comments": 0,
           "upload_status": "processed",
@@ -4505,7 +4505,7 @@
           "title": "From Street View To Finished Artwork #StreetArt #Painting #ArtTransformation #ArtReels #Artist.",
           "uploaded_at": "2026-09-15T14:07:02Z",
           "thumbnail": "https://i.ytimg.com/vi/Enyy2nPWFzM/mqdefault.jpg",
-          "views": 1370,
+          "views": 1379,
           "likes": 17,
           "comments": 0,
           "upload_status": "processed",
@@ -4571,7 +4571,7 @@
           "title": "From First Color To Final Masterpiece #Painting #ArtTransformation #ArtReels #Artist #Viral.",
           "uploaded_at": "2026-09-13T21:06:49Z",
           "thumbnail": "https://i.ytimg.com/vi/3ee4FdtH10w/mqdefault.jpg",
-          "views": 1705,
+          "views": 1700,
           "likes": 17,
           "comments": 0,
           "upload_status": "processed",
@@ -4908,9 +4908,9 @@
       "color": "#3B82F6",
       "avatar_url": "https://yt3.ggpht.com/vRLBXNb4fgjWzDfLf8ltniGaD2BlvZ1PAWugGoZaJx1nCdJ92LubM-8vy7hIgxHlCicFwpt2=s240-c-k-c0x00ffffff-no-rj",
       "subscribers": 32,
-      "total_views": 15542,
+      "total_views": 16308,
       "channel_total_videos": 36,
-      "avg_views_per_video": 505,
+      "avg_views_per_video": 503,
       "engagement_rate": 1.1,
       "total_likes": 192,
       "analytics": {
@@ -4921,68 +4921,60 @@
             "country": "United States",
             "code": "US",
             "flag": "🇺🇸",
-            "percent": 42.1
+            "percent": 61.0
           },
           {
-            "country": "United Kingdom",
-            "code": "GB",
-            "flag": "🇬🇧",
-            "percent": 18.5
+            "country": "HN",
+            "code": "HN",
+            "flag": "🌐",
+            "percent": 8.4
           },
           {
-            "country": "Brazil",
-            "code": "BR",
-            "flag": "🇧🇷",
-            "percent": 14.2
+            "country": "KG",
+            "code": "KG",
+            "flag": "🌐",
+            "percent": 7.8
           },
           {
-            "country": "Germany",
-            "code": "DE",
-            "flag": "🇩🇪",
-            "percent": 9.4
+            "country": "Indonesia",
+            "code": "ID",
+            "flag": "🇮🇩",
+            "percent": 5.7
           },
           {
-            "country": "India",
-            "code": "IN",
-            "flag": "🇮🇳",
-            "percent": 8.6
+            "country": "ES",
+            "code": "ES",
+            "flag": "🌐",
+            "percent": 5.0
           },
           {
             "country": "Other countries",
             "code": "OTHER",
             "flag": "🌐",
-            "percent": 7.2
+            "percent": 12.1
           }
         ],
         "age_distribution": [
           {
-            "range": "13–17 years",
-            "percent": 9.2
-          },
-          {
             "range": "18–24 years",
-            "percent": 46.5
+            "percent": 4.1
           },
           {
             "range": "25–34 years",
-            "percent": 34.2
+            "percent": 44.8
           },
           {
             "range": "35–44 years",
-            "percent": 6.8
+            "percent": 43.4
           },
           {
             "range": "45–54 years",
-            "percent": 2.3
-          },
-          {
-            "range": "55+ years",
-            "percent": 1.0
+            "percent": 7.7
           }
         ],
         "gender": {
-          "male": 88.5,
-          "female": 11.5
+          "male": 48.5,
+          "female": 51.5
         },
         "traffic_sources": [
           {
@@ -5096,7 +5088,7 @@
         "title": "Every Kick Has A Purpose For The Team #Football #Soccer #FootballStory #FootballLife #Goal #Dream #C",
         "uploaded_at": "2026-09-17T14:07:50Z",
         "thumbnail": "https://i.ytimg.com/vi/ZWOSM9BN9kg/mqdefault.jpg",
-        "views": 9,
+        "views": 16,
         "likes": 1,
         "comments": 0,
         "upload_status": "processed",
@@ -5119,7 +5111,7 @@
           "title": "Every Kick Has A Purpose For The Team #Football #Soccer #FootballStory #FootballLife #Goal #Dream #C",
           "uploaded_at": "2026-09-17T14:07:50Z",
           "thumbnail": "https://i.ytimg.com/vi/ZWOSM9BN9kg/mqdefault.jpg",
-          "views": 9,
+          "views": 16,
           "likes": 1,
           "comments": 0,
           "upload_status": "processed",
@@ -5141,7 +5133,7 @@
           "title": "Every Kick Has A Purpose Before The Final Whistle #Football #Soccer #FootballStory #FootballLife #Go",
           "uploaded_at": "2026-09-16T21:06:36Z",
           "thumbnail": "https://i.ytimg.com/vi/ioGX8zXGvmM/mqdefault.jpg",
-          "views": 1255,
+          "views": 1256,
           "likes": 8,
           "comments": 1,
           "upload_status": "processed",
@@ -5163,7 +5155,7 @@
           "title": "Every Kick Has A Purpose Against All Odds #Football #Soccer #FootballStory #FootballLife #Goal #Drea",
           "uploaded_at": "2026-09-16T14:07:51Z",
           "thumbnail": "https://i.ytimg.com/vi/3gDMwTX2_II/mqdefault.jpg",
-          "views": 1232,
+          "views": 1155,
           "likes": 9,
           "comments": 0,
           "upload_status": "processed",
@@ -5207,7 +5199,7 @@
           "title": "Every Champion Has A Beginning When Nobody Believed #Football #Soccer #FootballStory #FootballLife #",
           "uploaded_at": "2026-09-15T14:06:53Z",
           "thumbnail": "https://i.ytimg.com/vi/vy8pD5LTR0Q/mqdefault.jpg",
-          "views": 702,
+          "views": 698,
           "likes": 3,
           "comments": 0,
           "upload_status": "processed",
@@ -5251,7 +5243,7 @@
           "title": "Every Champion Has A Beginning Today #Football #Soccer #FootballStory #FootballLife #Goal #Dream #Ch",
           "uploaded_at": "2026-09-14T14:07:59Z",
           "thumbnail": "https://i.ytimg.com/vi/_wKWqiH1E24/mqdefault.jpg",
-          "views": 1919,
+          "views": 1918,
           "likes": 10,
           "comments": 0,
           "upload_status": "processed",
@@ -5273,7 +5265,7 @@
           "title": "Every Champion Has A Beginning On The Biggest Stage #Football #Soccer #FootballStory #FootballLife #",
           "uploaded_at": "2026-09-13T21:06:42Z",
           "thumbnail": "https://i.ytimg.com/vi/pxbeMgUNEWM/mqdefault.jpg",
-          "views": 1441,
+          "views": 1445,
           "likes": 12,
           "comments": 0,
           "upload_status": "processed",
@@ -6035,8 +6027,8 @@
           }
         ],
         "gender": {
-          "male": 44.2,
-          "female": 55.8
+          "male": 70.0,
+          "female": 30.0
         },
         "traffic_sources": [
           {
@@ -6391,68 +6383,64 @@
             "country": "United States",
             "code": "US",
             "flag": "🇺🇸",
-            "percent": 48.7
+            "percent": 88.5
+          },
+          {
+            "country": "Indonesia",
+            "code": "ID",
+            "flag": "🇮🇩",
+            "percent": 3.7
           },
           {
             "country": "United Kingdom",
             "code": "GB",
             "flag": "🇬🇧",
-            "percent": 15.3
-          },
-          {
-            "country": "Canada",
-            "code": "CA",
-            "flag": "🇨🇦",
-            "percent": 10.4
-          },
-          {
-            "country": "Germany",
-            "code": "DE",
-            "flag": "🇩🇪",
-            "percent": 8.1
+            "percent": 2.6
           },
           {
             "country": "India",
             "code": "IN",
             "flag": "🇮🇳",
-            "percent": 11.2
+            "percent": 1.3
+          },
+          {
+            "country": "Germany",
+            "code": "DE",
+            "flag": "🇩🇪",
+            "percent": 1.1
           },
           {
             "country": "Other countries",
             "code": "OTHER",
             "flag": "🌐",
-            "percent": 6.3
+            "percent": 2.8
           }
         ],
         "age_distribution": [
           {
-            "range": "13–17 years",
-            "percent": 8.1
-          },
-          {
-            "range": "18–24 years",
-            "percent": 43.5
-          },
-          {
             "range": "25–34 years",
-            "percent": 35.8
+            "percent": 20.8
           },
           {
             "range": "35–44 years",
-            "percent": 8.2
+            "percent": 18.0
           },
           {
             "range": "45–54 years",
-            "percent": 3.1
+            "percent": 20.7
           },
           {
-            "range": "55+ years",
-            "percent": 1.3
+            "range": "55–64 years",
+            "percent": 16.5
+          },
+          {
+            "range": "65+ years",
+            "percent": 23.9
           }
         ],
         "gender": {
-          "male": 72.4,
-          "female": 27.6
+          "male": 91.6,
+          "female": 8.4
         },
         "traffic_sources": [
           {
@@ -6566,7 +6554,7 @@
         "title": "How Hollywood Really Made This Scene Like Never Before #BehindTheScenes #Hollywood #MovieMagic #Film",
         "uploaded_at": "2026-09-17T14:13:21Z",
         "thumbnail": "https://i.ytimg.com/vi/iEg8wbalJow/mqdefault.jpg",
-        "views": 20,
+        "views": 21,
         "likes": 1,
         "comments": 0,
         "upload_status": "processed",
@@ -6589,7 +6577,7 @@
           "title": "How Hollywood Really Made This Scene Like Never Before #BehindTheScenes #Hollywood #MovieMagic #Film",
           "uploaded_at": "2026-09-17T14:13:21Z",
           "thumbnail": "https://i.ytimg.com/vi/iEg8wbalJow/mqdefault.jpg",
-          "views": 20,
+          "views": 21,
           "likes": 1,
           "comments": 0,
           "upload_status": "processed",
@@ -6611,7 +6599,7 @@
           "title": "How Hollywood Really Made This Scene In Front Of The Cameras #BehindTheScenes #Hollywood #MovieMagic",
           "uploaded_at": "2026-09-16T21:12:14Z",
           "thumbnail": "https://i.ytimg.com/vi/qb0wW_hTxLM/mqdefault.jpg",
-          "views": 106,
+          "views": 107,
           "likes": 2,
           "comments": 0,
           "upload_status": "processed",
@@ -6633,7 +6621,7 @@
           "title": "How Hollywood Really Made This Scene Behind Closed Doors #BehindTheScenes #Hollywood #MovieMagic #Fi",
           "uploaded_at": "2026-09-16T14:12:44Z",
           "thumbnail": "https://i.ytimg.com/vi/pQUvVSUgprI/mqdefault.jpg",
-          "views": 451,
+          "views": 445,
           "likes": 6,
           "comments": 0,
           "upload_status": "processed",
@@ -6655,7 +6643,7 @@
           "title": "How Hollywood Really Made This Scene Before Release #BehindTheScenes #Hollywood #MovieMagic #FilmMak",
           "uploaded_at": "2026-09-15T21:11:39Z",
           "thumbnail": "https://i.ytimg.com/vi/aAX76OrA61c/mqdefault.jpg",
-          "views": 136,
+          "views": 135,
           "likes": 2,
           "comments": 0,
           "upload_status": "processed",
@@ -6677,7 +6665,7 @@
           "title": "Hollywood's Biggest Secret Revealed With Incredible Detail #BehindTheScenes #Hollywood #MovieMagic #",
           "uploaded_at": "2026-09-15T14:12:47Z",
           "thumbnail": "https://i.ytimg.com/vi/yIzfwni4nlI/mqdefault.jpg",
-          "views": 317,
+          "views": 316,
           "likes": 2,
           "comments": 0,
           "upload_status": "processed",
@@ -7477,7 +7465,7 @@
       "avatar_url": "https://yt3.ggpht.com/hGhDAHGNdGFqU-PCbb1tF4adddBZunivHI8CDGZA6NJlQpKsGm0H2dEpBPSGP8sn947tF1Eq=s240-c-k-c0x00ffffff-no-rj",
       "subscribers": 1,
       "total_views": 524,
-      "channel_total_videos": 28,
+      "channel_total_videos": 29,
       "avg_views_per_video": 18,
       "engagement_rate": 0.4,
       "total_likes": 2,
@@ -7549,8 +7537,8 @@
           }
         ],
         "gender": {
-          "male": 68.9,
-          "female": 31.1
+          "male": 70.0,
+          "female": 30.0
         },
         "traffic_sources": [
           {
