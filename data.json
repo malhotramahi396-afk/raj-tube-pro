@@ -1,21 +1,21 @@
 {
   "app_name": "Raj Tube Pro",
   "version": "6.1.0",
-  "timestamp": "2026-09-17T02:43:05.326199+00:00",
+  "timestamp": "2026-09-17T03:15:38.447854+00:00",
   "schedule": {
     "next_slot_iso": "2026-09-17T14:00:00+00:00",
-    "seconds_remaining": 40614,
-    "formatted_countdown": "11h 16m 54s",
+    "seconds_remaining": 38661,
+    "formatted_countdown": "10h 44m 21s",
     "slot_label": "10:00 AM USA (7:30 PM IST)",
-    "now_ist": "17 Sep, 08:13 AM IST"
+    "now_ist": "17 Sep, 08:45 AM IST"
   },
   "summary": {
     "total_channels": 10,
     "total_uploaded": 250,
     "total_in_queue": 1200,
     "total_subscribers": 406,
-    "total_views": 369981,
-    "total_likes": 3752,
+    "total_views": 369988,
+    "total_likes": 3753,
     "network_engagement": 0.9,
     "total_runway_days": 60.0,
     "system_health": "All Systems Operational",
@@ -385,7 +385,7 @@
         }
       }
     ],
-    "avg_views_per_channel": 36998
+    "avg_views_per_channel": 36999
   },
   "issues": [],
   "channels": [
@@ -926,7 +926,7 @@
       "color": "#10B981",
       "avatar_url": "https://yt3.ggpht.com/Si65r7FeRpZibwEpw60Lck09w5Qi4YjdBhvfyPC914DY68sKk7vkLYv3WdR1ByZGkg_J4FAK=s240-c-k-c0x00ffffff-no-rj",
       "subscribers": 7,
-      "total_views": 8828,
+      "total_views": 8835,
       "channel_total_videos": 29,
       "avg_views_per_video": 327,
       "engagement_rate": 0.8,
@@ -1784,9 +1784,9 @@
       "subscribers": 171,
       "total_views": 161413,
       "channel_total_videos": 22,
-      "avg_views_per_video": 9912,
+      "avg_views_per_video": 9923,
       "engagement_rate": 0.8,
-      "total_likes": 1672,
+      "total_likes": 1673,
       "analytics": {
         "watch_time_hours": 653.8,
         "avg_view_duration": "0:24",
@@ -1997,7 +1997,7 @@
           "title": "One Table One Belt And Huge Pressure #SlapFight #PowerSlap #Championship #CombatSports #FYP.",
           "uploaded_at": "2026-09-15T21:09:27Z",
           "thumbnail": "https://i.ytimg.com/vi/74d1M_ceEM0/mqdefault.jpg",
-          "views": 39035,
+          "views": 39196,
           "likes": 351,
           "comments": 11,
           "upload_status": "processed",
@@ -2151,8 +2151,8 @@
           "title": "Both Fighters Looked Completely Ready #SlapFight #PowerSlap #CombatSports #Sports #FYP",
           "uploaded_at": "2026-09-13T11:52:26Z",
           "thumbnail": "https://i.ytimg.com/vi/128Ysq4RtSw/mqdefault.jpg",
-          "views": 2740,
-          "likes": 42,
+          "views": 2786,
+          "likes": 43,
           "comments": 1,
           "upload_status": "processed",
           "privacy_status": "public",
@@ -2239,7 +2239,7 @@
           "title": "He Was Not Backing Down From Anyone #SlapFight #PowerSlap #SlapFighting #Viral #Sports.",
           "uploaded_at": "2026-09-11T16:04:35Z",
           "thumbnail": "https://i.ytimg.com/vi/t5oF0IsXkN0/mqdefault.jpg",
-          "views": 46039,
+          "views": 46046,
           "likes": 379,
           "comments": 1,
           "upload_status": "processed",
