@@ -1,13 +1,13 @@
 {
   "app_name": "Raj Tube Pro",
   "version": "6.1.0",
-  "timestamp": "2026-09-17T11:15:03.430111+00:00",
+  "timestamp": "2026-09-17T11:42:23.073285+00:00",
   "schedule": {
     "next_slot_iso": "2026-09-17T14:00:00+00:00",
-    "seconds_remaining": 9896,
-    "formatted_countdown": "02h 44m 56s",
+    "seconds_remaining": 8256,
+    "formatted_countdown": "02h 17m 36s",
     "slot_label": "10:00 AM USA (7:30 PM IST)",
-    "now_ist": "17 Sep, 04:45 PM IST"
+    "now_ist": "17 Sep, 05:12 PM IST"
   },
   "summary": {
     "total_channels": 10,
@@ -1784,7 +1784,7 @@
       "subscribers": 172,
       "total_views": 194319,
       "channel_total_videos": 22,
-      "avg_views_per_video": 10101,
+      "avg_views_per_video": 10102,
       "engagement_rate": 0.8,
       "total_likes": 1682,
       "analytics": {
@@ -2239,7 +2239,7 @@
           "title": "He Was Not Backing Down From Anyone #SlapFight #PowerSlap #SlapFighting #Viral #Sports.",
           "uploaded_at": "2026-09-11T16:04:35Z",
           "thumbnail": "https://i.ytimg.com/vi/t5oF0IsXkN0/mqdefault.jpg",
-          "views": 46051,
+          "views": 46061,
           "likes": 379,
           "comments": 1,
           "upload_status": "processed",
@@ -4081,7 +4081,7 @@
           "title": "He Added One Tiny Detail And Changed Everything #Painting #ArtReveal #Satisfying #Artist #ArtReels.",
           "uploaded_at": "2026-09-15T21:07:42Z",
           "thumbnail": "https://i.ytimg.com/vi/b373gjPjUMk/mqdefault.jpg",
-          "views": 1349,
+          "views": 1350,
           "likes": 11,
           "comments": 0,
           "upload_status": "processed",
@@ -7001,7 +7001,7 @@
           "title": "Hollywood's Biggest Secret Revealed Behind Closed Doors #BehindTheScenes #Hollywood #MovieMagic #Fil",
           "uploaded_at": "2026-09-13T12:05:10Z",
           "thumbnail": "https://i.ytimg.com/vi/zi3GOAA3zqA/mqdefault.jpg",
-          "views": 758,
+          "views": 755,
           "likes": 7,
           "comments": 0,
           "upload_status": "processed",
