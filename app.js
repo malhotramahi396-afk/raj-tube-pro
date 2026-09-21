@@ -687,13 +687,11 @@ function updateChannelIdentity(channel) {
    2. DASHBOARD VIEW RENDERING
    ======================================================== */
 function renderDashboard(channel) {
-  // A. Latest Video Performance Widget
-  let latestVid = null;
   let allChannelVids = [];
 
   if (channel) {
     allChannelVids = [...(channel.uploaded_videos || [])];
-  } else {
+  } else if (globalData && globalData.channels) {
     globalData.channels.forEach(c => {
       (c.uploaded_videos || []).forEach(v => allChannelVids.push({ ...v, channel_name: c.name }));
     });
@@ -701,77 +699,15 @@ function renderDashboard(channel) {
 
   // Sort strictly by latest upload date first (Newest first)
   allChannelVids.sort((a, b) => new Date(b.uploaded_at || 0) - new Date(a.uploaded_at || 0));
-  latestVid = allChannelVids[0] || null;
 
-  const thumbEl = document.getElementById('dash-latest-thumb');
-  const titleEl = document.getElementById('dash-latest-link');
-  const timeEl = document.getElementById('dash-latest-time');
-  const viewsEl = document.getElementById('dash-metric-views');
-  const likesEl = document.getElementById('dash-metric-likes');
-  const engEl = document.getElementById('dash-metric-eng');
-  const rankEl = document.getElementById('dash-metric-ranking');
-  const analyticsLink = document.getElementById('btn-latest-analytics');
-  const watchLink = document.getElementById('btn-latest-watch');
-
-  if (latestVid) {
-    thumbEl.src = latestVid.thumbnail || `https://i.ytimg.com/vi/${latestVid.youtube_id}/mqdefault.jpg`;
-    titleEl.innerText = latestVid.title;
-    titleEl.href = latestVid.youtube_url;
-    viewsEl.innerText = formatNumber(latestVid.views);
-    likesEl.innerText = formatNumber(latestVid.likes || 0);
-
-    const engRate = latestVid.views > 0 ? ((latestVid.likes / latestVid.views) * 100).toFixed(1) : '0.0';
-    engEl.innerText = `${engRate}%`;
-
-    const totalVidsCount = allChannelVids.length || 10;
-    rankEl.innerText = `1 of ${Math.min(10, totalVidsCount)}`;
-
-    if (latestVid.uploaded_at) {
-      const d = new Date(latestVid.uploaded_at);
-      const dDate = d.toLocaleDateString([], { month: 'short', day: 'numeric', year: 'numeric' });
-      const dTime = d.toLocaleTimeString([], { hour: 'numeric', minute: '2-digit', hour12: true });
-      timeEl.innerText = `Published ${dDate} • ${dTime}`;
-    }
-
-    analyticsLink.href = latestVid.youtube_url;
-    watchLink.href = latestVid.youtube_url;
-  }
-
-  // B. Published Videos Mini List
-  const miniList = document.getElementById('dash-mini-videos-list');
-  if (miniList) {
-    miniList.innerHTML = '';
-    const sliceVids = allChannelVids.slice(0, 4);
-    sliceVids.forEach(v => {
-      const item = document.createElement('div');
-      item.className = 'mini-video-item';
-      const dStr = v.uploaded_at ? new Date(v.uploaded_at).toLocaleDateString([], { month: 'short', day: 'numeric' }) : 'Recently';
-      item.innerHTML = `
-        <img src="${v.thumbnail || `https://i.ytimg.com/vi/${v.youtube_id}/mqdefault.jpg`}" class="mini-thumb" alt="${v.title}" />
-        <div class="mini-info">
-          <div class="mini-title" title="${v.title}">${v.title}</div>
-          <div class="mini-meta">
-            <span>👁️ ${formatNumber(v.views)} views</span>
-            <span style="color:#10B981; font-weight:600;">👥 +${v.subscribers_gained !== undefined ? v.subscribers_gained : 0}</span>
-            <span>👍 ${v.likes || 0}</span>
-            <span>${dStr}</span>
-          </div>
-        </div>
-      `;
-      item.style.cursor = 'pointer';
-      item.addEventListener('click', () => window.open(v.youtube_url, '_blank'));
-      miniList.appendChild(item);
-    });
-  }
-
-  // C. Channel Analytics Widget
+  // Channel Analytics Widget
   let subs = 0, views = 0, likes = 0, avgViews = 0;
   if (channel) {
     subs = channel.subscribers;
     views = channel.total_views;
     likes = channel.total_likes || 0;
     avgViews = channel.avg_views_per_video || 0;
-  } else if (globalData.summary) {
+  } else if (globalData && globalData.summary) {
     subs = globalData.summary.total_subscribers || 0;
     views = globalData.summary.total_views || 0;
     likes = globalData.summary.total_likes || 0;
@@ -781,10 +717,10 @@ function renderDashboard(channel) {
 
   const subsEl = document.getElementById('dash-subs-count');
   if (subsEl) subsEl.innerText = formatNumber(subs);
-  const viewsEl = document.getElementById('dash-summary-views');
-  if (viewsEl) viewsEl.innerText = formatNumber(views);
-  const likesEl = document.getElementById('dash-summary-likes');
-  if (likesEl) likesEl.innerText = formatNumber(likes);
+  const summaryViewsEl = document.getElementById('dash-summary-views');
+  if (summaryViewsEl) summaryViewsEl.innerText = formatNumber(views);
+  const summaryLikesEl = document.getElementById('dash-summary-likes');
+  if (summaryLikesEl) summaryLikesEl.innerText = formatNumber(likes);
   const avgEl = document.getElementById('dash-summary-avg');
   if (avgEl) avgEl.innerText = formatNumber(avgViews);
 
@@ -819,24 +755,6 @@ function renderDashboard(channel) {
       topList.appendChild(row);
     });
   }
-
-  // D. Automated Publishing Queue Widget
-  const driveStock = channel ? channel.drive_queue_count : (globalData.summary ? globalData.summary.total_in_queue : 0);
-  const runwayDays = channel ? channel.runway_days : (globalData.summary ? globalData.summary.total_runway_days : 48.2);
-
-  document.getElementById('dash-drive-title').innerText = `Drive Stock: ${driveStock} Videos Ready`;
-  document.getElementById('dash-drive-runway').innerText = `${runwayDays} Days Runway (2 uploads/day)`;
-
-  const fillBar = document.getElementById('dash-drive-fill');
-  if (fillBar) {
-    fillBar.style.width = `${Math.min(100, Math.round((driveStock / 100) * 100))}%`;
-  }
-
-  // E. Channel Violations & Health Widget
-  renderHealthWidget(channel);
-
-  // F. Cloud Runner IP & Geolocation Radar Widget
-  renderRunnerRadarWidget(channel);
 }
 
 /* ========================================================

@@ -15,7 +15,7 @@
   <link rel="icon" type="image/png" sizes="512x512" href="./icons/icon-512.png">
   <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png">
   <link rel="shortcut icon" href="./icons/icon-192.png">
-  <link rel="stylesheet" href="./styles.css?v=36.0">
+  <link rel="stylesheet" href="./styles.css?v=37.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
@@ -25,7 +25,7 @@
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
-        navigator.serviceWorker.register('./sw.js?v=36.0').catch(() => {});
+        navigator.serviceWorker.register('./sw.js?v=37.0').catch(() => {});
       });
     }
   </script>
@@ -275,213 +275,57 @@
           </div>
         </div>
 
-        <!-- 2-COLUMN YOUTUBE STUDIO CARDS GRID (PERFECTLY BALANCED: 2 CARDS LEFT, 2 CARDS RIGHT) -->
-        <div class="studio-grid-2col">
-
-          <!-- LEFT COLUMN -->
-          <div class="grid-col">
-
-            <!-- WIDGET 1: Latest video performance -->
-            <div class="yt-card widget-latest">
-              <div class="yt-card-header">
-                <h2>Latest video performance</h2>
-              </div>
-
-              <div class="yt-card-body">
-                <div class="latest-media-wrap">
-                  <div class="latest-thumb-box">
-                    <img id="dash-latest-thumb" src="" alt="Thumbnail" />
-                    <span class="badge-duration">0:45</span>
-                  </div>
-                  <div class="latest-title-wrap">
-                    <a href="#" id="dash-latest-link" target="_blank" class="dash-video-title">
-                      Loading latest video...
-                    </a>
-                    <span class="dash-video-sub" id="dash-latest-time">First 1 day</span>
-                  </div>
-                </div>
-
-                <div class="metric-rows-table">
-                  <div class="m-row">
-                    <span class="m-label">Ranking by views</span>
-                    <span class="m-val" id="dash-metric-ranking">1 of 10</span>
-                  </div>
-                  <div class="m-row">
-                    <span class="m-label">Views</span>
-                    <span class="m-val highlight" id="dash-metric-views">--</span>
-                  </div>
-                  <div class="m-row">
-                    <span class="m-label">Likes</span>
-                    <span class="m-val" id="dash-metric-likes">--</span>
-                  </div>
-                  <div class="m-row">
-                    <span class="m-label">Engagement rate</span>
-                    <span class="m-val text-green" id="dash-metric-eng">--%</span>
-                  </div>
-                </div>
-
-                <div class="yt-card-footer">
-                  <a href="#" id="btn-latest-analytics" target="_blank" class="yt-btn-flat">GO TO VIDEO ANALYTICS</a>
-                  <a href="#" id="btn-latest-watch" target="_blank" class="yt-btn-flat">WATCH ON YOUTUBE</a>
-                </div>
-              </div>
+        <!-- MAIN DASHBOARD CONTENT: CHANNEL ANALYTICS OVERVIEW -->
+        <div class="dashboard-analytics-container">
+          <div class="yt-card widget-analytics" style="width: 100%; max-width: 100%;">
+            <div class="yt-card-header">
+              <h2>Channel analytics overview</h2>
             </div>
 
-            <!-- WIDGET 2: Published videos (Mini Content List) -->
-            <div class="yt-card widget-recent-videos">
-              <div class="yt-card-header">
-                <h2>Published videos</h2>
+            <div class="yt-card-body">
+              <div class="subs-highlight-block">
+                <div class="subs-label">Current subscribers</div>
+                <div class="subs-count" id="dash-subs-count">--</div>
+                <div class="subs-delta text-green">▲ 100% Organic Growth</div>
               </div>
 
-              <div class="yt-card-body p-0">
-                <div class="mini-videos-list" id="dash-mini-videos-list">
-                  <!-- Populated by JavaScript -->
-                </div>
+              <div class="divider-line"></div>
 
-                <div class="yt-card-footer">
-                  <button class="yt-btn-flat" id="btn-goto-content">GO TO VIDEOS</button>
+              <div class="summary-section">
+                <div class="summary-heading">Summary <span class="sub-muted">Last 28 days</span></div>
+                <div class="dash-summary-tiles">
+                  <div class="dash-stat-tile">
+                    <span class="stat-tile-label">Views</span>
+                    <span class="stat-tile-value" id="dash-summary-views">--</span>
+                    <span class="stat-tile-delta text-green">▲ 100%</span>
+                  </div>
+                  <div class="dash-stat-tile">
+                    <span class="stat-tile-label">Total Likes</span>
+                    <span class="stat-tile-value" id="dash-summary-likes">--</span>
+                    <span class="stat-tile-delta text-green">▲ 100%</span>
+                  </div>
+                  <div class="dash-stat-tile">
+                    <span class="stat-tile-label">Avg / Video</span>
+                    <span class="stat-tile-value" id="dash-summary-avg">--</span>
+                    <span class="stat-tile-delta text-green">▲ Optimal</span>
+                  </div>
                 </div>
+              </div>
+
+              <div class="divider-line"></div>
+
+              <div class="top-videos-section">
+                <div class="top-heading">Top videos <span class="sub-muted">Views & Subs</span></div>
+                <div class="top-vids-list" id="dash-top-vids-list">
+                  <!-- Top videos injected via JS -->
+                </div>
+              </div>
+
+              <div class="yt-card-footer">
+                <button class="yt-btn-flat" id="btn-goto-analytics">GO TO FULL CHANNEL ANALYTICS</button>
               </div>
             </div>
-
           </div>
-
-          <!-- RIGHT COLUMN -->
-          <div class="grid-col">
-
-            <!-- WIDGET 3: Channel analytics -->
-            <div class="yt-card widget-analytics">
-              <div class="yt-card-header">
-                <h2>Channel analytics</h2>
-              </div>
-
-              <div class="yt-card-body">
-                <div class="subs-highlight-block">
-                  <div class="subs-label">Current subscribers</div>
-                  <div class="subs-count" id="dash-subs-count">--</div>
-                  <div class="subs-delta text-green">▲ 100% Organic Growth</div>
-                </div>
-
-                <div class="divider-line"></div>
-
-                <div class="summary-section">
-                  <div class="summary-heading">Summary <span class="sub-muted">Last 28 days</span></div>
-                  <div class="dash-summary-tiles">
-                    <div class="dash-stat-tile">
-                      <span class="stat-tile-label">Views</span>
-                      <span class="stat-tile-value" id="dash-summary-views">--</span>
-                      <span class="stat-tile-delta text-green">▲ 100%</span>
-                    </div>
-                    <div class="dash-stat-tile">
-                      <span class="stat-tile-label">Total Likes</span>
-                      <span class="stat-tile-value" id="dash-summary-likes">--</span>
-                      <span class="stat-tile-delta text-green">▲ 100%</span>
-                    </div>
-                    <div class="dash-stat-tile">
-                      <span class="stat-tile-label">Avg / Video</span>
-                      <span class="stat-tile-value" id="dash-summary-avg">--</span>
-                      <span class="stat-tile-delta text-green">▲ Optimal</span>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="divider-line"></div>
-
-                <div class="top-videos-section">
-                  <div class="top-heading">Top videos <span class="sub-muted">Views & Subs</span></div>
-                  <div class="top-vids-list" id="dash-top-vids-list">
-                    <!-- Top videos injected via JS -->
-                  </div>
-                </div>
-
-                <div class="yt-card-footer">
-                  <button class="yt-btn-flat" id="btn-goto-analytics">GO TO CHANNEL ANALYTICS</button>
-                </div>
-              </div>
-            </div>
-
-            <!-- WIDGET 4: Channel Health & Automation Shield -->
-            <div class="yt-card widget-health">
-              <div class="yt-card-header">
-                <div class="header-title-with-badge">
-                  <h2>Channel Health & Automation Shield</h2>
-                  <span class="health-status-badge badge-clean" id="dash-health-shield">🛡️ Clean</span>
-                </div>
-              </div>
-
-              <div class="yt-card-body">
-                <!-- Strikes Row -->
-                <div class="health-item-row">
-                  <div class="health-item-icon text-green">
-                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
-                  </div>
-                  <div class="health-item-info">
-                    <div class="health-item-title">Community Guidelines Standing</div>
-                    <div class="health-item-desc" id="dash-health-strikes">0 of 3 active strikes • Channel in Good Standing (YouTube API Verified)</div>
-                  </div>
-                  <span class="health-pill badge-passed" id="dash-health-strikes-pill">0 STRIKES</span>
-                </div>
-
-                <!-- Copyright Row -->
-                <div class="health-item-row">
-                  <div class="health-item-icon text-green">
-                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm0 18a8 8 0 110-16 8 8 0 010 16zm-1-13h2v6h-2zm0 8h2v2h-2z"/></svg>
-                  </div>
-                  <div class="health-item-info">
-                    <div class="health-item-title">Copyright Standing</div>
-                    <div class="health-item-desc" id="dash-health-copyright">0 copyright claims • 100% Clean Original Content</div>
-                  </div>
-                  <span class="health-pill badge-passed" id="dash-health-copyright-pill">CLEAN</span>
-                </div>
-
-                <!-- Flagged Videos Quick Studio Resolution Box -->
-                <div class="dash-flagged-box" id="dash-flagged-box" style="display: none;"></div>
-
-                <!-- Next Scheduled Upload Row -->
-                <div class="health-item-row">
-                  <div class="health-item-icon text-amber">
-                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
-                  </div>
-                  <div class="health-item-info">
-                    <div class="health-item-title">Next Scheduled Upload</div>
-                    <div class="health-item-desc" id="dash-next-slot-time">Target: 07:30 PM IST • Dedicated Cloud Node</div>
-                  </div>
-                  <span class="health-pill badge-velocity" id="dash-countdown-clock" style="font-family: monospace; font-weight: 700; color: #fb923c;">--h --m --s</span>
-                </div>
-
-                <!-- Drive Stock Row -->
-                <div class="health-item-row">
-                  <div class="health-item-icon text-blue">
-                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM14 13v4h-4v-4H7l5-5 5 5h-3z"/></svg>
-                  </div>
-                  <div class="health-item-info">
-                    <div class="health-item-title" id="dash-drive-title">Drive Stock: -- Videos Ready</div>
-                    <div class="health-item-desc" id="dash-drive-runway">-- Days Runway (2 uploads/day)</div>
-                  </div>
-                  <span class="health-pill badge-passed">AUTOMATED</span>
-                </div>
-
-                <!-- Overall Health Score Meter -->
-                <div class="health-score-card">
-                  <div class="health-score-title-row">
-                    <span>Overall Channel Health</span>
-                    <span class="health-score-number" id="dash-health-score-num">100 / 100</span>
-                  </div>
-                  <div class="mini-progress-bar">
-                    <div class="progress-bar-fill fill-emerald" id="dash-health-score-bar" style="width: 100%;"></div>
-                  </div>
-                  <div class="health-score-footer" id="dash-health-verdict">Flawless (Optimal Standing)</div>
-                </div>
-
-                <div class="yt-card-footer" style="display: flex; gap: 8px; justify-content: space-between; flex-wrap: wrap;">
-                  <button class="yt-btn-flat" id="btn-goto-health">VIEW ALL CHANNELS HEALTH</button>
-                  <button class="yt-btn-flat" id="btn-goto-schedule" style="color: #38BDF8; font-weight: 700;">VIEW FULL SCHEDULE →</button>
-                </div>
-              </div>
-            </div>
-
-          </div>
-
         </div>
       </section>
 
@@ -1165,6 +1009,6 @@
   <!-- Toast Notification -->
   <div id="toast" class="toast">Link copied to clipboard!</div>
 
-  <script src="./app.js?v=36.0"></script>
+  <script src="./app.js?v=37.0"></script>
 </body>
 </html>

@@ -1,5 +1,5 @@
-// Service Worker for Raj Tube Pro - v36.0 (Balanced Dashboard & Executive KPIs)
-const CACHE_NAME = 'raj-tube-pro-v36';
+// Service Worker for Raj Tube Pro - v37.0 (Clean Dashboard & Executive KPIs)
+const CACHE_NAME = 'raj-tube-pro-v37';
 
 self.addEventListener('install', (event) => {
   self.skipWaiting();
