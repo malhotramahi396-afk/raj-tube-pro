@@ -15,7 +15,7 @@
   <link rel="icon" type="image/png" sizes="512x512" href="./icons/icon-512.png">
   <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png">
   <link rel="shortcut icon" href="./icons/icon-192.png">
-  <link rel="stylesheet" href="./styles.css?v=35.0">
+  <link rel="stylesheet" href="./styles.css?v=36.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
@@ -25,7 +25,7 @@
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
-        navigator.serviceWorker.register('./sw.js?v=35.0').catch(() => {});
+        navigator.serviceWorker.register('./sw.js?v=36.0').catch(() => {});
       });
     }
   </script>
@@ -236,7 +236,46 @@
 
 
 
-        <!-- 2-COLUMN YOUTUBE STUDIO CARDS GRID -->
+        <!-- EXECUTIVE 4-KPI QUICK METRICS GRID -->
+        <div class="dashboard-kpi-grid">
+          <div class="kpi-card">
+            <div class="kpi-icon-wrap kpi-icon-blue">👥</div>
+            <div class="kpi-meta">
+              <div class="kpi-label">Subscribers</div>
+              <div class="kpi-value" id="dash-kpi-subs">--</div>
+              <div class="kpi-sub text-green">▲ 100% Organic</div>
+            </div>
+          </div>
+
+          <div class="kpi-card">
+            <div class="kpi-icon-wrap kpi-icon-green">👁️</div>
+            <div class="kpi-meta">
+              <div class="kpi-label">28-Day Views</div>
+              <div class="kpi-value" id="dash-kpi-views">--</div>
+              <div class="kpi-sub text-green">▲ Active Reach</div>
+            </div>
+          </div>
+
+          <div class="kpi-card">
+            <div class="kpi-icon-wrap kpi-icon-purple">🎬</div>
+            <div class="kpi-meta">
+              <div class="kpi-label">Published Shorts</div>
+              <div class="kpi-value" id="dash-kpi-vids">--</div>
+              <div class="kpi-sub text-blue">100% Vertical</div>
+            </div>
+          </div>
+
+          <div class="kpi-card">
+            <div class="kpi-icon-wrap kpi-icon-amber">⚡</div>
+            <div class="kpi-meta">
+              <div class="kpi-label">Next Dispatch</div>
+              <div class="kpi-value" id="dash-kpi-countdown" style="font-family: monospace; color: #fb923c;">--:--:--</div>
+              <div class="kpi-sub text-amber" id="dash-kpi-next-slot">Automated Upload</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2-COLUMN YOUTUBE STUDIO CARDS GRID (PERFECTLY BALANCED: 2 CARDS LEFT, 2 CARDS RIGHT) -->
         <div class="studio-grid-2col">
 
           <!-- LEFT COLUMN -->
@@ -309,84 +348,6 @@
 
           <!-- RIGHT COLUMN -->
           <div class="grid-col">
-            <!-- WIDGET: Channel violations & Health -->
-            <div class="yt-card widget-health">
-              <div class="yt-card-header">
-                <div class="header-title-with-badge">
-                  <h2>Channel violations & Health</h2>
-                  <span class="health-status-badge badge-clean" id="dash-health-shield">🛡️ Clean</span>
-                </div>
-              </div>
-
-              <div class="yt-card-body">
-                <!-- Strikes Row -->
-                <div class="health-item-row">
-                  <div class="health-item-icon text-green">
-                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
-                  </div>
-                  <div class="health-item-info">
-                    <div class="health-item-title">Community Guidelines Standing</div>
-                    <div class="health-item-desc" id="dash-health-strikes">0 of 3 active strikes • Channel in Good Standing (YouTube API Verified)</div>
-                  </div>
-                  <span class="health-pill badge-passed" id="dash-health-strikes-pill">0 STRIKES</span>
-                </div>
-
-                <!-- Copyright Row -->
-                <div class="health-item-row">
-                  <div class="health-item-icon text-green">
-                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm0 18a8 8 0 110-16 8 8 0 010 16zm-1-13h2v6h-2zm0 8h2v2h-2z"/></svg>
-                  </div>
-                  <div class="health-item-info">
-                    <div class="health-item-title">Copyright Standing</div>
-                    <div class="health-item-desc" id="dash-health-copyright">0 copyright claims • 100% Clean Original Content</div>
-                  </div>
-                  <span class="health-pill badge-passed" id="dash-health-copyright-pill">CLEAN</span>
-                </div>
-
-                <!-- Flagged Videos Quick Studio Resolution Box -->
-                <div class="dash-flagged-box" id="dash-flagged-box" style="display: none;"></div>
-
-                <!-- View Performance & Algorithm Velocity -->
-                <div class="health-item-row">
-                  <div class="health-item-icon text-blue">
-                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z"/></svg>
-                  </div>
-                  <div class="health-item-info">
-                    <div class="health-item-title">YouTube Live Velocity & Reach</div>
-                    <div class="health-item-desc" id="dash-health-views">Real-time YouTube Data API v3 verified metrics</div>
-                  </div>
-                  <span class="health-pill badge-velocity" id="dash-health-views-badge">VERIFIED</span>
-                </div>
-
-                <!-- Policy Compliance Row -->
-                <div class="health-item-row">
-                  <div class="health-item-icon text-green">
-                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
-                  </div>
-                  <div class="health-item-info">
-                    <div class="health-item-title">YouTube Policy Guard & AI Disclosure</div>
-                    <div class="health-item-desc" id="dash-health-compliance">100% Compliant • Synthetic Media Flag & COPPA Guard On</div>
-                  </div>
-                  <span class="health-pill badge-passed">100% OK</span>
-                </div>
-
-                <!-- Score Meter -->
-                <div class="health-score-card">
-                  <div class="health-score-title-row">
-                    <span>Overall Channel Health</span>
-                    <span class="health-score-number" id="dash-health-score-num">98 / 100</span>
-                  </div>
-                  <div class="mini-progress-bar">
-                    <div class="progress-bar-fill fill-emerald" id="dash-health-score-bar" style="width: 98%;"></div>
-                  </div>
-                  <div class="health-score-footer" id="dash-health-verdict">Flawless (Optimal Standing)</div>
-                </div>
-
-                <div class="yt-card-footer">
-                  <button class="yt-btn-flat" id="btn-goto-health">VIEW ALL CHANNELS HEALTH</button>
-                </div>
-              </div>
-            </div>
 
             <!-- WIDGET 3: Channel analytics -->
             <div class="yt-card widget-analytics">
@@ -439,107 +400,82 @@
               </div>
             </div>
 
-            <!-- WIDGET 4: Automated Publishing & Google Drive Queue -->
-            <div class="yt-card widget-queue">
+            <!-- WIDGET 4: Channel Health & Automation Shield -->
+            <div class="yt-card widget-health">
               <div class="yt-card-header">
-                <h2>Automated Publishing Queue</h2>
+                <div class="header-title-with-badge">
+                  <h2>Channel Health & Automation Shield</h2>
+                  <span class="health-status-badge badge-clean" id="dash-health-shield">🛡️ Clean</span>
+                </div>
               </div>
 
               <div class="yt-card-body">
-                <div class="queue-status-box">
-                  <div class="queue-icon-wrap">
-                    <svg viewBox="0 0 24 24" width="24" height="24" fill="#3EA6FF">
-                      <path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM14 13v4h-4v-4H7l5-5 5 5h-3z"/>
-                    </svg>
+                <!-- Strikes Row -->
+                <div class="health-item-row">
+                  <div class="health-item-icon text-green">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
                   </div>
-                  <div class="queue-info">
-                    <div class="queue-title" id="dash-drive-title">Drive Stock: -- Videos</div>
-                    <div class="queue-sub" id="dash-drive-runway">-- Days Runway (2 uploads/day)</div>
+                  <div class="health-item-info">
+                    <div class="health-item-title">Community Guidelines Standing</div>
+                    <div class="health-item-desc" id="dash-health-strikes">0 of 3 active strikes • Channel in Good Standing (YouTube API Verified)</div>
                   </div>
+                  <span class="health-pill badge-passed" id="dash-health-strikes-pill">0 STRIKES</span>
                 </div>
 
-                <div class="mini-progress-bar">
-                  <div class="progress-bar-fill" id="dash-drive-fill" style="width: 80%;"></div>
+                <!-- Copyright Row -->
+                <div class="health-item-row">
+                  <div class="health-item-icon text-green">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm0 18a8 8 0 110-16 8 8 0 010 16zm-1-13h2v6h-2zm0 8h2v2h-2z"/></svg>
+                  </div>
+                  <div class="health-item-info">
+                    <div class="health-item-title">Copyright Standing</div>
+                    <div class="health-item-desc" id="dash-health-copyright">0 copyright claims • 100% Clean Original Content</div>
+                  </div>
+                  <span class="health-pill badge-passed" id="dash-health-copyright-pill">CLEAN</span>
                 </div>
 
-                <div class="metric-rows-table mt-12">
-                  <div class="m-row">
-                    <span class="m-label">Next Scheduled Slot</span>
-                    <span class="m-val text-blue" id="dash-next-slot-time">05:00 PM USA (2:30 AM IST)</span>
+                <!-- Flagged Videos Quick Studio Resolution Box -->
+                <div class="dash-flagged-box" id="dash-flagged-box" style="display: none;"></div>
+
+                <!-- Next Scheduled Upload Row -->
+                <div class="health-item-row">
+                  <div class="health-item-icon text-amber">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
                   </div>
-                  <div class="m-row">
-                    <span class="m-label">Time Remaining</span>
-                    <span class="m-val highlight" id="dash-countdown-clock">--h --m --s</span>
+                  <div class="health-item-info">
+                    <div class="health-item-title">Next Scheduled Upload</div>
+                    <div class="health-item-desc" id="dash-next-slot-time">Target: 07:30 PM IST • Dedicated Cloud Node</div>
                   </div>
-                  <div class="m-row">
-                    <span class="m-label">Drive Auto-Delete</span>
-                    <span class="m-val text-green">Active (Permanent Deletion)</span>
+                  <span class="health-pill badge-velocity" id="dash-countdown-clock" style="font-family: monospace; font-weight: 700; color: #fb923c;">--h --m --s</span>
+                </div>
+
+                <!-- Drive Stock Row -->
+                <div class="health-item-row">
+                  <div class="health-item-icon text-blue">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM14 13v4h-4v-4H7l5-5 5 5h-3z"/></svg>
                   </div>
-                  <div class="m-row">
-                    <span class="m-label">Runner Engine</span>
-                    <span class="m-val">USA Dedicated Cloud Runner</span>
+                  <div class="health-item-info">
+                    <div class="health-item-title" id="dash-drive-title">Drive Stock: -- Videos Ready</div>
+                    <div class="health-item-desc" id="dash-drive-runway">-- Days Runway (2 uploads/day)</div>
                   </div>
+                  <span class="health-pill badge-passed">AUTOMATED</span>
+                </div>
+
+                <!-- Overall Health Score Meter -->
+                <div class="health-score-card">
+                  <div class="health-score-title-row">
+                    <span>Overall Channel Health</span>
+                    <span class="health-score-number" id="dash-health-score-num">100 / 100</span>
+                  </div>
+                  <div class="mini-progress-bar">
+                    <div class="progress-bar-fill fill-emerald" id="dash-health-score-bar" style="width: 100%;"></div>
+                  </div>
+                  <div class="health-score-footer" id="dash-health-verdict">Flawless (Optimal Standing)</div>
                 </div>
 
                 <div class="yt-card-footer" style="display: flex; gap: 8px; justify-content: space-between; flex-wrap: wrap;">
-                  <button class="yt-btn-flat" id="btn-goto-queue">VIEW QUEUE DETAILS</button>
-                  <button class="yt-btn-flat" id="btn-goto-schedule" style="color: #38BDF8; font-weight: 700;">VIEW 9-CH SCHEDULE →</button>
-                </div>
-              </div>
-            </div>
-
-
-
-            <!-- WIDGET: Cloud Runner IP & Geolocation Radar -->
-            <div class="yt-card widget-runner-radar">
-              <div class="yt-card-header">
-                <div style="display: flex; align-items: center; justify-content: space-between; width: 100%; flex-wrap: wrap; gap: 8px;">
-                  <h2>Cloud Runner IP & Geo Radar</h2>
-                  <span class="live-badge-tag" style="background: rgba(16, 185, 129, 0.15); color: #10B981; border: 1px solid rgba(16, 185, 129, 0.3); font-size: 10.5px; padding: 3px 8px; border-radius: 12px; font-weight: 600;">🟢 100% GENUINE IP</span>
-                </div>
-              </div>
-
-              <div class="yt-card-body">
-                <div class="runner-radar-hero-box">
-                  <div class="runner-flag-badge" id="dash-runner-flag">🇺🇸</div>
-                  <div class="runner-hero-meta">
-                    <div class="runner-ip-display">
-                      <span class="runner-ip-code" id="dash-runner-ip">132.196.31.128</span>
-                      <button class="btn-copy-mini" id="dash-btn-copy-ip" title="Copy exact IP">📋</button>
-                    </div>
-                    <div class="runner-geo-location" id="dash-runner-geo">Des Moines, Iowa, United States</div>
-                  </div>
-                </div>
-
-                <div class="metric-rows-table mt-12">
-                  <div class="m-row">
-                    <span class="m-label">Cloud Datacenter</span>
-                    <span class="m-val font-semibold text-blue" id="dash-runner-dc">Microsoft Azure Central US (Iowa)</span>
-                  </div>
-                  <div class="m-row">
-                    <span class="m-label">Network AS / Org</span>
-                    <span class="m-val" id="dash-runner-org">AS8075 Microsoft Corporation</span>
-                  </div>
-                  <div class="m-row">
-                    <span class="m-label">Simultaneous IP Overlap</span>
-                    <span class="m-val text-green font-semibold">0% (Unique Ephemeral IP Per Channel)</span>
-                  </div>
-                  <div class="m-row">
-                    <span class="m-label">Last Upload Run</span>
-                    <span class="m-val text-amber font-semibold" id="dash-runner-time">Sep 13, 2026, 03:20 AM</span>
-                  </div>
-                  <div class="m-row">
-                    <span class="m-label">Live Verification Status</span>
-                    <span class="m-val text-green">100% Genuine (Live ipinfo.io Probe)</span>
-                  </div>
-                </div>
-
-                <div class="runner-card-actions mt-16">
-                  <a href="https://ipinfo.io/132.196.31.128" target="_blank" class="yt-btn-primary" id="dash-runner-track-link">
-                    <span>🔎 Track IP & Whois (ipinfo.io)</span>
-                    <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M19 19H5V5h7V3H5a2 2 0 00-2 2v14a2 2 0 002 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/></svg>
-                  </a>
-                  <button class="yt-btn-flat" id="btn-goto-radar">VIEW ALL 10 CHANNEL IPS →</button>
+                  <button class="yt-btn-flat" id="btn-goto-health">VIEW ALL CHANNELS HEALTH</button>
+                  <button class="yt-btn-flat" id="btn-goto-schedule" style="color: #38BDF8; font-weight: 700;">VIEW FULL SCHEDULE →</button>
                 </div>
               </div>
             </div>
@@ -1229,6 +1165,6 @@
   <!-- Toast Notification -->
   <div id="toast" class="toast">Link copied to clipboard!</div>
 
-  <script src="./app.js?v=35.0"></script>
+  <script src="./app.js?v=36.0"></script>
 </body>
 </html>

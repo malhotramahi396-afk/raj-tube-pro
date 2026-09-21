@@ -591,6 +591,10 @@ function renderAll() {
     if (slotEl && globalData.schedule.slot_label) {
       slotEl.innerText = globalData.schedule.slot_label;
     }
+    const kpiSlot = document.getElementById('dash-kpi-next-slot');
+    if (kpiSlot && globalData.schedule.slot_label) {
+      kpiSlot.innerText = globalData.schedule.slot_label;
+    }
   }
 }
 
@@ -775,10 +779,27 @@ function renderDashboard(channel) {
     avgViews = Math.round(views / vCount);
   }
 
-  document.getElementById('dash-subs-count').innerText = formatNumber(subs);
-  document.getElementById('dash-summary-views').innerText = formatNumber(views);
-  document.getElementById('dash-summary-likes').innerText = formatNumber(likes);
-  document.getElementById('dash-summary-avg').innerText = formatNumber(avgViews);
+  const subsEl = document.getElementById('dash-subs-count');
+  if (subsEl) subsEl.innerText = formatNumber(subs);
+  const viewsEl = document.getElementById('dash-summary-views');
+  if (viewsEl) viewsEl.innerText = formatNumber(views);
+  const likesEl = document.getElementById('dash-summary-likes');
+  if (likesEl) likesEl.innerText = formatNumber(likes);
+  const avgEl = document.getElementById('dash-summary-avg');
+  if (avgEl) avgEl.innerText = formatNumber(avgViews);
+
+  // Update Top Executive KPI Cards
+  const kpiSubs = document.getElementById('dash-kpi-subs');
+  if (kpiSubs) kpiSubs.innerText = formatNumber(subs);
+  const kpiViews = document.getElementById('dash-kpi-views');
+  if (kpiViews) kpiViews.innerText = formatNumber(views);
+  const kpiVids = document.getElementById('dash-kpi-vids');
+  if (kpiVids) {
+    const totalVids = channel 
+      ? (channel.uploaded_videos ? channel.uploaded_videos.length : (channel.channel_total_videos || 0)) 
+      : (globalData && globalData.summary ? globalData.summary.total_uploaded : (allChannelVids ? allChannelVids.length : 0));
+    kpiVids.innerText = formatNumber(totalVids);
+  }
 
   // Top videos mini list
   const topList = document.getElementById('dash-top-vids-list');
@@ -1740,6 +1761,10 @@ function startCountdown() {
     const clock = document.getElementById('dash-countdown-clock');
     if (clock) {
       clock.innerText = `${String(h).padStart(2, '0')}h ${String(m).padStart(2, '0')}m ${String(s).padStart(2, '0')}s`;
+    }
+    const kpiClock = document.getElementById('dash-kpi-countdown');
+    if (kpiClock) {
+      kpiClock.innerText = `${String(h).padStart(2, '0')}:${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`;
     }
 
     countdownSeconds--;
