@@ -1,5 +1,5 @@
-// Service Worker for Raj Tube Pro - v34.0 (Consolidated Queue into Schedule)
-const CACHE_NAME = 'raj-tube-pro-v34';
+// Service Worker for Raj Tube Pro - v35.0 (Clean Minimal Studio UI)
+const CACHE_NAME = 'raj-tube-pro-v35';
 
 self.addEventListener('install', (event) => {
   self.skipWaiting();

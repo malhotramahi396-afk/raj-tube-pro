@@ -135,9 +135,11 @@ function setupNavigation() {
 }
 
 function switchView(viewName) {
-  // Radar and Queue are now consolidated into Upload Schedule
+  // Radar and Queue are consolidated into Upload Schedule, Settings removed
   if (viewName === 'radar' || viewName === 'queue') {
     viewName = 'schedule';
+  } else if (viewName === 'settings') {
+    viewName = 'dashboard';
   }
 
   // Update sidebar active classes
@@ -626,8 +628,8 @@ function updateChannelIdentity(channel) {
     dropdownHandle.innerText = channel.handle;
     pillName.innerText = channel.name;
 
-    dropdownLink.href = channel.channel_url;
-    sidebarLink.href = channel.channel_url;
+    if (dropdownLink) dropdownLink.href = channel.channel_url;
+    if (sidebarLink) sidebarLink.href = channel.channel_url;
 
     const vCount = channel.channel_total_videos || (channel.uploaded_videos ? channel.uploaded_videos.length : 0);
     if (contentBadge) contentBadge.innerText = vCount;
@@ -649,8 +651,8 @@ function updateChannelIdentity(channel) {
     dropdownHandle.innerText = `@AllChannels • ${totalChannelsCount} Channels`;
     pillName.innerText = `All ${totalChannelsCount} Channels`;
 
-    dropdownLink.href = "https://studio.youtube.com";
-    sidebarLink.href = "https://studio.youtube.com";
+    if (dropdownLink) dropdownLink.href = "https://studio.youtube.com";
+    if (sidebarLink) sidebarLink.href = "https://studio.youtube.com";
 
     const totalVids = globalData && globalData.summary ? globalData.summary.total_uploaded : 0;
     const totalQueue = globalData && globalData.summary ? globalData.summary.total_in_queue : 0;

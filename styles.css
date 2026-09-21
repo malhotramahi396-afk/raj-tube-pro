@@ -1355,6 +1355,13 @@ button {
   }
 }
 
+/* Desktop: Strictly hide top hamburger button (☰) since sidebar is permanently pinned */
+@media (min-width: 901px) {
+  #btn-toggle-sidebar {
+    display: none !important;
+  }
+}
+
 /* ========================================================
    RESPONSIVE DESIGN: MOBILE PHONE (9:16) & SMALL SCREENS
    (Does NOT affect PC / Laptop view!)
