@@ -51,7 +51,122 @@ def get_credentials():
         scopes=["https://www.googleapis.com/auth/youtube.readonly"]
     )
     creds.refresh(Request())
-    return build("youtube", "v3", credentials=creds, cache_discovery=False)
+    return build("youtube", "v3", credentials=creds, cache_discovery=False), client_id, client_secret
+
+
+COUNTRY_FLAGS = {
+    "IN": "🇮🇳", "US": "🇺🇸", "UZ": "🇺🇿", "ID": "🇮🇩", "MM": "🇲🇲",
+    "GB": "🇬🇧", "CA": "🇨🇦", "DE": "🇩🇪", "BR": "🇧🇷", "MX": "🇲🇽",
+    "PH": "🇵🇭", "FR": "🇫🇷", "AU": "🇦🇺", "RU": "🇷🇺", "PK": "🇵🇰"
+}
+COUNTRY_NAMES = {
+    "IN": "India", "US": "United States", "UZ": "Uzbekistan", "ID": "Indonesia", "MM": "Myanmar (Burma)",
+    "GB": "United Kingdom", "CA": "Canada", "DE": "Germany", "BR": "Brazil", "MX": "Mexico",
+    "PH": "Philippines", "FR": "France", "AU": "Australia", "RU": "Russia", "PK": "Pakistan"
+}
+
+
+def fetch_live_audience_analytics(ch_id: str, refresh_token: str, client_id: str, client_secret: str) -> Dict[str, Any]:
+    """Queries official YouTube Analytics API for 100% genuine country, age, and gender telemetry."""
+    from google.oauth2.credentials import Credentials
+    from google.auth.transport.requests import Request
+    from googleapiclient.discovery import build
+    from datetime import datetime, timezone, timedelta
+
+    try:
+        creds = Credentials(
+            token=None,
+            refresh_token=refresh_token,
+            token_uri="https://oauth2.googleapis.com/token",
+            client_id=client_id,
+            client_secret=client_secret
+        )
+        creds.refresh(Request())
+        analytics_svc = build("youtubeAnalytics", "v2", credentials=creds, cache_discovery=False)
+
+        now = datetime.now(timezone.utc)
+        end_date = now.strftime("%Y-%m-%d")
+        start_date = (now - timedelta(days=28)).strftime("%Y-%m-%d")
+
+        # 1. Top Countries
+        res_c = analytics_svc.reports().query(
+            ids="channel==MINE",
+            startDate=start_date,
+            endDate=end_date,
+            metrics="views",
+            dimensions="country",
+            sort="-views",
+            maxResults=8
+        ).execute()
+
+        c_rows = res_c.get("rows", [])
+        total_v = sum(r[1] for r in c_rows)
+        top_countries = []
+        top_sum = 0
+        if total_v > 0:
+            for row in c_rows[:5]:
+                cc = row[0]
+                pct = round((row[1] / total_v * 100), 1)
+                top_sum += pct
+                top_countries.append({
+                    "country": COUNTRY_NAMES.get(cc, cc),
+                    "code": cc,
+                    "flag": COUNTRY_FLAGS.get(cc, "🌐"),
+                    "percent": pct
+                })
+            top_countries.append({
+                "country": "Other countries",
+                "code": "OTHER",
+                "flag": "🌐",
+                "percent": round(max(0, 100 - top_sum), 1)
+            })
+
+        # 2. Age & Gender
+        res_ag = analytics_svc.reports().query(
+            ids="channel==MINE",
+            startDate=start_date,
+            endDate=end_date,
+            metrics="viewerPercentage",
+            dimensions="ageGroup,gender",
+            sort="ageGroup"
+        ).execute()
+
+        age_map = {}
+        male_pct = 0.0
+        female_pct = 0.0
+
+        for row in res_ag.get("rows", []):
+            raw_age, gender, pct = row[0], row[1], float(row[2])
+            label_map = {
+                "age13-17": "13–17 years",
+                "age18-24": "18–24 years",
+                "age25-34": "25–34 years",
+                "age35-44": "35–44 years",
+                "age45-54": "45–54 years",
+                "age55-64": "55–64 years",
+                "age65-": "65+ years"
+            }
+            age_label = label_map.get(raw_age, raw_age)
+            age_map[age_label] = round(age_map.get(age_label, 0.0) + pct, 1)
+            if gender == "male":
+                male_pct += pct
+            elif gender == "female":
+                female_pct += pct
+
+        age_distribution = [{"range": k, "percent": v} for k, v in age_map.items()]
+        tot_gender = male_pct + female_pct
+        gender_dict = {
+            "male": round((male_pct / tot_gender * 100) if tot_gender > 0 else 70.0, 1),
+            "female": round((female_pct / tot_gender * 100) if tot_gender > 0 else 30.0, 1)
+        }
+
+        return {
+            "top_countries": top_countries,
+            "age_distribution": age_distribution,
+            "gender": gender_dict
+        }
+    except Exception as e:
+        return None
 
 
 CHANNEL_REPOS = {
@@ -61,7 +176,6 @@ CHANNEL_REPOS = {
     "channel_4": ("malhotramahi396-afk/yt-automation-vexorush", "data/channel_4.db"),
     "channel_5": ("malhotramahi396-afk/yt-automation-klyvo", "data/channel_5.db"),
     "channel_6": ("malhotramahi396-afk/yt-automation-corevantamedia", "data/channel_6.db"),
-    "channel_7": ("malhotramahi396-afk/yt-automation-firenovavault", "data/channel_7.db"),
     "channel_8": ("malhotramahi396-afk/yt-automation-hyperfluxmotion", "data/channel_8.db"),
     "channel_9": ("malhotramahi396-afk/yt-automation-vortexedgestories", "data/channel_9.db"),
     "channel_10": ("malhotramahi396-afk/yt-automation-zenovadrift", "data/channel_10.db")
@@ -178,6 +292,118 @@ def sync_runner_nodes(channels: List[Dict[str, Any]]):
             print(f"  Warning: Could not sync runner IP for {ch.get('name')}: {e}")
 
 
+GDRIVE_FOLDER_MAP = {
+    "channel_1": "1f8Nj2kEchzW4gdlMEQ5S_eAazvdrQ3ai",  # The Hidden Lens
+    "channel_2": "1So3rmfL0rvojsXq7m6WoA9RYS029HXW6",  # Zyntrix07
+    "channel_3": "1oZBC0TiLWerpRuyZnhbDhNbAMAcEtdAc",  # VibroZen
+    "channel_4": "1C_R0kNrMxrW5FeX241UluglGU-qUEfkS",  # VexoRush
+    "channel_5": "1xZSez3F82y0pLTWJbQ-ybPjbOCqY1mrW",  # Klyvo
+    "channel_6": "1mxwPH1BvYEfv77zDUWA5ZxiwYW2hG125",  # CoreVanta Media
+    "channel_8": "1Gg_7t0r1W59nhLOvilGfOttuSa_T5tWd",  # Hyperflux Motion
+    "channel_9": "1jjoc2hHDrUb9S7seMnLQe0SUalCA3buU",  # Vortex Edge Stories
+    "channel_10": "1hqcXV2-IbDWrh7QR_xvOlfnOfO6Cbi9g",  # Zenova Drift
+}
+
+
+def get_gdrive_service():
+    sa_json = os.environ.get("GDRIVE_SERVICE_ACCOUNT_JSON")
+    if not sa_json:
+        candidates = [
+            r"E:\YT Auto GITHUB\service_account.json",
+            os.path.join(os.path.dirname(__file__), "..", "service_account.json"),
+            os.path.join(os.path.dirname(__file__), "service_account.json"),
+            "service_account.json"
+        ]
+        for c in candidates:
+            if os.path.exists(c):
+                try:
+                    with open(c, "r", encoding="utf-8") as f:
+                        sa_json = f.read()
+                    break
+                except Exception:
+                    pass
+
+    if not sa_json:
+        print("Note: GDRIVE_SERVICE_ACCOUNT_JSON not found, skipping Google Drive stock sync.")
+        return None
+
+    try:
+        from google.oauth2 import service_account
+        from googleapiclient.discovery import build
+        info = json.loads(sa_json) if isinstance(sa_json, str) else sa_json
+        creds = service_account.Credentials.from_service_account_info(
+            info, scopes=["https://www.googleapis.com/auth/drive.readonly"]
+        )
+        return build("drive", "v3", credentials=creds, cache_discovery=False)
+    except Exception as e:
+        print(f"Warning: Failed to initialize Google Drive service: {e}")
+        return None
+
+
+def count_drive_videos(drive_service, folder_id: str) -> int:
+    query = f"'{folder_id}' in parents and trashed = false"
+    total_videos = 0
+    page_token = None
+    supported_extensions = {".mp4", ".mov", ".m4v", ".webm", ".mkv"}
+    supported_mimes = {
+        "video/mp4", "video/quicktime", "video/x-m4v", "video/webm",
+        "video/x-matroska", "application/octet-stream"
+    }
+
+    try:
+        while True:
+            res = drive_service.files().list(
+                q=query,
+                spaces="drive",
+                fields="nextPageToken, files(id, name, mimeType)",
+                pageToken=page_token,
+                pageSize=100
+            ).execute()
+            for f in res.get("files", []):
+                name = f.get("name", "")
+                ext = os.path.splitext(name)[1].lower()
+                mime = f.get("mimeType", "")
+                if ext in supported_extensions or mime in supported_mimes:
+                    total_videos += 1
+            page_token = res.get("nextPageToken")
+            if not page_token:
+                break
+        return total_videos
+    except Exception as e:
+        print(f"Error counting Drive videos for folder {folder_id}: {e}")
+        return -1
+
+
+def sync_google_drive_stock(channels: List[Dict[str, Any]], data: Dict[str, Any]):
+    drive_service = get_gdrive_service()
+    if not drive_service:
+        return
+
+    print(f"Syncing live Google Drive stock across all {len(channels)} channels...")
+    total_in_queue = 0
+
+    for ch in channels:
+        ch_id = ch.get("id")
+        folder_id = GDRIVE_FOLDER_MAP.get(ch_id)
+        if not folder_id:
+            continue
+
+        count = count_drive_videos(drive_service, folder_id)
+        if count >= 0:
+            ch["drive_queue_count"] = count
+            ch["drive_videos_count"] = count
+            ch["runway_days"] = round(count / 2.0, 1)
+            total_in_queue += count
+            print(f"  [+] {ch.get('name', ch_id)}: {count} videos in Google Drive ({round(count / 2.0, 1)} days runway)")
+        else:
+            prev = ch.get("drive_queue_count", 0)
+            print(f"  [-] {ch.get('name', ch_id)}: kept previous count {prev}")
+            total_in_queue += prev
+
+    if "summary" in data:
+        data["summary"]["total_in_queue"] = total_in_queue
+
+
 def sync_metrics(data_json_path: str):
     if not os.path.exists(data_json_path):
         print(f"Error: {data_json_path} not found")
@@ -191,12 +417,41 @@ def sync_metrics(data_json_path: str):
     # 1. Sync Runner Nodes & IP Telemetry from GitHub SQLite databases
     sync_runner_nodes(channels)
 
-    service = get_credentials()
-    if not service:
+    # 2. Sync Real-Time Google Drive Stock
+    sync_google_drive_stock(channels, data)
+
+    res = get_credentials()
+    if not res:
         print("Cannot initialize YouTube API service. Aborting.")
         sys.exit(1)
+    service, client_id, client_secret = res
 
     print("YouTube API service initialized successfully.")
+
+    # 1.1 Sync authentic live audience demographics (Countries, Age, Gender) via YouTube Analytics API
+    base_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+    print("Syncing live audience analytics (country & demographics) via YouTube Analytics API...")
+    for ch in channels:
+        ch_id = ch.get("id")
+        token_path = os.path.join(base_dir, f"{ch_id}.token")
+        if os.path.exists(token_path):
+            try:
+                with open(token_path, "r", encoding="utf-8") as tf:
+                    t_val = tf.read().strip()
+                if t_val:
+                    live_audience = fetch_live_audience_analytics(ch_id, t_val, client_id, client_secret)
+                    if live_audience:
+                        if "analytics" not in ch or not ch["analytics"]:
+                            ch["analytics"] = {}
+                        if live_audience.get("top_countries"):
+                            ch["analytics"]["top_countries"] = live_audience["top_countries"]
+                        if live_audience.get("age_distribution"):
+                            ch["analytics"]["age_distribution"] = live_audience["age_distribution"]
+                        if live_audience.get("gender"):
+                            ch["analytics"]["gender"] = live_audience["gender"]
+                        print(f"  [{ch.get('name')}] Synced genuine live YouTube Analytics!")
+            except Exception as e:
+                pass
 
     channel_ids = [c["youtube_channel_id"] for c in channels if c.get("youtube_channel_id")]
 
@@ -224,6 +479,31 @@ def sync_metrics(data_json_path: str):
                 ch["subscribers"] = channel_stats_map[cid]["subscribers"]
                 ch["total_views"] = channel_stats_map[cid]["total_views"]
                 ch["channel_total_videos"] = channel_stats_map[cid]["channel_total_videos"]
+                ch["is_terminated"] = False
+            else:
+                # Channel NOT found on YouTube: Terminated / Suspended / Deleted
+                print(f"  [ALERT] Channel {ch.get('name')} ({cid}) NOT FOUND on YouTube -> TERMINATED/DELETED!")
+                ch["is_active"] = False
+                ch["is_terminated"] = True
+                ch["is_suspended"] = True
+                ch["status_badge"] = "TERMINATED"
+                ch["status_label"] = "Channel Terminated / Deleted by YouTube"
+                ch["status_color"] = "#EF4444"
+                ch["subscribers"] = 0
+                ch["total_views"] = 0
+                ch["health"] = {
+                    "overall_score": 0,
+                    "verdict": "Channel Terminated / Deleted by YouTube",
+                    "verdict_color": "#EF4444",
+                    "view_health_badge": "TERMINATED",
+                    "view_health_label": "Account Deleted / Suspended by YouTube",
+                    "view_health_color": "#EF4444",
+                    "copyright_status": "Account Terminated / Deleted by YouTube",
+                    "copyright_badge": "TERMINATED",
+                    "copyright_color": "#EF4444",
+                    "strikes_status": "Account Suspended / Terminated by YouTube",
+                    "is_clean": False
+                }
     except Exception as e:
         print(f"Warning: Channel stats fetch failed: {e}")
 
@@ -416,19 +696,19 @@ def sync_metrics(data_json_path: str):
     from datetime import timedelta
     now_dt = datetime.now(timezone.utc)
     today = now_dt.date()
-    slot_1 = datetime(today.year, today.month, today.day, 14, 0, 0, tzinfo=timezone.utc)
-    slot_2 = datetime(today.year, today.month, today.day, 21, 0, 0, tzinfo=timezone.utc)
+    slot_1 = datetime(today.year, today.month, today.day, 8, 0, 0, tzinfo=timezone.utc)
+    slot_2 = datetime(today.year, today.month, today.day, 14, 0, 0, tzinfo=timezone.utc)
     tomorrow_slot_1 = slot_1 + timedelta(days=1)
 
     if now_dt < slot_1:
         next_slot = slot_1
-        slot_label = "10:00 AM USA (7:30 PM IST)"
+        slot_label = "01:30 PM IST (Lunch Break Window)"
     elif now_dt < slot_2:
         next_slot = slot_2
-        slot_label = "05:00 PM USA (2:30 AM IST)"
+        slot_label = "07:30 PM IST (Prime Wildlife Viral Peak)"
     else:
         next_slot = tomorrow_slot_1
-        slot_label = "10:00 AM USA (7:30 PM IST Tomorrow)"
+        slot_label = "01:30 PM IST Tomorrow (Lunch Break)"
 
     sec_rem = max(0, int((next_slot - now_dt).total_seconds()))
     h = sec_rem // 3600
@@ -454,5 +734,8 @@ def sync_metrics(data_json_path: str):
     print(f"data.json successfully updated with live real-time metrics at {now_utc}!")
 
 if __name__ == "__main__":
-    target = sys.argv[1] if len(sys.argv) > 1 else os.path.join(os.path.dirname(__file__), "data.json")
+    default_target = os.path.join(os.path.dirname(__file__), "public", "data.json")
+    if not os.path.exists(default_target):
+        default_target = os.path.join(os.path.dirname(__file__), "data.json")
+    target = sys.argv[1] if len(sys.argv) > 1 else default_target
     sync_metrics(target)

@@ -1,21 +1,21 @@
 {
   "app_name": "Raj Tube Pro",
   "version": "6.1.0",
-  "timestamp": "2026-09-21T09:16:15.890110+00:00",
+  "timestamp": "2026-09-21T09:20:53.070881+00:00",
   "schedule": {
     "next_slot_iso": "2026-09-21T14:00:00+00:00",
-    "seconds_remaining": 17024,
-    "formatted_countdown": "04h 43m 44s",
-    "slot_label": "10:00 AM USA (7:30 PM IST)",
-    "now_ist": "21 Sep, 02:46 PM IST"
+    "seconds_remaining": 16746,
+    "formatted_countdown": "04h 39m 06s",
+    "slot_label": "07:30 PM IST (Prime Wildlife Viral Peak)",
+    "now_ist": "21 Sep, 02:50 PM IST"
   },
   "summary": {
     "total_channels": 9,
     "total_uploaded": 279,
-    "total_in_queue": 1171,
+    "total_in_queue": 1077,
     "total_subscribers": 634,
     "total_views": 634620,
-    "total_likes": 5508,
+    "total_likes": 5511,
     "network_engagement": 0.8,
     "total_runway_days": 58.5,
     "system_health": "All Systems Operational",
@@ -577,8 +577,8 @@
       "drive_folder_id": "1f8Nj2kEchzW4gdlMEQ5S_eAazvdrQ3ai",
       "drive_folder_url": "https://drive.google.com/drive/folders/1f8Nj2kEchzW4gdlMEQ5S_eAazvdrQ3ai",
       "uploaded_count": 21,
-      "drive_queue_count": 67,
-      "runway_days": 33.5,
+      "drive_queue_count": 61,
+      "runway_days": 30.5,
       "stock_status": "Plentiful (33.5 days)",
       "stock_color": "#10B981",
       "latest_run_status": "success",
@@ -791,7 +791,7 @@
           "title": "Facing The Wild With No Fear #nature #wildlifephotography #shorts #fyp",
           "uploaded_at": "2026-09-15T14:06:53Z",
           "thumbnail": "https://i.ytimg.com/vi/9GomuifoQqk/mqdefault.jpg",
-          "views": 24545,
+          "views": 24546,
           "likes": 95,
           "comments": 1,
           "upload_status": "processed",
@@ -1072,7 +1072,8 @@
         "verify_url": "https://ipinfo.io/172.171.107.81"
       },
       "is_active": true,
-      "is_terminated": false
+      "is_terminated": false,
+      "drive_videos_count": 61
     },
     {
       "id": "channel_10",
@@ -1252,8 +1253,8 @@
       "drive_folder_id": "1hqcXV2-IbDWrh7QR_xvOlfnOfO6Cbi9g",
       "drive_folder_url": "https://drive.google.com/drive/folders/1hqcXV2-IbDWrh7QR_xvOlfnOfO6Cbi9g",
       "uploaded_count": 35,
-      "drive_queue_count": 118,
-      "runway_days": 59.0,
+      "drive_queue_count": 113,
+      "runway_days": 56.5,
       "stock_status": "Plentiful (59.0 days)",
       "stock_color": "#10B981",
       "latest_run_status": "failed",
@@ -2061,7 +2062,8 @@
         "verify_url": "https://ipinfo.io/13.83.98.82"
       },
       "is_active": true,
-      "is_terminated": false
+      "is_terminated": false,
+      "drive_videos_count": 113
     },
     {
       "id": "channel_2",
@@ -2076,9 +2078,9 @@
       "subscribers": 387,
       "total_views": 389195,
       "channel_total_videos": 28,
-      "avg_views_per_video": 18536,
+      "avg_views_per_video": 18489,
       "engagement_rate": 0.8,
-      "total_likes": 3265,
+      "total_likes": 3268,
       "analytics": {
         "watch_time_hours": 870.0,
         "avg_view_duration": "0:24",
@@ -2253,8 +2255,8 @@
       "drive_folder_id": "1So3rmfL0rvojsXq7m6WoA9RYS029HXW6",
       "drive_folder_url": "https://drive.google.com/drive/folders/1So3rmfL0rvojsXq7m6WoA9RYS029HXW6",
       "uploaded_count": 28,
-      "drive_queue_count": 61,
-      "runway_days": 30.5,
+      "drive_queue_count": 56,
+      "runway_days": 28.0,
       "stock_status": "Plentiful (30.5 days)",
       "stock_color": "#10B981",
       "latest_run_status": "success",
@@ -2266,8 +2268,8 @@
         "studio_url": "https://studio.youtube.com/video/sprZKJfxJBI/edit",
         "uploaded_at": "2026-09-20T21:08:20.054215+00:00",
         "thumbnail": "https://i.ytimg.com/vi/sprZKJfxJBI/mqdefault.jpg",
-        "views": 11349,
-        "likes": 147,
+        "views": 9142,
+        "likes": 150,
         "comments": 5,
         "is_clean": true,
         "health_badge": "100% CLEAN",
@@ -2283,8 +2285,8 @@
           "studio_url": "https://studio.youtube.com/video/sprZKJfxJBI/edit",
           "uploaded_at": "2026-09-20T21:08:20.054215+00:00",
           "thumbnail": "https://i.ytimg.com/vi/sprZKJfxJBI/mqdefault.jpg",
-          "views": 11349,
-          "likes": 147,
+          "views": 9142,
+          "likes": 150,
           "comments": 5,
           "is_clean": true,
           "health_badge": "100% CLEAN",
@@ -2299,7 +2301,7 @@
           "studio_url": "https://studio.youtube.com/video/388dcifu_As/edit",
           "uploaded_at": "2026-09-20T14:08:56.033964+00:00",
           "thumbnail": "https://i.ytimg.com/vi/388dcifu_As/mqdefault.jpg",
-          "views": 26902,
+          "views": 27280,
           "likes": 219,
           "comments": 5,
           "is_clean": true,
@@ -2315,7 +2317,7 @@
           "studio_url": "https://studio.youtube.com/video/wwNfSfoylSk/edit",
           "uploaded_at": "2026-09-19T21:08:46.440361+00:00",
           "thumbnail": "https://i.ytimg.com/vi/wwNfSfoylSk/mqdefault.jpg",
-          "views": 6166,
+          "views": 6184,
           "likes": 84,
           "comments": 0,
           "is_clean": true,
@@ -2331,7 +2333,7 @@
           "studio_url": "https://studio.youtube.com/video/57rwnWsFfMw/edit",
           "uploaded_at": "2026-09-18T14:09:16.211199+00:00",
           "thumbnail": "https://i.ytimg.com/vi/57rwnWsFfMw/mqdefault.jpg",
-          "views": 37159,
+          "views": 37164,
           "likes": 191,
           "comments": 1,
           "is_clean": true,
@@ -2347,7 +2349,7 @@
           "studio_url": "https://studio.youtube.com/video/jo54eKar-U0/edit",
           "uploaded_at": "2026-09-17T21:09:25.462687+00:00",
           "thumbnail": "https://i.ytimg.com/vi/jo54eKar-U0/mqdefault.jpg",
-          "views": 86,
+          "views": 85,
           "likes": 1,
           "comments": 0,
           "is_clean": true,
@@ -2363,8 +2365,8 @@
           "title": "That Championship Belt Changed The Whole Faceoff #PowerSlap #SlapFight #Championship #CombatSports #",
           "uploaded_at": "2026-09-17T14:11:02Z",
           "thumbnail": "https://i.ytimg.com/vi/D8s-tKl9wSg/mqdefault.jpg",
-          "views": 11651,
-          "likes": 164,
+          "views": 11735,
+          "likes": 162,
           "comments": 4,
           "upload_status": "processed",
           "privacy_status": "public",
@@ -2385,7 +2387,7 @@
           "title": "That Belt Is The Prize Everyone Wants #PowerSlap #SlapFight #Championship #CombatSports #FYP.",
           "uploaded_at": "2026-09-16T21:10:07Z",
           "thumbnail": "https://i.ytimg.com/vi/LM4pQ-P7QkI/mqdefault.jpg",
-          "views": 2516,
+          "views": 2519,
           "likes": 23,
           "comments": 1,
           "upload_status": "processed",
@@ -2429,8 +2431,8 @@
           "title": "One Table One Belt And Huge Pressure #SlapFight #PowerSlap #Championship #CombatSports #FYP.",
           "uploaded_at": "2026-09-15T21:09:27Z",
           "thumbnail": "https://i.ytimg.com/vi/74d1M_ceEM0/mqdefault.jpg",
-          "views": 254225,
-          "likes": 1063,
+          "views": 254643,
+          "likes": 1065,
           "comments": 15,
           "upload_status": "processed",
           "privacy_status": "public",
@@ -2451,7 +2453,7 @@
           "title": "One Step Closer And The Crowd Explodes #SlapFight #PowerSlap #SlapFighting #Viral #Fight.",
           "uploaded_at": "2026-09-15T14:10:27Z",
           "thumbnail": "https://i.ytimg.com/vi/GDCFdis0OhU/mqdefault.jpg",
-          "views": 294,
+          "views": 293,
           "likes": 3,
           "comments": 0,
           "upload_status": "processed",
@@ -2495,7 +2497,7 @@
           "title": "One Look And You Know This Will Hurt #SlapFight #PowerSlap #CombatSports #Highlights #FYP.",
           "uploaded_at": "2026-09-14T14:11:15Z",
           "thumbnail": "https://i.ytimg.com/vi/_WQiHPH5TWw/mqdefault.jpg",
-          "views": 72,
+          "views": 70,
           "likes": 3,
           "comments": 0,
           "upload_status": "processed",
@@ -2583,7 +2585,7 @@
           "title": "Both Fighters Looked Completely Ready #SlapFight #PowerSlap #CombatSports #Sports #FYP",
           "uploaded_at": "2026-09-13T11:52:26Z",
           "thumbnail": "https://i.ytimg.com/vi/128Ysq4RtSw/mqdefault.jpg",
-          "views": 4904,
+          "views": 4905,
           "likes": 46,
           "comments": 1,
           "upload_status": "processed",
@@ -2649,7 +2651,7 @@
           "title": "His Confidence Had The Whole Crowd Talking #PowerSlap #SlapFighting #SlapFight #Viral #Sports.",
           "uploaded_at": "2026-09-11T22:07:28Z",
           "thumbnail": "https://i.ytimg.com/vi/g-2DEoij8dY/mqdefault.jpg",
-          "views": 24485,
+          "views": 24480,
           "likes": 218,
           "comments": 0,
           "upload_status": "processed",
@@ -2671,7 +2673,7 @@
           "title": "He Was Not Backing Down From Anyone #SlapFight #PowerSlap #SlapFighting #Viral #Sports.",
           "uploaded_at": "2026-09-11T16:04:35Z",
           "thumbnail": "https://i.ytimg.com/vi/t5oF0IsXkN0/mqdefault.jpg",
-          "views": 46305,
+          "views": 46301,
           "likes": 379,
           "comments": 1,
           "upload_status": "processed",
@@ -2908,7 +2910,8 @@
         "verify_url": "https://ipinfo.io/52.230.250.251"
       },
       "is_active": true,
-      "is_terminated": false
+      "is_terminated": false,
+      "drive_videos_count": 56
     },
     {
       "id": "channel_3",
@@ -3100,8 +3103,8 @@
       "drive_folder_id": "1oZBC0TiLWerpRuyZnhbDhNbAMAcEtdAc",
       "drive_folder_url": "https://drive.google.com/drive/folders/1oZBC0TiLWerpRuyZnhbDhNbAMAcEtdAc",
       "uploaded_count": 28,
-      "drive_queue_count": 122,
-      "runway_days": 61.0,
+      "drive_queue_count": 117,
+      "runway_days": 58.5,
       "stock_status": "Plentiful (61.0 days)",
       "stock_color": "#10B981",
       "latest_run_status": "success",
@@ -3146,7 +3149,7 @@
           "studio_url": "https://studio.youtube.com/video/-LwZToiGNcM/edit",
           "uploaded_at": "2026-09-20T14:14:29.630243+00:00",
           "thumbnail": "https://i.ytimg.com/vi/-LwZToiGNcM/mqdefault.jpg",
-          "views": 0,
+          "views": 1,
           "likes": 0,
           "comments": 0,
           "is_clean": true,
@@ -3755,7 +3758,8 @@
         "verify_url": "https://ipinfo.io/172.215.231.112"
       },
       "is_active": true,
-      "is_terminated": false
+      "is_terminated": false,
+      "drive_videos_count": 117
     },
     {
       "id": "channel_4",
@@ -3770,7 +3774,7 @@
       "subscribers": 45,
       "total_views": 39932,
       "channel_total_videos": 26,
-      "avg_views_per_video": 1531,
+      "avg_views_per_video": 1536,
       "engagement_rate": 0.8,
       "total_likes": 316,
       "analytics": {
@@ -3947,8 +3951,8 @@
       "drive_folder_id": "1C_R0kNrMxrW5FeX241UluglGU-qUEfkS",
       "drive_folder_url": "https://drive.google.com/drive/folders/1C_R0kNrMxrW5FeX241UluglGU-qUEfkS",
       "uploaded_count": 26,
-      "drive_queue_count": 114,
-      "runway_days": 57.0,
+      "drive_queue_count": 110,
+      "runway_days": 55.0,
       "stock_status": "Plentiful (57.0 days)",
       "stock_color": "#10B981",
       "latest_run_status": "failed",
@@ -4041,7 +4045,7 @@
           "title": "Curious Toddler Makes Everyone Smile #ToddlerLife #CutestMoments #FamilyMoments #WholesomeContent #P",
           "uploaded_at": "2026-09-17T14:08:24Z",
           "thumbnail": "https://i.ytimg.com/vi/oQLZSFs925s/mqdefault.jpg",
-          "views": 2302,
+          "views": 2438,
           "likes": 20,
           "comments": 1,
           "upload_status": "processed",
@@ -4564,7 +4568,8 @@
         "verify_url": "https://ipinfo.io/20.168.159.162"
       },
       "is_active": true,
-      "is_terminated": false
+      "is_terminated": false,
+      "drive_videos_count": 110
     },
     {
       "id": "channel_5",
@@ -4756,8 +4761,8 @@
       "drive_folder_id": "1xZSez3F82y0pLTWJbQ-ybPjbOCqY1mrW",
       "drive_folder_url": "https://drive.google.com/drive/folders/1xZSez3F82y0pLTWJbQ-ybPjbOCqY1mrW",
       "uploaded_count": 24,
-      "drive_queue_count": 128,
-      "runway_days": 64.0,
+      "drive_queue_count": 124,
+      "runway_days": 62.0,
       "stock_status": "Plentiful (64.0 days)",
       "stock_color": "#10B981",
       "latest_run_status": "failed",
@@ -4834,7 +4839,7 @@
           "studio_url": "https://studio.youtube.com/video/orIt3mT1XjU/edit",
           "uploaded_at": "2026-09-17T21:06:22.199054+00:00",
           "thumbnail": "https://i.ytimg.com/vi/orIt3mT1XjU/mqdefault.jpg",
-          "views": 1299,
+          "views": 1301,
           "likes": 19,
           "comments": 0,
           "is_clean": true,
@@ -5329,7 +5334,8 @@
         "verify_url": "https://ipinfo.io/20.186.237.129"
       },
       "is_active": true,
-      "is_terminated": false
+      "is_terminated": false,
+      "drive_videos_count": 124
     },
     {
       "id": "channel_6",
@@ -5509,8 +5515,8 @@
       "drive_folder_id": "1mxwPH1BvYEfv77zDUWA5ZxiwYW2hG125",
       "drive_folder_url": "https://drive.google.com/drive/folders/1mxwPH1BvYEfv77zDUWA5ZxiwYW2hG125",
       "uploaded_count": 40,
-      "drive_queue_count": 130,
-      "runway_days": 65.0,
+      "drive_queue_count": 126,
+      "runway_days": 63.0,
       "stock_status": "Plentiful (65.0 days)",
       "stock_color": "#10B981",
       "latest_run_status": "failed",
@@ -5669,7 +5675,7 @@
           "title": "Every Champion Has A Beginning With Pure Determination #Football #Soccer #FootballStory #FootballLif",
           "uploaded_at": "2026-09-15T21:06:26Z",
           "thumbnail": "https://i.ytimg.com/vi/hBKIpcPGv4c/mqdefault.jpg",
-          "views": 1140,
+          "views": 1141,
           "likes": 9,
           "comments": 0,
           "upload_status": "processed",
@@ -6434,7 +6440,8 @@
         "verify_url": "https://ipinfo.io/172.184.213.242"
       },
       "is_active": true,
-      "is_terminated": false
+      "is_terminated": false,
+      "drive_videos_count": 126
     },
     {
       "id": "channel_8",
@@ -6618,8 +6625,8 @@
       "drive_folder_id": "1Gg_7t0r1W59nhLOvilGfOttuSa_T5tWd",
       "drive_folder_url": "https://drive.google.com/drive/folders/1Gg_7t0r1W59nhLOvilGfOttuSa_T5tWd",
       "uploaded_count": 43,
-      "drive_queue_count": 131,
-      "runway_days": 65.5,
+      "drive_queue_count": 126,
+      "runway_days": 63.0,
       "stock_status": "Plentiful (65.5 days)",
       "stock_color": "#10B981",
       "latest_run_status": "failed",
@@ -6680,7 +6687,7 @@
           "studio_url": "https://studio.youtube.com/video/o84zq8rsO1I/edit",
           "uploaded_at": "2026-09-18T21:10:35.581330+00:00",
           "thumbnail": "https://i.ytimg.com/vi/o84zq8rsO1I/mqdefault.jpg",
-          "views": 425,
+          "views": 426,
           "likes": 3,
           "comments": 0,
           "is_clean": true,
@@ -6750,7 +6757,7 @@
           "title": "How Hollywood Really Made This Scene In Front Of The Cameras #BehindTheScenes #Hollywood #MovieMagic",
           "uploaded_at": "2026-09-16T21:12:14Z",
           "thumbnail": "https://i.ytimg.com/vi/qb0wW_hTxLM/mqdefault.jpg",
-          "views": 365,
+          "views": 370,
           "likes": 6,
           "comments": 0,
           "upload_status": "processed",
@@ -7603,7 +7610,8 @@
         "verify_url": "https://ipinfo.io/20.168.127.50"
       },
       "is_active": true,
-      "is_terminated": false
+      "is_terminated": false,
+      "drive_videos_count": 126
     },
     {
       "id": "channel_9",
@@ -7791,8 +7799,8 @@
       "drive_folder_id": "1jjoc2hHDrUb9S7seMnLQe0SUalCA3buU",
       "drive_folder_url": "https://drive.google.com/drive/folders/1jjoc2hHDrUb9S7seMnLQe0SUalCA3buU",
       "uploaded_count": 34,
-      "drive_queue_count": 249,
-      "runway_days": 124.5,
+      "drive_queue_count": 244,
+      "runway_days": 122.0,
       "stock_status": "Plentiful (124.5 days)",
       "stock_color": "#10B981",
       "latest_run_status": "failed",
@@ -8578,7 +8586,8 @@
         "verify_url": "https://ipinfo.io/64.236.141.212"
       },
       "is_active": true,
-      "is_terminated": false
+      "is_terminated": false,
+      "drive_videos_count": 244
     }
   ]
 }
