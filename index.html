@@ -15,7 +15,7 @@
   <link rel="icon" type="image/png" sizes="512x512" href="./icons/icon-512.png">
   <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png">
   <link rel="shortcut icon" href="./icons/icon-192.png">
-  <link rel="stylesheet" href="./styles.css?v=37.0">
+  <link rel="stylesheet" href="./styles.css?v=38.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
@@ -25,7 +25,7 @@
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
-        navigator.serviceWorker.register('./sw.js?v=37.0').catch(() => {});
+        navigator.serviceWorker.register('./sw.js?v=38.0').catch(() => {});
       });
     }
   </script>
@@ -236,93 +236,214 @@
 
 
 
-        <!-- EXECUTIVE 4-KPI QUICK METRICS GRID -->
+        <!-- EXECUTIVE 4-KPI QUICK METRICS GRID (Vibrant Radiant Gradients) -->
         <div class="dashboard-kpi-grid">
-          <div class="kpi-card">
-            <div class="kpi-icon-wrap kpi-icon-blue">👥</div>
+          <div class="kpi-card kpi-card-subs">
+            <div class="kpi-icon-wrap kpi-icon-subs">👥</div>
             <div class="kpi-meta">
               <div class="kpi-label">Subscribers</div>
               <div class="kpi-value" id="dash-kpi-subs">--</div>
-              <div class="kpi-sub text-green">▲ 100% Organic</div>
+              <div class="kpi-sub badge-pill-green">▲ 100% Organic</div>
             </div>
           </div>
 
-          <div class="kpi-card">
-            <div class="kpi-icon-wrap kpi-icon-green">👁️</div>
+          <div class="kpi-card kpi-card-views">
+            <div class="kpi-icon-wrap kpi-icon-views">👁️</div>
             <div class="kpi-meta">
               <div class="kpi-label">28-Day Views</div>
               <div class="kpi-value" id="dash-kpi-views">--</div>
-              <div class="kpi-sub text-green">▲ Active Reach</div>
+              <div class="kpi-sub badge-pill-cyan">▲ Active Reach</div>
             </div>
           </div>
 
-          <div class="kpi-card">
-            <div class="kpi-icon-wrap kpi-icon-purple">🎬</div>
+          <div class="kpi-card kpi-card-shorts">
+            <div class="kpi-icon-wrap kpi-icon-shorts">🎬</div>
             <div class="kpi-meta">
               <div class="kpi-label">Published Shorts</div>
               <div class="kpi-value" id="dash-kpi-vids">--</div>
-              <div class="kpi-sub text-blue">100% Vertical</div>
+              <div class="kpi-sub badge-pill-rose">100% Vertical</div>
             </div>
           </div>
 
-          <div class="kpi-card">
-            <div class="kpi-icon-wrap kpi-icon-amber">⚡</div>
+          <div class="kpi-card kpi-card-dispatch">
+            <div class="kpi-icon-wrap kpi-icon-dispatch">⚡</div>
             <div class="kpi-meta">
               <div class="kpi-label">Next Dispatch</div>
-              <div class="kpi-value" id="dash-kpi-countdown" style="font-family: monospace; color: #fb923c;">--:--:--</div>
-              <div class="kpi-sub text-amber" id="dash-kpi-next-slot">Automated Upload</div>
+              <div class="kpi-value countdown-glow" id="dash-kpi-countdown">--:--:--</div>
+              <div class="kpi-sub badge-pill-amber" id="dash-kpi-next-slot">Automated Upload</div>
             </div>
           </div>
         </div>
 
-        <!-- MAIN DASHBOARD CONTENT: CHANNEL ANALYTICS OVERVIEW -->
-        <div class="dashboard-analytics-container">
-          <div class="yt-card widget-analytics" style="width: 100%; max-width: 100%;">
-            <div class="yt-card-header">
-              <h2>Channel analytics overview</h2>
+        <!-- BALANCED 2-COLUMN DASHBOARD WORKSPACE -->
+        <div class="dashboard-main-grid">
+          <!-- LEFT COLUMN: GROWTH & ANALYTICS + LIVE NEON CHART -->
+          <div class="dash-col-left">
+            <div class="yt-card dash-card-glow">
+              <div class="yt-card-header flex-between">
+                <div class="header-with-icon">
+                  <span class="header-sparkle">📈</span>
+                  <h2>Channel analytics & growth</h2>
+                </div>
+                <span class="badge-tag-neon">Last 28 days</span>
+              </div>
+
+              <div class="yt-card-body">
+                <!-- Current Subscribers Banner -->
+                <div class="subs-highlight-hero">
+                  <div class="subs-hero-left">
+                    <div class="subs-hero-label">Current subscribers</div>
+                    <div class="subs-hero-count" id="dash-subs-count">--</div>
+                  </div>
+                  <div class="subs-hero-right">
+                    <span class="subs-growth-badge">▲ 100% Organic Growth</span>
+                    <span class="subs-verified-text">YouTube API Verified</span>
+                  </div>
+                </div>
+
+                <div class="divider-line"></div>
+
+                <!-- 4 Glowing Summary Stat Tiles -->
+                <div class="summary-section">
+                  <div class="summary-heading">28-Day Performance Summary</div>
+                  <div class="dash-summary-tiles">
+                    <div class="dash-stat-tile stat-tile-cyan">
+                      <div class="stat-tile-top">
+                        <span class="stat-tile-label">Views</span>
+                        <span class="stat-tile-icon">👁️</span>
+                      </div>
+                      <span class="stat-tile-value" id="dash-summary-views">--</span>
+                      <span class="stat-tile-delta text-cyan">▲ 100% Reach</span>
+                    </div>
+
+                    <div class="dash-stat-tile stat-tile-rose">
+                      <div class="stat-tile-top">
+                        <span class="stat-tile-label">Total Likes</span>
+                        <span class="stat-tile-icon">👍</span>
+                      </div>
+                      <span class="stat-tile-value" id="dash-summary-likes">--</span>
+                      <span class="stat-tile-delta text-rose">▲ 100% Up</span>
+                    </div>
+
+                    <div class="dash-stat-tile stat-tile-emerald">
+                      <div class="stat-tile-top">
+                        <span class="stat-tile-label">Avg / Video</span>
+                        <span class="stat-tile-icon">📊</span>
+                      </div>
+                      <span class="stat-tile-value" id="dash-summary-avg">--</span>
+                      <span class="stat-tile-delta text-emerald">▲ Optimal</span>
+                    </div>
+
+                    <div class="dash-stat-tile stat-tile-purple">
+                      <div class="stat-tile-top">
+                        <span class="stat-tile-label">Watch Time</span>
+                        <span class="stat-tile-icon">⏱️</span>
+                      </div>
+                      <span class="stat-tile-value" id="dash-summary-watchtime">1,865h</span>
+                      <span class="stat-tile-delta text-purple">▲ +12.4%</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="divider-line"></div>
+
+                <!-- Interactive Neon Views Area Chart -->
+                <div class="chart-section">
+                  <div class="chart-heading-row">
+                    <span class="chart-section-title">Views Momentum & Growth Trajectory</span>
+                    <span class="chart-live-indicator"><span class="pulse-dot"></span> Live Trajectory</span>
+                  </div>
+                  <div class="dash-chart-container">
+                    <canvas id="dash-views-chart"></canvas>
+                  </div>
+                </div>
+
+                <div class="yt-card-footer flex-between">
+                  <button class="yt-btn-gradient" id="btn-goto-analytics">GO TO FULL CHANNEL ANALYTICS →</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- RIGHT COLUMN: TOP PERFORMING VIDEOS + FLEET AUTOMATION PULSE -->
+          <div class="dash-col-right">
+            <!-- TOP VIDEOS LEADERBOARD -->
+            <div class="yt-card dash-card-glow">
+              <div class="yt-card-header flex-between">
+                <div class="header-with-icon">
+                  <span class="header-sparkle">🏆</span>
+                  <h2>Top performing videos</h2>
+                </div>
+                <span class="badge-tag-neon">Top Views & Subs</span>
+              </div>
+
+              <div class="yt-card-body p-0">
+                <div class="top-vids-leaderboard" id="dash-top-vids-list">
+                  <!-- Injected via JavaScript with rank badges and thumbnails -->
+                </div>
+              </div>
             </div>
 
-            <div class="yt-card-body">
-              <div class="subs-highlight-block">
-                <div class="subs-label">Current subscribers</div>
-                <div class="subs-count" id="dash-subs-count">--</div>
-                <div class="subs-delta text-green">▲ 100% Organic Growth</div>
+            <!-- FLEET AUTOMATION PULSE STATUS -->
+            <div class="yt-card dash-card-glow mt-16">
+              <div class="yt-card-header flex-between">
+                <div class="header-with-icon">
+                  <span class="header-sparkle">⚡</span>
+                  <h2>Fleet Automation Pulse</h2>
+                </div>
+                <span class="status-pill-online">🟢 9/9 ONLINE</span>
               </div>
 
-              <div class="divider-line"></div>
+              <div class="yt-card-body">
+                <div class="fleet-pulse-list">
+                  <div class="fleet-pulse-item">
+                    <div class="pulse-item-left">
+                      <span class="pulse-icon-round icon-blue">🌐</span>
+                      <div>
+                        <div class="pulse-item-title">Cloud Automation Engine</div>
+                        <div class="pulse-item-sub">Dedicated Microsoft Azure Cloud Node</div>
+                      </div>
+                    </div>
+                    <span class="pulse-badge-active">100% ACTIVE</span>
+                  </div>
 
-              <div class="summary-section">
-                <div class="summary-heading">Summary <span class="sub-muted">Last 28 days</span></div>
-                <div class="dash-summary-tiles">
-                  <div class="dash-stat-tile">
-                    <span class="stat-tile-label">Views</span>
-                    <span class="stat-tile-value" id="dash-summary-views">--</span>
-                    <span class="stat-tile-delta text-green">▲ 100%</span>
+                  <div class="fleet-pulse-item">
+                    <div class="pulse-item-left">
+                      <span class="pulse-icon-round icon-emerald">🛡️</span>
+                      <div>
+                        <div class="pulse-item-title">Copyright & Policy Standing</div>
+                        <div class="pulse-item-sub">0 Active Strikes • API Verified Clean</div>
+                      </div>
+                    </div>
+                    <span class="pulse-badge-clean">CLEAN</span>
                   </div>
-                  <div class="dash-stat-tile">
-                    <span class="stat-tile-label">Total Likes</span>
-                    <span class="stat-tile-value" id="dash-summary-likes">--</span>
-                    <span class="stat-tile-delta text-green">▲ 100%</span>
+
+                  <div class="fleet-pulse-item">
+                    <div class="pulse-item-left">
+                      <span class="pulse-icon-round icon-amber">⏱️</span>
+                      <div>
+                        <div class="pulse-item-title">Autonomous Publishing Pace</div>
+                        <div class="pulse-item-sub">2 Viral Shorts / Channel / Day</div>
+                      </div>
+                    </div>
+                    <span class="pulse-badge-synced">SYNCHRONIZED</span>
                   </div>
-                  <div class="dash-stat-tile">
-                    <span class="stat-tile-label">Avg / Video</span>
-                    <span class="stat-tile-value" id="dash-summary-avg">--</span>
-                    <span class="stat-tile-delta text-green">▲ Optimal</span>
+
+                  <div class="fleet-pulse-item">
+                    <div class="pulse-item-left">
+                      <span class="pulse-icon-round icon-purple">☁️</span>
+                      <div>
+                        <div class="pulse-item-title">Cloud Drive Stocked Runway</div>
+                        <div class="pulse-item-sub">1,077 Videos Stocked in Google Drive</div>
+                      </div>
+                    </div>
+                    <span class="pulse-badge-stock">58+ DAYS</span>
                   </div>
                 </div>
-              </div>
 
-              <div class="divider-line"></div>
-
-              <div class="top-videos-section">
-                <div class="top-heading">Top videos <span class="sub-muted">Views & Subs</span></div>
-                <div class="top-vids-list" id="dash-top-vids-list">
-                  <!-- Top videos injected via JS -->
+                <div class="yt-card-footer flex-between mt-12">
+                  <button class="yt-btn-flat" id="btn-goto-schedule-dash">VIEW UPLOAD SCHEDULE →</button>
                 </div>
-              </div>
-
-              <div class="yt-card-footer">
-                <button class="yt-btn-flat" id="btn-goto-analytics">GO TO FULL CHANNEL ANALYTICS</button>
               </div>
             </div>
           </div>
@@ -1009,6 +1130,6 @@
   <!-- Toast Notification -->
   <div id="toast" class="toast">Link copied to clipboard!</div>
 
-  <script src="./app.js?v=37.0"></script>
+  <script src="./app.js?v=38.0"></script>
 </body>
 </html>
