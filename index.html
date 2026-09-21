@@ -15,17 +15,25 @@
   <link rel="icon" type="image/png" sizes="512x512" href="./icons/icon-512.png">
   <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png">
   <link rel="shortcut icon" href="./icons/icon-192.png">
-  <link rel="stylesheet" href="./styles.css?v=45.0">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <link rel="stylesheet" href="./styles.css?v=46.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <!-- Chart.js -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <!-- Register PWA Service Worker for Native App Installation -->
+  <!-- Register PWA Service Worker with Auto Update -->
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
-        navigator.serviceWorker.register('./sw.js?v=45.0').catch(() => {});
+        navigator.serviceWorker.register('./sw.js?v=46.0').then((reg) => {
+          reg.update();
+        }).catch(() => {});
+      });
+      navigator.serviceWorker.addEventListener('controllerchange', () => {
+        window.location.reload();
       });
     }
   </script>
@@ -88,6 +96,9 @@
     </div>
   </header>
 
+  <!-- BACKDROP OVERLAY FOR MOBILE & DROPDOWN -->
+  <div class="studio-backdrop" id="studio-backdrop"></div>
+
   <!-- CHANNEL SWITCHER DROPDOWN MENU / MOBILE BOTTOM SHEET -->
   <div class="channel-dropdown" id="channel-dropdown">
     <div class="bottom-sheet-handle" id="bottom-sheet-handle"></div>
@@ -117,9 +128,6 @@
       </button>
     </div>
   </div>
-
-  <!-- BACKDROP OVERLAY FOR MOBILE & DROPDOWN -->
-  <div class="studio-backdrop" id="studio-backdrop"></div>
 
   <!-- APP SHELL: SIDEBAR + MAIN CONTENT -->
   <div class="studio-app-shell">
@@ -1060,6 +1068,6 @@
   <!-- Toast Notification -->
   <div id="toast" class="toast">Link copied to clipboard!</div>
 
-  <script src="./app.js?v=45.0"></script>
+  <script src="./app.js?v=46.0"></script>
 </body>
 </html>

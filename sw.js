@@ -1,5 +1,5 @@
-// Service Worker for Raj Tube Pro - v45.0 (Fixed Channel Switcher Z-Index & Removed Duplicate Mobile Hero)
-const CACHE_NAME = 'raj-tube-pro-v45';
+// Service Worker for Raj Tube Pro - v46.0 (Zero Stale Cache & Bulletproof Mobile Bottom Sheet)
+const CACHE_NAME = 'raj-tube-pro-v46';
 
 self.addEventListener('install', (event) => {
   self.skipWaiting();
@@ -16,13 +16,22 @@ self.addEventListener('activate', (event) => {
   self.clients.claim();
 });
 
-// Network First strategy for static assets, ZERO cache for data.json / API calls
+// Network First strategy for static assets, ALWAYS fresh for navigation & data.json
 self.addEventListener('fetch', (event) => {
   const url = event.request.url;
 
   // Never cache or intercept data.json or API requests - ALWAYS live from network
   if (url.includes('data.json') || url.includes('/api/')) {
     event.respondWith(fetch(event.request, { cache: 'no-store' }));
+    return;
+  }
+
+  // For HTML navigation requests, bypass browser disk cache completely!
+  if (event.request.mode === 'navigate') {
+    event.respondWith(
+      fetch(event.request, { cache: 'reload' })
+        .catch(() => caches.match(event.request))
+    );
     return;
   }
 

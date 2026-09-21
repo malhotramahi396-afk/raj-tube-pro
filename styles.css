@@ -218,10 +218,14 @@ button {
   padding: 4px 6px;
   border-radius: 20px;
   transition: background 0.2s;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
 }
 
-.channel-switcher-trigger:hover {
-  background: rgba(255, 255, 255, 0.1);
+.channel-switcher-trigger:hover,
+.channel-switcher-trigger:active {
+  background: rgba(255, 255, 255, 0.15);
 }
 
 .live-sync-indicator {
@@ -297,7 +301,7 @@ button {
   background: #0e1224;
   border-radius: 14px;
   box-shadow: 0 16px 40px rgba(0, 0, 0, 0.75);
-  z-index: 9999 !important;
+  z-index: 99999 !important;
   display: none;
   flex-direction: column;
   border: 1px solid rgba(255, 255, 255, 0.16);
@@ -3109,13 +3113,14 @@ button {
     border: 1px solid rgba(255, 255, 255, 0.16) !important;
     border-bottom: none !important;
     box-shadow: 0 -8px 40px rgba(0, 0, 0, 0.95) !important;
-    z-index: 9999 !important;
+    z-index: 99999 !important;
     transform: translateY(100%) !important;
     transition: transform 0.28s cubic-bezier(0.33, 1, 0.68, 1);
     display: flex !important;
     flex-direction: column !important;
     visibility: hidden;
     pointer-events: none;
+    touch-action: auto !important;
     padding-bottom: env(safe-area-inset-bottom, 24px);
     max-height: 82vh !important;
     overflow: hidden !important;
@@ -3126,6 +3131,7 @@ button {
     transform: translateY(0) !important;
     visibility: visible !important;
     pointer-events: auto !important;
+    touch-action: auto !important;
   }
 
   .channel-options-list {
@@ -3146,7 +3152,6 @@ button {
 
 body.sheet-open {
   overflow: hidden !important;
-  touch-action: none !important;
 }
 
 /* ========================================================
