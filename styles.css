@@ -38,13 +38,13 @@ html {
 }
 
 body.yt-studio-theme {
-  background-color: #050714;
+  background-color: #060818;
   background-image: 
-    radial-gradient(ellipse 950px 750px at 8% 10%, rgba(124, 58, 237, 0.32) 0%, transparent 65%),
-    radial-gradient(ellipse 900px 700px at 92% 12%, rgba(6, 182, 212, 0.30) 0%, transparent 65%),
-    radial-gradient(ellipse 800px 700px at 50% 45%, rgba(244, 63, 94, 0.22) 0%, transparent 65%),
-    radial-gradient(ellipse 900px 650px at 88% 85%, rgba(245, 158, 11, 0.26) 0%, transparent 65%),
-    radial-gradient(ellipse 850px 700px at 12% 88%, rgba(16, 185, 129, 0.26) 0%, transparent 65%);
+    radial-gradient(ellipse 1100px 900px at 0% 0%, rgba(124, 58, 237, 0.40) 0%, transparent 65%),
+    radial-gradient(ellipse 950px 750px at 100% 0%, rgba(6, 182, 212, 0.35) 0%, transparent 65%),
+    radial-gradient(ellipse 900px 800px at 50% 50%, rgba(244, 63, 94, 0.22) 0%, transparent 65%),
+    radial-gradient(ellipse 950px 750px at 100% 100%, rgba(245, 158, 11, 0.28) 0%, transparent 65%),
+    radial-gradient(ellipse 950px 850px at 0% 100%, rgba(16, 185, 129, 0.28) 0%, transparent 65%);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -68,15 +68,15 @@ button {
 }
 
 /* ========================================================
-   TOP APP HEADER (YouTube Studio Top Bar - Shiny Glass)
+   TOP APP HEADER (YouTube Studio Top Bar - Seamless Glass)
    ======================================================== */
 .studio-header {
   height: var(--header-height);
-  background: rgba(7, 10, 24, 0.82) !important;
-  backdrop-filter: blur(24px) saturate(180%);
-  -webkit-backdrop-filter: blur(24px) saturate(180%);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.10);
-  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.45);
+  background: rgba(8, 12, 28, 0.35) !important;
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.25);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -447,15 +447,15 @@ button {
 }
 
 /* ========================================================
-   LEFT NAVIGATION SIDEBAR (YouTube Studio Menu - Shiny Glass)
+   LEFT NAVIGATION SIDEBAR (YouTube Studio Menu - Seamless Glass)
    ======================================================== */
 .studio-sidebar {
   width: var(--sidebar-width);
-  background: rgba(7, 10, 24, 0.82) !important;
-  backdrop-filter: blur(24px) saturate(180%);
-  -webkit-backdrop-filter: blur(24px) saturate(180%);
-  border-right: 1px solid rgba(255, 255, 255, 0.10);
-  box-shadow: 4px 0 24px rgba(0, 0, 0, 0.35);
+  background: rgba(8, 12, 28, 0.25) !important;
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border-right: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: none !important;
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
@@ -1205,20 +1205,20 @@ button {
 }
 
 .dash-card-glow {
-  background: linear-gradient(135deg, rgba(18, 24, 44, 0.76) 0%, rgba(10, 14, 28, 0.88) 100%);
-  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: linear-gradient(135deg, rgba(18, 24, 44, 0.45) 0%, rgba(10, 14, 28, 0.60) 100%) !important;
+  border: 1px solid rgba(255, 255, 255, 0.10);
   border-radius: 16px;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.55), inset 0 1px 2px rgba(255, 255, 255, 0.22), inset 0 0 30px rgba(56, 189, 248, 0.03);
-  backdrop-filter: blur(24px);
-  -webkit-backdrop-filter: blur(24px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.45), inset 0 1px 2px rgba(255, 255, 255, 0.15), inset 0 0 30px rgba(56, 189, 248, 0.02);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
   overflow: hidden;
   position: relative;
   transition: border-color 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
 }
 
 .dash-card-glow:hover {
-  border-color: rgba(255, 255, 255, 0.25);
-  box-shadow: 0 14px 48px rgba(0, 0, 0, 0.65), inset 0 1px 3px rgba(255, 255, 255, 0.35);
+  border-color: rgba(255, 255, 255, 0.22);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.55), inset 0 1px 3px rgba(255, 255, 255, 0.25);
 }
 
 .dash-card-glow .yt-card-header {
@@ -1399,28 +1399,28 @@ button {
 
 /* Individual Tile Radiant Tints */
 .stat-tile-cyan {
-  background: linear-gradient(135deg, rgba(6, 182, 212, 0.12) 0%, rgba(15, 23, 42, 0.5) 100%);
+  background: linear-gradient(135deg, rgba(6, 182, 212, 0.15) 0%, rgba(15, 23, 42, 0.35) 100%);
   border: 1px solid rgba(6, 182, 212, 0.28);
 }
 .stat-tile-cyan .stat-tile-label { color: #22d3ee; }
 .text-cyan { color: #22d3ee !important; }
 
 .stat-tile-rose {
-  background: linear-gradient(135deg, rgba(244, 63, 94, 0.12) 0%, rgba(15, 23, 42, 0.5) 100%);
+  background: linear-gradient(135deg, rgba(244, 63, 94, 0.15) 0%, rgba(15, 23, 42, 0.35) 100%);
   border: 1px solid rgba(244, 63, 94, 0.28);
 }
 .stat-tile-rose .stat-tile-label { color: #fb7185; }
 .text-rose { color: #fb7185 !important; }
 
 .stat-tile-emerald {
-  background: linear-gradient(135deg, rgba(16, 185, 129, 0.12) 0%, rgba(15, 23, 42, 0.5) 100%);
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.15) 0%, rgba(15, 23, 42, 0.35) 100%);
   border: 1px solid rgba(16, 185, 129, 0.28);
 }
 .stat-tile-emerald .stat-tile-label { color: #34d399; }
 .text-emerald { color: #34d399 !important; }
 
 .stat-tile-purple {
-  background: linear-gradient(135deg, rgba(168, 85, 247, 0.12) 0%, rgba(15, 23, 42, 0.5) 100%);
+  background: linear-gradient(135deg, rgba(168, 85, 247, 0.15) 0%, rgba(15, 23, 42, 0.35) 100%);
   border: 1px solid rgba(168, 85, 247, 0.28);
 }
 .stat-tile-purple .stat-tile-label { color: #c084fc; }
