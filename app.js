@@ -2880,6 +2880,44 @@ function renderAutomationRadar(channels) {
     }
   }
 
+  // Populate Side Panel Fleet List (All 9 Channels)
+  const sideList = document.getElementById('side-fleet-list');
+  if (sideList) {
+    sideList.innerHTML = '';
+    // Sort channels chronologically by next trigger diffMs
+    const sortedChannels = [...channelCardsData].sort((a, b) => {
+      const diffA = a.nextSlot ? a.nextSlot.diffMs : Infinity;
+      const diffB = b.nextSlot ? b.nextSlot.diffMs : Infinity;
+      return diffA - diffB;
+    });
+
+    sortedChannels.forEach(({ channel: ch, nextSlot }) => {
+      const isNext = fleetNextChannel && fleetNextChannel.id === ch.id;
+      const stock = ch.drive_queue_count !== undefined ? ch.drive_queue_count : (ch.drive_videos_count || 0);
+      let stockBadgeClass = 'stock-badge-green';
+      if (stock < 5) stockBadgeClass = 'stock-badge-red';
+      else if (stock < 15) stockBadgeClass = 'stock-badge-yellow';
+
+      const item = document.createElement('div');
+      item.className = `side-fleet-item ${isNext ? 'side-fleet-item-active' : ''}`;
+      item.innerHTML = `
+        <img src="${ch.avatar_url || './logo.png'}" class="side-fleet-avatar" alt="${ch.name}" />
+        <div class="side-fleet-info">
+          <div class="side-fleet-name-row">
+            <span class="side-fleet-name">${ch.name}</span>
+            <span class="stock-badge ${stockBadgeClass}" style="font-size:10px; padding:1px 6px;">${stock} Drive</span>
+          </div>
+          <div class="side-fleet-time-row">
+            <span class="side-fleet-time">${nextSlot ? nextSlot.istStr + ' IST' : '--'}</span>
+            <span class="side-fleet-countdown" data-side-ch-id="${ch.id}">in --:--:--</span>
+          </div>
+        </div>
+        <button class="btn-side-fleet-dispatch" onclick="triggerRadarUpload('${ch.id}', '${ch.name.replace(/'/g, "\\'")}')" title="Instant Upload ${ch.name}">⚡</button>
+      `;
+      sideList.appendChild(item);
+    });
+  }
+
   grid.innerHTML = '';
   channelCardsData.forEach(({ channel: ch, nextSlot }) => {
     const isNext = fleetNextChannel && fleetNextChannel.id === ch.id;
@@ -2960,17 +2998,26 @@ function updateRadarTick() {
       const pad = n => String(n).padStart(2, '0');
       const timeStr = `${pad(chH)}:${pad(chM)}:${pad(chS)}`;
 
-      // 1. Update lower radar countdown
-      const countdownEl = document.getElementById('radar-next-countdown');
-      if (countdownEl) countdownEl.innerText = `(in ${timeStr})`;
-
-      // 2. Update side panel countdown
+      // 1. Update side panel countdown
       const sideCountdownEl = document.getElementById('side-panel-next-timer');
       if (sideCountdownEl) sideCountdownEl.innerText = `in ${timeStr}`;
 
-      // 3. Update sidebar mini countdown
+      // 2. Update sidebar mini countdown
       const sidebarCountdownEl = document.getElementById('sidebar-next-timer');
       if (sidebarCountdownEl) sidebarCountdownEl.innerText = `in ${timeStr}`;
+
+      // 3. Update all 9 channels countdowns in the side panel list
+      document.querySelectorAll('.side-fleet-countdown').forEach(el => {
+        const chId = el.getAttribute('data-side-ch-id');
+        const nextSlot = getNextSlotForChannel(chId);
+        if (nextSlot && nextSlot.diffMs < Infinity) {
+          const sec = Math.max(0, Math.floor(nextSlot.diffMs / 1000));
+          const h = Math.floor(sec / 3600);
+          const m = Math.floor((sec % 3600) / 60);
+          const s = sec % 60;
+          el.innerText = `in ${pad(h)}:${pad(m)}:${pad(s)}`;
+        }
+      });
     }
   }
 }

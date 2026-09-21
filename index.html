@@ -197,10 +197,11 @@
         <div class="sidebar-schedule-box" id="sidebar-schedule-box">
           <div class="sidebar-schedule-header">
             <span class="pulse-dot-mini"></span>
-            <span>NEXT UPLOAD</span>
+            <span>FLEET SCHEDULE (9 CH)</span>
           </div>
-          <div class="sidebar-schedule-name" id="sidebar-next-target">Calculating...</div>
+          <div class="sidebar-schedule-name" id="sidebar-next-target">Zyntrix07 (06:30 PM)</div>
           <div class="sidebar-schedule-clock" id="sidebar-next-timer">in --:--:--</div>
+          <div class="sidebar-schedule-sub" style="font-size:10px; color:#94a3b8; margin-top:3px;">9 Channels • 15m Stagger</div>
         </div>
 
         <div class="sidebar-divider"></div>
@@ -344,6 +345,23 @@
               </div>
             </div>
 
+            <!-- WIDGET: 9-Channel Fleet Dispatch Cards (Lower Dashboard Box) -->
+            <div class="yt-card widget-fleet-cards-box" id="dash-lower-fleet-box">
+              <div class="yt-card-header">
+                <div style="display: flex; align-items: center; justify-content: space-between; width: 100%; flex-wrap: wrap; gap: 8px;">
+                  <h2>9-Channel Fleet Dispatch &amp; Drive Stock</h2>
+                  <span class="radar-vpn-pill">🇺🇸 NY VPN: 146.70.186.206</span>
+                </div>
+              </div>
+
+              <div class="yt-card-body">
+                <!-- 9-CHANNEL FLEET RADAR CARDS GRID -->
+                <div class="radar-fleet-grid" id="radar-fleet-grid">
+                  <!-- Rendered dynamically by app.js -->
+                </div>
+              </div>
+            </div>
+
           </div>
 
           <!-- RIGHT COLUMN -->
@@ -423,6 +441,33 @@
 
                 <div class="yt-card-footer">
                   <button class="yt-btn-flat" id="btn-goto-health">VIEW ALL CHANNELS HEALTH</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- WIDGET: Fleet Automation & Staggered Upload Radar (Side Panel Box - All 9 Channels) -->
+            <div class="yt-card widget-fleet-schedule" id="widget-fleet-schedule">
+              <div class="yt-card-header">
+                <div style="display: flex; align-items: center; justify-content: space-between; width: 100%; flex-wrap: wrap; gap: 8px;">
+                  <h2>Fleet Upload Radar (All 9 Channels)</h2>
+                  <span class="live-badge-tag" style="background: rgba(56, 189, 248, 0.15); color: #38BDF8; border: 1px solid rgba(56, 189, 248, 0.3); font-size: 10.5px; padding: 3px 8px; border-radius: 12px; font-weight: 600;">🟢 15-MIN STAGGER</span>
+                </div>
+              </div>
+
+              <div class="yt-card-body">
+                <!-- Next Imminent Upload Banner -->
+                <div class="side-panel-next-box" id="side-panel-next-box">
+                  <div class="side-panel-next-icon">⏰</div>
+                  <div class="side-panel-next-meta">
+                    <div class="side-panel-next-label">Next In Queue (USA Peak)</div>
+                    <div class="side-panel-next-title" id="side-panel-next-target">🎬 Calculating...</div>
+                    <div class="side-panel-next-countdown" id="side-panel-next-timer">in --:--:--</div>
+                  </div>
+                </div>
+
+                <!-- ALL 9 CHANNELS LIVE LIST -->
+                <div class="side-fleet-list" id="side-fleet-list">
+                  <!-- Populated by JavaScript with all 9 channels -->
                 </div>
               </div>
             </div>
@@ -526,51 +571,7 @@
               </div>
             </div>
 
-            <!-- WIDGET: Fleet Automation & Staggered Upload Radar (Side Panel Box) -->
-            <div class="yt-card widget-fleet-schedule" id="widget-fleet-schedule">
-              <div class="yt-card-header">
-                <div style="display: flex; align-items: center; justify-content: space-between; width: 100%; flex-wrap: wrap; gap: 8px;">
-                  <h2>Fleet Upload Radar &amp; Schedule</h2>
-                  <span class="live-badge-tag" style="background: rgba(56, 189, 248, 0.15); color: #38BDF8; border: 1px solid rgba(56, 189, 248, 0.3); font-size: 10.5px; padding: 3px 8px; border-radius: 12px; font-weight: 600;">🟢 15-MIN STAGGER</span>
-                </div>
-              </div>
 
-              <div class="yt-card-body">
-                <!-- Next Imminent Upload Banner -->
-                <div class="side-panel-next-box">
-                  <div class="side-panel-next-icon">⏰</div>
-                  <div class="side-panel-next-meta">
-                    <div class="side-panel-next-label">Next In Queue</div>
-                    <div class="side-panel-next-title" id="side-panel-next-target">🎬 Calculating...</div>
-                    <div class="side-panel-next-countdown" id="side-panel-next-timer">in --:--:--</div>
-                  </div>
-                </div>
-
-                <div class="metric-rows-table mt-12">
-                  <div class="m-row">
-                    <span class="m-label">Selected Channel Slot</span>
-                    <span class="m-val text-blue font-semibold" id="side-panel-active-slot">--</span>
-                  </div>
-                  <div class="m-row">
-                    <span class="m-label">Anti-Collision Guard</span>
-                    <span class="m-val text-green font-semibold">15m Stagger (0% Overlap)</span>
-                  </div>
-                  <div class="m-row">
-                    <span class="m-label">Egress VPN</span>
-                    <span class="m-val text-cyan font-semibold">🇺🇸 New York (146.70.186.206)</span>
-                  </div>
-                  <div class="m-row">
-                    <span class="m-label">Peak Audience Target</span>
-                    <span class="m-val">USA EDT &amp; Global Viral</span>
-                  </div>
-                </div>
-
-                <div class="yt-card-footer mt-12" style="display:flex; gap:8px; justify-content:space-between;">
-                  <button class="yt-btn-primary" id="btn-side-panel-dispatch" onclick="triggerCurrentChannelUpload()">⚡ Upload Now</button>
-                  <a href="#automation-radar-card" class="yt-btn-flat" style="text-align:center;">VIEW ALL 9 CHANNELS ↓</a>
-                </div>
-              </div>
-            </div>
 
             <!-- WIDGET: Cloud Runner IP & Geolocation Radar -->
             <div class="yt-card widget-runner-radar">
@@ -628,33 +629,6 @@
 
           </div>
 
-        </div>
-
-        <!-- ==========================================================
-             9-CHANNEL FLEET DISPATCH & LIVE RADAR ENGINE (LOWER DASHBOARD)
-             ========================================================== -->
-        <div class="automation-radar-card mt-24" id="automation-radar-card">
-          <div class="radar-header">
-            <div class="radar-header-left">
-              <span class="radar-pulse-dot"></span>
-              <span class="radar-title">AUTOMATION RADAR &amp; LIVE FLEET ENGINE</span>
-              <span class="radar-badge-active">24/7 ACTIVE</span>
-              <span class="radar-vpn-pill">🇺🇸 NY VPN: 146.70.186.206 VERIFIED</span>
-            </div>
-            <div class="radar-header-right">
-              <div class="next-run-banner" id="radar-next-run-banner">
-                <span class="next-run-icon">⏰</span>
-                <span class="next-run-label">Next Run:</span>
-                <span class="next-run-target" id="radar-next-target">🎬 Calculating...</span>
-                <span class="next-run-timer" id="radar-next-countdown">(in --:--:--)</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- 9-CHANNEL FLEET RADAR CARDS GRID -->
-          <div class="radar-fleet-grid" id="radar-fleet-grid">
-            <!-- Rendered dynamically by app.js -->
-          </div>
         </div>
       </section>
 
