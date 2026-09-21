@@ -2789,15 +2789,15 @@ function appendTerminalLine(container, text, type = 'info') {
    AUTOMATION RADAR & 24-HOUR FLEET DISPATCH ENGINE CONTROLLER
    ======================================================== */
 const CHANNEL_SCHEDULES = {
-  "channel_1": [ { utcHour: 8, utcMin: 0, istStr: "01:30 PM", slot: "Slot 1 (Lunch Break)" }, { utcHour: 14, utcMin: 0, istStr: "07:30 PM", slot: "Slot 2 (Prime Peak)" } ],
+  "channel_1": [ { utcHour: 8, utcMin: 15, istStr: "01:45 PM", slot: "Slot 1 (Global Window)" }, { utcHour: 13, utcMin: 15, istStr: "06:45 PM", slot: "Slot 2 (USA 09:15 AM EDT Peak)" } ],
   "channel_2": [ { utcHour: 8, utcMin: 0, istStr: "01:30 PM", slot: "Slot 1 (Lunch Break)" }, { utcHour: 13, utcMin: 0, istStr: "06:30 PM", slot: "Slot 2 (Evening Peak)" } ],
-  "channel_3": [ { utcHour: 14, utcMin: 0, istStr: "07:30 PM", slot: "Slot 1 (Prime Peak)" }, { utcHour: 21, utcMin: 0, istStr: "02:30 AM", slot: "Slot 2 (Night Run)" } ],
-  "channel_4": [ { utcHour: 14, utcMin: 0, istStr: "07:30 PM", slot: "Slot 1 (Prime Peak)" }, { utcHour: 21, utcMin: 0, istStr: "02:30 AM", slot: "Slot 2 (Night Run)" } ],
-  "channel_5": [ { utcHour: 14, utcMin: 0, istStr: "07:30 PM", slot: "Slot 1 (Prime Peak)" }, { utcHour: 21, utcMin: 0, istStr: "02:30 AM", slot: "Slot 2 (Night Run)" } ],
-  "channel_6": [ { utcHour: 14, utcMin: 0, istStr: "07:30 PM", slot: "Slot 1 (Prime Peak)" }, { utcHour: 21, utcMin: 0, istStr: "02:30 AM", slot: "Slot 2 (Night Run)" } ],
-  "channel_8": [ { utcHour: 14, utcMin: 0, istStr: "07:30 PM", slot: "Slot 1 (Prime Peak)" }, { utcHour: 21, utcMin: 0, istStr: "02:30 AM", slot: "Slot 2 (Night Run)" } ],
-  "channel_9": [ { utcHour: 14, utcMin: 0, istStr: "07:30 PM", slot: "Slot 1 (Prime Peak)" }, { utcHour: 21, utcMin: 0, istStr: "02:30 AM", slot: "Slot 2 (Night Run)" } ],
-  "channel_10": [ { utcHour: 14, utcMin: 0, istStr: "07:30 PM", slot: "Slot 1 (Prime Peak)" }, { utcHour: 21, utcMin: 0, istStr: "02:30 AM", slot: "Slot 2 (Night Run)" } ]
+  "channel_3": [ { utcHour: 13, utcMin: 30, istStr: "07:00 PM", slot: "Slot 1 (USA 09:30 AM EDT Peak)" }, { utcHour: 20, utcMin: 15, istStr: "01:45 AM", slot: "Slot 2 (USA 04:15 PM EDT Peak)" } ],
+  "channel_4": [ { utcHour: 13, utcMin: 45, istStr: "07:15 PM", slot: "Slot 1 (USA 09:45 AM EDT Peak)" }, { utcHour: 20, utcMin: 30, istStr: "02:00 AM", slot: "Slot 2 (USA 04:30 PM EDT Peak)" } ],
+  "channel_5": [ { utcHour: 14, utcMin: 0, istStr: "07:30 PM", slot: "Slot 1 (USA 10:00 AM EDT Peak)" }, { utcHour: 20, utcMin: 45, istStr: "02:15 AM", slot: "Slot 2 (USA 04:45 PM EDT Peak)" } ],
+  "channel_6": [ { utcHour: 14, utcMin: 15, istStr: "07:45 PM", slot: "Slot 1 (USA 10:15 AM EDT Peak)" }, { utcHour: 21, utcMin: 0, istStr: "02:30 AM", slot: "Slot 2 (USA 05:00 PM EDT Peak)" } ],
+  "channel_8": [ { utcHour: 14, utcMin: 30, istStr: "08:00 PM", slot: "Slot 1 (USA 10:30 AM EDT Peak)" }, { utcHour: 21, utcMin: 15, istStr: "02:45 AM", slot: "Slot 2 (USA 05:15 PM EDT Peak)" } ],
+  "channel_9": [ { utcHour: 14, utcMin: 45, istStr: "08:15 PM", slot: "Slot 1 (USA 10:45 AM EDT Peak)" }, { utcHour: 21, utcMin: 30, istStr: "03:00 AM", slot: "Slot 2 (USA 05:30 PM EDT Peak)" } ],
+  "channel_10": [ { utcHour: 15, utcMin: 0, istStr: "08:30 PM", slot: "Slot 1 (USA 11:00 AM EDT Peak)" }, { utcHour: 21, utcMin: 45, istStr: "03:15 AM", slot: "Slot 2 (USA 05:45 PM EDT Peak)" } ]
 };
 
 let radarTickInterval = null;
@@ -2850,12 +2850,35 @@ function renderAutomationRadar(channels) {
     channelCardsData.push({ channel: ch, nextSlot });
   });
 
+  // Update Main Radar Banner
   const nextTargetEl = document.getElementById('radar-next-target');
   if (nextTargetEl && fleetNextChannel && fleetNextSlot) {
     nextTargetEl.innerText = `🎬 ${fleetNextChannel.name} (${fleetNextSlot.slot}) @ ${fleetNextSlot.istStr} IST`;
   }
 
-  renderTimelineSlotPins();
+  // Update Side Panel Schedule Widget
+  const sideTargetEl = document.getElementById('side-panel-next-target');
+  if (sideTargetEl && fleetNextChannel && fleetNextSlot) {
+    sideTargetEl.innerText = `${fleetNextChannel.name} • ${fleetNextSlot.istStr} IST`;
+  }
+
+  // Update Sidebar Schedule Mini Widget
+  const sidebarTargetEl = document.getElementById('sidebar-next-target');
+  if (sidebarTargetEl && fleetNextChannel && fleetNextSlot) {
+    sidebarTargetEl.innerText = `${fleetNextChannel.name} (${fleetNextSlot.istStr})`;
+  }
+
+  // Update active channel's scheduled slot in Side Panel
+  const sideActiveSlotEl = document.getElementById('side-panel-active-slot');
+  if (sideActiveSlotEl) {
+    const activeChId = currentChannelId === 'all' ? (channels[0] ? channels[0].id : 'channel_1') : currentChannelId;
+    const activeNext = getNextSlotForChannel(activeChId);
+    if (activeNext) {
+      sideActiveSlotEl.innerText = `${activeNext.istStr} IST (${activeNext.slot})`;
+    } else {
+      sideActiveSlotEl.innerText = 'Staggered (2x Daily)';
+    }
+  }
 
   grid.innerHTML = '';
   channelCardsData.forEach(({ channel: ch, nextSlot }) => {
@@ -2914,53 +2937,7 @@ function renderAutomationRadar(channels) {
   updateRadarTick();
 }
 
-function renderTimelineSlotPins() {
-  const pinsContainer = document.getElementById('timeline-slot-pins');
-  if (!pinsContainer) return;
-
-  const SLOTS_META = [
-    { ist: "02:30 AM", mins: 150, channels: "VibroZen, VexoRush, Klyvo, CoreVanta, Hyperflux, Vortex Edge, Zenova Drift" },
-    { ist: "01:30 PM", mins: 810, channels: "The Hidden Lens, Zyntrix07" },
-    { ist: "06:30 PM", mins: 1110, channels: "Zyntrix07 (Evening Peak)" },
-    { ist: "07:30 PM", mins: 1170, channels: "The Hidden Lens, VibroZen, VexoRush, Klyvo, CoreVanta, Hyperflux, Vortex Edge, Zenova Drift" }
-  ];
-
-  pinsContainer.innerHTML = '';
-  SLOTS_META.forEach(sm => {
-    const leftPct = (sm.mins / 1440) * 100;
-    const pin = document.createElement('div');
-    pin.className = 'slot-pin';
-    pin.style.left = `${leftPct.toFixed(2)}%`;
-    pin.title = `${sm.ist} IST - Channels: ${sm.channels}`;
-    pin.onclick = () => showToast(`⏰ ${sm.ist} IST Slot: ${sm.channels}`);
-    pinsContainer.appendChild(pin);
-  });
-}
-
 function updateRadarTick() {
-  const now = new Date();
-  const istOffset = 5.5 * 3600 * 1000;
-  const istDate = new Date(now.getTime() + istOffset);
-
-  const istH = istDate.getUTCHours();
-  const istM = istDate.getUTCMinutes();
-  const istS = istDate.getUTCSeconds();
-
-  const timeEl = document.getElementById('timeline-current-time');
-  if (timeEl) {
-    const pad = n => String(n).padStart(2, '0');
-    const ampm = istH >= 12 ? 'PM' : 'AM';
-    const h12 = istH % 12 || 12;
-    timeEl.innerText = `Current: ${pad(h12)}:${pad(istM)}:${pad(istS)} ${ampm} IST`;
-  }
-
-  const currentMins = (istH * 60) + istM + (istS / 60);
-  const laserPct = (currentMins / 1440) * 100;
-  const laser = document.getElementById('timeline-laser-marker');
-  if (laser) {
-    laser.style.left = `${laserPct.toFixed(3)}%`;
-  }
-
   let fleetMinDiff = Infinity;
   let fleetNextChannel = null;
   let fleetNextSlot = null;
@@ -2975,16 +2952,34 @@ function updateRadarTick() {
       }
     });
 
-    const countdownEl = document.getElementById('radar-next-countdown');
-    if (countdownEl && fleetMinDiff < Infinity) {
+    if (fleetMinDiff < Infinity) {
       const totalSec = Math.max(0, Math.floor(fleetMinDiff / 1000));
       const chH = Math.floor(totalSec / 3600);
       const chM = Math.floor((totalSec % 3600) / 60);
       const chS = totalSec % 60;
       const pad = n => String(n).padStart(2, '0');
-      countdownEl.innerText = `(in ${pad(chH)}:${pad(chM)}:${pad(chS)})`;
+      const timeStr = `${pad(chH)}:${pad(chM)}:${pad(chS)}`;
+
+      // 1. Update lower radar countdown
+      const countdownEl = document.getElementById('radar-next-countdown');
+      if (countdownEl) countdownEl.innerText = `(in ${timeStr})`;
+
+      // 2. Update side panel countdown
+      const sideCountdownEl = document.getElementById('side-panel-next-timer');
+      if (sideCountdownEl) sideCountdownEl.innerText = `in ${timeStr}`;
+
+      // 3. Update sidebar mini countdown
+      const sidebarCountdownEl = document.getElementById('sidebar-next-timer');
+      if (sidebarCountdownEl) sidebarCountdownEl.innerText = `in ${timeStr}`;
     }
   }
+}
+
+function triggerCurrentChannelUpload() {
+  const activeId = currentChannelId === 'all' ? 'channel_1' : currentChannelId;
+  const ch = (globalData && globalData.channels) ? globalData.channels.find(c => c.id === activeId) : null;
+  const name = ch ? ch.name : 'Current Channel';
+  triggerRadarUpload(activeId, name);
 }
 
 async function triggerRadarUpload(channelId, channelName) {
