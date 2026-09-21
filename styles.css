@@ -1420,9 +1420,153 @@ button {
     overflow-x: hidden;
   }
 
-  /* 5-item spacious bottom navigation on phones (Settings is inside profile menu) */
-  .bottom-nav-item[data-view="settings"] {
-    display: none !important;
+  /* 5-item spacious bottom navigation on phones */
+  .bottom-nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    background: transparent;
+    border: none;
+    color: var(--yt-text-secondary);
+    font-size: 10.5px;
+    font-weight: 500;
+    cursor: pointer;
+    flex: 1;
+    height: 100%;
+    padding: 6px 0;
+    transition: all 0.15s ease;
+  }
+
+  .bottom-nav-item:active {
+    background: rgba(255, 255, 255, 0.05);
+  }
+
+  /* Mobile More Sheet */
+  .mobile-more-sheet {
+    display: block;
+    position: fixed;
+    bottom: -100%;
+    left: 0;
+    right: 0;
+    background: #181818;
+    border-radius: 16px 16px 0 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    z-index: 3000;
+    padding: 12px 16px 36px 16px;
+    box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.8);
+    transition: bottom 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+    max-height: 80vh;
+    overflow-y: auto;
+  }
+
+  .mobile-more-sheet.open {
+    bottom: 0;
+  }
+
+  .more-sheet-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 4px 14px 4px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .more-sheet-header h3 {
+    font-size: 15px;
+    font-weight: 700;
+    color: #f1f1f1;
+    margin: 0;
+  }
+
+  .btn-close-sheet {
+    background: transparent;
+    border: none;
+    color: #aaa;
+    font-size: 18px;
+    padding: 4px 8px;
+    cursor: pointer;
+  }
+
+  .more-sheet-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 12px;
+  }
+
+  .more-grid-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 12px 14px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 10px;
+    color: inherit;
+    text-decoration: none;
+    text-align: left;
+    width: 100%;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: background 0.15s;
+  }
+
+  .more-grid-item:active {
+    background: rgba(255, 255, 255, 0.1);
+  }
+
+  .more-item-icon {
+    width: 38px;
+    height: 38px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    flex-shrink: 0;
+  }
+
+  .icon-red { background: rgba(239, 68, 68, 0.15); }
+  .icon-blue { background: rgba(59, 130, 246, 0.15); }
+  .icon-green { background: rgba(16, 185, 129, 0.15); }
+  .icon-purple { background: rgba(168, 85, 247, 0.15); }
+  .icon-gray { background: rgba(255, 255, 255, 0.08); }
+  .icon-yt { background: rgba(255, 0, 0, 0.15); }
+
+  .more-item-info {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .more-item-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: #f1f1f1;
+  }
+
+  .more-item-sub {
+    font-size: 11px;
+    color: #888;
+    margin-top: 1px;
+  }
+
+  .more-item-badge {
+    font-size: 10.5px;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 12px;
+  }
+
+  .badge-red { background: rgba(239, 68, 68, 0.2); color: #ef4444; }
+  .badge-blue { background: rgba(59, 130, 246, 0.2); color: #60a5fa; }
+  .badge-green { background: rgba(16, 185, 129, 0.2); color: #34d399; }
+  .badge-purple { background: rgba(168, 85, 247, 0.2); color: #c084fc; }
+
+  .more-item-arrow {
+    color: #888;
+    font-size: 14px;
   }
 
   /* YouTube Studio Android Dashboard Mobile Card Hierarchy (Support doc 2673341) */

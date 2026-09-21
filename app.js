@@ -58,7 +58,55 @@ function setupNavigation() {
   bottomNavItems.forEach(item => {
     item.addEventListener('click', () => {
       const targetView = item.getAttribute('data-view');
-      switchView(targetView);
+      if (targetView) {
+        switchView(targetView);
+        closeMoreSheet();
+      }
+    });
+  });
+
+  // Mobile More Sheet Drawer
+  const btnBottomMore = document.getElementById('btn-bottom-more');
+  const moreSheet = document.getElementById('mobile-more-sheet');
+  const btnCloseMoreSheet = document.getElementById('btn-close-more-sheet');
+  const moreSheetHandle = document.getElementById('more-sheet-handle');
+
+  const openMoreSheet = () => {
+    if (moreSheet) moreSheet.classList.add('open');
+    if (backdrop) backdrop.classList.add('active');
+    document.body.classList.add('sheet-open');
+  };
+
+  const closeMoreSheet = () => {
+    if (moreSheet) moreSheet.classList.remove('open');
+    const dropdown = document.getElementById('channel-dropdown');
+    if (backdrop && (!dropdown || !dropdown.classList.contains('open'))) {
+      backdrop.classList.remove('active');
+    }
+    document.body.classList.remove('sheet-open');
+  };
+
+  if (btnBottomMore) {
+    btnBottomMore.addEventListener('click', () => {
+      if (moreSheet && moreSheet.classList.contains('open')) {
+        closeMoreSheet();
+      } else {
+        openMoreSheet();
+      }
+    });
+  }
+
+  if (btnCloseMoreSheet) btnCloseMoreSheet.addEventListener('click', closeMoreSheet);
+  if (moreSheetHandle) moreSheetHandle.addEventListener('click', closeMoreSheet);
+
+  // Items inside Mobile More Sheet
+  document.querySelectorAll('.more-grid-item').forEach(item => {
+    item.addEventListener('click', () => {
+      const targetView = item.getAttribute('data-view');
+      if (targetView) {
+        closeMoreSheet();
+        switchView(targetView);
+      }
     });
   });
 
@@ -112,9 +160,12 @@ function setupNavigation() {
 
   if (backdrop) {
     backdrop.addEventListener('click', () => {
-      sidebar.classList.remove('open');
-      document.getElementById('channel-dropdown').classList.remove('open');
+      if (sidebar) sidebar.classList.remove('open');
+      const dropdown = document.getElementById('channel-dropdown');
+      if (dropdown) dropdown.classList.remove('open');
+      closeMoreSheet();
       backdrop.classList.remove('active');
+      document.body.classList.remove('sheet-open');
     });
   }
 
@@ -135,13 +186,27 @@ function switchView(viewName) {
   });
 
   // Update mobile bottom nav active classes
+  const isMoreView = ['post-now', 'queue', 'health', 'radar', 'settings'].includes(viewName);
+  const btnBottomMore = document.getElementById('btn-bottom-more');
+
   document.querySelectorAll('.bottom-nav-item').forEach(item => {
-    if (item.getAttribute('data-view') === viewName) {
-      item.classList.add('active');
-    } else {
-      item.classList.remove('active');
+    const dataView = item.getAttribute('data-view');
+    if (dataView) {
+      if (dataView === viewName) {
+        item.classList.add('active');
+      } else {
+        item.classList.remove('active');
+      }
     }
   });
+
+  if (btnBottomMore) {
+    if (isMoreView) {
+      btnBottomMore.classList.add('active');
+    } else {
+      btnBottomMore.classList.remove('active');
+    }
+  }
 
   // Update view visibility
   document.querySelectorAll('.tab-view').forEach(view => {
