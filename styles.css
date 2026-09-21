@@ -1304,9 +1304,10 @@ button {
   transform: translateX(-50%) translateY(0);
 }
 
-/* Bottom Navigation Bar (Hidden on PC/Laptop) */
-.studio-bottom-nav {
-  display: none;
+/* Bottom Navigation Bar & Mobile More Sheet (Strictly Hidden on PC/Laptop) */
+.studio-bottom-nav,
+.mobile-more-sheet {
+  display: none !important;
 }
 
 /* Mobile Content Cards (Hidden on PC/Laptop) */
@@ -1370,7 +1371,7 @@ button {
 
   /* Authentic YouTube Studio Mobile Bottom Bar */
   .studio-bottom-nav {
-    display: flex;
+    display: flex !important;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -1445,7 +1446,7 @@ button {
 
   /* Mobile More Sheet */
   .mobile-more-sheet {
-    display: block;
+    display: block !important;
     position: fixed;
     bottom: -100%;
     left: 0;

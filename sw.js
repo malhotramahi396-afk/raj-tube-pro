@@ -1,5 +1,5 @@
-// Service Worker for Raj Tube Pro - v31.0 (Streamlined 5-Tab Mobile Nav & More Sheet)
-const CACHE_NAME = 'raj-tube-pro-v31';
+// Service Worker for Raj Tube Pro - v32.0 (Strict Desktop Hidden for Mobile Sheet)
+const CACHE_NAME = 'raj-tube-pro-v32';
 
 self.addEventListener('install', (event) => {
   self.skipWaiting();
