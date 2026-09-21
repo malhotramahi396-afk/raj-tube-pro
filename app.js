@@ -836,14 +836,11 @@ function renderDashboard(channel) {
   }
 
   function formatWatchTimeDisplay(hours) {
-    if (!hours && hours !== 0) return '0h';
-    if (hours >= 1000) {
-      return `${(hours / 1000).toFixed(1)}Kh`;
+    if (!hours && hours !== 0) return '0 hrs';
+    if (hours < 10 && hours > 0) {
+      return `${Number(hours).toFixed(1)} hrs`;
     }
-    if (hours >= 100) {
-      return `${Math.round(hours)}h`;
-    }
-    return `${Number(hours.toFixed(1))}h`;
+    return `${Math.round(hours).toLocaleString()} hrs`;
   }
 
   const watchEl = document.getElementById('dash-summary-watchtime');
@@ -1410,7 +1407,9 @@ function renderAnalyticsStats(channel) {
 
   if (viewsChip) viewsChip.innerText = formatNumber(views);
   if (watchChip) {
-    watchChip.innerText = watchHours >= 1000 ? `${(watchHours / 1000).toFixed(1)}K` : `${Number(watchHours.toFixed(1))}`;
+    watchChip.innerText = watchHours < 10 && watchHours > 0
+      ? `${Number(watchHours).toFixed(1)} hrs`
+      : `${Math.round(watchHours).toLocaleString()} hrs`;
   }
   if (subsChip) subsChip.innerText = `+${subs}`;
 
