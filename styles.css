@@ -53,7 +53,7 @@ body.yt-studio-theme {
   font-size: 14px;
   line-height: 1.5;
   overflow-x: hidden;
-  max-width: 100vw;
+  max-width: 100%;
   width: 100%;
   -webkit-font-smoothing: antialiased;
 }
@@ -68,14 +68,15 @@ button {
 }
 
 /* ========================================================
-   TOP APP HEADER (YouTube Studio Top Bar)
+   TOP APP HEADER (YouTube Studio Top Bar - Shiny Glass)
    ======================================================== */
 .studio-header {
   height: var(--header-height);
-  background: rgba(11, 15, 25, 0.85);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(7, 10, 24, 0.82) !important;
+  backdrop-filter: blur(24px) saturate(180%);
+  -webkit-backdrop-filter: blur(24px) saturate(180%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.45);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -126,14 +127,22 @@ button {
 }
 
 .search-box {
-  background: #121212;
-  border: 1px solid #333333;
-  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 20px;
   height: 38px;
   display: flex;
   align-items: center;
-  padding: 0 12px;
+  padding: 0 14px;
   gap: 12px;
+  backdrop-filter: blur(12px);
+  transition: all 0.25s ease;
+}
+
+.search-box:focus-within {
+  background: rgba(255, 255, 255, 0.09);
+  border-color: rgba(99, 102, 241, 0.6);
+  box-shadow: 0 0 16px rgba(99, 102, 241, 0.3);
 }
 
 .search-box input {
@@ -431,21 +440,22 @@ button {
 .studio-app-shell {
   display: flex;
   min-height: calc(100vh - var(--header-height));
-  width: 100vw;
-  max-width: 100vw;
+  width: 100%;
+  max-width: 100%;
   overflow-x: hidden;
   box-sizing: border-box;
 }
 
 /* ========================================================
-   LEFT NAVIGATION SIDEBAR (YouTube Studio Menu)
+   LEFT NAVIGATION SIDEBAR (YouTube Studio Menu - Shiny Glass)
    ======================================================== */
 .studio-sidebar {
   width: var(--sidebar-width);
-  background: rgba(11, 15, 25, 0.85);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border-right: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(7, 10, 24, 0.82) !important;
+  backdrop-filter: blur(24px) saturate(180%);
+  -webkit-backdrop-filter: blur(24px) saturate(180%);
+  border-right: 1px solid rgba(255, 255, 255, 0.10);
+  box-shadow: 4px 0 24px rgba(0, 0, 0, 0.35);
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
@@ -473,16 +483,17 @@ button {
   border-radius: 50%;
   overflow: hidden;
   margin-bottom: 12px;
-  background: #111;
-  border: 2px solid rgba(255, 0, 0, 0.45);
-  box-shadow: 0 0 16px rgba(255, 0, 0, 0.3), 0 0 30px rgba(62, 166, 255, 0.18);
+  background: #0f172a;
+  border: 2px solid rgba(168, 85, 247, 0.5);
+  box-shadow: 0 0 20px rgba(99, 102, 241, 0.4), 0 0 35px rgba(168, 85, 247, 0.25);
   transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease;
   position: relative;
 }
 
 .channel-avatar-wrap:hover {
   transform: scale(1.06);
-  box-shadow: 0 0 24px rgba(255, 0, 0, 0.6), 0 0 45px rgba(62, 166, 255, 0.35);
+  border-color: rgba(168, 85, 247, 0.8);
+  box-shadow: 0 0 30px rgba(99, 102, 241, 0.6), 0 0 50px rgba(168, 85, 247, 0.4);
 }
 
 .channel-avatar-wrap img {
@@ -514,43 +525,52 @@ button {
 .nav-item {
   display: flex;
   align-items: center;
-  gap: 24px;
-  padding: 10px 24px;
+  gap: 16px;
+  padding: 10px 16px;
+  margin: 3px 12px;
+  border-radius: 10px;
   background: transparent;
-  border: none;
-  color: var(--yt-text-secondary);
-  font-size: 14px;
-  font-weight: 400;
+  border: 1px solid transparent;
+  color: #94a3b8;
+  font-size: 13.5px;
+  font-weight: 500;
   cursor: pointer;
   text-align: left;
-  transition: background 0.15s, color 0.15s;
+  transition: all 0.2s ease;
   position: relative;
-  width: 100%;
+  width: calc(100% - 24px);
+  box-sizing: border-box;
 }
 
 .nav-item:hover {
-  background: var(--yt-bg-surface);
-  color: var(--yt-text-primary);
+  background: rgba(255, 255, 255, 0.07);
+  color: #ffffff;
+  transform: translateX(3px);
 }
 
 .nav-item.active {
-  background: var(--yt-bg-surface);
-  color: var(--yt-red);
-  font-weight: 500;
+  background: linear-gradient(90deg, rgba(99, 102, 241, 0.22) 0%, rgba(168, 85, 247, 0.12) 100%) !important;
+  color: #ffffff !important;
+  border: 1px solid rgba(168, 85, 247, 0.4) !important;
+  box-shadow: 0 4px 16px rgba(99, 102, 241, 0.22), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  font-weight: 600;
 }
 
 .nav-item.active::before {
   content: "";
   position: absolute;
   left: 0;
-  top: 0;
-  bottom: 0;
+  top: 8px;
+  bottom: 8px;
   width: 3px;
-  background: var(--yt-red);
+  border-radius: 3px;
+  background: linear-gradient(180deg, #6366f1, #a855f7);
+  box-shadow: 0 0 8px #a855f7;
 }
 
 .nav-item.active svg {
-  fill: var(--yt-red);
+  fill: #c084fc !important;
+  filter: drop-shadow(0 0 6px rgba(192, 132, 252, 0.6));
 }
 
 .nav-text {
@@ -601,9 +621,9 @@ button {
 .studio-main {
   flex: 1 1 0%;
   min-width: 0;
-  width: calc(100% - var(--sidebar-width));
-  max-width: calc(100vw - var(--sidebar-width));
-  padding: 20px 24px 48px 24px;
+  width: 0;
+  max-width: 100%;
+  padding: 16px 18px 48px 18px;
   box-sizing: border-box;
   overflow-y: auto;
   overflow-x: hidden;
@@ -663,13 +683,14 @@ button {
 .dashboard-kpi-grid {
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
-  gap: 14px;
+  gap: 10px;
   margin-bottom: 20px;
   width: 100%;
+  max-width: 100%;
   box-sizing: border-box;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1120px) {
   .dashboard-kpi-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -678,28 +699,28 @@ button {
 @media (max-width: 768px) {
   .dashboard-kpi-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 10px;
+    gap: 8px;
   }
   .kpi-card {
-    padding: 12px 14px !important;
-    gap: 10px !important;
+    padding: 10px 12px !important;
+    gap: 8px !important;
   }
   .kpi-icon-wrap {
-    width: 38px !important;
-    height: 38px !important;
-    font-size: 18px !important;
+    width: 36px !important;
+    height: 36px !important;
+    font-size: 16px !important;
   }
   .kpi-value {
-    font-size: 19px !important;
+    font-size: 18px !important;
   }
 }
 
 .kpi-card {
   border-radius: 12px;
-  padding: 16px 18px;
+  padding: 11px 13px;
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 10px;
   transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
   min-width: 0;
   box-sizing: border-box;
@@ -814,29 +835,29 @@ button {
   box-shadow: 0 8px 30px rgba(245, 158, 11, 0.25);
 }
 .kpi-icon-dispatch {
-  background: linear-gradient(135deg, #f59e0b, #ea580c);
-  color: #ffffff;
-  box-shadow: 0 0 16px rgba(245, 158, 11, 0.45);
+  background: rgba(245, 158, 11, 0.18);
+  border: 2px solid #f59e0b;
+  box-shadow: 0 0 14px rgba(245, 158, 11, 0.45);
+  padding: 0 !important;
+  overflow: hidden;
 }
-.kpi-card-dispatch:hover {
-  transform: translateY(-3px);
-  border-color: rgba(245, 158, 11, 0.6);
-  box-shadow: 0 8px 30px rgba(245, 158, 11, 0.25);
-}
-.kpi-icon-dispatch {
-  background: linear-gradient(135deg, #f59e0b, #ea580c);
-  color: #ffffff;
-  box-shadow: 0 0 16px rgba(245, 158, 11, 0.45);
+
+.kpi-avatar-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+  display: block;
 }
 
 .kpi-icon-wrap {
-  width: 46px;
-  height: 46px;
-  border-radius: 12px;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 21px;
+  font-size: 19px;
   flex-shrink: 0;
 }
 
@@ -846,7 +867,7 @@ button {
 }
 
 .kpi-label {
-  font-size: 11.5px;
+  font-size: 11px;
   color: #94a3b8;
   font-weight: 600;
   text-transform: uppercase;
@@ -857,11 +878,11 @@ button {
 }
 
 .kpi-value {
-  font-size: 24px;
+  font-size: 21px;
   font-weight: 800;
   color: #ffffff;
   line-height: 1.2;
-  margin: 3px 0;
+  margin: 2px 0;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -872,16 +893,18 @@ button {
   color: #fb923c !important;
   font-family: 'Courier New', monospace;
   font-weight: 800;
+  font-size: 18px !important;
   text-shadow: 0 0 12px rgba(251, 146, 60, 0.45);
 }
 
 .kpi-sub {
-  font-size: 11px;
+  font-size: 10.5px;
   font-weight: 600;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   display: inline-block;
+  max-width: 100%;
   margin-top: 2px;
 }
 
@@ -1157,9 +1180,10 @@ button {
    ======================================================== */
 .dashboard-main-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr);
-  gap: 20px;
+  grid-template-columns: minmax(0, 1.18fr) minmax(0, 0.82fr);
+  gap: 16px;
   width: 100%;
+  max-width: 100%;
   box-sizing: border-box;
 }
 
@@ -1172,9 +1196,12 @@ button {
 .dash-col-left, .dash-col-right {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 16px;
   min-width: 0;
   width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 .dash-card-glow {
@@ -2013,7 +2040,9 @@ button {
     width: 290px !important;
     max-width: 85vw !important;
     height: 100vh !important;
-    background: #181818 !important;
+    background: rgba(7, 10, 24, 0.94) !important;
+    backdrop-filter: blur(24px) saturate(180%) !important;
+    -webkit-backdrop-filter: blur(24px) saturate(180%) !important;
     border-right: 1px solid rgba(255, 255, 255, 0.12) !important;
     z-index: 4000 !important;
     box-shadow: none !important;
@@ -2099,7 +2128,7 @@ button {
 
   .studio-main {
     padding: 14px 14px 28px 14px !important;
-    max-width: 100vw !important;
+    max-width: 100% !important;
     overflow-x: hidden !important;
   }
 
@@ -2136,13 +2165,14 @@ button {
   }
 
   .studio-sidebar .nav-item.active {
-    background: rgba(255, 0, 0, 0.12) !important;
-    color: #ff4e45 !important;
+    background: linear-gradient(90deg, rgba(99, 102, 241, 0.25) 0%, rgba(168, 85, 247, 0.15) 100%) !important;
+    color: #ffffff !important;
+    border: 1px solid rgba(168, 85, 247, 0.4) !important;
     font-weight: 600 !important;
   }
 
   .studio-sidebar .nav-item.active svg {
-    fill: #ff4e45 !important;
+    fill: #c084fc !important;
   }
 
   .studio-sidebar .nav-item .nav-badge {

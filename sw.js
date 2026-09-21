@@ -1,5 +1,5 @@
-// Service Worker for Raj Tube Pro - v40.0 (Shiny Glass Background & Dynamic Next Upload)
-const CACHE_NAME = 'raj-tube-pro-v40';
+// Service Worker for Raj Tube Pro - v41.0 (Shiny Glass Matching Theme, Channel Avatar & Responsive Layout)
+const CACHE_NAME = 'raj-tube-pro-v41';
 
 self.addEventListener('install', (event) => {
   self.skipWaiting();

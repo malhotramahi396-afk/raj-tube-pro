@@ -1801,6 +1801,7 @@ function getUpcomingUploadSlot(channel) {
   let minDiff = Infinity;
   let targetSlot = null;
   let targetChannelName = "";
+  let targetChannelObj = null;
 
   if (channel && channel.id && CHANNEL_SCHEDULES[channel.id]) {
     const slots = CHANNEL_SCHEDULES[channel.id];
@@ -1815,6 +1816,7 @@ function getUpcomingUploadSlot(channel) {
         minDiff = diff;
         targetSlot = s;
         targetChannelName = channel.name || channel.id;
+        targetChannelObj = channel;
       }
     });
   } else {
@@ -1833,12 +1835,13 @@ function getUpcomingUploadSlot(channel) {
           minDiff = diff;
           targetSlot = s;
           targetChannelName = chName;
+          targetChannelObj = chObj;
         }
       });
     });
   }
 
-  return { minDiff, targetSlot, targetChannelName };
+  return { minDiff, targetSlot, targetChannelName, targetChannelObj };
 }
 
 function startCountdown() {
@@ -1863,6 +1866,18 @@ function startCountdown() {
       const kpiSlot = document.getElementById('dash-kpi-next-slot');
       if (kpiSlot) {
         kpiSlot.innerText = `${upcoming.targetSlot.istStr} IST • ${upcoming.targetChannelName}`;
+      }
+
+      // Update Channel Logo in Next Video Upload Card
+      const kpiAvatar = document.getElementById('dash-kpi-next-avatar');
+      if (kpiAvatar) {
+        if (upcoming.targetChannelObj && upcoming.targetChannelObj.avatar_url) {
+          kpiAvatar.src = upcoming.targetChannelObj.avatar_url;
+          kpiAvatar.title = upcoming.targetChannelName;
+        } else {
+          kpiAvatar.src = './logo.png';
+          kpiAvatar.title = upcoming.targetChannelName || 'Next Channel';
+        }
       }
 
       const clock = document.getElementById('dash-countdown-clock');
