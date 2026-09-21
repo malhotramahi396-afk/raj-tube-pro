@@ -93,6 +93,11 @@ function setupNavigation() {
     btnGotoPostNow.addEventListener('click', () => switchView('post-now'));
   }
 
+  const btnGotoSchedule = document.getElementById('btn-goto-schedule');
+  if (btnGotoSchedule) {
+    btnGotoSchedule.addEventListener('click', () => switchView('schedule'));
+  }
+
   // Hamburger toggle on mobile
   const btnToggleSidebar = document.getElementById('btn-toggle-sidebar');
   const sidebar = document.getElementById('studio-sidebar');
@@ -153,6 +158,10 @@ function switchView(viewName) {
 
   if (viewName === 'post-now') {
     renderPostNowView();
+  }
+
+  if (viewName === 'schedule') {
+    renderScheduleView();
   }
 
   window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -557,7 +566,10 @@ function renderAll() {
   // 8. Tab 8: Instant Post Console
   renderPostNowView();
 
-  // 9. Schedule Countdown
+  // 9. Tab 9: Upload Schedule & Fleet Radar View
+  renderScheduleView();
+
+  // 10. Schedule Countdown
   if (globalData.schedule) {
     countdownSeconds = globalData.schedule.seconds_remaining;
     startCountdown();
@@ -657,9 +669,6 @@ function updateChannelIdentity(channel) {
    2. DASHBOARD VIEW RENDERING
    ======================================================== */
 function renderDashboard(channel) {
-  // 0. Render Automation Radar & Live Schedule Engine
-  renderAutomationRadar(globalData && globalData.channels ? globalData.channels : []);
-
   // A. Latest Video Performance Widget
   let latestVid = null;
   let allChannelVids = [];
@@ -2827,19 +2836,16 @@ function getNextSlotForChannel(chId) {
   return bestSlot;
 }
 
-function renderAutomationRadar(channels) {
-  if (!channels || !channels.length) return;
+function renderScheduleView() {
+  const channels = (globalData && globalData.channels) ? globalData.channels : [];
+  if (!channels.length) return;
   cachedFleetRadar = channels;
-
-  const grid = document.getElementById('radar-fleet-grid');
-  if (!grid) return;
 
   let fleetNextChannel = null;
   let fleetMinDiff = Infinity;
   let fleetNextSlot = null;
 
   const channelCardsData = [];
-
   channels.forEach(ch => {
     const nextSlot = getNextSlotForChannel(ch.id);
     if (nextSlot && nextSlot.diffMs < fleetMinDiff) {
@@ -2850,76 +2856,26 @@ function renderAutomationRadar(channels) {
     channelCardsData.push({ channel: ch, nextSlot });
   });
 
-  // Update Main Radar Banner
-  const nextTargetEl = document.getElementById('radar-next-target');
+  // Update Hero Banner in view-schedule
+  const nextTargetEl = document.getElementById('schedule-next-target');
+  const nextTimingEl = document.getElementById('schedule-next-time-slot');
   if (nextTargetEl && fleetNextChannel && fleetNextSlot) {
-    nextTargetEl.innerText = `🎬 ${fleetNextChannel.name} (${fleetNextSlot.slot}) @ ${fleetNextSlot.istStr} IST`;
+    nextTargetEl.innerText = `🎬 ${fleetNextChannel.name} (${fleetNextSlot.slot})`;
+    nextTimingEl.innerText = `Target: ${fleetNextSlot.istStr} IST • USA Peak Window • NY VPN Ready`;
   }
 
-  // Update Side Panel Schedule Widget
-  const sideTargetEl = document.getElementById('side-panel-next-target');
-  if (sideTargetEl && fleetNextChannel && fleetNextSlot) {
-    sideTargetEl.innerText = `${fleetNextChannel.name} • ${fleetNextSlot.istStr} IST`;
-  }
-
-  // Update Sidebar Schedule Mini Widget
-  const sidebarTargetEl = document.getElementById('sidebar-next-target');
-  if (sidebarTargetEl && fleetNextChannel && fleetNextSlot) {
-    sidebarTargetEl.innerText = `${fleetNextChannel.name} (${fleetNextSlot.istStr})`;
-  }
-
-  // Update active channel's scheduled slot in Side Panel
-  const sideActiveSlotEl = document.getElementById('side-panel-active-slot');
-  if (sideActiveSlotEl) {
-    const activeChId = currentChannelId === 'all' ? (channels[0] ? channels[0].id : 'channel_1') : currentChannelId;
-    const activeNext = getNextSlotForChannel(activeChId);
-    if (activeNext) {
-      sideActiveSlotEl.innerText = `${activeNext.istStr} IST (${activeNext.slot})`;
-    } else {
-      sideActiveSlotEl.innerText = 'Staggered (2x Daily)';
-    }
-  }
-
-  // Populate Side Panel Fleet List (All 9 Channels)
-  const sideList = document.getElementById('side-fleet-list');
-  if (sideList) {
-    sideList.innerHTML = '';
-    // Sort channels chronologically by next trigger diffMs
-    const sortedChannels = [...channelCardsData].sort((a, b) => {
-      const diffA = a.nextSlot ? a.nextSlot.diffMs : Infinity;
-      const diffB = b.nextSlot ? b.nextSlot.diffMs : Infinity;
-      return diffA - diffB;
-    });
-
-    sortedChannels.forEach(({ channel: ch, nextSlot }) => {
-      const isNext = fleetNextChannel && fleetNextChannel.id === ch.id;
-      const stock = ch.drive_queue_count !== undefined ? ch.drive_queue_count : (ch.drive_videos_count || 0);
-      let stockBadgeClass = 'stock-badge-green';
-      if (stock < 5) stockBadgeClass = 'stock-badge-red';
-      else if (stock < 15) stockBadgeClass = 'stock-badge-yellow';
-
-      const item = document.createElement('div');
-      item.className = `side-fleet-item ${isNext ? 'side-fleet-item-active' : ''}`;
-      item.innerHTML = `
-        <img src="${ch.avatar_url || './logo.png'}" class="side-fleet-avatar" alt="${ch.name}" />
-        <div class="side-fleet-info">
-          <div class="side-fleet-name-row">
-            <span class="side-fleet-name">${ch.name}</span>
-            <span class="stock-badge ${stockBadgeClass}" style="font-size:10px; padding:1px 6px;">${stock} Drive</span>
-          </div>
-          <div class="side-fleet-time-row">
-            <span class="side-fleet-time">${nextSlot ? nextSlot.istStr + ' IST' : '--'}</span>
-            <span class="side-fleet-countdown" data-side-ch-id="${ch.id}">in --:--:--</span>
-          </div>
-        </div>
-        <button class="btn-side-fleet-dispatch" onclick="triggerRadarUpload('${ch.id}', '${ch.name.replace(/'/g, "\\'")}')" title="Instant Upload ${ch.name}">⚡</button>
-      `;
-      sideList.appendChild(item);
-    });
-  }
-
+  const grid = document.getElementById('schedule-fleet-grid');
+  if (!grid) return;
   grid.innerHTML = '';
-  channelCardsData.forEach(({ channel: ch, nextSlot }) => {
+
+  // Sort channels chronologically by next slot diffMs
+  const sortedCards = [...channelCardsData].sort((a, b) => {
+    const diffA = a.nextSlot ? a.nextSlot.diffMs : Infinity;
+    const diffB = b.nextSlot ? b.nextSlot.diffMs : Infinity;
+    return diffA - diffB;
+  });
+
+  sortedCards.forEach(({ channel: ch, nextSlot }) => {
     const isNext = fleetNextChannel && fleetNextChannel.id === ch.id;
     const stock = ch.drive_queue_count !== undefined ? ch.drive_queue_count : (ch.drive_videos_count || 0);
     const runway = ch.runway_days !== undefined ? ch.runway_days : (stock / 2.0).toFixed(1);
@@ -2927,6 +2883,10 @@ function renderAutomationRadar(channels) {
     let stockBadgeClass = 'stock-badge-green';
     if (stock < 5) stockBadgeClass = 'stock-badge-red';
     else if (stock < 15) stockBadgeClass = 'stock-badge-yellow';
+
+    const allSlots = CHANNEL_SCHEDULES[ch.id] || [];
+    const slot1Str = allSlots[0] ? `${allSlots[0].istStr}` : '--';
+    const slot2Str = allSlots[1] ? `${allSlots[1].istStr}` : '--';
 
     const card = document.createElement('div');
     card.className = `radar-channel-card ${isNext ? 'radar-card-active' : ''}`;
@@ -2948,12 +2908,16 @@ function renderAutomationRadar(channels) {
           <span class="stock-badge ${stockBadgeClass}">${stock} in Drive (${runway}d)</span>
         </div>
         <div class="radar-metric-row">
+          <span class="radar-metric-label">Daily Slots:</span>
+          <span class="radar-metric-val" style="font-size: 11.5px; color:#e2e8f0;">${slot1Str} &amp; ${slot2Str}</span>
+        </div>
+        <div class="radar-metric-row">
           <span class="radar-metric-label">Next Slot:</span>
           <span class="radar-metric-val" style="color:#38bdf8;">${nextSlot ? nextSlot.istStr + ' IST' : '--'}</span>
         </div>
         <div class="radar-metric-row">
-          <span class="radar-metric-label">Slot Name:</span>
-          <span class="radar-metric-val" style="font-size:11px; color:#94a3b8;">${nextSlot ? nextSlot.slot : '--'}</span>
+          <span class="radar-metric-label">Countdown:</span>
+          <span class="radar-metric-val schedule-card-countdown" data-sched-ch-id="${ch.id}" style="color:#fb923c; font-family:monospace;">in --:--:--</span>
         </div>
       </div>
 
@@ -2998,17 +2962,13 @@ function updateRadarTick() {
       const pad = n => String(n).padStart(2, '0');
       const timeStr = `${pad(chH)}:${pad(chM)}:${pad(chS)}`;
 
-      // 1. Update side panel countdown
-      const sideCountdownEl = document.getElementById('side-panel-next-timer');
-      if (sideCountdownEl) sideCountdownEl.innerText = `in ${timeStr}`;
+      // 1. Update view-schedule countdown
+      const scheduleCountdownEl = document.getElementById('schedule-next-countdown');
+      if (scheduleCountdownEl) scheduleCountdownEl.innerText = `in ${timeStr}`;
 
-      // 2. Update sidebar mini countdown
-      const sidebarCountdownEl = document.getElementById('sidebar-next-timer');
-      if (sidebarCountdownEl) sidebarCountdownEl.innerText = `in ${timeStr}`;
-
-      // 3. Update all 9 channels countdowns in the side panel list
-      document.querySelectorAll('.side-fleet-countdown').forEach(el => {
-        const chId = el.getAttribute('data-side-ch-id');
+      // 2. Update each channel's countdown in schedule cards
+      document.querySelectorAll('.schedule-card-countdown').forEach(el => {
+        const chId = el.getAttribute('data-sched-ch-id');
         const nextSlot = getNextSlotForChannel(chId);
         if (nextSlot && nextSlot.diffMs < Infinity) {
           const sec = Math.max(0, Math.floor(nextSlot.diffMs / 1000));

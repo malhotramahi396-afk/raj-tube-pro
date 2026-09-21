@@ -4982,114 +4982,159 @@ body.sheet-open {
   margin-top: 24px !important;
 }
 
-/* Side Fleet List (All 9 Channels in Side Panel) */
-.side-fleet-list {
+/* ========================================================
+   UPLOAD SCHEDULE DEDICATED TAB VIEW
+   ======================================================== */
+.schedule-hero-banner {
+  background: linear-gradient(135deg, rgba(30, 41, 59, 0.9) 0%, rgba(15, 23, 42, 0.95) 50%, rgba(14, 116, 144, 0.2) 100%);
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  border-radius: 16px;
+  padding: 22px 26px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  margin-bottom: 22px;
+  flex-wrap: wrap;
+}
+
+.schedule-hero-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.schedule-pulse-ring {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: rgba(239, 68, 68, 0.15);
+  border: 2px solid rgba(239, 68, 68, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: pulseDot 2s infinite;
+  flex-shrink: 0;
+}
+
+.schedule-hero-icon {
+  font-size: 26px;
+}
+
+.schedule-hero-meta {
   display: flex;
   flex-direction: column;
-  gap: 8px;
-  margin-top: 14px;
-  max-height: 480px;
-  overflow-y: auto;
-  padding-right: 4px;
+  gap: 4px;
 }
 
-.side-fleet-list::-webkit-scrollbar {
-  width: 5px;
+.schedule-hero-sub {
+  font-size: 11px;
+  font-weight: 800;
+  color: #38bdf8;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
-.side-fleet-list::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 4px;
+.schedule-hero-title {
+  font-size: 20px;
+  font-weight: 800;
+  color: #f8fafc;
 }
 
-.side-fleet-item {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 8px 12px;
-  background: rgba(15, 23, 42, 0.6);
-  border: 1px solid rgba(255, 255, 255, 0.06);
-  border-radius: 8px;
-  transition: all 0.2s ease;
+.schedule-hero-timing {
+  font-size: 13px;
+  color: #94a3b8;
 }
 
-.side-fleet-item:hover {
-  background: rgba(30, 41, 59, 0.85);
-  border-color: rgba(56, 189, 248, 0.3);
-}
-
-.side-fleet-item.side-fleet-item-active {
-  border: 1.5px solid #38bdf8;
-  background: linear-gradient(135deg, rgba(30, 41, 59, 0.9) 0%, rgba(14, 116, 144, 0.25) 100%);
-  box-shadow: 0 0 12px rgba(56, 189, 248, 0.2);
-}
-
-.side-fleet-avatar {
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 1.5px solid rgba(255, 255, 255, 0.15);
+.schedule-hero-right {
   flex-shrink: 0;
 }
 
-.side-fleet-info {
-  flex: 1;
-  min-width: 0;
+.schedule-countdown-box {
+  background: rgba(15, 23, 42, 0.85);
+  border: 1px solid rgba(249, 115, 22, 0.4);
+  padding: 12px 22px;
+  border-radius: 14px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(249, 115, 22, 0.15);
 }
 
-.side-fleet-name-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 6px;
+.schedule-countdown-label {
+  font-size: 10px;
+  font-weight: 800;
+  color: #fed7aa;
+  letter-spacing: 1px;
+  display: block;
 }
 
-.side-fleet-name {
-  font-size: 12.5px;
-  font-weight: 700;
-  color: #f1f5f9;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.side-fleet-time-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 11px;
-  color: #94a3b8;
-  margin-top: 2px;
-}
-
-.side-fleet-time {
-  color: #38bdf8;
-  font-weight: 600;
-}
-
-.side-fleet-countdown {
+.schedule-countdown-timer {
+  font-size: 24px;
+  font-weight: 800;
   color: #fb923c;
   font-family: monospace;
-  font-weight: 700;
+  letter-spacing: 1px;
 }
 
-.btn-side-fleet-dispatch {
-  background: rgba(239, 68, 68, 0.15);
-  border: 1px solid rgba(239, 68, 68, 0.4);
-  color: #ef4444;
+.schedule-windows-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 16px;
+  margin-bottom: 22px;
+}
+
+.schedule-window-card {
+  background: rgba(30, 41, 59, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 16px 20px;
+}
+
+.window-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.window-tag {
+  font-size: 11px;
+  font-weight: 800;
+  padding: 3px 8px;
   border-radius: 6px;
-  padding: 5px 9px;
-  font-size: 12px;
-  cursor: pointer;
-  transition: all 0.2s;
-  flex-shrink: 0;
 }
 
-.btn-side-fleet-dispatch:hover {
-  background: #ef4444;
-  color: #fff;
-  transform: scale(1.05);
+.window-tag.tag-morning {
+  background: rgba(56, 189, 248, 0.15);
+  color: #38bdf8;
+  border: 1px solid rgba(56, 189, 248, 0.3);
+}
+
+.window-tag.tag-evening {
+  background: rgba(168, 85, 247, 0.15);
+  color: #c084fc;
+  border: 1px solid rgba(168, 85, 247, 0.3);
+}
+
+.window-time {
+  font-size: 12px;
+  font-weight: 700;
+  color: #f1f5f9;
+}
+
+.window-desc {
+  font-size: 12.5px;
+  color: #94a3b8;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.schedule-fleet-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 16px;
 }
 
 /* Radar Fleet Grid */

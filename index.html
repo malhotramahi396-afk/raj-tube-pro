@@ -187,6 +187,14 @@
           <span class="nav-badge badge-green" id="sidebar-radar-badge">10 NODES</span>
         </button>
 
+        <button class="nav-item" data-view="schedule">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+            <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
+          </svg>
+          <span class="nav-text">Upload Schedule</span>
+          <span class="nav-badge badge-green" id="sidebar-schedule-badge">9 ACTIVE</span>
+        </button>
+
         <button class="nav-item" data-view="post-now">
           <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
             <path d="M5 18h14v2H5v-2zm7-14l6 6h-4v6h-4v-6H6l6-6z"/>
@@ -194,15 +202,6 @@
           <span class="nav-text">Post Now</span>
           <span class="nav-badge" style="background: rgba(239, 68, 68, 0.2); color: #EF4444; font-weight: 700;">INSTANT</span>
         </button>
-        <div class="sidebar-schedule-box" id="sidebar-schedule-box">
-          <div class="sidebar-schedule-header">
-            <span class="pulse-dot-mini"></span>
-            <span>FLEET SCHEDULE (9 CH)</span>
-          </div>
-          <div class="sidebar-schedule-name" id="sidebar-next-target">Zyntrix07 (06:30 PM)</div>
-          <div class="sidebar-schedule-clock" id="sidebar-next-timer">in --:--:--</div>
-          <div class="sidebar-schedule-sub" style="font-size:10px; color:#94a3b8; margin-top:3px;">9 Channels • 15m Stagger</div>
-        </div>
 
         <div class="sidebar-divider"></div>
 
@@ -345,23 +344,6 @@
               </div>
             </div>
 
-            <!-- WIDGET: 9-Channel Fleet Dispatch Cards (Lower Dashboard Box) -->
-            <div class="yt-card widget-fleet-cards-box" id="dash-lower-fleet-box">
-              <div class="yt-card-header">
-                <div style="display: flex; align-items: center; justify-content: space-between; width: 100%; flex-wrap: wrap; gap: 8px;">
-                  <h2>9-Channel Fleet Dispatch &amp; Drive Stock</h2>
-                  <span class="radar-vpn-pill">🇺🇸 NY VPN: 146.70.186.206</span>
-                </div>
-              </div>
-
-              <div class="yt-card-body">
-                <!-- 9-CHANNEL FLEET RADAR CARDS GRID -->
-                <div class="radar-fleet-grid" id="radar-fleet-grid">
-                  <!-- Rendered dynamically by app.js -->
-                </div>
-              </div>
-            </div>
-
           </div>
 
           <!-- RIGHT COLUMN -->
@@ -441,33 +423,6 @@
 
                 <div class="yt-card-footer">
                   <button class="yt-btn-flat" id="btn-goto-health">VIEW ALL CHANNELS HEALTH</button>
-                </div>
-              </div>
-            </div>
-
-            <!-- WIDGET: Fleet Automation & Staggered Upload Radar (Side Panel Box - All 9 Channels) -->
-            <div class="yt-card widget-fleet-schedule" id="widget-fleet-schedule">
-              <div class="yt-card-header">
-                <div style="display: flex; align-items: center; justify-content: space-between; width: 100%; flex-wrap: wrap; gap: 8px;">
-                  <h2>Fleet Upload Radar (All 9 Channels)</h2>
-                  <span class="live-badge-tag" style="background: rgba(56, 189, 248, 0.15); color: #38BDF8; border: 1px solid rgba(56, 189, 248, 0.3); font-size: 10.5px; padding: 3px 8px; border-radius: 12px; font-weight: 600;">🟢 15-MIN STAGGER</span>
-                </div>
-              </div>
-
-              <div class="yt-card-body">
-                <!-- Next Imminent Upload Banner -->
-                <div class="side-panel-next-box" id="side-panel-next-box">
-                  <div class="side-panel-next-icon">⏰</div>
-                  <div class="side-panel-next-meta">
-                    <div class="side-panel-next-label">Next In Queue (USA Peak)</div>
-                    <div class="side-panel-next-title" id="side-panel-next-target">🎬 Calculating...</div>
-                    <div class="side-panel-next-countdown" id="side-panel-next-timer">in --:--:--</div>
-                  </div>
-                </div>
-
-                <!-- ALL 9 CHANNELS LIVE LIST -->
-                <div class="side-fleet-list" id="side-fleet-list">
-                  <!-- Populated by JavaScript with all 9 channels -->
                 </div>
               </div>
             </div>
@@ -565,8 +520,9 @@
                   </div>
                 </div>
 
-                <div class="yt-card-footer">
+                <div class="yt-card-footer" style="display: flex; gap: 8px; justify-content: space-between; flex-wrap: wrap;">
                   <button class="yt-btn-flat" id="btn-goto-queue">VIEW QUEUE DETAILS</button>
+                  <button class="yt-btn-flat" id="btn-goto-schedule" style="color: #38BDF8; font-weight: 700;">VIEW 9-CH SCHEDULE →</button>
                 </div>
               </div>
             </div>
@@ -1159,6 +1115,72 @@
         </div>
       </section>
 
+      <!-- ==========================================================
+           TAB: FLEET UPLOAD RADAR & AUTOMATION SCHEDULE (DEDICATED CENTER WINDOW)
+           ========================================================== -->
+      <section class="tab-view" id="view-schedule">
+        <div class="page-title-row">
+          <div>
+            <h1 class="page-title">Fleet Upload Radar &amp; Automation Schedule</h1>
+            <p style="color: #94a3b8; font-size: 13px; margin-top: 4px;">
+              Anti-collision 15-minute staggered dispatch engine targeting USA &amp; Global peak audience hours.
+            </p>
+          </div>
+          <div style="display: flex; gap: 8px; flex-wrap: wrap; align-items: center;">
+            <span class="live-badge-tag" style="background: rgba(16, 185, 129, 0.15); color: #10B981; border: 1px solid rgba(16, 185, 129, 0.3); font-size: 11px; padding: 4px 10px; border-radius: 12px; font-weight: 700;">🟢 9 CHANNELS ACTIVE</span>
+            <span class="live-badge-tag" style="background: rgba(56, 189, 248, 0.15); color: #38BDF8; border: 1px solid rgba(56, 189, 248, 0.3); font-size: 11px; padding: 4px 10px; border-radius: 12px; font-weight: 700;">⏱️ 15-MIN STAGGER</span>
+            <span class="radar-vpn-pill" style="font-size: 11px; padding: 4px 10px;">🇺🇸 NY VPN: 146.70.186.206 VERIFIED</span>
+          </div>
+        </div>
+
+        <!-- HERO: NEXT UPCOMING UPLOAD BANNER -->
+        <div class="schedule-hero-banner" id="schedule-hero-banner">
+          <div class="schedule-hero-left">
+            <div class="schedule-pulse-ring">
+              <span class="schedule-hero-icon">⏰</span>
+            </div>
+            <div class="schedule-hero-meta">
+              <div class="schedule-hero-sub">NEXT DISPATCH IN QUEUE</div>
+              <div class="schedule-hero-title" id="schedule-next-target">🎬 Calculating Next Channel...</div>
+              <div class="schedule-hero-timing" id="schedule-next-time-slot">Target: Calculating...</div>
+            </div>
+          </div>
+          <div class="schedule-hero-right">
+            <div class="schedule-countdown-box">
+              <span class="schedule-countdown-label">COUNTDOWN</span>
+              <span class="schedule-countdown-timer" id="schedule-next-countdown">--:--:--</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- USA PEAK HOURS TIMETABLE CARDS -->
+        <div class="schedule-windows-grid">
+          <div class="schedule-window-card">
+            <div class="window-card-header">
+              <span class="window-tag tag-morning">WINDOW 1: USA MORNING / LUNCH PEAK</span>
+              <span class="window-time">06:30 PM - 08:30 PM IST (09:00 AM - 11:00 AM EDT)</span>
+            </div>
+            <p class="window-desc">
+              All 9 channels trigger consecutively with a 15-minute gap during the prime USA morning browsing spike. Zero simultaneous uploads, zero botnet/IP overlap flag.
+            </p>
+          </div>
+          <div class="schedule-window-card">
+            <div class="window-card-header">
+              <span class="window-tag tag-evening">WINDOW 2: USA EVENING VIRAL PEAK</span>
+              <span class="window-time">01:45 AM - 03:15 AM IST (04:15 PM - 05:45 PM EDT)</span>
+            </div>
+            <p class="window-desc">
+              Channels 3 through 10 trigger during peak USA evening leisure hours. Channel 2 remains locked to its custom audience heatmap at 01:30 PM IST.
+            </p>
+          </div>
+        </div>
+
+        <!-- 9-CHANNEL FLEET CARDS GRID -->
+        <div class="schedule-fleet-grid" id="schedule-fleet-grid">
+          <!-- Rendered dynamically by app.js: All 9 channel cards with full details -->
+        </div>
+      </section>
+
     </main>
   </div>
 
@@ -1169,6 +1191,12 @@
         <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zM7 10h2v7H7zm4-3h2v10h-2zm4 6h2v4h-2z"/>
       </svg>
       <span>Dashboard</span>
+    </button>
+    <button class="bottom-nav-item" data-view="schedule">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+        <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
+      </svg>
+      <span>Schedule</span>
     </button>
     <button class="bottom-nav-item" data-view="post-now">
       <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
