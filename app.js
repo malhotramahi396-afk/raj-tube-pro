@@ -2836,6 +2836,49 @@ function getNextSlotForChannel(chId) {
   return bestSlot;
 }
 
+function getUsaEdtTime(istStr) {
+  const map = {
+    "01:30 PM": "04:00 AM EDT",
+    "01:45 PM": "04:15 AM EDT",
+    "06:30 PM": "09:00 AM EDT",
+    "06:45 PM": "09:15 AM EDT",
+    "07:00 PM": "09:30 AM EDT",
+    "07:15 PM": "09:45 AM EDT",
+    "07:30 PM": "10:00 AM EDT",
+    "07:45 PM": "10:15 AM EDT",
+    "08:00 PM": "10:30 AM EDT",
+    "08:15 PM": "10:45 AM EDT",
+    "08:30 PM": "11:00 AM EDT",
+    "01:45 AM": "04:15 PM EDT",
+    "02:00 AM": "04:30 PM EDT",
+    "02:15 AM": "04:45 PM EDT",
+    "02:30 AM": "05:00 PM EDT",
+    "02:45 AM": "05:15 PM EDT",
+    "03:00 AM": "05:30 PM EDT",
+    "03:15 AM": "05:45 PM EDT"
+  };
+  return map[istStr] || "USA Peak Window";
+}
+
+function triggerHeroNextUpload() {
+  if (cachedFleetRadar && cachedFleetRadar.length) {
+    let fleetMinDiff = Infinity;
+    let fleetNextChannel = null;
+    cachedFleetRadar.forEach(ch => {
+      const nextSlot = getNextSlotForChannel(ch.id);
+      if (nextSlot && nextSlot.diffMs < fleetMinDiff) {
+        fleetMinDiff = nextSlot.diffMs;
+        fleetNextChannel = ch;
+      }
+    });
+    if (fleetNextChannel) {
+      triggerRadarUpload(fleetNextChannel.id, fleetNextChannel.name);
+      return;
+    }
+  }
+  triggerCurrentChannelUpload();
+}
+
 function renderScheduleView() {
   const channels = (globalData && globalData.channels) ? globalData.channels : [];
   if (!channels.length) return;
@@ -2859,9 +2902,16 @@ function renderScheduleView() {
   // Update Hero Banner in view-schedule
   const nextTargetEl = document.getElementById('schedule-next-target');
   const nextTimingEl = document.getElementById('schedule-next-time-slot');
-  if (nextTargetEl && fleetNextChannel && fleetNextSlot) {
-    nextTargetEl.innerText = `🎬 ${fleetNextChannel.name} (${fleetNextSlot.slot})`;
-    nextTimingEl.innerText = `Target: ${fleetNextSlot.istStr} IST • USA Peak Window • NY VPN Ready`;
+  const heroAvatarEl = document.getElementById('schedule-hero-avatar');
+  const heroSlotPill = document.getElementById('schedule-next-slot-pill');
+
+  if (fleetNextChannel && fleetNextSlot) {
+    if (nextTargetEl) nextTargetEl.innerText = fleetNextChannel.name;
+    if (heroAvatarEl && fleetNextChannel.avatar_url) heroAvatarEl.src = fleetNextChannel.avatar_url;
+    if (heroSlotPill) heroSlotPill.innerText = fleetNextSlot.slot;
+    if (nextTimingEl) {
+      nextTimingEl.innerHTML = `Target: <strong>${fleetNextSlot.istStr} IST</strong> (${getUsaEdtTime(fleetNextSlot.istStr)}) • 🇺🇸 New York VPN Ready`;
+    }
   }
 
   const grid = document.getElementById('schedule-fleet-grid');
@@ -2885,8 +2935,13 @@ function renderScheduleView() {
     else if (stock < 15) stockBadgeClass = 'stock-badge-yellow';
 
     const allSlots = CHANNEL_SCHEDULES[ch.id] || [];
-    const slot1Str = allSlots[0] ? `${allSlots[0].istStr}` : '--';
-    const slot2Str = allSlots[1] ? `${allSlots[1].istStr}` : '--';
+    const slot1Str = allSlots[0] ? `${allSlots[0].istStr} (${getUsaEdtTime(allSlots[0].istStr)})` : '--';
+    const slot2Str = allSlots[1] ? `${allSlots[1].istStr} (${getUsaEdtTime(allSlots[1].istStr)})` : '--';
+
+    const isCh2Locked = ch.id === 'channel_2';
+    const vpnPillHtml = isCh2Locked
+      ? `<span class="radar-card-vpn" style="background:rgba(245,158,11,0.15); color:#fbbf24; border-color:rgba(245,158,11,0.35);">🔒 LOCKED (Heatmap)</span>`
+      : `<span class="radar-card-vpn">🇺🇸 NY VPN</span>`;
 
     const card = document.createElement('div');
     card.className = `radar-channel-card ${isNext ? 'radar-card-active' : ''}`;
@@ -2899,7 +2954,7 @@ function renderScheduleView() {
             <div class="radar-card-cat">${ch.category || 'Automation'}</div>
           </div>
         </div>
-        <span class="radar-card-vpn">🇺🇸 NY VPN</span>
+        ${vpnPillHtml}
       </div>
 
       <div class="radar-card-body">
@@ -2908,16 +2963,20 @@ function renderScheduleView() {
           <span class="stock-badge ${stockBadgeClass}">${stock} in Drive (${runway}d)</span>
         </div>
         <div class="radar-metric-row">
-          <span class="radar-metric-label">Daily Slots:</span>
-          <span class="radar-metric-val" style="font-size: 11.5px; color:#e2e8f0;">${slot1Str} &amp; ${slot2Str}</span>
+          <span class="radar-metric-label">Slot 1 (Morning):</span>
+          <span class="radar-metric-val" style="font-size: 11.5px; color:#e2e8f0;">${slot1Str}</span>
         </div>
         <div class="radar-metric-row">
-          <span class="radar-metric-label">Next Slot:</span>
-          <span class="radar-metric-val" style="color:#38bdf8;">${nextSlot ? nextSlot.istStr + ' IST' : '--'}</span>
+          <span class="radar-metric-label">Slot 2 (Evening):</span>
+          <span class="radar-metric-val" style="font-size: 11.5px; color:#e2e8f0;">${slot2Str}</span>
+        </div>
+        <div class="radar-metric-row">
+          <span class="radar-metric-label">Next Trigger:</span>
+          <span class="radar-metric-val" style="color:#38bdf8; font-weight:700;">${nextSlot ? nextSlot.istStr + ' IST' : '--'}</span>
         </div>
         <div class="radar-metric-row">
           <span class="radar-metric-label">Countdown:</span>
-          <span class="radar-metric-val schedule-card-countdown" data-sched-ch-id="${ch.id}" style="color:#fb923c; font-family:monospace;">in --:--:--</span>
+          <span class="radar-metric-val schedule-card-countdown" data-sched-ch-id="${ch.id}" style="color:#fb923c; font-family:monospace; font-weight:700;">in --:--:--</span>
         </div>
       </div>
 

@@ -15,7 +15,7 @@
   <link rel="icon" type="image/png" sizes="512x512" href="./icons/icon-512.png">
   <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png">
   <link rel="shortcut icon" href="./icons/icon-192.png">
-  <link rel="stylesheet" href="./styles.css?v=27.0">
+  <link rel="stylesheet" href="./styles.css?v=30.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
@@ -25,7 +25,7 @@
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
-        navigator.serviceWorker.register('./sw.js?v=20.0').catch(() => {});
+        navigator.serviceWorker.register('./sw.js?v=30.0').catch(() => {});
       });
     }
   </script>
@@ -1122,14 +1122,14 @@
         <div class="page-title-row">
           <div>
             <h1 class="page-title">Fleet Upload Radar &amp; Automation Schedule</h1>
-            <p style="color: #94a3b8; font-size: 13px; margin-top: 4px;">
+            <p class="page-subtitle">
               Anti-collision 15-minute staggered dispatch engine targeting USA &amp; Global peak audience hours.
             </p>
           </div>
-          <div style="display: flex; gap: 8px; flex-wrap: wrap; align-items: center;">
-            <span class="live-badge-tag" style="background: rgba(16, 185, 129, 0.15); color: #10B981; border: 1px solid rgba(16, 185, 129, 0.3); font-size: 11px; padding: 4px 10px; border-radius: 12px; font-weight: 700;">🟢 9 CHANNELS ACTIVE</span>
-            <span class="live-badge-tag" style="background: rgba(56, 189, 248, 0.15); color: #38BDF8; border: 1px solid rgba(56, 189, 248, 0.3); font-size: 11px; padding: 4px 10px; border-radius: 12px; font-weight: 700;">⏱️ 15-MIN STAGGER</span>
-            <span class="radar-vpn-pill" style="font-size: 11px; padding: 4px 10px;">🇺🇸 NY VPN: 146.70.186.206 VERIFIED</span>
+          <div class="schedule-header-badges">
+            <span class="live-badge-tag tag-emerald">🟢 9 CHANNELS ACTIVE</span>
+            <span class="live-badge-tag tag-sky">⏱️ 15-MIN STAGGER (0% COLLISION)</span>
+            <span class="live-badge-tag tag-vpn">🇺🇸 NY VPN: 146.70.186.206</span>
           </div>
         </div>
 
@@ -1141,14 +1141,21 @@
             </div>
             <div class="schedule-hero-meta">
               <div class="schedule-hero-sub">NEXT DISPATCH IN QUEUE</div>
-              <div class="schedule-hero-title" id="schedule-next-target">🎬 Calculating Next Channel...</div>
-              <div class="schedule-hero-timing" id="schedule-next-time-slot">Target: Calculating...</div>
+              <div class="schedule-hero-title-row">
+                <img id="schedule-hero-avatar" src="./logo.png" alt="Channel" class="schedule-hero-avatar" />
+                <span class="schedule-hero-title" id="schedule-next-target">Zyntrix07</span>
+                <span class="slot-pill" id="schedule-next-slot-pill">Slot 2 (Evening Peak)</span>
+              </div>
+              <div class="schedule-hero-timing" id="schedule-next-time-slot">
+                Target: <strong>06:30 PM IST</strong> (09:00 AM USA EDT) • 🇺🇸 New York VPN Ready
+              </div>
             </div>
           </div>
           <div class="schedule-hero-right">
             <div class="schedule-countdown-box">
-              <span class="schedule-countdown-label">COUNTDOWN</span>
+              <span class="schedule-countdown-label">TRIGGERING IN</span>
               <span class="schedule-countdown-timer" id="schedule-next-countdown">--:--:--</span>
+              <button class="btn-hero-dispatch" id="btn-hero-dispatch-next" onclick="triggerHeroNextUpload()">⚡ Upload Now</button>
             </div>
           </div>
         </div>
@@ -1163,7 +1170,19 @@
             <p class="window-desc">
               All 9 channels trigger consecutively with a 15-minute gap during the prime USA morning browsing spike. Zero simultaneous uploads, zero botnet/IP overlap flag.
             </p>
+            <div class="window-chips-list">
+              <span class="window-chip">06:30 PM: Ch 2 (Zyntrix07)</span>
+              <span class="window-chip">06:45 PM: Ch 1 (Hidden Lens)</span>
+              <span class="window-chip">07:00 PM: Ch 3 (VibroZen)</span>
+              <span class="window-chip">07:15 PM: Ch 4 (VexoRush)</span>
+              <span class="window-chip">07:30 PM: Ch 5 (Klyvo)</span>
+              <span class="window-chip">07:45 PM: Ch 6 (CoreVanta)</span>
+              <span class="window-chip">08:00 PM: Ch 8 (Hyperflux)</span>
+              <span class="window-chip">08:15 PM: Ch 9 (Vortex Edge)</span>
+              <span class="window-chip">08:30 PM: Ch 10 (Zenova Drift)</span>
+            </div>
           </div>
+
           <div class="schedule-window-card">
             <div class="window-card-header">
               <span class="window-tag tag-evening">WINDOW 2: USA EVENING VIRAL PEAK</span>
@@ -1172,10 +1191,25 @@
             <p class="window-desc">
               Channels 3 through 10 trigger during peak USA evening leisure hours. Channel 2 remains locked to its custom audience heatmap at 01:30 PM IST.
             </p>
+            <div class="window-chips-list">
+              <span class="window-chip">01:30 PM: Ch 2 (Afternoon Heatmap)</span>
+              <span class="window-chip">01:45 PM: Ch 1 (Global Window)</span>
+              <span class="window-chip">01:45 AM: Ch 3 (VibroZen)</span>
+              <span class="window-chip">02:00 AM: Ch 4 (VexoRush)</span>
+              <span class="window-chip">02:15 AM: Ch 5 (Klyvo)</span>
+              <span class="window-chip">02:30 AM: Ch 6 (CoreVanta)</span>
+              <span class="window-chip">02:45 AM: Ch 8 (Hyperflux)</span>
+              <span class="window-chip">03:00 AM: Ch 9 (Vortex Edge)</span>
+              <span class="window-chip">03:15 AM: Ch 10 (Zenova Drift)</span>
+            </div>
           </div>
         </div>
 
         <!-- 9-CHANNEL FLEET CARDS GRID -->
+        <div class="schedule-section-heading">
+          <h2>All 9 Automation Channels</h2>
+          <span class="sub-muted">Live Drive stock, scheduled daily slots &amp; manual upload dispatchers</span>
+        </div>
         <div class="schedule-fleet-grid" id="schedule-fleet-grid">
           <!-- Rendered dynamically by app.js: All 9 channel cards with full details -->
         </div>
@@ -1335,6 +1369,6 @@
   <!-- Toast Notification -->
   <div id="toast" class="toast">Link copied to clipboard!</div>
 
-  <script src="./app.js?v=27.0"></script>
+  <script src="./app.js?v=30.0"></script>
 </body>
 </html>

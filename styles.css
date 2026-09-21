@@ -4983,18 +4983,56 @@ body.sheet-open {
 }
 
 /* ========================================================
-   UPLOAD SCHEDULE DEDICATED TAB VIEW
+   UPLOAD SCHEDULE DEDICATED TAB VIEW (PROFESSIONAL STUDIO LEVEL)
    ======================================================== */
+.schedule-header-badges {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.tag-emerald {
+  background: rgba(16, 185, 129, 0.15) !important;
+  color: #10B981 !important;
+  border: 1px solid rgba(16, 185, 129, 0.3) !important;
+  font-size: 11px !important;
+  padding: 4px 10px !important;
+  border-radius: 12px !important;
+  font-weight: 700 !important;
+}
+
+.tag-sky {
+  background: rgba(56, 189, 248, 0.15) !important;
+  color: #38BDF8 !important;
+  border: 1px solid rgba(56, 189, 248, 0.3) !important;
+  font-size: 11px !important;
+  padding: 4px 10px !important;
+  border-radius: 12px !important;
+  font-weight: 700 !important;
+}
+
+.tag-vpn {
+  background: rgba(99, 102, 241, 0.15) !important;
+  color: #818cf8 !important;
+  border: 1px solid rgba(99, 102, 241, 0.3) !important;
+  font-size: 11px !important;
+  padding: 4px 10px !important;
+  border-radius: 12px !important;
+  font-weight: 700 !important;
+}
+
+/* HERO BANNER */
 .schedule-hero-banner {
-  background: linear-gradient(135deg, rgba(30, 41, 59, 0.9) 0%, rgba(15, 23, 42, 0.95) 50%, rgba(14, 116, 144, 0.2) 100%);
-  border: 1px solid rgba(56, 189, 248, 0.3);
+  background: linear-gradient(135deg, #181d28 0%, #0f131a 100%);
+  border: 1px solid rgba(56, 189, 248, 0.25);
   border-radius: 16px;
   padding: 22px 26px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 20px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.05);
   margin-bottom: 22px;
   flex-wrap: wrap;
 }
@@ -5003,6 +5041,7 @@ body.sheet-open {
   display: flex;
   align-items: center;
   gap: 16px;
+  min-width: 0;
 }
 
 .schedule-pulse-ring {
@@ -5014,8 +5053,14 @@ body.sheet-open {
   display: flex;
   align-items: center;
   justify-content: center;
-  animation: pulseDot 2s infinite;
+  animation: schedulePulse 2s infinite;
   flex-shrink: 0;
+}
+
+@keyframes schedulePulse {
+  0% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.5); }
+  70% { box-shadow: 0 0 0 14px rgba(239, 68, 68, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0); }
 }
 
 .schedule-hero-icon {
@@ -5026,6 +5071,7 @@ body.sheet-open {
   display: flex;
   flex-direction: column;
   gap: 4px;
+  min-width: 0;
 }
 
 .schedule-hero-sub {
@@ -5036,15 +5082,45 @@ body.sheet-open {
   text-transform: uppercase;
 }
 
+.schedule-hero-title-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.schedule-hero-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1.5px solid #38bdf8;
+  flex-shrink: 0;
+}
+
 .schedule-hero-title {
   font-size: 20px;
   font-weight: 800;
   color: #f8fafc;
 }
 
+.slot-pill {
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 9px;
+  border-radius: 12px;
+  background: rgba(56, 189, 248, 0.15);
+  color: #38bdf8;
+  border: 1px solid rgba(56, 189, 248, 0.3);
+}
+
 .schedule-hero-timing {
   font-size: 13px;
   color: #94a3b8;
+}
+
+.schedule-hero-timing strong {
+  color: #f1f5f9;
 }
 
 .schedule-hero-right {
@@ -5058,6 +5134,10 @@ body.sheet-open {
   border-radius: 14px;
   text-align: center;
   box-shadow: 0 4px 15px rgba(249, 115, 22, 0.15);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 170px;
 }
 
 .schedule-countdown-label {
@@ -5069,25 +5149,55 @@ body.sheet-open {
 }
 
 .schedule-countdown-timer {
-  font-size: 24px;
+  font-size: 26px;
   font-weight: 800;
   color: #fb923c;
   font-family: monospace;
   letter-spacing: 1px;
+  margin: 4px 0 8px 0;
+  text-shadow: 0 0 12px rgba(251, 146, 60, 0.3);
 }
 
+.btn-hero-dispatch {
+  background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+  color: #ffffff;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s;
+  width: 100%;
+}
+
+.btn-hero-dispatch:hover {
+  background: linear-gradient(135deg, #f87171 0%, #ef4444 100%);
+  box-shadow: 0 4px 14px rgba(239, 68, 68, 0.4);
+  transform: translateY(-1px);
+}
+
+/* USA PEAK WINDOWS GRID */
 .schedule-windows-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
   gap: 16px;
-  margin-bottom: 22px;
+  margin-bottom: 24px;
 }
 
 .schedule-window-card {
-  background: rgba(30, 41, 59, 0.5);
+  background: #1f1f1f;
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 12px;
-  padding: 16px 20px;
+  padding: 18px 20px;
+  display: flex;
+  flex-direction: column;
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.schedule-window-card:hover {
+  border-color: rgba(255, 255, 255, 0.16);
+  transform: translateY(-2px);
 }
 
 .window-card-header {
@@ -5122,19 +5232,59 @@ body.sheet-open {
   font-size: 12px;
   font-weight: 700;
   color: #f1f5f9;
+  font-family: monospace;
 }
 
 .window-desc {
   font-size: 12.5px;
   color: #94a3b8;
   line-height: 1.5;
-  margin: 0;
+  margin: 0 0 12px 0;
 }
 
+.window-chips-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: auto;
+}
+
+.window-chip {
+  background: rgba(15, 23, 42, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 600;
+  color: #cbd5e1;
+  font-family: monospace;
+  transition: all 0.15s;
+}
+
+.window-chip:hover {
+  background: rgba(56, 189, 248, 0.15);
+  border-color: rgba(56, 189, 248, 0.4);
+  color: #38bdf8;
+}
+
+/* SECTION HEADING */
+.schedule-section-heading {
+  margin: 28px 0 16px 0;
+}
+
+.schedule-section-heading h2 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #f8fafc;
+  margin-bottom: 2px;
+}
+
+/* 9-CHANNEL FLEET GRID */
 .schedule-fleet-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   gap: 16px;
+  margin-bottom: 40px;
 }
 
 /* Radar Fleet Grid */

@@ -1,5 +1,5 @@
-// Service Worker for Raj Tube Pro - v27.0 (Master Select All Checkbox & Clean Dashboard)
-const CACHE_NAME = 'raj-tube-pro-v27';
+// Service Worker for Raj Tube Pro - v30.0 (Ultra-Pro Upload Schedule Tab & Dynamic Fleet Radar)
+const CACHE_NAME = 'raj-tube-pro-v30';
 
 self.addEventListener('install', (event) => {
   self.skipWaiting();
