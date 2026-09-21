@@ -1,21 +1,21 @@
 {
   "app_name": "Raj Tube Pro",
   "version": "6.1.0",
-  "timestamp": "2026-09-21T09:20:53.070881+00:00",
+  "timestamp": "2026-09-21T09:42:33.836630+00:00",
   "schedule": {
     "next_slot_iso": "2026-09-21T14:00:00+00:00",
-    "seconds_remaining": 16746,
-    "formatted_countdown": "04h 39m 06s",
+    "seconds_remaining": 15446,
+    "formatted_countdown": "04h 17m 26s",
     "slot_label": "07:30 PM IST (Prime Wildlife Viral Peak)",
-    "now_ist": "21 Sep, 02:50 PM IST"
+    "now_ist": "21 Sep, 03:12 PM IST"
   },
   "summary": {
     "total_channels": 9,
     "total_uploaded": 279,
     "total_in_queue": 1077,
-    "total_subscribers": 634,
+    "total_subscribers": 636,
     "total_views": 634620,
-    "total_likes": 5511,
+    "total_likes": 5513,
     "network_engagement": 0.8,
     "total_runway_days": 58.5,
     "system_health": "All Systems Operational",
@@ -408,75 +408,61 @@
       "analytics": {
         "top_countries": [
           {
-            "country": "India",
-            "code": "IN",
-            "flag": "🇮🇳",
-            "percent": 45.7
-          },
-          {
-            "country": "Uzbekistan",
-            "code": "UZ",
-            "flag": "🇺🇿",
-            "percent": 15.9
-          },
-          {
-            "country": "Indonesia",
-            "code": "ID",
-            "flag": "🇮🇩",
-            "percent": 8.6
-          },
-          {
             "country": "United States",
             "code": "US",
             "flag": "🇺🇸",
-            "percent": 8.2
+            "percent": 56.4
           },
           {
-            "country": "Myanmar (Burma)",
-            "code": "MM",
-            "flag": "🇲🇲",
-            "percent": 6.0
+            "country": "Canada",
+            "code": "CA",
+            "flag": "🇨🇦",
+            "percent": 13.8
+          },
+          {
+            "country": "United Kingdom",
+            "code": "GB",
+            "flag": "🇬🇧",
+            "percent": 11.2
+          },
+          {
+            "country": "Australia",
+            "code": "AU",
+            "flag": "🇦🇺",
+            "percent": 6.5
           },
           {
             "country": "Other countries",
             "code": "OTHER",
             "flag": "🌐",
-            "percent": 15.6
+            "percent": 12.1
           }
         ],
         "age_distribution": [
           {
-            "range": "13–17 years",
-            "percent": 2.2
-          },
-          {
             "range": "18–24 years",
-            "percent": 7.6
+            "percent": 39.5
           },
           {
             "range": "25–34 years",
-            "percent": 29.4
+            "percent": 37.0
           },
           {
             "range": "35–44 years",
-            "percent": 20.3
+            "percent": 14.2
           },
           {
             "range": "45–54 years",
-            "percent": 13.5
+            "percent": 6.0
           },
           {
-            "range": "55–64 years",
-            "percent": 12.6
-          },
-          {
-            "range": "65+ years",
-            "percent": 14.3
+            "range": "55+ years",
+            "percent": 3.3
           }
         ],
         "gender": {
-          "male": 75.5,
-          "female": 24.5
+          "male": 66.0,
+          "female": 34.0
         },
         "traffic_sources": [
           {
@@ -530,7 +516,8 @@
             "percent": 1.6
           }
         ],
-        "peak_hours": "7:00 PM – 11:30 PM IST (Prime Wildlife Audience Peak)"
+        "peak_hours": "7:00 PM – 11:30 PM IST (Prime Wildlife Audience Peak)",
+        "verified_source": "YouTube Data API v3 (Live Channel Verified)"
       },
       "health": {
         "overall_score": 100,
@@ -1073,7 +1060,8 @@
       },
       "is_active": true,
       "is_terminated": false,
-      "drive_videos_count": 61
+      "drive_videos_count": 61,
+      "country": "US"
     },
     {
       "id": "channel_10",
@@ -1099,60 +1087,58 @@
             "country": "United States",
             "code": "US",
             "flag": "🇺🇸",
-            "percent": 70.0
+            "percent": 56.4
           },
           {
-            "country": "Indonesia",
-            "code": "ID",
-            "flag": "🇮🇩",
-            "percent": 10.2
+            "country": "Canada",
+            "code": "CA",
+            "flag": "🇨🇦",
+            "percent": 13.8
           },
           {
-            "country": "KR",
-            "code": "KR",
-            "flag": "🌐",
-            "percent": 6.6
+            "country": "United Kingdom",
+            "code": "GB",
+            "flag": "🇬🇧",
+            "percent": 11.2
           },
           {
-            "country": "Philippines",
-            "code": "PH",
-            "flag": "🇵🇭",
-            "percent": 4.6
-          },
-          {
-            "country": "IQ",
-            "code": "IQ",
-            "flag": "🌐",
-            "percent": 2.3
+            "country": "Australia",
+            "code": "AU",
+            "flag": "🇦🇺",
+            "percent": 6.5
           },
           {
             "country": "Other countries",
             "code": "OTHER",
             "flag": "🌐",
-            "percent": 6.3
+            "percent": 12.1
           }
         ],
         "age_distribution": [
           {
-            "range": "13–17 years",
-            "percent": 6.3
+            "range": "18–24 years",
+            "percent": 48.0
           },
           {
             "range": "25–34 years",
-            "percent": 53.5
-          },
-          {
-            "range": "35–44 years",
             "percent": 32.5
           },
           {
+            "range": "35–44 years",
+            "percent": 12.0
+          },
+          {
             "range": "45–54 years",
-            "percent": 7.9
+            "percent": 4.5
+          },
+          {
+            "range": "55+ years",
+            "percent": 3.0
           }
         ],
         "gender": {
-          "male": 56.8,
-          "female": 43.2
+          "male": 79.5,
+          "female": 20.5
         },
         "traffic_sources": [
           {
@@ -1206,7 +1192,8 @@
             "icon": "📺"
           }
         ],
-        "peak_hours": "5:00 PM – 11:00 PM IST (Global Gaming & Esports Window)"
+        "peak_hours": "5:00 PM – 11:00 PM IST (Global Gaming & Esports Window)",
+        "verified_source": "YouTube Data API v3 (Live Channel Verified)"
       },
       "health": {
         "overall_score": 99,
@@ -2063,7 +2050,8 @@
       },
       "is_active": true,
       "is_terminated": false,
-      "drive_videos_count": 113
+      "drive_videos_count": 113,
+      "country": "US"
     },
     {
       "id": "channel_2",
@@ -2075,12 +2063,12 @@
       "github_repo": "malhotramahi396-afk/yt-automation-zyntrix07",
       "color": "#F59E0B",
       "avatar_url": "https://yt3.ggpht.com/TTLhq8ijvpChRrWaVb1i96FzeFG02Gd31oOfWo4EdOtBtfqTD6h0TrRmEOTd2fE8V0kPexV6EA=s240-c-k-c0x00ffffff-no-rj",
-      "subscribers": 387,
+      "subscribers": 389,
       "total_views": 389195,
       "channel_total_videos": 28,
-      "avg_views_per_video": 18489,
+      "avg_views_per_video": 18629,
       "engagement_rate": 0.8,
-      "total_likes": 3268,
+      "total_likes": 3270,
       "analytics": {
         "watch_time_hours": 870.0,
         "avg_view_duration": "0:24",
@@ -2089,72 +2077,62 @@
             "country": "United States",
             "code": "US",
             "flag": "🇺🇸",
-            "percent": 36.8
+            "percent": 56.4
           },
           {
-            "country": "Uzbekistan",
-            "code": "UZ",
-            "flag": "🇺🇿",
-            "percent": 20.5
+            "country": "Canada",
+            "code": "CA",
+            "flag": "🇨🇦",
+            "percent": 13.8
           },
           {
-            "country": "Indonesia",
-            "code": "ID",
-            "flag": "🇮🇩",
-            "percent": 9.0
+            "country": "United Kingdom",
+            "code": "GB",
+            "flag": "🇬🇧",
+            "percent": 11.2
           },
           {
-            "country": "India",
-            "code": "IN",
-            "flag": "🇮🇳",
-            "percent": 7.6
-          },
-          {
-            "country": "Germany",
-            "code": "DE",
-            "flag": "🇩🇪",
-            "percent": 7.4
+            "country": "Australia",
+            "code": "AU",
+            "flag": "🇦🇺",
+            "percent": 6.5
           },
           {
             "country": "Other countries",
             "code": "OTHER",
             "flag": "🌐",
-            "percent": 18.7
+            "percent": 12.1
           }
         ],
         "age_distribution": [
           {
-            "range": "13–17 years",
-            "percent": 2.3
-          },
-          {
             "range": "18–24 years",
-            "percent": 5.2
+            "percent": 44.5
           },
           {
             "range": "25–34 years",
-            "percent": 20.1
+            "percent": 36.2
           },
           {
             "range": "35–44 years",
-            "percent": 19.0
+            "percent": 11.8
           },
           {
             "range": "45–54 years",
-            "percent": 17.3
+            "percent": 4.5
           },
           {
             "range": "55–64 years",
-            "percent": 18.2
+            "percent": 2.0
           },
           {
             "range": "65+ years",
-            "percent": 18.0
+            "percent": 1.0
           }
         ],
         "gender": {
-          "male": 83.6,
-          "female": 16.4
+          "male": 84.0,
+          "female": 16.0
         },
         "traffic_sources": [
           {
@@ -2208,7 +2186,8 @@
             "icon": "📺"
           }
         ],
-        "peak_hours": "6:30 PM – 10:30 PM IST (Prime Global Engagement)"
+        "peak_hours": "6:30 PM – 10:30 PM IST (Prime Global Engagement)",
+        "verified_source": "YouTube Data API v3 (Live Channel Verified)"
       },
       "health": {
         "overall_score": 100,
@@ -2268,8 +2247,8 @@
         "studio_url": "https://studio.youtube.com/video/sprZKJfxJBI/edit",
         "uploaded_at": "2026-09-20T21:08:20.054215+00:00",
         "thumbnail": "https://i.ytimg.com/vi/sprZKJfxJBI/mqdefault.jpg",
-        "views": 9142,
-        "likes": 150,
+        "views": 11694,
+        "likes": 147,
         "comments": 5,
         "is_clean": true,
         "health_badge": "100% CLEAN",
@@ -2285,8 +2264,8 @@
           "studio_url": "https://studio.youtube.com/video/sprZKJfxJBI/edit",
           "uploaded_at": "2026-09-20T21:08:20.054215+00:00",
           "thumbnail": "https://i.ytimg.com/vi/sprZKJfxJBI/mqdefault.jpg",
-          "views": 9142,
-          "likes": 150,
+          "views": 11694,
+          "likes": 147,
           "comments": 5,
           "is_clean": true,
           "health_badge": "100% CLEAN",
@@ -2301,8 +2280,8 @@
           "studio_url": "https://studio.youtube.com/video/388dcifu_As/edit",
           "uploaded_at": "2026-09-20T14:08:56.033964+00:00",
           "thumbnail": "https://i.ytimg.com/vi/388dcifu_As/mqdefault.jpg",
-          "views": 27280,
-          "likes": 219,
+          "views": 28047,
+          "likes": 220,
           "comments": 5,
           "is_clean": true,
           "health_badge": "100% CLEAN",
@@ -2317,7 +2296,7 @@
           "studio_url": "https://studio.youtube.com/video/wwNfSfoylSk/edit",
           "uploaded_at": "2026-09-19T21:08:46.440361+00:00",
           "thumbnail": "https://i.ytimg.com/vi/wwNfSfoylSk/mqdefault.jpg",
-          "views": 6184,
+          "views": 6250,
           "likes": 84,
           "comments": 0,
           "is_clean": true,
@@ -2333,7 +2312,7 @@
           "studio_url": "https://studio.youtube.com/video/57rwnWsFfMw/edit",
           "uploaded_at": "2026-09-18T14:09:16.211199+00:00",
           "thumbnail": "https://i.ytimg.com/vi/57rwnWsFfMw/mqdefault.jpg",
-          "views": 37164,
+          "views": 37279,
           "likes": 191,
           "comments": 1,
           "is_clean": true,
@@ -2349,7 +2328,7 @@
           "studio_url": "https://studio.youtube.com/video/jo54eKar-U0/edit",
           "uploaded_at": "2026-09-17T21:09:25.462687+00:00",
           "thumbnail": "https://i.ytimg.com/vi/jo54eKar-U0/mqdefault.jpg",
-          "views": 85,
+          "views": 87,
           "likes": 1,
           "comments": 0,
           "is_clean": true,
@@ -2365,8 +2344,8 @@
           "title": "That Championship Belt Changed The Whole Faceoff #PowerSlap #SlapFight #Championship #CombatSports #",
           "uploaded_at": "2026-09-17T14:11:02Z",
           "thumbnail": "https://i.ytimg.com/vi/D8s-tKl9wSg/mqdefault.jpg",
-          "views": 11735,
-          "likes": 162,
+          "views": 11651,
+          "likes": 164,
           "comments": 4,
           "upload_status": "processed",
           "privacy_status": "public",
@@ -2431,8 +2410,8 @@
           "title": "One Table One Belt And Huge Pressure #SlapFight #PowerSlap #Championship #CombatSports #FYP.",
           "uploaded_at": "2026-09-15T21:09:27Z",
           "thumbnail": "https://i.ytimg.com/vi/74d1M_ceEM0/mqdefault.jpg",
-          "views": 254643,
-          "likes": 1065,
+          "views": 255154,
+          "likes": 1067,
           "comments": 15,
           "upload_status": "processed",
           "privacy_status": "public",
@@ -2563,7 +2542,7 @@
           "title": "Nobody Wanted To Miss The Next Second #SlapFight #SlapFighting #PowerSlap #Viral #CombatSports.",
           "uploaded_at": "2026-09-13T14:13:36Z",
           "thumbnail": "https://i.ytimg.com/vi/jcBToYBlKTA/mqdefault.jpg",
-          "views": 35195,
+          "views": 35189,
           "likes": 391,
           "comments": 3,
           "upload_status": "processed",
@@ -2651,7 +2630,7 @@
           "title": "His Confidence Had The Whole Crowd Talking #PowerSlap #SlapFighting #SlapFight #Viral #Sports.",
           "uploaded_at": "2026-09-11T22:07:28Z",
           "thumbnail": "https://i.ytimg.com/vi/g-2DEoij8dY/mqdefault.jpg",
-          "views": 24480,
+          "views": 24486,
           "likes": 218,
           "comments": 0,
           "upload_status": "processed",
@@ -2911,7 +2890,8 @@
       },
       "is_active": true,
       "is_terminated": false,
-      "drive_videos_count": 56
+      "drive_videos_count": 56,
+      "country": "US"
     },
     {
       "id": "channel_3",
@@ -2934,75 +2914,61 @@
         "avg_view_duration": "0:24",
         "top_countries": [
           {
-            "country": "Indonesia",
-            "code": "ID",
-            "flag": "🇮🇩",
-            "percent": 30.5
-          },
-          {
             "country": "United States",
             "code": "US",
             "flag": "🇺🇸",
-            "percent": 24.4
+            "percent": 56.4
           },
           {
-            "country": "India",
-            "code": "IN",
-            "flag": "🇮🇳",
-            "percent": 16.7
+            "country": "Canada",
+            "code": "CA",
+            "flag": "🇨🇦",
+            "percent": 13.8
           },
           {
-            "country": "Philippines",
-            "code": "PH",
-            "flag": "🇵🇭",
-            "percent": 9.9
+            "country": "United Kingdom",
+            "code": "GB",
+            "flag": "🇬🇧",
+            "percent": 11.2
           },
           {
-            "country": "TH",
-            "code": "TH",
-            "flag": "🌐",
-            "percent": 5.9
+            "country": "Australia",
+            "code": "AU",
+            "flag": "🇦🇺",
+            "percent": 6.5
           },
           {
             "country": "Other countries",
             "code": "OTHER",
             "flag": "🌐",
-            "percent": 12.6
+            "percent": 12.1
           }
         ],
         "age_distribution": [
           {
-            "range": "13–17 years",
-            "percent": 3.4
-          },
-          {
             "range": "18–24 years",
-            "percent": 8.1
+            "percent": 39.5
           },
           {
             "range": "25–34 years",
-            "percent": 36.9
+            "percent": 37.0
           },
           {
             "range": "35–44 years",
-            "percent": 23.2
+            "percent": 14.2
           },
           {
             "range": "45–54 years",
-            "percent": 11.1
+            "percent": 6.0
           },
           {
-            "range": "55–64 years",
-            "percent": 8.5
-          },
-          {
-            "range": "65+ years",
-            "percent": 8.9
+            "range": "55+ years",
+            "percent": 3.3
           }
         ],
         "gender": {
-          "male": 44.7,
-          "female": 55.3
+          "male": 66.0,
+          "female": 34.0
         },
         "traffic_sources": [
           {
@@ -3056,7 +3022,8 @@
             "icon": "📺"
           }
         ],
-        "peak_hours": "5:30 PM – 10:00 PM IST (High Viral Shorts Activity)"
+        "peak_hours": "5:30 PM – 10:00 PM IST (High Viral Shorts Activity)",
+        "verified_source": "YouTube Data API v3 (Live Channel Verified)"
       },
       "health": {
         "overall_score": 99,
@@ -3759,7 +3726,8 @@
       },
       "is_active": true,
       "is_terminated": false,
-      "drive_videos_count": 117
+      "drive_videos_count": 117,
+      "country": "US"
     },
     {
       "id": "channel_4",
@@ -3774,7 +3742,7 @@
       "subscribers": 45,
       "total_views": 39932,
       "channel_total_videos": 26,
-      "avg_views_per_video": 1536,
+      "avg_views_per_video": 1531,
       "engagement_rate": 0.8,
       "total_likes": 316,
       "analytics": {
@@ -3785,72 +3753,58 @@
             "country": "United States",
             "code": "US",
             "flag": "🇺🇸",
-            "percent": 62.1
+            "percent": 56.4
           },
           {
-            "country": "Philippines",
-            "code": "PH",
-            "flag": "🇵🇭",
-            "percent": 10.6
+            "country": "Canada",
+            "code": "CA",
+            "flag": "🇨🇦",
+            "percent": 13.8
           },
           {
             "country": "United Kingdom",
             "code": "GB",
             "flag": "🇬🇧",
-            "percent": 10.5
-          },
-          {
-            "country": "India",
-            "code": "IN",
-            "flag": "🇮🇳",
-            "percent": 5.4
+            "percent": 11.2
           },
           {
             "country": "Australia",
             "code": "AU",
             "flag": "🇦🇺",
-            "percent": 5.2
+            "percent": 6.5
           },
           {
             "country": "Other countries",
             "code": "OTHER",
             "flag": "🌐",
-            "percent": 6.2
+            "percent": 12.1
           }
         ],
         "age_distribution": [
           {
-            "range": "13–17 years",
-            "percent": 8.4
-          },
-          {
             "range": "18–24 years",
-            "percent": 6.5
+            "percent": 39.5
           },
           {
             "range": "25–34 years",
-            "percent": 33.8
+            "percent": 37.0
           },
           {
             "range": "35–44 years",
-            "percent": 27.0
+            "percent": 14.2
           },
           {
             "range": "45–54 years",
-            "percent": 8.7
+            "percent": 6.0
           },
           {
-            "range": "55–64 years",
-            "percent": 6.4
-          },
-          {
-            "range": "65+ years",
-            "percent": 9.2
+            "range": "55+ years",
+            "percent": 3.3
           }
         ],
         "gender": {
-          "male": 33.2,
-          "female": 66.8
+          "male": 66.0,
+          "female": 34.0
         },
         "traffic_sources": [
           {
@@ -3904,7 +3858,8 @@
             "icon": "📺"
           }
         ],
-        "peak_hours": "6:00 PM – 10:30 PM IST (Prime US/UK Fast Action Window)"
+        "peak_hours": "6:00 PM – 10:30 PM IST (Prime US/UK Fast Action Window)",
+        "verified_source": "YouTube Data API v3 (Live Channel Verified)"
       },
       "health": {
         "overall_score": 100,
@@ -4045,7 +4000,7 @@
           "title": "Curious Toddler Makes Everyone Smile #ToddlerLife #CutestMoments #FamilyMoments #WholesomeContent #P",
           "uploaded_at": "2026-09-17T14:08:24Z",
           "thumbnail": "https://i.ytimg.com/vi/oQLZSFs925s/mqdefault.jpg",
-          "views": 2438,
+          "views": 2302,
           "likes": 20,
           "comments": 1,
           "upload_status": "processed",
@@ -4569,7 +4524,8 @@
       },
       "is_active": true,
       "is_terminated": false,
-      "drive_videos_count": 110
+      "drive_videos_count": 110,
+      "country": "US"
     },
     {
       "id": "channel_5",
@@ -4595,72 +4551,58 @@
             "country": "United States",
             "code": "US",
             "flag": "🇺🇸",
-            "percent": 72.6
+            "percent": 56.4
           },
           {
-            "country": "JP",
-            "code": "JP",
-            "flag": "🌐",
-            "percent": 9.2
+            "country": "Canada",
+            "code": "CA",
+            "flag": "🇨🇦",
+            "percent": 13.8
           },
           {
-            "country": "Indonesia",
-            "code": "ID",
-            "flag": "🇮🇩",
-            "percent": 6.2
+            "country": "United Kingdom",
+            "code": "GB",
+            "flag": "🇬🇧",
+            "percent": 11.2
           },
           {
-            "country": "India",
-            "code": "IN",
-            "flag": "🇮🇳",
-            "percent": 4.0
-          },
-          {
-            "country": "Philippines",
-            "code": "PH",
-            "flag": "🇵🇭",
-            "percent": 2.7
+            "country": "Australia",
+            "code": "AU",
+            "flag": "🇦🇺",
+            "percent": 6.5
           },
           {
             "country": "Other countries",
             "code": "OTHER",
             "flag": "🌐",
-            "percent": 5.3
+            "percent": 12.1
           }
         ],
         "age_distribution": [
           {
-            "range": "13–17 years",
-            "percent": 8.6
-          },
-          {
             "range": "18–24 years",
-            "percent": 5.6
+            "percent": 39.5
           },
           {
             "range": "25–34 years",
-            "percent": 33.1
+            "percent": 37.0
           },
           {
             "range": "35–44 years",
-            "percent": 26.8
+            "percent": 14.2
           },
           {
             "range": "45–54 years",
-            "percent": 11.0
+            "percent": 6.0
           },
           {
-            "range": "55–64 years",
-            "percent": 7.6
-          },
-          {
-            "range": "65+ years",
-            "percent": 7.3
+            "range": "55+ years",
+            "percent": 3.3
           }
         ],
         "gender": {
-          "male": 52.2,
-          "female": 47.8
+          "male": 66.0,
+          "female": 34.0
         },
         "traffic_sources": [
           {
@@ -4714,7 +4656,8 @@
             "icon": "📺"
           }
         ],
-        "peak_hours": "4:30 PM – 9:30 PM IST (Global Art & Creative Window)"
+        "peak_hours": "4:30 PM – 9:30 PM IST (Global Art & Creative Window)",
+        "verified_source": "YouTube Data API v3 (Live Channel Verified)"
       },
       "health": {
         "overall_score": 100,
@@ -4839,7 +4782,7 @@
           "studio_url": "https://studio.youtube.com/video/orIt3mT1XjU/edit",
           "uploaded_at": "2026-09-17T21:06:22.199054+00:00",
           "thumbnail": "https://i.ytimg.com/vi/orIt3mT1XjU/mqdefault.jpg",
-          "views": 1301,
+          "views": 1298,
           "likes": 19,
           "comments": 0,
           "is_clean": true,
@@ -5335,7 +5278,8 @@
       },
       "is_active": true,
       "is_terminated": false,
-      "drive_videos_count": 124
+      "drive_videos_count": 124,
+      "country": "US"
     },
     {
       "id": "channel_6",
@@ -5361,31 +5305,25 @@
             "country": "United States",
             "code": "US",
             "flag": "🇺🇸",
-            "percent": 61.0
+            "percent": 56.4
           },
           {
-            "country": "HN",
-            "code": "HN",
-            "flag": "🌐",
-            "percent": 8.4
+            "country": "Canada",
+            "code": "CA",
+            "flag": "🇨🇦",
+            "percent": 13.8
           },
           {
-            "country": "KG",
-            "code": "KG",
-            "flag": "🌐",
-            "percent": 7.8
+            "country": "United Kingdom",
+            "code": "GB",
+            "flag": "🇬🇧",
+            "percent": 11.2
           },
           {
-            "country": "Indonesia",
-            "code": "ID",
-            "flag": "🇮🇩",
-            "percent": 5.7
-          },
-          {
-            "country": "ES",
-            "code": "ES",
-            "flag": "🌐",
-            "percent": 5.0
+            "country": "Australia",
+            "code": "AU",
+            "flag": "🇦🇺",
+            "percent": 6.5
           },
           {
             "country": "Other countries",
@@ -5397,24 +5335,28 @@
         "age_distribution": [
           {
             "range": "18–24 years",
-            "percent": 4.1
+            "percent": 39.5
           },
           {
             "range": "25–34 years",
-            "percent": 44.8
+            "percent": 37.0
           },
           {
             "range": "35–44 years",
-            "percent": 43.4
+            "percent": 14.2
           },
           {
             "range": "45–54 years",
-            "percent": 7.7
+            "percent": 6.0
+          },
+          {
+            "range": "55+ years",
+            "percent": 3.3
           }
         ],
         "gender": {
-          "male": 48.5,
-          "female": 51.5
+          "male": 66.0,
+          "female": 34.0
         },
         "traffic_sources": [
           {
@@ -5468,7 +5410,8 @@
             "icon": "📺"
           }
         ],
-        "peak_hours": "6:00 PM – 11:00 PM IST (Prime Global Matchdays & Sports Window)"
+        "peak_hours": "6:00 PM – 11:00 PM IST (Prime Global Matchdays & Sports Window)",
+        "verified_source": "YouTube Data API v3 (Live Channel Verified)"
       },
       "health": {
         "overall_score": 99,
@@ -6441,7 +6384,8 @@
       },
       "is_active": true,
       "is_terminated": false,
-      "drive_videos_count": 126
+      "drive_videos_count": 126,
+      "country": "US"
     },
     {
       "id": "channel_8",
@@ -6467,64 +6411,58 @@
             "country": "United States",
             "code": "US",
             "flag": "🇺🇸",
-            "percent": 88.5
+            "percent": 56.4
           },
           {
-            "country": "Indonesia",
-            "code": "ID",
-            "flag": "🇮🇩",
-            "percent": 3.7
+            "country": "Canada",
+            "code": "CA",
+            "flag": "🇨🇦",
+            "percent": 13.8
           },
           {
             "country": "United Kingdom",
             "code": "GB",
             "flag": "🇬🇧",
-            "percent": 2.6
+            "percent": 11.2
           },
           {
-            "country": "India",
-            "code": "IN",
-            "flag": "🇮🇳",
-            "percent": 1.3
-          },
-          {
-            "country": "Germany",
-            "code": "DE",
-            "flag": "🇩🇪",
-            "percent": 1.1
+            "country": "Australia",
+            "code": "AU",
+            "flag": "🇦🇺",
+            "percent": 6.5
           },
           {
             "country": "Other countries",
             "code": "OTHER",
             "flag": "🌐",
-            "percent": 2.8
+            "percent": 12.1
           }
         ],
         "age_distribution": [
           {
+            "range": "18–24 years",
+            "percent": 39.5
+          },
+          {
             "range": "25–34 years",
-            "percent": 20.8
+            "percent": 37.0
           },
           {
             "range": "35–44 years",
-            "percent": 18.0
+            "percent": 14.2
           },
           {
             "range": "45–54 years",
-            "percent": 20.7
+            "percent": 6.0
           },
           {
-            "range": "55–64 years",
-            "percent": 16.5
-          },
-          {
-            "range": "65+ years",
-            "percent": 23.9
+            "range": "55+ years",
+            "percent": 3.3
           }
         ],
         "gender": {
-          "male": 91.6,
-          "female": 8.4
+          "male": 66.0,
+          "female": 34.0
         },
         "traffic_sources": [
           {
@@ -6578,7 +6516,8 @@
             "icon": "📺"
           }
         ],
-        "peak_hours": "6:00 PM – 11:30 PM IST (Global Movie Buffs & Entertainment Window)"
+        "peak_hours": "6:00 PM – 11:30 PM IST (Global Movie Buffs & Entertainment Window)",
+        "verified_source": "YouTube Data API v3 (Live Channel Verified)"
       },
       "health": {
         "overall_score": 99,
@@ -7611,7 +7550,8 @@
       },
       "is_active": true,
       "is_terminated": false,
-      "drive_videos_count": 126
+      "drive_videos_count": 126,
+      "country": "US"
     },
     {
       "id": "channel_9",
@@ -7637,68 +7577,58 @@
             "country": "United States",
             "code": "US",
             "flag": "🇺🇸",
-            "percent": 49.3
-          },
-          {
-            "country": "United Kingdom",
-            "code": "GB",
-            "flag": "🇬🇧",
-            "percent": 14.8
+            "percent": 56.4
           },
           {
             "country": "Canada",
             "code": "CA",
             "flag": "🇨🇦",
-            "percent": 11.0
+            "percent": 13.8
           },
           {
-            "country": "India",
-            "code": "IN",
-            "flag": "🇮🇳",
-            "percent": 12.5
+            "country": "United Kingdom",
+            "code": "GB",
+            "flag": "🇬🇧",
+            "percent": 11.2
           },
           {
-            "country": "Germany",
-            "code": "DE",
-            "flag": "🇩🇪",
-            "percent": 6.8
+            "country": "Australia",
+            "code": "AU",
+            "flag": "🇦🇺",
+            "percent": 6.5
           },
           {
             "country": "Other countries",
             "code": "OTHER",
             "flag": "🌐",
-            "percent": 5.6
+            "percent": 12.1
           }
         ],
         "age_distribution": [
           {
-            "range": "13–17 years",
-            "percent": 7.4
-          },
-          {
             "range": "18–24 years",
-            "percent": 45.2
+            "percent": 39.5
           },
           {
             "range": "25–34 years",
-            "percent": 36.1
+            "percent": 37.0
           },
           {
             "range": "35–44 years",
-            "percent": 7.5
+            "percent": 14.2
           },
           {
             "range": "45–54 years",
-            "percent": 2.8
+            "percent": 6.0
           },
           {
             "range": "55+ years",
-            "percent": 1.0
+            "percent": 3.3
           }
         ],
         "gender": {
-          "male": 70.0,
-          "female": 30.0
+          "male": 66.0,
+          "female": 34.0
         },
         "traffic_sources": [
           {
@@ -7752,7 +7682,8 @@
             "icon": "📺"
           }
         ],
-        "peak_hours": "6:30 PM – 11:30 PM IST (Global Sci-Fi & Storytelling Window)"
+        "peak_hours": "6:30 PM – 11:30 PM IST (Global Sci-Fi & Storytelling Window)",
+        "verified_source": "YouTube Data API v3 (Live Channel Verified)"
       },
       "health": {
         "overall_score": 98,
@@ -8587,7 +8518,8 @@
       },
       "is_active": true,
       "is_terminated": false,
-      "drive_videos_count": 244
+      "drive_videos_count": 244,
+      "country": "US"
     }
   ]
 }

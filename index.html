@@ -265,6 +265,61 @@
           </div>
         </div>
 
+        <!-- ==========================================================
+             AUTOMATION RADAR & 24-HOUR FLEET DISPATCH ENGINE
+             ========================================================== -->
+        <div class="automation-radar-card" id="automation-radar-card">
+          <div class="radar-header">
+            <div class="radar-header-left">
+              <span class="radar-pulse-dot"></span>
+              <span class="radar-title">AUTOMATION RADAR &amp; LIVE ENGINE</span>
+              <span class="radar-badge-active">24/7 ACTIVE</span>
+              <span class="radar-vpn-pill">🇺🇸 NY VPN: 146.70.186.206 VERIFIED</span>
+            </div>
+            <div class="radar-header-right">
+              <div class="next-run-banner" id="radar-next-run-banner">
+                <span class="next-run-icon">⏰</span>
+                <span class="next-run-label">Next Run:</span>
+                <span class="next-run-target" id="radar-next-target">🎬 Calculating...</span>
+                <span class="next-run-timer" id="radar-next-countdown">(in --:--:--)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 24-HOUR VISUAL TIMELINE BAR -->
+          <div class="timeline-section">
+            <div class="timeline-meta-row">
+              <span class="timeline-label">24-Hour Upload Timeline (IST)</span>
+              <span class="timeline-current-time" id="timeline-current-time">Current: --:--:-- IST</span>
+            </div>
+            <div class="timeline-bar-track" id="timeline-track">
+              <div class="timeline-ruler">
+                <span>00:00</span>
+                <span>04:00</span>
+                <span>08:00</span>
+                <span>12:00</span>
+                <span>16:00</span>
+                <span>20:00</span>
+                <span>23:59</span>
+              </div>
+              <div class="timeline-progress-rail">
+                <!-- Laser line marker for current time -->
+                <div class="timeline-laser-marker" id="timeline-laser-marker">
+                  <div class="laser-line"></div>
+                  <div class="laser-dot"></div>
+                </div>
+                <!-- Dynamic slot pins will be injected here -->
+                <div class="timeline-slot-pins" id="timeline-slot-pins"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 9-CHANNEL FLEET RADAR CARDS GRID -->
+          <div class="radar-fleet-grid" id="radar-fleet-grid">
+            <!-- Rendered dynamically by app.js -->
+          </div>
+        </div>
+
         <!-- 2-COLUMN YOUTUBE STUDIO CARDS GRID -->
         <div class="studio-grid-2col">
 
@@ -1227,6 +1282,22 @@
             <span class="create-item-arrow">→</span>
           </button>
         </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- QUEUE PREVIEW MODAL -->
+  <div class="modal-overlay" id="modal-queue-preview" style="display:none;">
+    <div class="modal-dialog queue-preview-dialog">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <span class="modal-icon">👁️</span>
+          <h2 id="qp-channel-name">Next Video in Queue</h2>
+        </div>
+        <button class="modal-close" id="qp-btn-close">✕</button>
+      </div>
+      <div class="modal-body" id="qp-body">
+        <div class="qp-loading">Loading next video from Google Drive...</div>
       </div>
     </div>
   </div>
