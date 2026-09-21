@@ -105,7 +105,7 @@ function setupNavigation() {
 
   const btnGotoQueue = document.getElementById('btn-goto-queue');
   if (btnGotoQueue) {
-    btnGotoQueue.addEventListener('click', () => switchView('queue'));
+    btnGotoQueue.addEventListener('click', () => switchView('schedule'));
   }
 
   const btnGotoHealth = document.getElementById('btn-goto-health');
@@ -135,8 +135,8 @@ function setupNavigation() {
 }
 
 function switchView(viewName) {
-  // Radar is now consolidated into Upload Schedule
-  if (viewName === 'radar') {
+  // Radar and Queue are now consolidated into Upload Schedule
+  if (viewName === 'radar' || viewName === 'queue') {
     viewName = 'schedule';
   }
 

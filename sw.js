@@ -1,5 +1,5 @@
-// Service Worker for Raj Tube Pro - v33.0 (Clean Mobile Drawer & Merged IP/Geo Schedule)
-const CACHE_NAME = 'raj-tube-pro-v33';
+// Service Worker for Raj Tube Pro - v34.0 (Consolidated Queue into Schedule)
+const CACHE_NAME = 'raj-tube-pro-v34';
 
 self.addEventListener('install', (event) => {
   self.skipWaiting();
