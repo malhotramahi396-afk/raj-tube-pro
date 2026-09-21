@@ -517,7 +517,9 @@
           }
         ],
         "peak_hours": "7:00 PM – 11:30 PM IST (Prime Wildlife Audience Peak)",
-        "verified_source": "YouTube Data API v3 (Live Channel Verified)"
+        "verified_source": "YouTube Data API v3 (Live Channel Verified)",
+        "watch_time_hours": 447.7,
+        "avg_view_duration": "0:16"
       },
       "health": {
         "overall_score": 100,

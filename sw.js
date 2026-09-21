@@ -1,5 +1,5 @@
-// Service Worker for Raj Tube Pro - v42.0 (Seamless Background Blend)
-const CACHE_NAME = 'raj-tube-pro-v42';
+// Service Worker for Raj Tube Pro - v43.0 (Dynamic Per-Channel Watch Time & Analytics)
+const CACHE_NAME = 'raj-tube-pro-v43';
 
 self.addEventListener('install', (event) => {
   self.skipWaiting();
