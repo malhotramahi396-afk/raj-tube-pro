@@ -1,5 +1,5 @@
-// Service Worker for Raj Tube Pro - v32.0 (Strict Desktop Hidden for Mobile Sheet)
-const CACHE_NAME = 'raj-tube-pro-v32';
+// Service Worker for Raj Tube Pro - v33.0 (Clean Mobile Drawer & Merged IP/Geo Schedule)
+const CACHE_NAME = 'raj-tube-pro-v33';
 
 self.addEventListener('install', (event) => {
   self.skipWaiting();

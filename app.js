@@ -45,72 +45,54 @@ document.addEventListener('DOMContentLoaded', () => {
    ======================================================== */
 function setupNavigation() {
   const navItems = document.querySelectorAll('.nav-item');
+  const sidebar = document.getElementById('studio-sidebar');
+  const backdrop = document.getElementById('studio-backdrop');
+  const btnToggleSidebar = document.getElementById('btn-toggle-sidebar');
+  const btnCloseSidebar = document.getElementById('btn-close-sidebar');
+
+  // Nav items click: switch view & immediately close drawer on mobile!
   navItems.forEach(item => {
     item.addEventListener('click', () => {
       const targetView = item.getAttribute('data-view');
-      switchView(targetView);
+      if (targetView) {
+        switchView(targetView);
+      }
       closeSidebarOnMobile();
     });
   });
 
-  // Mobile Bottom Navigation items
-  const bottomNavItems = document.querySelectorAll('.bottom-nav-item');
-  bottomNavItems.forEach(item => {
-    item.addEventListener('click', () => {
-      const targetView = item.getAttribute('data-view');
-      if (targetView) {
-        switchView(targetView);
-        closeMoreSheet();
-      }
-    });
-  });
-
-  // Mobile More Sheet Drawer
-  const btnBottomMore = document.getElementById('btn-bottom-more');
-  const moreSheet = document.getElementById('mobile-more-sheet');
-  const btnCloseMoreSheet = document.getElementById('btn-close-more-sheet');
-  const moreSheetHandle = document.getElementById('more-sheet-handle');
-
-  const openMoreSheet = () => {
-    if (moreSheet) moreSheet.classList.add('open');
-    if (backdrop) backdrop.classList.add('active');
-    document.body.classList.add('sheet-open');
-  };
-
-  const closeMoreSheet = () => {
-    if (moreSheet) moreSheet.classList.remove('open');
-    const dropdown = document.getElementById('channel-dropdown');
-    if (backdrop && (!dropdown || !dropdown.classList.contains('open'))) {
-      backdrop.classList.remove('active');
-    }
-    document.body.classList.remove('sheet-open');
-  };
-
-  if (btnBottomMore) {
-    btnBottomMore.addEventListener('click', () => {
-      if (moreSheet && moreSheet.classList.contains('open')) {
-        closeMoreSheet();
+  // Hamburger toggle on mobile header (click to open, click to close)
+  if (btnToggleSidebar) {
+    btnToggleSidebar.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const isOpen = sidebar && sidebar.classList.contains('open');
+      if (isOpen) {
+        closeSidebarOnMobile();
       } else {
-        openMoreSheet();
+        if (sidebar) sidebar.classList.add('open');
+        if (backdrop) backdrop.classList.add('active');
       }
     });
   }
 
-  if (btnCloseMoreSheet) btnCloseMoreSheet.addEventListener('click', closeMoreSheet);
-  if (moreSheetHandle) moreSheetHandle.addEventListener('click', closeMoreSheet);
-
-  // Items inside Mobile More Sheet
-  document.querySelectorAll('.more-grid-item').forEach(item => {
-    item.addEventListener('click', () => {
-      const targetView = item.getAttribute('data-view');
-      if (targetView) {
-        closeMoreSheet();
-        switchView(targetView);
-      }
+  // Close button inside sidebar header (✕)
+  if (btnCloseSidebar) {
+    btnCloseSidebar.addEventListener('click', (e) => {
+      e.stopPropagation();
+      closeSidebarOnMobile();
     });
-  });
+  }
 
-  // Direct buttons to switch views from cards
+  // Tap outside on backdrop to close sidebar drawer
+  if (backdrop) {
+    backdrop.addEventListener('click', () => {
+      closeSidebarOnMobile();
+      const dropdown = document.getElementById('channel-dropdown');
+      if (dropdown) dropdown.classList.remove('open');
+    });
+  }
+
+  // Direct buttons to switch views from cards/widgets
   const btnGotoContent = document.getElementById('btn-goto-content');
   if (btnGotoContent) {
     btnGotoContent.addEventListener('click', () => switchView('content'));
@@ -133,7 +115,7 @@ function setupNavigation() {
 
   const btnGotoRadar = document.getElementById('btn-goto-radar');
   if (btnGotoRadar) {
-    btnGotoRadar.addEventListener('click', () => switchView('radar'));
+    btnGotoRadar.addEventListener('click', () => switchView('schedule'));
   }
 
   const btnGotoPostNow = document.getElementById('btn-goto-postnow');
@@ -146,29 +128,6 @@ function setupNavigation() {
     btnGotoSchedule.addEventListener('click', () => switchView('schedule'));
   }
 
-  // Hamburger toggle on mobile
-  const btnToggleSidebar = document.getElementById('btn-toggle-sidebar');
-  const sidebar = document.getElementById('studio-sidebar');
-  const backdrop = document.getElementById('studio-backdrop');
-
-  if (btnToggleSidebar) {
-    btnToggleSidebar.addEventListener('click', () => {
-      sidebar.classList.toggle('open');
-      backdrop.classList.toggle('active', sidebar.classList.contains('open'));
-    });
-  }
-
-  if (backdrop) {
-    backdrop.addEventListener('click', () => {
-      if (sidebar) sidebar.classList.remove('open');
-      const dropdown = document.getElementById('channel-dropdown');
-      if (dropdown) dropdown.classList.remove('open');
-      closeMoreSheet();
-      backdrop.classList.remove('active');
-      document.body.classList.remove('sheet-open');
-    });
-  }
-
   const logoHome = document.getElementById('logo-home');
   if (logoHome) {
     logoHome.addEventListener('click', () => switchView('dashboard'));
@@ -176,6 +135,11 @@ function setupNavigation() {
 }
 
 function switchView(viewName) {
+  // Radar is now consolidated into Upload Schedule
+  if (viewName === 'radar') {
+    viewName = 'schedule';
+  }
+
   // Update sidebar active classes
   document.querySelectorAll('.nav-item').forEach(item => {
     if (item.getAttribute('data-view') === viewName) {
@@ -184,29 +148,6 @@ function switchView(viewName) {
       item.classList.remove('active');
     }
   });
-
-  // Update mobile bottom nav active classes
-  const isMoreView = ['post-now', 'queue', 'health', 'radar', 'settings'].includes(viewName);
-  const btnBottomMore = document.getElementById('btn-bottom-more');
-
-  document.querySelectorAll('.bottom-nav-item').forEach(item => {
-    const dataView = item.getAttribute('data-view');
-    if (dataView) {
-      if (dataView === viewName) {
-        item.classList.add('active');
-      } else {
-        item.classList.remove('active');
-      }
-    }
-  });
-
-  if (btnBottomMore) {
-    if (isMoreView) {
-      btnBottomMore.classList.add('active');
-    } else {
-      btnBottomMore.classList.remove('active');
-    }
-  }
 
   // Update view visibility
   document.querySelectorAll('.tab-view').forEach(view => {
@@ -233,12 +174,18 @@ function switchView(viewName) {
 }
 
 function closeSidebarOnMobile() {
-  if (window.innerWidth <= 900) {
-    const sidebar = document.getElementById('studio-sidebar');
-    const backdrop = document.getElementById('studio-backdrop');
-    if (sidebar) sidebar.classList.remove('open');
-    if (backdrop) backdrop.classList.remove('active');
+  const sidebar = document.getElementById('studio-sidebar');
+  const backdrop = document.getElementById('studio-backdrop');
+  if (sidebar && sidebar.classList.contains('open')) {
+    sidebar.classList.remove('open');
   }
+  if (backdrop && backdrop.classList.contains('active')) {
+    const dropdown = document.getElementById('channel-dropdown');
+    if (!dropdown || !dropdown.classList.contains('open')) {
+      backdrop.classList.remove('active');
+    }
+  }
+  document.body.classList.remove('sheet-open');
 }
 
 /* ========================================================
@@ -3008,6 +2955,10 @@ function renderScheduleView() {
       ? `<span class="radar-card-vpn" style="background:rgba(245,158,11,0.15); color:#fbbf24; border-color:rgba(245,158,11,0.35);">🔒 LOCKED (Heatmap)</span>`
       : `<span class="radar-card-vpn">🇺🇸 NY VPN</span>`;
 
+    const runner = ch.runner_node || (globalData && globalData.runner_nodes && globalData.runner_nodes.find(r => r.channel_id === ch.id)?.runner_node) || {
+      ip: "132.196.31.128", city: "Des Moines", region: "Iowa", flag: "🇺🇸"
+    };
+
     const card = document.createElement('div');
     card.className = `radar-channel-card ${isNext ? 'radar-card-active' : ''}`;
     card.innerHTML = `
@@ -3042,6 +2993,12 @@ function renderScheduleView() {
         <div class="radar-metric-row">
           <span class="radar-metric-label">Countdown:</span>
           <span class="radar-metric-val schedule-card-countdown" data-sched-ch-id="${ch.id}" style="color:#fb923c; font-family:monospace; font-weight:700;">in --:--:--</span>
+        </div>
+        <div class="radar-metric-row" style="border-top: 1px solid rgba(255,255,255,0.06); padding-top: 7px; margin-top: 3px;">
+          <span class="radar-metric-label">Last Upload IP:</span>
+          <span class="radar-metric-val" style="color:#38bdf8; font-family:monospace; font-size:11.5px; font-weight:600;">
+            ${runner.flag || '🇺🇸'} ${runner.ip || '132.196.31.128'} • ${runner.city || 'Des Moines'}, ${runner.region || 'US'}
+          </span>
         </div>
       </div>
 
