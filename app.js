@@ -1794,31 +1794,82 @@ function renderQueueView(channel) {
 }
 
 /* ========================================================
-   COUNTDOWN TIMER
+   DYNAMIC UPLOAD SLOT CALCULATOR & COUNTDOWN TIMER
    ======================================================== */
+function getUpcomingUploadSlot(channel) {
+  const now = new Date();
+  let minDiff = Infinity;
+  let targetSlot = null;
+  let targetChannelName = "";
+
+  if (channel && channel.id && CHANNEL_SCHEDULES[channel.id]) {
+    const slots = CHANNEL_SCHEDULES[channel.id];
+    slots.forEach(s => {
+      const slotDate = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate(), s.utcHour, s.utcMin, 0));
+      let diff = slotDate.getTime() - now.getTime();
+      if (diff <= 0) {
+        slotDate.setUTCDate(slotDate.getUTCDate() + 1);
+        diff = slotDate.getTime() - now.getTime();
+      }
+      if (diff < minDiff) {
+        minDiff = diff;
+        targetSlot = s;
+        targetChannelName = channel.name || channel.id;
+      }
+    });
+  } else {
+    // Check all channels across the entire fleet
+    Object.entries(CHANNEL_SCHEDULES).forEach(([chId, slots]) => {
+      const chObj = (globalData && globalData.channels) ? globalData.channels.find(c => c.id === chId) : null;
+      const chName = chObj ? chObj.name : chId;
+      slots.forEach(s => {
+        const slotDate = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate(), s.utcHour, s.utcMin, 0));
+        let diff = slotDate.getTime() - now.getTime();
+        if (diff <= 0) {
+          slotDate.setUTCDate(slotDate.getUTCDate() + 1);
+          diff = slotDate.getTime() - now.getTime();
+        }
+        if (diff < minDiff) {
+          minDiff = diff;
+          targetSlot = s;
+          targetChannelName = chName;
+        }
+      });
+    });
+  }
+
+  return { minDiff, targetSlot, targetChannelName };
+}
+
 function startCountdown() {
   if (countdownInterval) clearInterval(countdownInterval);
 
   function tick() {
-    if (countdownSeconds <= 0) {
-      fetchChannelData();
-      return;
-    }
+    const activeChannel = currentChannelId === 'all' ? null : (globalData && globalData.channels ? globalData.channels.find(c => c.id === currentChannelId) : null);
+    const upcoming = getUpcomingUploadSlot(activeChannel);
 
-    const h = Math.floor(countdownSeconds / 3600);
-    const m = Math.floor((countdownSeconds % 3600) / 60);
-    const s = countdownSeconds % 60;
+    if (upcoming && upcoming.targetSlot && upcoming.minDiff < Infinity) {
+      const totalSec = Math.max(0, Math.floor(upcoming.minDiff / 1000));
+      const h = Math.floor(totalSec / 3600);
+      const m = Math.floor((totalSec % 3600) / 60);
+      const s = totalSec % 60;
+      const pad = n => String(n).padStart(2, '0');
 
-    const clock = document.getElementById('dash-countdown-clock');
-    if (clock) {
-      clock.innerText = `${String(h).padStart(2, '0')}h ${String(m).padStart(2, '0')}m ${String(s).padStart(2, '0')}s`;
-    }
-    const kpiClock = document.getElementById('dash-kpi-countdown');
-    if (kpiClock) {
-      kpiClock.innerText = `${String(h).padStart(2, '0')}:${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`;
-    }
+      const kpiClock = document.getElementById('dash-kpi-countdown');
+      if (kpiClock) {
+        kpiClock.innerText = `${pad(h)}:${pad(m)}:${pad(s)}`;
+      }
 
-    countdownSeconds--;
+      const kpiSlot = document.getElementById('dash-kpi-next-slot');
+      if (kpiSlot) {
+        kpiSlot.innerText = `${upcoming.targetSlot.istStr} IST • ${upcoming.targetChannelName}`;
+      }
+
+      const clock = document.getElementById('dash-countdown-clock');
+      if (clock) {
+        clock.innerText = `${pad(h)}h ${pad(m)}m ${pad(s)}s`;
+      }
+    }
   }
 
   tick();

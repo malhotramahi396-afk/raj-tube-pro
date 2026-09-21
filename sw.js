@@ -1,5 +1,5 @@
-// Service Worker for Raj Tube Pro - v39.0 (Luminous Ambient Theme & Watch Time KPI)
-const CACHE_NAME = 'raj-tube-pro-v39';
+// Service Worker for Raj Tube Pro - v40.0 (Shiny Glass Background & Dynamic Next Upload)
+const CACHE_NAME = 'raj-tube-pro-v40';
 
 self.addEventListener('install', (event) => {
   self.skipWaiting();

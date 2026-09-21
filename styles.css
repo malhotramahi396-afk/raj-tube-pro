@@ -38,13 +38,13 @@ html {
 }
 
 body.yt-studio-theme {
-  background-color: #0b0f19;
+  background-color: #050714;
   background-image: 
-    radial-gradient(circle at 12% 12%, rgba(99, 102, 241, 0.16) 0%, transparent 45%),
-    radial-gradient(circle at 88% 15%, rgba(16, 185, 129, 0.14) 0%, transparent 45%),
-    radial-gradient(circle at 50% 45%, rgba(244, 63, 94, 0.10) 0%, transparent 50%),
-    radial-gradient(circle at 85% 85%, rgba(245, 158, 11, 0.12) 0%, transparent 45%),
-    radial-gradient(circle at 15% 85%, rgba(6, 182, 212, 0.14) 0%, transparent 45%);
+    radial-gradient(ellipse 950px 750px at 8% 10%, rgba(124, 58, 237, 0.32) 0%, transparent 65%),
+    radial-gradient(ellipse 900px 700px at 92% 12%, rgba(6, 182, 212, 0.30) 0%, transparent 65%),
+    radial-gradient(ellipse 800px 700px at 50% 45%, rgba(244, 63, 94, 0.22) 0%, transparent 65%),
+    radial-gradient(ellipse 900px 650px at 88% 85%, rgba(245, 158, 11, 0.26) 0%, transparent 65%),
+    radial-gradient(ellipse 850px 700px at 12% 88%, rgba(16, 185, 129, 0.26) 0%, transparent 65%);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -53,7 +53,7 @@ body.yt-studio-theme {
   font-size: 14px;
   line-height: 1.5;
   overflow-x: hidden;
-  max-width: 100%;
+  max-width: 100vw;
   width: 100%;
   -webkit-font-smoothing: antialiased;
 }
@@ -431,6 +431,10 @@ button {
 .studio-app-shell {
   display: flex;
   min-height: calc(100vh - var(--header-height));
+  width: 100vw;
+  max-width: 100vw;
+  overflow-x: hidden;
+  box-sizing: border-box;
 }
 
 /* ========================================================
@@ -595,11 +599,11 @@ button {
    MAIN STUDIO WORKSPACE
    ======================================================== */
 .studio-main {
-  flex: 1;
+  flex: 1 1 0%;
   min-width: 0;
-  width: 100%;
+  width: calc(100% - var(--sidebar-width));
+  max-width: calc(100vw - var(--sidebar-width));
   padding: 20px 24px 48px 24px;
-  max-width: 100%;
   box-sizing: border-box;
   overflow-y: auto;
   overflow-x: hidden;
@@ -1174,18 +1178,25 @@ button {
 }
 
 .dash-card-glow {
-  background: rgba(24, 24, 28, 0.95);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 14px;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.45);
-  backdrop-filter: blur(12px);
+  background: linear-gradient(135deg, rgba(18, 24, 44, 0.76) 0%, rgba(10, 14, 28, 0.88) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 16px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.55), inset 0 1px 2px rgba(255, 255, 255, 0.22), inset 0 0 30px rgba(56, 189, 248, 0.03);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
   overflow: hidden;
-  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  position: relative;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
 }
 
 .dash-card-glow:hover {
-  border-color: rgba(255, 255, 255, 0.14);
-  box-shadow: 0 10px 36px rgba(0, 0, 0, 0.55);
+  border-color: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 14px 48px rgba(0, 0, 0, 0.65), inset 0 1px 3px rgba(255, 255, 255, 0.35);
+}
+
+.dash-card-glow .yt-card-header {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.01) 100%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .flex-between {
