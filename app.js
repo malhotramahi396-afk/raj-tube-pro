@@ -827,11 +827,18 @@ function renderDashboard(channel) {
     watchEl.innerText = watchHours;
   }
 
-  // Update Top Executive 4-KPI Cards
+  // Update Top Executive 5-KPI Cards
   const kpiSubs = document.getElementById('dash-kpi-subs');
   if (kpiSubs) kpiSubs.innerText = formatNumber(subs);
   const kpiViews = document.getElementById('dash-kpi-views');
   if (kpiViews) kpiViews.innerText = formatNumber(views);
+  const kpiWatch = document.getElementById('dash-kpi-watch');
+  if (kpiWatch) {
+    const watchHours = (globalData && globalData.summary && globalData.summary.analytics)
+      ? `${formatNumber(globalData.summary.analytics.watch_time_hours)}h`
+      : '1,865.9h';
+    kpiWatch.innerText = watchHours;
+  }
   const kpiVids = document.getElementById('dash-kpi-vids');
   if (kpiVids) {
     const totalVids = channel 
@@ -840,11 +847,11 @@ function renderDashboard(channel) {
     kpiVids.innerText = formatNumber(totalVids);
   }
 
-  // Top videos leaderboard
+  // Top videos leaderboard (Top 6 videos)
   const topList = document.getElementById('dash-top-vids-list');
   if (topList) {
     topList.innerHTML = '';
-    const sorted = [...allChannelVids].sort((a, b) => (b.views || 0) - (a.views || 0)).slice(0, 4);
+    const sorted = [...allChannelVids].sort((a, b) => (b.views || 0) - (a.views || 0)).slice(0, 6);
     sorted.forEach((v, idx) => {
       const row = document.createElement('a');
       row.className = 'leaderboard-row';

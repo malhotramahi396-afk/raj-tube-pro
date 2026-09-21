@@ -1,5 +1,5 @@
-// Service Worker for Raj Tube Pro - v38.0 (Vibrant Colorful Dashboard & Growth Curve)
-const CACHE_NAME = 'raj-tube-pro-v38';
+// Service Worker for Raj Tube Pro - v39.0 (Luminous Ambient Theme & Watch Time KPI)
+const CACHE_NAME = 'raj-tube-pro-v39';
 
 self.addEventListener('install', (event) => {
   self.skipWaiting();

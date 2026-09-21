@@ -38,7 +38,16 @@ html {
 }
 
 body.yt-studio-theme {
-  background-color: var(--yt-bg-base);
+  background-color: #0b0f19;
+  background-image: 
+    radial-gradient(circle at 12% 12%, rgba(99, 102, 241, 0.16) 0%, transparent 45%),
+    radial-gradient(circle at 88% 15%, rgba(16, 185, 129, 0.14) 0%, transparent 45%),
+    radial-gradient(circle at 50% 45%, rgba(244, 63, 94, 0.10) 0%, transparent 50%),
+    radial-gradient(circle at 85% 85%, rgba(245, 158, 11, 0.12) 0%, transparent 45%),
+    radial-gradient(circle at 15% 85%, rgba(6, 182, 212, 0.14) 0%, transparent 45%);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
   color: var(--yt-text-primary);
   font-family: 'Roboto', -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
   font-size: 14px;
@@ -63,8 +72,10 @@ button {
    ======================================================== */
 .studio-header {
   height: var(--header-height);
-  background: var(--yt-bg-base);
-  border-bottom: 1px solid var(--yt-border-subtle);
+  background: rgba(11, 15, 25, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -427,8 +438,10 @@ button {
    ======================================================== */
 .studio-sidebar {
   width: var(--sidebar-width);
-  background: var(--yt-bg-base);
-  border-right: 1px solid var(--yt-border-subtle);
+  background: rgba(11, 15, 25, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-right: 1px solid rgba(255, 255, 255, 0.08);
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
@@ -436,6 +449,10 @@ button {
   position: sticky;
   top: var(--header-height);
   overflow-y: auto;
+}
+
+.sidebar-close-btn {
+  display: none !important;
 }
 
 .sidebar-channel-header {
@@ -637,15 +654,40 @@ button {
 }
 
 /* ========================================================
-   DASHBOARD EXECUTIVE 4-KPI GRID (Vibrant Radiant Gradients)
+   DASHBOARD EXECUTIVE 5-KPI GRID (Vibrant Radiant Gradients)
    ======================================================== */
 .dashboard-kpi-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 16px;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 14px;
   margin-bottom: 20px;
   width: 100%;
   box-sizing: border-box;
+}
+
+@media (max-width: 1200px) {
+  .dashboard-kpi-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .dashboard-kpi-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+  .kpi-card {
+    padding: 12px 14px !important;
+    gap: 10px !important;
+  }
+  .kpi-icon-wrap {
+    width: 38px !important;
+    height: 38px !important;
+    font-size: 18px !important;
+  }
+  .kpi-value {
+    font-size: 19px !important;
+  }
 }
 
 .kpi-card {
@@ -657,7 +699,8 @@ button {
   transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
   min-width: 0;
   box-sizing: border-box;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   position: relative;
   overflow: hidden;
 }
@@ -674,9 +717,9 @@ button {
 
 /* Card 1: Subscribers (Electric Violet / Indigo) */
 .kpi-card-subs {
-  background: linear-gradient(135deg, rgba(99, 102, 241, 0.16) 0%, rgba(168, 85, 247, 0.06) 100%);
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.18) 0%, rgba(168, 85, 247, 0.08) 100%);
   border: 1px solid rgba(139, 92, 246, 0.35);
-  box-shadow: 0 4px 20px rgba(99, 102, 241, 0.1);
+  box-shadow: 0 4px 20px rgba(99, 102, 241, 0.12);
 }
 .kpi-card-subs::before {
   background: linear-gradient(90deg, #6366f1, #a855f7);
@@ -694,9 +737,9 @@ button {
 
 /* Card 2: 28-Day Views (Radiant Emerald / Cyan) */
 .kpi-card-views {
-  background: linear-gradient(135deg, rgba(16, 185, 129, 0.16) 0%, rgba(6, 182, 212, 0.06) 100%);
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.18) 0%, rgba(6, 182, 212, 0.08) 100%);
   border: 1px solid rgba(16, 185, 129, 0.35);
-  box-shadow: 0 4px 20px rgba(16, 185, 129, 0.1);
+  box-shadow: 0 4px 20px rgba(16, 185, 129, 0.12);
 }
 .kpi-card-views::before {
   background: linear-gradient(90deg, #10b981, #06b6d4);
@@ -712,11 +755,31 @@ button {
   box-shadow: 0 0 16px rgba(16, 185, 129, 0.45);
 }
 
-/* Card 3: Published Shorts (Electric Rose / Magenta) */
+/* Card 3: Watch Time (Radiant Purple / Violet) */
+.kpi-card-watch {
+  background: linear-gradient(135deg, rgba(168, 85, 247, 0.18) 0%, rgba(88, 28, 135, 0.08) 100%);
+  border: 1px solid rgba(168, 85, 247, 0.35);
+  box-shadow: 0 4px 20px rgba(168, 85, 247, 0.12);
+}
+.kpi-card-watch::before {
+  background: linear-gradient(90deg, #a855f7, #d946ef);
+}
+.kpi-card-watch:hover {
+  transform: translateY(-3px);
+  border-color: rgba(168, 85, 247, 0.6);
+  box-shadow: 0 8px 30px rgba(168, 85, 247, 0.25);
+}
+.kpi-icon-watch {
+  background: linear-gradient(135deg, #a855f7, #d946ef);
+  color: #ffffff;
+  box-shadow: 0 0 16px rgba(168, 85, 247, 0.45);
+}
+
+/* Card 4: Published Shorts (Electric Rose / Magenta) */
 .kpi-card-shorts {
-  background: linear-gradient(135deg, rgba(244, 63, 94, 0.16) 0%, rgba(236, 72, 153, 0.06) 100%);
+  background: linear-gradient(135deg, rgba(244, 63, 94, 0.18) 0%, rgba(236, 72, 153, 0.08) 100%);
   border: 1px solid rgba(244, 63, 94, 0.35);
-  box-shadow: 0 4px 20px rgba(244, 63, 94, 0.1);
+  box-shadow: 0 4px 20px rgba(244, 63, 94, 0.12);
 }
 .kpi-card-shorts::before {
   background: linear-gradient(90deg, #f43f5e, #ec4899);
@@ -732,14 +795,24 @@ button {
   box-shadow: 0 0 16px rgba(244, 63, 94, 0.45);
 }
 
-/* Card 4: Next Dispatch (Sunset Amber / Orange) */
+/* Card 5: Next Dispatch (Sunset Amber / Orange) */
 .kpi-card-dispatch {
-  background: linear-gradient(135deg, rgba(245, 158, 11, 0.16) 0%, rgba(234, 88, 12, 0.06) 100%);
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.18) 0%, rgba(234, 88, 12, 0.08) 100%);
   border: 1px solid rgba(245, 158, 11, 0.35);
-  box-shadow: 0 4px 20px rgba(245, 158, 11, 0.1);
+  box-shadow: 0 4px 20px rgba(245, 158, 11, 0.12);
 }
 .kpi-card-dispatch::before {
   background: linear-gradient(90deg, #f59e0b, #ea580c);
+}
+.kpi-card-dispatch:hover {
+  transform: translateY(-3px);
+  border-color: rgba(245, 158, 11, 0.6);
+  box-shadow: 0 8px 30px rgba(245, 158, 11, 0.25);
+}
+.kpi-icon-dispatch {
+  background: linear-gradient(135deg, #f59e0b, #ea580c);
+  color: #ffffff;
+  box-shadow: 0 0 16px rgba(245, 158, 11, 0.45);
 }
 .kpi-card-dispatch:hover {
   transform: translateY(-3px);
@@ -6258,5 +6331,170 @@ body.sheet-open {
 
   .next-run-banner {
     font-size: 11px;
+  }
+}
+
+/* ========================================================
+   COMPREHENSIVE MOBILE PHONE DASHBOARD ADJUSTMENTS
+   ======================================================== */
+@media (max-width: 768px) {
+  .dashboard-kpi-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 10px !important;
+    margin-bottom: 16px !important;
+  }
+
+  .kpi-card {
+    padding: 12px 14px !important;
+    gap: 10px !important;
+    border-radius: 12px !important;
+  }
+
+  .kpi-icon-wrap {
+    width: 38px !important;
+    height: 38px !important;
+    font-size: 17px !important;
+    border-radius: 10px !important;
+  }
+
+  .kpi-value {
+    font-size: 18px !important;
+    line-height: 1.2 !important;
+  }
+
+  .kpi-label {
+    font-size: 10.5px !important;
+  }
+
+  .kpi-sub {
+    font-size: 10px !important;
+  }
+
+  .dashboard-main-grid {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+  }
+
+  .dash-col-left, .dash-col-right {
+    width: 100% !important;
+    gap: 16px !important;
+  }
+
+  .subs-highlight-hero {
+    padding: 12px 14px !important;
+    flex-direction: row !important;
+    align-items: center !important;
+  }
+
+  .subs-hero-count {
+    font-size: 28px !important;
+  }
+
+  .dash-summary-tiles {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 8px !important;
+  }
+
+  .dash-stat-tile {
+    padding: 10px 8px !important;
+  }
+
+  .stat-tile-value {
+    font-size: 17px !important;
+  }
+
+  .dash-chart-container {
+    height: 175px !important;
+    padding: 6px !important;
+  }
+
+  .leaderboard-row {
+    padding: 10px 12px !important;
+    gap: 10px !important;
+  }
+
+  .leaderboard-thumb {
+    width: 64px !important;
+    border-radius: 5px !important;
+  }
+
+  .leaderboard-title {
+    font-size: 12.5px !important;
+  }
+
+  .leaderboard-meta {
+    font-size: 10.5px !important;
+  }
+
+  .live-data-badge-banner {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 8px !important;
+    padding: 10px 14px !important;
+  }
+
+  .live-badge-divider {
+    display: none !important;
+  }
+
+  .live-badge-left {
+    flex-wrap: wrap !important;
+    gap: 6px !important;
+  }
+
+  .live-badge-right {
+    align-self: flex-start !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .dashboard-kpi-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 8px !important;
+  }
+
+  .kpi-card {
+    padding: 10px 10px !important;
+    gap: 8px !important;
+  }
+
+  .kpi-icon-wrap {
+    width: 32px !important;
+    height: 32px !important;
+    font-size: 15px !important;
+    border-radius: 8px !important;
+  }
+
+  .kpi-value {
+    font-size: 16px !important;
+  }
+
+  .kpi-label {
+    font-size: 9.5px !important;
+  }
+
+  .subs-hero-count {
+    font-size: 24px !important;
+  }
+
+  .dash-summary-tiles {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 6px !important;
+  }
+
+  .stat-tile-value {
+    font-size: 15px !important;
+  }
+
+  .dash-chart-container {
+    height: 160px !important;
+  }
+
+  .yt-card-header {
+    padding: 12px 14px !important;
+  }
+
+  .yt-card-body {
+    padding: 14px 12px !important;
   }
 }

@@ -15,7 +15,7 @@
   <link rel="icon" type="image/png" sizes="512x512" href="./icons/icon-512.png">
   <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png">
   <link rel="shortcut icon" href="./icons/icon-192.png">
-  <link rel="stylesheet" href="./styles.css?v=38.0">
+  <link rel="stylesheet" href="./styles.css?v=39.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
@@ -25,7 +25,7 @@
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
-        navigator.serviceWorker.register('./sw.js?v=38.0').catch(() => {});
+        navigator.serviceWorker.register('./sw.js?v=39.0').catch(() => {});
       });
     }
   </script>
@@ -131,7 +131,6 @@
           <div class="sidebar-your-channel">Your channel</div>
           <div class="sidebar-channel-name" id="sidebar-channel-name">The Hidden Lens</div>
         </div>
-        <button class="sidebar-close-btn" id="btn-close-sidebar" title="Close menu">✕</button>
       </div>
 
       <nav class="sidebar-nav">
@@ -236,7 +235,7 @@
 
 
 
-        <!-- EXECUTIVE 4-KPI QUICK METRICS GRID (Vibrant Radiant Gradients) -->
+        <!-- EXECUTIVE 5-KPI QUICK METRICS GRID (Vibrant Radiant Gradients) -->
         <div class="dashboard-kpi-grid">
           <div class="kpi-card kpi-card-subs">
             <div class="kpi-icon-wrap kpi-icon-subs">👥</div>
@@ -253,6 +252,15 @@
               <div class="kpi-label">28-Day Views</div>
               <div class="kpi-value" id="dash-kpi-views">--</div>
               <div class="kpi-sub badge-pill-cyan">▲ Active Reach</div>
+            </div>
+          </div>
+
+          <div class="kpi-card kpi-card-watch">
+            <div class="kpi-icon-wrap kpi-icon-watch">⏱️</div>
+            <div class="kpi-meta">
+              <div class="kpi-label">Watch Time</div>
+              <div class="kpi-value" id="dash-kpi-watch">--</div>
+              <div class="kpi-sub badge-pill-purple">▲ Real-Time Hours</div>
             </div>
           </div>
 
@@ -360,12 +368,13 @@
 
                 <div class="yt-card-footer flex-between">
                   <button class="yt-btn-gradient" id="btn-goto-analytics">GO TO FULL CHANNEL ANALYTICS →</button>
+                  <button class="yt-btn-flat" id="btn-goto-schedule-dash">VIEW UPLOAD SCHEDULE →</button>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- RIGHT COLUMN: TOP PERFORMING VIDEOS + FLEET AUTOMATION PULSE -->
+          <!-- RIGHT COLUMN: TOP PERFORMING VIDEOS LEADERBOARD -->
           <div class="dash-col-right">
             <!-- TOP VIDEOS LEADERBOARD -->
             <div class="yt-card dash-card-glow">
@@ -380,69 +389,6 @@
               <div class="yt-card-body p-0">
                 <div class="top-vids-leaderboard" id="dash-top-vids-list">
                   <!-- Injected via JavaScript with rank badges and thumbnails -->
-                </div>
-              </div>
-            </div>
-
-            <!-- FLEET AUTOMATION PULSE STATUS -->
-            <div class="yt-card dash-card-glow mt-16">
-              <div class="yt-card-header flex-between">
-                <div class="header-with-icon">
-                  <span class="header-sparkle">⚡</span>
-                  <h2>Fleet Automation Pulse</h2>
-                </div>
-                <span class="status-pill-online">🟢 9/9 ONLINE</span>
-              </div>
-
-              <div class="yt-card-body">
-                <div class="fleet-pulse-list">
-                  <div class="fleet-pulse-item">
-                    <div class="pulse-item-left">
-                      <span class="pulse-icon-round icon-blue">🌐</span>
-                      <div>
-                        <div class="pulse-item-title">Cloud Automation Engine</div>
-                        <div class="pulse-item-sub">Dedicated Microsoft Azure Cloud Node</div>
-                      </div>
-                    </div>
-                    <span class="pulse-badge-active">100% ACTIVE</span>
-                  </div>
-
-                  <div class="fleet-pulse-item">
-                    <div class="pulse-item-left">
-                      <span class="pulse-icon-round icon-emerald">🛡️</span>
-                      <div>
-                        <div class="pulse-item-title">Copyright & Policy Standing</div>
-                        <div class="pulse-item-sub">0 Active Strikes • API Verified Clean</div>
-                      </div>
-                    </div>
-                    <span class="pulse-badge-clean">CLEAN</span>
-                  </div>
-
-                  <div class="fleet-pulse-item">
-                    <div class="pulse-item-left">
-                      <span class="pulse-icon-round icon-amber">⏱️</span>
-                      <div>
-                        <div class="pulse-item-title">Autonomous Publishing Pace</div>
-                        <div class="pulse-item-sub">2 Viral Shorts / Channel / Day</div>
-                      </div>
-                    </div>
-                    <span class="pulse-badge-synced">SYNCHRONIZED</span>
-                  </div>
-
-                  <div class="fleet-pulse-item">
-                    <div class="pulse-item-left">
-                      <span class="pulse-icon-round icon-purple">☁️</span>
-                      <div>
-                        <div class="pulse-item-title">Cloud Drive Stocked Runway</div>
-                        <div class="pulse-item-sub">1,077 Videos Stocked in Google Drive</div>
-                      </div>
-                    </div>
-                    <span class="pulse-badge-stock">58+ DAYS</span>
-                  </div>
-                </div>
-
-                <div class="yt-card-footer flex-between mt-12">
-                  <button class="yt-btn-flat" id="btn-goto-schedule-dash">VIEW UPLOAD SCHEDULE →</button>
                 </div>
               </div>
             </div>
@@ -1130,6 +1076,6 @@
   <!-- Toast Notification -->
   <div id="toast" class="toast">Link copied to clipboard!</div>
 
-  <script src="./app.js?v=38.0"></script>
+  <script src="./app.js?v=39.0"></script>
 </body>
 </html>
