@@ -1,5 +1,5 @@
-// Service Worker for Raj Tube Pro - v44.0 (Watch Time Formatted as 1,866 hrs)
-const CACHE_NAME = 'raj-tube-pro-v44';
+// Service Worker for Raj Tube Pro - v45.0 (Fixed Channel Switcher Z-Index & Removed Duplicate Mobile Hero)
+const CACHE_NAME = 'raj-tube-pro-v45';
 
 self.addEventListener('install', (event) => {
   self.skipWaiting();

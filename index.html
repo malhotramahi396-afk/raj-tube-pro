@@ -15,7 +15,7 @@
   <link rel="icon" type="image/png" sizes="512x512" href="./icons/icon-512.png">
   <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png">
   <link rel="shortcut icon" href="./icons/icon-192.png">
-  <link rel="stylesheet" href="./styles.css?v=44.0">
+  <link rel="stylesheet" href="./styles.css?v=45.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
@@ -25,7 +25,7 @@
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
-        navigator.serviceWorker.register('./sw.js?v=44.0').catch(() => {});
+        navigator.serviceWorker.register('./sw.js?v=45.0').catch(() => {});
       });
     }
   </script>
@@ -102,7 +102,10 @@
       <a href="#" id="dropdown-view-channel" target="_blank" class="link-view-channel">View channel on YouTube</a>
     </div>
 
-    <div class="dropdown-section-title">SWITCH CHANNEL</div>
+    <div class="dropdown-section-title flex-between">
+      <span>SWITCH CHANNEL</span>
+      <button class="sheet-close-btn" id="btn-close-channel-sheet" title="Close">✕</button>
+    </div>
     <div class="channel-options-list" id="channel-options-list">
       <!-- Injected via JavaScript: Channel 1, 2, 3, and All Channels -->
     </div>
@@ -198,27 +201,6 @@
           </div>
         </div>
 
-        <!-- MOBILE NATIVE APP CHANNEL PROFILE HERO (Visible on Phones) -->
-        <div class="mobile-channel-hero" id="mobile-channel-hero">
-          <div class="m-hero-left">
-            <div class="m-avatar-wrap">
-              <img id="m-hero-avatar" src="./logo.png" alt="Channel" />
-            </div>
-            <div class="m-hero-meta">
-              <div class="m-hero-name" id="m-hero-name">The Hidden Lens</div>
-              <div class="m-hero-handle" id="m-hero-handle">@TheHiddenLens-w8y</div>
-              <div class="m-hero-subs-row">
-                <span class="m-hero-subs-num" id="m-hero-subs">25</span>
-                <span class="m-hero-subs-lbl">subscribers</span>
-                <span class="m-hero-dot">•</span>
-                <span class="m-hero-growth text-green">▲ 100% Organic</span>
-              </div>
-            </div>
-          </div>
-          <div class="m-hero-arrow">
-            <svg viewBox="0 0 24 24" width="20" height="20" fill="#888888"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/></svg>
-          </div>
-        </div>
 
         <!-- REAL-TIME LIVE DATA VERIFICATION BANNER -->
         <div class="live-data-badge-banner">
@@ -1078,6 +1060,6 @@
   <!-- Toast Notification -->
   <div id="toast" class="toast">Link copied to clipboard!</div>
 
-  <script src="./app.js?v=40.0"></script>
+  <script src="./app.js?v=45.0"></script>
 </body>
 </html>

@@ -294,13 +294,13 @@ button {
   top: 60px;
   right: 16px;
   width: 320px;
-  background: #282828;
-  border-radius: 8px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
-  z-index: 2000;
+  background: #0e1224;
+  border-radius: 14px;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.75);
+  z-index: 9999 !important;
   display: none;
   flex-direction: column;
-  border: 1px solid #383838;
+  border: 1px solid rgba(255, 255, 255, 0.16);
 }
 
 .channel-dropdown.open {
@@ -349,6 +349,35 @@ button {
   font-weight: 700;
   color: var(--yt-text-secondary);
   letter-spacing: 0.05em;
+}
+
+.dropdown-section-title.flex-between {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+}
+
+.sheet-close-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.08);
+  color: #f1f1f1;
+  font-size: 13px;
+  cursor: pointer;
+  line-height: 1;
+  padding: 0;
+  transition: all 0.2s ease;
+}
+
+.sheet-close-btn:hover,
+.sheet-close-btn:active {
+  background: rgba(255, 255, 255, 0.22);
+  transform: scale(1.08);
 }
 
 .channel-options-list {
@@ -425,8 +454,8 @@ button {
 .studio-backdrop {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.5);
-  z-index: 1500;
+  background: rgba(0, 0, 0, 0.65);
+  z-index: 9000 !important;
   display: none;
 }
 
@@ -2044,7 +2073,7 @@ button {
     backdrop-filter: blur(24px) saturate(180%) !important;
     -webkit-backdrop-filter: blur(24px) saturate(180%) !important;
     border-right: 1px solid rgba(255, 255, 255, 0.12) !important;
-    z-index: 4000 !important;
+    z-index: 9500 !important;
     box-shadow: none !important;
     transition: left 0.28s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.28s !important;
     overflow-y: auto !important;
@@ -2115,7 +2144,8 @@ button {
     bottom: 0 !important;
     background: rgba(0, 0, 0, 0.75) !important;
     backdrop-filter: blur(4px) !important;
-    z-index: 3900 !important;
+    -webkit-backdrop-filter: blur(4px) !important;
+    z-index: 9000 !important;
     opacity: 0 !important;
     pointer-events: none !important;
     transition: opacity 0.25s ease !important;
@@ -2939,18 +2969,9 @@ button {
     display: none !important;
   }
 
-  /* Authentic YouTube Studio Mobile Channel Profile Bar */
+  /* Redundant Mobile Channel Profile Bar Removed per User Request */
   .mobile-channel-hero {
-    display: flex !important;
-    align-items: center;
-    justify-content: space-between;
-    background: #181818;
-    border: 1px solid #282828;
-    border-radius: 12px;
-    padding: 10px 14px;
-    margin-bottom: 12px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
-    gap: 10px;
+    display: none !important;
   }
 
   .m-hero-left {
@@ -3067,11 +3088,11 @@ button {
   /* Native Mobile Bottom Sheet for Channel Switcher */
   .bottom-sheet-handle {
     display: block !important;
-    width: 38px;
+    width: 42px;
     height: 4px;
-    background: #555;
+    background: rgba(255, 255, 255, 0.35) !important;
     border-radius: 2px;
-    margin: 10px auto 4px auto;
+    margin: 10px auto 6px auto;
     cursor: pointer;
   }
 
@@ -3083,19 +3104,20 @@ button {
     right: 0 !important;
     width: 100% !important;
     max-width: 100% !important;
-    border-radius: 20px 20px 0 0 !important;
-    background: #1e1e1e !important;
-    border: 1px solid #333 !important;
+    border-radius: 22px 22px 0 0 !important;
+    background: #0e1224 !important;
+    border: 1px solid rgba(255, 255, 255, 0.16) !important;
     border-bottom: none !important;
-    box-shadow: 0 -8px 36px rgba(0, 0, 0, 0.85) !important;
-    z-index: 3000 !important;
-    transform: translateY(100%);
+    box-shadow: 0 -8px 40px rgba(0, 0, 0, 0.95) !important;
+    z-index: 9999 !important;
+    transform: translateY(100%) !important;
     transition: transform 0.28s cubic-bezier(0.33, 1, 0.68, 1);
     display: flex !important;
     flex-direction: column !important;
     visibility: hidden;
-    padding-bottom: env(safe-area-inset-bottom, 20px);
-    max-height: 80vh !important;
+    pointer-events: none;
+    padding-bottom: env(safe-area-inset-bottom, 24px);
+    max-height: 82vh !important;
     overflow: hidden !important;
     overscroll-behavior: contain !important;
   }
@@ -3103,6 +3125,7 @@ button {
   .channel-dropdown.open {
     transform: translateY(0) !important;
     visibility: visible !important;
+    pointer-events: auto !important;
   }
 
   .channel-options-list {
@@ -5405,13 +5428,8 @@ body.sheet-open {
     box-sizing: border-box !important;
   }
 
-  /* 7. CHANNEL SWITCHER DROPDOWN */
+  /* 7. CHANNEL SWITCHER (Preserve Full-Width Bottom Sheet) */
   .channel-dropdown {
-    width: calc(100vw - 24px) !important;
-    max-width: 340px !important;
-    right: 12px !important;
-    left: 12px !important;
-    margin: 0 auto !important;
     box-sizing: border-box !important;
   }
 

@@ -224,6 +224,20 @@ function setupChannelDropdown() {
   if (backdrop) backdrop.addEventListener('click', closeSheet);
   if (sheetHandle) sheetHandle.addEventListener('click', closeSheet);
 
+  const btnCloseSheet = document.getElementById('btn-close-channel-sheet');
+  if (btnCloseSheet) {
+    btnCloseSheet.addEventListener('click', (e) => {
+      e.stopPropagation();
+      closeSheet();
+    });
+  }
+
+  if (dropdown) {
+    dropdown.addEventListener('click', (e) => {
+      e.stopPropagation();
+    });
+  }
+
   const dropdownSettingsBtn = document.getElementById('btn-dropdown-settings');
   if (dropdownSettingsBtn) {
     dropdownSettingsBtn.addEventListener('click', () => {
