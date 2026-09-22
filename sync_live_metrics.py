@@ -240,8 +240,8 @@ def sync_runner_nodes(channels: List[Dict[str, Any]]):
                 datacenter = "Surfshark Dedicated US NY Gateway" if ("Surfshark" in org or region == "New York") else "US Cloud Gateway"
 
                 existing_rn = ch.get("runner_node", {})
-                is_old_azure = "Azure" in (r_dict.get("runner_org") or "") or region in ["Iowa", "Washington", "California", "Illinois", "Arizona", "Virginia"]
-                if existing_rn.get("region") == "New York" and is_old_azure:
+                is_new_york_vpn = (region == "New York" or city == "New York City" or "Surfshark" in org)
+                if existing_rn.get("region") == "New York" and not is_new_york_vpn:
                     print(f"  [{ch['name']}] Retaining active US NY VPN node ({existing_rn.get('ip')}); ignoring older DB run from {run_time}")
                 else:
                     ch["runner_node"] = {

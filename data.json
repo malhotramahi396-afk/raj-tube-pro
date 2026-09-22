@@ -3173,7 +3173,7 @@
       "stock_status": "Plentiful (61.0 days)",
       "stock_color": "#10B981",
       "latest_run_status": "success",
-      "latest_run_time": "2026-09-20T21:14:01.184178+00:00",
+      "latest_run_time": "2026-09-22T13:38:20Z",
       "latest_uploaded_video": {
         "title": "He Walked In And Immediately Got To Work #PandaTok #Panda #AnimalTok #Funny #FYP.",
         "youtube_id": "uoU4qzXnOB4",
@@ -3859,16 +3859,16 @@
         }
       ],
       "runner_node": {
-        "ip": "172.215.231.112",
-        "city": "Cheyenne",
-        "region": "Wyoming",
-        "country": "US",
+        "ip": "146.70.186.116",
+        "city": "New York City",
+        "region": "New York",
+        "country": "United States",
         "country_code": "US",
         "flag": "🇺🇸",
-        "org": "AS8075 Microsoft Corporation",
-        "datacenter": "US Cloud Gateway",
-        "verified_at": "2026-09-20T21:14:01.184178+00:00",
-        "verify_url": "https://ipinfo.io/172.215.231.112"
+        "org": "AS9009 M247 Europe SRL",
+        "datacenter": "Surfshark Dedicated US NY Gateway",
+        "verified_at": "2026-09-22T13:38:20Z",
+        "verify_url": "https://ipinfo.io/146.70.186.116"
       },
       "is_active": true,
       "is_terminated": false,
