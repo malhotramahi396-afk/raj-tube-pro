@@ -2279,10 +2279,10 @@ function renderRunnerRadarWidget(channel) {
   const copyBtn = document.getElementById('dash-btn-copy-ip');
 
   if (flagEl) flagEl.innerText = runnerNode.flag || "🇺🇸";
-  if (ipEl) ipEl.innerText = runnerNode.ip || "132.196.31.128";
-  if (geoEl) geoEl.innerText = `${runnerNode.city || 'Des Moines'}, ${runnerNode.region || 'Iowa'}, ${runnerNode.country || 'United States'}`;
-  if (dcEl) dcEl.innerText = runnerNode.datacenter || "Microsoft Azure Central US (Iowa)";
-  if (orgEl) orgEl.innerText = runnerNode.org || "AS8075 Microsoft Corporation";
+  if (ipEl) ipEl.innerText = runnerNode.ip || "146.70.186.118";
+  if (geoEl) geoEl.innerText = `${runnerNode.city || 'New York City'}, ${runnerNode.region || 'New York'}, ${runnerNode.country || 'United States'}`;
+  if (dcEl) dcEl.innerText = runnerNode.datacenter || "Surfshark Dedicated US NY Gateway";
+  if (orgEl) orgEl.innerText = runnerNode.org || "Surfshark Dedicated US NY Gateway";
   
   if (timeEl) {
     const runTime = getEffectiveRunTime(channel, runnerNode);
@@ -3142,7 +3142,7 @@ function renderScheduleView() {
       : `<span class="radar-card-vpn">🇺🇸 NY VPN</span>`;
 
     const runner = ch.runner_node || (globalData && globalData.runner_nodes && globalData.runner_nodes.find(r => r.channel_id === ch.id)?.runner_node) || {
-      ip: "132.196.31.128", city: "Des Moines", region: "Iowa", flag: "🇺🇸"
+      ip: "146.70.186.118", city: "New York City", region: "New York", flag: "🇺🇸"
     };
 
     const card = document.createElement('div');
@@ -3183,7 +3183,7 @@ function renderScheduleView() {
         <div class="radar-metric-row" style="border-top: 1px solid rgba(255,255,255,0.06); padding-top: 7px; margin-top: 3px;">
           <span class="radar-metric-label">Last Upload IP:</span>
           <span class="radar-metric-val" style="color:#38bdf8; font-family:monospace; font-size:11.5px; font-weight:600;">
-            ${runner.flag || '🇺🇸'} ${runner.ip || '132.196.31.128'} • ${runner.city || 'Des Moines'}, ${runner.region || 'US'}
+            ${runner.flag || '🇺🇸'} ${runner.ip || '146.70.186.118'} • ${runner.city || 'New York City'}, ${runner.region || 'New York'}
           </span>
         </div>
       </div>

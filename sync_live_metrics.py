@@ -234,18 +234,28 @@ def sync_runner_nodes(channels: List[Dict[str, Any]]):
                 c_code = r_dict.get("runner_country_code") or "US"
                 run_time = r_dict.get("finished_at") or r_dict.get("started_at")
 
-                ch["runner_node"] = {
-                    "ip": ip,
-                    "city": r_dict.get("runner_city") or "Des Moines",
-                    "region": r_dict.get("runner_region") or "Iowa",
-                    "country": r_dict.get("runner_country") or "United States",
-                    "country_code": c_code,
-                    "flag": "🇺🇸" if c_code == "US" else "🌐",
-                    "org": r_dict.get("runner_org") or "AS8075 Microsoft Corporation",
-                    "datacenter": "Microsoft Azure Cloud Runner",
-                    "verified_at": run_time,
-                    "verify_url": f"https://ipinfo.io/{ip}"
-                }
+                city = r_dict.get("runner_city") or "New York City"
+                region = r_dict.get("runner_region") or "New York"
+                org = r_dict.get("runner_org") or "Surfshark Dedicated US NY Gateway"
+                datacenter = "Surfshark Dedicated US NY Gateway" if ("Surfshark" in org or region == "New York") else "US Cloud Gateway"
+
+                existing_rn = ch.get("runner_node", {})
+                is_old_azure = "Azure" in (r_dict.get("runner_org") or "") or region in ["Iowa", "Washington", "California", "Illinois", "Arizona", "Virginia"]
+                if existing_rn.get("region") == "New York" and is_old_azure:
+                    print(f"  [{ch['name']}] Retaining active US NY VPN node ({existing_rn.get('ip')}); ignoring older DB run from {run_time}")
+                else:
+                    ch["runner_node"] = {
+                        "ip": ip,
+                        "city": city,
+                        "region": region,
+                        "country": r_dict.get("runner_country") or "United States",
+                        "country_code": c_code,
+                        "flag": "🇺🇸" if c_code == "US" else "🌐",
+                        "org": org,
+                        "datacenter": datacenter,
+                        "verified_at": run_time,
+                        "verify_url": f"https://ipinfo.io/{ip}"
+                    }
                 ch["latest_run_time"] = run_time
                 ch["latest_run_status"] = r_dict.get("status", "success")
                 print(f"  [{ch['name']}] Synced runner IP: {ip} ({r_dict.get('runner_city')}) at {run_time}")
