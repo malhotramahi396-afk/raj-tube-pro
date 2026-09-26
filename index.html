@@ -184,6 +184,14 @@
           <span class="nav-badge badge-green" id="sidebar-health-badge">100%</span>
         </button>
 
+        <button class="nav-item" data-view="ip-audit" id="nav-item-ip-audit">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+            <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"/>
+          </svg>
+          <span class="nav-text">IP &amp; Fleet Audit</span>
+          <span class="nav-badge badge-green" id="sidebar-audit-badge">8/8 LOCKED</span>
+        </button>
+
         <button class="nav-item" data-view="post-now">
           <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
             <path d="M5 18h14v2H5v-2zm7-14l6 6h-4v6h-4v-6H6l6-6z"/>
@@ -192,6 +200,41 @@
           <span class="nav-badge" style="background: rgba(239, 68, 68, 0.2); color: #EF4444; font-weight: 700;">INSTANT</span>
         </button>
       </nav>
+
+      <!-- SIDEBAR IP & FLEET MONITOR BOX -->
+      <div class="sidebar-shield-box" id="sidebar-shield-box">
+        <div class="sidebar-shield-header">
+          <div class="sidebar-shield-title">
+            <span class="pulse-indicator-dot"></span>
+            <span>IP &amp; FLEET SHIELD</span>
+          </div>
+          <span class="badge-pill-green" style="font-size:10px; padding:2px 6px;">NY LOCKED</span>
+        </div>
+        <div class="sidebar-shield-desc">
+          8/8 Dedicated New York Nodes Active. Zero IP drift.
+        </div>
+        <div class="sidebar-shield-stats">
+          <div class="shield-stat-row">
+            <span>Egress Region:</span>
+            <span class="stat-highlight">New York, US 🇺🇸</span>
+          </div>
+          <div class="shield-stat-row">
+            <span>Active Alerts:</span>
+            <span id="sidebar-alert-count-pill" class="badge-pill-green">0 Issues</span>
+          </div>
+        </div>
+        <div class="sidebar-shield-actions">
+          <button class="btn-sidebar-shield primary" id="btn-sidebar-view-audit" title="Open Full IP & Fleet Audit">
+            🔍 View IP Audit
+          </button>
+          <button class="btn-sidebar-shield secondary" id="btn-sidebar-copy-logs" title="Copy Consolidated Diagnostic Log for AI Support">
+            📋 Copy Logs
+          </button>
+          <button class="btn-sidebar-shield subtle" id="btn-sidebar-clear-alerts" title="Clear Active Alerts">
+            🧹 Clear Alerts
+          </button>
+        </div>
+      </div>
     </aside>
 
     <!-- MAIN STUDIO WORKSPACE -->
@@ -970,8 +1013,116 @@
           <!-- Rendered dynamically by app.js: All 9 channel cards with full details -->
         </div>
       </section>
+ 
+       <!-- ==========================================================
+            TAB: FLEET IP & HEALTH SECURITY AUDIT CENTER
+            ========================================================== -->
+       <section class="tab-view" id="view-ip-audit">
+         <div class="page-title-row flex-between">
+           <div>
+             <h1 class="page-title">Fleet IP &amp; Infrastructure Audit</h1>
+             <p class="page-subtitle">
+               Audited dedicated New York nodes, YouTube pre-flight safety shields, and zero DNS rotation across all 8 active channels.
+             </p>
+           </div>
+           <div class="audit-header-actions">
+             <button class="btn-audit-action primary" id="btn-run-live-audit" onclick="runLiveFleetProbe()">
+               <span class="btn-spinner" id="audit-spinner" style="display:none;"></span>
+               <span>⚡ Run Live Fleet Probe</span>
+             </button>
+             <button class="btn-audit-action secondary" id="btn-copy-audit-report" onclick="copyConsolidatedDiagnosticReport()">
+               <span>📋 Copy Audit Report</span>
+             </button>
+             <button class="btn-audit-action danger-subtle" id="btn-audit-clear-alerts" onclick="clearAllAlerts()">
+               <span>🧹 Clear Alerts</span>
+             </button>
+           </div>
+         </div>
 
-    </main>
+         <!-- AUDIT 4-KPI SUMMARY GRID -->
+         <div class="audit-kpi-grid">
+           <div class="audit-kpi-card">
+             <div class="audit-kpi-icon">🔒</div>
+             <div class="audit-kpi-meta">
+               <div class="audit-kpi-label">Dedicated NY Nodes</div>
+               <div class="audit-kpi-val" id="audit-kpi-nodes">8/8 Locked</div>
+               <div class="audit-kpi-sub badge-pill-green">Zero DNS Drift • No Rotation</div>
+             </div>
+           </div>
+
+           <div class="audit-kpi-card">
+             <div class="audit-kpi-icon">🛡️</div>
+             <div class="audit-kpi-meta">
+               <div class="audit-kpi-label">Pre-Flight YouTube Guard</div>
+               <div class="audit-kpi-val" id="audit-kpi-guard">100% Passed</div>
+               <div class="audit-kpi-sub badge-pill-cyan">HTTP 200/301 Clean Egress</div>
+             </div>
+           </div>
+
+           <div class="audit-kpi-card">
+             <div class="audit-kpi-icon">🇺🇸</div>
+             <div class="audit-kpi-meta">
+               <div class="audit-kpi-label">US Geolocation Enforced</div>
+               <div class="audit-kpi-val">New York, US</div>
+               <div class="audit-kpi-sub badge-pill-purple">Hard Kill-Switch Active</div>
+             </div>
+           </div>
+
+           <div class="audit-kpi-card">
+             <div class="audit-kpi-icon">📦</div>
+             <div class="audit-kpi-meta">
+               <div class="audit-kpi-label">Total Ready Drive Stock</div>
+               <div class="audit-kpi-val" id="audit-kpi-stock">695 Videos</div>
+               <div class="audit-kpi-sub badge-pill-green">Full Stock Runway</div>
+             </div>
+           </div>
+         </div>
+
+         <!-- CONSOLIDATED FLEET DIAGNOSTIC TERMINAL & ALERTS (One single consolidated box for all channels) -->
+         <div class="audit-terminal-section" id="audit-terminal-section">
+           <div class="audit-terminal-header">
+             <div class="audit-terminal-title">
+               <span class="pulse-dot-cyan"></span>
+               <span>CONSOLIDATED FLEET DIAGNOSTIC CONSOLE (ALL CHANNELS)</span>
+             </div>
+             <div class="audit-terminal-controls">
+               <span id="terminal-issue-count-badge" class="badge-pill-green">0 Issues</span>
+               <button class="btn-terminal-copy" id="btn-terminal-copy-all" onclick="copyConsolidatedDiagnosticReport()" title="Copy entire diagnostic log for AI chat support">
+                 📋 Copy All Diagnostic Logs
+               </button>
+               <button class="btn-terminal-clear" id="btn-terminal-clear-alerts" onclick="clearAllAlerts()" title="Clear all alerts">
+                 🧹 Clear Alerts
+               </button>
+             </div>
+           </div>
+           <div class="audit-terminal-body" id="audit-terminal-body">
+             <!-- Populated dynamically: Shows unified diagnostic log for all channels -->
+           </div>
+         </div>
+
+         <!-- LIVE AUDIT PROBE RESULTS TERMINAL (Collapsible / interactive when probe runs) -->
+         <div class="live-probe-terminal" id="live-probe-terminal" style="display:none;">
+           <div class="live-probe-header">
+             <div style="display:flex; align-items:center; gap:8px;">
+               <span class="pulse-indicator-dot"></span>
+               <span>⚡ REAL-TIME FLEET PROBE EXECUTION</span>
+             </div>
+             <button class="btn-close-probe" id="btn-close-probe" onclick="document.getElementById('live-probe-terminal').style.display='none'">✕</button>
+           </div>
+           <pre class="live-probe-output" id="live-probe-output"></pre>
+         </div>
+
+         <!-- CHANNEL BY CHANNEL AUDIT TABLE / GRID -->
+         <div class="schedule-section-heading" style="margin-top:28px;">
+           <h2>Individual Channel Security &amp; IP Nodes</h2>
+           <span class="sub-muted">Real-time status of locked dedicated New York IP addresses, datacenters, and pre-flight shields</span>
+         </div>
+         <div class="audit-channel-grid" id="audit-channel-grid">
+           <!-- Populated dynamically via app.js -->
+         </div>
+       </section>
+
+     </main>
   </div>
 
 
