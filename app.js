@@ -920,7 +920,127 @@ function renderDashboard(channel) {
       if (schedBtn) schedBtn.click();
     };
   }
+
+  // Render Live System Incident, Glitch & Log Alert Center
+  renderIncidentAlertBox(channel);
 }
+
+/* ========================================================
+   LIVE SYSTEM INCIDENT & GLITCH ALERT MONITOR
+   ======================================================== */
+function renderIncidentAlertBox(channel) {
+  const container = document.getElementById('incident-alert-box');
+  if (!container) return;
+
+  const incidents = [];
+  const channelsToCheck = channel ? [channel] : (globalData && globalData.channels ? globalData.channels : []);
+
+  channelsToCheck.forEach(ch => {
+    // 1. Check failed runs
+    if (ch.latest_run_status === 'failed' || (ch.health && ch.health.view_health_badge === 'ERROR')) {
+      const lastRun = ch.recent_runs && ch.recent_runs[0];
+      const errorMsg = (lastRun && lastRun.error) || 'Upload pipeline failed or was interrupted during execution.';
+      incidents.push({
+        id: `inc_${ch.id}_failed`,
+        channel_name: ch.name,
+        channel_id: ch.id,
+        type: 'error',
+        title: `Upload Pipeline Glitch on ${ch.name}`,
+        desc: `The automated upload runner reported an error on the most recent run slot.`,
+        log: `[ERROR] Pipeline Failure on ${ch.name} (${ch.id})\nStatus: Failed\nLast Run: ${ch.latest_run_time || 'Recent'}\nDetails: ${errorMsg}\nRunner Node: ${ch.runner_node ? ch.runner_node.ip : 'N/A'}`
+      });
+    }
+
+    // 2. Check Drive stock depletion (0 videos left)
+    if (ch.drive_queue_count === 0) {
+      incidents.push({
+        id: `inc_${ch.id}_stock`,
+        channel_name: ch.name,
+        channel_id: ch.id,
+        type: 'warning',
+        title: `Google Drive Queue Empty on ${ch.name}`,
+        desc: `0 unuploaded videos found in Google Drive folder. Upcoming upload slots will be skipped until new videos are added.`,
+        log: `[WARNING] Drive Stock Depleted: ${ch.name}\nFolder ID: ${ch.drive_folder_id || 'N/A'}\nQueue Count: 0\nRunway Days: 0\nAction Required: Add new mp4 video files to Google Drive folder.`
+      });
+    }
+  });
+
+  // Also include any fleet-level issues from data.issues if present
+  if (!channel && globalData && Array.isArray(globalData.issues)) {
+    globalData.issues.forEach(iss => incidents.push(iss));
+  }
+
+  function escapeText(str) {
+    if (!str) return '';
+    return String(str)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;');
+  }
+
+  if (incidents.length === 0) {
+    container.innerHTML = `
+      <div class="incident-status-healthy">
+        <div style="display:flex; align-items:center; gap:8px;">
+          <span style="display:inline-block; width:9px; height:9px; border-radius:50%; background:#22c55e; box-shadow:0 0 8px #22c55e;"></span>
+          <span><strong>All ${channelsToCheck.length} Channel Pipelines Operational:</strong> Zero active glitches or upload gaps detected.</span>
+        </div>
+        <span style="font-size:11.5px; opacity:0.85; color:#a7f3d0;">🛡️ Pre-Flight IP Health & Spam Guard Active</span>
+      </div>
+    `;
+    return;
+  }
+
+  container.innerHTML = incidents.map(inc => `
+    <div class="${inc.type === 'error' ? 'incident-card-error' : 'incident-card-warning'}">
+      <div class="incident-header">
+        <div class="incident-title">
+          <span>${inc.type === 'error' ? '🚨' : '⚠️'}</span>
+          <span>${escapeText(inc.title)}</span>
+          <span style="font-size:11px; font-weight:700; padding:2px 8px; border-radius:4px; background:${inc.type === 'error' ? '#ef4444' : '#f59e0b'}; color:#fff;">${inc.type.toUpperCase()}</span>
+        </div>
+        <span style="font-size:11.5px; color:#9ca3af; font-weight:600;">${escapeText(inc.channel_name || 'Fleet')}</span>
+      </div>
+      <div class="incident-desc">${escapeText(inc.desc)}</div>
+      <div class="incident-log-terminal">${escapeText(inc.log || 'No diagnostic log available')}</div>
+      <div style="display:flex; justify-content:flex-end;">
+        <button class="btn-copy-incident-log" onclick="copyIncidentDiagnosticLog('${encodeURIComponent(JSON.stringify(inc))}')">
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="#fff"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+          📋 Copy Diagnostic Log for AI Support
+        </button>
+      </div>
+    </div>
+  `).join('');
+}
+
+window.copyIncidentDiagnosticLog = function(encodedData) {
+  try {
+    const inc = JSON.parse(decodeURIComponent(encodedData));
+    const payload = `🚨 [RAJ TUBE PRO DIAGNOSTIC INCIDENT REPORT]\nChannel: ${inc.channel_name || 'Fleet'} (${inc.channel_id || '--'})\nType: ${inc.type}\nTitle: ${inc.title}\nSummary: ${inc.desc}\n\n=== DIAGNOSTIC LOG ===\n${inc.log}\n======================\nGenerated at: ${new Date().toISOString()}`;
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(payload).then(() => {
+        showToast("✅ Diagnostic Log Copied to Clipboard! Paste it directly in chat.");
+      }).catch(() => fallbackCopy(payload));
+    } else {
+      fallbackCopy(payload);
+    }
+  } catch (e) {
+    showToast("⚠️ Could not copy log: " + e);
+  }
+
+  function fallbackCopy(text) {
+    const ta = document.createElement('textarea');
+    ta.value = text;
+    ta.style.position = 'fixed';
+    ta.style.opacity = '0';
+    document.body.appendChild(ta);
+    ta.select();
+    document.execCommand('copy');
+    document.body.removeChild(ta);
+    showToast("✅ Diagnostic Log Copied to Clipboard! Paste it directly in chat.");
+  }
+};
 
 /* ========================================================
    3. CONTENT SUBTABS & TABLE/CARD RENDERING
