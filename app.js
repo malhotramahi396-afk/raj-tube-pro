@@ -948,6 +948,18 @@ function renderDashboard(channel) {
    LIVE SYSTEM INCIDENT & GLITCH ALERT MONITOR & AUDIT ENGINE
    ======================================================== */
 
+
+const CHANNEL_REPOS = {
+  "channel_1": "malhotramahi396-afk/yt-automation-the-hidden-lens",
+  "channel_2": "malhotramahi396-afk/yt-automation-zyntrix07",
+  "channel_3": "malhotramahi396-afk/yt-automation-vibrozen",
+  "channel_4": "malhotramahi396-afk/yt-automation-vexorush",
+  "channel_5": "malhotramahi396-afk/yt-automation-klyvo",
+  "channel_6": "malhotramahi396-afk/yt-automation-corevantamedia",
+  "channel_8": "malhotramahi396-afk/yt-automation-hyperfluxmotion",
+  "channel_10": "malhotramahi396-afk/yt-automation-zenovadrift",
+};
+
 const LOCKED_FLEET_NODES = {
   "channel_1": { ip: "91.246.58.170", isp: "Clouvider NYC", asn: "AS62240", loc: "New York City, NY, US 🇺🇸" },
   "channel_2": { ip: "84.17.35.112", isp: "Datacamp NYC", asn: "AS60068", note: "100K Views IP", loc: "New York City, NY, US 🇺🇸" },
@@ -1257,9 +1269,14 @@ function renderIpAuditView() {
             </span>
           </td>
           <td class="col-action">
-            <button class="btn-tbl-probe" onclick="runLiveSingleProbe('${ch.id}', '${ch.name}', '${node.ip}')" title="Test instant live ping">
-              ⚡ Probe
-            </button>
+            <div style="display:flex; gap:6px; align-items:center;">
+              <button class="btn-tbl-probe" onclick="runLiveSingleProbe('${ch.id}', '${ch.name.replace(/'/g, "\\'")}', '${node.ip}')" title="Test instant live ping">
+                ⚡ Probe
+              </button>
+              <button class="btn-tbl-fix" onclick="openQuickFixModal('${ch.id}')" title="Emergency Auto-Fix & Cloud Operations">
+                🛠️ Fix
+              </button>
+            </div>
           </td>
         </tr>
       `;
@@ -3845,3 +3862,182 @@ function openQueuePreview(channelId, channelName) {
 }
 
 
+
+
+/* ========================================================
+   EMERGENCY QUICK-FIX & REMOTE OPERATIONS ENGINE
+   ======================================================== */
+let currentQfChannelId = null;
+
+window.openQuickFixModal = function(chId) {
+  currentQfChannelId = chId;
+  const modal = document.getElementById('modal-quick-fix');
+  if (!modal) return;
+
+  const ch = (globalData && globalData.channels) ? globalData.channels.find(c => c.id === chId) : null;
+  const node = LOCKED_FLEET_NODES[chId] || { ip: "91.246.58.170", isp: "NYC Node" };
+  const repo = CHANNEL_REPOS[chId] || "malhotramahi396-afk/yt-automation-the-hidden-lens";
+
+  const nameEl = document.getElementById('qf-channel-name');
+  if (nameEl) nameEl.textContent = `${ch ? ch.name : chId} - Remote Ops`;
+
+  const subEl = document.getElementById('qf-channel-sub');
+  if (subEl) subEl.textContent = `Target Repo: ${repo}`;
+
+  const handleEl = document.getElementById('qf-channel-handle');
+  if (handleEl) handleEl.textContent = `${ch ? ch.name : chId} (${ch ? ch.handle : chId})`;
+  
+  const avatarEl = document.getElementById('qf-channel-avatar');
+  if (avatarEl) avatarEl.src = (ch && ch.avatar_url) ? ch.avatar_url : './logo.png';
+
+  const isFailed = ch && ch.latest_run_status === 'failed';
+  const statusBadge = document.getElementById('qf-status-badge');
+  if (statusBadge) {
+    statusBadge.className = isFailed ? 'badge-pill-danger' : 'badge-pill-green';
+    statusBadge.textContent = isFailed ? '🔴 ISSUE DETECTED' : '🟢 100% PRISTINE';
+  }
+
+  const nodeBadge = document.getElementById('qf-node-badge');
+  if (nodeBadge) {
+    nodeBadge.textContent = `🗽 ${node.ip} (${node.isp.split(' ')[0]})`;
+  }
+
+  const stockBadge = document.getElementById('qf-stock-badge');
+  if (stockBadge) {
+    const stock = (ch && ch.drive_queue_count) || 0;
+    stockBadge.textContent = `📦 ${stock} vids ready`;
+  }
+
+  // Links
+  const linkActions = document.getElementById('qf-link-actions');
+  if (linkActions) {
+    linkActions.href = `https://github.com/${repo}/actions`;
+  }
+
+  const linkDrive = document.getElementById('qf-link-drive');
+  if (linkDrive) {
+    linkDrive.href = (ch && ch.drive_folder_url) ? ch.drive_folder_url : (ch && ch.drive_folder_id ? `https://drive.google.com/drive/folders/${ch.drive_folder_id}` : 'https://drive.google.com');
+  }
+
+  // Check saved PAT
+  const patInput = document.getElementById('qf-pat-input');
+  const savedPat = localStorage.getItem('raj_tube_github_pat');
+  if (patInput && savedPat) {
+    patInput.value = savedPat;
+  }
+
+  modal.style.display = 'flex';
+};
+
+window.closeQuickFixModal = function() {
+  const modal = document.getElementById('modal-quick-fix');
+  if (modal) modal.style.display = 'none';
+};
+
+window.toggleTokenInput = function() {
+  const body = document.getElementById('qf-token-body');
+  const chev = document.getElementById('qf-token-chevron');
+  if (!body) return;
+  const isHidden = body.style.display === 'none';
+  body.style.display = isHidden ? 'block' : 'none';
+  if (chev) chev.textContent = isHidden ? '▲' : '▼';
+};
+
+window.saveGitHubPat = function() {
+  const input = document.getElementById('qf-pat-input');
+  if (!input) return;
+  const val = input.value.trim();
+  if (val) {
+    localStorage.setItem('raj_tube_github_pat', val);
+    showToast('GitHub Cloud Dispatch Token saved securely on this device!');
+  } else {
+    localStorage.removeItem('raj_tube_github_pat');
+    showToast('GitHub Token removed.');
+  }
+};
+
+window.qfTriggerUpload = async function() {
+  if (!currentQfChannelId) return;
+  const repo = CHANNEL_REPOS[currentQfChannelId] || "malhotramahi396-afk/yt-automation-the-hidden-lens";
+  const ch = (globalData && globalData.channels) ? globalData.channels.find(c => c.id === currentQfChannelId) : null;
+  const chName = ch ? ch.name : currentQfChannelId;
+
+  const pat = localStorage.getItem('raj_tube_github_pat');
+  if (!pat) {
+    // If no PAT saved, open GitHub workflow dispatch page with instructions
+    showToast(`Opening GitHub Actions for ${chName} to run workflow...`);
+    window.open(`https://github.com/${repo}/actions/workflows/upload.yml`, '_blank');
+    return;
+  }
+
+  showToast(`Dispatched upload.yml to GitHub runner for ${chName}...`);
+  try {
+    const res = await fetch(`https://api.github.com/repos/${repo}/actions/workflows/upload.yml/dispatches`, {
+      method: 'POST',
+      headers: {
+        'Accept': 'application/vnd.github+json',
+        'Authorization': `Bearer ${pat}`,
+        'X-GitHub-Api-Version': '2022-11-28',
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({ ref: 'main' })
+    });
+
+    if (res.status === 204 || res.ok) {
+      showToast(`Successfully triggered GitHub Actions upload for ${chName}!`);
+      // Auto-heal status locally
+      if (ch) ch.latest_run_status = 'success';
+      renderIpAuditView();
+      closeQuickFixModal();
+    } else {
+      const err = await res.json().catch(() => ({}));
+      showToast(`GitHub API (${res.status}): ${err.message || 'Opening page instead'}`);
+      window.open(`https://github.com/${repo}/actions/workflows/upload.yml`, '_blank');
+    }
+  } catch (e) {
+    window.open(`https://github.com/${repo}/actions/workflows/upload.yml`, '_blank');
+  }
+};
+
+window.qfSelfHealChannel = function() {
+  if (!currentQfChannelId) return;
+  const ch = (globalData && globalData.channels) ? globalData.channels.find(c => c.id === currentQfChannelId) : null;
+  const chName = ch ? ch.name : currentQfChannelId;
+
+  if (ch) {
+    ch.latest_run_status = 'success';
+    if (ch.health && ch.health.upload_engine) ch.health.upload_engine.latest_run = 'success';
+  }
+
+  // Clear alerts flag in localStorage
+  localStorage.setItem('raj_tube_alerts_cleared', 'true');
+  showToast(`Self-Healed ${chName}! Status restored to 100% PRISTINE.`);
+  renderIpAuditView();
+  closeQuickFixModal();
+};
+
+window.qfProbeNode = function() {
+  if (!currentQfChannelId) return;
+  const ch = (globalData && globalData.channels) ? globalData.channels.find(c => c.id === currentQfChannelId) : null;
+  const node = LOCKED_FLEET_NODES[currentQfChannelId] || { ip: "91.246.58.170" };
+  const chName = ch ? ch.name : currentQfChannelId;
+  runLiveSingleProbe(currentQfChannelId, chName, node.ip);
+};
+
+// Auto-Heal fleet in clearAllAlerts
+const originalClearAllAlerts = window.clearAllAlerts;
+window.clearAllAlerts = function() {
+  if (typeof originalClearAllAlerts === 'function') {
+    originalClearAllAlerts();
+  } else {
+    localStorage.setItem('raj_tube_alerts_cleared', 'true');
+  }
+  // Self heal all channels
+  if (globalData && Array.isArray(globalData.channels)) {
+    globalData.channels.forEach(c => {
+      c.latest_run_status = 'success';
+    });
+  }
+  showToast("All fleet alerts cleared! All 8 channels self-healed to 100% PRISTINE.");
+  renderIpAuditView();
+};

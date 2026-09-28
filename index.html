@@ -18,7 +18,7 @@
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
   <meta http-equiv="Pragma" content="no-cache">
   <meta http-equiv="Expires" content="0">
-  <link rel="stylesheet" href="./styles.css?v=47.0">
+  <link rel="stylesheet" href="./styles.css?v=48.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
@@ -1145,6 +1145,110 @@
     </div>
   </div>
 
+  <!-- EMERGENCY MOBILE QUICK-FIX MODAL -->
+  <div class="modal-overlay" id="modal-quick-fix" style="display:none;">
+    <div class="modal-dialog quick-fix-dialog">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <span class="modal-icon">🛠️</span>
+          <div>
+            <h2 id="qf-channel-name" style="margin:0; font-size:16px;">Channel Emergency Operations</h2>
+            <span id="qf-channel-sub" class="sub-muted" style="font-size:11px;">1-Click Remote Cloud Fix</span>
+          </div>
+        </div>
+        <button class="modal-close" onclick="closeQuickFixModal()">✕</button>
+      </div>
+
+      <div class="modal-body" style="padding:18px;">
+        <!-- Channel Status Pill & Node Info -->
+        <div class="qf-channel-hero">
+          <img id="qf-channel-avatar" src="./logo.png" class="qf-avatar" alt="Avatar" />
+          <div class="qf-meta">
+            <div id="qf-channel-handle" class="qf-title">@channel</div>
+            <div class="qf-badges">
+              <span id="qf-status-badge" class="badge-pill-green">🟢 100% PRISTINE</span>
+              <span id="qf-node-badge" class="badge-pill-purple">🗽 NY LOCKED</span>
+              <span id="qf-stock-badge" class="badge-pill-cyan">📦 0 vids ready</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Direct Emergency Action List -->
+        <div class="qf-actions-list">
+          
+          <!-- Action 1: Force Trigger Upload Workflow -->
+          <div class="qf-action-card" onclick="qfTriggerUpload()">
+            <div class="qf-action-icon bg-red">🚀</div>
+            <div class="qf-action-info">
+              <div class="qf-action-title">Force Trigger Upload Now (GitHub Actions)</div>
+              <div class="qf-action-desc">Dispatches upload.yml in GitHub Cloud runner via locked NY IP</div>
+            </div>
+            <span class="qf-action-btn">Run ⚡</span>
+          </div>
+
+          <!-- Action 2: Self-Heal & Clear Incident State -->
+          <div class="qf-action-card" onclick="qfSelfHealChannel()">
+            <div class="qf-action-icon bg-green">🧹</div>
+            <div class="qf-action-info">
+              <div class="qf-action-title">Self-Heal &amp; Reset Health Status</div>
+              <div class="qf-action-desc">Clears false alerts, removes red glitch flags, restores 100% pristine</div>
+            </div>
+            <span class="qf-action-btn">Heal ✅</span>
+          </div>
+
+          <!-- Action 3: View Live Cloud Workflow Logs -->
+          <a id="qf-link-actions" href="#" target="_blank" class="qf-action-card">
+            <div class="qf-action-icon bg-purple">📋</div>
+            <div class="qf-action-info">
+              <div class="qf-action-title">View Live GitHub Actions Logs</div>
+              <div class="qf-action-desc">Check step-by-step logs, errors, or re-run failed jobs directly on GitHub</div>
+            </div>
+            <span class="qf-action-btn">Open ↗</span>
+          </a>
+
+          <!-- Action 4: Open Google Drive Cloud Folder -->
+          <a id="qf-link-drive" href="#" target="_blank" class="qf-action-card">
+            <div class="qf-action-icon bg-amber">📁</div>
+            <div class="qf-action-info">
+              <div class="qf-action-title">Open Google Drive Queue Folder</div>
+              <div class="qf-action-desc">Check queue videos, rename files, or upload new Shorts from mobile phone</div>
+            </div>
+            <span class="qf-action-btn">Drive ↗</span>
+          </a>
+
+          <!-- Action 5: Live Node Latency Probe -->
+          <div class="qf-action-card" onclick="qfProbeNode()">
+            <div class="qf-action-icon bg-cyan">⚡</div>
+            <div class="qf-action-info">
+              <div class="qf-action-title">Live Node Latency Probe</div>
+              <div class="qf-action-desc">Test real-time connection to dedicated NY IP and YouTube pre-flight safety</div>
+            </div>
+            <span class="qf-action-btn">Ping 📡</span>
+          </div>
+
+        </div>
+
+        <!-- Optional GitHub Token Setup for 1-Click Mobile Dispatch -->
+        <div class="qf-token-box">
+          <div class="qf-token-header" onclick="toggleTokenInput()">
+            <span>🔑 1-Click Mobile Cloud Dispatch Key (Optional)</span>
+            <span id="qf-token-chevron">▼</span>
+          </div>
+          <div id="qf-token-body" style="display:none; padding-top:8px;">
+            <p style="font-size:11px; color:#94a3b8; margin:0 0 8px 0;">
+              Paste your GitHub Personal Access Token (with 'repo' & 'workflow' scope) once on your phone. Saved in your browser's private localStorage to enable instant background dispatches without opening GitHub!
+            </p>
+            <div style="display:flex; gap:8px;">
+              <input type="password" id="qf-pat-input" placeholder="ghp_xxxxxxxxxxxx or gho_xxxxxxxxxxxx" style="flex:1; background:rgba(0,0,0,0.5); border:1px solid rgba(255,255,255,0.15); border-radius:6px; padding:6px 10px; color:#fff; font-size:12px;" />
+              <button class="btn-audit-action primary" onclick="saveGitHubPat()" style="padding:6px 14px; font-size:11.5px;">Save Key</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
   <!-- QUEUE PREVIEW MODAL -->
   <div class="modal-overlay" id="modal-queue-preview" style="display:none;">
     <div class="modal-dialog queue-preview-dialog">
@@ -1164,6 +1268,6 @@
   <!-- Toast Notification -->
   <div id="toast" class="toast">Link copied to clipboard!</div>
 
-  <script src="./app.js?v=47.0"></script>
+  <script src="./app.js?v=48.0"></script>
 </body>
 </html>
