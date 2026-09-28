@@ -949,14 +949,14 @@ function renderDashboard(channel) {
    ======================================================== */
 
 const LOCKED_FLEET_NODES = {
-  "channel_1": { ip: "91.246.58.170", isp: "Clouvider NYC", loc: "New York City, NY, US 🇺🇸" },
-  "channel_2": { ip: "84.17.35.112", isp: "Datacamp NYC (100K Views IP)", loc: "New York City, NY, US 🇺🇸" },
-  "channel_3": { ip: "146.70.186.195", isp: "M247 NYC", loc: "New York City, NY, US 🇺🇸" },
-  "channel_4": { ip: "138.199.40.177", isp: "Datacamp NYC", loc: "New York City, NY, US 🇺🇸" },
-  "channel_5": { ip: "146.70.186.171", isp: "M247 NYC", loc: "New York City, NY, US 🇺🇸" },
-  "channel_6": { ip: "92.119.177.19", isp: "M247 NYC", loc: "New York City, NY, US 🇺🇸" },
-  "channel_8": { ip: "193.148.18.51", isp: "M247 NYC", loc: "New York City, NY, US 🇺🇸" },
-  "channel_10": { ip: "92.119.177.21", isp: "M247 NYC", loc: "New York City, NY, US 🇺🇸" },
+  "channel_1": { ip: "91.246.58.170", isp: "Clouvider NYC", asn: "AS62240", loc: "New York City, NY, US 🇺🇸" },
+  "channel_2": { ip: "84.17.35.112", isp: "Datacamp NYC", asn: "AS60068", note: "100K Views IP", loc: "New York City, NY, US 🇺🇸" },
+  "channel_3": { ip: "146.70.186.195", isp: "M247 NYC", asn: "AS9009", loc: "New York City, NY, US 🇺🇸" },
+  "channel_4": { ip: "138.199.40.177", isp: "Datacamp NYC", asn: "AS60068", loc: "New York City, NY, US 🇺🇸" },
+  "channel_5": { ip: "146.70.186.171", isp: "M247 NYC", asn: "AS9009", loc: "New York City, NY, US 🇺🇸" },
+  "channel_6": { ip: "92.119.177.19", isp: "M247 NYC", asn: "AS9009", loc: "New York City, NY, US 🇺🇸" },
+  "channel_8": { ip: "193.148.18.51", isp: "M247 NYC", asn: "AS9009", loc: "New York City, NY, US 🇺🇸" },
+  "channel_10": { ip: "92.119.177.21", isp: "M247 NYC", asn: "AS9009", loc: "New York City, NY, US 🇺🇸" },
 };
 
 function getActiveChannels() {
@@ -1159,20 +1159,6 @@ function renderIpAuditView() {
   const cleared = isAlertsCleared();
   const activeCount = cleared ? 0 : allIncidents.length;
 
-  // 1. Update KPI values
-  const kpiNodes = document.getElementById('audit-kpi-nodes');
-  if (kpiNodes) kpiNodes.textContent = `${channels.length}/${channels.length} Locked`;
-
-  const kpiGuard = document.getElementById('audit-kpi-guard');
-  if (kpiGuard) kpiGuard.textContent = "100% Passed";
-
-  let totalStock = 0;
-  channels.forEach(ch => {
-    totalStock += (ch.drive_queue_count || 0);
-  });
-  const kpiStock = document.getElementById('audit-kpi-stock');
-  if (kpiStock) kpiStock.textContent = `${totalStock} Videos`;
-
   // Update Hero Shield & Sidebar badges
   const mainAlertPill = document.getElementById('main-audit-alert-count-pill');
   if (mainAlertPill) {
@@ -1201,61 +1187,29 @@ function renderIpAuditView() {
     schedBadge.textContent = `${channels.length} ACTIVE`;
   }
 
-  // 2. Update Consolidated Terminal Body
-  const termBody = document.getElementById('audit-terminal-body');
-  const termBadge = document.getElementById('terminal-issue-count-badge');
-  if (termBadge) {
-    if (activeCount > 0) {
-      termBadge.className = 'badge-pill-danger';
-      termBadge.textContent = `${activeCount} Glitch${activeCount > 1 ? 'es' : ''}`;
-    } else {
-      termBadge.className = 'badge-pill-green';
-      termBadge.textContent = '0 Issues';
-    }
-  }
-
-  if (termBody) {
-    let termText = `=== [LIVE FLEET SECURITY & LOCKED IP AUDIT CONSOLE] ===\n`;
-    termText += `Generated: ${new Date().toISOString()}\n`;
-    termText += `Egress Target: New York City, US 🇺🇸 (Hard Kill-Switch Enforced)\n`;
-    termText += `DNS Shuffling: DISABLED (Numeric IPs Hardcoded in OpenVPN)\n`;
-    termText += `Active Channels: ${channels.length} | Suspended: 0 | Auth Failed: 0\n`;
-    termText += `Total Ready Stock: ${totalStock} Videos across all Google Drive parent folders\n\n`;
-
-    termText += `[CHANNEL-BY-CHANNEL NODE AUDIT]\n`;
-    channels.forEach((ch, idx) => {
-      const node = LOCKED_FLEET_NODES[ch.id] || { ip: (ch.runner_node && ch.runner_node.ip) || "91.246.58.170", isp: "Surfshark NY Node", loc: "New York, US" };
-      termText += `(${idx + 1}) ${ch.name.padEnd(20)} | IP: ${node.ip.padEnd(16)} | Node: ${node.isp.padEnd(26)} | Stock: ${String(ch.drive_queue_count || 0).padStart(3)} vids | Guard: 200 OK ✅\n`;
-    });
-
-    if (allIncidents.length > 0 && !cleared) {
-      termText += `\n[ACTIVE WARNINGS & GLITCHES (${allIncidents.length})]:\n`;
-      allIncidents.forEach(inc => {
-        termText += `  ⚠️ [${inc.channel_name}] ${inc.title}\n`;
-        termText += `     Log: ${inc.log.replace(/\n/g, ' ')}\n`;
-      });
-    } else {
-      termText += `\n[DIAGNOSTIC STATUS]: All pipelines operating with 100% clean health. No action required.\n`;
-    }
-
-    termText += `========================================================`;
-
-    termBody.innerHTML = `
-      <pre class="audit-console-pre">${termText}</pre>
-    `;
-  }
-
-  // 3. Render Dedicated Channel Nodes & Security Audit Table
+  // Render Dedicated Channel Nodes & Security Audit Table
   const tableBody = document.getElementById('audit-channel-table-body');
   if (tableBody) {
     tableBody.innerHTML = channels.map((ch, idx) => {
-      const node = LOCKED_FLEET_NODES[ch.id] || { ip: (ch.runner_node && ch.runner_node.ip) || "91.246.58.170", isp: "Surfshark Dedicated NY Node", loc: "New York City, NY, US 🇺🇸" };
+      const node = LOCKED_FLEET_NODES[ch.id] || { ip: (ch.runner_node && ch.runner_node.ip) || "91.246.58.170", isp: "Dedicated NY Node", asn: "AS-GATEWAY", loc: "New York City, NY, US 🇺🇸" };
       const stock = ch.drive_queue_count || 0;
       const avatar = ch.avatar_url || './logo.png';
       const isFailed = ch.latest_run_status === 'failed';
 
+      // Calculate upcoming slot
+      let slotText = "Automated 2x/Day";
+      let slotSub = "New York VPN Window";
+      if (typeof getNextSlotForChannel === 'function') {
+        const nextSlot = getNextSlotForChannel(ch.id);
+        if (nextSlot) {
+          slotText = `${nextSlot.istStr} IST`;
+          slotSub = `${typeof getUsaEdtTime === 'function' ? getUsaEdtTime(nextSlot.istStr) : ''} • ${nextSlot.slot.includes('Slot 1') ? 'Slot 1' : 'Slot 2'}`;
+        }
+      }
+
       return `
         <tr class="audit-table-row ${isFailed ? 'row-has-error' : ''}">
+          <td style="color:#64748b; font-weight:600; width:36px;">${idx + 1}</td>
           <td class="col-channel">
             <div class="audit-tbl-channel-meta">
               <img src="${avatar}" class="audit-tbl-avatar" alt="${ch.name}" />
@@ -1266,25 +1220,39 @@ function renderIpAuditView() {
             </div>
           </td>
           <td class="col-ip">
-            <a href="https://ipinfo.io/${node.ip}" target="_blank" class="spec-ip-link" title="Verify IP on ipinfo.io">
-              <code>${node.ip}</code>
-              <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M19 19H5V5h7V3H5a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/></svg>
-            </a>
+            <div class="spec-ip-row">
+              <a href="https://ipinfo.io/${node.ip}" target="_blank" class="spec-ip-link" title="Verify IP on ipinfo.io">
+                <code>${node.ip}</code>
+                <svg viewBox="0 0 24 24" width="11" height="11" fill="currentColor"><path d="M19 19H5V5h7V3H5a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/></svg>
+              </a>
+              <button class="btn-copy-ip-mini" onclick="copyIpToClipboard('${node.ip}', event)" title="Copy IP to clipboard">📋</button>
+            </div>
           </td>
           <td class="col-isp">
-            <span class="tbl-isp-badge">${node.isp}</span>
+            <div>
+              <div style="font-weight:600; color:#f1f5f9; font-size:12.5px;">${node.isp}</div>
+              <div style="margin-top:3px;">
+                <span class="badge-asn">${node.asn || 'AS-GATEWAY'}</span>
+                <span class="badge-loc-tag">🇺🇸 NYC</span>
+              </div>
+            </div>
           </td>
-          <td class="col-loc">
-            <span class="tbl-loc-text">New York, US 🇺🇸</span>
-          </td>
-          <td class="col-gate">
-            <span class="spec-val-badge badge-green">HTTP 200 OK</span>
+          <td class="col-slot">
+            <div class="col-slot-timing">
+              <span class="slot-time-text">${slotText}</span>
+              <span class="slot-sub-text">${slotSub}</span>
+            </div>
           </td>
           <td class="col-stock">
-            <strong class="${stock < 10 ? 'text-amber' : 'text-green'}">${stock}</strong> vids
+            <span class="${stock >= 10 ? 'badge-pill-green' : 'badge-pill-amber'}" style="font-size:11.5px; padding:3px 8px;">
+              📦 <strong>${stock}</strong> vids
+            </span>
+          </td>
+          <td class="col-gate">
+            <span class="badge-pill-cyan" style="font-size:11px; padding:3px 8px;">HTTP 200 OK</span>
           </td>
           <td class="col-status">
-            <span class="${isFailed ? 'badge-pill-danger' : 'badge-pill-green'}">
+            <span class="${isFailed ? 'badge-pill-danger' : 'badge-pill-green'}" style="font-size:11px; padding:3px 8px;">
               ${isFailed ? '🔴 ISSUE' : '🟢 100% PRISTINE'}
             </span>
           </td>
@@ -1298,6 +1266,30 @@ function renderIpAuditView() {
     }).join('');
   }
 }
+
+// Global Filter for Audit Table
+window.filterAuditTable = function(query) {
+  const q = (query || '').toLowerCase().trim();
+  const rows = document.querySelectorAll('#audit-channel-table-body tr');
+  rows.forEach(r => {
+    const text = r.textContent.toLowerCase();
+    r.style.display = (!q || text.includes(q)) ? '' : 'none';
+  });
+};
+
+// Global Copy IP
+window.copyIpToClipboard = function(ip, event) {
+  if (event) event.stopPropagation();
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(ip).then(() => {
+      showToast(`📋 Copied Dedicated IP: ${ip}`);
+    }).catch(() => {
+      showToast(`IP: ${ip}`);
+    });
+  } else {
+    showToast(`IP: ${ip}`);
+  }
+};
 
 /* ========================================================
    LIVE REAL-TIME FLEET PROBE RUNNER

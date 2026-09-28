@@ -1,5 +1,5 @@
 // Service Worker for Raj Tube Pro - v46.0 (Zero Stale Cache & Bulletproof Mobile Bottom Sheet)
-const CACHE_NAME = 'raj-tube-pro-v46';
+const CACHE_NAME = 'raj-tube-pro-v47';
 
 self.addEventListener('install', (event) => {
   self.skipWaiting();
