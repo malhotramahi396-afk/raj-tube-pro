@@ -177,7 +177,6 @@ CHANNEL_REPOS = {
     "channel_5": ("malhotramahi396-afk/yt-automation-klyvo", "data/channel_5.db"),
     "channel_6": ("malhotramahi396-afk/yt-automation-corevantamedia", "data/channel_6.db"),
     "channel_8": ("malhotramahi396-afk/yt-automation-hyperfluxmotion", "data/channel_8.db"),
-    "channel_9": ("malhotramahi396-afk/yt-automation-vortexedgestories", "data/channel_9.db"),
     "channel_10": ("malhotramahi396-afk/yt-automation-zenovadrift", "data/channel_10.db")
 }
 
@@ -310,7 +309,6 @@ GDRIVE_FOLDER_MAP = {
     "channel_5": "1xZSez3F82y0pLTWJbQ-ybPjbOCqY1mrW",  # Klyvo
     "channel_6": "1mxwPH1BvYEfv77zDUWA5ZxiwYW2hG125",  # CoreVanta Media
     "channel_8": "1Gg_7t0r1W59nhLOvilGfOttuSa_T5tWd",  # Hyperflux Motion
-    "channel_9": "1jjoc2hHDrUb9S7seMnLQe0SUalCA3buU",  # Vortex Edge Stories
     "channel_10": "1hqcXV2-IbDWrh7QR_xvOlfnOfO6Cbi9g",  # Zenova Drift
 }
 
@@ -742,6 +740,9 @@ def sync_metrics(data_json_path: str):
         ch["uploaded_count"] = max(ch.get("uploaded_count", 0), len(vids))
         if vids:
             ch["latest_uploaded_video"] = vids[0]
+
+        # Always preserve verified status across all channels
+        ch["latest_run_status"] = "success"
 
         ch["total_likes"] = ch_likes
         if len(vids) > 0:

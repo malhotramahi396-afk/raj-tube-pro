@@ -7369,6 +7369,117 @@ body.sheet-open {
   overflow-y: auto;
 }
 
+/* ========================================================
+   DEDICATED FLEET SECURITY & NODE AUDIT TABLE
+   ======================================================== */
+.audit-table-container {
+  background: rgba(15, 23, 42, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  overflow-x: auto;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(12px);
+  margin-bottom: 32px;
+}
+
+.audit-fleet-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+  text-align: left;
+}
+
+.audit-fleet-table th {
+  background: rgba(10, 15, 30, 0.95);
+  color: #94a3b8;
+  font-weight: 600;
+  font-size: 11.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 14px 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  white-space: nowrap;
+}
+
+.audit-fleet-table td {
+  padding: 14px 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+  vertical-align: middle;
+  color: #e2e8f0;
+}
+
+.audit-table-row {
+  transition: background 0.2s ease;
+}
+
+.audit-table-row:hover {
+  background: rgba(56, 189, 248, 0.05);
+}
+
+.audit-table-row.row-has-error {
+  background: rgba(239, 68, 68, 0.08);
+}
+
+.audit-tbl-channel-meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 180px;
+}
+
+.audit-tbl-avatar {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid rgba(56, 189, 248, 0.4);
+}
+
+.audit-tbl-name {
+  font-size: 13.5px;
+  font-weight: 600;
+  color: #f8fafc;
+}
+
+.audit-tbl-handle {
+  font-size: 11px;
+  color: #94a3b8;
+}
+
+.tbl-isp-badge {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 12px;
+  color: #cbd5e1;
+  white-space: nowrap;
+}
+
+.tbl-loc-text {
+  font-size: 12.5px;
+  color: #cbd5e1;
+  white-space: nowrap;
+}
+
+.btn-tbl-probe {
+  background: rgba(56, 189, 248, 0.15);
+  color: #38bdf8;
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  padding: 5px 12px;
+  border-radius: 6px;
+  font-size: 11.5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.btn-tbl-probe:hover {
+  background: #38bdf8;
+  color: #0f172a;
+  box-shadow: 0 0 12px rgba(56, 189, 248, 0.4);
+}
+
 /* AUDIT CHANNEL GRID & CARDS */
 .audit-channel-grid {
   display: grid;

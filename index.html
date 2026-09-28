@@ -1112,13 +1112,29 @@
            <pre class="live-probe-output" id="live-probe-output"></pre>
          </div>
 
-         <!-- CHANNEL BY CHANNEL AUDIT TABLE / GRID -->
+         <!-- DEDICATED CHANNEL NODES & SECURITY AUDIT TABLE -->
          <div class="schedule-section-heading" style="margin-top:28px;">
-           <h2>Individual Channel Security &amp; IP Nodes</h2>
-           <span class="sub-muted">Real-time status of locked dedicated New York IP addresses, datacenters, and pre-flight shields</span>
+           <h2>Dedicated Channel Nodes &amp; Security Infrastructure</h2>
+           <span class="sub-muted">Verified New York dedicated static IP addresses, datacenters, and zero-drift security across all 8 active channels</span>
          </div>
-         <div class="audit-channel-grid" id="audit-channel-grid">
-           <!-- Populated dynamically via app.js -->
+         <div class="audit-table-container">
+           <table class="audit-fleet-table" id="audit-fleet-table">
+             <thead>
+               <tr>
+                 <th>Channel</th>
+                 <th>Dedicated Static IP</th>
+                 <th>Datacenter / Node</th>
+                 <th>Egress Location</th>
+                 <th>Pre-Flight Gate</th>
+                 <th>Drive Stock</th>
+                 <th>Pipeline Security</th>
+                 <th>Action</th>
+               </tr>
+             </thead>
+             <tbody id="audit-channel-table-body">
+               <!-- Populated dynamically via app.js -->
+             </tbody>
+           </table>
          </div>
        </section>
 

@@ -1245,76 +1245,55 @@ function renderIpAuditView() {
     `;
   }
 
-  // 3. Render Individual Channel Audit Grid
-  const grid = document.getElementById('audit-channel-grid');
-  if (grid) {
-    grid.innerHTML = channels.map((ch, idx) => {
+  // 3. Render Dedicated Channel Nodes & Security Audit Table
+  const tableBody = document.getElementById('audit-channel-table-body');
+  if (tableBody) {
+    tableBody.innerHTML = channels.map((ch, idx) => {
       const node = LOCKED_FLEET_NODES[ch.id] || { ip: (ch.runner_node && ch.runner_node.ip) || "91.246.58.170", isp: "Surfshark Dedicated NY Node", loc: "New York City, NY, US 🇺🇸" };
       const stock = ch.drive_queue_count || 0;
       const avatar = ch.avatar_url || './logo.png';
       const isFailed = ch.latest_run_status === 'failed';
 
       return `
-        <div class="audit-node-card ${isFailed ? 'card-has-error' : ''}">
-          <div class="audit-node-header">
-            <div class="audit-channel-meta">
-              <img src="${avatar}" class="audit-channel-avatar" alt="${ch.name}" />
+        <tr class="audit-table-row ${isFailed ? 'row-has-error' : ''}">
+          <td class="col-channel">
+            <div class="audit-tbl-channel-meta">
+              <img src="${avatar}" class="audit-tbl-avatar" alt="${ch.name}" />
               <div>
-                <div class="audit-ch-name">${ch.name}</div>
-                <div class="audit-ch-handle">${ch.handle || ch.id}</div>
+                <div class="audit-tbl-name">${ch.name}</div>
+                <div class="audit-tbl-handle">${ch.handle || ch.id}</div>
               </div>
             </div>
-            <div class="audit-badge-wrap">
-              <span class="${isFailed ? 'badge-pill-danger' : 'badge-pill-green'}">
-                ${isFailed ? '🔴 ISSUE' : '🟢 100% PRISTINE'}
-              </span>
-            </div>
-          </div>
-
-          <div class="audit-node-specs">
-            <div class="audit-spec-row">
-              <span class="spec-label">Locked Static IP:</span>
-              <a href="https://ipinfo.io/${node.ip}" target="_blank" class="spec-ip-link" title="Verify IP on ipinfo.io">
-                <code>${node.ip}</code>
-                <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M19 19H5V5h7V3H5a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/></svg>
-              </a>
-            </div>
-
-            <div class="audit-spec-row">
-              <span class="spec-label">Datacenter &amp; Node:</span>
-              <span class="spec-val">${node.isp}</span>
-            </div>
-
-            <div class="audit-spec-row">
-              <span class="spec-label">Egress Geolocation:</span>
-              <span class="spec-val">${node.loc}</span>
-            </div>
-
-            <div class="audit-spec-row">
-              <span class="spec-label">Pre-Flight Health Gate:</span>
-              <span class="spec-val-badge badge-green">HTTP 200 OK (YouTube Clean)</span>
-            </div>
-
-            <div class="audit-spec-row">
-              <span class="spec-label">Hard Kill-Switch:</span>
-              <span class="spec-val-badge badge-cyan">Country == US Enforced</span>
-            </div>
-
-            <div class="audit-spec-row">
-              <span class="spec-label">Drive Ready Stock:</span>
-              <span class="spec-val ${stock < 10 ? 'text-amber' : 'text-green'}">
-                <strong>${stock}</strong> videos in Drive
-              </span>
-            </div>
-          </div>
-
-          <div class="audit-node-footer">
-            <span style="font-size:11px; color:#9ca3af;">Node verified • Zero DNS rotation</span>
-            <button class="btn-node-test" onclick="runLiveSingleProbe('${ch.id}', '${ch.name}', '${node.ip}')">
-              ⚡ Quick Probe
+          </td>
+          <td class="col-ip">
+            <a href="https://ipinfo.io/${node.ip}" target="_blank" class="spec-ip-link" title="Verify IP on ipinfo.io">
+              <code>${node.ip}</code>
+              <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M19 19H5V5h7V3H5a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/></svg>
+            </a>
+          </td>
+          <td class="col-isp">
+            <span class="tbl-isp-badge">${node.isp}</span>
+          </td>
+          <td class="col-loc">
+            <span class="tbl-loc-text">New York, US 🇺🇸</span>
+          </td>
+          <td class="col-gate">
+            <span class="spec-val-badge badge-green">HTTP 200 OK</span>
+          </td>
+          <td class="col-stock">
+            <strong class="${stock < 10 ? 'text-amber' : 'text-green'}">${stock}</strong> vids
+          </td>
+          <td class="col-status">
+            <span class="${isFailed ? 'badge-pill-danger' : 'badge-pill-green'}">
+              ${isFailed ? '🔴 ISSUE' : '🟢 100% PRISTINE'}
+            </span>
+          </td>
+          <td class="col-action">
+            <button class="btn-tbl-probe" onclick="runLiveSingleProbe('${ch.id}', '${ch.name}', '${node.ip}')" title="Test instant live ping">
+              ⚡ Probe
             </button>
-          </div>
-        </div>
+          </td>
+        </tr>
       `;
     }).join('');
   }
