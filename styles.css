@@ -7037,6 +7037,134 @@ body.sheet-open {
   color: #ffffff;
 }
 
+/* ========================================================
+   TOP IP & FLEET SHIELD HERO BANNER (MAIN SCREEN AUDIT VIEW)
+   ======================================================== */
+.audit-hero-shield-card {
+  margin-bottom: 24px;
+  padding: 22px 26px;
+  background: linear-gradient(135deg, rgba(15, 23, 42, 0.85) 0%, rgba(17, 24, 39, 0.9) 100%);
+  border: 1px solid rgba(56, 189, 248, 0.35);
+  border-radius: 16px;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 0 25px rgba(56, 189, 248, 0.12);
+  backdrop-filter: blur(16px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.audit-hero-shield-card:hover {
+  border-color: rgba(56, 189, 248, 0.6);
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 0 35px rgba(56, 189, 248, 0.2);
+}
+
+.audit-hero-shield-left {
+  flex: 1;
+  min-width: 300px;
+}
+
+.audit-hero-title-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+  flex-wrap: wrap;
+}
+
+.audit-hero-title {
+  font-size: 16px;
+  font-weight: 800;
+  letter-spacing: 0.6px;
+  color: #38bdf8;
+  text-transform: uppercase;
+  text-shadow: 0 0 12px rgba(56, 189, 248, 0.4);
+}
+
+.audit-hero-desc {
+  font-size: 13px;
+  color: #94a3b8;
+  line-height: 1.5;
+  margin-bottom: 14px;
+}
+
+.audit-hero-metrics {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding-top: 8px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.hero-metric-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+}
+
+.hero-metric-label {
+  color: #64748b;
+  font-weight: 500;
+}
+
+.hero-metric-val {
+  color: #f1f5f9;
+  font-weight: 600;
+}
+
+.audit-hero-shield-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 14px;
+  min-width: 260px;
+}
+
+.hero-alert-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 6px 14px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.hero-alert-label {
+  font-size: 11.5px;
+  color: #94a3b8;
+  font-weight: 500;
+}
+
+.hero-action-buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .audit-hero-shield-card {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 16px;
+  }
+  .audit-hero-shield-right {
+    align-items: stretch;
+  }
+  .hero-action-buttons {
+    flex-direction: column;
+  }
+  .hero-action-buttons .btn-audit-action {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
 /* AUDIT 4-KPI SUMMARY GRID */
 .audit-kpi-grid {
   display: grid;

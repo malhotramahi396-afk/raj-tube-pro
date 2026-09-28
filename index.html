@@ -165,7 +165,7 @@
             <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
           </svg>
           <span class="nav-text">Upload Schedule</span>
-          <span class="nav-badge badge-green" id="sidebar-schedule-badge">9 ACTIVE</span>
+          <span class="nav-badge badge-green" id="sidebar-schedule-badge">8 ACTIVE</span>
         </button>
 
         <button class="nav-item" data-view="analytics">
@@ -200,41 +200,6 @@
           <span class="nav-badge" style="background: rgba(239, 68, 68, 0.2); color: #EF4444; font-weight: 700;">INSTANT</span>
         </button>
       </nav>
-
-      <!-- SIDEBAR IP & FLEET MONITOR BOX -->
-      <div class="sidebar-shield-box" id="sidebar-shield-box">
-        <div class="sidebar-shield-header">
-          <div class="sidebar-shield-title">
-            <span class="pulse-indicator-dot"></span>
-            <span>IP &amp; FLEET SHIELD</span>
-          </div>
-          <span class="badge-pill-green" style="font-size:10px; padding:2px 6px;">NY LOCKED</span>
-        </div>
-        <div class="sidebar-shield-desc">
-          8/8 Dedicated New York Nodes Active. Zero IP drift.
-        </div>
-        <div class="sidebar-shield-stats">
-          <div class="shield-stat-row">
-            <span>Egress Region:</span>
-            <span class="stat-highlight">New York, US 🇺🇸</span>
-          </div>
-          <div class="shield-stat-row">
-            <span>Active Alerts:</span>
-            <span id="sidebar-alert-count-pill" class="badge-pill-green">0 Issues</span>
-          </div>
-        </div>
-        <div class="sidebar-shield-actions">
-          <button class="btn-sidebar-shield primary" id="btn-sidebar-view-audit" title="Open Full IP & Fleet Audit">
-            🔍 View IP Audit
-          </button>
-          <button class="btn-sidebar-shield secondary" id="btn-sidebar-copy-logs" title="Copy Consolidated Diagnostic Log for AI Support">
-            📋 Copy Logs
-          </button>
-          <button class="btn-sidebar-shield subtle" id="btn-sidebar-clear-alerts" title="Clear Active Alerts">
-            🧹 Clear Alerts
-          </button>
-        </div>
-      </div>
     </aside>
 
     <!-- MAIN STUDIO WORKSPACE -->
@@ -1025,17 +990,52 @@
                Audited dedicated New York nodes, YouTube pre-flight safety shields, and zero DNS rotation across all 8 active channels.
              </p>
            </div>
-           <div class="audit-header-actions">
-             <button class="btn-audit-action primary" id="btn-run-live-audit" onclick="runLiveFleetProbe()">
-               <span class="btn-spinner" id="audit-spinner" style="display:none;"></span>
-               <span>⚡ Run Live Fleet Probe</span>
-             </button>
-             <button class="btn-audit-action secondary" id="btn-copy-audit-report" onclick="copyConsolidatedDiagnosticReport()">
-               <span>📋 Copy Audit Report</span>
-             </button>
-             <button class="btn-audit-action danger-subtle" id="btn-audit-clear-alerts" onclick="clearAllAlerts()">
-               <span>🧹 Clear Alerts</span>
-             </button>
+         </div>
+
+         <!-- TOP IP & FLEET SHIELD HERO BANNER (Full Main Screen Display) -->
+         <div class="audit-hero-shield-card">
+           <div class="audit-hero-shield-left">
+             <div class="audit-hero-title-row">
+               <span class="pulse-indicator-dot"></span>
+               <span class="audit-hero-title">IP &amp; FLEET SHIELD</span>
+               <span class="badge-pill-green" style="font-size:11px; padding:3px 8px;">NY LOCKED</span>
+               <span class="badge-pill-purple" style="font-size:11px; padding:3px 8px;">ZERO IP DRIFT</span>
+             </div>
+             <div class="audit-hero-desc">
+               8/8 Dedicated New York Nodes Active. Hardcoded Numeric OpenVPN Gateways. Country == US Enforced.
+             </div>
+             <div class="audit-hero-metrics">
+               <div class="hero-metric-item">
+                 <span class="hero-metric-label">Egress Region:</span>
+                 <span class="hero-metric-val">New York City, US 🇺🇸</span>
+               </div>
+               <div class="hero-metric-item">
+                 <span class="hero-metric-label">Gateways / ISPs:</span>
+                 <span class="hero-metric-val">Clouvider • Datacamp • M247</span>
+               </div>
+               <div class="hero-metric-item">
+                 <span class="hero-metric-label">Pre-Flight Safety:</span>
+                 <span class="hero-metric-val text-green">HTTP 200/301 Clean Egress</span>
+               </div>
+             </div>
+           </div>
+           <div class="audit-hero-shield-right">
+             <div class="hero-alert-box">
+               <span class="hero-alert-label">Active Alerts:</span>
+               <span id="main-audit-alert-count-pill" class="badge-pill-green">0 Issues</span>
+             </div>
+             <div class="hero-action-buttons">
+               <button class="btn-audit-action primary" id="btn-run-live-audit" onclick="runLiveFleetProbe()">
+                 <span class="btn-spinner" id="audit-spinner" style="display:none;"></span>
+                 <span>⚡ Run Live Fleet Probe</span>
+               </button>
+               <button class="btn-audit-action secondary" id="btn-copy-audit-report" onclick="copyConsolidatedDiagnosticReport()" title="Copy Consolidated Diagnostic Log for AI Support">
+                 <span>📋 Copy Logs</span>
+               </button>
+               <button class="btn-audit-action danger-subtle" id="btn-audit-clear-alerts" onclick="clearAllAlerts()" title="Clear Active Alerts">
+                 <span>🧹 Clear Alerts</span>
+               </button>
+             </div>
            </div>
          </div>
 
