@@ -7727,3 +7727,58 @@ body.sheet-open {
   color: #cbd5e1;
   cursor: pointer;
 }
+
+
+/* Responsive Mobile-First Table Styles for IP Audit */
+@media (max-width: 768px) {
+  .audit-table-container {
+    border-radius: 12px;
+    margin-bottom: 20px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .audit-fleet-table {
+    width: 100%;
+    min-width: 100%;
+  }
+  .audit-fleet-table th,
+  .audit-fleet-table td {
+    padding: 10px 8px;
+    font-size: 12px;
+  }
+  .audit-tbl-channel-meta {
+    min-width: unset;
+    gap: 8px;
+  }
+  .audit-tbl-avatar {
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+  }
+  .audit-tbl-name {
+    font-size: 13px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 110px;
+  }
+  .audit-tbl-handle {
+    display: none; /* Hide handle on mobile for clean, crisp layout */
+  }
+  .spec-ip-row {
+    gap: 4px;
+  }
+  .spec-ip-link {
+    font-size: 11px;
+    padding: 3px 6px;
+  }
+  .btn-copy-ip-mini {
+    padding: 3px 5px;
+    font-size: 10px;
+  }
+  .btn-tbl-probe,
+  .btn-tbl-fix {
+    padding: 4px 7px;
+    font-size: 10.5px;
+  }
+}

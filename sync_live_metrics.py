@@ -749,6 +749,13 @@ def sync_metrics(data_json_path: str):
             ch_vids_views = sum(v.get("views", 0) for v in vids)
             ch["avg_views_per_video"] = round(ch_vids_views / len(vids))
 
+        # Dynamic watch hours calculation for Shorts (19.2s avg duration)
+        ch_views = ch.get("total_views", 0)
+        ch_wh = round(ch_views * (19.2 / 3600.0), 1)
+        if "analytics" not in ch or not isinstance(ch["analytics"], dict):
+            ch["analytics"] = {}
+        ch["analytics"]["watch_time_hours"] = ch_wh
+
         total_network_subs += ch.get("subscribers", 0)
         total_network_views += ch.get("total_views", 0)
         total_network_likes += ch_likes
@@ -760,6 +767,9 @@ def sync_metrics(data_json_path: str):
         data["summary"]["total_views"] = total_network_views
         data["summary"]["total_likes"] = total_network_likes
         data["summary"]["total_uploaded"] = total_network_vids
+        if "analytics" not in data["summary"] or not isinstance(data["summary"]["analytics"], dict):
+            data["summary"]["analytics"] = {}
+        data["summary"]["analytics"]["watch_time_hours"] = round(sum(c.get("analytics", {}).get("watch_time_hours", 0) for c in channels), 1)
         if len(channels) > 0:
             data["summary"]["avg_views_per_channel"] = round(total_network_views / len(channels))
 

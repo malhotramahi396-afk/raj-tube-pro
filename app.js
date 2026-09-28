@@ -855,17 +855,17 @@ function renderDashboard(channel) {
   // Dynamic Channel / Fleet Watch Time Calculation
   let channelWatchHours = 0;
   if (channel) {
-    if (channel.analytics && channel.analytics.watch_time_hours !== undefined && channel.analytics.watch_time_hours !== null) {
+    if (channel.analytics && channel.analytics.watch_time_hours) {
       channelWatchHours = channel.analytics.watch_time_hours;
-    } else if (channel.id === 'channel_1') {
-      channelWatchHours = 447.7;
     } else {
-      channelWatchHours = Math.round((channel.total_views || 0) * 15 / 3600 * 10) / 10;
+      channelWatchHours = Math.round((channel.total_views || 0) * (19.2 / 3600.0) * 10) / 10;
     }
   } else if (globalData && globalData.summary && globalData.summary.analytics && globalData.summary.analytics.watch_time_hours) {
     channelWatchHours = globalData.summary.analytics.watch_time_hours;
+  } else if (globalData && Array.isArray(globalData.channels)) {
+    channelWatchHours = Math.round(globalData.channels.reduce((acc, c) => acc + ((c.analytics && c.analytics.watch_time_hours) || ((c.total_views || 0) * 19.2 / 3600.0)), 0) * 10) / 10;
   } else {
-    channelWatchHours = 1865.9;
+    channelWatchHours = 4527.9;
   }
 
   function formatWatchTimeDisplay(hours) {
@@ -1240,37 +1240,14 @@ function renderIpAuditView() {
               <button class="btn-copy-ip-mini" onclick="copyIpToClipboard('${node.ip}', event)" title="Copy IP to clipboard">📋</button>
             </div>
           </td>
-          <td class="col-isp">
-            <div>
-              <div style="font-weight:600; color:#f1f5f9; font-size:12.5px;">${node.isp}</div>
-              <div style="margin-top:3px;">
-                <span class="badge-asn">${node.asn || 'AS-GATEWAY'}</span>
-                <span class="badge-loc-tag">🇺🇸 NYC</span>
-              </div>
-            </div>
-          </td>
-          <td class="col-slot">
-            <div class="col-slot-timing">
-              <span class="slot-time-text">${slotText}</span>
-              <span class="slot-sub-text">${slotSub}</span>
-            </div>
-          </td>
-          <td class="col-stock">
-            <span class="${stock >= 10 ? 'badge-pill-green' : 'badge-pill-amber'}" style="font-size:11.5px; padding:3px 8px;">
-              📦 <strong>${stock}</strong> vids
-            </span>
-          </td>
-          <td class="col-gate">
-            <span class="badge-pill-cyan" style="font-size:11px; padding:3px 8px;">HTTP 200 OK</span>
-          </td>
           <td class="col-status">
             <span class="${isFailed ? 'badge-pill-danger' : 'badge-pill-green'}" style="font-size:11px; padding:3px 8px;">
               ${isFailed ? '🔴 ISSUE' : '🟢 100% PRISTINE'}
             </span>
           </td>
-          <td class="col-action">
-            <div style="display:flex; gap:6px; align-items:center;">
-              <button class="btn-tbl-probe" onclick="runLiveSingleProbe('${ch.id}', '${ch.name.replace(/'/g, "\\'")}', '${node.ip}')" title="Test instant live ping">
+          <td class="col-action" style="text-align:right;">
+            <div style="display:flex; gap:6px; align-items:center; justify-content:flex-end;">
+              <button class="btn-tbl-probe" onclick="runLiveSingleProbe('${ch.id}', '${ch.name.replace(/'/g, "\'")}', '${node.ip}')" title="Test instant live ping">
                 ⚡ Probe
               </button>
               <button class="btn-tbl-fix" onclick="openQuickFixModal('${ch.id}')" title="Emergency Auto-Fix & Cloud Operations">
@@ -1942,13 +1919,13 @@ function renderAnalyticsStats(channel) {
     subs = channel.subscribers;
     watchHours = (channel.analytics && channel.analytics.watch_time_hours !== undefined)
       ? channel.analytics.watch_time_hours
-      : (channel.id === 'channel_1' ? 447.7 : Math.round((views || 0) * 15 / 3600 * 10) / 10);
+      : Math.round((views || 0) * 19.2 / 3600 * 10) / 10;
   } else if (globalData && globalData.summary) {
     views = globalData.summary.total_views;
     subs = globalData.summary.total_subscribers;
     watchHours = (globalData.summary.analytics && globalData.summary.analytics.watch_time_hours)
       ? globalData.summary.analytics.watch_time_hours
-      : 1865.9;
+      : (globalData.channels ? Math.round(globalData.channels.reduce((acc, c) => acc + ((c.analytics && c.analytics.watch_time_hours) || ((c.total_views || 0) * 19.2 / 3600.0)), 0) * 10) / 10 : 4522.0);
   }
 
   const viewsChip = document.getElementById('analytics-views-chip');
