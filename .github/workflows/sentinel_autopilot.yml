@@ -1,0 +1,56 @@
+name: 24/7 Autonomous Sentinel Watchdog & Auto-Healer
+
+on:
+  schedule:
+    # Runs automatically every 60 minutes 24/7 on complete autopilot
+    - cron: '0 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write
+
+jobs:
+  sentinel-watchdog:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Dependencies
+        run: |
+          pip install google-api-python-client google-auth-httplib2 google-auth-oauthlib requests pyyaml
+
+      - name: Execute Autonomous Sentinel Audit & Auto-Heal
+        env:
+          YOUTUBE_CLIENT_SECRET_JSON: ${{ secrets.YOUTUBE_CLIENT_SECRET_JSON }}
+          YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
+          CHANNEL_1_REFRESH_TOKEN: ${{ secrets.CHANNEL_1_REFRESH_TOKEN }}
+          CHANNEL_2_REFRESH_TOKEN: ${{ secrets.CHANNEL_2_REFRESH_TOKEN }}
+          CHANNEL_3_REFRESH_TOKEN: ${{ secrets.CHANNEL_3_REFRESH_TOKEN }}
+          CHANNEL_4_REFRESH_TOKEN: ${{ secrets.CHANNEL_4_REFRESH_TOKEN }}
+          CHANNEL_5_REFRESH_TOKEN: ${{ secrets.CHANNEL_5_REFRESH_TOKEN }}
+          CHANNEL_6_REFRESH_TOKEN: ${{ secrets.CHANNEL_6_REFRESH_TOKEN }}
+          CHANNEL_8_REFRESH_TOKEN: ${{ secrets.CHANNEL_8_REFRESH_TOKEN }}
+          CHANNEL_10_REFRESH_TOKEN: ${{ secrets.CHANNEL_10_REFRESH_TOKEN }}
+          GEMINI_API_KEY_1: ${{ secrets.GEMINI_API_KEY_1 }}
+          GEMINI_API_KEY_2: ${{ secrets.GEMINI_API_KEY_2 }}
+          GEMINI_API_KEY_3: ${{ secrets.GEMINI_API_KEY_3 }}
+          GEMINI_API_KEY_4: ${{ secrets.GEMINI_API_KEY_4 }}
+          GDRIVE_SERVICE_ACCOUNT_JSON: ${{ secrets.GDRIVE_SERVICE_ACCOUNT_JSON }}
+          GH_PAT: ${{ secrets.GH_PAT }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python scripts/autonomous_sentinel.py
+
+      - name: Commit and Push Auto-Healed State to GitHub Pages
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add data.json scripts/
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-heal & sync live telemetry [Sentinel Watchdog] [skip ci]" && git push)
