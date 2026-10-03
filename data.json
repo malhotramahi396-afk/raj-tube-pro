@@ -1,13 +1,13 @@
 {
   "app_name": "Raj Tube Pro",
   "version": "6.1.0",
-  "timestamp": "2026-10-03T02:52:49.361951+00:00",
+  "timestamp": "2026-10-03T03:22:20.045668+00:00",
   "schedule": {
     "next_slot_iso": "2026-10-03T08:00:00+00:00",
-    "seconds_remaining": 18430,
-    "formatted_countdown": "05h 07m 10s",
+    "seconds_remaining": 16659,
+    "formatted_countdown": "04h 37m 39s",
     "slot_label": "01:30 PM IST (Lunch Break Window)",
-    "now_ist": "03 Oct, 08:22 AM IST"
+    "now_ist": "03 Oct, 08:52 AM IST"
   },
   "summary": {
     "total_channels": 9,
@@ -2724,7 +2724,7 @@
       "subscribers": 797,
       "total_views": 1158698,
       "channel_total_videos": 48,
-      "avg_views_per_video": 24363,
+      "avg_views_per_video": 24364,
       "engagement_rate": 0.8,
       "total_likes": 6302,
       "analytics": {
@@ -3398,7 +3398,7 @@
           "title": "One Table One Belt And Huge Pressure #SlapFight #PowerSlap #Championship #CombatSports #FYP.",
           "uploaded_at": "2026-09-15T21:09:27Z",
           "thumbnail": "https://i.ytimg.com/vi/74d1M_ceEM0/mqdefault.jpg",
-          "views": 560963,
+          "views": 561021,
           "likes": 1994,
           "comments": 20,
           "upload_status": "processed",
@@ -6452,7 +6452,7 @@
           "studio_url": "https://studio.youtube.com/video/xMgBajjyt30/edit",
           "uploaded_at": "2026-10-02T14:09:51Z",
           "thumbnail": "https://i.ytimg.com/vi/xMgBajjyt30/mqdefault.jpg",
-          "views": 236,
+          "views": 246,
           "likes": 2,
           "comments": 0,
           "is_clean": true,
@@ -8771,7 +8771,7 @@
       "avatar_url": "https://yt3.ggpht.com/c2et41jvboHRktLNJH-bmzbYclnu_SeQYjockP52SQB3xQtmw6jPskOSLrGMwcb7UiN4i4QybOo=s240-c-k-c0x00ffffff-no-rj",
       "subscribers": 20,
       "total_views": 34657,
-      "channel_total_videos": 61,
+      "channel_total_videos": 62,
       "avg_views_per_video": 559,
       "engagement_rate": 0.8,
       "total_likes": 292,
