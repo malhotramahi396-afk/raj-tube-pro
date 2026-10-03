@@ -1,20 +1,20 @@
 {
   "app_name": "Raj Tube Pro",
   "version": "6.1.0",
-  "timestamp": "2026-10-03T05:14:35.415620+00:00",
+  "timestamp": "2026-10-03T05:48:41.069514+00:00",
   "schedule": {
     "next_slot_iso": "2026-10-03T08:00:00+00:00",
-    "seconds_remaining": 9924,
-    "formatted_countdown": "02h 45m 24s",
+    "seconds_remaining": 7878,
+    "formatted_countdown": "02h 11m 18s",
     "slot_label": "01:30 PM IST (Lunch Break Window)",
-    "now_ist": "03 Oct, 10:44 AM IST"
+    "now_ist": "03 Oct, 11:18 AM IST"
   },
   "summary": {
     "total_channels": 9,
     "total_uploaded": 407,
     "total_in_queue": 671,
     "total_subscribers": 1058,
-    "total_views": 1422444,
+    "total_views": 1424537,
     "total_likes": 8758,
     "network_engagement": 0.8,
     "total_runway_days": 58.5,
@@ -31,7 +31,7 @@
       "uploaded_at": "2026-09-11T16:04:35Z"
     },
     "analytics": {
-      "watch_time_hours": 7586.1,
+      "watch_time_hours": 7597.4,
       "avg_view_duration": "0:24",
       "top_countries": [
         {
@@ -385,7 +385,7 @@
         }
       }
     ],
-    "avg_views_per_channel": 177806
+    "avg_views_per_channel": 178067
   },
   "issues": [],
   "channels": [
@@ -2724,7 +2724,7 @@
       "subscribers": 796,
       "total_views": 1158698,
       "channel_total_videos": 48,
-      "avg_views_per_video": 24378,
+      "avg_views_per_video": 24380,
       "engagement_rate": 0.8,
       "total_likes": 6303,
       "analytics": {
@@ -2915,7 +2915,7 @@
         "studio_url": "https://studio.youtube.com/video/OR5RKJ3_Ugs/edit",
         "uploaded_at": "2026-10-02T13:08:32Z",
         "thumbnail": "https://i.ytimg.com/vi/OR5RKJ3_Ugs/mqdefault.jpg",
-        "views": 2816,
+        "views": 2806,
         "likes": 24,
         "comments": 0,
         "is_clean": true,
@@ -2932,7 +2932,7 @@
           "studio_url": "https://studio.youtube.com/video/OR5RKJ3_Ugs/edit",
           "uploaded_at": "2026-10-02T13:08:32Z",
           "thumbnail": "https://i.ytimg.com/vi/OR5RKJ3_Ugs/mqdefault.jpg",
-          "views": 2816,
+          "views": 2806,
           "likes": 24,
           "comments": 0,
           "is_clean": true,
@@ -2948,7 +2948,7 @@
           "studio_url": "https://studio.youtube.com/video/RTkezAQzt08/edit",
           "uploaded_at": "2026-10-02T08:06:59Z",
           "thumbnail": "https://i.ytimg.com/vi/RTkezAQzt08/mqdefault.jpg",
-          "views": 5074,
+          "views": 5082,
           "likes": 77,
           "comments": 0,
           "is_clean": true,
@@ -2964,7 +2964,7 @@
           "studio_url": "https://studio.youtube.com/video/gNhaBDHW-4E/edit",
           "uploaded_at": "2026-10-01T13:08:33Z",
           "thumbnail": "https://i.ytimg.com/vi/gNhaBDHW-4E/mqdefault.jpg",
-          "views": 465,
+          "views": 448,
           "likes": 0,
           "comments": 0,
           "is_clean": true,
@@ -2980,7 +2980,7 @@
           "studio_url": "https://studio.youtube.com/video/jj3munU_aY0/edit",
           "uploaded_at": "2026-10-01T08:07:37Z",
           "thumbnail": "https://i.ytimg.com/vi/jj3munU_aY0/mqdefault.jpg",
-          "views": 496,
+          "views": 505,
           "likes": 6,
           "comments": 0,
           "is_clean": true,
@@ -2996,8 +2996,8 @@
           "studio_url": "https://studio.youtube.com/video/pP3d4Cai5m8/edit",
           "uploaded_at": "2026-09-30T13:09:44Z",
           "thumbnail": "https://i.ytimg.com/vi/pP3d4Cai5m8/mqdefault.jpg",
-          "views": 30557,
-          "likes": 391,
+          "views": 30575,
+          "likes": 390,
           "comments": 4,
           "is_clean": true,
           "health_badge": "100% CLEAN",
@@ -3398,8 +3398,8 @@
           "title": "One Table One Belt And Huge Pressure #SlapFight #PowerSlap #Championship #CombatSports #FYP.",
           "uploaded_at": "2026-09-15T21:09:27Z",
           "thumbnail": "https://i.ytimg.com/vi/74d1M_ceEM0/mqdefault.jpg",
-          "views": 561278,
-          "likes": 1996,
+          "views": 561367,
+          "likes": 1997,
           "comments": 20,
           "upload_status": "processed",
           "privacy_status": "public",
@@ -5078,13 +5078,13 @@
       "color": "#8B5CF6",
       "avatar_url": "https://yt3.ggpht.com/WKefM8i0bji48M_e159k6q0080b5zNwYExax_QloW7H3XguFARUF-SuE62a8rdPQJXvtTXxbJQ=s240-c-k-c0x00ffffff-no-rj",
       "subscribers": 45,
-      "total_views": 39834,
+      "total_views": 39836,
       "channel_total_videos": 47,
       "avg_views_per_video": 848,
       "engagement_rate": 0.8,
       "total_likes": 315,
       "analytics": {
-        "watch_time_hours": 212.4,
+        "watch_time_hours": 212.5,
         "avg_view_duration": "0:24",
         "top_countries": [
           {
@@ -6226,13 +6226,13 @@
       "color": "#EC4899",
       "avatar_url": "https://yt3.ggpht.com/pqIrk9GBtAR6cdyBH5C_kHNWA1jlu4VT9ZLKxdYTFW6IvVQLWbtFO3OUxrSV1Jm1SR0JAyTrAA=s240-c-k-c0x00ffffff-no-rj",
       "subscribers": 30,
-      "total_views": 43002,
+      "total_views": 45093,
       "channel_total_videos": 45,
       "avg_views_per_video": 1035,
       "engagement_rate": 1.0,
       "total_likes": 499,
       "analytics": {
-        "watch_time_hours": 229.3,
+        "watch_time_hours": 240.5,
         "avg_view_duration": "0:24",
         "top_countries": [
           {
