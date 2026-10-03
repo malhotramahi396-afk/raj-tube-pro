@@ -1,21 +1,21 @@
 {
   "app_name": "Raj Tube Pro",
   "version": "6.1.0",
-  "timestamp": "2026-10-03T04:17:13.157544+00:00",
+  "timestamp": "2026-10-03T04:45:35.231416+00:00",
   "schedule": {
     "next_slot_iso": "2026-10-03T08:00:00+00:00",
-    "seconds_remaining": 13366,
-    "formatted_countdown": "03h 42m 46s",
+    "seconds_remaining": 11664,
+    "formatted_countdown": "03h 14m 24s",
     "slot_label": "01:30 PM IST (Lunch Break Window)",
-    "now_ist": "03 Oct, 09:47 AM IST"
+    "now_ist": "03 Oct, 10:15 AM IST"
   },
   "summary": {
     "total_channels": 9,
     "total_uploaded": 407,
     "total_in_queue": 671,
     "total_subscribers": 1059,
-    "total_views": 1422444,
-    "total_likes": 8758,
+    "total_views": 1424537,
+    "total_likes": 8759,
     "network_engagement": 0.8,
     "total_runway_days": 58.5,
     "system_health": "All Systems Operational",
@@ -31,7 +31,7 @@
       "uploaded_at": "2026-09-11T16:04:35Z"
     },
     "analytics": {
-      "watch_time_hours": 7586.1,
+      "watch_time_hours": 7597.4,
       "avg_view_duration": "0:24",
       "top_countries": [
         {
@@ -385,7 +385,7 @@
         }
       }
     ],
-    "avg_views_per_channel": 177806
+    "avg_views_per_channel": 178067
   },
   "issues": [],
   "channels": [
@@ -2724,9 +2724,9 @@
       "subscribers": 797,
       "total_views": 1158698,
       "channel_total_videos": 48,
-      "avg_views_per_video": 24371,
+      "avg_views_per_video": 24375,
       "engagement_rate": 0.8,
-      "total_likes": 6302,
+      "total_likes": 6303,
       "analytics": {
         "watch_time_hours": 6179.7,
         "avg_view_duration": "0:24",
@@ -2915,7 +2915,7 @@
         "studio_url": "https://studio.youtube.com/video/OR5RKJ3_Ugs/edit",
         "uploaded_at": "2026-10-02T13:08:32Z",
         "thumbnail": "https://i.ytimg.com/vi/OR5RKJ3_Ugs/mqdefault.jpg",
-        "views": 2740,
+        "views": 2799,
         "likes": 24,
         "comments": 0,
         "is_clean": true,
@@ -2932,7 +2932,7 @@
           "studio_url": "https://studio.youtube.com/video/OR5RKJ3_Ugs/edit",
           "uploaded_at": "2026-10-02T13:08:32Z",
           "thumbnail": "https://i.ytimg.com/vi/OR5RKJ3_Ugs/mqdefault.jpg",
-          "views": 2740,
+          "views": 2799,
           "likes": 24,
           "comments": 0,
           "is_clean": true,
@@ -2948,7 +2948,7 @@
           "studio_url": "https://studio.youtube.com/video/RTkezAQzt08/edit",
           "uploaded_at": "2026-10-02T08:06:59Z",
           "thumbnail": "https://i.ytimg.com/vi/RTkezAQzt08/mqdefault.jpg",
-          "views": 4981,
+          "views": 5027,
           "likes": 79,
           "comments": 0,
           "is_clean": true,
@@ -2964,7 +2964,7 @@
           "studio_url": "https://studio.youtube.com/video/gNhaBDHW-4E/edit",
           "uploaded_at": "2026-10-01T13:08:33Z",
           "thumbnail": "https://i.ytimg.com/vi/gNhaBDHW-4E/mqdefault.jpg",
-          "views": 450,
+          "views": 449,
           "likes": 0,
           "comments": 0,
           "is_clean": true,
@@ -3076,7 +3076,7 @@
           "studio_url": "https://studio.youtube.com/video/r_RTNW2Moio/edit",
           "uploaded_at": "2026-09-26T13:03:56Z",
           "thumbnail": "https://i.ytimg.com/vi/r_RTNW2Moio/mqdefault.jpg",
-          "views": 25166,
+          "views": 25171,
           "likes": 209,
           "comments": 0,
           "is_clean": true,
@@ -3156,7 +3156,7 @@
           "studio_url": "https://studio.youtube.com/video/DQyu5bBX5nY/edit",
           "uploaded_at": "2026-09-24T08:04:18Z",
           "thumbnail": "https://i.ytimg.com/vi/DQyu5bBX5nY/mqdefault.jpg",
-          "views": 141374,
+          "views": 141381,
           "likes": 366,
           "comments": 0,
           "is_clean": true,
@@ -3398,8 +3398,8 @@
           "title": "One Table One Belt And Huge Pressure #SlapFight #PowerSlap #Championship #CombatSports #FYP.",
           "uploaded_at": "2026-09-15T21:09:27Z",
           "thumbnail": "https://i.ytimg.com/vi/74d1M_ceEM0/mqdefault.jpg",
-          "views": 561141,
-          "likes": 1994,
+          "views": 561216,
+          "likes": 1995,
           "comments": 20,
           "upload_status": "processed",
           "privacy_status": "public",
@@ -5078,13 +5078,13 @@
       "color": "#8B5CF6",
       "avatar_url": "https://yt3.ggpht.com/WKefM8i0bji48M_e159k6q0080b5zNwYExax_QloW7H3XguFARUF-SuE62a8rdPQJXvtTXxbJQ=s240-c-k-c0x00ffffff-no-rj",
       "subscribers": 45,
-      "total_views": 39834,
+      "total_views": 39836,
       "channel_total_videos": 47,
       "avg_views_per_video": 848,
       "engagement_rate": 0.8,
       "total_likes": 315,
       "analytics": {
-        "watch_time_hours": 212.4,
+        "watch_time_hours": 212.5,
         "avg_view_duration": "0:24",
         "top_countries": [
           {
@@ -6226,13 +6226,13 @@
       "color": "#EC4899",
       "avatar_url": "https://yt3.ggpht.com/pqIrk9GBtAR6cdyBH5C_kHNWA1jlu4VT9ZLKxdYTFW6IvVQLWbtFO3OUxrSV1Jm1SR0JAyTrAA=s240-c-k-c0x00ffffff-no-rj",
       "subscribers": 30,
-      "total_views": 43002,
+      "total_views": 45093,
       "channel_total_videos": 45,
-      "avg_views_per_video": 1036,
+      "avg_views_per_video": 1035,
       "engagement_rate": 1.0,
       "total_likes": 500,
       "analytics": {
-        "watch_time_hours": 229.3,
+        "watch_time_hours": 240.5,
         "avg_view_duration": "0:24",
         "top_countries": [
           {
@@ -6419,7 +6419,7 @@
         "studio_url": "https://studio.youtube.com/video/nMf5bsD6rN4/edit",
         "uploaded_at": "2026-10-02T20:58:24Z",
         "thumbnail": "https://i.ytimg.com/vi/nMf5bsD6rN4/mqdefault.jpg",
-        "views": 1219,
+        "views": 1214,
         "likes": 12,
         "comments": 0,
         "is_clean": true,
@@ -6436,7 +6436,7 @@
           "studio_url": "https://studio.youtube.com/video/nMf5bsD6rN4/edit",
           "uploaded_at": "2026-10-02T20:58:24Z",
           "thumbnail": "https://i.ytimg.com/vi/nMf5bsD6rN4/mqdefault.jpg",
-          "views": 1219,
+          "views": 1214,
           "likes": 12,
           "comments": 0,
           "is_clean": true,
@@ -6516,7 +6516,7 @@
           "studio_url": "https://studio.youtube.com/video/kIlWKT8KGns/edit",
           "uploaded_at": "2026-09-30T14:14:03Z",
           "thumbnail": "https://i.ytimg.com/vi/kIlWKT8KGns/mqdefault.jpg",
-          "views": 1331,
+          "views": 1329,
           "likes": 18,
           "comments": 1,
           "is_clean": true,
@@ -9716,7 +9716,7 @@
           "title": "Behind The Biggest Scene Of The Film Behind Closed Doors #BehindTheScenes #Hollywood #MovieMagic",
           "uploaded_at": "2026-08-18T20:04:58Z",
           "thumbnail": "https://i.ytimg.com/vi/hTkxZuO-HRo/mqdefault.jpg",
-          "views": 1381,
+          "views": 1382,
           "likes": 20,
           "comments": 0,
           "upload_status": "processed",
