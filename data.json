@@ -1,20 +1,20 @@
 {
   "app_name": "Raj Tube Pro",
   "version": "6.1.0",
-  "timestamp": "2026-10-05T06:56:16.176910+00:00",
+  "timestamp": "2026-10-05T07:21:35.504498+00:00",
   "schedule": {
     "next_slot_iso": "2026-10-05T08:00:00+00:00",
-    "seconds_remaining": 3823,
-    "formatted_countdown": "01h 03m 43s",
+    "seconds_remaining": 2304,
+    "formatted_countdown": "00h 38m 24s",
     "slot_label": "01:30 PM IST (Lunch Break Window)",
-    "now_ist": "05 Oct, 12:26 PM IST"
+    "now_ist": "05 Oct, 12:51 PM IST"
   },
   "summary": {
     "total_channels": 9,
     "total_uploaded": 437,
     "total_in_queue": 641,
     "total_subscribers": 1064,
-    "total_views": 1449838,
+    "total_views": 1449556,
     "total_likes": 8912,
     "network_engagement": 0.8,
     "total_runway_days": 58.5,
@@ -31,7 +31,7 @@
       "uploaded_at": "2026-09-11T16:04:35Z"
     },
     "analytics": {
-      "watch_time_hours": 7732.4,
+      "watch_time_hours": 7731.0,
       "avg_view_duration": "0:24",
       "top_countries": [
         {
@@ -385,7 +385,7 @@
         }
       }
     ],
-    "avg_views_per_channel": 181230
+    "avg_views_per_channel": 181194
   },
   "issues": [],
   "channels": [
@@ -400,7 +400,7 @@
       "color": "#10B981",
       "avatar_url": "https://yt3.ggpht.com/R5wyufkApz5fijH1a4mek8n6CM9y64QklZgfgjuGI-SOwbTIBjEFmmKot6aBnYkVRwOpq965=s240-c-k-c0x00ffffff-no-rj",
       "subscribers": 118,
-      "total_views": 106302,
+      "total_views": 106306,
       "channel_total_videos": 45,
       "avg_views_per_video": 2362,
       "engagement_rate": 0.8,
@@ -532,7 +532,7 @@
         ],
         "peak_hours": "7:00 PM – 11:30 PM IST (Prime Wildlife Audience Peak)",
         "verified_source": "YouTube Analytics API (100% Genuine)",
-        "watch_time_hours": 566.9,
+        "watch_time_hours": 567.0,
         "avg_view_duration": "0:16"
       },
       "health": {
@@ -1474,7 +1474,7 @@
       "color": "#10B981",
       "avatar_url": "https://yt3.ggpht.com/Si65r7FeRpZibwEpw60Lck09w5Qi4YjdBhvfyPC914DY68sKk7vkLYv3WdR1ByZGkg_J4FAK=s240-c-k-c0x00ffffff-no-rj",
       "subscribers": 8,
-      "total_views": 10130,
+      "total_views": 10116,
       "channel_total_videos": 58,
       "avg_views_per_video": 175,
       "engagement_rate": 0.8,
@@ -3460,7 +3460,7 @@
           "studio_url": "https://studio.youtube.com/video/57rwnWsFfMw/edit",
           "uploaded_at": "2026-09-18T14:09:16.211199+00:00",
           "thumbnail": "https://i.ytimg.com/vi/57rwnWsFfMw/mqdefault.jpg",
-          "views": 41385,
+          "views": 41386,
           "likes": 208,
           "comments": 1,
           "is_clean": true,
@@ -6514,13 +6514,13 @@
       "color": "#EC4899",
       "avatar_url": "https://yt3.ggpht.com/pqIrk9GBtAR6cdyBH5C_kHNWA1jlu4VT9ZLKxdYTFW6IvVQLWbtFO3OUxrSV1Jm1SR0JAyTrAA=s240-c-k-c0x00ffffff-no-rj",
       "subscribers": 30,
-      "total_views": 48685,
+      "total_views": 48414,
       "channel_total_videos": 49,
       "avg_views_per_video": 1019,
       "engagement_rate": 1.0,
       "total_likes": 517,
       "analytics": {
-        "watch_time_hours": 259.7,
+        "watch_time_hours": 258.2,
         "avg_view_duration": "0:24",
         "top_countries": [
           {
@@ -7682,7 +7682,7 @@
       "color": "#3B82F6",
       "avatar_url": "https://yt3.ggpht.com/vRLBXNb4fgjWzDfLf8ltniGaD2BlvZ1PAWugGoZaJx1nCdJ92LubM-8vy7hIgxHlCicFwpt2=s240-c-k-c0x00ffffff-no-rj",
       "subscribers": 32,
-      "total_views": 18056,
+      "total_views": 18055,
       "channel_total_videos": 63,
       "avg_views_per_video": 282,
       "engagement_rate": 1.1,
