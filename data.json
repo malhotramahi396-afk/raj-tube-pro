@@ -1,21 +1,21 @@
 {
   "app_name": "Raj Tube Pro",
   "version": "6.1.0",
-  "timestamp": "2026-10-05T17:15:04.834452+00:00",
+  "timestamp": "2026-10-05T17:46:49.905574+00:00",
   "schedule": {
     "next_slot_iso": "2026-10-06T08:00:00+00:00",
-    "seconds_remaining": 53095,
-    "formatted_countdown": "14h 44m 55s",
+    "seconds_remaining": 51190,
+    "formatted_countdown": "14h 13m 10s",
     "slot_label": "01:30 PM IST Tomorrow (Lunch Break)",
-    "now_ist": "05 Oct, 10:45 PM IST"
+    "now_ist": "05 Oct, 11:16 PM IST"
   },
   "summary": {
     "total_channels": 9,
     "total_uploaded": 447,
     "total_in_queue": 631,
-    "total_subscribers": 1070,
-    "total_views": 1451099,
-    "total_likes": 8969,
+    "total_subscribers": 1071,
+    "total_views": 1455287,
+    "total_likes": 8975,
     "network_engagement": 0.8,
     "total_runway_days": 58.5,
     "system_health": "All Systems Operational",
@@ -31,7 +31,7 @@
       "uploaded_at": "2026-09-11T16:04:35Z"
     },
     "analytics": {
-      "watch_time_hours": 7739.1,
+      "watch_time_hours": 7761.5,
       "avg_view_duration": "0:24",
       "top_countries": [
         {
@@ -385,7 +385,7 @@
         }
       }
     ],
-    "avg_views_per_channel": 181387
+    "avg_views_per_channel": 181911
   },
   "issues": [],
   "channels": [
@@ -2881,14 +2881,14 @@
       "github_repo": "malhotramahi396-afk/yt-automation-zyntrix07",
       "color": "#F59E0B",
       "avatar_url": "https://yt3.ggpht.com/TTLhq8ijvpChRrWaVb1i96FzeFG02Gd31oOfWo4EdOtBtfqTD6h0TrRmEOTd2fE8V0kPexV6EA=s240-c-k-c0x00ffffff-no-rj",
-      "subscribers": 806,
-      "total_views": 1180353,
+      "subscribers": 807,
+      "total_views": 1184541,
       "channel_total_videos": 53,
-      "avg_views_per_video": 22452,
+      "avg_views_per_video": 22458,
       "engagement_rate": 0.8,
-      "total_likes": 6484,
+      "total_likes": 6488,
       "analytics": {
-        "watch_time_hours": 6295.2,
+        "watch_time_hours": 6317.6,
         "avg_view_duration": "0:24",
         "top_countries": [
           {
@@ -3075,7 +3075,7 @@
         "studio_url": "https://studio.youtube.com/video/exrsiyaHWEk/edit",
         "uploaded_at": "2026-10-05T13:11:03Z",
         "thumbnail": "https://i.ytimg.com/vi/exrsiyaHWEk/mqdefault.jpg",
-        "views": 1242,
+        "views": 1316,
         "likes": 19,
         "comments": 2,
         "is_clean": true,
@@ -3092,7 +3092,7 @@
           "studio_url": "https://studio.youtube.com/video/exrsiyaHWEk/edit",
           "uploaded_at": "2026-10-05T13:11:03Z",
           "thumbnail": "https://i.ytimg.com/vi/exrsiyaHWEk/mqdefault.jpg",
-          "views": 1242,
+          "views": 1316,
           "likes": 19,
           "comments": 2,
           "is_clean": true,
@@ -3108,8 +3108,8 @@
           "studio_url": "https://studio.youtube.com/video/NXuOb9OzfHE/edit",
           "uploaded_at": "2026-10-05T08:07:50Z",
           "thumbnail": "https://i.ytimg.com/vi/NXuOb9OzfHE/mqdefault.jpg",
-          "views": 3025,
-          "likes": 25,
+          "views": 3112,
+          "likes": 29,
           "comments": 1,
           "is_clean": true,
           "health_badge": "100% CLEAN",
@@ -3156,7 +3156,7 @@
           "studio_url": "https://studio.youtube.com/video/aohArspefTg/edit",
           "uploaded_at": "2026-10-03T08:05:43Z",
           "thumbnail": "https://i.ytimg.com/vi/aohArspefTg/mqdefault.jpg",
-          "views": 3712,
+          "views": 3862,
           "likes": 8,
           "comments": 0,
           "is_clean": true,
@@ -6628,9 +6628,9 @@
       "subscribers": 31,
       "total_views": 49946,
       "channel_total_videos": 50,
-      "avg_views_per_video": 1011,
+      "avg_views_per_video": 1015,
       "engagement_rate": 1.0,
-      "total_likes": 525,
+      "total_likes": 527,
       "analytics": {
         "watch_time_hours": 266.4,
         "avg_view_duration": "0:24",
@@ -6819,8 +6819,8 @@
         "studio_url": "https://studio.youtube.com/video/hZfsJgHgZPg/edit",
         "uploaded_at": "2026-10-05T14:12:44Z",
         "thumbnail": "https://i.ytimg.com/vi/hZfsJgHgZPg/mqdefault.jpg",
-        "views": 529,
-        "likes": 8,
+        "views": 749,
+        "likes": 10,
         "comments": 0,
         "is_clean": true,
         "health_badge": "100% CLEAN",
@@ -6836,8 +6836,8 @@
           "studio_url": "https://studio.youtube.com/video/hZfsJgHgZPg/edit",
           "uploaded_at": "2026-10-05T14:12:44Z",
           "thumbnail": "https://i.ytimg.com/vi/hZfsJgHgZPg/mqdefault.jpg",
-          "views": 529,
-          "likes": 8,
+          "views": 749,
+          "likes": 10,
           "comments": 0,
           "is_clean": true,
           "health_badge": "100% CLEAN",
