@@ -1,20 +1,20 @@
 {
   "app_name": "Raj Tube Pro",
   "version": "6.1.0",
-  "timestamp": "2026-10-06T06:52:05.032630+00:00",
+  "timestamp": "2026-10-06T07:17:31.732219+00:00",
   "schedule": {
     "next_slot_iso": "2026-10-06T08:00:00+00:00",
-    "seconds_remaining": 4074,
-    "formatted_countdown": "01h 07m 54s",
+    "seconds_remaining": 2548,
+    "formatted_countdown": "00h 42m 28s",
     "slot_label": "01:30 PM IST (Lunch Break Window)",
-    "now_ist": "06 Oct, 12:22 PM IST"
+    "now_ist": "06 Oct, 12:47 PM IST"
   },
   "summary": {
     "total_channels": 9,
     "total_uploaded": 453,
     "total_in_queue": 625,
     "total_subscribers": 1071,
-    "total_views": 1455824,
+    "total_views": 1455335,
     "total_likes": 8993,
     "network_engagement": 0.8,
     "total_runway_days": 58.5,
@@ -31,7 +31,7 @@
       "uploaded_at": "2026-09-11T16:04:35Z"
     },
     "analytics": {
-      "watch_time_hours": 7764.3,
+      "watch_time_hours": 7761.7,
       "avg_view_duration": "0:24",
       "top_countries": [
         {
@@ -385,7 +385,7 @@
         }
       }
     ],
-    "avg_views_per_channel": 181978
+    "avg_views_per_channel": 181917
   },
   "issues": [],
   "channels": [
@@ -2898,13 +2898,13 @@
       "color": "#F59E0B",
       "avatar_url": "https://yt3.ggpht.com/TTLhq8ijvpChRrWaVb1i96FzeFG02Gd31oOfWo4EdOtBtfqTD6h0TrRmEOTd2fE8V0kPexV6EA=s240-c-k-c0x00ffffff-no-rj",
       "subscribers": 808,
-      "total_views": 1185030,
+      "total_views": 1184541,
       "channel_total_videos": 53,
       "avg_views_per_video": 22549,
       "engagement_rate": 0.8,
       "total_likes": 6508,
       "analytics": {
-        "watch_time_hours": 6320.2,
+        "watch_time_hours": 6317.6,
         "avg_view_duration": "0:24",
         "top_countries": [
           {
@@ -3091,7 +3091,7 @@
         "studio_url": "https://studio.youtube.com/video/exrsiyaHWEk/edit",
         "uploaded_at": "2026-10-05T13:11:03Z",
         "thumbnail": "https://i.ytimg.com/vi/exrsiyaHWEk/mqdefault.jpg",
-        "views": 2219,
+        "views": 2223,
         "likes": 22,
         "comments": 2,
         "is_clean": true,
@@ -3108,7 +3108,7 @@
           "studio_url": "https://studio.youtube.com/video/exrsiyaHWEk/edit",
           "uploaded_at": "2026-10-05T13:11:03Z",
           "thumbnail": "https://i.ytimg.com/vi/exrsiyaHWEk/mqdefault.jpg",
-          "views": 2219,
+          "views": 2223,
           "likes": 22,
           "comments": 2,
           "is_clean": true,
@@ -3252,7 +3252,7 @@
           "studio_url": "https://studio.youtube.com/video/pP3d4Cai5m8/edit",
           "uploaded_at": "2026-09-30T13:09:44Z",
           "thumbnail": "https://i.ytimg.com/vi/pP3d4Cai5m8/mqdefault.jpg",
-          "views": 31103,
+          "views": 31116,
           "likes": 394,
           "comments": 4,
           "is_clean": true,
@@ -5656,7 +5656,7 @@
           "studio_url": "https://studio.youtube.com/video/bMxTZaA485c/edit",
           "uploaded_at": "2026-10-05T14:01:49Z",
           "thumbnail": "https://i.ytimg.com/vi/bMxTZaA485c/mqdefault.jpg",
-          "views": 0,
+          "views": 2,
           "likes": 0,
           "comments": 0,
           "is_clean": true,
@@ -6964,7 +6964,7 @@
           "studio_url": "https://studio.youtube.com/video/5ooSMMX_Ckc/edit",
           "uploaded_at": "2026-10-03T18:29:43Z",
           "thumbnail": "https://i.ytimg.com/vi/5ooSMMX_Ckc/mqdefault.jpg",
-          "views": 1986,
+          "views": 1996,
           "likes": 4,
           "comments": 0,
           "is_clean": true,
