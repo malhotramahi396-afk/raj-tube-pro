@@ -1,13 +1,13 @@
 {
   "app_name": "Raj Tube Pro",
   "version": "6.1.0",
-  "timestamp": "2026-10-06T06:20:31.890995+00:00",
+  "timestamp": "2026-10-06T06:52:05.032630+00:00",
   "schedule": {
     "next_slot_iso": "2026-10-06T08:00:00+00:00",
-    "seconds_remaining": 5968,
-    "formatted_countdown": "01h 39m 28s",
+    "seconds_remaining": 4074,
+    "formatted_countdown": "01h 07m 54s",
     "slot_label": "01:30 PM IST (Lunch Break Window)",
-    "now_ist": "06 Oct, 11:50 AM IST"
+    "now_ist": "06 Oct, 12:22 PM IST"
   },
   "summary": {
     "total_channels": 9,
@@ -2900,7 +2900,7 @@
       "subscribers": 808,
       "total_views": 1185030,
       "channel_total_videos": 53,
-      "avg_views_per_video": 22546,
+      "avg_views_per_video": 22549,
       "engagement_rate": 0.8,
       "total_likes": 6508,
       "analytics": {
@@ -3124,7 +3124,7 @@
           "studio_url": "https://studio.youtube.com/video/NXuOb9OzfHE/edit",
           "uploaded_at": "2026-10-05T08:07:50Z",
           "thumbnail": "https://i.ytimg.com/vi/NXuOb9OzfHE/mqdefault.jpg",
-          "views": 5452,
+          "views": 5521,
           "likes": 45,
           "comments": 1,
           "is_clean": true,
@@ -3140,7 +3140,7 @@
           "studio_url": "https://studio.youtube.com/video/4MuyMla9IAk/edit",
           "uploaded_at": "2026-10-04T15:26:45Z",
           "thumbnail": "https://i.ytimg.com/vi/4MuyMla9IAk/mqdefault.jpg",
-          "views": 4044,
+          "views": 4123,
           "likes": 52,
           "comments": 3,
           "is_clean": true,
@@ -6948,7 +6948,7 @@
           "studio_url": "https://studio.youtube.com/video/TYlSxXQruAE/edit",
           "uploaded_at": "2026-10-04T02:46:01Z",
           "thumbnail": "https://i.ytimg.com/vi/TYlSxXQruAE/mqdefault.jpg",
-          "views": 13,
+          "views": 12,
           "likes": 0,
           "comments": 0,
           "is_clean": true,
