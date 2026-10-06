@@ -1,13 +1,13 @@
 {
   "app_name": "Raj Tube Pro",
   "version": "6.1.0",
-  "timestamp": "2026-10-06T09:17:26.083865+00:00",
+  "timestamp": "2026-10-06T09:47:35.375515+00:00",
   "schedule": {
     "next_slot_iso": "2026-10-06T14:00:00+00:00",
-    "seconds_remaining": 16953,
-    "formatted_countdown": "04h 42m 33s",
+    "seconds_remaining": 15144,
+    "formatted_countdown": "04h 12m 24s",
     "slot_label": "07:30 PM IST (Prime Wildlife Viral Peak)",
-    "now_ist": "06 Oct, 02:47 PM IST"
+    "now_ist": "06 Oct, 03:17 PM IST"
   },
   "summary": {
     "total_channels": 9,
@@ -6432,7 +6432,7 @@
           "title": "Adorable Toddler Reacts In The Cutest Way #ToddlerLife #CutestMoments #FamilyMoments #WholesomeConte",
           "uploaded_at": "2026-09-12T17:39:42Z",
           "thumbnail": "https://i.ytimg.com/vi/goCoZBF3N_M/mqdefault.jpg",
-          "views": 35475,
+          "views": 35477,
           "likes": 278,
           "comments": 3,
           "upload_status": "processed",
