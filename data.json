@@ -1,20 +1,20 @@
 {
   "app_name": "Raj Tube Pro",
   "version": "6.1.0",
-  "timestamp": "2026-10-07T04:49:35.086742+00:00",
+  "timestamp": "2026-10-07T05:17:09.240956+00:00",
   "schedule": {
     "next_slot_iso": "2026-10-07T08:00:00+00:00",
-    "seconds_remaining": 11424,
-    "formatted_countdown": "03h 10m 24s",
+    "seconds_remaining": 9770,
+    "formatted_countdown": "02h 42m 50s",
     "slot_label": "01:30 PM IST (Lunch Break Window)",
-    "now_ist": "07 Oct, 10:19 AM IST"
+    "now_ist": "07 Oct, 10:47 AM IST"
   },
   "summary": {
     "total_channels": 9,
     "total_uploaded": 469,
     "total_in_queue": 609,
     "total_subscribers": 1080,
-    "total_views": 1469294,
+    "total_views": 1469289,
     "total_likes": 9043,
     "network_engagement": 0.8,
     "total_runway_days": 58.5,
@@ -385,7 +385,7 @@
         }
       }
     ],
-    "avg_views_per_channel": 183662
+    "avg_views_per_channel": 183661
   },
   "issues": [],
   "channels": [
@@ -402,7 +402,7 @@
       "subscribers": 118,
       "total_views": 106303,
       "channel_total_videos": 49,
-      "avg_views_per_video": 2169,
+      "avg_views_per_video": 2170,
       "engagement_rate": 0.8,
       "total_likes": 891,
       "analytics": {
@@ -1440,7 +1440,7 @@
           "title": "Breathtaking 4K Wildlife Moment #wildlifephotography #shorts #naturelovers #viral",
           "uploaded_at": "2026-09-11T14:42:29Z",
           "thumbnail": "https://i.ytimg.com/vi/3pDpmQcqJT8/mqdefault.jpg",
-          "views": 16100,
+          "views": 16101,
           "likes": 196,
           "comments": 1,
           "upload_status": "processed",
@@ -2964,7 +2964,7 @@
       "subscribers": 817,
       "total_views": 1197152,
       "channel_total_videos": 55,
-      "avg_views_per_video": 21876,
+      "avg_views_per_video": 21877,
       "engagement_rate": 0.8,
       "total_likes": 6552,
       "analytics": {
@@ -3155,7 +3155,7 @@
         "studio_url": "https://studio.youtube.com/video/0786e9duWX4/edit",
         "uploaded_at": "2026-10-06T13:08:54Z",
         "thumbnail": "https://i.ytimg.com/vi/0786e9duWX4/mqdefault.jpg",
-        "views": 546,
+        "views": 563,
         "likes": 4,
         "comments": 2,
         "is_clean": true,
@@ -3172,7 +3172,7 @@
           "studio_url": "https://studio.youtube.com/video/0786e9duWX4/edit",
           "uploaded_at": "2026-10-06T13:08:54Z",
           "thumbnail": "https://i.ytimg.com/vi/0786e9duWX4/mqdefault.jpg",
-          "views": 546,
+          "views": 563,
           "likes": 4,
           "comments": 2,
           "is_clean": true,
@@ -3252,7 +3252,7 @@
           "studio_url": "https://studio.youtube.com/video/P15VSeA-ym4/edit",
           "uploaded_at": "2026-10-03T18:11:54Z",
           "thumbnail": "https://i.ytimg.com/vi/P15VSeA-ym4/mqdefault.jpg",
-          "views": 4153,
+          "views": 4195,
           "likes": 21,
           "comments": 1,
           "is_clean": true,
@@ -5558,7 +5558,7 @@
       "color": "#8B5CF6",
       "avatar_url": "https://yt3.ggpht.com/WKefM8i0bji48M_e159k6q0080b5zNwYExax_QloW7H3XguFARUF-SuE62a8rdPQJXvtTXxbJQ=s240-c-k-c0x00ffffff-no-rj",
       "subscribers": 45,
-      "total_views": 39850,
+      "total_views": 39845,
       "channel_total_videos": 55,
       "avg_views_per_video": 725,
       "engagement_rate": 0.8,
