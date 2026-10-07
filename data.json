@@ -1,13 +1,13 @@
 {
   "app_name": "Raj Tube Pro",
   "version": "6.1.0",
-  "timestamp": "2026-10-07T18:51:30.634982+00:00",
+  "timestamp": "2026-10-07T19:17:25.304368+00:00",
   "schedule": {
     "next_slot_iso": "2026-10-08T08:00:00+00:00",
-    "seconds_remaining": 47309,
-    "formatted_countdown": "13h 08m 29s",
+    "seconds_remaining": 45754,
+    "formatted_countdown": "12h 42m 34s",
     "slot_label": "01:30 PM IST Tomorrow (Lunch Break)",
-    "now_ist": "08 Oct, 12:21 AM IST"
+    "now_ist": "08 Oct, 12:47 AM IST"
   },
   "summary": {
     "total_channels": 9,
@@ -15,7 +15,7 @@
     "total_in_queue": 599,
     "total_subscribers": 1088,
     "total_views": 1472661,
-    "total_likes": 9113,
+    "total_likes": 9114,
     "network_engagement": 0.8,
     "total_runway_days": 58.5,
     "system_health": "All Systems Operational",
@@ -3012,9 +3012,9 @@
       "subscribers": 825,
       "total_views": 1200412,
       "channel_total_videos": 57,
-      "avg_views_per_video": 21197,
+      "avg_views_per_video": 21201,
       "engagement_rate": 0.8,
-      "total_likes": 6619,
+      "total_likes": 6620,
       "analytics": {
         "watch_time_hours": 6402.2,
         "avg_view_duration": "0:24",
@@ -3203,7 +3203,7 @@
         "studio_url": "https://studio.youtube.com/video/VmZNSsBsIdY/edit",
         "uploaded_at": "2026-10-07T13:12:01Z",
         "thumbnail": "https://i.ytimg.com/vi/VmZNSsBsIdY/mqdefault.jpg",
-        "views": 1841,
+        "views": 1974,
         "likes": 30,
         "comments": 4,
         "is_clean": true,
@@ -3220,7 +3220,7 @@
           "studio_url": "https://studio.youtube.com/video/VmZNSsBsIdY/edit",
           "uploaded_at": "2026-10-07T13:12:01Z",
           "thumbnail": "https://i.ytimg.com/vi/VmZNSsBsIdY/mqdefault.jpg",
-          "views": 1841,
+          "views": 1974,
           "likes": 30,
           "comments": 4,
           "is_clean": true,
@@ -3252,8 +3252,8 @@
           "studio_url": "https://studio.youtube.com/video/0786e9duWX4/edit",
           "uploaded_at": "2026-10-06T13:08:54Z",
           "thumbnail": "https://i.ytimg.com/vi/0786e9duWX4/mqdefault.jpg",
-          "views": 1100,
-          "likes": 7,
+          "views": 1170,
+          "likes": 8,
           "comments": 2,
           "is_clean": true,
           "health_badge": "100% CLEAN",
@@ -3284,7 +3284,7 @@
           "studio_url": "https://studio.youtube.com/video/exrsiyaHWEk/edit",
           "uploaded_at": "2026-10-05T13:11:03Z",
           "thumbnail": "https://i.ytimg.com/vi/exrsiyaHWEk/mqdefault.jpg",
-          "views": 2384,
+          "views": 2389,
           "likes": 23,
           "comments": 2,
           "is_clean": true,
@@ -3316,7 +3316,7 @@
           "studio_url": "https://studio.youtube.com/video/4MuyMla9IAk/edit",
           "uploaded_at": "2026-10-04T15:26:45Z",
           "thumbnail": "https://i.ytimg.com/vi/4MuyMla9IAk/mqdefault.jpg",
-          "views": 4825,
+          "views": 4849,
           "likes": 52,
           "comments": 3,
           "is_clean": true,
@@ -3508,7 +3508,7 @@
           "studio_url": "https://studio.youtube.com/video/r_RTNW2Moio/edit",
           "uploaded_at": "2026-09-26T13:03:56Z",
           "thumbnail": "https://i.ytimg.com/vi/r_RTNW2Moio/mqdefault.jpg",
-          "views": 25435,
+          "views": 25441,
           "likes": 208,
           "comments": 0,
           "is_clean": true,
@@ -3732,7 +3732,7 @@
           "studio_url": "https://studio.youtube.com/video/57rwnWsFfMw/edit",
           "uploaded_at": "2026-09-18T14:09:16.211199+00:00",
           "thumbnail": "https://i.ytimg.com/vi/57rwnWsFfMw/mqdefault.jpg",
-          "views": 41406,
+          "views": 41407,
           "likes": 208,
           "comments": 1,
           "is_clean": true,
@@ -3830,7 +3830,7 @@
           "title": "One Table One Belt And Huge Pressure #SlapFight #PowerSlap #Championship #CombatSports #FYP.",
           "uploaded_at": "2026-09-15T21:09:27Z",
           "thumbnail": "https://i.ytimg.com/vi/74d1M_ceEM0/mqdefault.jpg",
-          "views": 563126,
+          "views": 563132,
           "likes": 2002,
           "comments": 20,
           "upload_status": "processed",
@@ -6959,51 +6959,51 @@
             "country": "United States",
             "code": "US",
             "flag": "🇺🇸",
-            "percent": 61.4
+            "percent": 62.2
           },
           {
             "country": "Indonesia",
             "code": "ID",
             "flag": "🇮🇩",
-            "percent": 15.8
+            "percent": 15.4
           },
           {
             "country": "India",
             "code": "IN",
             "flag": "🇮🇳",
-            "percent": 5.5
+            "percent": 5.4
           },
           {
             "country": "Japan",
             "code": "JP",
             "flag": "🇯🇵",
-            "percent": 4.2
+            "percent": 4.1
           },
           {
             "country": "Mexico",
             "code": "MX",
             "flag": "🇲🇽",
-            "percent": 3.9
+            "percent": 3.8
           },
           {
             "country": "Other countries",
             "code": "OTHER",
             "flag": "🌐",
-            "percent": 9.2
+            "percent": 9.1
           }
         ],
         "age_distribution": [
           {
             "range": "13–17 years",
-            "percent": 7.6
+            "percent": 7.7
           },
           {
             "range": "18–24 years",
-            "percent": 6.8
+            "percent": 6.9
           },
           {
             "range": "25–34 years",
-            "percent": 35.6
+            "percent": 35.7
           },
           {
             "range": "35–44 years",
@@ -7011,20 +7011,20 @@
           },
           {
             "range": "45–54 years",
-            "percent": 10.1
+            "percent": 10.0
           },
           {
             "range": "55–64 years",
-            "percent": 6.9
+            "percent": 6.8
           },
           {
             "range": "65+ years",
-            "percent": 5.9
+            "percent": 5.7
           }
         ],
         "gender": {
-          "male": 47.2,
-          "female": 52.8
+          "male": 46.9,
+          "female": 53.1
         },
         "traffic_sources": [
           {
@@ -7172,7 +7172,7 @@
           "studio_url": "https://studio.youtube.com/video/bsXiPhsh4XE/edit",
           "uploaded_at": "2026-10-06T20:57:31Z",
           "thumbnail": "https://i.ytimg.com/vi/bsXiPhsh4XE/mqdefault.jpg",
-          "views": 255,
+          "views": 268,
           "likes": 8,
           "comments": 1,
           "is_clean": true,
@@ -7252,7 +7252,7 @@
           "studio_url": "https://studio.youtube.com/video/pLZQ6K6fads/edit",
           "uploaded_at": "2026-10-04T18:58:13Z",
           "thumbnail": "https://i.ytimg.com/vi/pLZQ6K6fads/mqdefault.jpg",
-          "views": 1188,
+          "views": 1189,
           "likes": 13,
           "comments": 0,
           "is_clean": true,
@@ -7284,7 +7284,7 @@
           "studio_url": "https://studio.youtube.com/video/5ooSMMX_Ckc/edit",
           "uploaded_at": "2026-10-03T18:29:43Z",
           "thumbnail": "https://i.ytimg.com/vi/5ooSMMX_Ckc/mqdefault.jpg",
-          "views": 2144,
+          "views": 2149,
           "likes": 4,
           "comments": 0,
           "is_clean": true,
