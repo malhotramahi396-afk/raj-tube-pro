@@ -1,21 +1,21 @@
 {
   "app_name": "Raj Tube Pro",
   "version": "6.1.0",
-  "timestamp": "2026-10-07T14:17:58.267870+00:00",
+  "timestamp": "2026-10-07T14:47:32.667408+00:00",
   "schedule": {
     "next_slot_iso": "2026-10-08T08:00:00+00:00",
-    "seconds_remaining": 63721,
-    "formatted_countdown": "17h 42m 01s",
+    "seconds_remaining": 61947,
+    "formatted_countdown": "17h 12m 27s",
     "slot_label": "01:30 PM IST Tomorrow (Lunch Break)",
-    "now_ist": "07 Oct, 07:47 PM IST"
+    "now_ist": "07 Oct, 08:17 PM IST"
   },
   "summary": {
     "total_channels": 9,
-    "total_uploaded": 476,
-    "total_in_queue": 602,
-    "total_subscribers": 1085,
-    "total_views": 1469295,
-    "total_likes": 9070,
+    "total_uploaded": 477,
+    "total_in_queue": 601,
+    "total_subscribers": 1087,
+    "total_views": 1472555,
+    "total_likes": 9075,
     "network_engagement": 0.8,
     "total_runway_days": 58.5,
     "system_health": "All Systems Operational",
@@ -31,7 +31,7 @@
       "uploaded_at": "2026-09-11T16:04:35Z"
     },
     "analytics": {
-      "watch_time_hours": 7836.2,
+      "watch_time_hours": 7853.6,
       "avg_view_duration": "0:24",
       "top_countries": [
         {
@@ -385,7 +385,7 @@
         }
       }
     ],
-    "avg_views_per_channel": 183662
+    "avg_views_per_channel": 184069
   },
   "issues": [],
   "channels": [
@@ -2993,14 +2993,14 @@
       "github_repo": "malhotramahi396-afk/yt-automation-zyntrix07",
       "color": "#F59E0B",
       "avatar_url": "https://yt3.ggpht.com/TTLhq8ijvpChRrWaVb1i96FzeFG02Gd31oOfWo4EdOtBtfqTD6h0TrRmEOTd2fE8V0kPexV6EA=s240-c-k-c0x00ffffff-no-rj",
-      "subscribers": 822,
-      "total_views": 1197152,
+      "subscribers": 824,
+      "total_views": 1200412,
       "channel_total_videos": 57,
-      "avg_views_per_video": 21154,
+      "avg_views_per_video": 21157,
       "engagement_rate": 0.8,
-      "total_likes": 6578,
+      "total_likes": 6583,
       "analytics": {
-        "watch_time_hours": 6384.8,
+        "watch_time_hours": 6402.2,
         "avg_view_duration": "0:24",
         "top_countries": [
           {
@@ -3187,8 +3187,8 @@
         "studio_url": "https://studio.youtube.com/video/VmZNSsBsIdY/edit",
         "uploaded_at": "2026-10-07T13:12:01Z",
         "thumbnail": "https://i.ytimg.com/vi/VmZNSsBsIdY/mqdefault.jpg",
-        "views": 636,
-        "likes": 2,
+        "views": 766,
+        "likes": 3,
         "comments": 2,
         "is_clean": true,
         "health_badge": "100% CLEAN",
@@ -3204,8 +3204,8 @@
           "studio_url": "https://studio.youtube.com/video/VmZNSsBsIdY/edit",
           "uploaded_at": "2026-10-07T13:12:01Z",
           "thumbnail": "https://i.ytimg.com/vi/VmZNSsBsIdY/mqdefault.jpg",
-          "views": 636,
-          "likes": 2,
+          "views": 766,
+          "likes": 3,
           "comments": 2,
           "is_clean": true,
           "health_badge": "100% CLEAN",
@@ -3220,8 +3220,8 @@
           "studio_url": "https://studio.youtube.com/video/s0VcDCrXq3U/edit",
           "uploaded_at": "2026-10-07T08:08:50Z",
           "thumbnail": "https://i.ytimg.com/vi/s0VcDCrXq3U/mqdefault.jpg",
-          "views": 1090,
-          "likes": 22,
+          "views": 1101,
+          "likes": 25,
           "comments": 1,
           "is_clean": true,
           "health_badge": "100% CLEAN",
@@ -3572,8 +3572,8 @@
           "studio_url": "https://studio.youtube.com/video/DQyu5bBX5nY/edit",
           "uploaded_at": "2026-09-24T08:04:18Z",
           "thumbnail": "https://i.ytimg.com/vi/DQyu5bBX5nY/mqdefault.jpg",
-          "views": 142146,
-          "likes": 370,
+          "views": 142154,
+          "likes": 371,
           "comments": 0,
           "is_clean": true,
           "health_badge": "100% CLEAN",
@@ -3814,7 +3814,7 @@
           "title": "One Table One Belt And Huge Pressure #SlapFight #PowerSlap #Championship #CombatSports #FYP.",
           "uploaded_at": "2026-09-15T21:09:27Z",
           "thumbnail": "https://i.ytimg.com/vi/74d1M_ceEM0/mqdefault.jpg",
-          "views": 563119,
+          "views": 563120,
           "likes": 2002,
           "comments": 20,
           "upload_status": "processed",
@@ -5880,7 +5880,7 @@
           "studio_url": "https://studio.youtube.com/video/IrhjV7Pmo84/edit",
           "uploaded_at": "2026-10-06T13:59:39Z",
           "thumbnail": "https://i.ytimg.com/vi/IrhjV7Pmo84/mqdefault.jpg",
-          "views": 0,
+          "views": 1,
           "likes": 0,
           "comments": 0,
           "is_clean": true,
@@ -6912,7 +6912,7 @@
         "org": "Datacamp Limited (Miami US Gateway)",
         "datacenter": "Surfshark Dedicated US Miami Gateway",
         "verify_url": "https://ipinfo.io/149.102.224.206",
-        "verified_at": "2026-10-06T20:47:02Z"
+        "verified_at": "2026-10-07T13:59:47Z"
       },
       "is_active": true,
       "is_terminated": false,
@@ -7123,7 +7123,7 @@
         "studio_url": "https://studio.youtube.com/video/FQ36hkL_IXk/edit",
         "uploaded_at": "2026-10-07T14:10:13Z",
         "thumbnail": "https://i.ytimg.com/vi/FQ36hkL_IXk/mqdefault.jpg",
-        "views": 0,
+        "views": 3,
         "likes": 0,
         "comments": 0,
         "is_clean": true,
@@ -7140,7 +7140,7 @@
           "studio_url": "https://studio.youtube.com/video/FQ36hkL_IXk/edit",
           "uploaded_at": "2026-10-07T14:10:13Z",
           "thumbnail": "https://i.ytimg.com/vi/FQ36hkL_IXk/mqdefault.jpg",
-          "views": 0,
+          "views": 3,
           "likes": 0,
           "comments": 0,
           "is_clean": true,
@@ -8160,7 +8160,7 @@
         "org": "M247 Ltd (New York US Gateway)",
         "datacenter": "Surfshark Dedicated US NY Gateway",
         "verify_url": "https://ipinfo.io/146.70.186.171",
-        "verified_at": "2026-10-06T20:57:31Z"
+        "verified_at": "2026-10-07T14:10:13Z"
       },
       "is_active": true,
       "is_terminated": false,
@@ -8179,8 +8179,8 @@
       "avatar_url": "https://yt3.ggpht.com/vRLBXNb4fgjWzDfLf8ltniGaD2BlvZ1PAWugGoZaJx1nCdJ92LubM-8vy7hIgxHlCicFwpt2=s240-c-k-c0x00ffffff-no-rj",
       "subscribers": 32,
       "total_views": 18057,
-      "channel_total_videos": 67,
-      "avg_views_per_video": 266,
+      "channel_total_videos": 68,
+      "avg_views_per_video": 262,
       "engagement_rate": 1.1,
       "total_likes": 189,
       "analytics": {
@@ -8357,20 +8357,20 @@
       },
       "drive_folder_id": "1mxwPH1BvYEfv77zDUWA5ZxiwYW2hG125",
       "drive_folder_url": "https://drive.google.com/drive/folders/1mxwPH1BvYEfv77zDUWA5ZxiwYW2hG125",
-      "uploaded_count": 68,
-      "drive_queue_count": 98,
-      "runway_days": 49.0,
+      "uploaded_count": 69,
+      "drive_queue_count": 97,
+      "runway_days": 48.5,
       "stock_status": "Plentiful (65.0 days)",
       "stock_color": "#10B981",
       "latest_run_status": "success",
       "latest_run_time": "2026-09-20T21:06:01.804952+00:00",
       "latest_uploaded_video": {
-        "title": "Nobody Believed This Pass Was Possible... 🤯 #Shorts",
-        "youtube_id": "FzfFhvFFZj8",
-        "youtube_url": "https://youtu.be/FzfFhvFFZj8",
-        "studio_url": "https://studio.youtube.com/video/FzfFhvFFZj8/edit",
-        "uploaded_at": "2026-10-06T21:12:26Z",
-        "thumbnail": "https://i.ytimg.com/vi/FzfFhvFFZj8/mqdefault.jpg",
+        "title": "This 1 Pass Just Broke Their Hearts! 😱⚽ #Shorts",
+        "youtube_id": "P7Gk1qOWkdc",
+        "youtube_url": "https://youtu.be/P7Gk1qOWkdc",
+        "studio_url": "https://studio.youtube.com/video/P7Gk1qOWkdc/edit",
+        "uploaded_at": "2026-10-07T14:32:02Z",
+        "thumbnail": "https://i.ytimg.com/vi/P7Gk1qOWkdc/mqdefault.jpg",
         "views": 0,
         "likes": 0,
         "comments": 0,
@@ -8381,6 +8381,22 @@
         "is_blocked": false
       },
       "uploaded_videos": [
+        {
+          "title": "This 1 Pass Just Broke Their Hearts! 😱⚽ #Shorts",
+          "youtube_id": "P7Gk1qOWkdc",
+          "youtube_url": "https://youtu.be/P7Gk1qOWkdc",
+          "studio_url": "https://studio.youtube.com/video/P7Gk1qOWkdc/edit",
+          "uploaded_at": "2026-10-07T14:32:02Z",
+          "thumbnail": "https://i.ytimg.com/vi/P7Gk1qOWkdc/mqdefault.jpg",
+          "views": 0,
+          "likes": 0,
+          "comments": 0,
+          "is_clean": true,
+          "health_badge": "100% CLEAN",
+          "flag_details": "None (Clean)",
+          "channel_name": "CoreVanta Media",
+          "is_blocked": false
+        },
         {
           "title": "Nobody Believed This Pass Was Possible... 🤯 #Shorts",
           "youtube_id": "FzfFhvFFZj8",
@@ -9732,7 +9748,7 @@
       },
       "is_active": true,
       "is_terminated": false,
-      "drive_videos_count": 98,
+      "drive_videos_count": 97,
       "country": "US"
     },
     {
