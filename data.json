@@ -1,21 +1,21 @@
 {
   "app_name": "Raj Tube Pro",
   "version": "6.1.0",
-  "timestamp": "2026-10-08T08:18:25.750186+00:00",
+  "timestamp": "2026-10-08T08:49:04.599748+00:00",
   "schedule": {
     "next_slot_iso": "2026-10-08T14:00:00+00:00",
-    "seconds_remaining": 20494,
-    "formatted_countdown": "05h 41m 34s",
+    "seconds_remaining": 18655,
+    "formatted_countdown": "05h 10m 55s",
     "slot_label": "07:30 PM IST (Prime Wildlife Viral Peak)",
-    "now_ist": "08 Oct, 01:48 PM IST"
+    "now_ist": "08 Oct, 02:19 PM IST"
   },
   "summary": {
     "total_channels": 9,
-    "total_uploaded": 486,
-    "total_in_queue": 592,
-    "total_subscribers": 1100,
-    "total_views": 1476431,
-    "total_likes": 9284,
+    "total_uploaded": 487,
+    "total_in_queue": 591,
+    "total_subscribers": 1101,
+    "total_views": 1476722,
+    "total_likes": 9289,
     "network_engagement": 0.8,
     "total_runway_days": 58.5,
     "system_health": "All Systems Operational",
@@ -31,7 +31,7 @@
       "uploaded_at": "2026-09-11T16:04:35Z"
     },
     "analytics": {
-      "watch_time_hours": 7874.3,
+      "watch_time_hours": 7875.9,
       "avg_view_duration": "0:24",
       "top_countries": [
         {
@@ -385,7 +385,7 @@
         }
       }
     ],
-    "avg_views_per_channel": 184554
+    "avg_views_per_channel": 184590
   },
   "issues": [],
   "channels": [
@@ -401,8 +401,8 @@
       "avatar_url": "https://yt3.ggpht.com/R5wyufkApz5fijH1a4mek8n6CM9y64QklZgfgjuGI-SOwbTIBjEFmmKot6aBnYkVRwOpq965=s240-c-k-c0x00ffffff-no-rj",
       "subscribers": 119,
       "total_views": 106306,
-      "channel_total_videos": 51,
-      "avg_views_per_video": 2085,
+      "channel_total_videos": 52,
+      "avg_views_per_video": 2045,
       "engagement_rate": 0.8,
       "total_likes": 893,
       "analytics": {
@@ -579,21 +579,21 @@
       },
       "drive_folder_id": "1f8Nj2kEchzW4gdlMEQ5S_eAazvdrQ3ai",
       "drive_folder_url": "https://drive.google.com/drive/folders/1f8Nj2kEchzW4gdlMEQ5S_eAazvdrQ3ai",
-      "uploaded_count": 51,
-      "drive_queue_count": 31,
-      "runway_days": 15.5,
+      "uploaded_count": 52,
+      "drive_queue_count": 30,
+      "runway_days": 15.0,
       "stock_status": "Plentiful (33.5 days)",
       "stock_color": "#10B981",
       "latest_run_status": "success",
       "latest_run_time": "2026-09-20T14:13:23.301788+00:00",
       "latest_uploaded_video": {
-        "title": "You Won't Believe This Animal's Stealth! 🤯 #Shorts",
-        "youtube_id": "1qnFYTVW8sU",
-        "youtube_url": "https://youtu.be/1qnFYTVW8sU",
-        "studio_url": "https://studio.youtube.com/video/1qnFYTVW8sU/edit",
-        "uploaded_at": "2026-10-07T13:29:17Z",
-        "thumbnail": "https://i.ytimg.com/vi/1qnFYTVW8sU/mqdefault.jpg",
-        "views": 3,
+        "title": "This Jungle Ghost Fooled Everyone... 🤫 #Shorts",
+        "youtube_id": "fldZQx7aofI",
+        "youtube_url": "https://youtu.be/fldZQx7aofI",
+        "studio_url": "https://studio.youtube.com/video/fldZQx7aofI/edit",
+        "uploaded_at": "2026-10-08T08:29:32Z",
+        "thumbnail": "https://i.ytimg.com/vi/fldZQx7aofI/mqdefault.jpg",
+        "views": 0,
         "likes": 0,
         "comments": 0,
         "is_clean": true,
@@ -603,6 +603,22 @@
         "is_blocked": false
       },
       "uploaded_videos": [
+        {
+          "title": "This Jungle Ghost Fooled Everyone... 🤫 #Shorts",
+          "youtube_id": "fldZQx7aofI",
+          "youtube_url": "https://youtu.be/fldZQx7aofI",
+          "studio_url": "https://studio.youtube.com/video/fldZQx7aofI/edit",
+          "uploaded_at": "2026-10-08T08:29:32Z",
+          "thumbnail": "https://i.ytimg.com/vi/fldZQx7aofI/mqdefault.jpg",
+          "views": 0,
+          "likes": 0,
+          "comments": 0,
+          "is_clean": true,
+          "health_badge": "100% CLEAN",
+          "flag_details": "None (Clean)",
+          "channel_name": "The Hidden Lens",
+          "is_blocked": false
+        },
         {
           "title": "You Won't Believe This Animal's Stealth! 🤯 #Shorts",
           "youtube_id": "1qnFYTVW8sU",
@@ -1556,7 +1572,7 @@
       },
       "is_active": true,
       "is_terminated": false,
-      "drive_videos_count": 31,
+      "drive_videos_count": 30,
       "country": "US"
     },
     {
@@ -3025,12 +3041,12 @@
       "github_repo": "malhotramahi396-afk/yt-automation-zyntrix07",
       "color": "#F59E0B",
       "avatar_url": "https://yt3.ggpht.com/TTLhq8ijvpChRrWaVb1i96FzeFG02Gd31oOfWo4EdOtBtfqTD6h0TrRmEOTd2fE8V0kPexV6EA=s240-c-k-c0x00ffffff-no-rj",
-      "subscribers": 836,
+      "subscribers": 837,
       "total_views": 1204182,
       "channel_total_videos": 58,
-      "avg_views_per_video": 21122,
+      "avg_views_per_video": 21137,
       "engagement_rate": 0.8,
-      "total_likes": 6780,
+      "total_likes": 6785,
       "analytics": {
         "watch_time_hours": 6422.3,
         "avg_view_duration": "0:24",
@@ -3219,7 +3235,7 @@
         "studio_url": "https://studio.youtube.com/video/o2-7vFXd2Mc/edit",
         "uploaded_at": "2026-10-08T08:08:09Z",
         "thumbnail": "https://i.ytimg.com/vi/o2-7vFXd2Mc/mqdefault.jpg",
-        "views": 1,
+        "views": 18,
         "likes": 0,
         "comments": 0,
         "is_clean": true,
@@ -3236,7 +3252,7 @@
           "studio_url": "https://studio.youtube.com/video/o2-7vFXd2Mc/edit",
           "uploaded_at": "2026-10-08T08:08:09Z",
           "thumbnail": "https://i.ytimg.com/vi/o2-7vFXd2Mc/mqdefault.jpg",
-          "views": 1,
+          "views": 18,
           "likes": 0,
           "comments": 0,
           "is_clean": true,
@@ -3252,9 +3268,9 @@
           "studio_url": "https://studio.youtube.com/video/VmZNSsBsIdY/edit",
           "uploaded_at": "2026-10-07T13:12:01Z",
           "thumbnail": "https://i.ytimg.com/vi/VmZNSsBsIdY/mqdefault.jpg",
-          "views": 16915,
-          "likes": 186,
-          "comments": 7,
+          "views": 17723,
+          "likes": 190,
+          "comments": 8,
           "is_clean": true,
           "health_badge": "100% CLEAN",
           "flag_details": "None (Clean)",
@@ -3332,7 +3348,7 @@
           "studio_url": "https://studio.youtube.com/video/NXuOb9OzfHE/edit",
           "uploaded_at": "2026-10-05T08:07:50Z",
           "thumbnail": "https://i.ytimg.com/vi/NXuOb9OzfHE/mqdefault.jpg",
-          "views": 10102,
+          "views": 10141,
           "likes": 48,
           "comments": 1,
           "is_clean": true,
@@ -3863,7 +3879,7 @@
           "uploaded_at": "2026-09-15T21:09:27Z",
           "thumbnail": "https://i.ytimg.com/vi/74d1M_ceEM0/mqdefault.jpg",
           "views": 563172,
-          "likes": 2002,
+          "likes": 2003,
           "comments": 20,
           "upload_status": "processed",
           "privacy_status": "public",
@@ -4338,7 +4354,7 @@
         "org": "Datacamp Limited (New York US Gateway)",
         "datacenter": "Surfshark Dedicated US NY Gateway",
         "verify_url": "https://ipinfo.io/84.17.35.112",
-        "verified_at": "2026-10-07T13:12:01Z"
+        "verified_at": "2026-10-08T08:08:09Z"
       },
       "is_active": true,
       "is_terminated": false,
@@ -7010,13 +7026,13 @@
       "color": "#EC4899",
       "avatar_url": "https://yt3.ggpht.com/pqIrk9GBtAR6cdyBH5C_kHNWA1jlu4VT9ZLKxdYTFW6IvVQLWbtFO3OUxrSV1Jm1SR0JAyTrAA=s240-c-k-c0x00ffffff-no-rj",
       "subscribers": 30,
-      "total_views": 51433,
+      "total_views": 51724,
       "channel_total_videos": 55,
       "avg_views_per_video": 970,
       "engagement_rate": 1.0,
       "total_likes": 542,
       "analytics": {
-        "watch_time_hours": 274.3,
+        "watch_time_hours": 275.9,
         "avg_view_duration": "0:24",
         "top_countries": [
           {
@@ -7252,7 +7268,7 @@
           "studio_url": "https://studio.youtube.com/video/bsXiPhsh4XE/edit",
           "uploaded_at": "2026-10-06T20:57:31Z",
           "thumbnail": "https://i.ytimg.com/vi/bsXiPhsh4XE/mqdefault.jpg",
-          "views": 470,
+          "views": 490,
           "likes": 11,
           "comments": 1,
           "is_clean": true,
