@@ -1,20 +1,20 @@
 {
   "app_name": "Raj Tube Pro",
   "version": "6.1.0",
-  "timestamp": "2026-10-08T13:48:38.658426+00:00",
+  "timestamp": "2026-10-08T14:20:00.849179+00:00",
   "schedule": {
-    "next_slot_iso": "2026-10-08T14:00:00+00:00",
-    "seconds_remaining": 681,
-    "formatted_countdown": "00h 11m 21s",
-    "slot_label": "07:30 PM IST (Prime Wildlife Viral Peak)",
-    "now_ist": "08 Oct, 07:18 PM IST"
+    "next_slot_iso": "2026-10-09T08:00:00+00:00",
+    "seconds_remaining": 63599,
+    "formatted_countdown": "17h 39m 59s",
+    "slot_label": "01:30 PM IST Tomorrow (Lunch Break)",
+    "now_ist": "08 Oct, 07:50 PM IST"
   },
   "summary": {
     "total_channels": 9,
-    "total_uploaded": 490,
-    "total_in_queue": 588,
+    "total_uploaded": 492,
+    "total_in_queue": 586,
     "total_subscribers": 1106,
-    "total_views": 1476723,
+    "total_views": 1477028,
     "total_likes": 9317,
     "network_engagement": 0.8,
     "total_runway_days": 58.5,
@@ -31,7 +31,7 @@
       "uploaded_at": "2026-09-11T16:04:35Z"
     },
     "analytics": {
-      "watch_time_hours": 7875.9,
+      "watch_time_hours": 7877.5,
       "avg_view_duration": "0:24",
       "top_countries": [
         {
@@ -385,7 +385,7 @@
         }
       }
     ],
-    "avg_views_per_channel": 184590
+    "avg_views_per_channel": 184628
   },
   "issues": [],
   "channels": [
@@ -400,7 +400,7 @@
       "color": "#10B981",
       "avatar_url": "https://yt3.ggpht.com/R5wyufkApz5fijH1a4mek8n6CM9y64QklZgfgjuGI-SOwbTIBjEFmmKot6aBnYkVRwOpq965=s240-c-k-c0x00ffffff-no-rj",
       "subscribers": 119,
-      "total_views": 106306,
+      "total_views": 106326,
       "channel_total_videos": 53,
       "avg_views_per_video": 2006,
       "engagement_rate": 0.8,
@@ -532,7 +532,7 @@
         ],
         "peak_hours": "7:00 PM – 11:30 PM IST (Prime Wildlife Audience Peak)",
         "verified_source": "YouTube Analytics API (100% Genuine)",
-        "watch_time_hours": 567.0,
+        "watch_time_hours": 567.1,
         "avg_view_duration": "0:16"
       },
       "health": {
@@ -1584,7 +1584,7 @@
         "org": "Datacamp Limited (Chicago US Gateway)",
         "datacenter": "Surfshark Dedicated US Chicago Gateway",
         "verify_url": "https://ipinfo.io/154.47.25.100",
-        "verified_at": "2026-10-08T08:29:32Z"
+        "verified_at": "2026-10-08T13:30:35Z"
       },
       "is_active": true,
       "is_terminated": false,
@@ -3060,7 +3060,7 @@
       "subscribers": 841,
       "total_views": 1204182,
       "channel_total_videos": 59,
-      "avg_views_per_video": 20929,
+      "avg_views_per_video": 20934,
       "engagement_rate": 0.8,
       "total_likes": 6811,
       "analytics": {
@@ -3284,7 +3284,7 @@
           "studio_url": "https://studio.youtube.com/video/o2-7vFXd2Mc/edit",
           "uploaded_at": "2026-10-08T08:08:09Z",
           "thumbnail": "https://i.ytimg.com/vi/o2-7vFXd2Mc/mqdefault.jpg",
-          "views": 998,
+          "views": 1041,
           "likes": 16,
           "comments": 0,
           "is_clean": true,
@@ -3300,7 +3300,7 @@
           "studio_url": "https://studio.youtube.com/video/VmZNSsBsIdY/edit",
           "uploaded_at": "2026-10-07T13:12:01Z",
           "thumbnail": "https://i.ytimg.com/vi/VmZNSsBsIdY/mqdefault.jpg",
-          "views": 25229,
+          "views": 25468,
           "likes": 196,
           "comments": 8,
           "is_clean": true,
@@ -3828,7 +3828,7 @@
           "studio_url": "https://studio.youtube.com/video/jo54eKar-U0/edit",
           "uploaded_at": "2026-09-17T21:09:25.462687+00:00",
           "thumbnail": "https://i.ytimg.com/vi/jo54eKar-U0/mqdefault.jpg",
-          "views": 552,
+          "views": 553,
           "likes": 12,
           "comments": 0,
           "is_clean": true,
@@ -4404,7 +4404,7 @@
       "color": "#06B6D4",
       "avatar_url": "https://yt3.ggpht.com/I2BgaCh32ZzDgRjMmIhrrlaWX0Ad9y6p-ZeztV8zOaTsejWJsGcfoac3MFJaq4IBE99L057D=s240-c-k-c0x00ffffff-no-rj",
       "subscribers": 10,
-      "total_views": 11812,
+      "total_views": 11813,
       "channel_total_videos": 60,
       "avg_views_per_video": 197,
       "engagement_rate": 1.7,
@@ -5748,7 +5748,7 @@
         "org": "Cdnext (Los Angeles US Gateway)",
         "datacenter": "Surfshark Dedicated US LA Gateway",
         "verify_url": "https://ipinfo.io/138.199.35.4",
-        "verified_at": "2026-10-07T20:31:38Z"
+        "verified_at": "2026-10-08T13:43:51Z"
       },
       "is_active": true,
       "is_terminated": false,
@@ -5767,8 +5767,8 @@
       "avatar_url": "https://yt3.ggpht.com/WKefM8i0bji48M_e159k6q0080b5zNwYExax_QloW7H3XguFARUF-SuE62a8rdPQJXvtTXxbJQ=s240-c-k-c0x00ffffff-no-rj",
       "subscribers": 45,
       "total_views": 39852,
-      "channel_total_videos": 57,
-      "avg_views_per_video": 699,
+      "channel_total_videos": 58,
+      "avg_views_per_video": 687,
       "engagement_rate": 0.8,
       "total_likes": 315,
       "analytics": {
@@ -5945,20 +5945,20 @@
       },
       "drive_folder_id": "1C_R0kNrMxrW5FeX241UluglGU-qUEfkS",
       "drive_folder_url": "https://drive.google.com/drive/folders/1C_R0kNrMxrW5FeX241UluglGU-qUEfkS",
-      "uploaded_count": 57,
-      "drive_queue_count": 79,
-      "runway_days": 39.5,
+      "uploaded_count": 58,
+      "drive_queue_count": 78,
+      "runway_days": 39.0,
       "stock_status": "Plentiful (57.0 days)",
       "stock_color": "#10B981",
       "latest_run_status": "success",
       "latest_run_time": "2026-09-20T21:07:29.221979+00:00",
       "latest_uploaded_video": {
-        "title": "This Little Explorer Stole Every Car Lover's Heart! 🚗💨 #Shorts",
-        "youtube_id": "8xbeb83MoGA",
-        "youtube_url": "https://youtu.be/8xbeb83MoGA",
-        "studio_url": "https://studio.youtube.com/video/8xbeb83MoGA/edit",
-        "uploaded_at": "2026-10-07T20:47:24Z",
-        "thumbnail": "https://i.ytimg.com/vi/8xbeb83MoGA/mqdefault.jpg",
+        "title": "This toddler just hijacked a billionaire's hypercar! 🏎️👶 #Shorts",
+        "youtube_id": "1WHHSYdR_Pk",
+        "youtube_url": "https://youtu.be/1WHHSYdR_Pk",
+        "studio_url": "https://studio.youtube.com/video/1WHHSYdR_Pk/edit",
+        "uploaded_at": "2026-10-08T14:01:14Z",
+        "thumbnail": "https://i.ytimg.com/vi/1WHHSYdR_Pk/mqdefault.jpg",
         "views": 0,
         "likes": 0,
         "comments": 0,
@@ -5969,6 +5969,22 @@
         "is_blocked": false
       },
       "uploaded_videos": [
+        {
+          "title": "This toddler just hijacked a billionaire's hypercar! 🏎️👶 #Shorts",
+          "youtube_id": "1WHHSYdR_Pk",
+          "youtube_url": "https://youtu.be/1WHHSYdR_Pk",
+          "studio_url": "https://studio.youtube.com/video/1WHHSYdR_Pk/edit",
+          "uploaded_at": "2026-10-08T14:01:14Z",
+          "thumbnail": "https://i.ytimg.com/vi/1WHHSYdR_Pk/mqdefault.jpg",
+          "views": 0,
+          "likes": 0,
+          "comments": 0,
+          "is_clean": true,
+          "health_badge": "100% CLEAN",
+          "flag_details": "None (Clean)",
+          "channel_name": "VexoRush",
+          "is_blocked": false
+        },
         {
           "title": "This Little Explorer Stole Every Car Lover's Heart! 🚗💨 #Shorts",
           "youtube_id": "8xbeb83MoGA",
@@ -7060,7 +7076,7 @@
       },
       "is_active": true,
       "is_terminated": false,
-      "drive_videos_count": 79,
+      "drive_videos_count": 78,
       "country": "US"
     },
     {
@@ -7074,13 +7090,13 @@
       "color": "#EC4899",
       "avatar_url": "https://yt3.ggpht.com/pqIrk9GBtAR6cdyBH5C_kHNWA1jlu4VT9ZLKxdYTFW6IvVQLWbtFO3OUxrSV1Jm1SR0JAyTrAA=s240-c-k-c0x00ffffff-no-rj",
       "subscribers": 31,
-      "total_views": 51724,
-      "channel_total_videos": 55,
-      "avg_views_per_video": 975,
+      "total_views": 52008,
+      "channel_total_videos": 56,
+      "avg_views_per_video": 957,
       "engagement_rate": 1.0,
       "total_likes": 544,
       "analytics": {
-        "watch_time_hours": 275.9,
+        "watch_time_hours": 277.4,
         "avg_view_duration": "0:24",
         "top_countries": [
           {
@@ -7253,22 +7269,22 @@
       },
       "drive_folder_id": "1xZSez3F82y0pLTWJbQ-ybPjbOCqY1mrW",
       "drive_folder_url": "https://drive.google.com/drive/folders/1xZSez3F82y0pLTWJbQ-ybPjbOCqY1mrW",
-      "uploaded_count": 55,
-      "drive_queue_count": 93,
-      "runway_days": 46.5,
+      "uploaded_count": 56,
+      "drive_queue_count": 92,
+      "runway_days": 46.0,
       "stock_status": "Plentiful (64.0 days)",
       "stock_color": "#10B981",
       "latest_run_status": "success",
       "latest_run_time": "2026-09-20T21:06:00.223541+00:00",
       "latest_uploaded_video": {
-        "title": "This Painting Defies All Logic! 🤯 #Shorts",
-        "youtube_id": "y0Jba3ijdIE",
-        "youtube_url": "https://youtu.be/y0Jba3ijdIE",
-        "studio_url": "https://studio.youtube.com/video/y0Jba3ijdIE/edit",
-        "uploaded_at": "2026-10-07T20:58:45Z",
-        "thumbnail": "https://i.ytimg.com/vi/y0Jba3ijdIE/mqdefault.jpg",
-        "views": 1388,
-        "likes": 5,
+        "title": "This Painting Broke The Internet! 🤯🎨 #Shorts",
+        "youtube_id": "ujf5ysAIBTY",
+        "youtube_url": "https://youtu.be/ujf5ysAIBTY",
+        "studio_url": "https://studio.youtube.com/video/ujf5ysAIBTY/edit",
+        "uploaded_at": "2026-10-08T14:11:42Z",
+        "thumbnail": "https://i.ytimg.com/vi/ujf5ysAIBTY/mqdefault.jpg",
+        "views": 0,
+        "likes": 0,
         "comments": 0,
         "is_clean": true,
         "health_badge": "100% CLEAN",
@@ -7277,6 +7293,22 @@
         "is_blocked": false
       },
       "uploaded_videos": [
+        {
+          "title": "This Painting Broke The Internet! 🤯🎨 #Shorts",
+          "youtube_id": "ujf5ysAIBTY",
+          "youtube_url": "https://youtu.be/ujf5ysAIBTY",
+          "studio_url": "https://studio.youtube.com/video/ujf5ysAIBTY/edit",
+          "uploaded_at": "2026-10-08T14:11:42Z",
+          "thumbnail": "https://i.ytimg.com/vi/ujf5ysAIBTY/mqdefault.jpg",
+          "views": 0,
+          "likes": 0,
+          "comments": 0,
+          "is_clean": true,
+          "health_badge": "100% CLEAN",
+          "flag_details": "None (Clean)",
+          "channel_name": "Klyvo",
+          "is_blocked": false
+        },
         {
           "title": "This Painting Defies All Logic! 🤯 #Shorts",
           "youtube_id": "y0Jba3ijdIE",
@@ -8324,7 +8356,7 @@
       },
       "is_active": true,
       "is_terminated": false,
-      "drive_videos_count": 93,
+      "drive_videos_count": 92,
       "country": "US"
     },
     {
