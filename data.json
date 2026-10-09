@@ -1,21 +1,21 @@
 {
   "app_name": "Raj Tube Pro",
   "version": "6.1.0",
-  "timestamp": "2026-10-09T21:16:13.199457+00:00",
+  "timestamp": "2026-10-09T21:46:58.860598+00:00",
   "schedule": {
     "next_slot_iso": "2026-10-10T08:00:00+00:00",
-    "seconds_remaining": 38626,
-    "formatted_countdown": "10h 43m 46s",
+    "seconds_remaining": 36781,
+    "formatted_countdown": "10h 13m 01s",
     "slot_label": "01:30 PM IST Tomorrow (Lunch Break)",
-    "now_ist": "10 Oct, 02:46 AM IST"
+    "now_ist": "10 Oct, 03:16 AM IST"
   },
   "summary": {
     "total_channels": 9,
-    "total_uploaded": 515,
-    "total_in_queue": 563,
-    "total_subscribers": 1124,
-    "total_views": 1512054,
-    "total_likes": 9580,
+    "total_uploaded": 516,
+    "total_in_queue": 562,
+    "total_subscribers": 1092,
+    "total_views": 1493995,
+    "total_likes": 9396,
     "network_engagement": 0.8,
     "total_runway_days": 58.5,
     "system_health": "All Systems Operational",
@@ -31,7 +31,7 @@
       "uploaded_at": "2026-09-11T16:04:35Z"
     },
     "analytics": {
-      "watch_time_hours": 8064.3,
+      "watch_time_hours": 7968.0,
       "avg_view_duration": "0:24",
       "top_countries": [
         {
@@ -385,7 +385,7 @@
         }
       }
     ],
-    "avg_views_per_channel": 189007
+    "avg_views_per_channel": 186749
   },
   "issues": [],
   "channels": [
@@ -3140,9 +3140,9 @@
       "subscribers": 859,
       "total_views": 1237157,
       "channel_total_videos": 61,
-      "avg_views_per_video": 20593,
+      "avg_views_per_video": 20607,
       "engagement_rate": 0.8,
-      "total_likes": 7017,
+      "total_likes": 7021,
       "analytics": {
         "watch_time_hours": 6598.2,
         "avg_view_duration": "0:24",
@@ -3331,7 +3331,7 @@
         "studio_url": "https://studio.youtube.com/video/sN7MEHV-72Q/edit",
         "uploaded_at": "2026-10-09T13:11:19Z",
         "thumbnail": "https://i.ytimg.com/vi/sN7MEHV-72Q/mqdefault.jpg",
-        "views": 2316,
+        "views": 2470,
         "likes": 26,
         "comments": 0,
         "is_clean": true,
@@ -3348,7 +3348,7 @@
           "studio_url": "https://studio.youtube.com/video/sN7MEHV-72Q/edit",
           "uploaded_at": "2026-10-09T13:11:19Z",
           "thumbnail": "https://i.ytimg.com/vi/sN7MEHV-72Q/mqdefault.jpg",
-          "views": 2316,
+          "views": 2470,
           "likes": 26,
           "comments": 0,
           "is_clean": true,
@@ -3364,8 +3364,8 @@
           "studio_url": "https://studio.youtube.com/video/OuyIqHjfnYM/edit",
           "uploaded_at": "2026-10-09T08:08:18Z",
           "thumbnail": "https://i.ytimg.com/vi/OuyIqHjfnYM/mqdefault.jpg",
-          "views": 8221,
-          "likes": 140,
+          "views": 8801,
+          "likes": 142,
           "comments": 2,
           "is_clean": true,
           "health_badge": "100% CLEAN",
@@ -3380,8 +3380,8 @@
           "studio_url": "https://studio.youtube.com/video/IRuzT-XSoik/edit",
           "uploaded_at": "2026-10-08T13:12:12Z",
           "thumbnail": "https://i.ytimg.com/vi/IRuzT-XSoik/mqdefault.jpg",
-          "views": 1288,
-          "likes": 4,
+          "views": 1297,
+          "likes": 5,
           "comments": 0,
           "is_clean": true,
           "health_badge": "100% CLEAN",
@@ -3396,7 +3396,7 @@
           "studio_url": "https://studio.youtube.com/video/o2-7vFXd2Mc/edit",
           "uploaded_at": "2026-10-08T08:08:09Z",
           "thumbnail": "https://i.ytimg.com/vi/o2-7vFXd2Mc/mqdefault.jpg",
-          "views": 1498,
+          "views": 1495,
           "likes": 16,
           "comments": 0,
           "is_clean": true,
@@ -3412,8 +3412,8 @@
           "studio_url": "https://studio.youtube.com/video/VmZNSsBsIdY/edit",
           "uploaded_at": "2026-10-07T13:12:01Z",
           "thumbnail": "https://i.ytimg.com/vi/VmZNSsBsIdY/mqdefault.jpg",
-          "views": 32707,
-          "likes": 227,
+          "views": 32878,
+          "likes": 228,
           "comments": 8,
           "is_clean": true,
           "health_badge": "100% CLEAN",
@@ -3444,7 +3444,7 @@
           "studio_url": "https://studio.youtube.com/video/0786e9duWX4/edit",
           "uploaded_at": "2026-10-06T13:08:54Z",
           "thumbnail": "https://i.ytimg.com/vi/0786e9duWX4/mqdefault.jpg",
-          "views": 1647,
+          "views": 1632,
           "likes": 12,
           "comments": 2,
           "is_clean": true,
@@ -3460,7 +3460,7 @@
           "studio_url": "https://studio.youtube.com/video/ojP-oD-sHPA/edit",
           "uploaded_at": "2026-10-06T08:08:03Z",
           "thumbnail": "https://i.ytimg.com/vi/ojP-oD-sHPA/mqdefault.jpg",
-          "views": 2637,
+          "views": 2634,
           "likes": 31,
           "comments": 0,
           "is_clean": true,
@@ -6168,7 +6168,7 @@
           "studio_url": "https://studio.youtube.com/video/IJrFIw8s81w/edit",
           "uploaded_at": "2026-10-08T20:49:16Z",
           "thumbnail": "https://i.ytimg.com/vi/IJrFIw8s81w/mqdefault.jpg",
-          "views": 2,
+          "views": 3,
           "likes": 0,
           "comments": 0,
           "is_clean": true,
@@ -7280,7 +7280,7 @@
         "org": "Datacamp Limited (Miami US Gateway)",
         "datacenter": "Surfshark Dedicated US Miami Gateway",
         "verify_url": "https://ipinfo.io/149.102.224.206",
-        "verified_at": "2026-10-09T14:01:13Z"
+        "verified_at": "2026-10-09T20:48:16Z"
       },
       "is_active": true,
       "is_terminated": false,
@@ -7300,9 +7300,9 @@
       "subscribers": 31,
       "total_views": 54049,
       "channel_total_videos": 59,
-      "avg_views_per_video": 1002,
+      "avg_views_per_video": 1004,
       "engagement_rate": 1.0,
-      "total_likes": 601,
+      "total_likes": 602,
       "analytics": {
         "watch_time_hours": 288.3,
         "avg_view_duration": "0:24",
@@ -7491,8 +7491,8 @@
         "studio_url": "https://studio.youtube.com/video/6kQxnNxbDPQ/edit",
         "uploaded_at": "2026-10-09T20:59:43Z",
         "thumbnail": "https://i.ytimg.com/vi/6kQxnNxbDPQ/mqdefault.jpg",
-        "views": 104,
-        "likes": 1,
+        "views": 244,
+        "likes": 2,
         "comments": 0,
         "is_clean": true,
         "health_badge": "100% CLEAN",
@@ -7508,8 +7508,8 @@
           "studio_url": "https://studio.youtube.com/video/6kQxnNxbDPQ/edit",
           "uploaded_at": "2026-10-09T20:59:43Z",
           "thumbnail": "https://i.ytimg.com/vi/6kQxnNxbDPQ/mqdefault.jpg",
-          "views": 104,
-          "likes": 1,
+          "views": 244,
+          "likes": 2,
           "comments": 0,
           "is_clean": true,
           "health_badge": "100% CLEAN",
@@ -7604,7 +7604,7 @@
           "studio_url": "https://studio.youtube.com/video/bsXiPhsh4XE/edit",
           "uploaded_at": "2026-10-06T20:57:31Z",
           "thumbnail": "https://i.ytimg.com/vi/bsXiPhsh4XE/mqdefault.jpg",
-          "views": 998,
+          "views": 1000,
           "likes": 14,
           "comments": 1,
           "is_clean": true,
@@ -7620,7 +7620,7 @@
           "studio_url": "https://studio.youtube.com/video/zxY28jEeWjQ/edit",
           "uploaded_at": "2026-10-06T14:11:36Z",
           "thumbnail": "https://i.ytimg.com/vi/zxY28jEeWjQ/mqdefault.jpg",
-          "views": 15,
+          "views": 16,
           "likes": 0,
           "comments": 0,
           "is_clean": true,
@@ -7636,7 +7636,7 @@
           "studio_url": "https://studio.youtube.com/video/Q_GE2RdqAGI/edit",
           "uploaded_at": "2026-10-05T21:39:26Z",
           "thumbnail": "https://i.ytimg.com/vi/Q_GE2RdqAGI/mqdefault.jpg",
-          "views": 4,
+          "views": 5,
           "likes": 0,
           "comments": 0,
           "is_clean": true,
@@ -7684,7 +7684,7 @@
           "studio_url": "https://studio.youtube.com/video/pLZQ6K6fads/edit",
           "uploaded_at": "2026-10-04T18:58:13Z",
           "thumbnail": "https://i.ytimg.com/vi/pLZQ6K6fads/mqdefault.jpg",
-          "views": 1193,
+          "views": 1194,
           "likes": 13,
           "comments": 0,
           "is_clean": true,
@@ -8608,7 +8608,7 @@
         "org": "M247 Ltd (New York US Gateway)",
         "datacenter": "Surfshark Dedicated US NY Gateway",
         "verify_url": "https://ipinfo.io/146.70.186.171",
-        "verified_at": "2026-10-09T14:12:17Z"
+        "verified_at": "2026-10-09T20:59:43Z"
       },
       "is_active": true,
       "is_terminated": false,
@@ -8625,14 +8625,14 @@
       "github_repo": "malhotramahi396-afk/yt-automation-corevantamedia",
       "color": "#3B82F6",
       "avatar_url": "https://yt3.ggpht.com/vRLBXNb4fgjWzDfLf8ltniGaD2BlvZ1PAWugGoZaJx1nCdJ92LubM-8vy7hIgxHlCicFwpt2=s240-c-k-c0x00ffffff-no-rj",
-      "subscribers": 32,
-      "total_views": 18059,
+      "subscribers": 0,
+      "total_views": 0,
       "channel_total_videos": 73,
       "avg_views_per_video": 244,
       "engagement_rate": 1.1,
-      "total_likes": 189,
+      "total_likes": 0,
       "analytics": {
-        "watch_time_hours": 96.3,
+        "watch_time_hours": 0.0,
         "avg_view_duration": "0:24",
         "top_countries": [
           {
@@ -8762,46 +8762,17 @@
         "verified_source": "YouTube Analytics API (100% Genuine)"
       },
       "health": {
-        "overall_score": 99,
-        "verdict": "Flawless (Optimal Standing)",
-        "verdict_color": "#10B981",
-        "shield_icon": "🛡️",
-        "strikes": {
-          "count": 0,
-          "max": 3,
-          "status": "0 of 3 active strikes • Channel Active & Public (YouTube API Verified)",
-          "badge": "CLEAN",
-          "is_clean": true
-        },
-        "copyright": {
-          "count": 0,
-          "status": "0 copyright restrictions across 36 videos • 100% Active & Public (YouTube API Verified)",
-          "badge": "100% CLEAN",
-          "color": "#10B981",
-          "is_clean": true,
-          "flagged_videos": []
-        },
-        "view_health": {
-          "label": "YouTube API Verified: 503 avg views/video (18,112 total views across 36 videos)",
-          "badge": "503 AVG",
-          "color": "#3EA6FF",
-          "avg_views": 503.1,
-          "shorts_feed_share": "81.2%",
-          "velocity_verdict": "Algorithm Reach: High"
-        },
-        "compliance": {
-          "label": "YouTube Policy: AI Disclosure & COPPA Guard Active (Self-Declared)",
-          "badge": "100% OK",
-          "synthetic_media": "Self-Declared True (Compliant)",
-          "coppa_kids": "Declared False (General Audience)",
-          "is_compliant": true
-        },
-        "upload_engine": {
-          "latest_run": "success",
-          "queue_health": "Plentiful Runway (65.0 days)",
-          "runway_days": 65.0,
-          "total_uploaded": 36
-        }
+        "overall_score": 0,
+        "verdict": "Channel Terminated / Deleted by YouTube",
+        "verdict_color": "#EF4444",
+        "view_health_badge": "TERMINATED",
+        "view_health_label": "Account Deleted / Suspended by YouTube",
+        "view_health_color": "#EF4444",
+        "copyright_status": "Account Terminated / Deleted by YouTube",
+        "copyright_badge": "TERMINATED",
+        "copyright_color": "#EF4444",
+        "strikes_status": "Account Suspended / Terminated by YouTube",
+        "is_clean": false
       },
       "drive_folder_id": "1mxwPH1BvYEfv77zDUWA5ZxiwYW2hG125",
       "drive_folder_url": "https://drive.google.com/drive/folders/1mxwPH1BvYEfv77zDUWA5ZxiwYW2hG125",
@@ -10272,12 +10243,16 @@
         "org": "Cdnext (Dallas US Gateway)",
         "datacenter": "Surfshark Dedicated US Dallas Gateway",
         "verify_url": "https://ipinfo.io/169.150.254.87",
-        "verified_at": "2026-10-09T14:35:11Z"
+        "verified_at": "2026-10-09T21:13:16Z"
       },
-      "is_active": true,
-      "is_terminated": false,
+      "is_active": false,
+      "is_terminated": true,
       "drive_videos_count": 92,
-      "country": "US"
+      "country": "US",
+      "is_suspended": true,
+      "status_badge": "TERMINATED",
+      "status_label": "Channel Terminated / Deleted by YouTube",
+      "status_color": "#EF4444"
     },
     {
       "id": "channel_8",
@@ -10291,8 +10266,8 @@
       "avatar_url": "https://yt3.ggpht.com/c2et41jvboHRktLNJH-bmzbYclnu_SeQYjockP52SQB3xQtmw6jPskOSLrGMwcb7UiN4i4QybOo=s240-c-k-c0x00ffffff-no-rj",
       "subscribers": 20,
       "total_views": 34663,
-      "channel_total_videos": 75,
-      "avg_views_per_video": 462,
+      "channel_total_videos": 76,
+      "avg_views_per_video": 456,
       "engagement_rate": 0.8,
       "total_likes": 292,
       "analytics": {
@@ -10469,20 +10444,20 @@
       },
       "drive_folder_id": "1Gg_7t0r1W59nhLOvilGfOttuSa_T5tWd",
       "drive_folder_url": "https://drive.google.com/drive/folders/1Gg_7t0r1W59nhLOvilGfOttuSa_T5tWd",
-      "uploaded_count": 75,
-      "drive_queue_count": 94,
-      "runway_days": 47.0,
+      "uploaded_count": 76,
+      "drive_queue_count": 93,
+      "runway_days": 46.5,
       "stock_status": "Plentiful (65.5 days)",
       "stock_color": "#10B981",
       "latest_run_status": "success",
       "latest_run_time": "2026-09-20T21:10:15.768754+00:00",
       "latest_uploaded_video": {
-        "title": "They Kept This Hidden For 10 Years! 🤯 #Shorts",
-        "youtube_id": "u13wplRB69I",
-        "youtube_url": "https://youtu.be/u13wplRB69I",
-        "studio_url": "https://studio.youtube.com/video/u13wplRB69I/edit",
-        "uploaded_at": "2026-10-09T14:50:34Z",
-        "thumbnail": "https://i.ytimg.com/vi/u13wplRB69I/mqdefault.jpg",
+        "title": "They Almost Cancelled the Movie Over This... 😱 #Shorts",
+        "youtube_id": "gCX-IqmyyGI",
+        "youtube_url": "https://youtu.be/gCX-IqmyyGI",
+        "studio_url": "https://studio.youtube.com/video/gCX-IqmyyGI/edit",
+        "uploaded_at": "2026-10-09T21:31:12Z",
+        "thumbnail": "https://i.ytimg.com/vi/gCX-IqmyyGI/mqdefault.jpg",
         "views": 0,
         "likes": 0,
         "comments": 0,
@@ -10493,6 +10468,22 @@
         "is_blocked": false
       },
       "uploaded_videos": [
+        {
+          "title": "They Almost Cancelled the Movie Over This... 😱 #Shorts",
+          "youtube_id": "gCX-IqmyyGI",
+          "youtube_url": "https://youtu.be/gCX-IqmyyGI",
+          "studio_url": "https://studio.youtube.com/video/gCX-IqmyyGI/edit",
+          "uploaded_at": "2026-10-09T21:31:12Z",
+          "thumbnail": "https://i.ytimg.com/vi/gCX-IqmyyGI/mqdefault.jpg",
+          "views": 0,
+          "likes": 0,
+          "comments": 0,
+          "is_clean": true,
+          "health_badge": "100% CLEAN",
+          "flag_details": "None (Clean)",
+          "channel_name": "Hyperflux Motion",
+          "is_blocked": false
+        },
         {
           "title": "They Kept This Hidden For 10 Years! 🤯 #Shorts",
           "youtube_id": "u13wplRB69I",
@@ -11968,7 +11959,7 @@
       },
       "is_active": true,
       "is_terminated": false,
-      "drive_videos_count": 94,
+      "drive_videos_count": 93,
       "country": "US"
     }
   ]
