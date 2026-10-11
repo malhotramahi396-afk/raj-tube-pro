@@ -180,6 +180,8 @@ def fetch_live_audience_analytics(ch_id: str, refresh_token: str, client_id: str
 CHANNEL_REPOS = {
     "channel_1": ("malhotramahi396-afk/yt-automation-the-hidden-lens", "data/channel_1.db"),
     "channel_2": ("malhotramahi396-afk/yt-automation-zyntrix07", "data/channel_2.db"),
+    "channel_3": ("malhotramahi396-afk/yt-automation-the-hidden-lens", "data/channel_3.db"),
+    "channel_4": ("malhotramahi396-afk/yt-automation-klyvo", "data/channel_5.db"),
     "channel_5": ("malhotramahi396-afk/yt-automation-klyvo", "data/channel_5.db"),
 }
 
@@ -206,7 +208,18 @@ LOCKED_FLEET_NODES = {
         "datacenter": "Surfshark Dedicated US NY Gateway",
         "verify_url": "https://ipinfo.io/84.17.35.112"
     },
-    "channel_5": {
+    "channel_3": {
+        "ip": "84.17.35.112",
+        "city": "New York City",
+        "region": "New York",
+        "country": "United States",
+        "country_code": "US",
+        "flag": "🇺🇸",
+        "org": "Datacamp Limited (New York US Gateway)",
+        "datacenter": "Surfshark Dedicated US NY Gateway",
+        "verify_url": "https://ipinfo.io/84.17.35.112"
+    },
+    "channel_4": {
         "ip": "146.70.186.171",
         "city": "New York City",
         "region": "New York",
@@ -216,6 +229,83 @@ LOCKED_FLEET_NODES = {
         "org": "M247 Ltd (New York US Gateway)",
         "datacenter": "Surfshark Dedicated US NY Gateway",
         "verify_url": "https://ipinfo.io/146.70.186.171"
+    },
+    "channel_5": {
+        "ip": "84.17.35.112",
+        "city": "New York City",
+        "region": "New York",
+        "country": "United States",
+        "country_code": "US",
+        "flag": "🇺🇸",
+        "org": "Datacamp Limited (New York US Gateway)",
+        "datacenter": "Surfshark Dedicated US NY Gateway",
+        "verify_url": "https://ipinfo.io/84.17.35.112"
+    },
+    "channel_6": {
+        "ip": "84.17.35.112",
+        "city": "New York City",
+        "region": "New York",
+        "country": "United States",
+        "country_code": "US",
+        "flag": "🇺🇸",
+        "org": "Datacamp Limited (New York US Gateway)",
+        "datacenter": "Surfshark Dedicated US NY Gateway",
+        "verify_url": "https://ipinfo.io/84.17.35.112"
+    },
+    "channel_7": {
+        "ip": "169.150.203.199",
+        "city": "Los Angeles",
+        "region": "California",
+        "country": "United States",
+        "country_code": "US",
+        "flag": "🇺🇸",
+        "org": "Datacamp Limited (Los Angeles US Gateway)",
+        "datacenter": "Surfshark Dedicated US LA Gateway",
+        "verify_url": "https://ipinfo.io/169.150.203.199"
+    },
+    "channel_8": {
+        "ip": "84.17.35.112",
+        "city": "New York City",
+        "region": "New York",
+        "country": "United States",
+        "country_code": "US",
+        "flag": "🇺🇸",
+        "org": "Datacamp Limited (New York US Gateway)",
+        "datacenter": "Surfshark Dedicated US NY Gateway",
+        "verify_url": "https://ipinfo.io/84.17.35.112"
+    },
+    "channel_9": {
+        "ip": "84.17.35.112",
+        "city": "New York City",
+        "region": "New York",
+        "country": "United States",
+        "country_code": "US",
+        "flag": "🇺🇸",
+        "org": "Datacamp Limited (New York US Gateway)",
+        "datacenter": "Surfshark Dedicated US NY Gateway",
+        "verify_url": "https://ipinfo.io/84.17.35.112"
+    },
+    "channel_10": {
+        "ip": "2.56.189.90",
+        "city": "Dallas",
+        "region": "Texas",
+        "country": "United States",
+        "country_code": "US",
+        "flag": "🇺🇸",
+        "org": "Clouvider Limited (Dallas US Gateway)",
+        "datacenter": "Surfshark Dedicated US Dallas Gateway",
+        "verify_url": "https://ipinfo.io/2.56.189.90"
+    },
+    "channel_11": {
+        "ip": "84.17.35.112",
+        "city": "New York City",
+        "region": "New York",
+        "country": "United States",
+        "country_code": "US",
+        "flag": "🇺🇸",
+        "org": "Datacamp Limited (New York US Gateway)",
+        "datacenter": "Surfshark Dedicated US NY Gateway",
+        "verify_url": "https://ipinfo.io/84.17.35.112"
     }
 }
 
@@ -327,7 +417,15 @@ def sync_runner_nodes(channels: List[Dict[str, Any]]):
 GDRIVE_FOLDER_MAP = {
     "channel_1": "1f8Nj2kEchzW4gdlMEQ5S_eAazvdrQ3ai",  # The Hidden Lens
     "channel_2": "1So3rmfL0rvojsXq7m6WoA9RYS029HXW6",  # Zyntrix07
-    "channel_5": "1xZSez3F82y0pLTWJbQ-ybPjbOCqY1mrW",  # Klyvo
+    "channel_3": "1p4tJoNihhdq-Kky3H7i5OIWc1qlFK7sj",  # Billionaire Heir TV
+    "channel_4": "1xZSez3F82y0pLTWJbQ-ybPjbOCqY1mrW",  # Klyvo
+    "channel_5": "1F6RHJrATMgfSbWH0w6QAgzrysf0FQGhK",  # CineBite Drama
+    "channel_6": "1_xeV5rQ_LlAApBw0VtT8LZaUFKnLVJD3",  # Code Red Dramas
+    "channel_7": "1CvqkWobxWc7r1cWChOFVAo3Evltugdnb",  # Cozy Fold
+    "channel_8": "1-YXQwBn_euB2WM4ArLh-LrepRtXblLEI",  # Godfather Sins
+    "channel_9": "1dPBjw2PZQGCzXLM7pSp1Ks0hXah3OCb7",  # Tears of Regret TV
+    "channel_10": "1cveUK4nd4i1dpN75MuyrCI_SjbY2VudJ",  # United TV
+    "channel_11": "1tNRW9mTetuJq8EF3CLA7DGN4ydVlZ_QG",  # WildStare POV
 }
 
 

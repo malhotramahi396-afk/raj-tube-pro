@@ -955,7 +955,6 @@ const CHANNEL_REPOS = {
   "channel_3": "malhotramahi396-afk/yt-automation-vibrozen",
   "channel_4": "malhotramahi396-afk/yt-automation-vexorush",
   "channel_5": "malhotramahi396-afk/yt-automation-klyvo",
-  "channel_6": "malhotramahi396-afk/yt-automation-corevantamedia",
   "channel_8": "malhotramahi396-afk/yt-automation-hyperfluxmotion",
   "channel_10": "malhotramahi396-afk/yt-automation-zenovadrift",
 };
@@ -966,7 +965,6 @@ const LOCKED_FLEET_NODES = {
   "channel_3": { ip: "146.70.186.195", isp: "M247 NYC", asn: "AS9009", loc: "New York City, NY, US 🇺🇸" },
   "channel_4": { ip: "138.199.40.177", isp: "Datacamp NYC", asn: "AS60068", loc: "New York City, NY, US 🇺🇸" },
   "channel_5": { ip: "146.70.186.171", isp: "M247 NYC", asn: "AS9009", loc: "New York City, NY, US 🇺🇸" },
-  "channel_6": { ip: "92.119.177.19", isp: "M247 NYC", asn: "AS9009", loc: "New York City, NY, US 🇺🇸" },
   "channel_8": { ip: "193.148.18.51", isp: "M247 NYC", asn: "AS9009", loc: "New York City, NY, US 🇺🇸" },
   "channel_10": { ip: "92.119.177.21", isp: "M247 NYC", asn: "AS9009", loc: "New York City, NY, US 🇺🇸" },
 };
@@ -3509,15 +3507,17 @@ function appendTerminalLine(container, text, type = 'info') {
    AUTOMATION RADAR & 24-HOUR FLEET DISPATCH ENGINE CONTROLLER
    ======================================================== */
 const CHANNEL_SCHEDULES = {
-  "channel_1": [ { utcHour: 8, utcMin: 15, istStr: "01:45 PM", slot: "Slot 1 (Global Window)" }, { utcHour: 13, utcMin: 15, istStr: "06:45 PM", slot: "Slot 2 (USA 09:15 AM EDT Peak)" } ],
-  "channel_2": [ { utcHour: 8, utcMin: 0, istStr: "01:30 PM", slot: "Slot 1 (Lunch Break)" }, { utcHour: 13, utcMin: 0, istStr: "06:30 PM", slot: "Slot 2 (Evening Peak)" } ],
-  "channel_3": [ { utcHour: 13, utcMin: 30, istStr: "07:00 PM", slot: "Slot 1 (USA 09:30 AM EDT Peak)" }, { utcHour: 20, utcMin: 15, istStr: "01:45 AM", slot: "Slot 2 (USA 04:15 PM EDT Peak)" } ],
-  "channel_4": [ { utcHour: 13, utcMin: 45, istStr: "07:15 PM", slot: "Slot 1 (USA 09:45 AM EDT Peak)" }, { utcHour: 20, utcMin: 30, istStr: "02:00 AM", slot: "Slot 2 (USA 04:30 PM EDT Peak)" } ],
-  "channel_5": [ { utcHour: 14, utcMin: 0, istStr: "07:30 PM", slot: "Slot 1 (USA 10:00 AM EDT Peak)" }, { utcHour: 20, utcMin: 45, istStr: "02:15 AM", slot: "Slot 2 (USA 04:45 PM EDT Peak)" } ],
-  "channel_6": [ { utcHour: 14, utcMin: 15, istStr: "07:45 PM", slot: "Slot 1 (USA 10:15 AM EDT Peak)" }, { utcHour: 21, utcMin: 0, istStr: "02:30 AM", slot: "Slot 2 (USA 05:00 PM EDT Peak)" } ],
-  "channel_8": [ { utcHour: 14, utcMin: 30, istStr: "08:00 PM", slot: "Slot 1 (USA 10:30 AM EDT Peak)" }, { utcHour: 21, utcMin: 15, istStr: "02:45 AM", slot: "Slot 2 (USA 05:15 PM EDT Peak)" } ],
-  "channel_9": [ { utcHour: 14, utcMin: 45, istStr: "08:15 PM", slot: "Slot 1 (USA 10:45 AM EDT Peak)" }, { utcHour: 21, utcMin: 30, istStr: "03:00 AM", slot: "Slot 2 (USA 05:30 PM EDT Peak)" } ],
-  "channel_10": [ { utcHour: 15, utcMin: 0, istStr: "08:30 PM", slot: "Slot 1 (USA 11:00 AM EDT Peak)" }, { utcHour: 21, utcMin: 45, istStr: "03:15 AM", slot: "Slot 2 (USA 05:45 PM EDT Peak)" } ]
+  "channel_1": [ { utcHour: 15, utcMin: 30, istStr: "09:00 PM", slot: "Slot 1 (US Central Morning / Lunch 11:30 AM EDT)" }, { utcHour: 22, utcMin: 0, istStr: "03:30 AM", slot: "Slot 2 (US Central Evening Prime 05:00 PM CDT / 06:00 PM EDT)" } ],
+  "channel_2": [ { utcHour: 15, utcMin: 55, istStr: "09:25 PM", slot: "Slot 1 (NYC Lunch Peak 11:55 AM EDT)" }, { utcHour: 22, utcMin: 25, istStr: "03:55 AM", slot: "Slot 2 (NYC Couch Prime 06:25 PM EDT)" } ],
+  "channel_3": [ { utcHour: 16, utcMin: 20, istStr: "09:50 PM", slot: "Slot 1 (NYC Lunch Break 12:20 PM EDT)" }, { utcHour: 22, utcMin: 50, istStr: "04:20 AM", slot: "Slot 2 (NYC Evening Prime 06:50 PM EDT)" } ],
+  "channel_4": [ { utcHour: 16, utcMin: 45, istStr: "10:15 PM", slot: "Slot 1 (NYC Lunch Break 12:45 PM EDT)" }, { utcHour: 23, utcMin: 15, istStr: "04:45 AM", slot: "Slot 2 (NYC Evening Prime 07:15 PM EDT)" } ],
+  "channel_5": [ { utcHour: 17, utcMin: 10, istStr: "10:40 PM", slot: "Slot 1 (NYC Afternoon Browsing 01:10 PM EDT)" }, { utcHour: 23, utcMin: 40, istStr: "05:10 AM", slot: "Slot 2 (NYC Prime Time 07:40 PM EDT)" } ],
+  "channel_6": [ { utcHour: 17, utcMin: 35, istStr: "11:05 PM", slot: "Slot 1 (NYC Afternoon Rush 01:35 PM EDT)" }, { utcHour: 0, utcMin: 5, istStr: "05:35 AM", slot: "Slot 2 (NYC Drama Prime 08:05 PM EDT)" } ],
+  "channel_7": [ { utcHour: 18, utcMin: 0, istStr: "11:30 PM", slot: "Slot 1 (LA Lunch Peak 11:00 AM PDT / 02:00 PM EDT)" }, { utcHour: 0, utcMin: 30, istStr: "06:00 AM", slot: "Slot 2 (LA Evening Prime 05:30 PM PDT / 08:30 PM EDT)" } ],
+  "channel_8": [ { utcHour: 18, utcMin: 25, istStr: "11:55 PM", slot: "Slot 1 (NYC Afternoon Coffee 02:25 PM EDT)" }, { utcHour: 0, utcMin: 55, istStr: "06:25 AM", slot: "Slot 2 (NYC Prime Couch 08:55 PM EDT)" } ],
+  "channel_9": [ { utcHour: 18, utcMin: 50, istStr: "12:20 AM", slot: "Slot 1 (NYC Afternoon Browsing 02:50 PM EDT)" }, { utcHour: 1, utcMin: 20, istStr: "06:50 AM", slot: "Slot 2 (NYC Late Evening Binge 09:20 PM EDT)" } ],
+  "channel_10": [ { utcHour: 19, utcMin: 15, istStr: "12:45 AM", slot: "Slot 1 (Dallas Afternoon Break 02:15 PM CDT / 03:15 PM EDT)" }, { utcHour: 1, utcMin: 45, istStr: "07:15 AM", slot: "Slot 2 (Dallas Night Prime 08:45 PM CDT / 09:45 PM EDT)" } ],
+  "channel_11": [ { utcHour: 19, utcMin: 40, istStr: "01:10 AM", slot: "Slot 1 (NYC School/Work End 03:40 PM EDT)" }, { utcHour: 2, utcMin: 15, istStr: "07:45 AM", slot: "Slot 2 (Coast-to-Coast Prime 10:15 PM EDT / 07:15 PM PDT)" } ]
 };
 
 let radarTickInterval = null;
