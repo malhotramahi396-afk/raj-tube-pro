@@ -913,12 +913,18 @@ def sync_metrics(data_json_path: str):
             with open(dest_json, "w", encoding="utf-8") as f:
                 json.dump(data, f, indent=2, ensure_ascii=False)
 
-            # Sync sync_live_metrics.py to pages dir
-            pages_sync_script = os.path.join(pages_dir, "sync_live_metrics.py")
-            src_sync_script = os.path.abspath(__file__)
-            if os.path.exists(src_sync_script):
+            # Sync sync_live_metrics.py to pages dir if running from another location
+            pages_sync_script = os.path.normpath(os.path.join(pages_dir, "sync_live_metrics.py"))
+            src_sync_script = os.path.normpath(os.path.abspath(__file__))
+            if os.path.exists(src_sync_script) and src_sync_script.lower() != pages_sync_script.lower():
                 import shutil
                 shutil.copy2(src_sync_script, pages_sync_script)
+
+            # Also sync to local workspace public directory if it exists
+            local_pub_json = os.path.normpath(os.path.join(os.path.dirname(__file__), "public", "data.json"))
+            if os.path.exists(os.path.dirname(local_pub_json)):
+                with open(local_pub_json, "w", encoding="utf-8") as f:
+                    json.dump(data, f, indent=2, ensure_ascii=False)
 
             import subprocess
             subprocess.run(["git", "add", "data.json", "sync_live_metrics.py"], cwd=pages_dir, capture_output=True, timeout=10, text=True)
