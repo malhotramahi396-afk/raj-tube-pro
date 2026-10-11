@@ -180,12 +180,7 @@ def fetch_live_audience_analytics(ch_id: str, refresh_token: str, client_id: str
 CHANNEL_REPOS = {
     "channel_1": ("malhotramahi396-afk/yt-automation-the-hidden-lens", "data/channel_1.db"),
     "channel_2": ("malhotramahi396-afk/yt-automation-zyntrix07", "data/channel_2.db"),
-    "channel_3": ("malhotramahi396-afk/yt-automation-vibrozen", "data/channel_3.db"),
-    "channel_4": ("malhotramahi396-afk/yt-automation-vexorush", "data/channel_4.db"),
     "channel_5": ("malhotramahi396-afk/yt-automation-klyvo", "data/channel_5.db"),
-    "channel_6": ("malhotramahi396-afk/yt-automation-corevantamedia", "data/channel_6.db"),
-    "channel_8": ("malhotramahi396-afk/yt-automation-hyperfluxmotion", "data/channel_8.db"),
-    "channel_10": ("malhotramahi396-afk/yt-automation-zenovadrift", "data/channel_10.db")
 }
 
 LOCKED_FLEET_NODES = {
@@ -211,28 +206,6 @@ LOCKED_FLEET_NODES = {
         "datacenter": "Surfshark Dedicated US NY Gateway",
         "verify_url": "https://ipinfo.io/84.17.35.112"
     },
-    "channel_3": {
-        "ip": "138.199.35.4",
-        "city": "Los Angeles",
-        "region": "California",
-        "country": "United States",
-        "country_code": "US",
-        "flag": "🇺🇸",
-        "org": "Cdnext (Los Angeles US Gateway)",
-        "datacenter": "Surfshark Dedicated US LA Gateway",
-        "verify_url": "https://ipinfo.io/138.199.35.4"
-    },
-    "channel_4": {
-        "ip": "149.102.224.206",
-        "city": "Miami",
-        "region": "Florida",
-        "country": "United States",
-        "country_code": "US",
-        "flag": "🇺🇸",
-        "org": "Datacamp Limited (Miami US Gateway)",
-        "datacenter": "Surfshark Dedicated US Miami Gateway",
-        "verify_url": "https://ipinfo.io/149.102.224.206"
-    },
     "channel_5": {
         "ip": "146.70.186.171",
         "city": "New York City",
@@ -243,39 +216,6 @@ LOCKED_FLEET_NODES = {
         "org": "M247 Ltd (New York US Gateway)",
         "datacenter": "Surfshark Dedicated US NY Gateway",
         "verify_url": "https://ipinfo.io/146.70.186.171"
-    },
-    "channel_6": {
-        "ip": "169.150.254.87",
-        "city": "Dallas",
-        "region": "Texas",
-        "country": "United States",
-        "country_code": "US",
-        "flag": "🇺🇸",
-        "org": "Cdnext (Dallas US Gateway)",
-        "datacenter": "Surfshark Dedicated US Dallas Gateway",
-        "verify_url": "https://ipinfo.io/169.150.254.87"
-    },
-    "channel_8": {
-        "ip": "149.102.254.18",
-        "city": "Seattle",
-        "region": "Washington",
-        "country": "United States",
-        "country_code": "US",
-        "flag": "🇺🇸",
-        "org": "Datacamp Limited (Seattle US Gateway)",
-        "datacenter": "Surfshark Dedicated US Seattle Gateway",
-        "verify_url": "https://ipinfo.io/149.102.254.18"
-    },
-    "channel_10": {
-        "ip": "194.0.213.24",
-        "city": "Atlanta",
-        "region": "Georgia",
-        "country": "United States",
-        "country_code": "US",
-        "flag": "🇺🇸",
-        "org": "Clouvider Limited (Atlanta US Gateway)",
-        "datacenter": "Surfshark Dedicated US Atlanta Gateway",
-        "verify_url": "https://ipinfo.io/194.0.213.24"
     }
 }
 
@@ -387,12 +327,7 @@ def sync_runner_nodes(channels: List[Dict[str, Any]]):
 GDRIVE_FOLDER_MAP = {
     "channel_1": "1f8Nj2kEchzW4gdlMEQ5S_eAazvdrQ3ai",  # The Hidden Lens
     "channel_2": "1So3rmfL0rvojsXq7m6WoA9RYS029HXW6",  # Zyntrix07
-    "channel_3": "1oZBC0TiLWerpRuyZnhbDhNbAMAcEtdAc",  # VibroZen
-    "channel_4": "1C_R0kNrMxrW5FeX241UluglGU-qUEfkS",  # VexoRush
     "channel_5": "1xZSez3F82y0pLTWJbQ-ybPjbOCqY1mrW",  # Klyvo
-    "channel_6": "1mxwPH1BvYEfv77zDUWA5ZxiwYW2hG125",  # CoreVanta Media
-    "channel_8": "1Gg_7t0r1W59nhLOvilGfOttuSa_T5tWd",  # Hyperflux Motion
-    "channel_10": "1hqcXV2-IbDWrh7QR_xvOlfnOfO6Cbi9g",  # Zenova Drift
 }
 
 
