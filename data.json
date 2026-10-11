@@ -1,21 +1,21 @@
 {
   "app_name": "Raj Tube Pro",
   "version": "6.1.0",
-  "timestamp": "2026-10-11T16:51:38.222765+00:00",
+  "timestamp": "2026-10-11T21:02:48.403975+00:00",
   "schedule": {
     "next_slot_iso": "2026-10-12T08:00:00+00:00",
-    "seconds_remaining": 58612,
-    "formatted_countdown": "16h 16m 52s",
+    "seconds_remaining": 39431,
+    "formatted_countdown": "10h 57m 11s",
     "slot_label": "01:30 PM IST Tomorrow (Lunch Break)",
-    "now_ist": "11 Oct, 09:13 PM IST"
+    "now_ist": "12 Oct, 02:32 AM IST"
   },
   "summary": {
     "total_channels": 11,
-    "total_uploaded": 271,
-    "total_in_queue": 527,
-    "total_subscribers": 1320,
-    "total_views": 1488547,
-    "total_likes": 11052,
+    "total_uploaded": 287,
+    "total_in_queue": 526,
+    "total_subscribers": 1326,
+    "total_views": 1539735,
+    "total_likes": 11342,
     "network_engagement": 0.8,
     "total_runway_days": 24.0,
     "system_health": "All Systems Operational (11 Channels Active 1-11)",
@@ -31,7 +31,7 @@
       "uploaded_at": "2026-09-15T21:09:27Z"
     },
     "analytics": {
-      "watch_time_hours": 7523.5,
+      "watch_time_hours": 8211.9,
       "avg_view_duration": "0:24",
       "top_countries": [
         {
@@ -154,7 +154,8 @@
         }
       ],
       "peak_hours": "6:00 PM – 10:30 PM IST (Peak Global Viewing Window)"
-    }
+    },
+    "avg_views_per_channel": 139976
   },
   "issues": [],
   "channels": [
@@ -1480,14 +1481,14 @@
       "github_repo": "malhotramahi396-afk/yt-automation-zyntrix07",
       "color": "#F59E0B",
       "avatar_url": "https://yt3.ggpht.com/TTLhq8ijvpChRrWaVb1i96FzeFG02Gd31oOfWo4EdOtBtfqTD6h0TrRmEOTd2fE8V0kPexV6EA=s240-c-k-c0x00ffffff-no-rj",
-      "subscribers": 874,
-      "total_views": 1244975,
+      "subscribers": 877,
+      "total_views": 1288745,
       "channel_total_videos": 65,
-      "avg_views_per_video": 19935,
+      "avg_views_per_video": 20070,
       "engagement_rate": 0.8,
-      "total_likes": 7245,
+      "total_likes": 7291,
       "analytics": {
-        "watch_time_hours": 6639.9,
+        "watch_time_hours": 6873.3,
         "avg_view_duration": "0:24",
         "top_countries": [
           {
@@ -1674,8 +1675,8 @@
         "studio_url": "https://studio.youtube.com/video/tAmfNNu2oRU/edit",
         "uploaded_at": "2026-10-11T13:08:28Z",
         "thumbnail": "https://i.ytimg.com/vi/tAmfNNu2oRU/mqdefault.jpg",
-        "views": 1254,
-        "likes": 6,
+        "views": 4962,
+        "likes": 34,
         "comments": 0,
         "is_clean": true,
         "health_badge": "100% CLEAN",
@@ -1691,8 +1692,8 @@
           "studio_url": "https://studio.youtube.com/video/tAmfNNu2oRU/edit",
           "uploaded_at": "2026-10-11T13:08:28Z",
           "thumbnail": "https://i.ytimg.com/vi/tAmfNNu2oRU/mqdefault.jpg",
-          "views": 1254,
-          "likes": 6,
+          "views": 4962,
+          "likes": 34,
           "comments": 0,
           "is_clean": true,
           "health_badge": "100% CLEAN",
@@ -1707,9 +1708,9 @@
           "studio_url": "https://studio.youtube.com/video/gW821wUm5io/edit",
           "uploaded_at": "2026-10-11T08:06:13Z",
           "thumbnail": "https://i.ytimg.com/vi/gW821wUm5io/mqdefault.jpg",
-          "views": 1650,
-          "likes": 19,
-          "comments": 3,
+          "views": 3304,
+          "likes": 23,
+          "comments": 4,
           "is_clean": true,
           "health_badge": "100% CLEAN",
           "flag_details": "None (Clean)",
@@ -1723,8 +1724,8 @@
           "studio_url": "https://studio.youtube.com/video/XVeGu3rnrXk/edit",
           "uploaded_at": "2026-10-10T13:07:37Z",
           "thumbnail": "https://i.ytimg.com/vi/XVeGu3rnrXk/mqdefault.jpg",
-          "views": 2411,
-          "likes": 21,
+          "views": 2686,
+          "likes": 23,
           "comments": 1,
           "is_clean": true,
           "health_badge": "100% CLEAN",
@@ -1739,8 +1740,8 @@
           "studio_url": "https://studio.youtube.com/video/hQmTQgk_9AQ/edit",
           "uploaded_at": "2026-10-10T08:06:08Z",
           "thumbnail": "https://i.ytimg.com/vi/hQmTQgk_9AQ/mqdefault.jpg",
-          "views": 1703,
-          "likes": 12,
+          "views": 1770,
+          "likes": 13,
           "comments": 0,
           "is_clean": true,
           "health_badge": "100% CLEAN",
@@ -1755,8 +1756,8 @@
           "studio_url": "https://studio.youtube.com/video/sN7MEHV-72Q/edit",
           "uploaded_at": "2026-10-09T13:11:19Z",
           "thumbnail": "https://i.ytimg.com/vi/sN7MEHV-72Q/mqdefault.jpg",
-          "views": 7924,
-          "likes": 51,
+          "views": 10741,
+          "likes": 61,
           "comments": 1,
           "is_clean": true,
           "health_badge": "100% CLEAN",
@@ -1771,7 +1772,7 @@
           "studio_url": "https://studio.youtube.com/video/OuyIqHjfnYM/edit",
           "uploaded_at": "2026-10-09T08:08:18Z",
           "thumbnail": "https://i.ytimg.com/vi/OuyIqHjfnYM/mqdefault.jpg",
-          "views": 32895,
+          "views": 32946,
           "likes": 280,
           "comments": 4,
           "is_clean": true,
@@ -1787,7 +1788,7 @@
           "studio_url": "https://studio.youtube.com/video/IRuzT-XSoik/edit",
           "uploaded_at": "2026-10-08T13:12:12Z",
           "thumbnail": "https://i.ytimg.com/vi/IRuzT-XSoik/mqdefault.jpg",
-          "views": 2392,
+          "views": 2497,
           "likes": 6,
           "comments": 0,
           "is_clean": true,
@@ -1803,7 +1804,7 @@
           "studio_url": "https://studio.youtube.com/video/o2-7vFXd2Mc/edit",
           "uploaded_at": "2026-10-08T08:08:09Z",
           "thumbnail": "https://i.ytimg.com/vi/o2-7vFXd2Mc/mqdefault.jpg",
-          "views": 1589,
+          "views": 1598,
           "likes": 16,
           "comments": 0,
           "is_clean": true,
@@ -1819,7 +1820,7 @@
           "studio_url": "https://studio.youtube.com/video/VmZNSsBsIdY/edit",
           "uploaded_at": "2026-10-07T13:12:01Z",
           "thumbnail": "https://i.ytimg.com/vi/VmZNSsBsIdY/mqdefault.jpg",
-          "views": 33167,
+          "views": 33185,
           "likes": 228,
           "comments": 8,
           "is_clean": true,
@@ -1835,7 +1836,7 @@
           "studio_url": "https://studio.youtube.com/video/s0VcDCrXq3U/edit",
           "uploaded_at": "2026-10-07T08:08:50Z",
           "thumbnail": "https://i.ytimg.com/vi/s0VcDCrXq3U/mqdefault.jpg",
-          "views": 1812,
+          "views": 1817,
           "likes": 28,
           "comments": 1,
           "is_clean": true,
@@ -1851,7 +1852,7 @@
           "studio_url": "https://studio.youtube.com/video/0786e9duWX4/edit",
           "uploaded_at": "2026-10-06T13:08:54Z",
           "thumbnail": "https://i.ytimg.com/vi/0786e9duWX4/mqdefault.jpg",
-          "views": 1860,
+          "views": 1863,
           "likes": 13,
           "comments": 2,
           "is_clean": true,
@@ -1867,7 +1868,7 @@
           "studio_url": "https://studio.youtube.com/video/ojP-oD-sHPA/edit",
           "uploaded_at": "2026-10-06T08:08:03Z",
           "thumbnail": "https://i.ytimg.com/vi/ojP-oD-sHPA/mqdefault.jpg",
-          "views": 2666,
+          "views": 2668,
           "likes": 31,
           "comments": 0,
           "is_clean": true,
@@ -1883,7 +1884,7 @@
           "studio_url": "https://studio.youtube.com/video/exrsiyaHWEk/edit",
           "uploaded_at": "2026-10-05T13:11:03Z",
           "thumbnail": "https://i.ytimg.com/vi/exrsiyaHWEk/mqdefault.jpg",
-          "views": 2477,
+          "views": 2480,
           "likes": 23,
           "comments": 2,
           "is_clean": true,
@@ -1899,7 +1900,7 @@
           "studio_url": "https://studio.youtube.com/video/NXuOb9OzfHE/edit",
           "uploaded_at": "2026-10-05T08:07:50Z",
           "thumbnail": "https://i.ytimg.com/vi/NXuOb9OzfHE/mqdefault.jpg",
-          "views": 11026,
+          "views": 11028,
           "likes": 52,
           "comments": 1,
           "is_clean": true,
@@ -1931,7 +1932,7 @@
           "studio_url": "https://studio.youtube.com/video/P15VSeA-ym4/edit",
           "uploaded_at": "2026-10-03T18:11:54Z",
           "thumbnail": "https://i.ytimg.com/vi/P15VSeA-ym4/mqdefault.jpg",
-          "views": 4483,
+          "views": 4484,
           "likes": 23,
           "comments": 1,
           "is_clean": true,
@@ -1947,7 +1948,7 @@
           "studio_url": "https://studio.youtube.com/video/aohArspefTg/edit",
           "uploaded_at": "2026-10-03T08:05:43Z",
           "thumbnail": "https://i.ytimg.com/vi/aohArspefTg/mqdefault.jpg",
-          "views": 4171,
+          "views": 4172,
           "likes": 11,
           "comments": 0,
           "is_clean": true,
@@ -2027,7 +2028,7 @@
           "studio_url": "https://studio.youtube.com/video/pP3d4Cai5m8/edit",
           "uploaded_at": "2026-09-30T13:09:44Z",
           "thumbnail": "https://i.ytimg.com/vi/pP3d4Cai5m8/mqdefault.jpg",
-          "views": 31555,
+          "views": 31573,
           "likes": 395,
           "comments": 4,
           "is_clean": true,
@@ -2075,7 +2076,7 @@
           "studio_url": "https://studio.youtube.com/video/56lqkWZVgYU/edit",
           "uploaded_at": "2026-09-29T08:07:18Z",
           "thumbnail": "https://i.ytimg.com/vi/56lqkWZVgYU/mqdefault.jpg",
-          "views": 39007,
+          "views": 39009,
           "likes": 138,
           "comments": 2,
           "is_clean": true,
@@ -2139,7 +2140,7 @@
           "studio_url": "https://studio.youtube.com/video/6L6R6_YWPmE/edit",
           "uploaded_at": "2026-09-25T13:06:10Z",
           "thumbnail": "https://i.ytimg.com/vi/6L6R6_YWPmE/mqdefault.jpg",
-          "views": 21184,
+          "views": 21185,
           "likes": 222,
           "comments": 1,
           "is_clean": true,
@@ -2187,7 +2188,7 @@
           "studio_url": "https://studio.youtube.com/video/DQyu5bBX5nY/edit",
           "uploaded_at": "2026-09-24T08:04:18Z",
           "thumbnail": "https://i.ytimg.com/vi/DQyu5bBX5nY/mqdefault.jpg",
-          "views": 142528,
+          "views": 142542,
           "likes": 372,
           "comments": 0,
           "is_clean": true,
@@ -2331,7 +2332,7 @@
           "studio_url": "https://studio.youtube.com/video/57rwnWsFfMw/edit",
           "uploaded_at": "2026-09-18T14:09:16.211199+00:00",
           "thumbnail": "https://i.ytimg.com/vi/57rwnWsFfMw/mqdefault.jpg",
-          "views": 41439,
+          "views": 41447,
           "likes": 208,
           "comments": 1,
           "is_clean": true,
@@ -2347,7 +2348,7 @@
           "studio_url": "https://studio.youtube.com/video/jo54eKar-U0/edit",
           "uploaded_at": "2026-09-17T21:09:25.462687+00:00",
           "thumbnail": "https://i.ytimg.com/vi/jo54eKar-U0/mqdefault.jpg",
-          "views": 571,
+          "views": 577,
           "likes": 12,
           "comments": 0,
           "is_clean": true,
@@ -2363,7 +2364,7 @@
           "title": "That Championship Belt Changed The Whole Faceoff #PowerSlap #SlapFight #Championship #CombatSports #",
           "uploaded_at": "2026-09-17T14:11:02Z",
           "thumbnail": "https://i.ytimg.com/vi/D8s-tKl9wSg/mqdefault.jpg",
-          "views": 13076,
+          "views": 13077,
           "likes": 175,
           "comments": 5,
           "upload_status": "processed",
@@ -2429,8 +2430,8 @@
           "title": "One Table One Belt And Huge Pressure #SlapFight #PowerSlap #Championship #CombatSports #FYP.",
           "uploaded_at": "2026-09-15T21:09:27Z",
           "thumbnail": "https://i.ytimg.com/vi/74d1M_ceEM0/mqdefault.jpg",
-          "views": 563340,
-          "likes": 2004,
+          "views": 563349,
+          "likes": 2005,
           "comments": 20,
           "upload_status": "processed",
           "privacy_status": "public",
@@ -2944,7 +2945,7 @@
       "status_label": "24/7 Autopilot • Scheduled",
       "status_color": "#10B981",
       "subscribers": 16,
-      "total_views": 3405,
+      "total_views": 3436,
       "channel_total_videos": 10,
       "uploaded_count": 10,
       "drive_queue_count": 70,
@@ -2997,69 +2998,77 @@
         "verified_source": "YouTube Analytics API (100% Genuine)",
         "top_countries": [
           {
+            "country": "Indonesia",
+            "code": "ID",
+            "flag": "🇮🇩",
+            "percent": 30.5
+          },
+          {
             "country": "United States",
             "code": "US",
             "flag": "🇺🇸",
-            "percent": 70.0
+            "percent": 24.4
           },
           {
-            "country": "United Kingdom",
-            "code": "GB",
-            "flag": "🇬🇧",
-            "percent": 11.0
+            "country": "India",
+            "code": "IN",
+            "flag": "🇮🇳",
+            "percent": 16.7
           },
           {
-            "country": "Canada",
-            "code": "CA",
-            "flag": "🇨🇦",
-            "percent": 4.7
+            "country": "Philippines",
+            "code": "PH",
+            "flag": "🇵🇭",
+            "percent": 9.9
           },
           {
-            "country": "ZA",
-            "code": "ZA",
-            "flag": "🌐",
-            "percent": 3.9
-          },
-          {
-            "country": "Australia",
-            "code": "AU",
-            "flag": "🇦🇺",
-            "percent": 3.5
+            "country": "Thailand",
+            "code": "TH",
+            "flag": "🇹🇭",
+            "percent": 5.9
           },
           {
             "country": "Other countries",
             "code": "OTHER",
             "flag": "🌐",
-            "percent": 6.9
+            "percent": 12.6
           }
         ],
         "age_distribution": [
           {
+            "range": "13–17 years",
+            "percent": 3.4
+          },
+          {
+            "range": "18–24 years",
+            "percent": 8.1
+          },
+          {
             "range": "25–34 years",
-            "percent": 10.4
+            "percent": 36.9
           },
           {
             "range": "35–44 years",
-            "percent": 10.4
+            "percent": 23.2
           },
           {
             "range": "45–54 years",
-            "percent": 6.4
+            "percent": 11.1
           },
           {
             "range": "55–64 years",
-            "percent": 13.5
+            "percent": 8.5
           },
           {
             "range": "65+ years",
-            "percent": 59.2
+            "percent": 8.9
           }
         ],
         "gender": {
-          "male": 32.1,
-          "female": 67.9
+          "male": 44.7,
+          "female": 55.3
         },
-        "watch_time_hours": 18.2
+        "watch_time_hours": 18.3
       },
       "uploaded_videos": [
         {
@@ -3069,7 +3078,7 @@
           "studio_url": "https://studio.youtube.com/video/GsgONDii1K8/edit",
           "uploaded_at": "2026-10-10T17:40:46Z",
           "thumbnail": "https://i.ytimg.com/vi/GsgONDii1K8/mqdefault.jpg",
-          "views": 22,
+          "views": 24,
           "likes": 0,
           "comments": 0,
           "is_clean": true,
@@ -3085,7 +3094,7 @@
           "studio_url": "https://studio.youtube.com/video/7hg--XEkk6k/edit",
           "uploaded_at": "2026-10-07T20:25:05Z",
           "thumbnail": "https://i.ytimg.com/vi/7hg--XEkk6k/mqdefault.jpg",
-          "views": 1345,
+          "views": 1352,
           "likes": 48,
           "comments": 0,
           "is_clean": true,
@@ -3231,7 +3240,7 @@
         "studio_url": "https://studio.youtube.com/video/GsgONDii1K8/edit",
         "uploaded_at": "2026-10-10T17:40:46Z",
         "thumbnail": "https://i.ytimg.com/vi/GsgONDii1K8/mqdefault.jpg",
-        "views": 22,
+        "views": 24,
         "likes": 0,
         "comments": 0,
         "is_clean": true,
@@ -3241,7 +3250,7 @@
         "is_blocked": false
       },
       "total_likes": 95,
-      "avg_views_per_video": 344,
+      "avg_views_per_video": 345,
       "slots": [
         {
           "time_ist": "21:50 IST",
@@ -3266,86 +3275,86 @@
       "github_repo": "malhotramahi396-afk/yt-automation-klyvo",
       "color": "#EC4899",
       "avatar_url": "https://yt3.ggpht.com/pqIrk9GBtAR6cdyBH5C_kHNWA1jlu4VT9ZLKxdYTFW6IvVQLWbtFO3OUxrSV1Jm1SR0JAyTrAA=s240-c-k-c0x00ffffff-no-rj",
-      "subscribers": 31,
-      "total_views": 55932,
-      "channel_total_videos": 62,
-      "avg_views_per_video": 1025,
+      "subscribers": 34,
+      "total_views": 62429,
+      "channel_total_videos": 63,
+      "avg_views_per_video": 1022,
       "engagement_rate": 1.0,
-      "total_likes": 645,
+      "total_likes": 653,
       "analytics": {
-        "watch_time_hours": 298.3,
+        "watch_time_hours": 333.0,
         "avg_view_duration": "0:24",
         "top_countries": [
           {
             "country": "United States",
             "code": "US",
             "flag": "🇺🇸",
-            "percent": 62.1
+            "percent": 62.9
           },
           {
-            "country": "Indonesia",
-            "code": "ID",
-            "flag": "🇮🇩",
-            "percent": 15.3
+            "country": "United Kingdom",
+            "code": "GB",
+            "flag": "🇬🇧",
+            "percent": 10.5
+          },
+          {
+            "country": "Philippines",
+            "code": "PH",
+            "flag": "🇵🇭",
+            "percent": 10.3
           },
           {
             "country": "India",
             "code": "IN",
             "flag": "🇮🇳",
-            "percent": 5.5
+            "percent": 5.1
           },
           {
-            "country": "Mexico",
-            "code": "MX",
-            "flag": "🇲🇽",
-            "percent": 4.1
-          },
-          {
-            "country": "Japan",
-            "code": "JP",
-            "flag": "🇯🇵",
-            "percent": 4.0
+            "country": "Australia",
+            "code": "AU",
+            "flag": "🇦🇺",
+            "percent": 5.0
           },
           {
             "country": "Other countries",
             "code": "OTHER",
             "flag": "🌐",
-            "percent": 9.0
+            "percent": 6.2
           }
         ],
         "age_distribution": [
           {
             "range": "13–17 years",
-            "percent": 7.7
+            "percent": 8.5
           },
           {
             "range": "18–24 years",
-            "percent": 6.9
+            "percent": 6.2
           },
           {
             "range": "25–34 years",
-            "percent": 35.9
+            "percent": 34.3
           },
           {
             "range": "35–44 years",
-            "percent": 27.4
+            "percent": 27.3
           },
           {
             "range": "45–54 years",
-            "percent": 10.0
+            "percent": 8.6
           },
           {
             "range": "55–64 years",
-            "percent": 6.6
+            "percent": 6.0
           },
           {
             "range": "65+ years",
-            "percent": 5.4
+            "percent": 9.1
           }
         ],
         "gender": {
-          "male": 46.6,
-          "female": 53.4
+          "male": 33.0,
+          "female": 67.0
         },
         "traffic_sources": [
           {
@@ -3446,21 +3455,21 @@
       },
       "drive_folder_id": "1xZSez3F82y0pLTWJbQ-ybPjbOCqY1mrW",
       "drive_folder_url": "https://drive.google.com/drive/folders/1xZSez3F82y0pLTWJbQ-ybPjbOCqY1mrW",
-      "uploaded_count": 62,
-      "drive_queue_count": 86,
-      "runway_days": 43.0,
+      "uploaded_count": 63,
+      "drive_queue_count": 85,
+      "runway_days": 42.5,
       "stock_status": "Plentiful (64.0 days)",
       "stock_color": "#10B981",
       "latest_run_status": "success",
       "latest_run_time": "2026-09-20T21:06:00.223541+00:00",
       "latest_uploaded_video": {
-        "title": "One tiny brush stroke changes everything! 🤯 #Shorts",
-        "youtube_id": "P6MbOR7yARQ",
-        "youtube_url": "https://youtu.be/P6MbOR7yARQ",
-        "studio_url": "https://studio.youtube.com/video/P6MbOR7yARQ/edit",
-        "uploaded_at": "2026-10-11T14:07:58Z",
-        "thumbnail": "https://i.ytimg.com/vi/P6MbOR7yARQ/mqdefault.jpg",
-        "views": 1,
+        "title": "This Art Started Wrong... Then Everything Changed! 🎨✨ #Shorts",
+        "youtube_id": "Usvm-99RS9M",
+        "youtube_url": "https://youtu.be/Usvm-99RS9M",
+        "studio_url": "https://studio.youtube.com/video/Usvm-99RS9M/edit",
+        "uploaded_at": "2026-10-11T20:58:23Z",
+        "thumbnail": "https://i.ytimg.com/vi/Usvm-99RS9M/mqdefault.jpg",
+        "views": 2,
         "likes": 0,
         "comments": 0,
         "is_clean": true,
@@ -3471,14 +3480,30 @@
       },
       "uploaded_videos": [
         {
+          "title": "This Art Started Wrong... Then Everything Changed! 🎨✨ #Shorts",
+          "youtube_id": "Usvm-99RS9M",
+          "youtube_url": "https://youtu.be/Usvm-99RS9M",
+          "studio_url": "https://studio.youtube.com/video/Usvm-99RS9M/edit",
+          "uploaded_at": "2026-10-11T20:58:23Z",
+          "thumbnail": "https://i.ytimg.com/vi/Usvm-99RS9M/mqdefault.jpg",
+          "views": 2,
+          "likes": 0,
+          "comments": 0,
+          "is_clean": true,
+          "health_badge": "100% CLEAN",
+          "flag_details": "None (Clean)",
+          "channel_name": "Klyvo",
+          "is_blocked": false
+        },
+        {
           "title": "One tiny brush stroke changes everything! 🤯 #Shorts",
           "youtube_id": "P6MbOR7yARQ",
           "youtube_url": "https://youtu.be/P6MbOR7yARQ",
           "studio_url": "https://studio.youtube.com/video/P6MbOR7yARQ/edit",
           "uploaded_at": "2026-10-11T14:07:58Z",
           "thumbnail": "https://i.ytimg.com/vi/P6MbOR7yARQ/mqdefault.jpg",
-          "views": 1,
-          "likes": 0,
+          "views": 649,
+          "likes": 8,
           "comments": 0,
           "is_clean": true,
           "health_badge": "100% CLEAN",
@@ -3493,7 +3518,7 @@
           "studio_url": "https://studio.youtube.com/video/IU6smK7lqdg/edit",
           "uploaded_at": "2026-10-10T20:57:28Z",
           "thumbnail": "https://i.ytimg.com/vi/IU6smK7lqdg/mqdefault.jpg",
-          "views": 1070,
+          "views": 1087,
           "likes": 12,
           "comments": 0,
           "is_clean": true,
@@ -3509,7 +3534,7 @@
           "studio_url": "https://studio.youtube.com/video/8Rz9KZ0rku0/edit",
           "uploaded_at": "2026-10-10T14:07:19Z",
           "thumbnail": "https://i.ytimg.com/vi/8Rz9KZ0rku0/mqdefault.jpg",
-          "views": 1140,
+          "views": 1145,
           "likes": 11,
           "comments": 0,
           "is_clean": true,
@@ -3525,7 +3550,7 @@
           "studio_url": "https://studio.youtube.com/video/6kQxnNxbDPQ/edit",
           "uploaded_at": "2026-10-09T20:59:43Z",
           "thumbnail": "https://i.ytimg.com/vi/6kQxnNxbDPQ/mqdefault.jpg",
-          "views": 1406,
+          "views": 1409,
           "likes": 19,
           "comments": 0,
           "is_clean": true,
@@ -3541,7 +3566,7 @@
           "studio_url": "https://studio.youtube.com/video/OlKhpyN3HiE/edit",
           "uploaded_at": "2026-10-09T14:12:17Z",
           "thumbnail": "https://i.ytimg.com/vi/OlKhpyN3HiE/mqdefault.jpg",
-          "views": 1392,
+          "views": 1395,
           "likes": 21,
           "comments": 2,
           "is_clean": true,
@@ -3557,7 +3582,7 @@
           "studio_url": "https://studio.youtube.com/video/fEZvOgnVOWU/edit",
           "uploaded_at": "2026-10-08T21:00:16Z",
           "thumbnail": "https://i.ytimg.com/vi/fEZvOgnVOWU/mqdefault.jpg",
-          "views": 1290,
+          "views": 1291,
           "likes": 17,
           "comments": 0,
           "is_clean": true,
@@ -3573,7 +3598,7 @@
           "studio_url": "https://studio.youtube.com/video/ujf5ysAIBTY/edit",
           "uploaded_at": "2026-10-08T14:11:42Z",
           "thumbnail": "https://i.ytimg.com/vi/ujf5ysAIBTY/mqdefault.jpg",
-          "views": 1151,
+          "views": 1155,
           "likes": 10,
           "comments": 1,
           "is_clean": true,
@@ -3589,7 +3614,7 @@
           "studio_url": "https://studio.youtube.com/video/y0Jba3ijdIE/edit",
           "uploaded_at": "2026-10-07T20:58:45Z",
           "thumbnail": "https://i.ytimg.com/vi/y0Jba3ijdIE/mqdefault.jpg",
-          "views": 3511,
+          "views": 3615,
           "likes": 15,
           "comments": 0,
           "is_clean": true,
@@ -3893,7 +3918,7 @@
           "studio_url": "https://studio.youtube.com/video/XXdW0Bej1Mk/edit",
           "uploaded_at": "2026-09-28T14:10:23Z",
           "thumbnail": "https://i.ytimg.com/vi/XXdW0Bej1Mk/mqdefault.jpg",
-          "views": 1457,
+          "views": 1458,
           "likes": 21,
           "comments": 0,
           "is_clean": true,
@@ -4005,7 +4030,7 @@
           "studio_url": "https://studio.youtube.com/video/A4l4VuP23cI/edit",
           "uploaded_at": "2026-09-24T20:56:12Z",
           "thumbnail": "https://i.ytimg.com/vi/A4l4VuP23cI/mqdefault.jpg",
-          "views": 526,
+          "views": 528,
           "likes": 5,
           "comments": 0,
           "is_clean": true,
@@ -4629,7 +4654,7 @@
       },
       "is_active": true,
       "is_terminated": false,
-      "drive_videos_count": 86,
+      "drive_videos_count": 85,
       "country": "US",
       "num": 4,
       "slots": [
@@ -4666,11 +4691,11 @@
       "subscribers": 7,
       "total_views": 938,
       "channel_total_videos": 5,
-      "uploaded_count": 5,
+      "uploaded_count": 20,
       "drive_queue_count": 70,
       "drive_videos_count": 70,
       "runway_days": 35.0,
-      "latest_run_time": "2026-10-10T17:35:59Z",
+      "latest_run_time": "2026-09-20T21:06:00.223541+00:00",
       "latest_run_status": "success",
       "schedule": {
         "videos_per_day": 2,
@@ -4714,65 +4739,80 @@
         "is_clean": true
       },
       "analytics": {
-        "verified_source": "YouTube Data API v3 (Live Channel Verified)",
+        "verified_source": "YouTube Analytics API (100% Genuine)",
         "top_countries": [
           {
             "country": "United States",
             "code": "US",
             "flag": "🇺🇸",
-            "percent": 58.0
+            "percent": 62.1
           },
           {
-            "country": "United Kingdom",
-            "code": "GB",
-            "flag": "🇬🇧",
-            "percent": 15.5
+            "country": "Indonesia",
+            "code": "ID",
+            "flag": "🇮🇩",
+            "percent": 15.3
           },
           {
-            "country": "Canada",
-            "code": "CA",
-            "flag": "🇨🇦",
-            "percent": 12.0
+            "country": "India",
+            "code": "IN",
+            "flag": "🇮🇳",
+            "percent": 5.5
           },
           {
-            "country": "Australia",
-            "code": "AU",
-            "flag": "🇦🇺",
-            "percent": 7.5
+            "country": "Mexico",
+            "code": "MX",
+            "flag": "🇲🇽",
+            "percent": 4.1
+          },
+          {
+            "country": "Japan",
+            "code": "JP",
+            "flag": "🇯🇵",
+            "percent": 4.0
           },
           {
             "country": "Other countries",
             "code": "OTHER",
             "flag": "🌐",
-            "percent": 7.0
+            "percent": 9.0
           }
         ],
         "age_distribution": [
           {
+            "range": "13–17 years",
+            "percent": 7.7
+          },
+          {
             "range": "18–24 years",
-            "percent": 38.0
+            "percent": 6.9
           },
           {
             "range": "25–34 years",
-            "percent": 39.0
+            "percent": 35.9
           },
           {
             "range": "35–44 years",
-            "percent": 13.5
+            "percent": 27.4
           },
           {
             "range": "45–54 years",
-            "percent": 6.5
+            "percent": 10.0
           },
           {
-            "range": "55+ years",
-            "percent": 3.0
+            "range": "55–64 years",
+            "percent": 6.6
+          },
+          {
+            "range": "65+ years",
+            "percent": 5.4
           }
         ],
         "gender": {
-          "male": 52.0,
-          "female": 48.0
-        }
+          "male": 46.6,
+          "female": 53.4
+        },
+        "watch_time_hours": 5.0
       },
       "uploaded_videos": [
         {
@@ -4788,7 +4828,8 @@
           "is_clean": true,
           "health_badge": "100% CLEAN",
           "flag_details": "None (Clean)",
-          "channel_name": "CineBite Drama"
+          "channel_name": "CineBite Drama",
+          "is_blocked": false
         },
         {
           "title": "She Walked Into His Private Office #shorts #drama #viral Part 4",
@@ -4803,7 +4844,8 @@
           "is_clean": true,
           "health_badge": "100% CLEAN",
           "flag_details": "None (Clean)",
-          "channel_name": "CineBite Drama"
+          "channel_name": "CineBite Drama",
+          "is_blocked": false
         },
         {
           "title": "The Secret In The Safe Revealed #shorts #drama #viral Part 3",
@@ -4818,7 +4860,8 @@
           "is_clean": true,
           "health_badge": "100% CLEAN",
           "flag_details": "None (Clean)",
-          "channel_name": "CineBite Drama"
+          "channel_name": "CineBite Drama",
+          "is_blocked": false
         },
         {
           "title": "He Never Expected Her Revenge #shorts #drama #viral Part 2",
@@ -4833,7 +4876,8 @@
           "is_clean": true,
           "health_badge": "100% CLEAN",
           "flag_details": "None (Clean)",
-          "channel_name": "CineBite Drama"
+          "channel_name": "CineBite Drama",
+          "is_blocked": false
         },
         {
           "title": "The Trap Was Already Set #shorts #drama #viral Part 1",
@@ -4848,7 +4892,248 @@
           "is_clean": true,
           "health_badge": "100% CLEAN",
           "flag_details": "None (Clean)",
-          "channel_name": "CineBite Drama"
+          "channel_name": "CineBite Drama",
+          "is_blocked": false
+        },
+        {
+          "title": "He Makes Street Painting Look Like Magic #StreetArt #Painting #ArtReels #ViralArt #Artist.",
+          "youtube_id": "6Hg0FXnEKvI",
+          "youtube_url": "https://youtu.be/6Hg0FXnEKvI",
+          "studio_url": "https://studio.youtube.com/video/6Hg0FXnEKvI/edit",
+          "uploaded_at": "2026-09-19T14:06:13.185573+00:00",
+          "thumbnail": "https://i.ytimg.com/vi/6Hg0FXnEKvI/mqdefault.jpg",
+          "views": 1467,
+          "likes": 10,
+          "comments": 1,
+          "is_clean": true,
+          "health_badge": "100% CLEAN",
+          "flag_details": "None (Clean)",
+          "channel_name": "CineBite Drama",
+          "is_blocked": false
+        },
+        {
+          "title": "He Makes Every Brushstroke Count #Painting #Artist #ArtReels #Satisfying #Art.",
+          "youtube_id": "T1QpAfRhEso",
+          "youtube_url": "https://youtu.be/T1QpAfRhEso",
+          "studio_url": "https://studio.youtube.com/video/T1QpAfRhEso/edit",
+          "uploaded_at": "2026-09-18T21:06:19.841486+00:00",
+          "thumbnail": "https://i.ytimg.com/vi/T1QpAfRhEso/mqdefault.jpg",
+          "views": 1075,
+          "likes": 12,
+          "comments": 0,
+          "is_clean": true,
+          "health_badge": "100% CLEAN",
+          "flag_details": "None (Clean)",
+          "channel_name": "CineBite Drama",
+          "is_blocked": false
+        },
+        {
+          "title": "He Made A Famous Building Look Effortless #Painting #Artist #ArtReels #ViralArt #Creative.",
+          "youtube_id": "GmJiC5iGDfU",
+          "youtube_url": "https://youtu.be/GmJiC5iGDfU",
+          "studio_url": "https://studio.youtube.com/video/GmJiC5iGDfU/edit",
+          "uploaded_at": "2026-09-18T14:06:32.439790+00:00",
+          "thumbnail": "https://i.ytimg.com/vi/GmJiC5iGDfU/mqdefault.jpg",
+          "views": 165,
+          "likes": 4,
+          "comments": 0,
+          "is_clean": true,
+          "health_badge": "100% CLEAN",
+          "flag_details": "None (Clean)",
+          "channel_name": "CineBite Drama",
+          "is_blocked": false
+        },
+        {
+          "title": "He Is Painting The City One Brushstroke At A Time #StreetArt #Painting #Artist #ArtReels #Viral.",
+          "youtube_id": "orIt3mT1XjU",
+          "youtube_url": "https://youtu.be/orIt3mT1XjU",
+          "studio_url": "https://studio.youtube.com/video/orIt3mT1XjU/edit",
+          "uploaded_at": "2026-09-17T21:06:22.199054+00:00",
+          "thumbnail": "https://i.ytimg.com/vi/orIt3mT1XjU/mqdefault.jpg",
+          "views": 1334,
+          "likes": 20,
+          "comments": 0,
+          "is_clean": true,
+          "health_badge": "100% CLEAN",
+          "flag_details": "None (Clean)",
+          "channel_name": "CineBite Drama",
+          "is_blocked": false
+        },
+        {
+          "title": "He Found The Perfect Spot To Paint This View #StreetArt #Painting #Artist #ArtReels #Creative.",
+          "youtube_id": "88cO37UjZ7w",
+          "youtube_url": "https://youtu.be/88cO37UjZ7w",
+          "studio_url": "https://studio.youtube.com/video/88cO37UjZ7w/edit",
+          "uploaded_at": "2026-09-17T14:07:17.401386+00:00",
+          "thumbnail": "https://i.ytimg.com/vi/88cO37UjZ7w/mqdefault.jpg",
+          "views": 2095,
+          "likes": 35,
+          "comments": 0,
+          "is_clean": true,
+          "health_badge": "100% CLEAN",
+          "flag_details": "None (Clean)",
+          "channel_name": "CineBite Drama",
+          "is_blocked": false
+        },
+        {
+          "title": "He Captured The Entire Scene On One Canvas #Painting #Artist #ArtReels #StreetArt #Viral.",
+          "youtube_id": "oHD72N-B63M",
+          "youtube_url": "https://youtu.be/oHD72N-B63M",
+          "studio_url": "https://studio.youtube.com/video/oHD72N-B63M/edit",
+          "uploaded_at": "2026-09-16T21:06:34.536380+00:00",
+          "thumbnail": "https://i.ytimg.com/vi/oHD72N-B63M/mqdefault.jpg",
+          "views": 1320,
+          "likes": 6,
+          "comments": 0,
+          "is_clean": true,
+          "health_badge": "100% CLEAN",
+          "flag_details": "None (Clean)",
+          "channel_name": "CineBite Drama",
+          "is_blocked": false
+        },
+        {
+          "title": "He Captured A Famous Landmark With Just Paint #Painting #Artist #Architecture #ArtReels #ViralArt.",
+          "youtube_id": "dIjwAvkghGo",
+          "youtube_url": "https://youtu.be/dIjwAvkghGo",
+          "studio_url": "https://studio.youtube.com/video/dIjwAvkghGo/edit",
+          "uploaded_at": "2026-09-16T14:07:32.568030+00:00",
+          "thumbnail": "https://i.ytimg.com/vi/dIjwAvkghGo/mqdefault.jpg",
+          "views": 146,
+          "likes": 3,
+          "comments": 0,
+          "is_clean": true,
+          "health_badge": "100% CLEAN",
+          "flag_details": "None (Clean)",
+          "channel_name": "CineBite Drama",
+          "is_blocked": false
+        },
+        {
+          "title": "He Added One Tiny Detail And Changed Everything #Painting #ArtReveal #Satisfying #Artist #ArtReels.",
+          "youtube_id": "b373gjPjUMk",
+          "youtube_url": "https://youtu.be/b373gjPjUMk",
+          "studio_url": "https://studio.youtube.com/video/b373gjPjUMk/edit",
+          "uploaded_at": "2026-09-15T21:07:20.092999+00:00",
+          "thumbnail": "https://i.ytimg.com/vi/b373gjPjUMk/mqdefault.jpg",
+          "views": 1389,
+          "likes": 12,
+          "comments": 0,
+          "is_clean": true,
+          "health_badge": "100% CLEAN",
+          "flag_details": "None (Clean)",
+          "channel_name": "CineBite Drama",
+          "is_blocked": false
+        },
+        {
+          "title": "From Street View To Finished Artwork #StreetArt #Painting #ArtTransformation #ArtReels #Artist.",
+          "youtube_id": "Enyy2nPWFzM",
+          "youtube_url": "https://youtu.be/Enyy2nPWFzM",
+          "studio_url": "https://studio.youtube.com/video/Enyy2nPWFzM/edit",
+          "uploaded_at": "2026-09-15T14:06:46.063198+00:00",
+          "thumbnail": "https://i.ytimg.com/vi/Enyy2nPWFzM/mqdefault.jpg",
+          "views": 1498,
+          "likes": 18,
+          "comments": 0,
+          "is_clean": true,
+          "health_badge": "100% CLEAN",
+          "flag_details": "None (Clean)",
+          "channel_name": "CineBite Drama",
+          "is_blocked": false
+        },
+        {
+          "title": "From Simple Lines To A Beautiful Scene #Drawing #Painting #ArtReels #Artist #ArtTransformation.",
+          "youtube_id": "BgdgQm7cQHA",
+          "youtube_url": "https://youtu.be/BgdgQm7cQHA",
+          "studio_url": "https://studio.youtube.com/video/BgdgQm7cQHA/edit",
+          "uploaded_at": "2026-09-14T21:06:28.503403+00:00",
+          "thumbnail": "https://i.ytimg.com/vi/BgdgQm7cQHA/mqdefault.jpg",
+          "views": 63,
+          "likes": 2,
+          "comments": 0,
+          "is_clean": true,
+          "health_badge": "100% CLEAN",
+          "flag_details": "None (Clean)",
+          "channel_name": "CineBite Drama",
+          "is_blocked": false
+        },
+        {
+          "title": "From First Stroke To Final Masterpiece #Painting #ArtReels #Artist #ArtTransformation #Satisfying.",
+          "youtube_id": "8VOPtyImxfg",
+          "youtube_url": "https://youtu.be/8VOPtyImxfg",
+          "studio_url": "https://studio.youtube.com/video/8VOPtyImxfg/edit",
+          "uploaded_at": "2026-09-14T14:07:14.260490+00:00",
+          "thumbnail": "https://i.ytimg.com/vi/8VOPtyImxfg/mqdefault.jpg",
+          "views": 6,
+          "likes": 0,
+          "comments": 0,
+          "is_clean": true,
+          "health_badge": "100% CLEAN",
+          "flag_details": "None (Clean)",
+          "channel_name": "CineBite Drama",
+          "is_blocked": false
+        },
+        {
+          "title": "From First Color To Final Masterpiece #Painting #ArtTransformation #ArtReels #Artist #Viral.",
+          "youtube_id": "3ee4FdtH10w",
+          "youtube_url": "https://youtu.be/3ee4FdtH10w",
+          "studio_url": "https://studio.youtube.com/video/3ee4FdtH10w/edit",
+          "uploaded_at": "2026-09-13T21:06:31.910106+00:00",
+          "thumbnail": "https://i.ytimg.com/vi/3ee4FdtH10w/mqdefault.jpg",
+          "views": 1704,
+          "likes": 17,
+          "comments": 0,
+          "is_clean": true,
+          "health_badge": "100% CLEAN",
+          "flag_details": "None (Clean)",
+          "channel_name": "CineBite Drama",
+          "is_blocked": false
+        },
+        {
+          "title": "From Empty Canvas To A Beautiful Landmark #Painting #ArtReels #ArtTransformation #Artist #ViralArt.",
+          "youtube_id": "vvKBBEExuYQ",
+          "youtube_url": "https://youtu.be/vvKBBEExuYQ",
+          "studio_url": "https://studio.youtube.com/video/vvKBBEExuYQ/edit",
+          "uploaded_at": "2026-09-13T14:15:17.788975+00:00",
+          "thumbnail": "https://i.ytimg.com/vi/vvKBBEExuYQ/mqdefault.jpg",
+          "views": 142,
+          "likes": 3,
+          "comments": 0,
+          "is_clean": true,
+          "health_badge": "100% CLEAN",
+          "flag_details": "None (Clean)",
+          "channel_name": "CineBite Drama",
+          "is_blocked": false
+        },
+        {
+          "title": "Everyone Wanted To See The Finished Canvas #Painting #ArtReels #ArtReveal #Artist #Viral.",
+          "youtube_id": "ZlNJrHYRPoU",
+          "youtube_url": "https://youtu.be/ZlNJrHYRPoU",
+          "studio_url": "https://studio.youtube.com/video/ZlNJrHYRPoU/edit",
+          "uploaded_at": "2026-09-12T22:14:55.497215+00:00",
+          "thumbnail": "https://i.ytimg.com/vi/ZlNJrHYRPoU/mqdefault.jpg",
+          "views": 1710,
+          "likes": 26,
+          "comments": 1,
+          "is_clean": true,
+          "health_badge": "100% CLEAN",
+          "flag_details": "None (Clean)",
+          "channel_name": "CineBite Drama",
+          "is_blocked": false
+        },
+        {
+          "title": "Everyone Stopped To Watch This Artist Work #StreetArt #Artist #Painting #ArtReels #Viral.",
+          "youtube_id": "E7vzDp7HUIM",
+          "youtube_url": "https://youtu.be/E7vzDp7HUIM",
+          "studio_url": "https://studio.youtube.com/video/E7vzDp7HUIM/edit",
+          "uploaded_at": "2026-09-12T18:27:55.150716+00:00",
+          "thumbnail": "https://i.ytimg.com/vi/E7vzDp7HUIM/mqdefault.jpg",
+          "views": 2836,
+          "likes": 65,
+          "comments": 1,
+          "is_clean": true,
+          "health_badge": "100% CLEAN",
+          "flag_details": "None (Clean)",
+          "channel_name": "CineBite Drama",
+          "is_blocked": false
         }
       ],
       "num": 5,
@@ -4864,7 +5149,25 @@
           "slot_desc": "US East Coast (NYC) Prime Time Viewing (07:40 PM EDT)"
         }
       ],
-      "upload_schedule": "22:40 IST & 05:10 IST"
+      "upload_schedule": "22:40 IST & 05:10 IST",
+      "latest_uploaded_video": {
+        "title": "The Slap That Shocked Everyone #shorts #drama #viral Part 5",
+        "youtube_id": "t9y7JSVm99o",
+        "youtube_url": "https://youtu.be/t9y7JSVm99o",
+        "studio_url": "https://studio.youtube.com/video/t9y7JSVm99o/edit",
+        "uploaded_at": "2026-10-10T17:35:59Z",
+        "thumbnail": "https://i.ytimg.com/vi/t9y7JSVm99o/mqdefault.jpg",
+        "views": 0,
+        "likes": 0,
+        "comments": 0,
+        "is_clean": true,
+        "health_badge": "100% CLEAN",
+        "flag_details": "None (Clean)",
+        "channel_name": "CineBite Drama",
+        "is_blocked": false
+      },
+      "total_likes": 255,
+      "avg_views_per_video": 894
     },
     {
       "id": "channel_6",
@@ -4940,45 +5243,45 @@
             "country": "United States",
             "code": "US",
             "flag": "🇺🇸",
-            "percent": 55.0
-          },
-          {
-            "country": "United Kingdom",
-            "code": "GB",
-            "flag": "🇬🇧",
-            "percent": 16.0
+            "percent": 56.4
           },
           {
             "country": "Canada",
             "code": "CA",
             "flag": "🇨🇦",
-            "percent": 13.0
+            "percent": 13.8
+          },
+          {
+            "country": "United Kingdom",
+            "code": "GB",
+            "flag": "🇬🇧",
+            "percent": 11.2
           },
           {
             "country": "Australia",
             "code": "AU",
             "flag": "🇦🇺",
-            "percent": 8.0
+            "percent": 6.5
           },
           {
             "country": "Other countries",
             "code": "OTHER",
             "flag": "🌐",
-            "percent": 8.0
+            "percent": 12.1
           }
         ],
         "age_distribution": [
           {
             "range": "18–24 years",
-            "percent": 36.0
+            "percent": 39.5
           },
           {
             "range": "25–34 years",
-            "percent": 41.0
+            "percent": 37.0
           },
           {
             "range": "35–44 years",
-            "percent": 14.0
+            "percent": 14.2
           },
           {
             "range": "45–54 years",
@@ -4986,13 +5289,14 @@
           },
           {
             "range": "55+ years",
-            "percent": 3.0
+            "percent": 3.3
           }
         ],
         "gender": {
-          "male": 50.0,
-          "female": 50.0
-        }
+          "male": 66.0,
+          "female": 34.0
+        },
+        "watch_time_hours": 0.1
       },
       "uploaded_videos": [
         {
@@ -5008,7 +5312,8 @@
           "is_clean": true,
           "health_badge": "100% CLEAN",
           "flag_details": "None (Clean)",
-          "channel_name": "Code Red Dramas"
+          "channel_name": "Code Red Dramas",
+          "is_blocked": false
         },
         {
           "title": "EP 08   She Refused To Bow Down #shorts #drama #viral",
@@ -5023,7 +5328,8 @@
           "is_clean": true,
           "health_badge": "100% CLEAN",
           "flag_details": "None (Clean)",
-          "channel_name": "Code Red Dramas"
+          "channel_name": "Code Red Dramas",
+          "is_blocked": false
         },
         {
           "title": "EP 07   The Contract Had One Hidden Rule #shorts #drama #viral",
@@ -5038,7 +5344,8 @@
           "is_clean": true,
           "health_badge": "100% CLEAN",
           "flag_details": "None (Clean)",
-          "channel_name": "Code Red Dramas"
+          "channel_name": "Code Red Dramas",
+          "is_blocked": false
         },
         {
           "title": "EP 07   The Contract Had One Hidden Rule #shorts #drama #viral",
@@ -5053,7 +5360,8 @@
           "is_clean": true,
           "health_badge": "100% CLEAN",
           "flag_details": "None (Clean)",
-          "channel_name": "Code Red Dramas"
+          "channel_name": "Code Red Dramas",
+          "is_blocked": false
         },
         {
           "title": "EP 06   He Found Out Who She Really Was #shorts #drama #viral",
@@ -5068,7 +5376,8 @@
           "is_clean": true,
           "health_badge": "100% CLEAN",
           "flag_details": "None (Clean)",
-          "channel_name": "Code Red Dramas"
+          "channel_name": "Code Red Dramas",
+          "is_blocked": false
         },
         {
           "title": "EP 05   The Slap That Shocked Everyone #shorts #drama #viral",
@@ -5083,7 +5392,8 @@
           "is_clean": true,
           "health_badge": "100% CLEAN",
           "flag_details": "None (Clean)",
-          "channel_name": "Code Red Dramas"
+          "channel_name": "Code Red Dramas",
+          "is_blocked": false
         },
         {
           "title": "EP 04   She Walked Into His Private Office #shorts #drama #viral",
@@ -5098,7 +5408,8 @@
           "is_clean": true,
           "health_badge": "100% CLEAN",
           "flag_details": "None (Clean)",
-          "channel_name": "Code Red Dramas"
+          "channel_name": "Code Red Dramas",
+          "is_blocked": false
         },
         {
           "title": "EP 03   The Secret In The Safe Revealed #shorts #drama #viral",
@@ -5113,7 +5424,8 @@
           "is_clean": true,
           "health_badge": "100% CLEAN",
           "flag_details": "None (Clean)",
-          "channel_name": "Code Red Dramas"
+          "channel_name": "Code Red Dramas",
+          "is_blocked": false
         },
         {
           "title": "He Never Expected Her Revenge #shorts #drama #viral Part 2",
@@ -5128,7 +5440,8 @@
           "is_clean": true,
           "health_badge": "100% CLEAN",
           "flag_details": "None (Clean)",
-          "channel_name": "Code Red Dramas"
+          "channel_name": "Code Red Dramas",
+          "is_blocked": false
         },
         {
           "title": "The Trap Was Already Set #shorts #drama #viral Part 1",
@@ -5143,7 +5456,8 @@
           "is_clean": true,
           "health_badge": "100% CLEAN",
           "flag_details": "None (Clean)",
-          "channel_name": "Code Red Dramas"
+          "channel_name": "Code Red Dramas",
+          "is_blocked": false
         }
       ],
       "num": 6,
@@ -5159,7 +5473,25 @@
           "slot_desc": "US East Coast (NYC) Prime Drama Hour (08:05 PM EDT)"
         }
       ],
-      "upload_schedule": "23:05 IST & 05:35 IST"
+      "upload_schedule": "23:05 IST & 05:35 IST",
+      "latest_uploaded_video": {
+        "title": "EP 09   He Regretted His Cruel Words #shorts #drama #viral",
+        "youtube_id": "xMzSt3xSpcg",
+        "youtube_url": "https://youtu.be/xMzSt3xSpcg",
+        "studio_url": "https://studio.youtube.com/video/xMzSt3xSpcg/edit",
+        "uploaded_at": "2026-10-10T17:37:02Z",
+        "thumbnail": "https://i.ytimg.com/vi/xMzSt3xSpcg/mqdefault.jpg",
+        "views": 0,
+        "likes": 0,
+        "comments": 0,
+        "is_clean": true,
+        "health_badge": "100% CLEAN",
+        "flag_details": "None (Clean)",
+        "channel_name": "Code Red Dramas",
+        "is_blocked": false
+      },
+      "total_likes": 3,
+      "avg_views_per_video": 3
     },
     {
       "id": "channel_7",
@@ -5235,45 +5567,45 @@
             "country": "United States",
             "code": "US",
             "flag": "🇺🇸",
-            "percent": 58.0
+            "percent": 56.4
           },
           {
             "country": "Canada",
             "code": "CA",
             "flag": "🇨🇦",
-            "percent": 15.0
+            "percent": 13.8
           },
           {
             "country": "United Kingdom",
             "code": "GB",
             "flag": "🇬🇧",
-            "percent": 12.0
+            "percent": 11.2
           },
           {
             "country": "Australia",
             "code": "AU",
             "flag": "🇦🇺",
-            "percent": 7.0
+            "percent": 6.5
           },
           {
             "country": "Other countries",
             "code": "OTHER",
             "flag": "🌐",
-            "percent": 8.0
+            "percent": 12.1
           }
         ],
         "age_distribution": [
           {
             "range": "18–24 years",
-            "percent": 34.0
+            "percent": 39.5
           },
           {
             "range": "25–34 years",
-            "percent": 42.0
+            "percent": 37.0
           },
           {
             "range": "35–44 years",
-            "percent": 15.0
+            "percent": 14.2
           },
           {
             "range": "45–54 years",
@@ -5281,13 +5613,14 @@
           },
           {
             "range": "55+ years",
-            "percent": 3.0
+            "percent": 3.3
           }
         ],
         "gender": {
-          "male": 45.0,
-          "female": 55.0
-        }
+          "male": 66.0,
+          "female": 34.0
+        },
+        "watch_time_hours": 0.9
       },
       "uploaded_videos": [
         {
@@ -5303,7 +5636,8 @@
           "is_clean": true,
           "health_badge": "100% CLEAN",
           "flag_details": "None (Clean)",
-          "channel_name": "Cozy Fold"
+          "channel_name": "Cozy Fold",
+          "is_blocked": false
         },
         {
           "title": "Cozy Foam Bed Opens Into A Snuggle Pod #SatisfyingVideo #BedTransformation #CozyRoom #OddlySatisfyin",
@@ -5318,7 +5652,8 @@
           "is_clean": true,
           "health_badge": "100% CLEAN",
           "flag_details": "None (Clean)",
-          "channel_name": "Cozy Fold"
+          "channel_name": "Cozy Fold",
+          "is_blocked": false
         },
         {
           "title": "Compact Foam Bed Unrolls Into A Cozy Chair #SatisfyingVideo #BedTransformation #CozyRoom #OddlySatis",
@@ -5333,7 +5668,8 @@
           "is_clean": true,
           "health_badge": "100% CLEAN",
           "flag_details": "None (Clean)",
-          "channel_name": "Cozy Fold"
+          "channel_name": "Cozy Fold",
+          "is_blocked": false
         },
         {
           "title": "Compact Foam Bed Unrolls Into A Cozy Chair #SatisfyingVideo #BedTransformation #CozyRoom #OddlySatis",
@@ -5348,7 +5684,8 @@
           "is_clean": true,
           "health_badge": "100% CLEAN",
           "flag_details": "None (Clean)",
-          "channel_name": "Cozy Fold"
+          "channel_name": "Cozy Fold",
+          "is_blocked": false
         },
         {
           "title": "Compact Foam Bed Unrolls Into A Cloud Bed #SatisfyingVideo #BedTransformation #CozyRoom #OddlySatisf",
@@ -5363,7 +5700,8 @@
           "is_clean": true,
           "health_badge": "100% CLEAN",
           "flag_details": "None (Clean)",
-          "channel_name": "Cozy Fold"
+          "channel_name": "Cozy Fold",
+          "is_blocked": false
         },
         {
           "title": "Compact Foam Bed Unravels Into A Soft Chair #SatisfyingVideo #BedTransformation #CozyRoom #OddlySati",
@@ -5378,7 +5716,8 @@
           "is_clean": true,
           "health_badge": "100% CLEAN",
           "flag_details": "None (Clean)",
-          "channel_name": "Cozy Fold"
+          "channel_name": "Cozy Fold",
+          "is_blocked": false
         },
         {
           "title": "Compact Foam Bed Turns Into An Instant Nap Spot #SatisfyingVideo #BedTransformation #CozyRoom #Oddly",
@@ -5393,7 +5732,8 @@
           "is_clean": true,
           "health_badge": "100% CLEAN",
           "flag_details": "None (Clean)",
-          "channel_name": "Cozy Fold"
+          "channel_name": "Cozy Fold",
+          "is_blocked": false
         },
         {
           "title": "Compact Foam Bed Turns Into A Sleep Pod #SatisfyingVideo #BedTransformation #CozyRoom #OddlySatisfyi",
@@ -5408,7 +5748,8 @@
           "is_clean": true,
           "health_badge": "100% CLEAN",
           "flag_details": "None (Clean)",
-          "channel_name": "Cozy Fold"
+          "channel_name": "Cozy Fold",
+          "is_blocked": false
         },
         {
           "title": "Compact Foam Bed Turns Into A Sleep Pod #SatisfyingVideo #BedTransformation #CozyRoom #OddlySatisfyi",
@@ -5423,7 +5764,8 @@
           "is_clean": true,
           "health_badge": "100% CLEAN",
           "flag_details": "None (Clean)",
-          "channel_name": "Cozy Fold"
+          "channel_name": "Cozy Fold",
+          "is_blocked": false
         },
         {
           "title": "Compact Foam Bed Becomes A Perfect Reading Spot #SatisfyingVideo #BedTransformation #CozyRoom #Oddly",
@@ -5438,7 +5780,8 @@
           "is_clean": true,
           "health_badge": "100% CLEAN",
           "flag_details": "None (Clean)",
-          "channel_name": "Cozy Fold"
+          "channel_name": "Cozy Fold",
+          "is_blocked": false
         }
       ],
       "num": 7,
@@ -5454,7 +5797,25 @@
           "slot_desc": "US West Coast (Los Angeles) Prime Evening Peak (05:30 PM PDT / 08:30 PM EDT)"
         }
       ],
-      "upload_schedule": "23:30 IST & 06:00 IST"
+      "upload_schedule": "23:30 IST & 06:00 IST",
+      "latest_uploaded_video": {
+        "title": "Cozy Foam Bed Turns A Room Into A Cave #SatisfyingVideo #BedTransformation #CozyRoom #OddlySatisfyin",
+        "youtube_id": "wP7uNfrAoh8",
+        "youtube_url": "https://youtu.be/wP7uNfrAoh8",
+        "studio_url": "https://studio.youtube.com/video/wP7uNfrAoh8/edit",
+        "uploaded_at": "2026-10-10T17:36:11Z",
+        "thumbnail": "https://i.ytimg.com/vi/wP7uNfrAoh8/mqdefault.jpg",
+        "views": 0,
+        "likes": 0,
+        "comments": 0,
+        "is_clean": true,
+        "health_badge": "100% CLEAN",
+        "flag_details": "None (Clean)",
+        "channel_name": "Cozy Fold",
+        "is_blocked": false
+      },
+      "total_likes": 2,
+      "avg_views_per_video": 16
     },
     {
       "id": "channel_8",
@@ -5474,7 +5835,7 @@
       "status_label": "24/7 Autopilot • Scheduled",
       "status_color": "#10B981",
       "subscribers": 236,
-      "total_views": 70368,
+      "total_views": 71254,
       "channel_total_videos": 9,
       "uploaded_count": 9,
       "drive_queue_count": 32,
@@ -5524,65 +5885,80 @@
         "is_clean": true
       },
       "analytics": {
-        "verified_source": "YouTube Data API v3 (Live Channel Verified)",
+        "verified_source": "YouTube Analytics API (100% Genuine)",
         "top_countries": [
           {
             "country": "United States",
             "code": "US",
             "flag": "🇺🇸",
-            "percent": 54.0
+            "percent": 75.0
           },
           {
             "country": "United Kingdom",
             "code": "GB",
             "flag": "🇬🇧",
-            "percent": 16.0
+            "percent": 6.3
           },
           {
             "country": "Canada",
             "code": "CA",
             "flag": "🇨🇦",
-            "percent": 14.0
+            "percent": 5.2
           },
           {
-            "country": "Australia",
-            "code": "AU",
-            "flag": "🇦🇺",
-            "percent": 8.0
+            "country": "Indonesia",
+            "code": "ID",
+            "flag": "🇮🇩",
+            "percent": 4.4
+          },
+          {
+            "country": "India",
+            "code": "IN",
+            "flag": "🇮🇳",
+            "percent": 2.6
           },
           {
             "country": "Other countries",
             "code": "OTHER",
             "flag": "🌐",
-            "percent": 8.0
+            "percent": 6.5
           }
         ],
         "age_distribution": [
           {
+            "range": "13–17 years",
+            "percent": 1.3
+          },
+          {
             "range": "18–24 years",
-            "percent": 35.0
+            "percent": 3.6
           },
           {
             "range": "25–34 years",
-            "percent": 43.0
+            "percent": 25.5
           },
           {
             "range": "35–44 years",
-            "percent": 14.0
+            "percent": 22.2
           },
           {
             "range": "45–54 years",
-            "percent": 5.0
+            "percent": 17.4
           },
           {
-            "range": "55+ years",
-            "percent": 3.0
+            "range": "55–64 years",
+            "percent": 16.6
+          },
+          {
+            "range": "65+ years",
+            "percent": 13.3
           }
         ],
         "gender": {
-          "male": 48.0,
-          "female": 52.0
-        }
+          "male": 93.0,
+          "female": 7.0
+        },
+        "watch_time_hours": 380.0
       },
       "uploaded_videos": [
         {
@@ -5592,13 +5968,14 @@
           "studio_url": "https://studio.youtube.com/video/IuwRxj1v-G0/edit",
           "uploaded_at": "2026-10-10T17:37:07Z",
           "thumbnail": "https://i.ytimg.com/vi/IuwRxj1v-G0/mqdefault.jpg",
-          "views": 377,
-          "likes": 15,
-          "comments": 0,
+          "views": 392,
+          "likes": 16,
+          "comments": 1,
           "is_clean": true,
           "health_badge": "100% CLEAN",
           "flag_details": "None (Clean)",
-          "channel_name": "Godfather Sins"
+          "channel_name": "Godfather Sins",
+          "is_blocked": false
         },
         {
           "title": "EP 08   She Refused To Bow Down #shorts #drama #viral",
@@ -5607,13 +5984,14 @@
           "studio_url": "https://studio.youtube.com/video/o4u46XiVXys/edit",
           "uploaded_at": "2026-10-07T20:17:56Z",
           "thumbnail": "https://i.ytimg.com/vi/o4u46XiVXys/mqdefault.jpg",
-          "views": 1077,
+          "views": 1096,
           "likes": 51,
           "comments": 0,
           "is_clean": true,
           "health_badge": "100% CLEAN",
           "flag_details": "None (Clean)",
-          "channel_name": "Godfather Sins"
+          "channel_name": "Godfather Sins",
+          "is_blocked": false
         },
         {
           "title": "EP 07   The Contract Had One Hidden Rule #shorts #drama #viral",
@@ -5622,13 +6000,14 @@
           "studio_url": "https://studio.youtube.com/video/uhyWxRKOBO8/edit",
           "uploaded_at": "2026-10-05T15:17:51Z",
           "thumbnail": "https://i.ytimg.com/vi/uhyWxRKOBO8/mqdefault.jpg",
-          "views": 1263,
+          "views": 1264,
           "likes": 47,
           "comments": 0,
           "is_clean": true,
           "health_badge": "100% CLEAN",
           "flag_details": "None (Clean)",
-          "channel_name": "Godfather Sins"
+          "channel_name": "Godfather Sins",
+          "is_blocked": false
         },
         {
           "title": "EP 06   He Found Out Who She Really Was #shorts #drama #viral",
@@ -5637,13 +6016,14 @@
           "studio_url": "https://studio.youtube.com/video/PyJH_Xl4vGY/edit",
           "uploaded_at": "2026-10-01T13:52:28Z",
           "thumbnail": "https://i.ytimg.com/vi/PyJH_Xl4vGY/mqdefault.jpg",
-          "views": 2825,
+          "views": 2831,
           "likes": 154,
           "comments": 1,
           "is_clean": true,
           "health_badge": "100% CLEAN",
           "flag_details": "None (Clean)",
-          "channel_name": "Godfather Sins"
+          "channel_name": "Godfather Sins",
+          "is_blocked": false
         },
         {
           "title": "EP 05   The Slap That Shocked Everyone #shorts #drama #viral",
@@ -5658,7 +6038,8 @@
           "is_clean": true,
           "health_badge": "100% CLEAN",
           "flag_details": "None (Clean)",
-          "channel_name": "Godfather Sins"
+          "channel_name": "Godfather Sins",
+          "is_blocked": false
         },
         {
           "title": "EP 04   She Walked Into His Private Office #shorts #drama #viral",
@@ -5667,13 +6048,14 @@
           "studio_url": "https://studio.youtube.com/video/MQZ8gXWkNis/edit",
           "uploaded_at": "2026-09-28T08:26:01Z",
           "thumbnail": "https://i.ytimg.com/vi/MQZ8gXWkNis/mqdefault.jpg",
-          "views": 60763,
-          "likes": 1373,
+          "views": 60909,
+          "likes": 1375,
           "comments": 2,
           "is_clean": true,
           "health_badge": "100% CLEAN",
           "flag_details": "None (Clean)",
-          "channel_name": "Godfather Sins"
+          "channel_name": "Godfather Sins",
+          "is_blocked": false
         },
         {
           "title": "EP 03   The Secret In The Safe Revealed #shorts #drama #viral",
@@ -5688,7 +6070,8 @@
           "is_clean": true,
           "health_badge": "100% CLEAN",
           "flag_details": "None (Clean)",
-          "channel_name": "Godfather Sins"
+          "channel_name": "Godfather Sins",
+          "is_blocked": false
         },
         {
           "title": "He Never Expected Her Revenge #shorts #drama #viral Part 2",
@@ -5703,7 +6086,8 @@
           "is_clean": true,
           "health_badge": "100% CLEAN",
           "flag_details": "None (Clean)",
-          "channel_name": "Godfather Sins"
+          "channel_name": "Godfather Sins",
+          "is_blocked": false
         },
         {
           "title": "The Trap Was Already Set #shorts #drama #viral Part 1",
@@ -5718,7 +6102,8 @@
           "is_clean": true,
           "health_badge": "100% CLEAN",
           "flag_details": "None (Clean)",
-          "channel_name": "Godfather Sins"
+          "channel_name": "Godfather Sins",
+          "is_blocked": false
         }
       ],
       "num": 8,
@@ -5734,7 +6119,25 @@
           "slot_desc": "US East Coast (NYC) Prime Evening Peak (08:55 PM EDT)"
         }
       ],
-      "upload_schedule": "23:55 IST & 06:25 IST"
+      "upload_schedule": "23:55 IST & 06:25 IST",
+      "latest_uploaded_video": {
+        "title": "EP 09   He Regretted His Cruel Words #shorts #drama #viral",
+        "youtube_id": "IuwRxj1v-G0",
+        "youtube_url": "https://youtu.be/IuwRxj1v-G0",
+        "studio_url": "https://studio.youtube.com/video/IuwRxj1v-G0/edit",
+        "uploaded_at": "2026-10-10T17:37:07Z",
+        "thumbnail": "https://i.ytimg.com/vi/IuwRxj1v-G0/mqdefault.jpg",
+        "views": 392,
+        "likes": 16,
+        "comments": 1,
+        "is_clean": true,
+        "health_badge": "100% CLEAN",
+        "flag_details": "None (Clean)",
+        "channel_name": "Godfather Sins",
+        "is_blocked": false
+      },
+      "total_likes": 1864,
+      "avg_views_per_video": 7976
     },
     {
       "id": "channel_9",
@@ -5754,7 +6157,7 @@
       "status_label": "24/7 Autopilot • Scheduled",
       "status_color": "#10B981",
       "subscribers": 7,
-      "total_views": 534,
+      "total_views": 536,
       "channel_total_videos": 8,
       "uploaded_count": 8,
       "drive_queue_count": 39,
@@ -5810,45 +6213,45 @@
             "country": "United States",
             "code": "US",
             "flag": "🇺🇸",
-            "percent": 56.0
-          },
-          {
-            "country": "United Kingdom",
-            "code": "GB",
-            "flag": "🇬🇧",
-            "percent": 15.0
+            "percent": 56.4
           },
           {
             "country": "Canada",
             "code": "CA",
             "flag": "🇨🇦",
-            "percent": 13.0
+            "percent": 13.8
+          },
+          {
+            "country": "United Kingdom",
+            "code": "GB",
+            "flag": "🇬🇧",
+            "percent": 11.2
           },
           {
             "country": "Australia",
             "code": "AU",
             "flag": "🇦🇺",
-            "percent": 8.0
+            "percent": 6.5
           },
           {
             "country": "Other countries",
             "code": "OTHER",
             "flag": "🌐",
-            "percent": 8.0
+            "percent": 12.1
           }
         ],
         "age_distribution": [
           {
             "range": "18–24 years",
-            "percent": 36.0
+            "percent": 39.5
           },
           {
             "range": "25–34 years",
-            "percent": 41.0
+            "percent": 37.0
           },
           {
             "range": "35–44 years",
-            "percent": 14.0
+            "percent": 14.2
           },
           {
             "range": "45–54 years",
@@ -5856,13 +6259,14 @@
           },
           {
             "range": "55+ years",
-            "percent": 3.0
+            "percent": 3.3
           }
         ],
         "gender": {
-          "male": 46.0,
-          "female": 54.0
-        }
+          "male": 66.0,
+          "female": 34.0
+        },
+        "watch_time_hours": 2.9
       },
       "uploaded_videos": [
         {
@@ -5878,7 +6282,8 @@
           "is_clean": true,
           "health_badge": "100% CLEAN",
           "flag_details": "None (Clean)",
-          "channel_name": "Tears of Regret TV"
+          "channel_name": "Tears of Regret TV",
+          "is_blocked": false
         },
         {
           "title": "EP 08   She Refused To Bow Down #shorts #drama #viral",
@@ -5887,13 +6292,14 @@
           "studio_url": "https://studio.youtube.com/video/wTOV8RaPF4A/edit",
           "uploaded_at": "2026-10-07T20:18:00Z",
           "thumbnail": "https://i.ytimg.com/vi/wTOV8RaPF4A/mqdefault.jpg",
-          "views": 18,
+          "views": 19,
           "likes": 0,
           "comments": 0,
           "is_clean": true,
           "health_badge": "100% CLEAN",
           "flag_details": "None (Clean)",
-          "channel_name": "Tears of Regret TV"
+          "channel_name": "Tears of Regret TV",
+          "is_blocked": false
         },
         {
           "title": "EP 07   The Contract Had One Hidden Rule #shorts #drama #viral",
@@ -5908,7 +6314,8 @@
           "is_clean": true,
           "health_badge": "100% CLEAN",
           "flag_details": "None (Clean)",
-          "channel_name": "Tears of Regret TV"
+          "channel_name": "Tears of Regret TV",
+          "is_blocked": false
         },
         {
           "title": "EP 07 The Contract Had One Hidden Rule #shorts #drama #viral",
@@ -5923,7 +6330,8 @@
           "is_clean": true,
           "health_badge": "100% CLEAN",
           "flag_details": "None (Clean)",
-          "channel_name": "Tears of Regret TV"
+          "channel_name": "Tears of Regret TV",
+          "is_blocked": false
         },
         {
           "title": "EP 04   She Walked Into His Private Office #shorts #drama #viral",
@@ -5938,7 +6346,8 @@
           "is_clean": true,
           "health_badge": "100% CLEAN",
           "flag_details": "None (Clean)",
-          "channel_name": "Tears of Regret TV"
+          "channel_name": "Tears of Regret TV",
+          "is_blocked": false
         },
         {
           "title": "EP 03   The Secret In The Safe Revealed #shorts #drama #viral",
@@ -5953,7 +6362,8 @@
           "is_clean": true,
           "health_badge": "100% CLEAN",
           "flag_details": "None (Clean)",
-          "channel_name": "Tears of Regret TV"
+          "channel_name": "Tears of Regret TV",
+          "is_blocked": false
         },
         {
           "title": "He Never Expected Her Revenge #shorts #drama #viral Part 2",
@@ -5968,7 +6378,8 @@
           "is_clean": true,
           "health_badge": "100% CLEAN",
           "flag_details": "None (Clean)",
-          "channel_name": "Tears of Regret TV"
+          "channel_name": "Tears of Regret TV",
+          "is_blocked": false
         },
         {
           "title": "The Trap Was Already Set #shorts #drama #viral Part 1",
@@ -5983,7 +6394,8 @@
           "is_clean": true,
           "health_badge": "100% CLEAN",
           "flag_details": "None (Clean)",
-          "channel_name": "Tears of Regret TV"
+          "channel_name": "Tears of Regret TV",
+          "is_blocked": false
         }
       ],
       "num": 9,
@@ -5999,7 +6411,25 @@
           "slot_desc": "US East Coast (NYC) Late Evening Binge (09:20 PM EDT)"
         }
       ],
-      "upload_schedule": "00:20 IST & 06:50 IST"
+      "upload_schedule": "00:20 IST & 06:50 IST",
+      "latest_uploaded_video": {
+        "title": "EP 09   He Regretted His Cruel Words #shorts #drama #viral",
+        "youtube_id": "cMeizfb5HmI",
+        "youtube_url": "https://youtu.be/cMeizfb5HmI",
+        "studio_url": "https://studio.youtube.com/video/cMeizfb5HmI/edit",
+        "uploaded_at": "2026-10-10T17:36:44Z",
+        "thumbnail": "https://i.ytimg.com/vi/cMeizfb5HmI/mqdefault.jpg",
+        "views": 0,
+        "likes": 0,
+        "comments": 0,
+        "is_clean": true,
+        "health_badge": "100% CLEAN",
+        "flag_details": "None (Clean)",
+        "channel_name": "Tears of Regret TV",
+        "is_blocked": false
+      },
+      "total_likes": 30,
+      "avg_views_per_video": 67
     },
     {
       "id": "channel_10",
@@ -6019,7 +6449,7 @@
       "status_label": "24/7 Autopilot • Scheduled",
       "status_color": "#10B981",
       "subscribers": 30,
-      "total_views": 5867,
+      "total_views": 5869,
       "channel_total_videos": 23,
       "uploaded_count": 23,
       "drive_queue_count": 29,
@@ -6069,65 +6499,68 @@
         "is_clean": true
       },
       "analytics": {
-        "verified_source": "YouTube Data API v3 (Live Channel Verified)",
+        "verified_source": "YouTube Analytics API (100% Genuine)",
         "top_countries": [
           {
             "country": "United States",
             "code": "US",
             "flag": "🇺🇸",
-            "percent": 57.0
+            "percent": 75.9
           },
           {
-            "country": "United Kingdom",
-            "code": "GB",
-            "flag": "🇬🇧",
-            "percent": 15.0
+            "country": "Indonesia",
+            "code": "ID",
+            "flag": "🇮🇩",
+            "percent": 9.3
           },
           {
-            "country": "Canada",
-            "code": "CA",
-            "flag": "🇨🇦",
-            "percent": 13.0
+            "country": "Philippines",
+            "code": "PH",
+            "flag": "🇵🇭",
+            "percent": 4.8
           },
           {
-            "country": "Australia",
-            "code": "AU",
-            "flag": "🇦🇺",
-            "percent": 7.0
+            "country": "South Korea",
+            "code": "KR",
+            "flag": "🇰🇷",
+            "percent": 4.2
+          },
+          {
+            "country": "Mexico",
+            "code": "MX",
+            "flag": "🇲🇽",
+            "percent": 1.7
           },
           {
             "country": "Other countries",
             "code": "OTHER",
             "flag": "🌐",
-            "percent": 8.0
+            "percent": 4.1
           }
         ],
         "age_distribution": [
           {
-            "range": "18–24 years",
-            "percent": 35.0
+            "range": "13–17 years",
+            "percent": 11.0
           },
           {
             "range": "25–34 years",
-            "percent": 42.0
+            "percent": 50.4
           },
           {
             "range": "35–44 years",
-            "percent": 14.0
+            "percent": 31.4
           },
           {
             "range": "45–54 years",
-            "percent": 6.0
-          },
-          {
-            "range": "55+ years",
-            "percent": 3.0
+            "percent": 7.2
           }
         ],
         "gender": {
-          "male": 44.0,
-          "female": 56.0
-        }
+          "male": 58.3,
+          "female": 41.7
+        },
+        "watch_time_hours": 31.3
       },
       "uploaded_videos": [
         {
@@ -6143,7 +6576,8 @@
           "is_clean": true,
           "health_badge": "100% CLEAN",
           "flag_details": "None (Clean)",
-          "channel_name": "United TV"
+          "channel_name": "United TV",
+          "is_blocked": false
         },
         {
           "title": "'I'm Losing Myself In This Marriage'    Her Final Goodbye Letter! 💔😭 #Shorts #Viral #Drama",
@@ -6158,7 +6592,8 @@
           "is_clean": true,
           "health_badge": "100% CLEAN",
           "flag_details": "None (Clean)",
-          "channel_name": "United TV"
+          "channel_name": "United TV",
+          "is_blocked": false
         },
         {
           "title": "He Wasn't His Real Son, But Look What He Sacrificed For Him! 🥺❤️ #Shorts #Viral #Drama",
@@ -6173,7 +6608,8 @@
           "is_clean": true,
           "health_badge": "100% CLEAN",
           "flag_details": "None (Clean)",
-          "channel_name": "United TV"
+          "channel_name": "United TV",
+          "is_blocked": false
         },
         {
           "title": "He Wasn't His Real Son, But Look What He Sacrificed For Him! 🥺❤️ #Shorts #Viral #Drama",
@@ -6188,7 +6624,8 @@
           "is_clean": true,
           "health_badge": "100% CLEAN",
           "flag_details": "None (Clean)",
-          "channel_name": "United TV"
+          "channel_name": "United TV",
+          "is_blocked": false
         },
         {
           "title": "He Thought She Would Stay Silent    Her 1 Final Condition Shocked Him! 😱💔 #Shorts #Viral #Drama",
@@ -6203,7 +6640,8 @@
           "is_clean": true,
           "health_badge": "100% CLEAN",
           "flag_details": "None (Clean)",
-          "channel_name": "United TV"
+          "channel_name": "United TV",
+          "is_blocked": false
         },
         {
           "title": "He Thought He Lost Everything    Until A Stranger Knocked On His Door! 😱❤️ #Shorts #Viral #Drama",
@@ -6218,7 +6656,8 @@
           "is_clean": true,
           "health_badge": "100% CLEAN",
           "flag_details": "None (Clean)",
-          "channel_name": "United TV"
+          "channel_name": "United TV",
+          "is_blocked": false
         },
         {
           "title": "He Sacrificed 10 YEARS For Her    Look How She Repaid Him! 💔😡 #Shorts #Viral #Drama",
@@ -6233,7 +6672,8 @@
           "is_clean": true,
           "health_badge": "100% CLEAN",
           "flag_details": "None (Clean)",
-          "channel_name": "United TV"
+          "channel_name": "United TV",
+          "is_blocked": false
         },
         {
           "title": "He Raised Her Son As His Own    Until 1 Painful Word Broke Him! 💔🥺 #Shorts #Viral #Drama",
@@ -6248,7 +6688,8 @@
           "is_clean": true,
           "health_badge": "100% CLEAN",
           "flag_details": "None (Clean)",
-          "channel_name": "United TV"
+          "channel_name": "United TV",
+          "is_blocked": false
         },
         {
           "title": "He Raised Her Son As His Own    Until 1 Painful Word Broke Him! 💔🥺 #Shorts #Viral #Drama",
@@ -6263,7 +6704,8 @@
           "is_clean": true,
           "health_badge": "100% CLEAN",
           "flag_details": "None (Clean)",
-          "channel_name": "United TV"
+          "channel_name": "United TV",
+          "is_blocked": false
         },
         {
           "title": "He PRETENDED To Go Broke Just To See Who Truly Loved Him! 😱🔥 #Shorts #Viral #Drama",
@@ -6278,7 +6720,8 @@
           "is_clean": true,
           "health_badge": "100% CLEAN",
           "flag_details": "None (Clean)",
-          "channel_name": "United TV"
+          "channel_name": "United TV",
+          "is_blocked": false
         },
         {
           "title": "He Looked Under The Bed & Discovered His Family's DARKEST Secret! 😱💔 #Shorts #Viral #Drama",
@@ -6293,7 +6736,8 @@
           "is_clean": true,
           "health_badge": "100% CLEAN",
           "flag_details": "None (Clean)",
-          "channel_name": "United TV"
+          "channel_name": "United TV",
+          "is_blocked": false
         },
         {
           "title": "He Left In Tears But What He Saw In The Rearview Mirror Will Shock You! 😱💔 #Shorts #Viral #Dram",
@@ -6308,7 +6752,8 @@
           "is_clean": true,
           "health_badge": "100% CLEAN",
           "flag_details": "None (Clean)",
-          "channel_name": "United TV"
+          "channel_name": "United TV",
+          "is_blocked": false
         },
         {
           "title": "He Had Millions In The Bank, But Lost The ONLY Woman Who Loved Him! 💔😢 #Shorts #Viral #Drama",
@@ -6323,7 +6768,8 @@
           "is_clean": true,
           "health_badge": "100% CLEAN",
           "flag_details": "None (Clean)",
-          "channel_name": "United TV"
+          "channel_name": "United TV",
+          "is_blocked": false
         },
         {
           "title": "He Gave Her EVERYTHING But She Still Said 'You're NOT My Dad!' 💔😭 #Shorts #Viral #Drama",
@@ -6338,7 +6784,8 @@
           "is_clean": true,
           "health_badge": "100% CLEAN",
           "flag_details": "None (Clean)",
-          "channel_name": "United TV"
+          "channel_name": "United TV",
+          "is_blocked": false
         },
         {
           "title": "He Denied His Father For Years    But On His Deathbed, Truth Came Out! 💔😭 #Shorts #Viral #Drama",
@@ -6353,7 +6800,8 @@
           "is_clean": true,
           "health_badge": "100% CLEAN",
           "flag_details": "None (Clean)",
-          "channel_name": "United TV"
+          "channel_name": "United TV",
+          "is_blocked": false
         },
         {
           "title": "He Chose His Daughter Over His Wife Did He Make The Right Choice 💔🥺 #Shorts #Viral #Drama",
@@ -6368,7 +6816,8 @@
           "is_clean": true,
           "health_badge": "100% CLEAN",
           "flag_details": "None (Clean)",
-          "channel_name": "United TV"
+          "channel_name": "United TV",
+          "is_blocked": false
         },
         {
           "title": "He Arrived Late, But Losing His Seat Hurt More Than The Truth! 🥺💔 #Shorts #Viral #Drama",
@@ -6383,7 +6832,8 @@
           "is_clean": true,
           "health_badge": "100% CLEAN",
           "flag_details": "None (Clean)",
-          "channel_name": "United TV"
+          "channel_name": "United TV",
+          "is_blocked": false
         },
         {
           "title": "He Abandoned The Man Who Raised Him For His Real Dad Huge Mistake! 💔😢 #Shorts #Viral #Drama",
@@ -6398,7 +6848,8 @@
           "is_clean": true,
           "health_badge": "100% CLEAN",
           "flag_details": "None (Clean)",
-          "channel_name": "United TV"
+          "channel_name": "United TV",
+          "is_blocked": false
         },
         {
           "title": "'Enjoy Your Lifestyle! She Thought It Was Love, It Was A Lie! 💔😢 #Shorts #Viral #Drama",
@@ -6413,7 +6864,8 @@
           "is_clean": true,
           "health_badge": "100% CLEAN",
           "flag_details": "None (Clean)",
-          "channel_name": "United TV"
+          "channel_name": "United TV",
+          "is_blocked": false
         },
         {
           "title": "A Mother Tried To Hurt His Son Dad's Reaction Was PRICELESS! 😱🔥 #Shorts #Viral #Drama",
@@ -6428,7 +6880,8 @@
           "is_clean": true,
           "health_badge": "100% CLEAN",
           "flag_details": "None (Clean)",
-          "channel_name": "United TV"
+          "channel_name": "United TV",
+          "is_blocked": false
         },
         {
           "title": "18 yo Bought Mom A $1M Car Then The POLICE Showed Up! 😱🚨 #Shorts #Viral #Drama",
@@ -6443,7 +6896,8 @@
           "is_clean": true,
           "health_badge": "100% CLEAN",
           "flag_details": "None (Clean)",
-          "channel_name": "United TV"
+          "channel_name": "United TV",
+          "is_blocked": false
         },
         {
           "title": "1 Question From His Mother Exposed His Wife's Double Life! 😱🔥 #Shorts #Viral #Drama",
@@ -6458,7 +6912,8 @@
           "is_clean": true,
           "health_badge": "100% CLEAN",
           "flag_details": "None (Clean)",
-          "channel_name": "United TV"
+          "channel_name": "United TV",
+          "is_blocked": false
         },
         {
           "title": "1 Month Unemployed & 12 Years Of Marriage Meant NOTHING! 💔🥺 #Shorts #Viral #Drama",
@@ -6473,7 +6928,8 @@
           "is_clean": true,
           "health_badge": "100% CLEAN",
           "flag_details": "None (Clean)",
-          "channel_name": "United TV"
+          "channel_name": "United TV",
+          "is_blocked": false
         }
       ],
       "num": 10,
@@ -6489,7 +6945,25 @@
           "slot_desc": "US Central (Dallas) Night Prime Peak (08:45 PM CDT / 09:45 PM EDT)"
         }
       ],
-      "upload_schedule": "00:45 IST & 07:15 IST"
+      "upload_schedule": "00:45 IST & 07:15 IST",
+      "latest_uploaded_video": {
+        "title": "'If I Die Today, Will You Remarry'    Her Answer Left Him CHILLED! 😱💔 #Shorts #Viral #Drama",
+        "youtube_id": "28RbFoWeGVU",
+        "youtube_url": "https://youtu.be/28RbFoWeGVU",
+        "studio_url": "https://studio.youtube.com/video/28RbFoWeGVU/edit",
+        "uploaded_at": "2026-10-10T17:36:48Z",
+        "thumbnail": "https://i.ytimg.com/vi/28RbFoWeGVU/mqdefault.jpg",
+        "views": 2,
+        "likes": 0,
+        "comments": 0,
+        "is_clean": true,
+        "health_badge": "100% CLEAN",
+        "flag_details": "None (Clean)",
+        "channel_name": "United TV",
+        "is_blocked": false
+      },
+      "total_likes": 256,
+      "avg_views_per_video": 255
     },
     {
       "id": "channel_11",
@@ -6565,45 +7039,45 @@
             "country": "United States",
             "code": "US",
             "flag": "🇺🇸",
-            "percent": 59.0
+            "percent": 56.4
           },
           {
             "country": "Canada",
             "code": "CA",
             "flag": "🇨🇦",
-            "percent": 15.0
+            "percent": 13.8
           },
           {
             "country": "United Kingdom",
             "code": "GB",
             "flag": "🇬🇧",
-            "percent": 12.0
+            "percent": 11.2
           },
           {
             "country": "Australia",
             "code": "AU",
             "flag": "🇦🇺",
-            "percent": 7.0
+            "percent": 6.5
           },
           {
             "country": "Other countries",
             "code": "OTHER",
             "flag": "🌐",
-            "percent": 7.0
+            "percent": 12.1
           }
         ],
         "age_distribution": [
           {
             "range": "18–24 years",
-            "percent": 34.0
+            "percent": 39.5
           },
           {
             "range": "25–34 years",
-            "percent": 43.0
+            "percent": 37.0
           },
           {
             "range": "35–44 years",
-            "percent": 14.0
+            "percent": 14.2
           },
           {
             "range": "45–54 years",
@@ -6611,13 +7085,14 @@
           },
           {
             "range": "55+ years",
-            "percent": 3.0
+            "percent": 3.3
           }
         ],
         "gender": {
-          "male": 62.0,
-          "female": 38.0
-        }
+          "male": 66.0,
+          "female": 34.0
+        },
+        "watch_time_hours": 0.0
       },
       "uploaded_videos": [
         {
@@ -6633,7 +7108,8 @@
           "is_clean": true,
           "health_badge": "100% CLEAN",
           "flag_details": "None (Clean)",
-          "channel_name": "WildStare POV"
+          "channel_name": "WildStare POV",
+          "is_blocked": false
         },
         {
           "title": "Extreme Wildlife Cameraman POV #animalencounter #shorts #viralvideo #wildlife",
@@ -6648,7 +7124,8 @@
           "is_clean": true,
           "health_badge": "100% CLEAN",
           "flag_details": "None (Clean)",
-          "channel_name": "WildStare POV"
+          "channel_name": "WildStare POV",
+          "is_blocked": false
         },
         {
           "title": "Extreme Close Up Stare In 4K #wildlifephotography #shorts #nature #fyp",
@@ -6663,7 +7140,8 @@
           "is_clean": true,
           "health_badge": "100% CLEAN",
           "flag_details": "None (Clean)",
-          "channel_name": "WildStare POV"
+          "channel_name": "WildStare POV",
+          "is_blocked": false
         },
         {
           "title": "Extreme Close Up Stare In 4K #wildlifephotography #shorts #nature #fyp",
@@ -6678,7 +7156,8 @@
           "is_clean": true,
           "health_badge": "100% CLEAN",
           "flag_details": "None (Clean)",
-          "channel_name": "WildStare POV"
+          "channel_name": "WildStare POV",
+          "is_blocked": false
         },
         {
           "title": "Extreme Cameraman Survival Mode #cameraman #wildlifephotography #shorts #viral",
@@ -6693,7 +7172,8 @@
           "is_clean": true,
           "health_badge": "100% CLEAN",
           "flag_details": "None (Clean)",
-          "channel_name": "WildStare POV"
+          "channel_name": "WildStare POV",
+          "is_blocked": false
         },
         {
           "title": "Dangerous Stare Caught On 4K Camera #wildlife #cameraman #shorts #viral",
@@ -6708,7 +7188,8 @@
           "is_clean": true,
           "health_badge": "100% CLEAN",
           "flag_details": "None (Clean)",
-          "channel_name": "WildStare POV"
+          "channel_name": "WildStare POV",
+          "is_blocked": false
         },
         {
           "title": "Danger At Point Blank Range #wildlife #shorts #animalencounter #fyp",
@@ -6723,7 +7204,8 @@
           "is_clean": true,
           "health_badge": "100% CLEAN",
           "flag_details": "None (Clean)",
-          "channel_name": "WildStare POV"
+          "channel_name": "WildStare POV",
+          "is_blocked": false
         },
         {
           "title": "Close Enough To Hear His Breath #wildlife #shorts #cameraman #viral",
@@ -6738,7 +7220,8 @@
           "is_clean": true,
           "health_badge": "100% CLEAN",
           "flag_details": "None (Clean)",
-          "channel_name": "WildStare POV"
+          "channel_name": "WildStare POV",
+          "is_blocked": false
         },
         {
           "title": "Caught In 4K By The Hidden Cameraman #nature #wildlifephotography #shorts #reels",
@@ -6753,7 +7236,8 @@
           "is_clean": true,
           "health_badge": "100% CLEAN",
           "flag_details": "None (Clean)",
-          "channel_name": "WildStare POV"
+          "channel_name": "WildStare POV",
+          "is_blocked": false
         },
         {
           "title": "Breathtaking 4K Wildlife Moment #wildlifephotography #shorts #naturelovers #viral",
@@ -6768,7 +7252,8 @@
           "is_clean": true,
           "health_badge": "100% CLEAN",
           "flag_details": "None (Clean)",
-          "channel_name": "WildStare POV"
+          "channel_name": "WildStare POV",
+          "is_blocked": false
         }
       ],
       "num": 11,
@@ -6784,7 +7269,25 @@
           "slot_desc": "Coast-to-Coast Prime Peak (10:15 PM EDT NYC / 07:15 PM PDT LA)"
         }
       ],
-      "upload_schedule": "01:10 IST & 07:45 IST"
+      "upload_schedule": "01:10 IST & 07:45 IST",
+      "latest_uploaded_video": {
+        "title": "Eye To Eye With Pure Nature #wildlifephotography #shorts #viralvideo",
+        "youtube_id": "y-nI0y6blxc",
+        "youtube_url": "https://youtu.be/y-nI0y6blxc",
+        "studio_url": "https://studio.youtube.com/video/y-nI0y6blxc/edit",
+        "uploaded_at": "2026-10-10T17:36:53Z",
+        "thumbnail": "https://i.ytimg.com/vi/y-nI0y6blxc/mqdefault.jpg",
+        "views": 0,
+        "likes": 0,
+        "comments": 0,
+        "is_clean": true,
+        "health_badge": "100% CLEAN",
+        "flag_details": "None (Clean)",
+        "channel_name": "WildStare POV",
+        "is_blocked": false
+      },
+      "total_likes": 0,
+      "avg_views_per_video": 0
     }
   ],
   "sentinel": {
