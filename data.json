@@ -1,13 +1,13 @@
 {
   "app_name": "Raj Tube Pro",
   "version": "6.1.0",
-  "timestamp": "2026-10-11T09:21:04.623771+00:00",
+  "timestamp": "2026-10-11T09:22:53.995875+00:00",
   "schedule": {
     "next_slot_iso": "2026-10-11T14:00:00+00:00",
-    "seconds_remaining": 16735,
-    "formatted_countdown": "04h 38m 55s",
+    "seconds_remaining": 16626,
+    "formatted_countdown": "04h 37m 06s",
     "slot_label": "07:30 PM IST (Prime Wildlife Viral Peak)",
-    "now_ist": "11 Oct, 02:51 PM IST"
+    "now_ist": "11 Oct, 02:52 PM IST"
   },
   "summary": {
     "total_channels": 3,
@@ -1908,7 +1908,7 @@
           "studio_url": "https://studio.youtube.com/video/XVeGu3rnrXk/edit",
           "uploaded_at": "2026-10-10T13:07:37Z",
           "thumbnail": "https://i.ytimg.com/vi/XVeGu3rnrXk/mqdefault.jpg",
-          "views": 2230,
+          "views": 2233,
           "likes": 21,
           "comments": 1,
           "is_clean": true,
@@ -1988,7 +1988,7 @@
           "studio_url": "https://studio.youtube.com/video/o2-7vFXd2Mc/edit",
           "uploaded_at": "2026-10-08T08:08:09Z",
           "thumbnail": "https://i.ytimg.com/vi/o2-7vFXd2Mc/mqdefault.jpg",
-          "views": 1572,
+          "views": 1582,
           "likes": 16,
           "comments": 0,
           "is_clean": true,
