@@ -223,24 +223,6 @@
         }
       },
       {
-        "channel_id": "channel_10",
-        "channel_name": "Zenova Drift",
-        "handle": "@ZenovaDrift",
-        "color": "#10B981",
-        "runner_node": {
-          "ip": "64.236.192.147",
-          "city": "Chicago",
-          "region": "Illinois",
-          "country": "US",
-          "country_code": "US",
-          "flag": "🇺🇸",
-          "org": "AS8075 Microsoft Corporation",
-          "datacenter": "Microsoft Azure Cloud Runner",
-          "verified_at": "2026-09-17T14:04:34Z",
-          "verify_url": "https://ipinfo.io/64.236.192.147"
-        }
-      },
-      {
         "channel_id": "channel_2",
         "channel_name": "Zyntrix07",
         "handle": "@Zyntrix07",
@@ -259,42 +241,6 @@
         }
       },
       {
-        "channel_id": "channel_3",
-        "channel_name": "VibroZen",
-        "handle": "@VibroZen-m1c",
-        "color": "#06B6D4",
-        "runner_node": {
-          "ip": "20.168.111.71",
-          "city": "Phoenix",
-          "region": "Arizona",
-          "country": "US",
-          "country_code": "US",
-          "flag": "🇺🇸",
-          "org": "AS8075 Microsoft Corporation",
-          "datacenter": "Microsoft Azure Cloud Runner",
-          "verified_at": "2026-09-17T14:17:25Z",
-          "verify_url": "https://ipinfo.io/20.168.111.71"
-        }
-      },
-      {
-        "channel_id": "channel_4",
-        "channel_name": "VexoRush",
-        "handle": "@vexorush",
-        "color": "#8B5CF6",
-        "runner_node": {
-          "ip": "64.236.142.145",
-          "city": "Chicago",
-          "region": "Illinois",
-          "country": "US",
-          "country_code": "US",
-          "flag": "🇺🇸",
-          "org": "AS8075 Microsoft Corporation",
-          "datacenter": "Microsoft Azure Cloud Runner",
-          "verified_at": "2026-09-17T14:08:24Z",
-          "verify_url": "https://ipinfo.io/64.236.142.145"
-        }
-      },
-      {
         "channel_id": "channel_5",
         "channel_name": "Klyvo",
         "handle": "@Klyvo-x5o",
@@ -310,78 +256,6 @@
           "datacenter": "Microsoft Azure Cloud Runner",
           "verified_at": "2026-09-17T14:07:32Z",
           "verify_url": "https://ipinfo.io/20.80.108.161"
-        }
-      },
-      {
-        "channel_id": "channel_6",
-        "channel_name": "CoreVanta Media",
-        "handle": "@corevantamedia",
-        "color": "#3B82F6",
-        "runner_node": {
-          "ip": "172.203.196.184",
-          "city": "Dulles Town Center",
-          "region": "Virginia",
-          "country": "US",
-          "country_code": "US",
-          "flag": "🇺🇸",
-          "org": "AS8075 Microsoft Corporation",
-          "datacenter": "Microsoft Azure Cloud Runner",
-          "verified_at": "2026-09-17T14:07:50Z",
-          "verify_url": "https://ipinfo.io/172.203.196.184"
-        }
-      },
-      {
-        "channel_id": "channel_7",
-        "channel_name": "Fire Nova Vault",
-        "handle": "@FireNovaVault",
-        "color": "#F59E0B",
-        "runner_node": {
-          "ip": "134.33.78.217",
-          "city": "Phoenix",
-          "region": "Arizona",
-          "country": "US",
-          "country_code": "US",
-          "flag": "🇺🇸",
-          "org": "AS8075 Microsoft Corporation",
-          "datacenter": "Microsoft Azure Cloud Runner",
-          "verified_at": "2026-09-17T14:10:54.700699+00:00",
-          "verify_url": "https://ipinfo.io/134.33.78.217"
-        }
-      },
-      {
-        "channel_id": "channel_8",
-        "channel_name": "Hyperflux Motion",
-        "handle": "@HyperfluxMotion",
-        "color": "#8B5CF6",
-        "runner_node": {
-          "ip": "57.154.5.248",
-          "city": "Phoenix",
-          "region": "Arizona",
-          "country": "US",
-          "country_code": "US",
-          "flag": "🇺🇸",
-          "org": "AS8075 Microsoft Corporation",
-          "datacenter": "Microsoft Azure Cloud Runner",
-          "verified_at": "2026-09-17T14:13:21Z",
-          "verify_url": "https://ipinfo.io/57.154.5.248"
-        }
-      },
-      {
-        "channel_id": "channel_9",
-        "channel_name": "Vortex Edge Stories",
-        "handle": "@VortexEdgeStories",
-        "color": "#06B6D4",
-        "runner_node": {
-          "ip": "20.189.188.5",
-          "city": "San Jose",
-          "region": "California",
-          "country": "US",
-          "country_code": "US",
-          "flag": "🇺🇸",
-          "org": "AS8075 Microsoft Corporation",
-          "datacenter": "Microsoft Azure Cloud Runner",
-          "verified_at": "2026-09-17T14:06:22Z",
-          "verify_url": "https://ipinfo.io/20.189.188.5"
         }
       }
     ],
@@ -4459,8 +4333,8 @@
     }
   ],
   "sentinel": {
-    "last_audit_iso": "2026-10-11T09:02:09.698613+00:00",
-    "last_audit_ist": "11 Oct 2026, 02:32 PM IST",
+    "last_audit_iso": "2026-10-11T09:22:24.958442+00:00",
+    "last_audit_ist": "11 Oct 2026, 02:52 PM IST",
     "status": "100% OPERATIONAL",
     "badge": "SENTINEL ACTIVE",
     "auto_healed_actions": [
