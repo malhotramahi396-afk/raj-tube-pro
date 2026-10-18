@@ -1,21 +1,21 @@
 {
   "app_name": "Raj Tube Pro",
   "version": "6.1.0",
-  "timestamp": "2026-10-18T13:30:49.589278+00:00",
+  "timestamp": "2026-10-18T16:58:28.350130+00:00",
   "schedule": {
-    "next_slot_iso": "2026-10-18T14:00:00+00:00",
-    "seconds_remaining": 1750,
-    "formatted_countdown": "00h 29m 10s",
-    "slot_label": "07:30 PM IST (Prime Wildlife Viral Peak)",
-    "now_ist": "18 Oct, 07:00 PM IST"
+    "next_slot_iso": "2026-10-19T08:00:00+00:00",
+    "seconds_remaining": 54091,
+    "formatted_countdown": "15h 01m 31s",
+    "slot_label": "01:30 PM IST Tomorrow (Lunch Break)",
+    "now_ist": "18 Oct, 10:28 PM IST"
   },
   "summary": {
     "total_channels": 11,
-    "total_uploaded": 381,
-    "total_in_queue": 431,
-    "total_subscribers": 1421,
-    "total_views": 1727955,
-    "total_likes": 12621,
+    "total_uploaded": 366,
+    "total_in_queue": 430,
+    "total_subscribers": 1422,
+    "total_views": 1742382,
+    "total_likes": 12415,
     "network_engagement": 0.8,
     "total_runway_days": 24.0,
     "system_health": "All Systems Operational (11 Channels Active 1-11)",
@@ -31,7 +31,7 @@
       "uploaded_at": "2026-09-15T21:09:27Z"
     },
     "analytics": {
-      "watch_time_hours": 9215.8,
+      "watch_time_hours": 9292.8,
       "avg_view_duration": "0:24",
       "top_countries": [
         {
@@ -155,7 +155,7 @@
       ],
       "peak_hours": "6:00 PM – 10:30 PM IST (Peak Global Viewing Window)"
     },
-    "avg_views_per_channel": 157087
+    "avg_views_per_channel": 158398
   },
   "issues": [],
   "channels": [
@@ -170,7 +170,7 @@
       "color": "#10B981",
       "avatar_url": "https://yt3.ggpht.com/R5wyufkApz5fijH1a4mek8n6CM9y64QklZgfgjuGI-SOwbTIBjEFmmKot6aBnYkVRwOpq965=s240-c-k-c0x00ffffff-no-rj",
       "subscribers": 129,
-      "total_views": 120355,
+      "total_views": 120352,
       "channel_total_videos": 82,
       "avg_views_per_video": 1468,
       "engagement_rate": 0.8,
@@ -355,7 +355,7 @@
       "stock_status": "Plentiful (33.5 days)",
       "stock_color": "#10B981",
       "latest_run_status": "success",
-      "latest_run_time": "2026-10-17T21:44:01.895047+00:00",
+      "latest_run_time": "2026-09-20T14:13:23.301788+00:00",
       "latest_uploaded_video": {
         "title": "Most People Die From This Mistake 💀 #Shorts",
         "youtube_id": "ZGJN8Ep3wpc",
@@ -406,11 +406,11 @@
           "is_blocked": false
         },
         {
-          "title": "Wild Curiosity Meets Hidden Cameraman #cameraman #wildlife #shorts #viral",
+          "title": "When Wild Animals Realize They Are Being Watched... 😳 #Shorts",
           "youtube_id": "R0aRfynBK04",
           "youtube_url": "https://youtu.be/R0aRfynBK04",
           "studio_url": "https://studio.youtube.com/video/R0aRfynBK04/edit",
-          "uploaded_at": "2026-10-15T21:51:44.266042+00:00",
+          "uploaded_at": "2026-10-15T21:51:47Z",
           "thumbnail": "https://i.ytimg.com/vi/R0aRfynBK04/mqdefault.jpg",
           "views": 1,
           "likes": 0,
@@ -422,11 +422,11 @@
           "is_blocked": false
         },
         {
-          "title": "Wild Creature Stares Right Into The Lens #wildlife #cameraman #shorts #nature",
+          "title": "It knew the camera was watching... 😳 #Shorts",
           "youtube_id": "Sw8gC6pbFp4",
           "youtube_url": "https://youtu.be/Sw8gC6pbFp4",
           "studio_url": "https://studio.youtube.com/video/Sw8gC6pbFp4/edit",
-          "uploaded_at": "2026-10-15T21:35:02.964031+00:00",
+          "uploaded_at": "2026-10-15T21:35:17Z",
           "thumbnail": "https://i.ytimg.com/vi/Sw8gC6pbFp4/mqdefault.jpg",
           "views": 0,
           "likes": 0,
@@ -470,11 +470,11 @@
           "is_blocked": false
         },
         {
-          "title": "When The Wild Stares Back At You #animalencounter #nature #shorts #viralreels",
+          "title": "When The Apex Predator Refuses To Blink 😳 #Shorts",
           "youtube_id": "Ewg5zSJe3Cc",
           "youtube_url": "https://youtu.be/Ewg5zSJe3Cc",
           "studio_url": "https://studio.youtube.com/video/Ewg5zSJe3Cc/edit",
-          "uploaded_at": "2026-10-14T21:58:52.481135+00:00",
+          "uploaded_at": "2026-10-14T21:59:07Z",
           "thumbnail": "https://i.ytimg.com/vi/Ewg5zSJe3Cc/mqdefault.jpg",
           "views": 672,
           "likes": 6,
@@ -486,11 +486,11 @@
           "is_blocked": false
         },
         {
-          "title": "When The Creature Walks Right Up #wildlifephotography #shorts #reels #nature",
+          "title": "It Stared Right Into My Soul... 😳 #Shorts",
           "youtube_id": "79Zcdaq4Zfk",
           "youtube_url": "https://youtu.be/79Zcdaq4Zfk",
           "studio_url": "https://studio.youtube.com/video/79Zcdaq4Zfk/edit",
-          "uploaded_at": "2026-10-14T21:51:06.747009+00:00",
+          "uploaded_at": "2026-10-14T21:51:14Z",
           "thumbnail": "https://i.ytimg.com/vi/79Zcdaq4Zfk/mqdefault.jpg",
           "views": 970,
           "likes": 8,
@@ -534,11 +534,11 @@
           "is_blocked": false
         },
         {
-          "title": "Unbelievable Close Up Shot In 4K #wildlifephotography #shorts #nature",
+          "title": "This 4K Wildlife Shot Defies Reality! 🤯 #Shorts",
           "youtube_id": "K49lgI8lwak",
           "youtube_url": "https://youtu.be/K49lgI8lwak",
           "studio_url": "https://studio.youtube.com/video/K49lgI8lwak/edit",
-          "uploaded_at": "2026-10-13T21:49:44.705951+00:00",
+          "uploaded_at": "2026-10-13T21:49:54Z",
           "thumbnail": "https://i.ytimg.com/vi/K49lgI8lwak/mqdefault.jpg",
           "views": 1308,
           "likes": 13,
@@ -550,11 +550,11 @@
           "is_blocked": false
         },
         {
-          "title": "They Have No Idea Im Watching #cameraman #wildlife #shorts #reels",
+          "title": "This Animal Thought It Was Alone... 😳 #Shorts",
           "youtube_id": "w1XSBeERYLw",
           "youtube_url": "https://youtu.be/w1XSBeERYLw",
           "studio_url": "https://studio.youtube.com/video/w1XSBeERYLw/edit",
-          "uploaded_at": "2026-10-13T21:19:42.968517+00:00",
+          "uploaded_at": "2026-10-13T21:19:49Z",
           "thumbnail": "https://i.ytimg.com/vi/w1XSBeERYLw/mqdefault.jpg",
           "views": 1050,
           "likes": 16,
@@ -1818,7 +1818,7 @@
         "org": "Datacamp Limited (Chicago US Gateway)",
         "datacenter": "Surfshark Dedicated US Chicago Gateway",
         "verify_url": "https://ipinfo.io/154.47.25.100",
-        "verified_at": "2026-10-16T18:53:19Z"
+        "verified_at": "2026-10-11T13:26:30Z"
       },
       "is_active": true,
       "is_terminated": false,
@@ -1849,14 +1849,14 @@
       "github_repo": "malhotramahi396-afk/yt-automation-zyntrix07",
       "color": "#F59E0B",
       "avatar_url": "https://yt3.ggpht.com/TTLhq8ijvpChRrWaVb1i96FzeFG02Gd31oOfWo4EdOtBtfqTD6h0TrRmEOTd2fE8V0kPexV6EA=s240-c-k-c0x00ffffff-no-rj",
-      "subscribers": 916,
-      "total_views": 1436809,
-      "channel_total_videos": 76,
-      "avg_views_per_video": 19159,
+      "subscribers": 917,
+      "total_views": 1450202,
+      "channel_total_videos": 77,
+      "avg_views_per_video": 18959,
       "engagement_rate": 0.8,
-      "total_likes": 8028,
+      "total_likes": 8052,
       "analytics": {
-        "watch_time_hours": 7663.0,
+        "watch_time_hours": 7734.4,
         "avg_view_duration": "0:24",
         "top_countries": [
           {
@@ -2029,23 +2029,23 @@
       },
       "drive_folder_id": "1So3rmfL0rvojsXq7m6WoA9RYS029HXW6",
       "drive_folder_url": "https://drive.google.com/drive/folders/1So3rmfL0rvojsXq7m6WoA9RYS029HXW6",
-      "uploaded_count": 76,
-      "drive_queue_count": 8,
-      "runway_days": 4.0,
+      "uploaded_count": 77,
+      "drive_queue_count": 7,
+      "runway_days": 3.5,
       "stock_status": "Plentiful (30.5 days)",
       "stock_color": "#10B981",
       "latest_run_status": "success",
       "latest_run_time": "2026-09-20T21:08:20.057017+00:00",
       "latest_uploaded_video": {
-        "title": "One Second Before Disaster 💀 #Shorts",
-        "youtube_id": "uqZUfCx62zM",
-        "youtube_url": "https://youtu.be/uqZUfCx62zM",
-        "studio_url": "https://studio.youtube.com/video/uqZUfCx62zM/edit",
-        "uploaded_at": "2026-10-18T12:17:55Z",
-        "thumbnail": "https://i.ytimg.com/vi/uqZUfCx62zM/mqdefault.jpg",
-        "views": 790,
+        "title": "One Second Before Disaster... 💀 #PowerSlap #Shorts",
+        "youtube_id": "UOEcIAskKbI",
+        "youtube_url": "https://youtu.be/UOEcIAskKbI",
+        "studio_url": "https://studio.youtube.com/video/UOEcIAskKbI/edit",
+        "uploaded_at": "2026-10-18T16:14:51Z",
+        "thumbnail": "https://i.ytimg.com/vi/UOEcIAskKbI/mqdefault.jpg",
+        "views": 494,
         "likes": 3,
-        "comments": 1,
+        "comments": 0,
         "is_clean": true,
         "health_badge": "100% CLEAN",
         "flag_details": "None (Clean)",
@@ -2054,14 +2054,30 @@
       },
       "uploaded_videos": [
         {
+          "title": "One Second Before Disaster... 💀 #PowerSlap #Shorts",
+          "youtube_id": "UOEcIAskKbI",
+          "youtube_url": "https://youtu.be/UOEcIAskKbI",
+          "studio_url": "https://studio.youtube.com/video/UOEcIAskKbI/edit",
+          "uploaded_at": "2026-10-18T16:14:51Z",
+          "thumbnail": "https://i.ytimg.com/vi/UOEcIAskKbI/mqdefault.jpg",
+          "views": 494,
+          "likes": 3,
+          "comments": 0,
+          "is_clean": true,
+          "health_badge": "100% CLEAN",
+          "flag_details": "None (Clean)",
+          "channel_name": "Zyntrix07",
+          "is_blocked": false
+        },
+        {
           "title": "One Second Before Disaster 💀 #Shorts",
           "youtube_id": "uqZUfCx62zM",
           "youtube_url": "https://youtu.be/uqZUfCx62zM",
           "studio_url": "https://studio.youtube.com/video/uqZUfCx62zM/edit",
           "uploaded_at": "2026-10-18T12:17:55Z",
           "thumbnail": "https://i.ytimg.com/vi/uqZUfCx62zM/mqdefault.jpg",
-          "views": 790,
-          "likes": 3,
+          "views": 1733,
+          "likes": 11,
           "comments": 1,
           "is_clean": true,
           "health_badge": "100% CLEAN",
@@ -2076,7 +2092,7 @@
           "studio_url": "https://studio.youtube.com/video/deEFIsJrYaU/edit",
           "uploaded_at": "2026-10-17T16:02:57Z",
           "thumbnail": "https://i.ytimg.com/vi/deEFIsJrYaU/mqdefault.jpg",
-          "views": 2301,
+          "views": 2419,
           "likes": 15,
           "comments": 0,
           "is_clean": true,
@@ -2092,8 +2108,8 @@
           "studio_url": "https://studio.youtube.com/video/plAJi50vHLs/edit",
           "uploaded_at": "2026-10-17T11:51:46Z",
           "thumbnail": "https://i.ytimg.com/vi/plAJi50vHLs/mqdefault.jpg",
-          "views": 1998,
-          "likes": 11,
+          "views": 2250,
+          "likes": 13,
           "comments": 0,
           "is_clean": true,
           "health_badge": "100% CLEAN",
@@ -2108,7 +2124,7 @@
           "studio_url": "https://studio.youtube.com/video/hG7y34YKs6E/edit",
           "uploaded_at": "2026-10-16T17:05:27Z",
           "thumbnail": "https://i.ytimg.com/vi/hG7y34YKs6E/mqdefault.jpg",
-          "views": 202,
+          "views": 207,
           "likes": 1,
           "comments": 0,
           "is_clean": true,
@@ -2124,8 +2140,8 @@
           "studio_url": "https://studio.youtube.com/video/JMr2mEoM2KQ/edit",
           "uploaded_at": "2026-10-16T12:51:37Z",
           "thumbnail": "https://i.ytimg.com/vi/JMr2mEoM2KQ/mqdefault.jpg",
-          "views": 20727,
-          "likes": 172,
+          "views": 22274,
+          "likes": 181,
           "comments": 3,
           "is_clean": true,
           "health_badge": "100% CLEAN",
@@ -2140,8 +2156,8 @@
           "studio_url": "https://studio.youtube.com/video/wJ5meRdUlQg/edit",
           "uploaded_at": "2026-10-15T17:34:14Z",
           "thumbnail": "https://i.ytimg.com/vi/wJ5meRdUlQg/mqdefault.jpg",
-          "views": 43077,
-          "likes": 116,
+          "views": 43359,
+          "likes": 118,
           "comments": 2,
           "is_clean": true,
           "health_badge": "100% CLEAN",
@@ -2156,7 +2172,7 @@
           "studio_url": "https://studio.youtube.com/video/E2EnGbp6Uz0/edit",
           "uploaded_at": "2026-10-15T12:58:28Z",
           "thumbnail": "https://i.ytimg.com/vi/E2EnGbp6Uz0/mqdefault.jpg",
-          "views": 14757,
+          "views": 14858,
           "likes": 72,
           "comments": 2,
           "is_clean": true,
@@ -2204,7 +2220,7 @@
           "studio_url": "https://studio.youtube.com/video/W6mr4649uhg/edit",
           "uploaded_at": "2026-10-12T21:29:31Z",
           "thumbnail": "https://i.ytimg.com/vi/W6mr4649uhg/mqdefault.jpg",
-          "views": 1732,
+          "views": 1738,
           "likes": 5,
           "comments": 0,
           "is_clean": true,
@@ -2316,7 +2332,7 @@
           "studio_url": "https://studio.youtube.com/video/OuyIqHjfnYM/edit",
           "uploaded_at": "2026-10-09T08:08:18Z",
           "thumbnail": "https://i.ytimg.com/vi/OuyIqHjfnYM/mqdefault.jpg",
-          "views": 37335,
+          "views": 37339,
           "likes": 302,
           "comments": 4,
           "is_clean": true,
@@ -2732,7 +2748,7 @@
           "studio_url": "https://studio.youtube.com/video/DQyu5bBX5nY/edit",
           "uploaded_at": "2026-09-24T08:04:18Z",
           "thumbnail": "https://i.ytimg.com/vi/DQyu5bBX5nY/mqdefault.jpg",
-          "views": 142677,
+          "views": 142681,
           "likes": 373,
           "comments": 0,
           "is_clean": true,
@@ -3450,11 +3466,11 @@
         "org": "Datacamp Limited (New York US Gateway)",
         "datacenter": "Surfshark Dedicated US NY Gateway",
         "verify_url": "https://ipinfo.io/84.17.35.112",
-        "verified_at": "2026-10-17T16:02:57Z"
+        "verified_at": "2026-10-11T13:08:28Z"
       },
       "is_active": true,
       "is_terminated": false,
-      "drive_videos_count": 8,
+      "drive_videos_count": 7,
       "country": "US",
       "num": 2,
       "slots": [
@@ -3489,13 +3505,13 @@
       "status_label": "24/7 Autopilot • Scheduled",
       "status_color": "#10B981",
       "subscribers": 33,
-      "total_views": 8995,
+      "total_views": 9299,
       "channel_total_videos": 19,
       "uploaded_count": 19,
       "drive_queue_count": 61,
       "drive_videos_count": 61,
       "runway_days": 30.5,
-      "latest_run_time": "2026-10-15T22:40:51.265448+00:00",
+      "latest_run_time": "2026-10-10T17:40:46Z",
       "latest_run_status": "success",
       "schedule": {
         "videos_per_day": 2,
@@ -3523,7 +3539,7 @@
         "org": "Datacamp Limited (New York US Gateway)",
         "datacenter": "Surfshark Dedicated US NY Gateway",
         "verify_url": "https://ipinfo.io/84.17.35.112",
-        "verified_at": "2026-10-15T22:40:51.259856+00:00"
+        "verified_at": "2026-10-10T17:40:46Z"
       },
       "health": {
         "overall_score": 98,
@@ -3542,87 +3558,87 @@
         "verified_source": "YouTube Analytics API (100% Genuine)",
         "top_countries": [
           {
-            "country": "Indonesia",
-            "code": "ID",
-            "flag": "🇮🇩",
-            "percent": 30.5
-          },
-          {
             "country": "United States",
             "code": "US",
             "flag": "🇺🇸",
-            "percent": 24.4
+            "percent": 64.5
           },
           {
-            "country": "India",
-            "code": "IN",
-            "flag": "🇮🇳",
-            "percent": 16.7
+            "country": "United Kingdom",
+            "code": "GB",
+            "flag": "🇬🇧",
+            "percent": 8.2
           },
           {
             "country": "Philippines",
             "code": "PH",
             "flag": "🇵🇭",
-            "percent": 9.9
+            "percent": 7.9
           },
           {
-            "country": "Thailand",
-            "code": "TH",
-            "flag": "🇹🇭",
-            "percent": 5.9
+            "country": "Australia",
+            "code": "AU",
+            "flag": "🇦🇺",
+            "percent": 5.3
+          },
+          {
+            "country": "ZA",
+            "code": "ZA",
+            "flag": "🌐",
+            "percent": 3.9
           },
           {
             "country": "Other countries",
             "code": "OTHER",
             "flag": "🌐",
-            "percent": 12.6
+            "percent": 10.2
           }
         ],
         "age_distribution": [
           {
             "range": "13–17 years",
-            "percent": 3.4
+            "percent": 4.4
           },
           {
             "range": "18–24 years",
-            "percent": 8.1
+            "percent": 1.4
           },
           {
             "range": "25–34 years",
-            "percent": 36.9
+            "percent": 15.6
           },
           {
             "range": "35–44 years",
-            "percent": 23.2
+            "percent": 15.1
           },
           {
             "range": "45–54 years",
-            "percent": 11.1
+            "percent": 7.3
           },
           {
             "range": "55–64 years",
-            "percent": 8.5
+            "percent": 12.6
           },
           {
             "range": "65+ years",
-            "percent": 8.9
+            "percent": 43.6
           }
         ],
         "gender": {
-          "male": 44.7,
-          "female": 55.3
+          "male": 38.9,
+          "female": 61.1
         },
-        "watch_time_hours": 48.0
+        "watch_time_hours": 49.6
       },
       "uploaded_videos": [
         {
-          "title": "EP 19 - He Threw Wine In His Face #shorts #drama #viral",
+          "title": "He Regretted That Wine Toss Instantly 🍷😱 #Shorts",
           "youtube_id": "NxLnNebv82g",
           "youtube_url": "https://youtu.be/NxLnNebv82g",
           "studio_url": "https://studio.youtube.com/video/NxLnNebv82g/edit",
-          "uploaded_at": "2026-10-15T22:40:51.259856+00:00",
+          "uploaded_at": "2026-10-15T22:41:21Z",
           "thumbnail": "https://i.ytimg.com/vi/NxLnNebv82g/mqdefault.jpg",
-          "views": 1201,
+          "views": 1198,
           "likes": 15,
           "comments": 0,
           "is_clean": true,
@@ -3632,11 +3648,11 @@
           "is_blocked": false
         },
         {
-          "title": "EP 18 - She Smiled Because The Trap Worked #shorts #drama #viral",
+          "title": "She Smiled As The Billionaire Walked Right Into Her Trap... 🤫 #Shorts",
           "youtube_id": "Tb8OKykKHXg",
           "youtube_url": "https://youtu.be/Tb8OKykKHXg",
           "studio_url": "https://studio.youtube.com/video/Tb8OKykKHXg/edit",
-          "uploaded_at": "2026-10-14T22:37:15.916874+00:00",
+          "uploaded_at": "2026-10-14T22:37:43Z",
           "thumbnail": "https://i.ytimg.com/vi/Tb8OKykKHXg/mqdefault.jpg",
           "views": 87,
           "likes": 0,
@@ -3648,11 +3664,11 @@
           "is_blocked": false
         },
         {
-          "title": "EP 17 - The Document That Ruined His Life #shorts #drama #viral",
+          "title": "His Father Signed This Secret Paper... And It Destroyed Everything 📄💥 #Shorts",
           "youtube_id": "K9KB_-xgVqY",
           "youtube_url": "https://youtu.be/K9KB_-xgVqY",
           "studio_url": "https://studio.youtube.com/video/K9KB_-xgVqY/edit",
-          "uploaded_at": "2026-10-13T23:09:10.614725+00:00",
+          "uploaded_at": "2026-10-13T23:09:41Z",
           "thumbnail": "https://i.ytimg.com/vi/K9KB_-xgVqY/mqdefault.jpg",
           "views": 21,
           "likes": 0,
@@ -3664,11 +3680,11 @@
           "is_blocked": false
         },
         {
-          "title": "EP 16 - He Begged For Mercy In Rain #shorts #drama #viral",
+          "title": "Billionaire Begs In The Rain... Bad Idea 🌧️ #Shorts",
           "youtube_id": "Nz8kSIfr4qg",
           "youtube_url": "https://youtu.be/Nz8kSIfr4qg",
           "studio_url": "https://studio.youtube.com/video/Nz8kSIfr4qg/edit",
-          "uploaded_at": "2026-10-13T22:58:38.783336+00:00",
+          "uploaded_at": "2026-10-13T22:59:07Z",
           "thumbnail": "https://i.ytimg.com/vi/Nz8kSIfr4qg/mqdefault.jpg",
           "views": 544,
           "likes": 0,
@@ -3680,13 +3696,13 @@
           "is_blocked": false
         },
         {
-          "title": "EP 15 - Her Real Identity Was Finally Unveiled #shorts #drama #viral",
+          "title": "She Hated The Poor Maid, Until Her True Identity Dropped! 👑 #Shorts",
           "youtube_id": "e-IYyY28UaQ",
           "youtube_url": "https://youtu.be/e-IYyY28UaQ",
           "studio_url": "https://studio.youtube.com/video/e-IYyY28UaQ/edit",
-          "uploaded_at": "2026-10-12T23:02:14.901630+00:00",
+          "uploaded_at": "2026-10-12T23:02:45Z",
           "thumbnail": "https://i.ytimg.com/vi/e-IYyY28UaQ/mqdefault.jpg",
-          "views": 127,
+          "views": 130,
           "likes": 0,
           "comments": 0,
           "is_clean": true,
@@ -3696,11 +3712,11 @@
           "is_blocked": false
         },
         {
-          "title": "EP 14 - They Laughed Until The Police Arrived #shorts #drama #viral",
+          "title": "They Laughed At The Poor Guy... Until This Happened! 🤯 #Shorts",
           "youtube_id": "83p5hLy5SHs",
           "youtube_url": "https://youtu.be/83p5hLy5SHs",
           "studio_url": "https://studio.youtube.com/video/83p5hLy5SHs/edit",
-          "uploaded_at": "2026-10-12T22:33:01.274279+00:00",
+          "uploaded_at": "2026-10-12T22:33:27Z",
           "thumbnail": "https://i.ytimg.com/vi/83p5hLy5SHs/mqdefault.jpg",
           "views": 20,
           "likes": 0,
@@ -3744,11 +3760,11 @@
           "is_blocked": false
         },
         {
-          "title": "EP 11 - She Walked Out Without Looking Back #shorts #drama #viral",
+          "title": "She Dropped The Ultimate Revenge On Him! 🥶 #Shorts",
           "youtube_id": "r6zmUGY2Alo",
           "youtube_url": "https://youtu.be/r6zmUGY2Alo",
           "studio_url": "https://studio.youtube.com/video/r6zmUGY2Alo/edit",
-          "uploaded_at": "2026-10-11T22:32:21.590190+00:00",
+          "uploaded_at": "2026-10-11T22:32:57Z",
           "thumbnail": "https://i.ytimg.com/vi/r6zmUGY2Alo/mqdefault.jpg",
           "views": 1299,
           "likes": 30,
@@ -3798,7 +3814,7 @@
           "studio_url": "https://studio.youtube.com/video/jgO1k6Kxd-0/edit",
           "uploaded_at": "2026-10-05T15:17:14Z",
           "thumbnail": "https://i.ytimg.com/vi/jgO1k6Kxd-0/mqdefault.jpg",
-          "views": 25,
+          "views": 26,
           "likes": 0,
           "comments": 0,
           "is_clean": true,
@@ -3922,13 +3938,13 @@
       ],
       "num": 3,
       "latest_uploaded_video": {
-        "title": "EP 19 - He Threw Wine In His Face #shorts #drama #viral",
+        "title": "He Regretted That Wine Toss Instantly 🍷😱 #Shorts",
         "youtube_id": "NxLnNebv82g",
         "youtube_url": "https://youtu.be/NxLnNebv82g",
         "studio_url": "https://studio.youtube.com/video/NxLnNebv82g/edit",
-        "uploaded_at": "2026-10-15T22:40:51.259856+00:00",
+        "uploaded_at": "2026-10-15T22:41:21Z",
         "thumbnail": "https://i.ytimg.com/vi/NxLnNebv82g/mqdefault.jpg",
-        "views": 1201,
+        "views": 1198,
         "likes": 15,
         "comments": 0,
         "is_clean": true,
@@ -3977,72 +3993,72 @@
             "country": "United States",
             "code": "US",
             "flag": "🇺🇸",
-            "percent": 62.9
+            "percent": 54.3
           },
           {
-            "country": "United Kingdom",
-            "code": "GB",
-            "flag": "🇬🇧",
-            "percent": 10.5
-          },
-          {
-            "country": "Philippines",
-            "code": "PH",
-            "flag": "🇵🇭",
-            "percent": 10.3
+            "country": "Indonesia",
+            "code": "ID",
+            "flag": "🇮🇩",
+            "percent": 20.7
           },
           {
             "country": "India",
             "code": "IN",
             "flag": "🇮🇳",
-            "percent": 5.1
+            "percent": 5.8
           },
           {
-            "country": "Australia",
-            "code": "AU",
-            "flag": "🇦🇺",
-            "percent": 5.0
+            "country": "Mexico",
+            "code": "MX",
+            "flag": "🇲🇽",
+            "percent": 4.8
+          },
+          {
+            "country": "Philippines",
+            "code": "PH",
+            "flag": "🇵🇭",
+            "percent": 4.5
           },
           {
             "country": "Other countries",
             "code": "OTHER",
             "flag": "🌐",
-            "percent": 6.2
+            "percent": 9.9
           }
         ],
         "age_distribution": [
           {
             "range": "13–17 years",
-            "percent": 8.5
+            "percent": 7.6
           },
           {
             "range": "18–24 years",
-            "percent": 6.2
+            "percent": 7.5
           },
           {
             "range": "25–34 years",
-            "percent": 34.3
+            "percent": 36.6
           },
           {
             "range": "35–44 years",
-            "percent": 27.3
+            "percent": 27.7
           },
           {
             "range": "45–54 years",
-            "percent": 8.6
+            "percent": 9.7
           },
           {
             "range": "55–64 years",
-            "percent": 6.0
+            "percent": 6.1
           },
           {
             "range": "65+ years",
-            "percent": 9.1
+            "percent": 4.7
           }
         ],
         "gender": {
-          "male": 33.0,
-          "female": 67.0
+          "male": 45.8,
+          "female": 54.2
         },
         "traffic_sources": [
           {
@@ -5530,7 +5546,7 @@
         "org": "M247 Ltd (New York US Gateway)",
         "datacenter": "Surfshark Dedicated US NY Gateway",
         "verify_url": "https://ipinfo.io/146.70.186.171",
-        "verified_at": "2026-10-17T22:42:15Z"
+        "verified_at": "2026-10-11T14:07:58Z"
       },
       "is_active": true,
       "is_terminated": false,
@@ -5571,11 +5587,11 @@
       "subscribers": 7,
       "total_views": 941,
       "channel_total_videos": 10,
-      "uploaded_count": 24,
+      "uploaded_count": 8,
       "drive_queue_count": 65,
       "drive_videos_count": 65,
       "runway_days": 32.5,
-      "latest_run_time": "2026-09-20T21:06:00.223541+00:00",
+      "latest_run_time": "2026-10-10T17:35:59Z",
       "latest_run_status": "success",
       "schedule": {
         "videos_per_day": 2,
@@ -5603,7 +5619,7 @@
         "org": "Datacamp Limited (New York US Gateway)",
         "datacenter": "Surfshark Dedicated US NY Gateway",
         "verify_url": "https://ipinfo.io/84.17.35.112",
-        "verified_at": "2026-10-17T23:43:19Z"
+        "verified_at": "2026-10-10T17:35:59Z"
       },
       "health": {
         "overall_score": 99,
@@ -5625,92 +5641,68 @@
             "country": "United States",
             "code": "US",
             "flag": "🇺🇸",
-            "percent": 54.3
-          },
-          {
-            "country": "Indonesia",
-            "code": "ID",
-            "flag": "🇮🇩",
-            "percent": 20.7
-          },
-          {
-            "country": "India",
-            "code": "IN",
-            "flag": "🇮🇳",
-            "percent": 5.8
-          },
-          {
-            "country": "Mexico",
-            "code": "MX",
-            "flag": "🇲🇽",
-            "percent": 4.8
+            "percent": 45.5
           },
           {
             "country": "Philippines",
             "code": "PH",
             "flag": "🇵🇭",
-            "percent": 4.5
+            "percent": 11.9
+          },
+          {
+            "country": "MY",
+            "code": "MY",
+            "flag": "🌐",
+            "percent": 8.7
+          },
+          {
+            "country": "Japan",
+            "code": "JP",
+            "flag": "🇯🇵",
+            "percent": 8.6
+          },
+          {
+            "country": "India",
+            "code": "IN",
+            "flag": "🇮🇳",
+            "percent": 7.7
           },
           {
             "country": "Other countries",
             "code": "OTHER",
             "flag": "🌐",
-            "percent": 9.9
+            "percent": 17.6
           }
         ],
         "age_distribution": [
           {
-            "range": "13–17 years",
-            "percent": 7.6
-          },
-          {
-            "range": "18–24 years",
-            "percent": 7.5
-          },
-          {
             "range": "25–34 years",
-            "percent": 36.6
+            "percent": 4.9
           },
           {
             "range": "35–44 years",
-            "percent": 27.7
+            "percent": 8.9
           },
           {
             "range": "45–54 years",
-            "percent": 9.7
+            "percent": 10.0
           },
           {
             "range": "55–64 years",
-            "percent": 6.1
+            "percent": 21.8
           },
           {
             "range": "65+ years",
-            "percent": 4.7
+            "percent": 54.4
           }
         ],
         "gender": {
-          "male": 45.8,
-          "female": 54.2
+          "male": 36.7,
+          "female": 63.3
         },
         "watch_time_hours": 5.0
       },
       "uploaded_videos": [
-        {
-          "title": "He Realized Too Late... 😱 #Shorts",
-          "youtube_id": "vulLmVGR9jc",
-          "youtube_url": "https://youtu.be/vulLmVGR9jc",
-          "studio_url": "https://studio.youtube.com/video/vulLmVGR9jc/edit",
-          "uploaded_at": "2026-10-17T23:43:19Z",
-          "thumbnail": "https://i.ytimg.com/vi/vulLmVGR9jc/mqdefault.jpg",
-          "views": 0,
-          "likes": 0,
-          "comments": 0,
-          "is_clean": true,
-          "health_badge": "RESTRICTED",
-          "flag_details": "Blocked in 249 regions",
-          "channel_name": "CineBite Drama",
-          "is_blocked": true
-        },
         {
           "title": "She Lied About Being Broke... Until He Checked Her Account! 🤯 #Shorts",
           "youtube_id": "IfZFEIPEBzc",
@@ -5838,246 +5830,6 @@
           "flag_details": "None (Clean)",
           "channel_name": "CineBite Drama",
           "is_blocked": false
-        },
-        {
-          "title": "He Makes Street Painting Look Like Magic #StreetArt #Painting #ArtReels #ViralArt #Artist.",
-          "youtube_id": "6Hg0FXnEKvI",
-          "youtube_url": "https://youtu.be/6Hg0FXnEKvI",
-          "studio_url": "https://studio.youtube.com/video/6Hg0FXnEKvI/edit",
-          "uploaded_at": "2026-09-19T14:06:13.185573+00:00",
-          "thumbnail": "https://i.ytimg.com/vi/6Hg0FXnEKvI/mqdefault.jpg",
-          "views": 1469,
-          "likes": 10,
-          "comments": 1,
-          "is_clean": true,
-          "health_badge": "100% CLEAN",
-          "flag_details": "None (Clean)",
-          "channel_name": "CineBite Drama",
-          "is_blocked": false
-        },
-        {
-          "title": "He Makes Every Brushstroke Count #Painting #Artist #ArtReels #Satisfying #Art.",
-          "youtube_id": "T1QpAfRhEso",
-          "youtube_url": "https://youtu.be/T1QpAfRhEso",
-          "studio_url": "https://studio.youtube.com/video/T1QpAfRhEso/edit",
-          "uploaded_at": "2026-09-18T21:06:19.841486+00:00",
-          "thumbnail": "https://i.ytimg.com/vi/T1QpAfRhEso/mqdefault.jpg",
-          "views": 1076,
-          "likes": 12,
-          "comments": 0,
-          "is_clean": true,
-          "health_badge": "100% CLEAN",
-          "flag_details": "None (Clean)",
-          "channel_name": "CineBite Drama",
-          "is_blocked": false
-        },
-        {
-          "title": "He Made A Famous Building Look Effortless #Painting #Artist #ArtReels #ViralArt #Creative.",
-          "youtube_id": "GmJiC5iGDfU",
-          "youtube_url": "https://youtu.be/GmJiC5iGDfU",
-          "studio_url": "https://studio.youtube.com/video/GmJiC5iGDfU/edit",
-          "uploaded_at": "2026-09-18T14:06:32.439790+00:00",
-          "thumbnail": "https://i.ytimg.com/vi/GmJiC5iGDfU/mqdefault.jpg",
-          "views": 165,
-          "likes": 4,
-          "comments": 0,
-          "is_clean": true,
-          "health_badge": "100% CLEAN",
-          "flag_details": "None (Clean)",
-          "channel_name": "CineBite Drama",
-          "is_blocked": false
-        },
-        {
-          "title": "He Is Painting The City One Brushstroke At A Time #StreetArt #Painting #Artist #ArtReels #Viral.",
-          "youtube_id": "orIt3mT1XjU",
-          "youtube_url": "https://youtu.be/orIt3mT1XjU",
-          "studio_url": "https://studio.youtube.com/video/orIt3mT1XjU/edit",
-          "uploaded_at": "2026-09-17T21:06:22.199054+00:00",
-          "thumbnail": "https://i.ytimg.com/vi/orIt3mT1XjU/mqdefault.jpg",
-          "views": 1334,
-          "likes": 20,
-          "comments": 0,
-          "is_clean": true,
-          "health_badge": "100% CLEAN",
-          "flag_details": "None (Clean)",
-          "channel_name": "CineBite Drama",
-          "is_blocked": false
-        },
-        {
-          "title": "He Found The Perfect Spot To Paint This View #StreetArt #Painting #Artist #ArtReels #Creative.",
-          "youtube_id": "88cO37UjZ7w",
-          "youtube_url": "https://youtu.be/88cO37UjZ7w",
-          "studio_url": "https://studio.youtube.com/video/88cO37UjZ7w/edit",
-          "uploaded_at": "2026-09-17T14:07:17.401386+00:00",
-          "thumbnail": "https://i.ytimg.com/vi/88cO37UjZ7w/mqdefault.jpg",
-          "views": 2095,
-          "likes": 35,
-          "comments": 0,
-          "is_clean": true,
-          "health_badge": "100% CLEAN",
-          "flag_details": "None (Clean)",
-          "channel_name": "CineBite Drama",
-          "is_blocked": false
-        },
-        {
-          "title": "He Captured The Entire Scene On One Canvas #Painting #Artist #ArtReels #StreetArt #Viral.",
-          "youtube_id": "oHD72N-B63M",
-          "youtube_url": "https://youtu.be/oHD72N-B63M",
-          "studio_url": "https://studio.youtube.com/video/oHD72N-B63M/edit",
-          "uploaded_at": "2026-09-16T21:06:34.536380+00:00",
-          "thumbnail": "https://i.ytimg.com/vi/oHD72N-B63M/mqdefault.jpg",
-          "views": 1320,
-          "likes": 6,
-          "comments": 0,
-          "is_clean": true,
-          "health_badge": "100% CLEAN",
-          "flag_details": "None (Clean)",
-          "channel_name": "CineBite Drama",
-          "is_blocked": false
-        },
-        {
-          "title": "He Captured A Famous Landmark With Just Paint #Painting #Artist #Architecture #ArtReels #ViralArt.",
-          "youtube_id": "dIjwAvkghGo",
-          "youtube_url": "https://youtu.be/dIjwAvkghGo",
-          "studio_url": "https://studio.youtube.com/video/dIjwAvkghGo/edit",
-          "uploaded_at": "2026-09-16T14:07:32.568030+00:00",
-          "thumbnail": "https://i.ytimg.com/vi/dIjwAvkghGo/mqdefault.jpg",
-          "views": 146,
-          "likes": 3,
-          "comments": 0,
-          "is_clean": true,
-          "health_badge": "100% CLEAN",
-          "flag_details": "None (Clean)",
-          "channel_name": "CineBite Drama",
-          "is_blocked": false
-        },
-        {
-          "title": "He Added One Tiny Detail And Changed Everything #Painting #ArtReveal #Satisfying #Artist #ArtReels.",
-          "youtube_id": "b373gjPjUMk",
-          "youtube_url": "https://youtu.be/b373gjPjUMk",
-          "studio_url": "https://studio.youtube.com/video/b373gjPjUMk/edit",
-          "uploaded_at": "2026-09-15T21:07:20.092999+00:00",
-          "thumbnail": "https://i.ytimg.com/vi/b373gjPjUMk/mqdefault.jpg",
-          "views": 1390,
-          "likes": 12,
-          "comments": 0,
-          "is_clean": true,
-          "health_badge": "100% CLEAN",
-          "flag_details": "None (Clean)",
-          "channel_name": "CineBite Drama",
-          "is_blocked": false
-        },
-        {
-          "title": "From Street View To Finished Artwork #StreetArt #Painting #ArtTransformation #ArtReels #Artist.",
-          "youtube_id": "Enyy2nPWFzM",
-          "youtube_url": "https://youtu.be/Enyy2nPWFzM",
-          "studio_url": "https://studio.youtube.com/video/Enyy2nPWFzM/edit",
-          "uploaded_at": "2026-09-15T14:06:46.063198+00:00",
-          "thumbnail": "https://i.ytimg.com/vi/Enyy2nPWFzM/mqdefault.jpg",
-          "views": 1498,
-          "likes": 18,
-          "comments": 0,
-          "is_clean": true,
-          "health_badge": "100% CLEAN",
-          "flag_details": "None (Clean)",
-          "channel_name": "CineBite Drama",
-          "is_blocked": false
-        },
-        {
-          "title": "From Simple Lines To A Beautiful Scene #Drawing #Painting #ArtReels #Artist #ArtTransformation.",
-          "youtube_id": "BgdgQm7cQHA",
-          "youtube_url": "https://youtu.be/BgdgQm7cQHA",
-          "studio_url": "https://studio.youtube.com/video/BgdgQm7cQHA/edit",
-          "uploaded_at": "2026-09-14T21:06:28.503403+00:00",
-          "thumbnail": "https://i.ytimg.com/vi/BgdgQm7cQHA/mqdefault.jpg",
-          "views": 63,
-          "likes": 2,
-          "comments": 0,
-          "is_clean": true,
-          "health_badge": "100% CLEAN",
-          "flag_details": "None (Clean)",
-          "channel_name": "CineBite Drama",
-          "is_blocked": false
-        },
-        {
-          "title": "From First Stroke To Final Masterpiece #Painting #ArtReels #Artist #ArtTransformation #Satisfying.",
-          "youtube_id": "8VOPtyImxfg",
-          "youtube_url": "https://youtu.be/8VOPtyImxfg",
-          "studio_url": "https://studio.youtube.com/video/8VOPtyImxfg/edit",
-          "uploaded_at": "2026-09-14T14:07:14.260490+00:00",
-          "thumbnail": "https://i.ytimg.com/vi/8VOPtyImxfg/mqdefault.jpg",
-          "views": 6,
-          "likes": 0,
-          "comments": 0,
-          "is_clean": true,
-          "health_badge": "100% CLEAN",
-          "flag_details": "None (Clean)",
-          "channel_name": "CineBite Drama",
-          "is_blocked": false
-        },
-        {
-          "title": "From First Color To Final Masterpiece #Painting #ArtTransformation #ArtReels #Artist #Viral.",
-          "youtube_id": "3ee4FdtH10w",
-          "youtube_url": "https://youtu.be/3ee4FdtH10w",
-          "studio_url": "https://studio.youtube.com/video/3ee4FdtH10w/edit",
-          "uploaded_at": "2026-09-13T21:06:31.910106+00:00",
-          "thumbnail": "https://i.ytimg.com/vi/3ee4FdtH10w/mqdefault.jpg",
-          "views": 1704,
-          "likes": 17,
-          "comments": 0,
-          "is_clean": true,
-          "health_badge": "100% CLEAN",
-          "flag_details": "None (Clean)",
-          "channel_name": "CineBite Drama",
-          "is_blocked": false
-        },
-        {
-          "title": "From Empty Canvas To A Beautiful Landmark #Painting #ArtReels #ArtTransformation #Artist #ViralArt.",
-          "youtube_id": "vvKBBEExuYQ",
-          "youtube_url": "https://youtu.be/vvKBBEExuYQ",
-          "studio_url": "https://studio.youtube.com/video/vvKBBEExuYQ/edit",
-          "uploaded_at": "2026-09-13T14:15:17.788975+00:00",
-          "thumbnail": "https://i.ytimg.com/vi/vvKBBEExuYQ/mqdefault.jpg",
-          "views": 142,
-          "likes": 3,
-          "comments": 0,
-          "is_clean": true,
-          "health_badge": "100% CLEAN",
-          "flag_details": "None (Clean)",
-          "channel_name": "CineBite Drama",
-          "is_blocked": false
-        },
-        {
-          "title": "Everyone Wanted To See The Finished Canvas #Painting #ArtReels #ArtReveal #Artist #Viral.",
-          "youtube_id": "ZlNJrHYRPoU",
-          "youtube_url": "https://youtu.be/ZlNJrHYRPoU",
-          "studio_url": "https://studio.youtube.com/video/ZlNJrHYRPoU/edit",
-          "uploaded_at": "2026-09-12T22:14:55.497215+00:00",
-          "thumbnail": "https://i.ytimg.com/vi/ZlNJrHYRPoU/mqdefault.jpg",
-          "views": 1710,
-          "likes": 26,
-          "comments": 1,
-          "is_clean": true,
-          "health_badge": "100% CLEAN",
-          "flag_details": "None (Clean)",
-          "channel_name": "CineBite Drama",
-          "is_blocked": false
-        },
-        {
-          "title": "Everyone Stopped To Watch This Artist Work #StreetArt #Artist #Painting #ArtReels #Viral.",
-          "youtube_id": "E7vzDp7HUIM",
-          "youtube_url": "https://youtu.be/E7vzDp7HUIM",
-          "studio_url": "https://studio.youtube.com/video/E7vzDp7HUIM/edit",
-          "uploaded_at": "2026-09-12T18:27:55.150716+00:00",
-          "thumbnail": "https://i.ytimg.com/vi/E7vzDp7HUIM/mqdefault.jpg",
-          "views": 2836,
-          "likes": 65,
-          "comments": 1,
-          "is_clean": true,
-          "health_badge": "100% CLEAN",
-          "flag_details": "None (Clean)",
-          "channel_name": "CineBite Drama",
-          "is_blocked": false
         }
       ],
       "num": 5,
@@ -6095,23 +5847,23 @@
       ],
       "upload_schedule": "22:40 IST & 05:10 IST",
       "latest_uploaded_video": {
-        "title": "He Realized Too Late... 😱 #Shorts",
-        "youtube_id": "vulLmVGR9jc",
-        "youtube_url": "https://youtu.be/vulLmVGR9jc",
-        "studio_url": "https://studio.youtube.com/video/vulLmVGR9jc/edit",
-        "uploaded_at": "2026-10-17T23:43:19Z",
-        "thumbnail": "https://i.ytimg.com/vi/vulLmVGR9jc/mqdefault.jpg",
+        "title": "She Lied About Being Broke... Until He Checked Her Account! 🤯 #Shorts",
+        "youtube_id": "IfZFEIPEBzc",
+        "youtube_url": "https://youtu.be/IfZFEIPEBzc",
+        "studio_url": "https://studio.youtube.com/video/IfZFEIPEBzc/edit",
+        "uploaded_at": "2026-10-13T23:26:48Z",
+        "thumbnail": "https://i.ytimg.com/vi/IfZFEIPEBzc/mqdefault.jpg",
         "views": 0,
         "likes": 0,
         "comments": 0,
         "is_clean": true,
-        "health_badge": "RESTRICTED",
-        "flag_details": "Blocked in 249 regions",
+        "health_badge": "100% CLEAN",
+        "flag_details": "None (Clean)",
         "channel_name": "CineBite Drama",
-        "is_blocked": true
+        "is_blocked": false
       },
-      "total_likes": 255,
-      "avg_views_per_video": 746
+      "total_likes": 22,
+      "avg_views_per_video": 118
     },
     {
       "id": "channel_6",
@@ -6131,7 +5883,7 @@
       "status_label": "24/7 Autopilot • Scheduled",
       "status_color": "#10B981",
       "subscribers": 0,
-      "total_views": 27,
+      "total_views": 28,
       "channel_total_videos": 14,
       "uploaded_count": 14,
       "drive_queue_count": 35,
@@ -6165,7 +5917,7 @@
         "org": "Datacamp Limited (New York US Gateway)",
         "datacenter": "Surfshark Dedicated US NY Gateway",
         "verify_url": "https://ipinfo.io/84.17.35.112",
-        "verified_at": "2026-10-17T00:07:50Z"
+        "verified_at": "2026-10-10T17:37:02Z"
       },
       "health": {
         "overall_score": 98,
@@ -6553,7 +6305,7 @@
         "org": "Datacamp Limited (Los Angeles US Gateway)",
         "datacenter": "Surfshark Dedicated US LA Gateway",
         "verify_url": "https://ipinfo.io/169.150.203.199",
-        "verified_at": "2026-10-18T00:26:43Z"
+        "verified_at": "2026-10-10T17:36:11Z"
       },
       "health": {
         "overall_score": 98,
@@ -6875,7 +6627,7 @@
       "status_label": "24/7 Autopilot • Scheduled",
       "status_color": "#10B981",
       "subscribers": 246,
-      "total_views": 75689,
+      "total_views": 76138,
       "channel_total_videos": 17,
       "uploaded_count": 17,
       "drive_queue_count": 24,
@@ -6909,7 +6661,7 @@
         "org": "Datacamp Limited (New York US Gateway)",
         "datacenter": "Surfshark Dedicated US NY Gateway",
         "verify_url": "https://ipinfo.io/84.17.35.112",
-        "verified_at": "2026-10-17T18:34:09Z"
+        "verified_at": "2026-10-10T17:37:07Z"
       },
       "health": {
         "overall_score": 98,
@@ -6931,70 +6683,74 @@
             "country": "United States",
             "code": "US",
             "flag": "🇺🇸",
-            "percent": 74.0
-          },
-          {
-            "country": "Indonesia",
-            "code": "ID",
-            "flag": "🇮🇩",
-            "percent": 7.0
-          },
-          {
-            "country": "United Kingdom",
-            "code": "GB",
-            "flag": "🇬🇧",
-            "percent": 4.3
+            "percent": 54.3
           },
           {
             "country": "India",
             "code": "IN",
             "flag": "🇮🇳",
-            "percent": 4.0
+            "percent": 8.6
           },
           {
-            "country": "Canada",
-            "code": "CA",
-            "flag": "🇨🇦",
-            "percent": 3.7
+            "country": "Philippines",
+            "code": "PH",
+            "flag": "🇵🇭",
+            "percent": 7.4
+          },
+          {
+            "country": "United Kingdom",
+            "code": "GB",
+            "flag": "🇬🇧",
+            "percent": 7.3
+          },
+          {
+            "country": "Germany",
+            "code": "DE",
+            "flag": "🇩🇪",
+            "percent": 7.3
           },
           {
             "country": "Other countries",
             "code": "OTHER",
             "flag": "🌐",
-            "percent": 7.0
+            "percent": 15.1
           }
         ],
         "age_distribution": [
           {
+            "range": "13–17 years",
+            "percent": 1.9
+          },
+          {
             "range": "18–24 years",
-            "percent": 1.6
+            "percent": 0.4
           },
           {
             "range": "25–34 years",
-            "percent": 27.4
+            "percent": 5.0
           },
           {
             "range": "35–44 years",
-            "percent": 24.8
+            "percent": 8.9
           },
           {
             "range": "45–54 years",
-            "percent": 16.8
+            "percent": 13.0
           },
           {
             "range": "55–64 years",
-            "percent": 15.7
+            "percent": 20.6
           },
           {
             "range": "65+ years",
-            "percent": 13.8
+            "percent": 50.2
           }
         ],
         "gender": {
-          "male": 88.6,
-          "female": 11.4
+          "male": 10.2,
+          "female": 89.8
         },
-        "watch_time_hours": 403.7
+        "watch_time_hours": 406.1
       },
       "uploaded_videos": [
         {
@@ -7004,8 +6760,8 @@
           "studio_url": "https://studio.youtube.com/video/2vhJZ-WLyoc/edit",
           "uploaded_at": "2026-10-17T18:34:09Z",
           "thumbnail": "https://i.ytimg.com/vi/2vhJZ-WLyoc/mqdefault.jpg",
-          "views": 57,
-          "likes": 4,
+          "views": 89,
+          "likes": 7,
           "comments": 0,
           "is_clean": true,
           "health_badge": "100% CLEAN",
@@ -7020,7 +6776,7 @@
           "studio_url": "https://studio.youtube.com/video/e-kI9gBUViE/edit",
           "uploaded_at": "2026-10-17T00:49:08Z",
           "thumbnail": "https://i.ytimg.com/vi/e-kI9gBUViE/mqdefault.jpg",
-          "views": 308,
+          "views": 340,
           "likes": 21,
           "comments": 0,
           "is_clean": true,
@@ -7116,7 +6872,7 @@
           "studio_url": "https://studio.youtube.com/video/U342vwjs6c8/edit",
           "uploaded_at": "2026-10-12T00:54:51Z",
           "thumbnail": "https://i.ytimg.com/vi/U342vwjs6c8/mqdefault.jpg",
-          "views": 757,
+          "views": 758,
           "likes": 17,
           "comments": 0,
           "is_clean": true,
@@ -7148,7 +6904,7 @@
           "studio_url": "https://studio.youtube.com/video/o4u46XiVXys/edit",
           "uploaded_at": "2026-10-07T20:17:56Z",
           "thumbnail": "https://i.ytimg.com/vi/o4u46XiVXys/mqdefault.jpg",
-          "views": 1184,
+          "views": 1186,
           "likes": 54,
           "comments": 0,
           "is_clean": true,
@@ -7212,7 +6968,7 @@
           "studio_url": "https://studio.youtube.com/video/MQZ8gXWkNis/edit",
           "uploaded_at": "2026-09-28T08:26:01Z",
           "thumbnail": "https://i.ytimg.com/vi/MQZ8gXWkNis/mqdefault.jpg",
-          "views": 61929,
+          "views": 61943,
           "likes": 1380,
           "comments": 2,
           "is_clean": true,
@@ -7291,8 +7047,8 @@
         "studio_url": "https://studio.youtube.com/video/2vhJZ-WLyoc/edit",
         "uploaded_at": "2026-10-17T18:34:09Z",
         "thumbnail": "https://i.ytimg.com/vi/2vhJZ-WLyoc/mqdefault.jpg",
-        "views": 57,
-        "likes": 4,
+        "views": 89,
+        "likes": 7,
         "comments": 0,
         "is_clean": true,
         "health_badge": "100% CLEAN",
@@ -7300,8 +7056,8 @@
         "channel_name": "Godfather Sins",
         "is_blocked": false
       },
-      "total_likes": 1998,
-      "avg_views_per_video": 4485
+      "total_likes": 2001,
+      "avg_views_per_video": 4490
     },
     {
       "id": "channel_9",
@@ -7321,7 +7077,7 @@
       "status_label": "24/7 Autopilot • Scheduled",
       "status_color": "#10B981",
       "subscribers": 12,
-      "total_views": 1350,
+      "total_views": 1622,
       "channel_total_videos": 13,
       "uploaded_count": 13,
       "drive_queue_count": 34,
@@ -7355,7 +7111,7 @@
         "org": "Datacamp Limited (New York US Gateway)",
         "datacenter": "Surfshark Dedicated US NY Gateway",
         "verify_url": "https://ipinfo.io/84.17.35.112",
-        "verified_at": "2026-10-18T01:32:24Z"
+        "verified_at": "2026-10-10T17:36:44Z"
       },
       "health": {
         "overall_score": 98,
@@ -7371,66 +7127,60 @@
         "is_clean": true
       },
       "analytics": {
-        "verified_source": "YouTube Data API v3 (Live Channel Verified)",
+        "verified_source": "YouTube Analytics API (100% Genuine)",
         "top_countries": [
           {
             "country": "United States",
             "code": "US",
             "flag": "🇺🇸",
-            "percent": 56.4
+            "percent": 77.7
           },
           {
-            "country": "Canada",
-            "code": "CA",
-            "flag": "🇨🇦",
-            "percent": 13.8
+            "country": "Germany",
+            "code": "DE",
+            "flag": "🇩🇪",
+            "percent": 8.3
           },
           {
-            "country": "United Kingdom",
-            "code": "GB",
-            "flag": "🇬🇧",
-            "percent": 11.2
+            "country": "ZA",
+            "code": "ZA",
+            "flag": "🌐",
+            "percent": 5.6
           },
           {
-            "country": "Australia",
-            "code": "AU",
-            "flag": "🇦🇺",
-            "percent": 6.5
+            "country": "PL",
+            "code": "PL",
+            "flag": "🌐",
+            "percent": 4.4
+          },
+          {
+            "country": "Italy",
+            "code": "IT",
+            "flag": "🇮🇹",
+            "percent": 3.9
           },
           {
             "country": "Other countries",
             "code": "OTHER",
             "flag": "🌐",
-            "percent": 12.1
+            "percent": 0.1
           }
         ],
         "age_distribution": [
           {
-            "range": "18–24 years",
-            "percent": 39.5
+            "range": "55–64 years",
+            "percent": 9.7
           },
           {
-            "range": "25–34 years",
-            "percent": 37.0
-          },
-          {
-            "range": "35–44 years",
-            "percent": 14.2
-          },
-          {
-            "range": "45–54 years",
-            "percent": 6.0
-          },
-          {
-            "range": "55+ years",
-            "percent": 3.3
+            "range": "65+ years",
+            "percent": 90.3
           }
         ],
         "gender": {
-          "male": 66.0,
-          "female": 34.0
+          "male": 10.7,
+          "female": 89.3
         },
-        "watch_time_hours": 7.2
+        "watch_time_hours": 8.7
       },
       "uploaded_videos": [
         {
@@ -7440,7 +7190,7 @@
           "studio_url": "https://studio.youtube.com/video/Huy6VQcdxlk/edit",
           "uploaded_at": "2026-10-18T01:32:24Z",
           "thumbnail": "https://i.ytimg.com/vi/Huy6VQcdxlk/mqdefault.jpg",
-          "views": 87,
+          "views": 85,
           "likes": 6,
           "comments": 0,
           "is_clean": true,
@@ -7456,7 +7206,7 @@
           "studio_url": "https://studio.youtube.com/video/liXuNg56EFU/edit",
           "uploaded_at": "2026-10-17T01:33:09Z",
           "thumbnail": "https://i.ytimg.com/vi/liXuNg56EFU/mqdefault.jpg",
-          "views": 205,
+          "views": 208,
           "likes": 7,
           "comments": 0,
           "is_clean": true,
@@ -7536,7 +7286,7 @@
           "studio_url": "https://studio.youtube.com/video/wTOV8RaPF4A/edit",
           "uploaded_at": "2026-10-07T20:18:00Z",
           "thumbnail": "https://i.ytimg.com/vi/wTOV8RaPF4A/mqdefault.jpg",
-          "views": 19,
+          "views": 20,
           "likes": 0,
           "comments": 0,
           "is_clean": true,
@@ -7663,7 +7413,7 @@
         "studio_url": "https://studio.youtube.com/video/Huy6VQcdxlk/edit",
         "uploaded_at": "2026-10-18T01:32:24Z",
         "thumbnail": "https://i.ytimg.com/vi/Huy6VQcdxlk/mqdefault.jpg",
-        "views": 87,
+        "views": 85,
         "likes": 6,
         "comments": 0,
         "is_clean": true,
@@ -7673,7 +7423,7 @@
         "is_blocked": false
       },
       "total_likes": 76,
-      "avg_views_per_video": 134
+      "avg_views_per_video": 135
     },
     {
       "id": "channel_10",
@@ -7693,7 +7443,7 @@
       "status_label": "24/7 Autopilot • Scheduled",
       "status_color": "#10B981",
       "subscribers": 30,
-      "total_views": 5944,
+      "total_views": 5955,
       "channel_total_videos": 29,
       "uploaded_count": 29,
       "drive_queue_count": 23,
@@ -7727,7 +7477,7 @@
         "org": "Clouvider Limited (Dallas US Gateway)",
         "datacenter": "Surfshark Dedicated US Dallas Gateway",
         "verify_url": "https://ipinfo.io/2.56.189.90",
-        "verified_at": "2026-10-17T19:20:41Z"
+        "verified_at": "2026-10-10T17:36:48Z"
       },
       "health": {
         "overall_score": 98,
@@ -7749,62 +7499,70 @@
             "country": "United States",
             "code": "US",
             "flag": "🇺🇸",
-            "percent": 75.8
+            "percent": 77.8
           },
           {
-            "country": "Indonesia",
-            "code": "ID",
-            "flag": "🇮🇩",
-            "percent": 9.3
+            "country": "ZA",
+            "code": "ZA",
+            "flag": "🌐",
+            "percent": 5.6
           },
           {
-            "country": "Philippines",
-            "code": "PH",
-            "flag": "🇵🇭",
-            "percent": 4.8
+            "country": "JM",
+            "code": "JM",
+            "flag": "🌐",
+            "percent": 4.4
           },
           {
-            "country": "South Korea",
-            "code": "KR",
-            "flag": "🇰🇷",
-            "percent": 4.2
+            "country": "Canada",
+            "code": "CA",
+            "flag": "🇨🇦",
+            "percent": 3.9
           },
           {
-            "country": "Mexico",
-            "code": "MX",
-            "flag": "🇲🇽",
-            "percent": 1.7
+            "country": "United Kingdom",
+            "code": "GB",
+            "flag": "🇬🇧",
+            "percent": 3.7
           },
           {
             "country": "Other countries",
             "code": "OTHER",
             "flag": "🌐",
-            "percent": 4.2
+            "percent": 4.6
           }
         ],
         "age_distribution": [
           {
             "range": "13–17 years",
-            "percent": 11.0
+            "percent": 2.6
           },
           {
             "range": "25–34 years",
-            "percent": 50.4
+            "percent": 3.7
           },
           {
             "range": "35–44 years",
-            "percent": 31.4
+            "percent": 6.8
           },
           {
             "range": "45–54 years",
-            "percent": 7.2
+            "percent": 9.7
+          },
+          {
+            "range": "55–64 years",
+            "percent": 24.8
+          },
+          {
+            "range": "65+ years",
+            "percent": 52.5
           }
         ],
         "gender": {
-          "male": 58.3,
-          "female": 41.7
+          "male": 38.5,
+          "female": 61.5
         },
-        "watch_time_hours": 31.7
+        "watch_time_hours": 31.8
       },
       "uploaded_videos": [
         {
@@ -8022,7 +7780,7 @@
           "studio_url": "https://studio.youtube.com/video/iUajqYbp-v0/edit",
           "uploaded_at": "2026-09-26T18:23:11Z",
           "thumbnail": "https://i.ytimg.com/vi/iUajqYbp-v0/mqdefault.jpg",
-          "views": 9,
+          "views": 11,
           "likes": 0,
           "comments": 0,
           "is_clean": true,
@@ -8303,7 +8061,7 @@
         "is_blocked": false
       },
       "total_likes": 256,
-      "avg_views_per_video": 205
+      "avg_views_per_video": 206
     },
     {
       "id": "channel_11",
@@ -8357,7 +8115,7 @@
         "org": "Datacamp Limited (New York US Gateway)",
         "datacenter": "Surfshark Dedicated US NY Gateway",
         "verify_url": "https://ipinfo.io/84.17.35.112",
-        "verified_at": "2026-10-17T19:51:22Z"
+        "verified_at": "2026-10-10T17:36:53Z"
       },
       "health": {
         "overall_score": 98,
