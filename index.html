@@ -18,7 +18,7 @@
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
   <meta http-equiv="Pragma" content="no-cache">
   <meta http-equiv="Expires" content="0">
-  <link rel="stylesheet" href="./styles.css?v=49.0">
+  <link rel="stylesheet" href="./styles.css?v=50.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
@@ -1261,9 +1261,106 @@
     </div>
   </div>
 
+  <!-- NEXT-LEVEL REAL-TIME MASTER SYNC OVERLAY MODAL -->
+  <div class="modal-overlay sync-master-overlay" id="modal-realtime-sync" style="display:none;">
+    <div class="modal-dialog sync-master-dialog">
+      <div class="sync-glow-ring"></div>
+      
+      <!-- Modal Header -->
+      <div class="sync-modal-header">
+        <div class="sync-header-left">
+          <div class="sync-pulse-satellite">
+            <span class="sync-radar-ring"></span>
+            <span class="sync-radar-core">📡</span>
+          </div>
+          <div>
+            <h3 class="sync-modal-title">Real-Time Fleet Master Sync</h3>
+            <p class="sync-modal-subtitle">Direct YouTube Data API v3 &amp; Google Drive Live Engine</p>
+          </div>
+        </div>
+        <button class="modal-close" id="btn-close-realtime-sync" style="display:none;" title="Close">✕</button>
+      </div>
+
+      <!-- Modal Body -->
+      <div class="sync-modal-body">
+        <!-- Circular Progress Display -->
+        <div class="sync-progress-circle-wrap">
+          <svg class="sync-progress-circle" viewBox="0 0 140 140">
+            <circle class="sync-circle-bg" cx="70" cy="70" r="60" />
+            <circle class="sync-circle-bar" id="sync-circle-bar" cx="70" cy="70" r="60" stroke-dasharray="377" stroke-dashoffset="377" />
+          </svg>
+          <div class="sync-progress-label">
+            <div class="sync-percent-row">
+              <span class="sync-percent-number" id="sync-percent-number">0</span><span class="sync-percent-symbol">%</span>
+            </div>
+            <span class="sync-speed-tag" id="sync-speed-tag">CONNECTING</span>
+          </div>
+        </div>
+
+        <!-- Live Step Bar -->
+        <div class="sync-step-pill">
+          <span class="sync-spinner-mini" id="sync-step-spinner"></span>
+          <span id="sync-current-step">Connecting to YouTube Data API v3...</span>
+        </div>
+
+        <!-- 11-Channel Fleet Live Status Trackers -->
+        <div class="sync-fleet-trackers">
+          <div class="sync-trackers-header">
+            <span>FLEET CHANNELS (11)</span>
+            <span id="sync-trackers-count">0 / 11 SYNCED</span>
+          </div>
+          <div class="sync-channel-grid" id="sync-channel-grid">
+            <!-- Dynamically populated / illuminated -->
+          </div>
+        </div>
+
+        <!-- Live Telemetry Stream Terminal Box -->
+        <div class="sync-terminal-box">
+          <div class="sync-terminal-bar">
+            <div class="terminal-dots">
+              <span class="t-dot red"></span>
+              <span class="t-dot yellow"></span>
+              <span class="t-dot green"></span>
+            </div>
+            <span class="terminal-title">LIVE TELEMETRY STREAM</span>
+            <span class="terminal-badge" id="terminal-badge">LIVE 200 OK</span>
+          </div>
+          <div class="sync-terminal-content" id="sync-terminal-content">
+            <div class="terminal-line"><span class="t-dim">[SYSTEM]</span> Ready. Direct real-time YouTube Data API sync initialized.</div>
+          </div>
+        </div>
+
+        <!-- Real-Time Metrics Summary Card (shown at 100%) -->
+        <div class="sync-summary-card" id="sync-summary-card" style="display:none;">
+          <div class="sync-summary-item">
+            <span class="summary-val" id="sum-channels">11</span>
+            <span class="summary-lbl">Channels Active</span>
+          </div>
+          <div class="sync-summary-item">
+            <span class="summary-val highlight-green" id="sum-views">1.74M+</span>
+            <span class="summary-lbl">Total Real-Time Views</span>
+          </div>
+          <div class="sync-summary-item">
+            <span class="summary-val" id="sum-subs">1,422</span>
+            <span class="summary-lbl">Subscribers</span>
+          </div>
+          <div class="sync-summary-item">
+            <span class="summary-val highlight-cyan" id="sum-stock">429</span>
+            <span class="summary-lbl">Ready Stock</span>
+          </div>
+        </div>
+
+        <!-- Finish / Confirm Button -->
+        <button class="btn-sync-done" id="btn-sync-done" style="display:none;">
+          <span>✅ VIEW UPDATED DASHBOARD</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
   <!-- Toast Notification -->
   <div id="toast" class="toast">Link copied to clipboard!</div>
 
-  <script src="./app.js?v=49.0"></script>
+  <script src="./app.js?v=50.0"></script>
 </body>
 </html>

@@ -528,26 +528,39 @@ def sync_google_drive_stock(channels: List[Dict[str, Any]], data: Dict[str, Any]
         data["summary"]["total_in_queue"] = total_in_queue
 
 
-def sync_metrics(data_json_path: str):
+def sync_metrics(data_json_path: str = None, progress_cb = None) -> Dict[str, Any]:
+    if not data_json_path:
+        data_json_path = os.path.join(os.path.dirname(__file__), "public", "data.json")
+        if not os.path.exists(data_json_path):
+            data_json_path = os.path.join(os.path.dirname(__file__), "data.json")
     if not os.path.exists(data_json_path):
         print(f"Error: {data_json_path} not found")
-        sys.exit(1)
+        return {}
 
     with open(data_json_path, "r", encoding="utf-8") as f:
         data = json.load(f)
 
     channels = data.get("channels", [])
 
+    if progress_cb:
+        progress_cb(5, "Connecting to verified cloud nodes & runner IPs...")
+
     # 1. Sync Runner Nodes & IP Telemetry from GitHub SQLite databases
     sync_runner_nodes(channels)
+
+    if progress_cb:
+        progress_cb(12, "Querying live Google Drive video inventory across all 11 folders...")
 
     # 2. Sync Real-Time Google Drive Stock
     sync_google_drive_stock(channels, data)
 
+    if progress_cb:
+        progress_cb(22, "Authenticating with YouTube Data API v3 & Analytics API...")
+
     res = get_credentials()
     if not res:
         print("Cannot initialize YouTube API service. Aborting.")
-        sys.exit(1)
+        return data
     service, client_id, client_secret = res
 
     print("YouTube API service initialized successfully.")
@@ -555,8 +568,12 @@ def sync_metrics(data_json_path: str):
     # 1.1 Sync authentic live audience demographics (Countries, Age, Gender) via YouTube Analytics API
     base_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
     print("Syncing live audience analytics (country & demographics) via YouTube Analytics API...")
-    for ch in channels:
+    for idx, ch in enumerate(channels, 1):
         ch_id = ch.get("id")
+        ch_name = ch.get("name", ch_id)
+        if progress_cb:
+            pct = 22 + int((idx / max(1, len(channels))) * 28)
+            progress_cb(pct, f"[{idx}/11] Querying live audience telemetry for {ch_name}...", {"channel_id": ch_id, "channel_name": ch_name})
         t_val = None
         token_path = os.path.join(base_dir, f"{ch_id}.token")
         if os.path.exists(token_path):
@@ -701,8 +718,12 @@ def sync_metrics(data_json_path: str):
 
     # 3. Query YouTube Uploads Playlists directly to catch newly uploaded videos
     print("Checking YouTube upload playlists across all channels for fresh uploads...")
-    for ch in channels:
+    for idx, ch in enumerate(channels, 1):
         cid = ch.get("youtube_channel_id")
+        ch_name = ch.get("name", cid)
+        if progress_cb:
+            pct = 60 + int((idx / max(1, len(channels))) * 18)
+            progress_cb(pct, f"[{idx}/11] Scanning uploads for {ch_name}...", {"channel_id": ch.get("id"), "channel_name": ch_name})
         if not cid:
             continue
         try:
@@ -960,8 +981,11 @@ def sync_metrics(data_json_path: str):
                     json.dump(data, f, indent=2, ensure_ascii=False)
 
             import subprocess
+            subprocess.run(["git", "config", "user.name", "malhotramahi396-afk"], cwd=pages_dir, capture_output=True, timeout=5, text=True)
+            subprocess.run(["git", "config", "user.email", "malhotramahi396@gmail.com"], cwd=pages_dir, capture_output=True, timeout=5, text=True)
             subprocess.run(["git", "add", "data.json", "sync_live_metrics.py"], cwd=pages_dir, capture_output=True, timeout=10, text=True)
             subprocess.run(["git", "commit", "-m", "chore: auto-sync 100% genuine live analytics and metrics to GitHub Pages [skip ci]"], cwd=pages_dir, capture_output=True, timeout=10, text=True)
+            subprocess.run(["git", "pull", "--rebase", "--autostash", "origin", "main"], cwd=pages_dir, capture_output=True, timeout=15, text=True)
             push_res = subprocess.run(["git", "push", "origin", "main"], cwd=pages_dir, capture_output=True, timeout=20, text=True)
             if push_res.returncode == 0:
                 print("[Raj Tube Pro] GitHub Pages (https://malhotramahi396-afk.github.io/raj-tube-pro/) successfully synced and pushed to origin main!")
@@ -969,6 +993,17 @@ def sync_metrics(data_json_path: str):
                 print(f"[Raj Tube Pro] GitHub Pages push notice: {push_res.stderr.strip()}")
         except Exception as pages_err:
             print(f"[Raj Tube Pro] Notice syncing GitHub Pages: {pages_err}")
+
+    if progress_cb:
+        progress_cb(100, "100% Real-Time Master Sync Complete!", {
+            "summary": data.get("summary", {}),
+            "channels_count": len(channels),
+            "total_views": data.get("summary", {}).get("total_views", 0),
+            "total_subs": data.get("summary", {}).get("total_subscribers", 0),
+            "total_stock": data.get("summary", {}).get("total_in_queue", 0)
+        })
+
+    return data
 
 
 if __name__ == "__main__":
