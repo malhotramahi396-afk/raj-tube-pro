@@ -1,21 +1,21 @@
 {
   "app_name": "Raj Tube Pro",
   "version": "6.1.0",
-  "timestamp": "2026-10-18T16:58:28.350130+00:00",
+  "timestamp": "2026-10-18T17:11:12.994465+00:00",
   "schedule": {
     "next_slot_iso": "2026-10-19T08:00:00+00:00",
-    "seconds_remaining": 54091,
-    "formatted_countdown": "15h 01m 31s",
+    "seconds_remaining": 53327,
+    "formatted_countdown": "14h 48m 47s",
     "slot_label": "01:30 PM IST Tomorrow (Lunch Break)",
-    "now_ist": "18 Oct, 10:28 PM IST"
+    "now_ist": "18 Oct, 10:41 PM IST"
   },
   "summary": {
     "total_channels": 11,
-    "total_uploaded": 366,
-    "total_in_queue": 430,
+    "total_uploaded": 382,
+    "total_in_queue": 429,
     "total_subscribers": 1422,
-    "total_views": 1742382,
-    "total_likes": 12415,
+    "total_views": 1741995,
+    "total_likes": 12649,
     "network_engagement": 0.8,
     "total_runway_days": 24.0,
     "system_health": "All Systems Operational (11 Channels Active 1-11)",
@@ -31,65 +31,65 @@
       "uploaded_at": "2026-09-15T21:09:27Z"
     },
     "analytics": {
-      "watch_time_hours": 9292.8,
+      "watch_time_hours": 9290.7,
       "avg_view_duration": "0:24",
       "top_countries": [
         {
           "country": "United States",
           "code": "US",
-          "flag": "\ud83c\uddfa\ud83c\uddf8",
+          "flag": "🇺🇸",
           "percent": 45.0
         },
         {
           "country": "India",
           "code": "IN",
-          "flag": "\ud83c\uddee\ud83c\uddf3",
+          "flag": "🇮🇳",
           "percent": 27.5
         },
         {
           "country": "United Kingdom",
           "code": "GB",
-          "flag": "\ud83c\uddec\ud83c\udde7",
+          "flag": "🇬🇧",
           "percent": 11.3
         },
         {
           "country": "Canada",
           "code": "CA",
-          "flag": "\ud83c\udde8\ud83c\udde6",
+          "flag": "🇨🇦",
           "percent": 7.4
         },
         {
           "country": "Germany",
           "code": "DE",
-          "flag": "\ud83c\udde9\ud83c\uddea",
+          "flag": "🇩🇪",
           "percent": 4.2
         },
         {
           "country": "Other countries",
           "code": "OTHER",
-          "flag": "\ud83c\udf10",
+          "flag": "🌐",
           "percent": 4.6
         }
       ],
       "age_distribution": [
         {
-          "range": "13\u201317 years",
+          "range": "13–17 years",
           "percent": 5.5
         },
         {
-          "range": "18\u201324 years",
+          "range": "18–24 years",
           "percent": 40.2
         },
         {
-          "range": "25\u201334 years",
+          "range": "25–34 years",
           "percent": 41.3
         },
         {
-          "range": "35\u201344 years",
+          "range": "35–44 years",
           "percent": 8.8
         },
         {
-          "range": "45\u201354 years",
+          "range": "45–54 years",
           "percent": 2.9
         },
         {
@@ -105,27 +105,27 @@
         {
           "source": "Shorts feed",
           "percent": 81.2,
-          "icon": "\ud83d\udcf1"
+          "icon": "📱"
         },
         {
           "source": "YouTube search",
           "percent": 10.6,
-          "icon": "\ud83d\udd0d"
+          "icon": "🔍"
         },
         {
           "source": "Channel pages",
           "percent": 4.4,
-          "icon": "\ud83d\udcc4"
+          "icon": "📄"
         },
         {
           "source": "Suggested videos",
           "percent": 2.5,
-          "icon": "\ud83c\udfac"
+          "icon": "🎬"
         },
         {
           "source": "External & Others",
           "percent": 1.3,
-          "icon": "\ud83d\udd17"
+          "icon": "🔗"
         }
       ],
       "subscriber_watch_time": {
@@ -140,22 +140,22 @@
         {
           "device": "Mobile phone",
           "percent": 94.6,
-          "icon": "\ud83d\udcf1"
+          "icon": "📱"
         },
         {
           "device": "Computer",
           "percent": 3.8,
-          "icon": "\ud83d\udcbb"
+          "icon": "💻"
         },
         {
           "device": "TV / Tablet",
           "percent": 1.6,
-          "icon": "\ud83d\udcfa"
+          "icon": "📺"
         }
       ],
-      "peak_hours": "6:00 PM \u2013 10:30 PM IST (Peak Global Viewing Window)"
+      "peak_hours": "6:00 PM – 10:30 PM IST (Peak Global Viewing Window)"
     },
-    "avg_views_per_channel": 158398
+    "avg_views_per_channel": 158363
   },
   "issues": [],
   "channels": [
@@ -170,7 +170,7 @@
       "color": "#10B981",
       "avatar_url": "https://yt3.ggpht.com/R5wyufkApz5fijH1a4mek8n6CM9y64QklZgfgjuGI-SOwbTIBjEFmmKot6aBnYkVRwOpq965=s240-c-k-c0x00ffffff-no-rj",
       "subscribers": 129,
-      "total_views": 120352,
+      "total_views": 120356,
       "channel_total_videos": 82,
       "avg_views_per_video": 1468,
       "engagement_rate": 0.8,
@@ -180,63 +180,63 @@
           {
             "country": "India",
             "code": "IN",
-            "flag": "\ud83c\uddee\ud83c\uddf3",
+            "flag": "🇮🇳",
             "percent": 41.2
           },
           {
             "country": "Uzbekistan",
             "code": "UZ",
-            "flag": "\ud83c\uddfa\ud83c\uddff",
+            "flag": "🇺🇿",
             "percent": 16.7
           },
           {
             "country": "Indonesia",
             "code": "ID",
-            "flag": "\ud83c\uddee\ud83c\udde9",
+            "flag": "🇮🇩",
             "percent": 13.0
           },
           {
             "country": "United States",
             "code": "US",
-            "flag": "\ud83c\uddfa\ud83c\uddf8",
+            "flag": "🇺🇸",
             "percent": 6.9
           },
           {
             "country": "Vietnam",
             "code": "VN",
-            "flag": "\ud83c\uddfb\ud83c\uddf3",
+            "flag": "🇻🇳",
             "percent": 5.7
           },
           {
             "country": "Other countries",
             "code": "OTHER",
-            "flag": "\ud83c\udf10",
+            "flag": "🌐",
             "percent": 16.5
           }
         ],
         "age_distribution": [
           {
-            "range": "13\u201317 years",
+            "range": "13–17 years",
             "percent": 2.4
           },
           {
-            "range": "18\u201324 years",
+            "range": "18–24 years",
             "percent": 7.8
           },
           {
-            "range": "25\u201334 years",
+            "range": "25–34 years",
             "percent": 31.0
           },
           {
-            "range": "35\u201344 years",
+            "range": "35–44 years",
             "percent": 20.8
           },
           {
-            "range": "45\u201354 years",
+            "range": "45–54 years",
             "percent": 13.0
           },
           {
-            "range": "55\u201364 years",
+            "range": "55–64 years",
             "percent": 12.0
           },
           {
@@ -251,27 +251,27 @@
         "traffic_sources": [
           {
             "source": "Shorts feed",
-            "icon": "\ud83d\udcf1",
+            "icon": "📱",
             "percent": 82.4
           },
           {
             "source": "YouTube search",
-            "icon": "\ud83d\udd0d",
+            "icon": "🔍",
             "percent": 10.2
           },
           {
             "source": "Channel pages",
-            "icon": "\ud83d\udcc4",
+            "icon": "📄",
             "percent": 4.1
           },
           {
             "source": "Suggested videos",
-            "icon": "\ud83c\udfac",
+            "icon": "🎬",
             "percent": 2.1
           },
           {
             "source": "External & Others",
-            "icon": "\ud83d\udd17",
+            "icon": "🔗",
             "percent": 1.2
           }
         ],
@@ -286,21 +286,21 @@
         "top_devices": [
           {
             "device": "Mobile phone",
-            "icon": "\ud83d\udcf1",
+            "icon": "📱",
             "percent": 94.2
           },
           {
             "device": "Computer",
-            "icon": "\ud83d\udcbb",
+            "icon": "💻",
             "percent": 4.2
           },
           {
             "device": "TV / Tablet",
-            "icon": "\ud83d\udcfa",
+            "icon": "📺",
             "percent": 1.6
           }
         ],
-        "peak_hours": "7:00 PM \u2013 11:30 PM IST (Prime Wildlife Audience Peak)",
+        "peak_hours": "7:00 PM – 11:30 PM IST (Prime Wildlife Audience Peak)",
         "verified_source": "YouTube Analytics API (100% Genuine)",
         "watch_time_hours": 641.9,
         "avg_view_duration": "0:16"
@@ -309,17 +309,17 @@
         "overall_score": 100,
         "verdict": "Flawless (Optimal Standing)",
         "verdict_color": "#10B981",
-        "shield_icon": "\ud83d\udee1\ufe0f",
+        "shield_icon": "🛡️",
         "strikes": {
           "count": 0,
           "max": 3,
-          "status": "0 of 3 active strikes \u2022 Channel Active & Public (YouTube API Verified)",
+          "status": "0 of 3 active strikes • Channel Active & Public (YouTube API Verified)",
           "badge": "CLEAN",
           "is_clean": true
         },
         "copyright": {
           "count": 0,
-          "status": "0 copyright restrictions across 15 videos \u2022 100% Active & Public (YouTube API Verified)",
+          "status": "0 copyright restrictions across 15 videos • 100% Active & Public (YouTube API Verified)",
           "badge": "100% CLEAN",
           "color": "#10B981",
           "is_clean": true,
@@ -355,9 +355,9 @@
       "stock_status": "Plentiful (33.5 days)",
       "stock_color": "#10B981",
       "latest_run_status": "success",
-      "latest_run_time": "2026-09-20T14:13:23.301788+00:00",
+      "latest_run_time": "2026-10-17T21:44:01.895047+00:00",
       "latest_uploaded_video": {
-        "title": "Most People Die From This Mistake \ud83d\udc80 #Shorts",
+        "title": "Most People Die From This Mistake 💀 #Shorts",
         "youtube_id": "ZGJN8Ep3wpc",
         "youtube_url": "https://youtu.be/ZGJN8Ep3wpc",
         "studio_url": "https://studio.youtube.com/video/ZGJN8Ep3wpc/edit",
@@ -374,7 +374,7 @@
       },
       "uploaded_videos": [
         {
-          "title": "Most People Die From This Mistake \ud83d\udc80 #Shorts",
+          "title": "Most People Die From This Mistake 💀 #Shorts",
           "youtube_id": "ZGJN8Ep3wpc",
           "youtube_url": "https://youtu.be/ZGJN8Ep3wpc",
           "studio_url": "https://studio.youtube.com/video/ZGJN8Ep3wpc/edit",
@@ -390,7 +390,7 @@
           "is_blocked": false
         },
         {
-          "title": "This Animal Thought It Was Completely Alone... \ud83e\udd2b #Shorts",
+          "title": "This Animal Thought It Was Completely Alone... 🤫 #Shorts",
           "youtube_id": "5MreD3vPkZE",
           "youtube_url": "https://youtu.be/5MreD3vPkZE",
           "studio_url": "https://studio.youtube.com/video/5MreD3vPkZE/edit",
@@ -406,7 +406,7 @@
           "is_blocked": false
         },
         {
-          "title": "When Wild Animals Realize They Are Being Watched... \ud83d\ude33 #Shorts",
+          "title": "When Wild Animals Realize They Are Being Watched... 😳 #Shorts",
           "youtube_id": "R0aRfynBK04",
           "youtube_url": "https://youtu.be/R0aRfynBK04",
           "studio_url": "https://studio.youtube.com/video/R0aRfynBK04/edit",
@@ -422,7 +422,7 @@
           "is_blocked": false
         },
         {
-          "title": "It knew the camera was watching... \ud83d\ude33 #Shorts",
+          "title": "It knew the camera was watching... 😳 #Shorts",
           "youtube_id": "Sw8gC6pbFp4",
           "youtube_url": "https://youtu.be/Sw8gC6pbFp4",
           "studio_url": "https://studio.youtube.com/video/Sw8gC6pbFp4/edit",
@@ -438,7 +438,7 @@
           "is_blocked": false
         },
         {
-          "title": "Never Get THIS Close To Wild Animals! \ud83d\ude33 #Shorts",
+          "title": "Never Get THIS Close To Wild Animals! 😳 #Shorts",
           "youtube_id": "tglUre2ruz0",
           "youtube_url": "https://youtu.be/tglUre2ruz0",
           "studio_url": "https://studio.youtube.com/video/tglUre2ruz0/edit",
@@ -454,7 +454,7 @@
           "is_blocked": false
         },
         {
-          "title": "This Animal Refused to Blink! \ud83d\ude33 #Shorts",
+          "title": "This Animal Refused to Blink! 😳 #Shorts",
           "youtube_id": "MvTr-MZ-Ytw",
           "youtube_url": "https://youtu.be/MvTr-MZ-Ytw",
           "studio_url": "https://studio.youtube.com/video/MvTr-MZ-Ytw/edit",
@@ -470,7 +470,7 @@
           "is_blocked": false
         },
         {
-          "title": "When The Apex Predator Refuses To Blink \ud83d\ude33 #Shorts",
+          "title": "When The Apex Predator Refuses To Blink 😳 #Shorts",
           "youtube_id": "Ewg5zSJe3Cc",
           "youtube_url": "https://youtu.be/Ewg5zSJe3Cc",
           "studio_url": "https://studio.youtube.com/video/Ewg5zSJe3Cc/edit",
@@ -486,7 +486,7 @@
           "is_blocked": false
         },
         {
-          "title": "It Stared Right Into My Soul... \ud83d\ude33 #Shorts",
+          "title": "It Stared Right Into My Soul... 😳 #Shorts",
           "youtube_id": "79Zcdaq4Zfk",
           "youtube_url": "https://youtu.be/79Zcdaq4Zfk",
           "studio_url": "https://studio.youtube.com/video/79Zcdaq4Zfk/edit",
@@ -502,7 +502,7 @@
           "is_blocked": false
         },
         {
-          "title": "This Animal Chose Violence Instantly \ud83d\udc80 #Shorts",
+          "title": "This Animal Chose Violence Instantly 💀 #Shorts",
           "youtube_id": "Rmix3B8bNjw",
           "youtube_url": "https://youtu.be/Rmix3B8bNjw",
           "studio_url": "https://studio.youtube.com/video/Rmix3B8bNjw/edit",
@@ -518,7 +518,7 @@
           "is_blocked": false
         },
         {
-          "title": "Nature hid this moment for a reason... \ud83e\udd2f #Shorts",
+          "title": "Nature hid this moment for a reason... 🤯 #Shorts",
           "youtube_id": "9BGHJSKAfd0",
           "youtube_url": "https://youtu.be/9BGHJSKAfd0",
           "studio_url": "https://studio.youtube.com/video/9BGHJSKAfd0/edit",
@@ -534,7 +534,7 @@
           "is_blocked": false
         },
         {
-          "title": "This 4K Wildlife Shot Defies Reality! \ud83e\udd2f #Shorts",
+          "title": "This 4K Wildlife Shot Defies Reality! 🤯 #Shorts",
           "youtube_id": "K49lgI8lwak",
           "youtube_url": "https://youtu.be/K49lgI8lwak",
           "studio_url": "https://studio.youtube.com/video/K49lgI8lwak/edit",
@@ -550,7 +550,7 @@
           "is_blocked": false
         },
         {
-          "title": "This Animal Thought It Was Alone... \ud83d\ude33 #Shorts",
+          "title": "This Animal Thought It Was Alone... 😳 #Shorts",
           "youtube_id": "w1XSBeERYLw",
           "youtube_url": "https://youtu.be/w1XSBeERYLw",
           "studio_url": "https://studio.youtube.com/video/w1XSBeERYLw/edit",
@@ -566,7 +566,7 @@
           "is_blocked": false
         },
         {
-          "title": "This Animal Just Cheated Death \ud83e\udd2f #Shorts",
+          "title": "This Animal Just Cheated Death 🤯 #Shorts",
           "youtube_id": "bH6cBv0mWGs",
           "youtube_url": "https://youtu.be/bH6cBv0mWGs",
           "studio_url": "https://studio.youtube.com/video/bH6cBv0mWGs/edit",
@@ -582,7 +582,7 @@
           "is_blocked": false
         },
         {
-          "title": "This Predator Stared Into My Soul \ud83d\ude33 #Shorts",
+          "title": "This Predator Stared Into My Soul 😳 #Shorts",
           "youtube_id": "nMyL-6T-cOY",
           "youtube_url": "https://youtu.be/nMyL-6T-cOY",
           "studio_url": "https://studio.youtube.com/video/nMyL-6T-cOY/edit",
@@ -598,7 +598,7 @@
           "is_blocked": false
         },
         {
-          "title": "It was right in front of you the whole time! \ud83e\udd2f #Shorts",
+          "title": "It was right in front of you the whole time! 🤯 #Shorts",
           "youtube_id": "V3WUsCYrKDw",
           "youtube_url": "https://youtu.be/V3WUsCYrKDw",
           "studio_url": "https://studio.youtube.com/video/V3WUsCYrKDw/edit",
@@ -614,7 +614,7 @@
           "is_blocked": false
         },
         {
-          "title": "It Was Staring Right At The Camera... \ud83d\ude31 #Shorts",
+          "title": "It Was Staring Right At The Camera... 😱 #Shorts",
           "youtube_id": "ULiQNKpTz9o",
           "youtube_url": "https://youtu.be/ULiQNKpTz9o",
           "studio_url": "https://studio.youtube.com/video/ULiQNKpTz9o/edit",
@@ -630,7 +630,7 @@
           "is_blocked": false
         },
         {
-          "title": "They Risked Everything For This Shot \ud83c\udfa5\ud83e\udd81 #Shorts",
+          "title": "They Risked Everything For This Shot 🎥🦁 #Shorts",
           "youtube_id": "h8GuL43d510",
           "youtube_url": "https://youtu.be/h8GuL43d510",
           "studio_url": "https://studio.youtube.com/video/h8GuL43d510/edit",
@@ -646,7 +646,7 @@
           "is_blocked": false
         },
         {
-          "title": "This Animal Almost Didn't Make It... \ud83d\udc80 #Shorts",
+          "title": "This Animal Almost Didn't Make It... 💀 #Shorts",
           "youtube_id": "Kmmp4iMxY04",
           "youtube_url": "https://youtu.be/Kmmp4iMxY04",
           "studio_url": "https://studio.youtube.com/video/Kmmp4iMxY04/edit",
@@ -662,7 +662,7 @@
           "is_blocked": false
         },
         {
-          "title": "This Animal Stared Into My Soul \ud83d\ude33 #Shorts",
+          "title": "This Animal Stared Into My Soul 😳 #Shorts",
           "youtube_id": "2Fd0Nm2BNOo",
           "youtube_url": "https://youtu.be/2Fd0Nm2BNOo",
           "studio_url": "https://studio.youtube.com/video/2Fd0Nm2BNOo/edit",
@@ -678,7 +678,7 @@
           "is_blocked": false
         },
         {
-          "title": "He Got Too Close To The World's Deadliest Beast \ud83d\udc80 #Shorts",
+          "title": "He Got Too Close To The World's Deadliest Beast 💀 #Shorts",
           "youtube_id": "eOrPqoGODkk",
           "youtube_url": "https://youtu.be/eOrPqoGODkk",
           "studio_url": "https://studio.youtube.com/video/eOrPqoGODkk/edit",
@@ -694,7 +694,7 @@
           "is_blocked": false
         },
         {
-          "title": "This Cameraman Barely Survived! \ud83d\ude31 #Shorts",
+          "title": "This Cameraman Barely Survived! 😱 #Shorts",
           "youtube_id": "vCnrSjNvk1E",
           "youtube_url": "https://youtu.be/vCnrSjNvk1E",
           "studio_url": "https://studio.youtube.com/video/vCnrSjNvk1E/edit",
@@ -710,7 +710,7 @@
           "is_blocked": false
         },
         {
-          "title": "This Phantom Creature Only Appears Once a Year \ud83d\udc7b #Shorts",
+          "title": "This Phantom Creature Only Appears Once a Year 👻 #Shorts",
           "youtube_id": "d96nKlQgEB4",
           "youtube_url": "https://youtu.be/d96nKlQgEB4",
           "studio_url": "https://studio.youtube.com/video/d96nKlQgEB4/edit",
@@ -726,7 +726,7 @@
           "is_blocked": false
         },
         {
-          "title": "This Stare Will Give You Chills... \ud83d\udc05 #Shorts",
+          "title": "This Stare Will Give You Chills... 🐅 #Shorts",
           "youtube_id": "ixAPyJI1CrQ",
           "youtube_url": "https://youtu.be/ixAPyJI1CrQ",
           "studio_url": "https://studio.youtube.com/video/ixAPyJI1CrQ/edit",
@@ -742,7 +742,7 @@
           "is_blocked": false
         },
         {
-          "title": "This animal feels NO fear... \ud83e\udd76 #Shorts",
+          "title": "This animal feels NO fear... 🥶 #Shorts",
           "youtube_id": "d14p0DiROf8",
           "youtube_url": "https://youtu.be/d14p0DiROf8",
           "studio_url": "https://studio.youtube.com/video/d14p0DiROf8/edit",
@@ -758,7 +758,7 @@
           "is_blocked": false
         },
         {
-          "title": "This Cameraman Almost Died For This Shot! \ud83e\udd2f #Shorts",
+          "title": "This Cameraman Almost Died For This Shot! 🤯 #Shorts",
           "youtube_id": "5wh0wxAcWdw",
           "youtube_url": "https://youtu.be/5wh0wxAcWdw",
           "studio_url": "https://studio.youtube.com/video/5wh0wxAcWdw/edit",
@@ -774,7 +774,7 @@
           "is_blocked": false
         },
         {
-          "title": "It was right in front of you the whole time! \ud83e\udd2f #Shorts",
+          "title": "It was right in front of you the whole time! 🤯 #Shorts",
           "youtube_id": "9-ZelFbr4dI",
           "youtube_url": "https://youtu.be/9-ZelFbr4dI",
           "studio_url": "https://studio.youtube.com/video/9-ZelFbr4dI/edit",
@@ -790,7 +790,7 @@
           "is_blocked": false
         },
         {
-          "title": "He vanished in plain sight! \ud83e\udd2f #Shorts",
+          "title": "He vanished in plain sight! 🤯 #Shorts",
           "youtube_id": "w-B9-OGkZX8",
           "youtube_url": "https://youtu.be/w-B9-OGkZX8",
           "studio_url": "https://studio.youtube.com/video/w-B9-OGkZX8/edit",
@@ -806,7 +806,7 @@
           "is_blocked": false
         },
         {
-          "title": "He risked everything for this one frame \ud83d\udcf8\ud83d\udd25 #Shorts",
+          "title": "He risked everything for this one frame 📸🔥 #Shorts",
           "youtube_id": "3FIRFec2f14",
           "youtube_url": "https://youtu.be/3FIRFec2f14",
           "studio_url": "https://studio.youtube.com/video/3FIRFec2f14/edit",
@@ -822,7 +822,7 @@
           "is_blocked": false
         },
         {
-          "title": "He Turned Around And Regretted It Instantly! \ud83d\udc3b #Shorts",
+          "title": "He Turned Around And Regretted It Instantly! 🐻 #Shorts",
           "youtube_id": "Vo1g07e0Xs8",
           "youtube_url": "https://youtu.be/Vo1g07e0Xs8",
           "studio_url": "https://studio.youtube.com/video/Vo1g07e0Xs8/edit",
@@ -838,7 +838,7 @@
           "is_blocked": false
         },
         {
-          "title": "This Animal Almost Ended The Cameraman! \ud83d\ude31 #Shorts",
+          "title": "This Animal Almost Ended The Cameraman! 😱 #Shorts",
           "youtube_id": "bMFXHhnsi6g",
           "youtube_url": "https://youtu.be/bMFXHhnsi6g",
           "studio_url": "https://studio.youtube.com/video/bMFXHhnsi6g/edit",
@@ -854,7 +854,7 @@
           "is_blocked": false
         },
         {
-          "title": "This Jungle Ghost Fooled Everyone... \ud83e\udd2b #Shorts",
+          "title": "This Jungle Ghost Fooled Everyone... 🤫 #Shorts",
           "youtube_id": "fldZQx7aofI",
           "youtube_url": "https://youtu.be/fldZQx7aofI",
           "studio_url": "https://studio.youtube.com/video/fldZQx7aofI/edit",
@@ -870,7 +870,7 @@
           "is_blocked": false
         },
         {
-          "title": "You Won't Believe This Animal's Stealth! \ud83e\udd2f #Shorts",
+          "title": "You Won't Believe This Animal's Stealth! 🤯 #Shorts",
           "youtube_id": "1qnFYTVW8sU",
           "youtube_url": "https://youtu.be/1qnFYTVW8sU",
           "studio_url": "https://studio.youtube.com/video/1qnFYTVW8sU/edit",
@@ -886,7 +886,7 @@
           "is_blocked": false
         },
         {
-          "title": "This Cameraman Barely Escaped! \ud83d\ude31 #Shorts",
+          "title": "This Cameraman Barely Escaped! 😱 #Shorts",
           "youtube_id": "0CddUijUWZE",
           "youtube_url": "https://youtu.be/0CddUijUWZE",
           "studio_url": "https://studio.youtube.com/video/0CddUijUWZE/edit",
@@ -902,7 +902,7 @@
           "is_blocked": false
         },
         {
-          "title": "He Regretted Taking This Photo Instantly \ud83d\udc80 #Shorts",
+          "title": "He Regretted Taking This Photo Instantly 💀 #Shorts",
           "youtube_id": "PF6tjWJXW4I",
           "youtube_url": "https://youtu.be/PF6tjWJXW4I",
           "studio_url": "https://studio.youtube.com/video/PF6tjWJXW4I/edit",
@@ -918,7 +918,7 @@
           "is_blocked": false
         },
         {
-          "title": "This wild beast almost chose violence... \ud83d\ude33 #Shorts",
+          "title": "This wild beast almost chose violence... 😳 #Shorts",
           "youtube_id": "tKzXpx0ejrg",
           "youtube_url": "https://youtu.be/tKzXpx0ejrg",
           "studio_url": "https://studio.youtube.com/video/tKzXpx0ejrg/edit",
@@ -934,7 +934,7 @@
           "is_blocked": false
         },
         {
-          "title": "This Animal Thought It Was Completely Invisible... \ud83e\udd2f #Shorts",
+          "title": "This Animal Thought It Was Completely Invisible... 🤯 #Shorts",
           "youtube_id": "4f7ZG6PYuGA",
           "youtube_url": "https://youtu.be/4f7ZG6PYuGA",
           "studio_url": "https://studio.youtube.com/video/4f7ZG6PYuGA/edit",
@@ -950,7 +950,7 @@
           "is_blocked": false
         },
         {
-          "title": "This Animal Chose Violence \ud83d\udc80 #Shorts",
+          "title": "This Animal Chose Violence 💀 #Shorts",
           "youtube_id": "kRpTsJHQnxA",
           "youtube_url": "https://youtu.be/kRpTsJHQnxA",
           "studio_url": "https://studio.youtube.com/video/kRpTsJHQnxA/edit",
@@ -966,7 +966,7 @@
           "is_blocked": false
         },
         {
-          "title": "He Waited 14 Hours For This ONE Shot... \ud83e\udd2f #Shorts",
+          "title": "He Waited 14 Hours For This ONE Shot... 🤯 #Shorts",
           "youtube_id": "N4YtiX0j-48",
           "youtube_url": "https://youtu.be/N4YtiX0j-48",
           "studio_url": "https://studio.youtube.com/video/N4YtiX0j-48/edit",
@@ -982,7 +982,7 @@
           "is_blocked": false
         },
         {
-          "title": "One Wrong Move And It's Over! \ud83d\udc80 #Shorts",
+          "title": "One Wrong Move And It's Over! 💀 #Shorts",
           "youtube_id": "pZNXJaOa5DU",
           "youtube_url": "https://youtu.be/pZNXJaOa5DU",
           "studio_url": "https://studio.youtube.com/video/pZNXJaOa5DU/edit",
@@ -998,7 +998,7 @@
           "is_blocked": false
         },
         {
-          "title": "This Animal Knew It Was Dead... \ud83d\ude31 #Shorts",
+          "title": "This Animal Knew It Was Dead... 😱 #Shorts",
           "youtube_id": "5rBCSqxAS5c",
           "youtube_url": "https://youtu.be/5rBCSqxAS5c",
           "studio_url": "https://studio.youtube.com/video/5rBCSqxAS5c/edit",
@@ -1814,11 +1814,11 @@
         "region": "Illinois",
         "country": "United States",
         "country_code": "US",
-        "flag": "\ud83c\uddfa\ud83c\uddf8",
+        "flag": "🇺🇸",
         "org": "Datacamp Limited (Chicago US Gateway)",
         "datacenter": "Surfshark Dedicated US Chicago Gateway",
         "verify_url": "https://ipinfo.io/154.47.25.100",
-        "verified_at": "2026-10-11T13:26:30Z"
+        "verified_at": "2026-10-16T18:53:19Z"
       },
       "is_active": true,
       "is_terminated": false,
@@ -1852,9 +1852,9 @@
       "subscribers": 917,
       "total_views": 1450202,
       "channel_total_videos": 77,
-      "avg_views_per_video": 18959,
+      "avg_views_per_video": 18964,
       "engagement_rate": 0.8,
-      "total_likes": 8052,
+      "total_likes": 8053,
       "analytics": {
         "watch_time_hours": 7734.4,
         "avg_view_duration": "0:24",
@@ -1862,63 +1862,63 @@
           {
             "country": "United States",
             "code": "US",
-            "flag": "\ud83c\uddfa\ud83c\uddf8",
+            "flag": "🇺🇸",
             "percent": 25.9
           },
           {
             "country": "India",
             "code": "IN",
-            "flag": "\ud83c\uddee\ud83c\uddf3",
+            "flag": "🇮🇳",
             "percent": 22.0
           },
           {
             "country": "Indonesia",
             "code": "ID",
-            "flag": "\ud83c\uddee\ud83c\udde9",
+            "flag": "🇮🇩",
             "percent": 14.6
           },
           {
             "country": "Uzbekistan",
             "code": "UZ",
-            "flag": "\ud83c\uddfa\ud83c\uddff",
+            "flag": "🇺🇿",
             "percent": 11.0
           },
           {
             "country": "Germany",
             "code": "DE",
-            "flag": "\ud83c\udde9\ud83c\uddea",
+            "flag": "🇩🇪",
             "percent": 9.1
           },
           {
             "country": "Other countries",
             "code": "OTHER",
-            "flag": "\ud83c\udf10",
+            "flag": "🌐",
             "percent": 17.4
           }
         ],
         "age_distribution": [
           {
-            "range": "13\u201317 years",
+            "range": "13–17 years",
             "percent": 2.7
           },
           {
-            "range": "18\u201324 years",
+            "range": "18–24 years",
             "percent": 4.4
           },
           {
-            "range": "25\u201334 years",
+            "range": "25–34 years",
             "percent": 16.6
           },
           {
-            "range": "35\u201344 years",
+            "range": "35–44 years",
             "percent": 14.6
           },
           {
-            "range": "45\u201354 years",
+            "range": "45–54 years",
             "percent": 14.1
           },
           {
-            "range": "55\u201364 years",
+            "range": "55–64 years",
             "percent": 19.1
           },
           {
@@ -1934,27 +1934,27 @@
           {
             "source": "Shorts feed",
             "percent": 81.2,
-            "icon": "\ud83d\udcf1"
+            "icon": "📱"
           },
           {
             "source": "YouTube search",
             "percent": 10.6,
-            "icon": "\ud83d\udd0d"
+            "icon": "🔍"
           },
           {
             "source": "Channel pages",
             "percent": 4.4,
-            "icon": "\ud83d\udcc4"
+            "icon": "📄"
           },
           {
             "source": "Suggested videos",
             "percent": 2.5,
-            "icon": "\ud83c\udfac"
+            "icon": "🎬"
           },
           {
             "source": "External & Others",
             "percent": 1.3,
-            "icon": "\ud83d\udd17"
+            "icon": "🔗"
           }
         ],
         "subscriber_watch_time": {
@@ -1969,37 +1969,37 @@
           {
             "device": "Mobile phone",
             "percent": 94.6,
-            "icon": "\ud83d\udcf1"
+            "icon": "📱"
           },
           {
             "device": "Computer",
             "percent": 3.8,
-            "icon": "\ud83d\udcbb"
+            "icon": "💻"
           },
           {
             "device": "TV / Tablet",
             "percent": 1.6,
-            "icon": "\ud83d\udcfa"
+            "icon": "📺"
           }
         ],
-        "peak_hours": "6:30 PM \u2013 10:30 PM IST (Prime Global Engagement)",
+        "peak_hours": "6:30 PM – 10:30 PM IST (Prime Global Engagement)",
         "verified_source": "YouTube Analytics API (100% Genuine)"
       },
       "health": {
         "overall_score": 100,
         "verdict": "Flawless (Optimal Standing)",
         "verdict_color": "#10B981",
-        "shield_icon": "\ud83d\udee1\ufe0f",
+        "shield_icon": "🛡️",
         "strikes": {
           "count": 0,
           "max": 3,
-          "status": "0 of 3 active strikes \u2022 Channel Active & Public (YouTube API Verified)",
+          "status": "0 of 3 active strikes • Channel Active & Public (YouTube API Verified)",
           "badge": "CLEAN",
           "is_clean": true
         },
         "copyright": {
           "count": 0,
-          "status": "0 copyright restrictions across 23 videos \u2022 100% Active & Public (YouTube API Verified)",
+          "status": "0 copyright restrictions across 23 videos • 100% Active & Public (YouTube API Verified)",
           "badge": "100% CLEAN",
           "color": "#10B981",
           "is_clean": true,
@@ -2037,14 +2037,14 @@
       "latest_run_status": "success",
       "latest_run_time": "2026-09-20T21:08:20.057017+00:00",
       "latest_uploaded_video": {
-        "title": "One Second Before Disaster... \ud83d\udc80 #PowerSlap #Shorts",
+        "title": "One Second Before Disaster... 💀 #PowerSlap #Shorts",
         "youtube_id": "UOEcIAskKbI",
         "youtube_url": "https://youtu.be/UOEcIAskKbI",
         "studio_url": "https://studio.youtube.com/video/UOEcIAskKbI/edit",
         "uploaded_at": "2026-10-18T16:14:51Z",
         "thumbnail": "https://i.ytimg.com/vi/UOEcIAskKbI/mqdefault.jpg",
-        "views": 494,
-        "likes": 3,
+        "views": 668,
+        "likes": 4,
         "comments": 0,
         "is_clean": true,
         "health_badge": "100% CLEAN",
@@ -2054,14 +2054,14 @@
       },
       "uploaded_videos": [
         {
-          "title": "One Second Before Disaster... \ud83d\udc80 #PowerSlap #Shorts",
+          "title": "One Second Before Disaster... 💀 #PowerSlap #Shorts",
           "youtube_id": "UOEcIAskKbI",
           "youtube_url": "https://youtu.be/UOEcIAskKbI",
           "studio_url": "https://studio.youtube.com/video/UOEcIAskKbI/edit",
           "uploaded_at": "2026-10-18T16:14:51Z",
           "thumbnail": "https://i.ytimg.com/vi/UOEcIAskKbI/mqdefault.jpg",
-          "views": 494,
-          "likes": 3,
+          "views": 668,
+          "likes": 4,
           "comments": 0,
           "is_clean": true,
           "health_badge": "100% CLEAN",
@@ -2070,13 +2070,13 @@
           "is_blocked": false
         },
         {
-          "title": "One Second Before Disaster \ud83d\udc80 #Shorts",
+          "title": "One Second Before Disaster 💀 #Shorts",
           "youtube_id": "uqZUfCx62zM",
           "youtube_url": "https://youtu.be/uqZUfCx62zM",
           "studio_url": "https://studio.youtube.com/video/uqZUfCx62zM/edit",
           "uploaded_at": "2026-10-18T12:17:55Z",
           "thumbnail": "https://i.ytimg.com/vi/uqZUfCx62zM/mqdefault.jpg",
-          "views": 1733,
+          "views": 1817,
           "likes": 11,
           "comments": 1,
           "is_clean": true,
@@ -2086,13 +2086,13 @@
           "is_blocked": false
         },
         {
-          "title": "One Second From Disaster... \ud83e\udd2f #Shorts",
+          "title": "One Second From Disaster... 🤯 #Shorts",
           "youtube_id": "deEFIsJrYaU",
           "youtube_url": "https://youtu.be/deEFIsJrYaU",
           "studio_url": "https://studio.youtube.com/video/deEFIsJrYaU/edit",
           "uploaded_at": "2026-10-17T16:02:57Z",
           "thumbnail": "https://i.ytimg.com/vi/deEFIsJrYaU/mqdefault.jpg",
-          "views": 2419,
+          "views": 2393,
           "likes": 15,
           "comments": 0,
           "is_clean": true,
@@ -2102,13 +2102,13 @@
           "is_blocked": false
         },
         {
-          "title": "Pure Chaos In This Faceoff! \ud83e\udd2f Who Won? #Shorts",
+          "title": "Pure Chaos In This Faceoff! 🤯 Who Won? #Shorts",
           "youtube_id": "plAJi50vHLs",
           "youtube_url": "https://youtu.be/plAJi50vHLs",
           "studio_url": "https://studio.youtube.com/video/plAJi50vHLs/edit",
           "uploaded_at": "2026-10-17T11:51:46Z",
           "thumbnail": "https://i.ytimg.com/vi/plAJi50vHLs/mqdefault.jpg",
-          "views": 2250,
+          "views": 2247,
           "likes": 13,
           "comments": 0,
           "is_clean": true,
@@ -2118,13 +2118,13 @@
           "is_blocked": false
         },
         {
-          "title": "This Staredown Went Way Too Far! \ud83d\ude33 #Shorts",
+          "title": "This Staredown Went Way Too Far! 😳 #Shorts",
           "youtube_id": "hG7y34YKs6E",
           "youtube_url": "https://youtu.be/hG7y34YKs6E",
           "studio_url": "https://studio.youtube.com/video/hG7y34YKs6E/edit",
           "uploaded_at": "2026-10-16T17:05:27Z",
           "thumbnail": "https://i.ytimg.com/vi/hG7y34YKs6E/mqdefault.jpg",
-          "views": 207,
+          "views": 219,
           "likes": 1,
           "comments": 0,
           "is_clean": true,
@@ -2134,13 +2134,13 @@
           "is_blocked": false
         },
         {
-          "title": "Bro took it way too personally \ud83d\udc80 #Shorts",
+          "title": "Bro took it way too personally 💀 #Shorts",
           "youtube_id": "JMr2mEoM2KQ",
           "youtube_url": "https://youtu.be/JMr2mEoM2KQ",
           "studio_url": "https://studio.youtube.com/video/JMr2mEoM2KQ/edit",
           "uploaded_at": "2026-10-16T12:51:37Z",
           "thumbnail": "https://i.ytimg.com/vi/JMr2mEoM2KQ/mqdefault.jpg",
-          "views": 22274,
+          "views": 22379,
           "likes": 181,
           "comments": 3,
           "is_clean": true,
@@ -2150,13 +2150,13 @@
           "is_blocked": false
         },
         {
-          "title": "When the crowd went totally silent... \ud83d\ude33 #Shorts",
+          "title": "When the crowd went totally silent... 😳 #Shorts",
           "youtube_id": "wJ5meRdUlQg",
           "youtube_url": "https://youtu.be/wJ5meRdUlQg",
           "studio_url": "https://studio.youtube.com/video/wJ5meRdUlQg/edit",
           "uploaded_at": "2026-10-15T17:34:14Z",
           "thumbnail": "https://i.ytimg.com/vi/wJ5meRdUlQg/mqdefault.jpg",
-          "views": 43359,
+          "views": 43374,
           "likes": 118,
           "comments": 2,
           "is_clean": true,
@@ -2166,13 +2166,13 @@
           "is_blocked": false
         },
         {
-          "title": "One Slap Ended It Instantly! \ud83d\udc80 #Shorts",
+          "title": "One Slap Ended It Instantly! 💀 #Shorts",
           "youtube_id": "E2EnGbp6Uz0",
           "youtube_url": "https://youtu.be/E2EnGbp6Uz0",
           "studio_url": "https://studio.youtube.com/video/E2EnGbp6Uz0/edit",
           "uploaded_at": "2026-10-15T12:58:28Z",
           "thumbnail": "https://i.ytimg.com/vi/E2EnGbp6Uz0/mqdefault.jpg",
-          "views": 14858,
+          "views": 14886,
           "likes": 72,
           "comments": 2,
           "is_clean": true,
@@ -2182,13 +2182,13 @@
           "is_blocked": false
         },
         {
-          "title": "One Slap Ended The Whole Career?! \ud83e\udd2f #Shorts",
+          "title": "One Slap Ended The Whole Career?! 🤯 #Shorts",
           "youtube_id": "oSdWWAehaK8",
           "youtube_url": "https://youtu.be/oSdWWAehaK8",
           "studio_url": "https://studio.youtube.com/video/oSdWWAehaK8/edit",
           "uploaded_at": "2026-10-14T13:12:06Z",
           "thumbnail": "https://i.ytimg.com/vi/oSdWWAehaK8/mqdefault.jpg",
-          "views": 442,
+          "views": 446,
           "likes": 7,
           "comments": 0,
           "is_clean": true,
@@ -2204,7 +2204,7 @@
           "studio_url": "https://studio.youtube.com/video/fIt01nv4f-E/edit",
           "uploaded_at": "2026-10-13T15:25:07Z",
           "thumbnail": "https://i.ytimg.com/vi/fIt01nv4f-E/mqdefault.jpg",
-          "views": 3806,
+          "views": 3820,
           "likes": 7,
           "comments": 0,
           "is_clean": true,
@@ -2214,7 +2214,7 @@
           "is_blocked": false
         },
         {
-          "title": "One Second Before Disaster... \ud83d\udc80 #Shorts",
+          "title": "One Second Before Disaster... 💀 #Shorts",
           "youtube_id": "W6mr4649uhg",
           "youtube_url": "https://youtu.be/W6mr4649uhg",
           "studio_url": "https://studio.youtube.com/video/W6mr4649uhg/edit",
@@ -2230,13 +2230,13 @@
           "is_blocked": false
         },
         {
-          "title": "One Second From Disaster... \ud83e\udd2f #Shorts",
+          "title": "One Second From Disaster... 🤯 #Shorts",
           "youtube_id": "t6ow-AqZCSU",
           "youtube_url": "https://youtu.be/t6ow-AqZCSU",
           "studio_url": "https://studio.youtube.com/video/t6ow-AqZCSU/edit",
           "uploaded_at": "2026-10-12T08:10:17Z",
           "thumbnail": "https://i.ytimg.com/vi/t6ow-AqZCSU/mqdefault.jpg",
-          "views": 3261,
+          "views": 3262,
           "likes": 21,
           "comments": 0,
           "is_clean": true,
@@ -2246,13 +2246,13 @@
           "is_blocked": false
         },
         {
-          "title": "One Word Broke This Man's Soul... \ud83d\ude33 #Shorts",
+          "title": "One Word Broke This Man's Soul... 😳 #Shorts",
           "youtube_id": "tAmfNNu2oRU",
           "youtube_url": "https://youtu.be/tAmfNNu2oRU",
           "studio_url": "https://studio.youtube.com/video/tAmfNNu2oRU/edit",
           "uploaded_at": "2026-10-11T13:08:28Z",
           "thumbnail": "https://i.ytimg.com/vi/tAmfNNu2oRU/mqdefault.jpg",
-          "views": 30128,
+          "views": 30133,
           "likes": 81,
           "comments": 1,
           "is_clean": true,
@@ -2262,13 +2262,13 @@
           "is_blocked": false
         },
         {
-          "title": "His face froze before the ultimate strike \ud83d\udc80 #Shorts",
+          "title": "His face froze before the ultimate strike 💀 #Shorts",
           "youtube_id": "gW821wUm5io",
           "youtube_url": "https://youtu.be/gW821wUm5io",
           "studio_url": "https://studio.youtube.com/video/gW821wUm5io/edit",
           "uploaded_at": "2026-10-11T08:06:13Z",
           "thumbnail": "https://i.ytimg.com/vi/gW821wUm5io/mqdefault.jpg",
-          "views": 26402,
+          "views": 26405,
           "likes": 247,
           "comments": 10,
           "is_clean": true,
@@ -2278,13 +2278,13 @@
           "is_blocked": false
         },
         {
-          "title": "His eyes didn't even blink... \ud83d\udc80 #Shorts",
+          "title": "His eyes didn't even blink... 💀 #Shorts",
           "youtube_id": "XVeGu3rnrXk",
           "youtube_url": "https://youtu.be/XVeGu3rnrXk",
           "studio_url": "https://studio.youtube.com/video/XVeGu3rnrXk/edit",
           "uploaded_at": "2026-10-10T13:07:37Z",
           "thumbnail": "https://i.ytimg.com/vi/XVeGu3rnrXk/mqdefault.jpg",
-          "views": 3434,
+          "views": 3439,
           "likes": 29,
           "comments": 1,
           "is_clean": true,
@@ -2294,7 +2294,7 @@
           "is_blocked": false
         },
         {
-          "title": "When The Referee Had To Stop This Insane Hit! \ud83e\udd2f #Shorts",
+          "title": "When The Referee Had To Stop This Insane Hit! 🤯 #Shorts",
           "youtube_id": "hQmTQgk_9AQ",
           "youtube_url": "https://youtu.be/hQmTQgk_9AQ",
           "studio_url": "https://studio.youtube.com/video/hQmTQgk_9AQ/edit",
@@ -2310,7 +2310,7 @@
           "is_blocked": false
         },
         {
-          "title": "When Slap Fights Get TOO Intense! \ud83d\ude33 #PowerSlap #Shorts",
+          "title": "When Slap Fights Get TOO Intense! 😳 #PowerSlap #Shorts",
           "youtube_id": "sN7MEHV-72Q",
           "youtube_url": "https://youtu.be/sN7MEHV-72Q",
           "studio_url": "https://studio.youtube.com/video/sN7MEHV-72Q/edit",
@@ -2326,7 +2326,7 @@
           "is_blocked": false
         },
         {
-          "title": "His soul left his body... \ud83d\udc80 Did he survive this?! #Shorts",
+          "title": "His soul left his body... 💀 Did he survive this?! #Shorts",
           "youtube_id": "OuyIqHjfnYM",
           "youtube_url": "https://youtu.be/OuyIqHjfnYM",
           "studio_url": "https://studio.youtube.com/video/OuyIqHjfnYM/edit",
@@ -2342,7 +2342,7 @@
           "is_blocked": false
         },
         {
-          "title": "His Hand Broke The Laws Of Physics! \ud83d\udca5 #Shorts",
+          "title": "His Hand Broke The Laws Of Physics! 💥 #Shorts",
           "youtube_id": "IRuzT-XSoik",
           "youtube_url": "https://youtu.be/IRuzT-XSoik",
           "studio_url": "https://studio.youtube.com/video/IRuzT-XSoik/edit",
@@ -2358,7 +2358,7 @@
           "is_blocked": false
         },
         {
-          "title": "His Soul Left His Body! \ud83d\udc80 The Most Insane Slap Ever #Shorts",
+          "title": "His Soul Left His Body! 💀 The Most Insane Slap Ever #Shorts",
           "youtube_id": "o2-7vFXd2Mc",
           "youtube_url": "https://youtu.be/o2-7vFXd2Mc",
           "studio_url": "https://studio.youtube.com/video/o2-7vFXd2Mc/edit",
@@ -2374,13 +2374,13 @@
           "is_blocked": false
         },
         {
-          "title": "His Brain Off Reset After This One Hit \ud83e\udd2f #Shorts",
+          "title": "His Brain Off Reset After This One Hit 🤯 #Shorts",
           "youtube_id": "VmZNSsBsIdY",
           "youtube_url": "https://youtu.be/VmZNSsBsIdY",
           "studio_url": "https://studio.youtube.com/video/VmZNSsBsIdY/edit",
           "uploaded_at": "2026-10-07T13:12:01Z",
           "thumbnail": "https://i.ytimg.com/vi/VmZNSsBsIdY/mqdefault.jpg",
-          "views": 33737,
+          "views": 33740,
           "likes": 229,
           "comments": 8,
           "is_clean": true,
@@ -2390,13 +2390,13 @@
           "is_blocked": false
         },
         {
-          "title": "His Eyes Said He Knew He Was Going Down! \ud83d\udc80 #Shorts",
+          "title": "His Eyes Said He Knew He Was Going Down! 💀 #Shorts",
           "youtube_id": "s0VcDCrXq3U",
           "youtube_url": "https://youtu.be/s0VcDCrXq3U",
           "studio_url": "https://studio.youtube.com/video/s0VcDCrXq3U/edit",
           "uploaded_at": "2026-10-07T08:08:50Z",
           "thumbnail": "https://i.ytimg.com/vi/s0VcDCrXq3U/mqdefault.jpg",
-          "views": 1837,
+          "views": 1842,
           "likes": 28,
           "comments": 1,
           "is_clean": true,
@@ -2406,7 +2406,7 @@
           "is_blocked": false
         },
         {
-          "title": "When Physics Meets Absolute Chaos! \ud83d\udc80 #PowerSlap #Shorts",
+          "title": "When Physics Meets Absolute Chaos! 💀 #PowerSlap #Shorts",
           "youtube_id": "0786e9duWX4",
           "youtube_url": "https://youtu.be/0786e9duWX4",
           "studio_url": "https://studio.youtube.com/video/0786e9duWX4/edit",
@@ -2422,7 +2422,7 @@
           "is_blocked": false
         },
         {
-          "title": "This Slap Broke All The Rules! \ud83e\udd2f #Shorts",
+          "title": "This Slap Broke All The Rules! 🤯 #Shorts",
           "youtube_id": "ojP-oD-sHPA",
           "youtube_url": "https://youtu.be/ojP-oD-sHPA",
           "studio_url": "https://studio.youtube.com/video/ojP-oD-sHPA/edit",
@@ -2438,7 +2438,7 @@
           "is_blocked": false
         },
         {
-          "title": "One Slap Ended It All... \ud83e\udd2f #Shorts",
+          "title": "One Slap Ended It All... 🤯 #Shorts",
           "youtube_id": "exrsiyaHWEk",
           "youtube_url": "https://youtu.be/exrsiyaHWEk",
           "studio_url": "https://studio.youtube.com/video/exrsiyaHWEk/edit",
@@ -2454,7 +2454,7 @@
           "is_blocked": false
         },
         {
-          "title": "When The Warmup Turns Into A WAR \ud83e\udd2f #Shorts",
+          "title": "When The Warmup Turns Into A WAR 🤯 #Shorts",
           "youtube_id": "NXuOb9OzfHE",
           "youtube_url": "https://youtu.be/NXuOb9OzfHE",
           "studio_url": "https://studio.youtube.com/video/NXuOb9OzfHE/edit",
@@ -2470,7 +2470,7 @@
           "is_blocked": false
         },
         {
-          "title": "This Table Energy Is UNREAL! \ud83e\udd2f #PowerSlap #Shorts",
+          "title": "This Table Energy Is UNREAL! 🤯 #PowerSlap #Shorts",
           "youtube_id": "4MuyMla9IAk",
           "youtube_url": "https://youtu.be/4MuyMla9IAk",
           "studio_url": "https://studio.youtube.com/video/4MuyMla9IAk/edit",
@@ -2486,7 +2486,7 @@
           "is_blocked": false
         },
         {
-          "title": "His Brain Actually Restarted From This Hit \ud83e\udd2f #Shorts",
+          "title": "His Brain Actually Restarted From This Hit 🤯 #Shorts",
           "youtube_id": "P15VSeA-ym4",
           "youtube_url": "https://youtu.be/P15VSeA-ym4",
           "studio_url": "https://studio.youtube.com/video/P15VSeA-ym4/edit",
@@ -2502,7 +2502,7 @@
           "is_blocked": false
         },
         {
-          "title": "They Knew Before The Slap Landed! \ud83e\udd2f #Shorts",
+          "title": "They Knew Before The Slap Landed! 🤯 #Shorts",
           "youtube_id": "aohArspefTg",
           "youtube_url": "https://youtu.be/aohArspefTg",
           "studio_url": "https://studio.youtube.com/video/aohArspefTg/edit",
@@ -2748,7 +2748,7 @@
           "studio_url": "https://studio.youtube.com/video/DQyu5bBX5nY/edit",
           "uploaded_at": "2026-09-24T08:04:18Z",
           "thumbnail": "https://i.ytimg.com/vi/DQyu5bBX5nY/mqdefault.jpg",
-          "views": 142681,
+          "views": 142684,
           "likes": 373,
           "comments": 0,
           "is_clean": true,
@@ -2892,7 +2892,7 @@
           "studio_url": "https://studio.youtube.com/video/57rwnWsFfMw/edit",
           "uploaded_at": "2026-09-18T14:09:16.211199+00:00",
           "thumbnail": "https://i.ytimg.com/vi/57rwnWsFfMw/mqdefault.jpg",
-          "views": 41476,
+          "views": 41477,
           "likes": 208,
           "comments": 1,
           "is_clean": true,
@@ -2990,7 +2990,7 @@
           "title": "One Table One Belt And Huge Pressure #SlapFight #PowerSlap #Championship #CombatSports #FYP.",
           "uploaded_at": "2026-09-15T21:09:27Z",
           "thumbnail": "https://i.ytimg.com/vi/74d1M_ceEM0/mqdefault.jpg",
-          "views": 563442,
+          "views": 563443,
           "likes": 2003,
           "comments": 20,
           "upload_status": "processed",
@@ -3462,11 +3462,11 @@
         "region": "New York",
         "country": "United States",
         "country_code": "US",
-        "flag": "\ud83c\uddfa\ud83c\uddf8",
+        "flag": "🇺🇸",
         "org": "Datacamp Limited (New York US Gateway)",
         "datacenter": "Surfshark Dedicated US NY Gateway",
         "verify_url": "https://ipinfo.io/84.17.35.112",
-        "verified_at": "2026-10-11T13:08:28Z"
+        "verified_at": "2026-10-18T16:14:51Z"
       },
       "is_active": true,
       "is_terminated": false,
@@ -3502,16 +3502,16 @@
       "is_terminated": false,
       "is_suspended": false,
       "status_badge": "AUTOPILOT ACTIVE",
-      "status_label": "24/7 Autopilot \u2022 Scheduled",
+      "status_label": "24/7 Autopilot • Scheduled",
       "status_color": "#10B981",
       "subscribers": 33,
-      "total_views": 9299,
+      "total_views": 9279,
       "channel_total_videos": 19,
       "uploaded_count": 19,
       "drive_queue_count": 61,
       "drive_videos_count": 61,
       "runway_days": 30.5,
-      "latest_run_time": "2026-10-10T17:40:46Z",
+      "latest_run_time": "2026-10-15T22:40:51.265448+00:00",
       "latest_run_status": "success",
       "schedule": {
         "videos_per_day": 2,
@@ -3535,11 +3535,11 @@
         "region": "New York",
         "country": "United States",
         "country_code": "US",
-        "flag": "\ud83c\uddfa\ud83c\uddf8",
+        "flag": "🇺🇸",
         "org": "Datacamp Limited (New York US Gateway)",
         "datacenter": "Surfshark Dedicated US NY Gateway",
         "verify_url": "https://ipinfo.io/84.17.35.112",
-        "verified_at": "2026-10-10T17:40:46Z"
+        "verified_at": "2026-10-15T22:41:21Z"
       },
       "health": {
         "overall_score": 98,
@@ -3558,81 +3558,81 @@
         "verified_source": "YouTube Analytics API (100% Genuine)",
         "top_countries": [
           {
-            "country": "United States",
-            "code": "US",
-            "flag": "\ud83c\uddfa\ud83c\uddf8",
-            "percent": 64.5
+            "country": "Indonesia",
+            "code": "ID",
+            "flag": "🇮🇩",
+            "percent": 30.5
           },
           {
-            "country": "United Kingdom",
-            "code": "GB",
-            "flag": "\ud83c\uddec\ud83c\udde7",
-            "percent": 8.2
+            "country": "United States",
+            "code": "US",
+            "flag": "🇺🇸",
+            "percent": 24.4
+          },
+          {
+            "country": "India",
+            "code": "IN",
+            "flag": "🇮🇳",
+            "percent": 16.7
           },
           {
             "country": "Philippines",
             "code": "PH",
-            "flag": "\ud83c\uddf5\ud83c\udded",
-            "percent": 7.9
+            "flag": "🇵🇭",
+            "percent": 9.9
           },
           {
-            "country": "Australia",
-            "code": "AU",
-            "flag": "\ud83c\udde6\ud83c\uddfa",
-            "percent": 5.3
-          },
-          {
-            "country": "ZA",
-            "code": "ZA",
-            "flag": "\ud83c\udf10",
-            "percent": 3.9
+            "country": "Thailand",
+            "code": "TH",
+            "flag": "🇹🇭",
+            "percent": 5.9
           },
           {
             "country": "Other countries",
             "code": "OTHER",
-            "flag": "\ud83c\udf10",
-            "percent": 10.2
+            "flag": "🌐",
+            "percent": 12.6
           }
         ],
         "age_distribution": [
           {
-            "range": "13\u201317 years",
-            "percent": 4.4
+            "range": "13–17 years",
+            "percent": 3.4
           },
           {
-            "range": "18\u201324 years",
-            "percent": 1.4
+            "range": "18–24 years",
+            "percent": 8.1
           },
           {
-            "range": "25\u201334 years",
-            "percent": 15.6
+            "range": "25–34 years",
+            "percent": 36.9
           },
           {
-            "range": "35\u201344 years",
-            "percent": 15.1
+            "range": "35–44 years",
+            "percent": 23.2
           },
           {
-            "range": "45\u201354 years",
-            "percent": 7.3
+            "range": "45–54 years",
+            "percent": 11.1
           },
           {
-            "range": "55\u201364 years",
-            "percent": 12.6
+            "range": "55–64 years",
+            "percent": 8.5
           },
           {
             "range": "65+ years",
-            "percent": 43.6
+            "percent": 8.9
           }
         ],
         "gender": {
-          "male": 38.9,
-          "female": 61.1
+          "male": 44.7,
+          "female": 55.3
         },
-        "watch_time_hours": 49.6
+        "watch_time_hours": 49.5
       },
       "uploaded_videos": [
         {
-          "title": "He Regretted That Wine Toss Instantly \ud83c\udf77\ud83d\ude31 #Shorts",
+          "title": "He Regretted That Wine Toss Instantly 🍷😱 #Shorts",
           "youtube_id": "NxLnNebv82g",
           "youtube_url": "https://youtu.be/NxLnNebv82g",
           "studio_url": "https://studio.youtube.com/video/NxLnNebv82g/edit",
@@ -3648,7 +3648,7 @@
           "is_blocked": false
         },
         {
-          "title": "She Smiled As The Billionaire Walked Right Into Her Trap... \ud83e\udd2b #Shorts",
+          "title": "She Smiled As The Billionaire Walked Right Into Her Trap... 🤫 #Shorts",
           "youtube_id": "Tb8OKykKHXg",
           "youtube_url": "https://youtu.be/Tb8OKykKHXg",
           "studio_url": "https://studio.youtube.com/video/Tb8OKykKHXg/edit",
@@ -3664,7 +3664,7 @@
           "is_blocked": false
         },
         {
-          "title": "His Father Signed This Secret Paper... And It Destroyed Everything \ud83d\udcc4\ud83d\udca5 #Shorts",
+          "title": "His Father Signed This Secret Paper... And It Destroyed Everything 📄💥 #Shorts",
           "youtube_id": "K9KB_-xgVqY",
           "youtube_url": "https://youtu.be/K9KB_-xgVqY",
           "studio_url": "https://studio.youtube.com/video/K9KB_-xgVqY/edit",
@@ -3680,7 +3680,7 @@
           "is_blocked": false
         },
         {
-          "title": "Billionaire Begs In The Rain... Bad Idea \ud83c\udf27\ufe0f #Shorts",
+          "title": "Billionaire Begs In The Rain... Bad Idea 🌧️ #Shorts",
           "youtube_id": "Nz8kSIfr4qg",
           "youtube_url": "https://youtu.be/Nz8kSIfr4qg",
           "studio_url": "https://studio.youtube.com/video/Nz8kSIfr4qg/edit",
@@ -3696,7 +3696,7 @@
           "is_blocked": false
         },
         {
-          "title": "She Hated The Poor Maid, Until Her True Identity Dropped! \ud83d\udc51 #Shorts",
+          "title": "She Hated The Poor Maid, Until Her True Identity Dropped! 👑 #Shorts",
           "youtube_id": "e-IYyY28UaQ",
           "youtube_url": "https://youtu.be/e-IYyY28UaQ",
           "studio_url": "https://studio.youtube.com/video/e-IYyY28UaQ/edit",
@@ -3712,7 +3712,7 @@
           "is_blocked": false
         },
         {
-          "title": "They Laughed At The Poor Guy... Until This Happened! \ud83e\udd2f #Shorts",
+          "title": "They Laughed At The Poor Guy... Until This Happened! 🤯 #Shorts",
           "youtube_id": "83p5hLy5SHs",
           "youtube_url": "https://youtu.be/83p5hLy5SHs",
           "studio_url": "https://studio.youtube.com/video/83p5hLy5SHs/edit",
@@ -3728,13 +3728,13 @@
           "is_blocked": false
         },
         {
-          "title": "The DNA Test Finally Ruined Him! \ud83d\ude31 #Shorts",
+          "title": "The DNA Test Finally Ruined Him! 😱 #Shorts",
           "youtube_id": "LWj7Ti5NJ3M",
           "youtube_url": "https://youtu.be/LWj7Ti5NJ3M",
           "studio_url": "https://studio.youtube.com/video/LWj7Ti5NJ3M/edit",
           "uploaded_at": "2026-10-11T23:09:30Z",
           "thumbnail": "https://i.ytimg.com/vi/LWj7Ti5NJ3M/mqdefault.jpg",
-          "views": 1498,
+          "views": 1502,
           "likes": 54,
           "comments": 0,
           "is_clean": true,
@@ -3744,7 +3744,7 @@
           "is_blocked": false
         },
         {
-          "title": "He Locked The Door And Cut Her Off Completely! \ud83e\udd2b #Shorts",
+          "title": "He Locked The Door And Cut Her Off Completely! 🤫 #Shorts",
           "youtube_id": "DzVsMArS8H8",
           "youtube_url": "https://youtu.be/DzVsMArS8H8",
           "studio_url": "https://studio.youtube.com/video/DzVsMArS8H8/edit",
@@ -3760,7 +3760,7 @@
           "is_blocked": false
         },
         {
-          "title": "She Dropped The Ultimate Revenge On Him! \ud83e\udd76 #Shorts",
+          "title": "She Dropped The Ultimate Revenge On Him! 🥶 #Shorts",
           "youtube_id": "r6zmUGY2Alo",
           "youtube_url": "https://youtu.be/r6zmUGY2Alo",
           "studio_url": "https://studio.youtube.com/video/r6zmUGY2Alo/edit",
@@ -3938,7 +3938,7 @@
       ],
       "num": 3,
       "latest_uploaded_video": {
-        "title": "He Regretted That Wine Toss Instantly \ud83c\udf77\ud83d\ude31 #Shorts",
+        "title": "He Regretted That Wine Toss Instantly 🍷😱 #Shorts",
         "youtube_id": "NxLnNebv82g",
         "youtube_url": "https://youtu.be/NxLnNebv82g",
         "studio_url": "https://studio.youtube.com/video/NxLnNebv82g/edit",
@@ -3980,111 +3980,111 @@
       "color": "#EC4899",
       "avatar_url": "https://yt3.ggpht.com/pqIrk9GBtAR6cdyBH5C_kHNWA1jlu4VT9ZLKxdYTFW6IvVQLWbtFO3OUxrSV1Jm1SR0JAyTrAA=s240-c-k-c0x00ffffff-no-rj",
       "subscribers": 48,
-      "total_views": 77677,
-      "channel_total_videos": 75,
-      "avg_views_per_video": 1056,
+      "total_views": 77755,
+      "channel_total_videos": 76,
+      "avg_views_per_video": 1042,
       "engagement_rate": 1.0,
       "total_likes": 759,
       "analytics": {
-        "watch_time_hours": 414.3,
+        "watch_time_hours": 414.7,
         "avg_view_duration": "0:24",
         "top_countries": [
           {
             "country": "United States",
             "code": "US",
-            "flag": "\ud83c\uddfa\ud83c\uddf8",
-            "percent": 54.3
+            "flag": "🇺🇸",
+            "percent": 62.9
           },
           {
-            "country": "Indonesia",
-            "code": "ID",
-            "flag": "\ud83c\uddee\ud83c\udde9",
-            "percent": 20.7
-          },
-          {
-            "country": "India",
-            "code": "IN",
-            "flag": "\ud83c\uddee\ud83c\uddf3",
-            "percent": 5.8
-          },
-          {
-            "country": "Mexico",
-            "code": "MX",
-            "flag": "\ud83c\uddf2\ud83c\uddfd",
-            "percent": 4.8
+            "country": "United Kingdom",
+            "code": "GB",
+            "flag": "🇬🇧",
+            "percent": 10.5
           },
           {
             "country": "Philippines",
             "code": "PH",
-            "flag": "\ud83c\uddf5\ud83c\udded",
-            "percent": 4.5
+            "flag": "🇵🇭",
+            "percent": 10.3
+          },
+          {
+            "country": "India",
+            "code": "IN",
+            "flag": "🇮🇳",
+            "percent": 5.1
+          },
+          {
+            "country": "Australia",
+            "code": "AU",
+            "flag": "🇦🇺",
+            "percent": 5.0
           },
           {
             "country": "Other countries",
             "code": "OTHER",
-            "flag": "\ud83c\udf10",
-            "percent": 9.9
+            "flag": "🌐",
+            "percent": 6.2
           }
         ],
         "age_distribution": [
           {
-            "range": "13\u201317 years",
-            "percent": 7.6
+            "range": "13–17 years",
+            "percent": 8.5
           },
           {
-            "range": "18\u201324 years",
-            "percent": 7.5
+            "range": "18–24 years",
+            "percent": 6.2
           },
           {
-            "range": "25\u201334 years",
-            "percent": 36.6
+            "range": "25–34 years",
+            "percent": 34.3
           },
           {
-            "range": "35\u201344 years",
-            "percent": 27.7
+            "range": "35–44 years",
+            "percent": 27.3
           },
           {
-            "range": "45\u201354 years",
-            "percent": 9.7
+            "range": "45–54 years",
+            "percent": 8.6
           },
           {
-            "range": "55\u201364 years",
-            "percent": 6.1
+            "range": "55–64 years",
+            "percent": 6.0
           },
           {
             "range": "65+ years",
-            "percent": 4.7
+            "percent": 9.1
           }
         ],
         "gender": {
-          "male": 45.8,
-          "female": 54.2
+          "male": 33.0,
+          "female": 67.0
         },
         "traffic_sources": [
           {
             "source": "Shorts feed",
             "percent": 81.2,
-            "icon": "\ud83d\udcf1"
+            "icon": "📱"
           },
           {
             "source": "YouTube search",
             "percent": 10.6,
-            "icon": "\ud83d\udd0d"
+            "icon": "🔍"
           },
           {
             "source": "Channel pages",
             "percent": 4.4,
-            "icon": "\ud83d\udcc4"
+            "icon": "📄"
           },
           {
             "source": "Suggested videos",
             "percent": 2.5,
-            "icon": "\ud83c\udfac"
+            "icon": "🎬"
           },
           {
             "source": "External & Others",
             "percent": 1.3,
-            "icon": "\ud83d\udd17"
+            "icon": "🔗"
           }
         ],
         "subscriber_watch_time": {
@@ -4099,37 +4099,37 @@
           {
             "device": "Mobile phone",
             "percent": 94.6,
-            "icon": "\ud83d\udcf1"
+            "icon": "📱"
           },
           {
             "device": "Computer",
             "percent": 3.8,
-            "icon": "\ud83d\udcbb"
+            "icon": "💻"
           },
           {
             "device": "TV / Tablet",
             "percent": 1.6,
-            "icon": "\ud83d\udcfa"
+            "icon": "📺"
           }
         ],
-        "peak_hours": "4:30 PM \u2013 9:30 PM IST (Global Art & Creative Window)",
+        "peak_hours": "4:30 PM – 9:30 PM IST (Global Art & Creative Window)",
         "verified_source": "YouTube Analytics API (100% Genuine)"
       },
       "health": {
         "overall_score": 100,
         "verdict": "Flawless (Optimal Standing)",
         "verdict_color": "#10B981",
-        "shield_icon": "\ud83d\udee1\ufe0f",
+        "shield_icon": "🛡️",
         "strikes": {
           "count": 0,
           "max": 3,
-          "status": "0 of 3 active strikes \u2022 Channel Active & Public (YouTube API Verified)",
+          "status": "0 of 3 active strikes • Channel Active & Public (YouTube API Verified)",
           "badge": "CLEAN",
           "is_clean": true
         },
         "copyright": {
           "count": 0,
-          "status": "0 copyright restrictions across 20 videos \u2022 100% Active & Public (YouTube API Verified)",
+          "status": "0 copyright restrictions across 20 videos • 100% Active & Public (YouTube API Verified)",
           "badge": "100% CLEAN",
           "color": "#10B981",
           "is_clean": true,
@@ -4159,20 +4159,20 @@
       },
       "drive_folder_id": "1xZSez3F82y0pLTWJbQ-ybPjbOCqY1mrW",
       "drive_folder_url": "https://drive.google.com/drive/folders/1xZSez3F82y0pLTWJbQ-ybPjbOCqY1mrW",
-      "uploaded_count": 75,
-      "drive_queue_count": 73,
-      "runway_days": 36.5,
+      "uploaded_count": 76,
+      "drive_queue_count": 72,
+      "runway_days": 36.0,
       "stock_status": "Plentiful (64.0 days)",
       "stock_color": "#10B981",
       "latest_run_status": "success",
       "latest_run_time": "2026-09-20T21:06:00.223541+00:00",
       "latest_uploaded_video": {
-        "title": "They tried to stop him mid-piece... \ud83c\udfa8\ud83d\ude31 #Shorts",
-        "youtube_id": "-uaVApap13k",
-        "youtube_url": "https://youtu.be/-uaVApap13k",
-        "studio_url": "https://studio.youtube.com/video/-uaVApap13k/edit",
-        "uploaded_at": "2026-10-17T22:42:15Z",
-        "thumbnail": "https://i.ytimg.com/vi/-uaVApap13k/mqdefault.jpg",
+        "title": "They Had NO Idea What He Was Painting! 🤯 #Shorts",
+        "youtube_id": "FD0kLUNgAS8",
+        "youtube_url": "https://youtu.be/FD0kLUNgAS8",
+        "studio_url": "https://studio.youtube.com/video/FD0kLUNgAS8/edit",
+        "uploaded_at": "2026-10-18T17:03:30Z",
+        "thumbnail": "https://i.ytimg.com/vi/FD0kLUNgAS8/mqdefault.jpg",
         "views": 0,
         "likes": 0,
         "comments": 0,
@@ -4184,7 +4184,23 @@
       },
       "uploaded_videos": [
         {
-          "title": "They tried to stop him mid-piece... \ud83c\udfa8\ud83d\ude31 #Shorts",
+          "title": "They Had NO Idea What He Was Painting! 🤯 #Shorts",
+          "youtube_id": "FD0kLUNgAS8",
+          "youtube_url": "https://youtu.be/FD0kLUNgAS8",
+          "studio_url": "https://studio.youtube.com/video/FD0kLUNgAS8/edit",
+          "uploaded_at": "2026-10-18T17:03:30Z",
+          "thumbnail": "https://i.ytimg.com/vi/FD0kLUNgAS8/mqdefault.jpg",
+          "views": 0,
+          "likes": 0,
+          "comments": 0,
+          "is_clean": true,
+          "health_badge": "100% CLEAN",
+          "flag_details": "None (Clean)",
+          "channel_name": "Klyvo",
+          "is_blocked": false
+        },
+        {
+          "title": "They tried to stop him mid-piece... 🎨😱 #Shorts",
           "youtube_id": "-uaVApap13k",
           "youtube_url": "https://youtu.be/-uaVApap13k",
           "studio_url": "https://studio.youtube.com/video/-uaVApap13k/edit",
@@ -4200,7 +4216,7 @@
           "is_blocked": false
         },
         {
-          "title": "I Started With A Blank Canvas And THIS Happened! \ud83c\udfa8\u2728 #Shorts",
+          "title": "I Started With A Blank Canvas And THIS Happened! 🎨✨ #Shorts",
           "youtube_id": "uZux2UPjhnk",
           "youtube_url": "https://youtu.be/uZux2UPjhnk",
           "studio_url": "https://studio.youtube.com/video/uZux2UPjhnk/edit",
@@ -4216,7 +4232,7 @@
           "is_blocked": false
         },
         {
-          "title": "I ruined a $1000 painting to reveal THIS... \ud83c\udfa8\ud83d\ude31 #Shorts",
+          "title": "I ruined a $1000 painting to reveal THIS... 🎨😱 #Shorts",
           "youtube_id": "4uPbYvmH_OQ",
           "youtube_url": "https://youtu.be/4uPbYvmH_OQ",
           "studio_url": "https://studio.youtube.com/video/4uPbYvmH_OQ/edit",
@@ -4232,7 +4248,7 @@
           "is_blocked": false
         },
         {
-          "title": "This Painting Literally COMES ALIVE! \ud83d\ude31\ud83c\udfa8 #Shorts",
+          "title": "This Painting Literally COMES ALIVE! 😱🎨 #Shorts",
           "youtube_id": "cvj48ouQmWA",
           "youtube_url": "https://youtu.be/cvj48ouQmWA",
           "studio_url": "https://studio.youtube.com/video/cvj48ouQmWA/edit",
@@ -4248,7 +4264,7 @@
           "is_blocked": false
         },
         {
-          "title": "This Painting Was Ruined... Until THIS Happened! \ud83e\udd2f #Shorts",
+          "title": "This Painting Was Ruined... Until THIS Happened! 🤯 #Shorts",
           "youtube_id": "CX9Bp0q2AgI",
           "youtube_url": "https://youtu.be/CX9Bp0q2AgI",
           "studio_url": "https://studio.youtube.com/video/CX9Bp0q2AgI/edit",
@@ -4264,7 +4280,7 @@
           "is_blocked": false
         },
         {
-          "title": "I ruined this painting... then this happened \ud83d\ude31 #Shorts",
+          "title": "I ruined this painting... then this happened 😱 #Shorts",
           "youtube_id": "1Xq2fGiKrQI",
           "youtube_url": "https://youtu.be/1Xq2fGiKrQI",
           "studio_url": "https://studio.youtube.com/video/1Xq2fGiKrQI/edit",
@@ -4280,7 +4296,7 @@
           "is_blocked": false
         },
         {
-          "title": "I spent 100 hours on this... \ud83e\udd2f #Shorts",
+          "title": "I spent 100 hours on this... 🤯 #Shorts",
           "youtube_id": "dbrJ3XVIq_4",
           "youtube_url": "https://youtu.be/dbrJ3XVIq_4",
           "studio_url": "https://studio.youtube.com/video/dbrJ3XVIq_4/edit",
@@ -4296,7 +4312,7 @@
           "is_blocked": false
         },
         {
-          "title": "How is this even humanly possible?! \ud83e\udd2f #Shorts",
+          "title": "How is this even humanly possible?! 🤯 #Shorts",
           "youtube_id": "Q844N1FwKH0",
           "youtube_url": "https://youtu.be/Q844N1FwKH0",
           "studio_url": "https://studio.youtube.com/video/Q844N1FwKH0/edit",
@@ -4312,7 +4328,7 @@
           "is_blocked": false
         },
         {
-          "title": "This tiny brush reveals the impossible! \ud83e\udd2f #Shorts",
+          "title": "This tiny brush reveals the impossible! 🤯 #Shorts",
           "youtube_id": "xvAErQNO2us",
           "youtube_url": "https://youtu.be/xvAErQNO2us",
           "studio_url": "https://studio.youtube.com/video/xvAErQNO2us/edit",
@@ -4328,7 +4344,7 @@
           "is_blocked": false
         },
         {
-          "title": "I Painted A Tiny Dot And It Blew My Mind \ud83e\udd2f #Shorts",
+          "title": "I Painted A Tiny Dot And It Blew My Mind 🤯 #Shorts",
           "youtube_id": "pHqizEC5UzA",
           "youtube_url": "https://youtu.be/pHqizEC5UzA",
           "studio_url": "https://studio.youtube.com/video/pHqizEC5UzA/edit",
@@ -4344,7 +4360,7 @@
           "is_blocked": false
         },
         {
-          "title": "I Ruined This Painting Until The Very Last Second \ud83c\udfa8\u2728 #Shorts",
+          "title": "I Ruined This Painting Until The Very Last Second 🎨✨ #Shorts",
           "youtube_id": "KisaKsgBJ1c",
           "youtube_url": "https://youtu.be/KisaKsgBJ1c",
           "studio_url": "https://studio.youtube.com/video/KisaKsgBJ1c/edit",
@@ -4360,7 +4376,7 @@
           "is_blocked": false
         },
         {
-          "title": "This Painting Defies All Logic! \ud83e\udd2f #Shorts",
+          "title": "This Painting Defies All Logic! 🤯 #Shorts",
           "youtube_id": "55Yx5VavqL4",
           "youtube_url": "https://youtu.be/55Yx5VavqL4",
           "studio_url": "https://studio.youtube.com/video/55Yx5VavqL4/edit",
@@ -4376,7 +4392,7 @@
           "is_blocked": false
         },
         {
-          "title": "This Art Started Wrong... Then Everything Changed! \ud83c\udfa8\u2728 #Shorts",
+          "title": "This Art Started Wrong... Then Everything Changed! 🎨✨ #Shorts",
           "youtube_id": "Usvm-99RS9M",
           "youtube_url": "https://youtu.be/Usvm-99RS9M",
           "studio_url": "https://studio.youtube.com/video/Usvm-99RS9M/edit",
@@ -4392,7 +4408,7 @@
           "is_blocked": false
         },
         {
-          "title": "One tiny brush stroke changes everything! \ud83e\udd2f #Shorts",
+          "title": "One tiny brush stroke changes everything! 🤯 #Shorts",
           "youtube_id": "P6MbOR7yARQ",
           "youtube_url": "https://youtu.be/P6MbOR7yARQ",
           "studio_url": "https://studio.youtube.com/video/P6MbOR7yARQ/edit",
@@ -4408,7 +4424,7 @@
           "is_blocked": false
         },
         {
-          "title": "I Painted For 60 Seconds And Everyone Begged Me To Stop! \ud83c\udfa8\u2728 #Shorts",
+          "title": "I Painted For 60 Seconds And Everyone Begged Me To Stop! 🎨✨ #Shorts",
           "youtube_id": "IU6smK7lqdg",
           "youtube_url": "https://youtu.be/IU6smK7lqdg",
           "studio_url": "https://studio.youtube.com/video/IU6smK7lqdg/edit",
@@ -4424,7 +4440,7 @@
           "is_blocked": false
         },
         {
-          "title": "Nobody Saw This Final Stroke Coming! \ud83e\udd2f #Shorts",
+          "title": "Nobody Saw This Final Stroke Coming! 🤯 #Shorts",
           "youtube_id": "8Rz9KZ0rku0",
           "youtube_url": "https://youtu.be/8Rz9KZ0rku0",
           "studio_url": "https://studio.youtube.com/video/8Rz9KZ0rku0/edit",
@@ -4440,7 +4456,7 @@
           "is_blocked": false
         },
         {
-          "title": "I Painted TWO Worlds On One Canvas! \ud83e\udd2f #Shorts",
+          "title": "I Painted TWO Worlds On One Canvas! 🤯 #Shorts",
           "youtube_id": "6kQxnNxbDPQ",
           "youtube_url": "https://youtu.be/6kQxnNxbDPQ",
           "studio_url": "https://studio.youtube.com/video/6kQxnNxbDPQ/edit",
@@ -4456,7 +4472,7 @@
           "is_blocked": false
         },
         {
-          "title": "Nobody Expected This Canvas To Do That! \ud83e\udd2f #Shorts",
+          "title": "Nobody Expected This Canvas To Do That! 🤯 #Shorts",
           "youtube_id": "OlKhpyN3HiE",
           "youtube_url": "https://youtu.be/OlKhpyN3HiE",
           "studio_url": "https://studio.youtube.com/video/OlKhpyN3HiE/edit",
@@ -4472,7 +4488,7 @@
           "is_blocked": false
         },
         {
-          "title": "I Tried the World\u2019s Most Dangerous Art Hack \ud83c\udfa8\ud83e\udd2f #Shorts",
+          "title": "I Tried the World’s Most Dangerous Art Hack 🎨🤯 #Shorts",
           "youtube_id": "fEZvOgnVOWU",
           "youtube_url": "https://youtu.be/fEZvOgnVOWU",
           "studio_url": "https://studio.youtube.com/video/fEZvOgnVOWU/edit",
@@ -4488,7 +4504,7 @@
           "is_blocked": false
         },
         {
-          "title": "This Painting Broke The Internet! \ud83e\udd2f\ud83c\udfa8 #Shorts",
+          "title": "This Painting Broke The Internet! 🤯🎨 #Shorts",
           "youtube_id": "ujf5ysAIBTY",
           "youtube_url": "https://youtu.be/ujf5ysAIBTY",
           "studio_url": "https://studio.youtube.com/video/ujf5ysAIBTY/edit",
@@ -4504,7 +4520,7 @@
           "is_blocked": false
         },
         {
-          "title": "This Painting Defies All Logic! \ud83e\udd2f #Shorts",
+          "title": "This Painting Defies All Logic! 🤯 #Shorts",
           "youtube_id": "y0Jba3ijdIE",
           "youtube_url": "https://youtu.be/y0Jba3ijdIE",
           "studio_url": "https://studio.youtube.com/video/y0Jba3ijdIE/edit",
@@ -4520,7 +4536,7 @@
           "is_blocked": false
         },
         {
-          "title": "You won't believe what's actually under this paint! \ud83e\udd2f #Shorts",
+          "title": "You won't believe what's actually under this paint! 🤯 #Shorts",
           "youtube_id": "FQ36hkL_IXk",
           "youtube_url": "https://youtu.be/FQ36hkL_IXk",
           "studio_url": "https://studio.youtube.com/video/FQ36hkL_IXk/edit",
@@ -4536,7 +4552,7 @@
           "is_blocked": false
         },
         {
-          "title": "This ruined painting suddenly became a masterpiece... \ud83e\udd2f #Shorts",
+          "title": "This ruined painting suddenly became a masterpiece... 🤯 #Shorts",
           "youtube_id": "bsXiPhsh4XE",
           "youtube_url": "https://youtu.be/bsXiPhsh4XE",
           "studio_url": "https://studio.youtube.com/video/bsXiPhsh4XE/edit",
@@ -4552,7 +4568,7 @@
           "is_blocked": false
         },
         {
-          "title": "This Ruined Canvas Turned Into a Masterpiece! \ud83c\udfa8\u2728 #Shorts",
+          "title": "This Ruined Canvas Turned Into a Masterpiece! 🎨✨ #Shorts",
           "youtube_id": "zxY28jEeWjQ",
           "youtube_url": "https://youtu.be/zxY28jEeWjQ",
           "studio_url": "https://studio.youtube.com/video/zxY28jEeWjQ/edit",
@@ -4568,7 +4584,7 @@
           "is_blocked": false
         },
         {
-          "title": "This final stroke broke the internet \ud83e\udd2f #Shorts",
+          "title": "This final stroke broke the internet 🤯 #Shorts",
           "youtube_id": "Q_GE2RdqAGI",
           "youtube_url": "https://youtu.be/Q_GE2RdqAGI",
           "studio_url": "https://studio.youtube.com/video/Q_GE2RdqAGI/edit",
@@ -4584,7 +4600,7 @@
           "is_blocked": false
         },
         {
-          "title": "How Is This Even Possible?! \ud83e\udd2f #Shorts",
+          "title": "How Is This Even Possible?! 🤯 #Shorts",
           "youtube_id": "hZfsJgHgZPg",
           "youtube_url": "https://youtu.be/hZfsJgHgZPg",
           "studio_url": "https://studio.youtube.com/video/hZfsJgHgZPg/edit",
@@ -4600,7 +4616,7 @@
           "is_blocked": false
         },
         {
-          "title": "Nobody Believed This Was Hand Painted! \ud83e\udd2f #Shorts",
+          "title": "Nobody Believed This Was Hand Painted! 🤯 #Shorts",
           "youtube_id": "D7KChMfkPLQ",
           "youtube_url": "https://youtu.be/D7KChMfkPLQ",
           "studio_url": "https://studio.youtube.com/video/D7KChMfkPLQ/edit",
@@ -4616,7 +4632,7 @@
           "is_blocked": false
         },
         {
-          "title": "This tiny painting hides a shocking twist! \ud83e\udd2f\ud83c\udfa8 #Shorts",
+          "title": "This tiny painting hides a shocking twist! 🤯🎨 #Shorts",
           "youtube_id": "pLZQ6K6fads",
           "youtube_url": "https://youtu.be/pLZQ6K6fads",
           "studio_url": "https://studio.youtube.com/video/pLZQ6K6fads/edit",
@@ -4632,7 +4648,7 @@
           "is_blocked": false
         },
         {
-          "title": "He Ruined It... Then THIS Happened! \ud83e\udd2f #Shorts",
+          "title": "He Ruined It... Then THIS Happened! 🤯 #Shorts",
           "youtube_id": "TYlSxXQruAE",
           "youtube_url": "https://youtu.be/TYlSxXQruAE",
           "studio_url": "https://studio.youtube.com/video/TYlSxXQruAE/edit",
@@ -4648,7 +4664,7 @@
           "is_blocked": false
         },
         {
-          "title": "This painting transforms into a masterpiece \ud83e\udd2f #Shorts",
+          "title": "This painting transforms into a masterpiece 🤯 #Shorts",
           "youtube_id": "5ooSMMX_Ckc",
           "youtube_url": "https://youtu.be/5ooSMMX_Ckc",
           "studio_url": "https://studio.youtube.com/video/5ooSMMX_Ckc/edit",
@@ -4664,7 +4680,7 @@
           "is_blocked": false
         },
         {
-          "title": "He painted the city blindfolded... \ud83e\udd2f #Shorts",
+          "title": "He painted the city blindfolded... 🤯 #Shorts",
           "youtube_id": "nMf5bsD6rN4",
           "youtube_url": "https://youtu.be/nMf5bsD6rN4",
           "studio_url": "https://studio.youtube.com/video/nMf5bsD6rN4/edit",
@@ -5542,15 +5558,15 @@
         "region": "New York",
         "country": "United States",
         "country_code": "US",
-        "flag": "\ud83c\uddfa\ud83c\uddf8",
+        "flag": "🇺🇸",
         "org": "M247 Ltd (New York US Gateway)",
         "datacenter": "Surfshark Dedicated US NY Gateway",
         "verify_url": "https://ipinfo.io/146.70.186.171",
-        "verified_at": "2026-10-11T14:07:58Z"
+        "verified_at": "2026-10-17T22:42:15Z"
       },
       "is_active": true,
       "is_terminated": false,
-      "drive_videos_count": 73,
+      "drive_videos_count": 72,
       "country": "US",
       "num": 4,
       "slots": [
@@ -5582,16 +5598,16 @@
       "is_terminated": false,
       "is_suspended": false,
       "status_badge": "AUTOPILOT ACTIVE",
-      "status_label": "24/7 Autopilot \u2022 Scheduled",
+      "status_label": "24/7 Autopilot • Scheduled",
       "status_color": "#10B981",
       "subscribers": 7,
       "total_views": 941,
       "channel_total_videos": 10,
-      "uploaded_count": 8,
+      "uploaded_count": 23,
       "drive_queue_count": 65,
       "drive_videos_count": 65,
       "runway_days": 32.5,
-      "latest_run_time": "2026-10-10T17:35:59Z",
+      "latest_run_time": "2026-09-20T21:06:00.223541+00:00",
       "latest_run_status": "success",
       "schedule": {
         "videos_per_day": 2,
@@ -5615,11 +5631,11 @@
         "region": "New York",
         "country": "United States",
         "country_code": "US",
-        "flag": "\ud83c\uddfa\ud83c\uddf8",
+        "flag": "🇺🇸",
         "org": "Datacamp Limited (New York US Gateway)",
         "datacenter": "Surfshark Dedicated US NY Gateway",
         "verify_url": "https://ipinfo.io/84.17.35.112",
-        "verified_at": "2026-10-10T17:35:59Z"
+        "verified_at": "2026-10-13T23:26:48Z"
       },
       "health": {
         "overall_score": 99,
@@ -5640,71 +5656,79 @@
           {
             "country": "United States",
             "code": "US",
-            "flag": "\ud83c\uddfa\ud83c\uddf8",
-            "percent": 45.5
+            "flag": "🇺🇸",
+            "percent": 54.3
           },
           {
-            "country": "Philippines",
-            "code": "PH",
-            "flag": "\ud83c\uddf5\ud83c\udded",
-            "percent": 11.9
-          },
-          {
-            "country": "MY",
-            "code": "MY",
-            "flag": "\ud83c\udf10",
-            "percent": 8.7
-          },
-          {
-            "country": "Japan",
-            "code": "JP",
-            "flag": "\ud83c\uddef\ud83c\uddf5",
-            "percent": 8.6
+            "country": "Indonesia",
+            "code": "ID",
+            "flag": "🇮🇩",
+            "percent": 20.7
           },
           {
             "country": "India",
             "code": "IN",
-            "flag": "\ud83c\uddee\ud83c\uddf3",
-            "percent": 7.7
+            "flag": "🇮🇳",
+            "percent": 5.8
+          },
+          {
+            "country": "Mexico",
+            "code": "MX",
+            "flag": "🇲🇽",
+            "percent": 4.8
+          },
+          {
+            "country": "Philippines",
+            "code": "PH",
+            "flag": "🇵🇭",
+            "percent": 4.5
           },
           {
             "country": "Other countries",
             "code": "OTHER",
-            "flag": "\ud83c\udf10",
-            "percent": 17.6
+            "flag": "🌐",
+            "percent": 9.9
           }
         ],
         "age_distribution": [
           {
-            "range": "25\u201334 years",
-            "percent": 4.9
+            "range": "13–17 years",
+            "percent": 7.6
           },
           {
-            "range": "35\u201344 years",
-            "percent": 8.9
+            "range": "18–24 years",
+            "percent": 7.5
           },
           {
-            "range": "45\u201354 years",
-            "percent": 10.0
+            "range": "25–34 years",
+            "percent": 36.6
           },
           {
-            "range": "55\u201364 years",
-            "percent": 21.8
+            "range": "35–44 years",
+            "percent": 27.7
+          },
+          {
+            "range": "45–54 years",
+            "percent": 9.7
+          },
+          {
+            "range": "55–64 years",
+            "percent": 6.1
           },
           {
             "range": "65+ years",
-            "percent": 54.4
+            "percent": 4.7
           }
         ],
         "gender": {
-          "male": 36.7,
-          "female": 63.3
+          "male": 45.8,
+          "female": 54.2
         },
         "watch_time_hours": 5.0
       },
       "uploaded_videos": [
         {
-          "title": "She Lied About Being Broke... Until He Checked Her Account! \ud83e\udd2f #Shorts",
+          "title": "She Lied About Being Broke... Until He Checked Her Account! 🤯 #Shorts",
           "youtube_id": "IfZFEIPEBzc",
           "youtube_url": "https://youtu.be/IfZFEIPEBzc",
           "studio_url": "https://studio.youtube.com/video/IfZFEIPEBzc/edit",
@@ -5720,7 +5744,7 @@
           "is_blocked": false
         },
         {
-          "title": "His secret finally destroyed him... \ud83d\ude2d\ud83d\udc94 #Shorts",
+          "title": "His secret finally destroyed him... 😭💔 #Shorts",
           "youtube_id": "bxxHgnRro2s",
           "youtube_url": "https://youtu.be/bxxHgnRro2s",
           "studio_url": "https://studio.youtube.com/video/bxxHgnRro2s/edit",
@@ -5736,7 +5760,7 @@
           "is_blocked": false
         },
         {
-          "title": "He begged in the pouring rain... then she smiled \ud83e\udd76\ud83d\udc94 #Shorts",
+          "title": "He begged in the pouring rain... then she smiled 🥶💔 #Shorts",
           "youtube_id": "aOkfsSDLqsA",
           "youtube_url": "https://youtu.be/aOkfsSDLqsA",
           "studio_url": "https://studio.youtube.com/video/aOkfsSDLqsA/edit",
@@ -5830,6 +5854,246 @@
           "flag_details": "None (Clean)",
           "channel_name": "CineBite Drama",
           "is_blocked": false
+        },
+        {
+          "title": "He Makes Street Painting Look Like Magic #StreetArt #Painting #ArtReels #ViralArt #Artist.",
+          "youtube_id": "6Hg0FXnEKvI",
+          "youtube_url": "https://youtu.be/6Hg0FXnEKvI",
+          "studio_url": "https://studio.youtube.com/video/6Hg0FXnEKvI/edit",
+          "uploaded_at": "2026-09-19T14:06:13.185573+00:00",
+          "thumbnail": "https://i.ytimg.com/vi/6Hg0FXnEKvI/mqdefault.jpg",
+          "views": 1469,
+          "likes": 10,
+          "comments": 1,
+          "is_clean": true,
+          "health_badge": "100% CLEAN",
+          "flag_details": "None (Clean)",
+          "channel_name": "CineBite Drama",
+          "is_blocked": false
+        },
+        {
+          "title": "He Makes Every Brushstroke Count #Painting #Artist #ArtReels #Satisfying #Art.",
+          "youtube_id": "T1QpAfRhEso",
+          "youtube_url": "https://youtu.be/T1QpAfRhEso",
+          "studio_url": "https://studio.youtube.com/video/T1QpAfRhEso/edit",
+          "uploaded_at": "2026-09-18T21:06:19.841486+00:00",
+          "thumbnail": "https://i.ytimg.com/vi/T1QpAfRhEso/mqdefault.jpg",
+          "views": 1076,
+          "likes": 12,
+          "comments": 0,
+          "is_clean": true,
+          "health_badge": "100% CLEAN",
+          "flag_details": "None (Clean)",
+          "channel_name": "CineBite Drama",
+          "is_blocked": false
+        },
+        {
+          "title": "He Made A Famous Building Look Effortless #Painting #Artist #ArtReels #ViralArt #Creative.",
+          "youtube_id": "GmJiC5iGDfU",
+          "youtube_url": "https://youtu.be/GmJiC5iGDfU",
+          "studio_url": "https://studio.youtube.com/video/GmJiC5iGDfU/edit",
+          "uploaded_at": "2026-09-18T14:06:32.439790+00:00",
+          "thumbnail": "https://i.ytimg.com/vi/GmJiC5iGDfU/mqdefault.jpg",
+          "views": 165,
+          "likes": 4,
+          "comments": 0,
+          "is_clean": true,
+          "health_badge": "100% CLEAN",
+          "flag_details": "None (Clean)",
+          "channel_name": "CineBite Drama",
+          "is_blocked": false
+        },
+        {
+          "title": "He Is Painting The City One Brushstroke At A Time #StreetArt #Painting #Artist #ArtReels #Viral.",
+          "youtube_id": "orIt3mT1XjU",
+          "youtube_url": "https://youtu.be/orIt3mT1XjU",
+          "studio_url": "https://studio.youtube.com/video/orIt3mT1XjU/edit",
+          "uploaded_at": "2026-09-17T21:06:22.199054+00:00",
+          "thumbnail": "https://i.ytimg.com/vi/orIt3mT1XjU/mqdefault.jpg",
+          "views": 1334,
+          "likes": 20,
+          "comments": 0,
+          "is_clean": true,
+          "health_badge": "100% CLEAN",
+          "flag_details": "None (Clean)",
+          "channel_name": "CineBite Drama",
+          "is_blocked": false
+        },
+        {
+          "title": "He Found The Perfect Spot To Paint This View #StreetArt #Painting #Artist #ArtReels #Creative.",
+          "youtube_id": "88cO37UjZ7w",
+          "youtube_url": "https://youtu.be/88cO37UjZ7w",
+          "studio_url": "https://studio.youtube.com/video/88cO37UjZ7w/edit",
+          "uploaded_at": "2026-09-17T14:07:17.401386+00:00",
+          "thumbnail": "https://i.ytimg.com/vi/88cO37UjZ7w/mqdefault.jpg",
+          "views": 2095,
+          "likes": 35,
+          "comments": 0,
+          "is_clean": true,
+          "health_badge": "100% CLEAN",
+          "flag_details": "None (Clean)",
+          "channel_name": "CineBite Drama",
+          "is_blocked": false
+        },
+        {
+          "title": "He Captured The Entire Scene On One Canvas #Painting #Artist #ArtReels #StreetArt #Viral.",
+          "youtube_id": "oHD72N-B63M",
+          "youtube_url": "https://youtu.be/oHD72N-B63M",
+          "studio_url": "https://studio.youtube.com/video/oHD72N-B63M/edit",
+          "uploaded_at": "2026-09-16T21:06:34.536380+00:00",
+          "thumbnail": "https://i.ytimg.com/vi/oHD72N-B63M/mqdefault.jpg",
+          "views": 1320,
+          "likes": 6,
+          "comments": 0,
+          "is_clean": true,
+          "health_badge": "100% CLEAN",
+          "flag_details": "None (Clean)",
+          "channel_name": "CineBite Drama",
+          "is_blocked": false
+        },
+        {
+          "title": "He Captured A Famous Landmark With Just Paint #Painting #Artist #Architecture #ArtReels #ViralArt.",
+          "youtube_id": "dIjwAvkghGo",
+          "youtube_url": "https://youtu.be/dIjwAvkghGo",
+          "studio_url": "https://studio.youtube.com/video/dIjwAvkghGo/edit",
+          "uploaded_at": "2026-09-16T14:07:32.568030+00:00",
+          "thumbnail": "https://i.ytimg.com/vi/dIjwAvkghGo/mqdefault.jpg",
+          "views": 146,
+          "likes": 3,
+          "comments": 0,
+          "is_clean": true,
+          "health_badge": "100% CLEAN",
+          "flag_details": "None (Clean)",
+          "channel_name": "CineBite Drama",
+          "is_blocked": false
+        },
+        {
+          "title": "He Added One Tiny Detail And Changed Everything #Painting #ArtReveal #Satisfying #Artist #ArtReels.",
+          "youtube_id": "b373gjPjUMk",
+          "youtube_url": "https://youtu.be/b373gjPjUMk",
+          "studio_url": "https://studio.youtube.com/video/b373gjPjUMk/edit",
+          "uploaded_at": "2026-09-15T21:07:20.092999+00:00",
+          "thumbnail": "https://i.ytimg.com/vi/b373gjPjUMk/mqdefault.jpg",
+          "views": 1390,
+          "likes": 12,
+          "comments": 0,
+          "is_clean": true,
+          "health_badge": "100% CLEAN",
+          "flag_details": "None (Clean)",
+          "channel_name": "CineBite Drama",
+          "is_blocked": false
+        },
+        {
+          "title": "From Street View To Finished Artwork #StreetArt #Painting #ArtTransformation #ArtReels #Artist.",
+          "youtube_id": "Enyy2nPWFzM",
+          "youtube_url": "https://youtu.be/Enyy2nPWFzM",
+          "studio_url": "https://studio.youtube.com/video/Enyy2nPWFzM/edit",
+          "uploaded_at": "2026-09-15T14:06:46.063198+00:00",
+          "thumbnail": "https://i.ytimg.com/vi/Enyy2nPWFzM/mqdefault.jpg",
+          "views": 1498,
+          "likes": 18,
+          "comments": 0,
+          "is_clean": true,
+          "health_badge": "100% CLEAN",
+          "flag_details": "None (Clean)",
+          "channel_name": "CineBite Drama",
+          "is_blocked": false
+        },
+        {
+          "title": "From Simple Lines To A Beautiful Scene #Drawing #Painting #ArtReels #Artist #ArtTransformation.",
+          "youtube_id": "BgdgQm7cQHA",
+          "youtube_url": "https://youtu.be/BgdgQm7cQHA",
+          "studio_url": "https://studio.youtube.com/video/BgdgQm7cQHA/edit",
+          "uploaded_at": "2026-09-14T21:06:28.503403+00:00",
+          "thumbnail": "https://i.ytimg.com/vi/BgdgQm7cQHA/mqdefault.jpg",
+          "views": 63,
+          "likes": 2,
+          "comments": 0,
+          "is_clean": true,
+          "health_badge": "100% CLEAN",
+          "flag_details": "None (Clean)",
+          "channel_name": "CineBite Drama",
+          "is_blocked": false
+        },
+        {
+          "title": "From First Stroke To Final Masterpiece #Painting #ArtReels #Artist #ArtTransformation #Satisfying.",
+          "youtube_id": "8VOPtyImxfg",
+          "youtube_url": "https://youtu.be/8VOPtyImxfg",
+          "studio_url": "https://studio.youtube.com/video/8VOPtyImxfg/edit",
+          "uploaded_at": "2026-09-14T14:07:14.260490+00:00",
+          "thumbnail": "https://i.ytimg.com/vi/8VOPtyImxfg/mqdefault.jpg",
+          "views": 6,
+          "likes": 0,
+          "comments": 0,
+          "is_clean": true,
+          "health_badge": "100% CLEAN",
+          "flag_details": "None (Clean)",
+          "channel_name": "CineBite Drama",
+          "is_blocked": false
+        },
+        {
+          "title": "From First Color To Final Masterpiece #Painting #ArtTransformation #ArtReels #Artist #Viral.",
+          "youtube_id": "3ee4FdtH10w",
+          "youtube_url": "https://youtu.be/3ee4FdtH10w",
+          "studio_url": "https://studio.youtube.com/video/3ee4FdtH10w/edit",
+          "uploaded_at": "2026-09-13T21:06:31.910106+00:00",
+          "thumbnail": "https://i.ytimg.com/vi/3ee4FdtH10w/mqdefault.jpg",
+          "views": 1704,
+          "likes": 17,
+          "comments": 0,
+          "is_clean": true,
+          "health_badge": "100% CLEAN",
+          "flag_details": "None (Clean)",
+          "channel_name": "CineBite Drama",
+          "is_blocked": false
+        },
+        {
+          "title": "From Empty Canvas To A Beautiful Landmark #Painting #ArtReels #ArtTransformation #Artist #ViralArt.",
+          "youtube_id": "vvKBBEExuYQ",
+          "youtube_url": "https://youtu.be/vvKBBEExuYQ",
+          "studio_url": "https://studio.youtube.com/video/vvKBBEExuYQ/edit",
+          "uploaded_at": "2026-09-13T14:15:17.788975+00:00",
+          "thumbnail": "https://i.ytimg.com/vi/vvKBBEExuYQ/mqdefault.jpg",
+          "views": 142,
+          "likes": 3,
+          "comments": 0,
+          "is_clean": true,
+          "health_badge": "100% CLEAN",
+          "flag_details": "None (Clean)",
+          "channel_name": "CineBite Drama",
+          "is_blocked": false
+        },
+        {
+          "title": "Everyone Wanted To See The Finished Canvas #Painting #ArtReels #ArtReveal #Artist #Viral.",
+          "youtube_id": "ZlNJrHYRPoU",
+          "youtube_url": "https://youtu.be/ZlNJrHYRPoU",
+          "studio_url": "https://studio.youtube.com/video/ZlNJrHYRPoU/edit",
+          "uploaded_at": "2026-09-12T22:14:55.497215+00:00",
+          "thumbnail": "https://i.ytimg.com/vi/ZlNJrHYRPoU/mqdefault.jpg",
+          "views": 1710,
+          "likes": 26,
+          "comments": 1,
+          "is_clean": true,
+          "health_badge": "100% CLEAN",
+          "flag_details": "None (Clean)",
+          "channel_name": "CineBite Drama",
+          "is_blocked": false
+        },
+        {
+          "title": "Everyone Stopped To Watch This Artist Work #StreetArt #Artist #Painting #ArtReels #Viral.",
+          "youtube_id": "E7vzDp7HUIM",
+          "youtube_url": "https://youtu.be/E7vzDp7HUIM",
+          "studio_url": "https://studio.youtube.com/video/E7vzDp7HUIM/edit",
+          "uploaded_at": "2026-09-12T18:27:55.150716+00:00",
+          "thumbnail": "https://i.ytimg.com/vi/E7vzDp7HUIM/mqdefault.jpg",
+          "views": 2836,
+          "likes": 65,
+          "comments": 1,
+          "is_clean": true,
+          "health_badge": "100% CLEAN",
+          "flag_details": "None (Clean)",
+          "channel_name": "CineBite Drama",
+          "is_blocked": false
         }
       ],
       "num": 5,
@@ -5847,7 +6111,7 @@
       ],
       "upload_schedule": "22:40 IST & 05:10 IST",
       "latest_uploaded_video": {
-        "title": "She Lied About Being Broke... Until He Checked Her Account! \ud83e\udd2f #Shorts",
+        "title": "She Lied About Being Broke... Until He Checked Her Account! 🤯 #Shorts",
         "youtube_id": "IfZFEIPEBzc",
         "youtube_url": "https://youtu.be/IfZFEIPEBzc",
         "studio_url": "https://studio.youtube.com/video/IfZFEIPEBzc/edit",
@@ -5862,8 +6126,8 @@
         "channel_name": "CineBite Drama",
         "is_blocked": false
       },
-      "total_likes": 22,
-      "avg_views_per_video": 118
+      "total_likes": 255,
+      "avg_views_per_video": 778
     },
     {
       "id": "channel_6",
@@ -5880,7 +6144,7 @@
       "is_terminated": false,
       "is_suspended": false,
       "status_badge": "AUTOPILOT ACTIVE",
-      "status_label": "24/7 Autopilot \u2022 Scheduled",
+      "status_label": "24/7 Autopilot • Scheduled",
       "status_color": "#10B981",
       "subscribers": 0,
       "total_views": 28,
@@ -5913,11 +6177,11 @@
         "region": "New York",
         "country": "United States",
         "country_code": "US",
-        "flag": "\ud83c\uddfa\ud83c\uddf8",
+        "flag": "🇺🇸",
         "org": "Datacamp Limited (New York US Gateway)",
         "datacenter": "Surfshark Dedicated US NY Gateway",
         "verify_url": "https://ipinfo.io/84.17.35.112",
-        "verified_at": "2026-10-10T17:37:02Z"
+        "verified_at": "2026-10-17T00:07:50Z"
       },
       "health": {
         "overall_score": 98,
@@ -5938,49 +6202,49 @@
           {
             "country": "United States",
             "code": "US",
-            "flag": "\ud83c\uddfa\ud83c\uddf8",
+            "flag": "🇺🇸",
             "percent": 56.4
           },
           {
             "country": "Canada",
             "code": "CA",
-            "flag": "\ud83c\udde8\ud83c\udde6",
+            "flag": "🇨🇦",
             "percent": 13.8
           },
           {
             "country": "United Kingdom",
             "code": "GB",
-            "flag": "\ud83c\uddec\ud83c\udde7",
+            "flag": "🇬🇧",
             "percent": 11.2
           },
           {
             "country": "Australia",
             "code": "AU",
-            "flag": "\ud83c\udde6\ud83c\uddfa",
+            "flag": "🇦🇺",
             "percent": 6.5
           },
           {
             "country": "Other countries",
             "code": "OTHER",
-            "flag": "\ud83c\udf10",
+            "flag": "🌐",
             "percent": 12.1
           }
         ],
         "age_distribution": [
           {
-            "range": "18\u201324 years",
+            "range": "18–24 years",
             "percent": 39.5
           },
           {
-            "range": "25\u201334 years",
+            "range": "25–34 years",
             "percent": 37.0
           },
           {
-            "range": "35\u201344 years",
+            "range": "35–44 years",
             "percent": 14.2
           },
           {
-            "range": "45\u201354 years",
+            "range": "45–54 years",
             "percent": 6.0
           },
           {
@@ -5996,7 +6260,7 @@
       },
       "uploaded_videos": [
         {
-          "title": "She Checked The DNA Results Too Late! \ud83d\ude31 #Shorts",
+          "title": "She Checked The DNA Results Too Late! 😱 #Shorts",
           "youtube_id": "NHqRUWHcCqc",
           "youtube_url": "https://youtu.be/NHqRUWHcCqc",
           "studio_url": "https://studio.youtube.com/video/NHqRUWHcCqc/edit",
@@ -6012,7 +6276,7 @@
           "is_blocked": false
         },
         {
-          "title": "He Thought She Was Trapped Forever! \ud83d\ude31 #Shorts",
+          "title": "He Thought She Was Trapped Forever! 😱 #Shorts",
           "youtube_id": "etewMZp8bNU",
           "youtube_url": "https://youtu.be/etewMZp8bNU",
           "studio_url": "https://studio.youtube.com/video/etewMZp8bNU/edit",
@@ -6028,7 +6292,7 @@
           "is_blocked": false
         },
         {
-          "title": "She Walked Out And Left Everything Behind \ud83d\udeaa\ud83d\udc94 #Shorts",
+          "title": "She Walked Out And Left Everything Behind 🚪💔 #Shorts",
           "youtube_id": "-kVyiZzVuaA",
           "youtube_url": "https://youtu.be/-kVyiZzVuaA",
           "studio_url": "https://studio.youtube.com/video/-kVyiZzVuaA/edit",
@@ -6044,7 +6308,7 @@
           "is_blocked": false
         },
         {
-          "title": "She exposed his biggest lie in front of everyone! \ud83d\ude31 #Shorts",
+          "title": "She exposed his biggest lie in front of everyone! 😱 #Shorts",
           "youtube_id": "1REu_WBTFiw",
           "youtube_url": "https://youtu.be/1REu_WBTFiw",
           "studio_url": "https://studio.youtube.com/video/1REu_WBTFiw/edit",
@@ -6235,7 +6499,7 @@
       ],
       "upload_schedule": "23:05 IST & 05:35 IST",
       "latest_uploaded_video": {
-        "title": "She Checked The DNA Results Too Late! \ud83d\ude31 #Shorts",
+        "title": "She Checked The DNA Results Too Late! 😱 #Shorts",
         "youtube_id": "NHqRUWHcCqc",
         "youtube_url": "https://youtu.be/NHqRUWHcCqc",
         "studio_url": "https://studio.youtube.com/video/NHqRUWHcCqc/edit",
@@ -6268,7 +6532,7 @@
       "is_terminated": false,
       "is_suspended": false,
       "status_badge": "AUTOPILOT ACTIVE",
-      "status_label": "24/7 Autopilot \u2022 Scheduled",
+      "status_label": "24/7 Autopilot • Scheduled",
       "status_color": "#10B981",
       "subscribers": 0,
       "total_views": 161,
@@ -6301,11 +6565,11 @@
         "region": "California",
         "country": "United States",
         "country_code": "US",
-        "flag": "\ud83c\uddfa\ud83c\uddf8",
+        "flag": "🇺🇸",
         "org": "Datacamp Limited (Los Angeles US Gateway)",
         "datacenter": "Surfshark Dedicated US LA Gateway",
         "verify_url": "https://ipinfo.io/169.150.203.199",
-        "verified_at": "2026-10-10T17:36:11Z"
+        "verified_at": "2026-10-18T00:26:43Z"
       },
       "health": {
         "overall_score": 98,
@@ -6326,49 +6590,49 @@
           {
             "country": "United States",
             "code": "US",
-            "flag": "\ud83c\uddfa\ud83c\uddf8",
+            "flag": "🇺🇸",
             "percent": 56.4
           },
           {
             "country": "Canada",
             "code": "CA",
-            "flag": "\ud83c\udde8\ud83c\udde6",
+            "flag": "🇨🇦",
             "percent": 13.8
           },
           {
             "country": "United Kingdom",
             "code": "GB",
-            "flag": "\ud83c\uddec\ud83c\udde7",
+            "flag": "🇬🇧",
             "percent": 11.2
           },
           {
             "country": "Australia",
             "code": "AU",
-            "flag": "\ud83c\udde6\ud83c\uddfa",
+            "flag": "🇦🇺",
             "percent": 6.5
           },
           {
             "country": "Other countries",
             "code": "OTHER",
-            "flag": "\ud83c\udf10",
+            "flag": "🌐",
             "percent": 12.1
           }
         ],
         "age_distribution": [
           {
-            "range": "18\u201324 years",
+            "range": "18–24 years",
             "percent": 39.5
           },
           {
-            "range": "25\u201334 years",
+            "range": "25–34 years",
             "percent": 37.0
           },
           {
-            "range": "35\u201344 years",
+            "range": "35–44 years",
             "percent": 14.2
           },
           {
-            "range": "45\u201354 years",
+            "range": "45–54 years",
             "percent": 6.0
           },
           {
@@ -6384,7 +6648,7 @@
       },
       "uploaded_videos": [
         {
-          "title": "This foam bed transformation is illegal levels of cozy \ud83d\udecc\u2728 #Shorts",
+          "title": "This foam bed transformation is illegal levels of cozy 🛌✨ #Shorts",
           "youtube_id": "W5IQvJBnOOI",
           "youtube_url": "https://youtu.be/W5IQvJBnOOI",
           "studio_url": "https://studio.youtube.com/video/W5IQvJBnOOI/edit",
@@ -6400,7 +6664,7 @@
           "is_blocked": false
         },
         {
-          "title": "I Turned My Bed Into A Secret Space Pod?! \ud83d\udecc\u2728 #Shorts",
+          "title": "I Turned My Bed Into A Secret Space Pod?! 🛌✨ #Shorts",
           "youtube_id": "rg_lUhDjlZw",
           "youtube_url": "https://youtu.be/rg_lUhDjlZw",
           "studio_url": "https://studio.youtube.com/video/rg_lUhDjlZw/edit",
@@ -6591,7 +6855,7 @@
       ],
       "upload_schedule": "23:30 IST & 06:00 IST",
       "latest_uploaded_video": {
-        "title": "This foam bed transformation is illegal levels of cozy \ud83d\udecc\u2728 #Shorts",
+        "title": "This foam bed transformation is illegal levels of cozy 🛌✨ #Shorts",
         "youtube_id": "W5IQvJBnOOI",
         "youtube_url": "https://youtu.be/W5IQvJBnOOI",
         "studio_url": "https://studio.youtube.com/video/W5IQvJBnOOI/edit",
@@ -6624,10 +6888,10 @@
       "is_terminated": false,
       "is_suspended": false,
       "status_badge": "AUTOPILOT ACTIVE",
-      "status_label": "24/7 Autopilot \u2022 Scheduled",
+      "status_label": "24/7 Autopilot • Scheduled",
       "status_color": "#10B981",
       "subscribers": 246,
-      "total_views": 76138,
+      "total_views": 75689,
       "channel_total_videos": 17,
       "uploaded_count": 17,
       "drive_queue_count": 24,
@@ -6657,11 +6921,11 @@
         "region": "New York",
         "country": "United States",
         "country_code": "US",
-        "flag": "\ud83c\uddfa\ud83c\uddf8",
+        "flag": "🇺🇸",
         "org": "Datacamp Limited (New York US Gateway)",
         "datacenter": "Surfshark Dedicated US NY Gateway",
         "verify_url": "https://ipinfo.io/84.17.35.112",
-        "verified_at": "2026-10-10T17:37:07Z"
+        "verified_at": "2026-10-17T18:34:09Z"
       },
       "health": {
         "overall_score": 98,
@@ -6682,79 +6946,75 @@
           {
             "country": "United States",
             "code": "US",
-            "flag": "\ud83c\uddfa\ud83c\uddf8",
-            "percent": 54.3
+            "flag": "🇺🇸",
+            "percent": 74.0
           },
           {
-            "country": "India",
-            "code": "IN",
-            "flag": "\ud83c\uddee\ud83c\uddf3",
-            "percent": 8.6
-          },
-          {
-            "country": "Philippines",
-            "code": "PH",
-            "flag": "\ud83c\uddf5\ud83c\udded",
-            "percent": 7.4
+            "country": "Indonesia",
+            "code": "ID",
+            "flag": "🇮🇩",
+            "percent": 7.0
           },
           {
             "country": "United Kingdom",
             "code": "GB",
-            "flag": "\ud83c\uddec\ud83c\udde7",
-            "percent": 7.3
+            "flag": "🇬🇧",
+            "percent": 4.3
           },
           {
-            "country": "Germany",
-            "code": "DE",
-            "flag": "\ud83c\udde9\ud83c\uddea",
-            "percent": 7.3
+            "country": "India",
+            "code": "IN",
+            "flag": "🇮🇳",
+            "percent": 4.0
+          },
+          {
+            "country": "Canada",
+            "code": "CA",
+            "flag": "🇨🇦",
+            "percent": 3.7
           },
           {
             "country": "Other countries",
             "code": "OTHER",
-            "flag": "\ud83c\udf10",
-            "percent": 15.1
+            "flag": "🌐",
+            "percent": 7.0
           }
         ],
         "age_distribution": [
           {
-            "range": "13\u201317 years",
-            "percent": 1.9
+            "range": "18–24 years",
+            "percent": 1.6
           },
           {
-            "range": "18\u201324 years",
-            "percent": 0.4
+            "range": "25–34 years",
+            "percent": 27.4
           },
           {
-            "range": "25\u201334 years",
-            "percent": 5.0
+            "range": "35–44 years",
+            "percent": 24.8
           },
           {
-            "range": "35\u201344 years",
-            "percent": 8.9
+            "range": "45–54 years",
+            "percent": 16.8
           },
           {
-            "range": "45\u201354 years",
-            "percent": 13.0
-          },
-          {
-            "range": "55\u201364 years",
-            "percent": 20.6
+            "range": "55–64 years",
+            "percent": 15.7
           },
           {
             "range": "65+ years",
-            "percent": 50.2
+            "percent": 13.8
           }
         ],
         "gender": {
-          "male": 10.2,
-          "female": 89.8
+          "male": 88.6,
+          "female": 11.4
         },
-        "watch_time_hours": 406.1
+        "watch_time_hours": 403.7
       },
       "uploaded_videos": [
         {
-          "title": "He signed the wrong paper... and lost everything \ud83d\udc80 #Shorts",
+          "title": "He signed the wrong paper... and lost everything 💀 #Shorts",
           "youtube_id": "2vhJZ-WLyoc",
           "youtube_url": "https://youtu.be/2vhJZ-WLyoc",
           "studio_url": "https://studio.youtube.com/video/2vhJZ-WLyoc/edit",
@@ -6770,13 +7030,13 @@
           "is_blocked": false
         },
         {
-          "title": "He Begged For Mercy In The Rain... \ud83d\ude2d\ud83d\udc94 #Shorts",
+          "title": "He Begged For Mercy In The Rain... 😭💔 #Shorts",
           "youtube_id": "e-kI9gBUViE",
           "youtube_url": "https://youtu.be/e-kI9gBUViE",
           "studio_url": "https://studio.youtube.com/video/e-kI9gBUViE/edit",
           "uploaded_at": "2026-10-17T00:49:08Z",
           "thumbnail": "https://i.ytimg.com/vi/e-kI9gBUViE/mqdefault.jpg",
-          "views": 340,
+          "views": 341,
           "likes": 21,
           "comments": 0,
           "is_clean": true,
@@ -6786,13 +7046,13 @@
           "is_blocked": false
         },
         {
-          "title": "She Hiding This From The Billionaire Boss?! \ud83d\ude31 #Shorts",
+          "title": "She Hiding This From The Billionaire Boss?! 😱 #Shorts",
           "youtube_id": "iUejFys5ICs",
           "youtube_url": "https://youtu.be/iUejFys5ICs",
           "studio_url": "https://studio.youtube.com/video/iUejFys5ICs/edit",
           "uploaded_at": "2026-10-16T00:50:18Z",
           "thumbnail": "https://i.ytimg.com/vi/iUejFys5ICs/mqdefault.jpg",
-          "views": 166,
+          "views": 167,
           "likes": 6,
           "comments": 0,
           "is_clean": true,
@@ -6802,7 +7062,7 @@
           "is_blocked": false
         },
         {
-          "title": "They Laughed At Him... Until Sirens Echoed \ud83d\udea8\ud83d\udd25 #Shorts",
+          "title": "They Laughed At Him... Until Sirens Echoed 🚨🔥 #Shorts",
           "youtube_id": "xF_eaMIU8f0",
           "youtube_url": "https://youtu.be/xF_eaMIU8f0",
           "studio_url": "https://studio.youtube.com/video/xF_eaMIU8f0/edit",
@@ -6818,7 +7078,7 @@
           "is_blocked": false
         },
         {
-          "title": "The Doctor Lying About The Test Results... \ud83d\uded1 #Shorts",
+          "title": "The Doctor Lying About The Test Results... 🛑 #Shorts",
           "youtube_id": "jrYOitF0L6U",
           "youtube_url": "https://youtu.be/jrYOitF0L6U",
           "studio_url": "https://studio.youtube.com/video/jrYOitF0L6U/edit",
@@ -6834,7 +7094,7 @@
           "is_blocked": false
         },
         {
-          "title": "He Locked The Door And Trapped Her... \ud83e\udd2b #Shorts",
+          "title": "He Locked The Door And Trapped Her... 🤫 #Shorts",
           "youtube_id": "4Dta7tHa-Og",
           "youtube_url": "https://youtu.be/4Dta7tHa-Og",
           "studio_url": "https://studio.youtube.com/video/4Dta7tHa-Og/edit",
@@ -6850,7 +7110,7 @@
           "is_blocked": false
         },
         {
-          "title": "She Dared To Walk Away From A Boss... \ud83d\ude33 #Shorts",
+          "title": "She Dared To Walk Away From A Boss... 😳 #Shorts",
           "youtube_id": "nhaTw5-7rZc",
           "youtube_url": "https://youtu.be/nhaTw5-7rZc",
           "studio_url": "https://studio.youtube.com/video/nhaTw5-7rZc/edit",
@@ -6866,7 +7126,7 @@
           "is_blocked": false
         },
         {
-          "title": "His Dark Secret Was Just Revealed Live! \ud83e\udd2b #Shorts",
+          "title": "His Dark Secret Was Just Revealed Live! 🤫 #Shorts",
           "youtube_id": "U342vwjs6c8",
           "youtube_url": "https://youtu.be/U342vwjs6c8",
           "studio_url": "https://studio.youtube.com/video/U342vwjs6c8/edit",
@@ -6968,7 +7228,7 @@
           "studio_url": "https://studio.youtube.com/video/MQZ8gXWkNis/edit",
           "uploaded_at": "2026-09-28T08:26:01Z",
           "thumbnail": "https://i.ytimg.com/vi/MQZ8gXWkNis/mqdefault.jpg",
-          "views": 61943,
+          "views": 61945,
           "likes": 1380,
           "comments": 2,
           "is_clean": true,
@@ -7041,7 +7301,7 @@
       ],
       "upload_schedule": "23:55 IST & 06:25 IST",
       "latest_uploaded_video": {
-        "title": "He signed the wrong paper... and lost everything \ud83d\udc80 #Shorts",
+        "title": "He signed the wrong paper... and lost everything 💀 #Shorts",
         "youtube_id": "2vhJZ-WLyoc",
         "youtube_url": "https://youtu.be/2vhJZ-WLyoc",
         "studio_url": "https://studio.youtube.com/video/2vhJZ-WLyoc/edit",
@@ -7074,7 +7334,7 @@
       "is_terminated": false,
       "is_suspended": false,
       "status_badge": "AUTOPILOT ACTIVE",
-      "status_label": "24/7 Autopilot \u2022 Scheduled",
+      "status_label": "24/7 Autopilot • Scheduled",
       "status_color": "#10B981",
       "subscribers": 12,
       "total_views": 1622,
@@ -7107,11 +7367,11 @@
         "region": "New York",
         "country": "United States",
         "country_code": "US",
-        "flag": "\ud83c\uddfa\ud83c\uddf8",
+        "flag": "🇺🇸",
         "org": "Datacamp Limited (New York US Gateway)",
         "datacenter": "Surfshark Dedicated US NY Gateway",
         "verify_url": "https://ipinfo.io/84.17.35.112",
-        "verified_at": "2026-10-10T17:36:44Z"
+        "verified_at": "2026-10-18T01:32:24Z"
       },
       "health": {
         "overall_score": 98,
@@ -7132,43 +7392,43 @@
           {
             "country": "United States",
             "code": "US",
-            "flag": "\ud83c\uddfa\ud83c\uddf8",
+            "flag": "🇺🇸",
             "percent": 77.7
           },
           {
             "country": "Germany",
             "code": "DE",
-            "flag": "\ud83c\udde9\ud83c\uddea",
+            "flag": "🇩🇪",
             "percent": 8.3
           },
           {
             "country": "ZA",
             "code": "ZA",
-            "flag": "\ud83c\udf10",
+            "flag": "🌐",
             "percent": 5.6
           },
           {
             "country": "PL",
             "code": "PL",
-            "flag": "\ud83c\udf10",
+            "flag": "🌐",
             "percent": 4.4
           },
           {
             "country": "Italy",
             "code": "IT",
-            "flag": "\ud83c\uddee\ud83c\uddf9",
+            "flag": "🇮🇹",
             "percent": 3.9
           },
           {
             "country": "Other countries",
             "code": "OTHER",
-            "flag": "\ud83c\udf10",
+            "flag": "🌐",
             "percent": 0.1
           }
         ],
         "age_distribution": [
           {
-            "range": "55\u201364 years",
+            "range": "55–64 years",
             "percent": 9.7
           },
           {
@@ -7184,13 +7444,13 @@
       },
       "uploaded_videos": [
         {
-          "title": "They Laughed Until The Police Arrived! \ud83d\ude31 #Shorts",
+          "title": "They Laughed Until The Police Arrived! 😱 #Shorts",
           "youtube_id": "Huy6VQcdxlk",
           "youtube_url": "https://youtu.be/Huy6VQcdxlk",
           "studio_url": "https://studio.youtube.com/video/Huy6VQcdxlk/edit",
           "uploaded_at": "2026-10-18T01:32:24Z",
           "thumbnail": "https://i.ytimg.com/vi/Huy6VQcdxlk/mqdefault.jpg",
-          "views": 85,
+          "views": 86,
           "likes": 6,
           "comments": 0,
           "is_clean": true,
@@ -7200,13 +7460,13 @@
           "is_blocked": false
         },
         {
-          "title": "The DNA Test Was A Lie! \ud83d\ude31 #Shorts",
+          "title": "The DNA Test Was A Lie! 😱 #Shorts",
           "youtube_id": "liXuNg56EFU",
           "youtube_url": "https://youtu.be/liXuNg56EFU",
           "studio_url": "https://studio.youtube.com/video/liXuNg56EFU/edit",
           "uploaded_at": "2026-10-17T01:33:09Z",
           "thumbnail": "https://i.ytimg.com/vi/liXuNg56EFU/mqdefault.jpg",
-          "views": 208,
+          "views": 209,
           "likes": 7,
           "comments": 0,
           "is_clean": true,
@@ -7216,13 +7476,13 @@
           "is_blocked": false
         },
         {
-          "title": "He Locked The Door Behind Her... Big Mistake! \ud83d\ude21 #Shorts",
+          "title": "He Locked The Door Behind Her... Big Mistake! 😡 #Shorts",
           "youtube_id": "78jyQK-LDcI",
           "youtube_url": "https://youtu.be/78jyQK-LDcI",
           "studio_url": "https://studio.youtube.com/video/78jyQK-LDcI/edit",
           "uploaded_at": "2026-10-16T18:54:01Z",
           "thumbnail": "https://i.ytimg.com/vi/78jyQK-LDcI/mqdefault.jpg",
-          "views": 177,
+          "views": 184,
           "likes": 5,
           "comments": 0,
           "is_clean": true,
@@ -7248,7 +7508,7 @@
           "is_blocked": false
         },
         {
-          "title": "His Secret Family Exposed At The Altar! \ud83d\ude31 #Shorts",
+          "title": "His Secret Family Exposed At The Altar! 😱 #Shorts",
           "youtube_id": "lk3_q02buek",
           "youtube_url": "https://youtu.be/lk3_q02buek",
           "studio_url": "https://studio.youtube.com/video/lk3_q02buek/edit",
@@ -7407,13 +7667,13 @@
       ],
       "upload_schedule": "00:20 IST & 06:50 IST",
       "latest_uploaded_video": {
-        "title": "They Laughed Until The Police Arrived! \ud83d\ude31 #Shorts",
+        "title": "They Laughed Until The Police Arrived! 😱 #Shorts",
         "youtube_id": "Huy6VQcdxlk",
         "youtube_url": "https://youtu.be/Huy6VQcdxlk",
         "studio_url": "https://studio.youtube.com/video/Huy6VQcdxlk/edit",
         "uploaded_at": "2026-10-18T01:32:24Z",
         "thumbnail": "https://i.ytimg.com/vi/Huy6VQcdxlk/mqdefault.jpg",
-        "views": 85,
+        "views": 86,
         "likes": 6,
         "comments": 0,
         "is_clean": true,
@@ -7440,7 +7700,7 @@
       "is_terminated": false,
       "is_suspended": false,
       "status_badge": "AUTOPILOT ACTIVE",
-      "status_label": "24/7 Autopilot \u2022 Scheduled",
+      "status_label": "24/7 Autopilot • Scheduled",
       "status_color": "#10B981",
       "subscribers": 30,
       "total_views": 5955,
@@ -7473,11 +7733,11 @@
         "region": "Texas",
         "country": "United States",
         "country_code": "US",
-        "flag": "\ud83c\uddfa\ud83c\uddf8",
+        "flag": "🇺🇸",
         "org": "Clouvider Limited (Dallas US Gateway)",
         "datacenter": "Surfshark Dedicated US Dallas Gateway",
         "verify_url": "https://ipinfo.io/2.56.189.90",
-        "verified_at": "2026-10-10T17:36:48Z"
+        "verified_at": "2026-10-17T19:20:41Z"
       },
       "health": {
         "overall_score": 98,
@@ -7498,75 +7758,67 @@
           {
             "country": "United States",
             "code": "US",
-            "flag": "\ud83c\uddfa\ud83c\uddf8",
-            "percent": 77.8
+            "flag": "🇺🇸",
+            "percent": 75.8
           },
           {
-            "country": "ZA",
-            "code": "ZA",
-            "flag": "\ud83c\udf10",
-            "percent": 5.6
+            "country": "Indonesia",
+            "code": "ID",
+            "flag": "🇮🇩",
+            "percent": 9.3
           },
           {
-            "country": "JM",
-            "code": "JM",
-            "flag": "\ud83c\udf10",
-            "percent": 4.4
+            "country": "Philippines",
+            "code": "PH",
+            "flag": "🇵🇭",
+            "percent": 4.8
           },
           {
-            "country": "Canada",
-            "code": "CA",
-            "flag": "\ud83c\udde8\ud83c\udde6",
-            "percent": 3.9
+            "country": "South Korea",
+            "code": "KR",
+            "flag": "🇰🇷",
+            "percent": 4.2
           },
           {
-            "country": "United Kingdom",
-            "code": "GB",
-            "flag": "\ud83c\uddec\ud83c\udde7",
-            "percent": 3.7
+            "country": "Mexico",
+            "code": "MX",
+            "flag": "🇲🇽",
+            "percent": 1.7
           },
           {
             "country": "Other countries",
             "code": "OTHER",
-            "flag": "\ud83c\udf10",
-            "percent": 4.6
+            "flag": "🌐",
+            "percent": 4.2
           }
         ],
         "age_distribution": [
           {
-            "range": "13\u201317 years",
-            "percent": 2.6
+            "range": "13–17 years",
+            "percent": 11.0
           },
           {
-            "range": "25\u201334 years",
-            "percent": 3.7
+            "range": "25–34 years",
+            "percent": 50.4
           },
           {
-            "range": "35\u201344 years",
-            "percent": 6.8
+            "range": "35–44 years",
+            "percent": 31.4
           },
           {
-            "range": "45\u201354 years",
-            "percent": 9.7
-          },
-          {
-            "range": "55\u201364 years",
-            "percent": 24.8
-          },
-          {
-            "range": "65+ years",
-            "percent": 52.5
+            "range": "45–54 years",
+            "percent": 7.2
           }
         ],
         "gender": {
-          "male": 38.5,
-          "female": 61.5
+          "male": 58.3,
+          "female": 41.7
         },
         "watch_time_hours": 31.8
       },
       "uploaded_videos": [
         {
-          "title": "She Begged For Help... Then The Billionaire Arrived! \ud83e\udd2f\ud83d\udc94 #Shorts",
+          "title": "She Begged For Help... Then The Billionaire Arrived! 🤯💔 #Shorts",
           "youtube_id": "qzzYjPRailc",
           "youtube_url": "https://youtu.be/qzzYjPRailc",
           "studio_url": "https://studio.youtube.com/video/qzzYjPRailc/edit",
@@ -7582,7 +7834,7 @@
           "is_blocked": false
         },
         {
-          "title": "One Sentence From His Mother Ruined Everything! \ud83d\udc94\ud83d\ude31 #Shorts",
+          "title": "One Sentence From His Mother Ruined Everything! 💔😱 #Shorts",
           "youtube_id": "oIJvFeUxvt4",
           "youtube_url": "https://youtu.be/oIJvFeUxvt4",
           "studio_url": "https://studio.youtube.com/video/oIJvFeUxvt4/edit",
@@ -7598,7 +7850,7 @@
           "is_blocked": false
         },
         {
-          "title": "She Called Him An ATM... So He Blew Her Entire Bank Account! \ud83d\udcb8\ud83d\ude31 #Shorts",
+          "title": "She Called Him An ATM... So He Blew Her Entire Bank Account! 💸😱 #Shorts",
           "youtube_id": "4Bpqvz4k7tE",
           "youtube_url": "https://youtu.be/4Bpqvz4k7tE",
           "studio_url": "https://studio.youtube.com/video/4Bpqvz4k7tE/edit",
@@ -7614,7 +7866,7 @@
           "is_blocked": false
         },
         {
-          "title": "He Thought She Was A Gold Digger... Until The DNA Test Proved THIS! \ud83d\ude31 #Shorts",
+          "title": "He Thought She Was A Gold Digger... Until The DNA Test Proved THIS! 😱 #Shorts",
           "youtube_id": "Qxs8uurUsss",
           "youtube_url": "https://youtu.be/Qxs8uurUsss",
           "studio_url": "https://studio.youtube.com/video/Qxs8uurUsss/edit",
@@ -7630,7 +7882,7 @@
           "is_blocked": false
         },
         {
-          "title": "He Thought She Was A Gold Digger... Until Her Real Dad Walked In! \ud83e\udd2f #Shorts",
+          "title": "He Thought She Was A Gold Digger... Until Her Real Dad Walked In! 🤯 #Shorts",
           "youtube_id": "e0ZrGw1eoEU",
           "youtube_url": "https://youtu.be/e0ZrGw1eoEU",
           "studio_url": "https://studio.youtube.com/video/e0ZrGw1eoEU/edit",
@@ -7646,7 +7898,7 @@
           "is_blocked": false
         },
         {
-          "title": "She Left Him With ZERO Dollars After This! \ud83d\udcb8\ud83d\udd25 #Shorts",
+          "title": "She Left Him With ZERO Dollars After This! 💸🔥 #Shorts",
           "youtube_id": "LI4XacvaucE",
           "youtube_url": "https://youtu.be/LI4XacvaucE",
           "studio_url": "https://studio.youtube.com/video/LI4XacvaucE/edit",
@@ -7662,7 +7914,7 @@
           "is_blocked": false
         },
         {
-          "title": "'If I Die Today, Will You Remarry'    Her Answer Left Him CHILLED! \ud83d\ude31\ud83d\udc94 #Shorts #Viral #Drama",
+          "title": "'If I Die Today, Will You Remarry'    Her Answer Left Him CHILLED! 😱💔 #Shorts #Viral #Drama",
           "youtube_id": "28RbFoWeGVU",
           "youtube_url": "https://youtu.be/28RbFoWeGVU",
           "studio_url": "https://studio.youtube.com/video/28RbFoWeGVU/edit",
@@ -7678,7 +7930,7 @@
           "is_blocked": false
         },
         {
-          "title": "'I'm Losing Myself In This Marriage'    Her Final Goodbye Letter! \ud83d\udc94\ud83d\ude2d #Shorts #Viral #Drama",
+          "title": "'I'm Losing Myself In This Marriage'    Her Final Goodbye Letter! 💔😭 #Shorts #Viral #Drama",
           "youtube_id": "wbUdcyaK0gI",
           "youtube_url": "https://youtu.be/wbUdcyaK0gI",
           "studio_url": "https://studio.youtube.com/video/wbUdcyaK0gI/edit",
@@ -7694,7 +7946,7 @@
           "is_blocked": false
         },
         {
-          "title": "He Wasn't His Real Son, But Look What He Sacrificed For Him! \ud83e\udd7a\u2764\ufe0f #Shorts #Viral #Drama",
+          "title": "He Wasn't His Real Son, But Look What He Sacrificed For Him! 🥺❤️ #Shorts #Viral #Drama",
           "youtube_id": "ulKIEEwwb6g",
           "youtube_url": "https://youtu.be/ulKIEEwwb6g",
           "studio_url": "https://studio.youtube.com/video/ulKIEEwwb6g/edit",
@@ -7710,7 +7962,7 @@
           "is_blocked": false
         },
         {
-          "title": "He Wasn't His Real Son, But Look What He Sacrificed For Him! \ud83e\udd7a\u2764\ufe0f #Shorts #Viral #Drama",
+          "title": "He Wasn't His Real Son, But Look What He Sacrificed For Him! 🥺❤️ #Shorts #Viral #Drama",
           "youtube_id": "GxscC9kMNI8",
           "youtube_url": "https://youtu.be/GxscC9kMNI8",
           "studio_url": "https://studio.youtube.com/video/GxscC9kMNI8/edit",
@@ -7726,7 +7978,7 @@
           "is_blocked": false
         },
         {
-          "title": "He Thought She Would Stay Silent    Her 1 Final Condition Shocked Him! \ud83d\ude31\ud83d\udc94 #Shorts #Viral #Drama",
+          "title": "He Thought She Would Stay Silent    Her 1 Final Condition Shocked Him! 😱💔 #Shorts #Viral #Drama",
           "youtube_id": "6CWaPOH7ITs",
           "youtube_url": "https://youtu.be/6CWaPOH7ITs",
           "studio_url": "https://studio.youtube.com/video/6CWaPOH7ITs/edit",
@@ -7742,7 +7994,7 @@
           "is_blocked": false
         },
         {
-          "title": "He Thought He Lost Everything    Until A Stranger Knocked On His Door! \ud83d\ude31\u2764\ufe0f #Shorts #Viral #Drama",
+          "title": "He Thought He Lost Everything    Until A Stranger Knocked On His Door! 😱❤️ #Shorts #Viral #Drama",
           "youtube_id": "nMpYQGjAtyY",
           "youtube_url": "https://youtu.be/nMpYQGjAtyY",
           "studio_url": "https://studio.youtube.com/video/nMpYQGjAtyY/edit",
@@ -7758,7 +8010,7 @@
           "is_blocked": false
         },
         {
-          "title": "He Sacrificed 10 YEARS For Her    Look How She Repaid Him! \ud83d\udc94\ud83d\ude21 #Shorts #Viral #Drama",
+          "title": "He Sacrificed 10 YEARS For Her    Look How She Repaid Him! 💔😡 #Shorts #Viral #Drama",
           "youtube_id": "0Jkz_avcQZU",
           "youtube_url": "https://youtu.be/0Jkz_avcQZU",
           "studio_url": "https://studio.youtube.com/video/0Jkz_avcQZU/edit",
@@ -7774,7 +8026,7 @@
           "is_blocked": false
         },
         {
-          "title": "He Raised Her Son As His Own    Until 1 Painful Word Broke Him! \ud83d\udc94\ud83e\udd7a #Shorts #Viral #Drama",
+          "title": "He Raised Her Son As His Own    Until 1 Painful Word Broke Him! 💔🥺 #Shorts #Viral #Drama",
           "youtube_id": "iUajqYbp-v0",
           "youtube_url": "https://youtu.be/iUajqYbp-v0",
           "studio_url": "https://studio.youtube.com/video/iUajqYbp-v0/edit",
@@ -7790,7 +8042,7 @@
           "is_blocked": false
         },
         {
-          "title": "He Raised Her Son As His Own    Until 1 Painful Word Broke Him! \ud83d\udc94\ud83e\udd7a #Shorts #Viral #Drama",
+          "title": "He Raised Her Son As His Own    Until 1 Painful Word Broke Him! 💔🥺 #Shorts #Viral #Drama",
           "youtube_id": "hESygc0OWws",
           "youtube_url": "https://youtu.be/hESygc0OWws",
           "studio_url": "https://studio.youtube.com/video/hESygc0OWws/edit",
@@ -7806,7 +8058,7 @@
           "is_blocked": false
         },
         {
-          "title": "He PRETENDED To Go Broke Just To See Who Truly Loved Him! \ud83d\ude31\ud83d\udd25 #Shorts #Viral #Drama",
+          "title": "He PRETENDED To Go Broke Just To See Who Truly Loved Him! 😱🔥 #Shorts #Viral #Drama",
           "youtube_id": "DIVwseK8mmQ",
           "youtube_url": "https://youtu.be/DIVwseK8mmQ",
           "studio_url": "https://studio.youtube.com/video/DIVwseK8mmQ/edit",
@@ -7822,7 +8074,7 @@
           "is_blocked": false
         },
         {
-          "title": "He Looked Under The Bed & Discovered His Family's DARKEST Secret! \ud83d\ude31\ud83d\udc94 #Shorts #Viral #Drama",
+          "title": "He Looked Under The Bed & Discovered His Family's DARKEST Secret! 😱💔 #Shorts #Viral #Drama",
           "youtube_id": "GKMSR8-Utc0",
           "youtube_url": "https://youtu.be/GKMSR8-Utc0",
           "studio_url": "https://studio.youtube.com/video/GKMSR8-Utc0/edit",
@@ -7838,7 +8090,7 @@
           "is_blocked": false
         },
         {
-          "title": "He Left In Tears But What He Saw In The Rearview Mirror Will Shock You! \ud83d\ude31\ud83d\udc94 #Shorts #Viral #Dram",
+          "title": "He Left In Tears But What He Saw In The Rearview Mirror Will Shock You! 😱💔 #Shorts #Viral #Dram",
           "youtube_id": "96RMaAwHtN4",
           "youtube_url": "https://youtu.be/96RMaAwHtN4",
           "studio_url": "https://studio.youtube.com/video/96RMaAwHtN4/edit",
@@ -7854,7 +8106,7 @@
           "is_blocked": false
         },
         {
-          "title": "He Had Millions In The Bank, But Lost The ONLY Woman Who Loved Him! \ud83d\udc94\ud83d\ude22 #Shorts #Viral #Drama",
+          "title": "He Had Millions In The Bank, But Lost The ONLY Woman Who Loved Him! 💔😢 #Shorts #Viral #Drama",
           "youtube_id": "OOz05y5bHq4",
           "youtube_url": "https://youtu.be/OOz05y5bHq4",
           "studio_url": "https://studio.youtube.com/video/OOz05y5bHq4/edit",
@@ -7870,7 +8122,7 @@
           "is_blocked": false
         },
         {
-          "title": "He Gave Her EVERYTHING But She Still Said 'You're NOT My Dad!' \ud83d\udc94\ud83d\ude2d #Shorts #Viral #Drama",
+          "title": "He Gave Her EVERYTHING But She Still Said 'You're NOT My Dad!' 💔😭 #Shorts #Viral #Drama",
           "youtube_id": "1yfXdMAM-GQ",
           "youtube_url": "https://youtu.be/1yfXdMAM-GQ",
           "studio_url": "https://studio.youtube.com/video/1yfXdMAM-GQ/edit",
@@ -7886,7 +8138,7 @@
           "is_blocked": false
         },
         {
-          "title": "He Denied His Father For Years    But On His Deathbed, Truth Came Out! \ud83d\udc94\ud83d\ude2d #Shorts #Viral #Drama",
+          "title": "He Denied His Father For Years    But On His Deathbed, Truth Came Out! 💔😭 #Shorts #Viral #Drama",
           "youtube_id": "BU09g7LJvrU",
           "youtube_url": "https://youtu.be/BU09g7LJvrU",
           "studio_url": "https://studio.youtube.com/video/BU09g7LJvrU/edit",
@@ -7902,7 +8154,7 @@
           "is_blocked": false
         },
         {
-          "title": "He Chose His Daughter Over His Wife Did He Make The Right Choice \ud83d\udc94\ud83e\udd7a #Shorts #Viral #Drama",
+          "title": "He Chose His Daughter Over His Wife Did He Make The Right Choice 💔🥺 #Shorts #Viral #Drama",
           "youtube_id": "zbE9CzMiUTs",
           "youtube_url": "https://youtu.be/zbE9CzMiUTs",
           "studio_url": "https://studio.youtube.com/video/zbE9CzMiUTs/edit",
@@ -7918,7 +8170,7 @@
           "is_blocked": false
         },
         {
-          "title": "He Arrived Late, But Losing His Seat Hurt More Than The Truth! \ud83e\udd7a\ud83d\udc94 #Shorts #Viral #Drama",
+          "title": "He Arrived Late, But Losing His Seat Hurt More Than The Truth! 🥺💔 #Shorts #Viral #Drama",
           "youtube_id": "25Z76aFfv0w",
           "youtube_url": "https://youtu.be/25Z76aFfv0w",
           "studio_url": "https://studio.youtube.com/video/25Z76aFfv0w/edit",
@@ -7934,7 +8186,7 @@
           "is_blocked": false
         },
         {
-          "title": "He Abandoned The Man Who Raised Him For His Real Dad Huge Mistake! \ud83d\udc94\ud83d\ude22 #Shorts #Viral #Drama",
+          "title": "He Abandoned The Man Who Raised Him For His Real Dad Huge Mistake! 💔😢 #Shorts #Viral #Drama",
           "youtube_id": "_hmHOKKqzfQ",
           "youtube_url": "https://youtu.be/_hmHOKKqzfQ",
           "studio_url": "https://studio.youtube.com/video/_hmHOKKqzfQ/edit",
@@ -7950,7 +8202,7 @@
           "is_blocked": false
         },
         {
-          "title": "'Enjoy Your Lifestyle! She Thought It Was Love, It Was A Lie! \ud83d\udc94\ud83d\ude22 #Shorts #Viral #Drama",
+          "title": "'Enjoy Your Lifestyle! She Thought It Was Love, It Was A Lie! 💔😢 #Shorts #Viral #Drama",
           "youtube_id": "aCIB2CShrl8",
           "youtube_url": "https://youtu.be/aCIB2CShrl8",
           "studio_url": "https://studio.youtube.com/video/aCIB2CShrl8/edit",
@@ -7966,7 +8218,7 @@
           "is_blocked": false
         },
         {
-          "title": "A Mother Tried To Hurt His Son Dad's Reaction Was PRICELESS! \ud83d\ude31\ud83d\udd25 #Shorts #Viral #Drama",
+          "title": "A Mother Tried To Hurt His Son Dad's Reaction Was PRICELESS! 😱🔥 #Shorts #Viral #Drama",
           "youtube_id": "rET9kDzNkFY",
           "youtube_url": "https://youtu.be/rET9kDzNkFY",
           "studio_url": "https://studio.youtube.com/video/rET9kDzNkFY/edit",
@@ -7982,7 +8234,7 @@
           "is_blocked": false
         },
         {
-          "title": "18 yo Bought Mom A $1M Car Then The POLICE Showed Up! \ud83d\ude31\ud83d\udea8 #Shorts #Viral #Drama",
+          "title": "18 yo Bought Mom A $1M Car Then The POLICE Showed Up! 😱🚨 #Shorts #Viral #Drama",
           "youtube_id": "0j8IrHxPSy4",
           "youtube_url": "https://youtu.be/0j8IrHxPSy4",
           "studio_url": "https://studio.youtube.com/video/0j8IrHxPSy4/edit",
@@ -7998,7 +8250,7 @@
           "is_blocked": false
         },
         {
-          "title": "1 Question From His Mother Exposed His Wife's Double Life! \ud83d\ude31\ud83d\udd25 #Shorts #Viral #Drama",
+          "title": "1 Question From His Mother Exposed His Wife's Double Life! 😱🔥 #Shorts #Viral #Drama",
           "youtube_id": "SU8fXWCxnM8",
           "youtube_url": "https://youtu.be/SU8fXWCxnM8",
           "studio_url": "https://studio.youtube.com/video/SU8fXWCxnM8/edit",
@@ -8014,7 +8266,7 @@
           "is_blocked": false
         },
         {
-          "title": "1 Month Unemployed & 12 Years Of Marriage Meant NOTHING! \ud83d\udc94\ud83e\udd7a #Shorts #Viral #Drama",
+          "title": "1 Month Unemployed & 12 Years Of Marriage Meant NOTHING! 💔🥺 #Shorts #Viral #Drama",
           "youtube_id": "jEjttfhD2L8",
           "youtube_url": "https://youtu.be/jEjttfhD2L8",
           "studio_url": "https://studio.youtube.com/video/jEjttfhD2L8/edit",
@@ -8045,7 +8297,7 @@
       ],
       "upload_schedule": "00:45 IST & 07:15 IST",
       "latest_uploaded_video": {
-        "title": "She Begged For Help... Then The Billionaire Arrived! \ud83e\udd2f\ud83d\udc94 #Shorts",
+        "title": "She Begged For Help... Then The Billionaire Arrived! 🤯💔 #Shorts",
         "youtube_id": "qzzYjPRailc",
         "youtube_url": "https://youtu.be/qzzYjPRailc",
         "studio_url": "https://studio.youtube.com/video/qzzYjPRailc/edit",
@@ -8078,7 +8330,7 @@
       "is_terminated": false,
       "is_suspended": false,
       "status_badge": "AUTOPILOT ACTIVE",
-      "status_label": "24/7 Autopilot \u2022 Scheduled",
+      "status_label": "24/7 Autopilot • Scheduled",
       "status_color": "#10B981",
       "subscribers": 0,
       "total_views": 7,
@@ -8111,11 +8363,11 @@
         "region": "New York",
         "country": "United States",
         "country_code": "US",
-        "flag": "\ud83c\uddfa\ud83c\uddf8",
+        "flag": "🇺🇸",
         "org": "Datacamp Limited (New York US Gateway)",
         "datacenter": "Surfshark Dedicated US NY Gateway",
         "verify_url": "https://ipinfo.io/84.17.35.112",
-        "verified_at": "2026-10-10T17:36:53Z"
+        "verified_at": "2026-10-17T19:51:22Z"
       },
       "health": {
         "overall_score": 98,
@@ -8136,49 +8388,49 @@
           {
             "country": "United States",
             "code": "US",
-            "flag": "\ud83c\uddfa\ud83c\uddf8",
+            "flag": "🇺🇸",
             "percent": 56.4
           },
           {
             "country": "Canada",
             "code": "CA",
-            "flag": "\ud83c\udde8\ud83c\udde6",
+            "flag": "🇨🇦",
             "percent": 13.8
           },
           {
             "country": "United Kingdom",
             "code": "GB",
-            "flag": "\ud83c\uddec\ud83c\udde7",
+            "flag": "🇬🇧",
             "percent": 11.2
           },
           {
             "country": "Australia",
             "code": "AU",
-            "flag": "\ud83c\udde6\ud83c\uddfa",
+            "flag": "🇦🇺",
             "percent": 6.5
           },
           {
             "country": "Other countries",
             "code": "OTHER",
-            "flag": "\ud83c\udf10",
+            "flag": "🌐",
             "percent": 12.1
           }
         ],
         "age_distribution": [
           {
-            "range": "18\u201324 years",
+            "range": "18–24 years",
             "percent": 39.5
           },
           {
-            "range": "25\u201334 years",
+            "range": "25–34 years",
             "percent": 37.0
           },
           {
-            "range": "35\u201344 years",
+            "range": "35–44 years",
             "percent": 14.2
           },
           {
-            "range": "45\u201354 years",
+            "range": "45–54 years",
             "percent": 6.0
           },
           {
@@ -8194,7 +8446,7 @@
       },
       "uploaded_videos": [
         {
-          "title": "This Predator Stared Right Into My Soul... \ud83d\ude33 #Shorts",
+          "title": "This Predator Stared Right Into My Soul... 😳 #Shorts",
           "youtube_id": "T1fubMLhaas",
           "youtube_url": "https://youtu.be/T1fubMLhaas",
           "studio_url": "https://studio.youtube.com/video/T1fubMLhaas/edit",
@@ -8210,7 +8462,7 @@
           "is_blocked": false
         },
         {
-          "title": "When A Predator Locks Eyes With The Camera... \ud83d\ude33 #Shorts",
+          "title": "When A Predator Locks Eyes With The Camera... 😳 #Shorts",
           "youtube_id": "u2EObIMCXhE",
           "youtube_url": "https://youtu.be/u2EObIMCXhE",
           "studio_url": "https://studio.youtube.com/video/u2EObIMCXhE/edit",
@@ -8226,7 +8478,7 @@
           "is_blocked": false
         },
         {
-          "title": "He Turned Around And Regretted It Instantly \ud83d\ude31 #Shorts",
+          "title": "He Turned Around And Regretted It Instantly 😱 #Shorts",
           "youtube_id": "DkWhQvS3eIc",
           "youtube_url": "https://youtu.be/DkWhQvS3eIc",
           "studio_url": "https://studio.youtube.com/video/DkWhQvS3eIc/edit",
@@ -8242,7 +8494,7 @@
           "is_blocked": false
         },
         {
-          "title": "It Stared Right Into My Soul! \ud83d\ude33 #Shorts",
+          "title": "It Stared Right Into My Soul! 😳 #Shorts",
           "youtube_id": "IoGIWQVKAOc",
           "youtube_url": "https://youtu.be/IoGIWQVKAOc",
           "studio_url": "https://studio.youtube.com/video/IoGIWQVKAOc/edit",
@@ -8258,7 +8510,7 @@
           "is_blocked": false
         },
         {
-          "title": "It Was Standing Right Behind Him... \ud83e\udd8c\ud83c\udf32 #Shorts",
+          "title": "It Was Standing Right Behind Him... 🦌🌲 #Shorts",
           "youtube_id": "xzFJFS4hbUs",
           "youtube_url": "https://youtu.be/xzFJFS4hbUs",
           "studio_url": "https://studio.youtube.com/video/xzFJFS4hbUs/edit",
@@ -8274,7 +8526,7 @@
           "is_blocked": false
         },
         {
-          "title": "It Was Standing Right Behind Him... \ud83d\ude31 #Shorts",
+          "title": "It Was Standing Right Behind Him... 😱 #Shorts",
           "youtube_id": "zeEUeYe5lWM",
           "youtube_url": "https://youtu.be/zeEUeYe5lWM",
           "studio_url": "https://studio.youtube.com/video/zeEUeYe5lWM/edit",
@@ -8290,7 +8542,7 @@
           "is_blocked": false
         },
         {
-          "title": "He Thought He Was Completely Alone... \ud83d\ude33 #Shorts",
+          "title": "He Thought He Was Completely Alone... 😳 #Shorts",
           "youtube_id": "mNNiHbxfKQc",
           "youtube_url": "https://youtu.be/mNNiHbxfKQc",
           "studio_url": "https://studio.youtube.com/video/mNNiHbxfKQc/edit",
@@ -8322,7 +8574,7 @@
           "is_blocked": false
         },
         {
-          "title": "This wild animal broke every rule on camera! \ud83d\ude33 #Shorts",
+          "title": "This wild animal broke every rule on camera! 😳 #Shorts",
           "youtube_id": "2cF5WYL9-Uc",
           "youtube_url": "https://youtu.be/2cF5WYL9-Uc",
           "studio_url": "https://studio.youtube.com/video/2cF5WYL9-Uc/edit",
@@ -8338,7 +8590,7 @@
           "is_blocked": false
         },
         {
-          "title": "Most Animals Attack... But This One Did THIS! \ud83d\ude31 #Shorts",
+          "title": "Most Animals Attack... But This One Did THIS! 😱 #Shorts",
           "youtube_id": "6jyrRQ_1GSM",
           "youtube_url": "https://youtu.be/6jyrRQ_1GSM",
           "studio_url": "https://studio.youtube.com/video/6jyrRQ_1GSM/edit",
@@ -8529,7 +8781,7 @@
       ],
       "upload_schedule": "01:10 IST & 07:45 IST",
       "latest_uploaded_video": {
-        "title": "This Predator Stared Right Into My Soul... \ud83d\ude33 #Shorts",
+        "title": "This Predator Stared Right Into My Soul... 😳 #Shorts",
         "youtube_id": "T1fubMLhaas",
         "youtube_url": "https://youtu.be/T1fubMLhaas",
         "studio_url": "https://studio.youtube.com/video/T1fubMLhaas/edit",
