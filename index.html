@@ -1,1366 +1,1369 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
-  <title>YouTube Studio</title>
-  <meta name="description" content="YouTube Studio Channel Dashboard and Management Center">
-  <meta name="theme-color" content="#0f0f0f">
-  <meta name="mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="apple-mobile-web-app-title" content="Studio">
-  <link rel="manifest" href="./manifest.json">
-  <link rel="icon" type="image/png" sizes="192x192" href="./icons/icon-192.png">
-  <link rel="icon" type="image/png" sizes="512x512" href="./icons/icon-512.png">
-  <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png">
-  <link rel="shortcut icon" href="./icons/icon-192.png">
-  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-  <meta http-equiv="Pragma" content="no-cache">
-  <meta http-equiv="Expires" content="0">
-  <link rel="stylesheet" href="./styles.css?v=50.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-  <!-- Chart.js -->
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <!-- Register PWA Service Worker with Auto Update -->
-  <script>
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('load', () => {
-        navigator.serviceWorker.register('./sw.js?v=46.0').then((reg) => {
-          reg.update();
-        }).catch(() => {});
-      });
-      navigator.serviceWorker.addEventListener('controllerchange', () => {
-        window.location.reload();
-      });
-    }
-  </script>
-</head>
-<body class="yt-studio-theme">
-
-  <!-- TOP APP HEADER (Exact YouTube Studio Top Bar) -->
-  <header class="studio-header">
-    <div class="header-left">
-      <button class="icon-btn" id="btn-toggle-sidebar" title="Guide">
-        <svg viewBox="0 0 24 24" width="22" height="22" fill="#FFFFFF">
-          <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
-        </svg>
-      </button>
-
-      <div class="studio-logo" id="logo-home">
-        <!-- YouTube Studio Red Badge Icon -->
-        <svg viewBox="0 0 89 20" width="105" height="24" class="yt-studio-svg">
-          <g fill="#FF0000">
-            <path d="M19.6 2.2C17.4.4 7.6.4 5.4 2.2 3.1 3.9 2.2 7.7 2.2 10s.9 6.1 3.2 7.8c2.2 1.8 12 1.8 14.2 0 2.3-1.7 3.2-5.5 3.2-7.8s-.9-6.1-3.2-7.8z"/>
-          </g>
-          <polygon fill="#FFFFFF" points="10.5,6.5 16.5,10 10.5,13.5"/>
-          <text x="28" y="15" fill="#FFFFFF" font-family="'Roboto', sans-serif" font-weight="700" font-size="14.5" letter-spacing="-0.3">Studio</text>
-        </svg>
-      </div>
-    </div>
-
-    <!-- Center Search Bar (YouTube Studio Search) -->
-    <div class="header-center">
-      <div class="search-box">
-        <svg viewBox="0 0 24 24" width="18" height="18" fill="#888888" class="search-icon">
-          <path d="M20.87 19.47l-4.52-4.52A8 8 0 106.8 16.8a8 8 0 008.15-1.85l4.52 4.52a1 1 0 001.4-1.4zM4 10a6 6 0 116 6 6 6 0 01-6-6z"/>
-        </svg>
-        <input type="text" placeholder="Search across your channel videos..." id="studio-search" autocomplete="off" />
-        <button class="clear-search-btn" id="btn-clear-search" style="display:none;">✕</button>
-      </div>
-    </div>
-
-    <!-- Right Header Actions -->
-    <div class="header-right">
-      <!-- Live Sync / Freshness Indicator -->
-      <div class="live-sync-indicator" id="live-sync-badge" title="Live YouTube Data API Sync Status">
-        <span class="live-pulse-dot"></span>
-        <span id="live-sync-text">LIVE SYNC</span>
-      </div>
-
-      <!-- Sync / Refresh Button -->
-      <button class="btn-refresh" id="btn-sync" title="Refresh Live YouTube Data">
-        <svg viewBox="0 0 24 24" width="18" height="18" fill="#AAAAAA">
-          <path d="M17.65 6.35A7.958 7.958 0 0012 4c-4.42 0-7.99 3.58-7.99 8s3.57 8 7.99 8c3.73 0 6.84-2.55 7.73-6h-2.08A5.99 5.99 0 0112 18c-3.31 0-6-2.69-6-6s2.69-6 6-6c1.66 0 3.14.69 4.22 1.78L13 11h7V4l-2.35 2.35z"/>
-        </svg>
-      </button>
-
-
-      <!-- Channel Switcher Trigger (Avatar & Handle) -->
-      <div class="channel-switcher-trigger" id="channel-switcher-trigger" title="Switch Channel">
-        <img id="header-avatar" src="./logo.png" alt="Channel" />
-        <span class="switcher-arrow">▼</span>
-      </div>
-    </div>
-  </header>
-
-  <!-- BACKDROP OVERLAY FOR MOBILE & DROPDOWN -->
-  <div class="studio-backdrop" id="studio-backdrop"></div>
-
-  <!-- CHANNEL SWITCHER DROPDOWN MENU / MOBILE BOTTOM SHEET -->
-  <div class="channel-dropdown" id="channel-dropdown">
-    <div class="bottom-sheet-handle" id="bottom-sheet-handle"></div>
-    <div class="dropdown-header">
-      <div class="user-info-row">
-        <img id="dropdown-user-avatar" src="./logo.png" alt="Avatar" />
-        <div class="user-details">
-          <div class="user-name" id="dropdown-user-name">The Hidden Lens</div>
-          <div class="user-handle" id="dropdown-user-handle">@TheHiddenLens-w8y</div>
-        </div>
-      </div>
-      <a href="#" id="dropdown-view-channel" target="_blank" class="link-view-channel">View channel on YouTube</a>
-    </div>
-
-    <div class="dropdown-section-title flex-between">
-      <span>SWITCH CHANNEL</span>
-      <button class="sheet-close-btn" id="btn-close-channel-sheet" title="Close">✕</button>
-    </div>
-    <div class="channel-options-list" id="channel-options-list">
-      <!-- Injected via JavaScript: Channel 1, 2, 3, and All Channels -->
-    </div>
-
-    <div class="dropdown-footer">
-
-      <button class="btn-dropdown-action" id="btn-copy-mobile-url">
-        <span>📲 Copy Mobile 4G/5G Link</span>
-      </button>
-    </div>
-  </div>
-
-  <!-- APP SHELL: SIDEBAR + MAIN CONTENT -->
-  <div class="studio-app-shell">
-
-    <!-- LEFT NAVIGATION SIDEBAR (YouTube Studio Left Menu) -->
-    <aside class="studio-sidebar" id="studio-sidebar">
-      <div class="sidebar-channel-header">
-        <div class="channel-avatar-wrap">
-          <img id="sidebar-avatar" src="./logo.png" alt="Channel Avatar" />
-        </div>
-        <div class="sidebar-header-text">
-          <div class="sidebar-your-channel">Your channel</div>
-          <div class="sidebar-channel-name" id="sidebar-channel-name">The Hidden Lens</div>
-        </div>
-      </div>
-
-      <nav class="sidebar-nav">
-        <button class="nav-item active" data-view="dashboard">
-          <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
-            <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zM7 10h2v7H7zm4-3h2v10h-2zm4 6h2v4h-2z"/>
-          </svg>
-          <span class="nav-text">Dashboard</span>
-        </button>
-
-        <button class="nav-item" data-view="content">
-          <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
-            <path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8 12.5v-9l6 4.5-6 4.5z"/>
-          </svg>
-          <span class="nav-text">Content</span>
-          <span class="nav-badge" id="sidebar-content-badge">2</span>
-        </button>
-
-        <button class="nav-item" data-view="schedule">
-          <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
-            <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
-          </svg>
-          <span class="nav-text">Upload Schedule</span>
-          <span class="nav-badge badge-green" id="sidebar-schedule-badge">8 ACTIVE</span>
-        </button>
-
-        <button class="nav-item" data-view="analytics">
-          <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
-            <path d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z"/>
-          </svg>
-          <span class="nav-text">Analytics</span>
-        </button>
-
-
-        <button class="nav-item" data-view="health">
-          <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
-            <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/>
-          </svg>
-          <span class="nav-text">Channel Health</span>
-          <span class="nav-badge badge-green" id="sidebar-health-badge">100%</span>
-        </button>
-
-        <button class="nav-item" data-view="ip-audit" id="nav-item-ip-audit">
-          <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
-            <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"/>
-          </svg>
-          <span class="nav-text">IP &amp; Fleet Audit</span>
-          <span class="nav-badge badge-green" id="sidebar-audit-badge">8/8 LOCKED</span>
-        </button>
-
-        <button class="nav-item" data-view="post-now">
-          <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
-            <path d="M5 18h14v2H5v-2zm7-14l6 6h-4v6h-4v-6H6l6-6z"/>
-          </svg>
-          <span class="nav-text">Post Now</span>
-          <span class="nav-badge" style="background: rgba(239, 68, 68, 0.2); color: #EF4444; font-weight: 700;">INSTANT</span>
-        </button>
-      </nav>
-    </aside>
-
-    <!-- MAIN STUDIO WORKSPACE -->
-    <main class="studio-main">
-
-      <!-- ==========================================================
-           TAB 1: CHANNEL DASHBOARD (Default YouTube Studio View)
-           ========================================================== -->
-      <section class="tab-view active" id="view-dashboard">
-        <div class="page-title-row">
-          <h1 class="page-title">Channel dashboard</h1>
-          <div class="channel-quick-pill" id="current-channel-pill">
-            <span class="pill-dot"></span>
-            <span id="pill-channel-name">The Hidden Lens</span>
-          </div>
-        </div>
-
-
-        <!-- REAL-TIME LIVE DATA VERIFICATION BANNER -->
-        <div class="live-data-badge-banner">
-          <div class="live-badge-left">
-            <span class="live-dot-pulse"></span>
-            <span class="live-badge-title">100% REAL-TIME LIVE DATA</span>
-            <span class="live-badge-divider">•</span>
-            <span class="live-badge-text">Directly fetched from YouTube Data API v3 & Google Drive API</span>
-          </div>
-          <div class="live-badge-right">
-            <span class="live-badge-tag">🟢 YOUTUBE API v3 VERIFIED</span>
-          </div>
-        </div>
-
-        <!-- LIVE SYSTEM INCIDENT, GLITCH & LOG ALERT BOX -->
-        <div class="incident-alert-box" id="incident-alert-box"></div>
-
-        <!-- EXECUTIVE 5-KPI QUICK METRICS GRID (Vibrant Radiant Gradients) -->
-        <div class="dashboard-kpi-grid">
-          <div class="kpi-card kpi-card-subs">
-            <div class="kpi-icon-wrap kpi-icon-subs">👥</div>
-            <div class="kpi-meta">
-              <div class="kpi-label">Subscribers</div>
-              <div class="kpi-value" id="dash-kpi-subs">--</div>
-              <div class="kpi-sub badge-pill-green">▲ 100% Organic</div>
-            </div>
-          </div>
-
-          <div class="kpi-card kpi-card-views">
-            <div class="kpi-icon-wrap kpi-icon-views">👁️</div>
-            <div class="kpi-meta">
-              <div class="kpi-label">28-Day Views</div>
-              <div class="kpi-value" id="dash-kpi-views">--</div>
-              <div class="kpi-sub badge-pill-cyan">▲ Active Reach</div>
-            </div>
-          </div>
-
-          <div class="kpi-card kpi-card-watch">
-            <div class="kpi-icon-wrap kpi-icon-watch">⏱️</div>
-            <div class="kpi-meta">
-              <div class="kpi-label">Watch Time</div>
-              <div class="kpi-value" id="dash-kpi-watch">--</div>
-              <div class="kpi-sub badge-pill-purple">▲ Real-Time Hours</div>
-            </div>
-          </div>
-
-          <div class="kpi-card kpi-card-shorts">
-            <div class="kpi-icon-wrap kpi-icon-shorts">🎬</div>
-            <div class="kpi-meta">
-              <div class="kpi-label">Published Shorts</div>
-              <div class="kpi-value" id="dash-kpi-vids">--</div>
-              <div class="kpi-sub badge-pill-rose">100% Vertical</div>
-            </div>
-          </div>
-
-          <div class="kpi-card kpi-card-dispatch">
-            <div class="kpi-icon-wrap kpi-icon-dispatch" id="dash-kpi-next-icon-wrap">
-              <img id="dash-kpi-next-avatar" class="kpi-avatar-img" src="./logo.png" alt="Channel" />
-            </div>
-            <div class="kpi-meta">
-              <div class="kpi-label">Next Video Upload</div>
-              <div class="kpi-value countdown-glow" id="dash-kpi-countdown">--:--:--</div>
-              <div class="kpi-sub badge-pill-amber" id="dash-kpi-next-slot">Automated Upload</div>
-            </div>
-          </div>
-        </div>
-
-        <!-- BALANCED 2-COLUMN DASHBOARD WORKSPACE -->
-        <div class="dashboard-main-grid">
-          <!-- LEFT COLUMN: GROWTH & ANALYTICS + LIVE NEON CHART -->
-          <div class="dash-col-left">
-            <div class="yt-card dash-card-glow">
-              <div class="yt-card-header flex-between">
-                <div class="header-with-icon">
-                  <span class="header-sparkle">📈</span>
-                  <h2>Channel analytics & growth</h2>
-                </div>
-                <span class="badge-tag-neon">Last 28 days</span>
-              </div>
-
-              <div class="yt-card-body">
-                <!-- Current Subscribers Banner -->
-                <div class="subs-highlight-hero">
-                  <div class="subs-hero-left">
-                    <div class="subs-hero-label">Current subscribers</div>
-                    <div class="subs-hero-count" id="dash-subs-count">--</div>
-                  </div>
-                  <div class="subs-hero-right">
-                    <span class="subs-growth-badge">▲ 100% Organic Growth</span>
-                    <span class="subs-verified-text">YouTube API Verified</span>
-                  </div>
-                </div>
-
-                <div class="divider-line"></div>
-
-                <!-- 4 Glowing Summary Stat Tiles -->
-                <div class="summary-section">
-                  <div class="summary-heading">28-Day Performance Summary</div>
-                  <div class="dash-summary-tiles">
-                    <div class="dash-stat-tile stat-tile-cyan">
-                      <div class="stat-tile-top">
-                        <span class="stat-tile-label">Views</span>
-                        <span class="stat-tile-icon">👁️</span>
-                      </div>
-                      <span class="stat-tile-value" id="dash-summary-views">--</span>
-                      <span class="stat-tile-delta text-cyan">▲ 100% Reach</span>
-                    </div>
-
-                    <div class="dash-stat-tile stat-tile-rose">
-                      <div class="stat-tile-top">
-                        <span class="stat-tile-label">Total Likes</span>
-                        <span class="stat-tile-icon">👍</span>
-                      </div>
-                      <span class="stat-tile-value" id="dash-summary-likes">--</span>
-                      <span class="stat-tile-delta text-rose">▲ 100% Up</span>
-                    </div>
-
-                    <div class="dash-stat-tile stat-tile-emerald">
-                      <div class="stat-tile-top">
-                        <span class="stat-tile-label">Avg / Video</span>
-                        <span class="stat-tile-icon">📊</span>
-                      </div>
-                      <span class="stat-tile-value" id="dash-summary-avg">--</span>
-                      <span class="stat-tile-delta text-emerald">▲ Optimal</span>
-                    </div>
-
-                    <div class="dash-stat-tile stat-tile-purple">
-                      <div class="stat-tile-top">
-                        <span class="stat-tile-label">Watch Time</span>
-                        <span class="stat-tile-icon">⏱️</span>
-                      </div>
-                      <span class="stat-tile-value" id="dash-summary-watchtime">1,865h</span>
-                      <span class="stat-tile-delta text-purple">▲ +12.4%</span>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="divider-line"></div>
-
-                <!-- Interactive Neon Views Area Chart -->
-                <div class="chart-section">
-                  <div class="chart-heading-row">
-                    <span class="chart-section-title">Views Momentum & Growth Trajectory</span>
-                    <span class="chart-live-indicator"><span class="pulse-dot"></span> Live Trajectory</span>
-                  </div>
-                  <div class="dash-chart-container">
-                    <canvas id="dash-views-chart"></canvas>
-                  </div>
-                </div>
-
-                <div class="yt-card-footer flex-between">
-                  <button class="yt-btn-gradient" id="btn-goto-analytics">GO TO FULL CHANNEL ANALYTICS →</button>
-                  <button class="yt-btn-flat" id="btn-goto-schedule-dash">VIEW UPLOAD SCHEDULE →</button>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- RIGHT COLUMN: TOP PERFORMING VIDEOS LEADERBOARD -->
-          <div class="dash-col-right">
-            <!-- TOP VIDEOS LEADERBOARD -->
-            <div class="yt-card dash-card-glow">
-              <div class="yt-card-header flex-between">
-                <div class="header-with-icon">
-                  <span class="header-sparkle">🏆</span>
-                  <h2>Top performing videos</h2>
-                </div>
-                <span class="badge-tag-neon">Top Views & Subs</span>
-              </div>
-
-              <div class="yt-card-body p-0">
-                <div class="top-vids-leaderboard" id="dash-top-vids-list">
-                  <!-- Injected via JavaScript with rank badges and thumbnails -->
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- ==========================================================
-           TAB 2: CHANNEL CONTENT (Full YouTube Studio Table)
-           ========================================================== -->
-      <section class="tab-view" id="view-content">
-        <div class="page-title-row">
-          <h1 class="page-title">Channel content</h1>
-        </div>
-
-        <!-- REAL-TIME VIDEO SAFETY & COPYRIGHT BADGE BANNER -->
-        <div class="content-safety-banner" id="content-safety-banner">
-          <div class="safety-banner-left">
-            <span class="safety-banner-icon" id="content-safety-icon">🛡️</span>
-            <div class="safety-banner-text">
-              <div class="safety-title" id="content-safety-title">Continuous YouTube Copyright & Policy Shield</div>
-              <div class="safety-sub" id="content-safety-sub">All uploaded videos verified active, public, and restriction-free via YouTube Data API.</div>
-            </div>
-          </div>
-          <span class="safety-badge badge-clean" id="content-safety-badge">🟢 100% CLEAN</span>
-        </div>
-
-        <div class="content-toolbar">
-          <div class="content-subtabs" id="content-subtabs-bar">
-            <button class="subtab active" data-subtab="shorts">
-              <span class="subtab-icon">🩳</span> Shorts <span class="subtab-count" id="count-shorts">--</span>
-            </button>
-            <button class="subtab" data-subtab="videos">
-              <span class="subtab-icon">🎬</span> Videos <span class="subtab-count" id="count-videos">0</span>
-            </button>
-            <button class="subtab" data-subtab="live">
-              <span class="subtab-icon">📡</span> Live <span class="subtab-count" id="count-live">0</span>
-            </button>
-            <button class="subtab" data-subtab="playlists">
-              <span class="subtab-icon">📑</span> Playlists <span class="subtab-count" id="count-playlists">5</span>
-            </button>
-          </div>
-
-          <div class="content-toolbar-actions">
-            <!-- Dedicated Real-Time YouTube Data Refresh Button -->
-            <button class="btn-live-sync-content" id="btn-content-live-sync" title="Fetch live real-time YouTube Data API videos immediately">
-              <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" class="sync-icon-svg">
-                <path d="M17.65 6.35A7.958 7.958 0 0012 4c-4.42 0-7.99 3.58-7.99 8s3.57 8 7.99 8c3.73 0 6.84-2.55 7.73-6h-2.08A5.99 5.99 0 0112 18c-3.31 0-6-2.69-6-6s2.69-6 6-6c1.66 0 3.14.69 4.22 1.78L13 11h7V4l-2.35 2.35z"/>
-              </svg>
-              <span>LIVE REFRESH</span>
-            </button>
-
-            <!-- Video Filter Input -->
-            <div class="content-search-wrap">
-              <svg viewBox="0 0 24 24" width="16" height="16" fill="#888">
-                <path d="M20.87 19.47l-4.52-4.52A8 8 0 106.8 16.8a8 8 0 008.15-1.85l4.52 4.52a1 1 0 001.4-1.4zM4 10a6 6 0 116 6 6 6 0 01-6-6z"/>
-              </svg>
-              <input type="text" placeholder="Filter videos by title..." id="content-filter-input" autocomplete="off" />
-              <button class="clear-search-btn" id="btn-clear-filter" style="display:none;">✕</button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Floating Batch Action Bar (When videos selected) -->
-        <div class="table-batch-bar" id="table-batch-bar" style="display: none;">
-          <span class="batch-count" id="batch-selected-count">0 selected</span>
-          <div class="batch-actions">
-            <button class="batch-btn" id="btn-batch-copy">🔗 Copy YouTube Links</button>
-            <button class="batch-btn" id="btn-batch-open">↗ Open Selected</button>
-          </div>
-          <button class="batch-close-btn" id="btn-batch-cancel" title="Deselect all">✕</button>
-        </div>
-
-        <!-- MAIN CONTENT CONTAINER (Table on PC, Native Cards on Mobile) -->
-        <div id="content-main-container">
-          <div class="yt-table-container">
-            <table class="studio-table" id="studio-content-table">
-              <thead>
-                <tr>
-                  <th class="col-checkbox"><input type="checkbox" id="checkbox-select-all" /></th>
-                  <th class="col-video">Video</th>
-                  <th class="col-visibility">Visibility</th>
-                  <th class="col-restrictions">Restrictions</th>
-                  <th class="col-date">Date</th>
-                  <th class="col-views">Views</th>
-                  <th class="col-subs">Subscribers</th>
-                  <th class="col-comments">Comments</th>
-                  <th class="col-likes">Likes (vs. dislikes)</th>
-                </tr>
-              </thead>
-              <tbody id="content-table-body">
-                <!-- Populated via JavaScript with real videos -->
-              </tbody>
-            </table>
-          </div>
-
-          <!-- Mobile Video Feed (Active on Mobile Phone Screens <= 768px) -->
-          <div class="mobile-video-cards-list" id="mobile-content-cards">
-            <!-- Populated via JavaScript for Mobile Phone View -->
-          </div>
-        </div>
-
-        <!-- Alternate Tab Display (Empty state for Videos/Live or Playlist Grid) -->
-        <div id="content-alt-container" style="display: none;"></div>
-      </section>
-
-      <!-- ==========================================================
-           TAB 3: CHANNEL ANALYTICS
-           ========================================================== -->
-      <section class="tab-view" id="view-analytics">
-        <div class="page-title-row">
-          <h1 class="page-title">Channel analytics</h1>
-        </div>
-
-        <div class="analytics-stat-chips">
-          <div class="stat-chip active">
-            <div class="chip-label">Views</div>
-            <div class="chip-value" id="analytics-views-chip">--</div>
-          </div>
-          <div class="stat-chip">
-            <div class="chip-label">Watch time (hours)</div>
-            <div class="chip-value" id="analytics-watch-chip">--</div>
-          </div>
-          <div class="stat-chip">
-            <div class="chip-label">Subscribers</div>
-            <div class="chip-value" id="analytics-subs-chip">--</div>
-          </div>
-        </div>
-
-        <div class="yt-card mt-16">
-          <div class="yt-card-header">
-            <h2>Real YouTube Video Views Comparison</h2>
-          </div>
-          <div class="yt-card-body">
-            <div class="chart-wrapper">
-              <canvas id="studioAnalyticsChart"></canvas>
-            </div>
-          </div>
-        </div>
-
-        <div class="analytics-section-title">
-          <h2 class="analytics-subheading">Audience & Demographics</h2>
-          <span class="sub-muted">100% Genuine Real-Time YouTube Studio & API v3 Audience Telemetry</span>
-        </div>
-
-        <div class="analytics-cards-grid">
-          <!-- Card 1: Top Geographies (Countries) -->
-          <div class="yt-card">
-            <div class="yt-card-header">
-              <h2>Top geographies</h2>
-              <span class="card-subtitle">Views % by Country</span>
-            </div>
-            <div class="yt-card-body" id="analytics-countries-list">
-              <!-- Injected via JavaScript -->
-            </div>
-          </div>
-
-          <!-- Card 2: Age and Gender -->
-          <div class="yt-card">
-            <div class="yt-card-header">
-              <h2>Age and gender</h2>
-              <span class="card-subtitle">Viewer Demographics</span>
-            </div>
-            <div class="yt-card-body">
-              <div class="gender-bar-wrapper">
-                <div class="gender-bar-labels">
-                  <span id="gender-male-label">Male: 76.5%</span>
-                  <span id="gender-female-label">Female: 23.5%</span>
-                </div>
-                <div class="gender-bar-visual">
-                  <div class="gender-fill-male" id="gender-male-fill" style="width: 76.5%;"></div>
-                  <div class="gender-fill-female" id="gender-female-fill" style="width: 23.5%;"></div>
-                </div>
-              </div>
-              <div class="divider-line" style="margin: 14px 0 10px 0;"></div>
-              <div class="demographic-age-list" id="analytics-age-list">
-                <!-- Injected via JavaScript -->
-              </div>
-            </div>
-          </div>
-
-          <!-- Card 3: Traffic Sources -->
-          <div class="yt-card">
-            <div class="yt-card-header">
-              <h2>How viewers find your videos</h2>
-              <span class="card-subtitle">Traffic Sources</span>
-            </div>
-            <div class="yt-card-body" id="analytics-traffic-list">
-              <!-- Injected via JavaScript -->
-            </div>
-          </div>
-
-          <!-- Card 4: Watch Time & Returning Viewers -->
-          <div class="yt-card">
-            <div class="yt-card-header">
-              <h2>Watch time & Retention</h2>
-              <span class="card-subtitle">Subscribers & Loyalty</span>
-            </div>
-            <div class="yt-card-body">
-              <div class="metric-block-title">Watch time from subscribers</div>
-              <div class="progress-item" style="margin-top:8px;">
-                <div class="prog-row">
-                  <span>Not subscribed</span>
-                  <span class="prog-val" id="subs-watch-notsub">--</span>
-                </div>
-                <div class="prog-bar"><div class="prog-fill" id="subs-fill-notsub" style="width:94%; background:var(--yt-blue);"></div></div>
-              </div>
-              <div class="progress-item" style="margin-top:8px;">
-                <div class="prog-row">
-                  <span>Subscribed</span>
-                  <span class="prog-val" id="subs-watch-sub">--</span>
-                </div>
-                <div class="prog-bar"><div class="prog-fill" id="subs-fill-sub" style="width:6%; background:var(--yt-green);"></div></div>
-              </div>
-
-              <div class="divider-line" style="margin: 14px 0;"></div>
-
-              <div class="metric-block-title">Viewer Types</div>
-              <div class="progress-item" style="margin-top:8px;">
-                <div class="prog-row">
-                  <span>New viewers</span>
-                  <span class="prog-val" id="viewers-new-val">--</span>
-                </div>
-                <div class="prog-bar"><div class="prog-fill" id="viewers-new-fill" style="width:87%; background:#8B5CF6;"></div></div>
-              </div>
-              <div class="progress-item" style="margin-top:8px;">
-                <div class="prog-row">
-                  <span>Returning viewers</span>
-                  <span class="prog-val" id="viewers-ret-val">--</span>
-                </div>
-                <div class="prog-bar"><div class="prog-fill" id="viewers-ret-fill" style="width:13%; background:#EC4899;"></div></div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Card 5: Devices & Peak Active Hours -->
-          <div class="yt-card">
-            <div class="yt-card-header">
-              <h2>Devices & Viewer Timing</h2>
-              <span class="card-subtitle">Viewing Patterns</span>
-            </div>
-            <div class="yt-card-body">
-              <div class="metric-block-title">Top Device Types</div>
-              <div id="analytics-devices-list" style="margin-top:8px;">
-                <!-- Injected via JavaScript -->
-              </div>
-              <div class="divider-line" style="margin: 14px 0;"></div>
-              <div class="metric-block-title">When your viewers are on YouTube</div>
-              <div class="peak-hours-badge" id="analytics-peak-hours" style="margin-top:8px;">
-                🕒 --
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- ==========================================================
-           TAB 4: DRIVE QUEUE & AUTOMATION STATUS
-           ========================================================== -->
-      <section class="tab-view" id="view-queue">
-        <div class="page-title-row">
-          <h1 class="page-title">Drive Queue & Cloud Automation</h1>
-        </div>
-
-        <div class="queue-cards-grid" id="queue-channels-cards">
-          <!-- Injected via JavaScript for all 3 channels -->
-        </div>
-      </section>
-
-      <!-- ==========================================================
-           TAB 5: SETTINGS
-           ========================================================== -->
-      <section class="tab-view" id="view-settings">
-        <div class="page-title-row">
-          <h1 class="page-title">Settings & Automation Pipeline</h1>
-        </div>
-
-        <div class="yt-card">
-          <div class="yt-card-header">
-            <h2>Channel Configuration & Cloud Runner</h2>
-          </div>
-          <div class="yt-card-body">
-            <div class="metric-rows-table">
-              <div class="m-row">
-                <span class="m-label">Scheduled Crons</span>
-                <span class="m-val">14:00 UTC (7:30 PM IST) & 22:00 UTC (3:30 AM IST)</span>
-              </div>
-              <div class="m-row">
-                <span class="m-label">Upload Rate</span>
-                <span class="m-val">2 Videos / Day / Channel</span>
-              </div>
-              <div class="m-row">
-                <span class="m-label">Cloud Execution</span>
-                <span class="m-val text-green">GitHub Actions USA Cloud Runner</span>
-              </div>
-              <div class="m-row">
-                <span class="m-label">Google Drive Auto-Deletion</span>
-                <span class="m-val text-green">Enabled (Immediate cleanup after upload)</span>
-              </div>
-              <div class="m-row">
-                <span class="m-label">Synthetic Media Policy</span>
-                <span class="m-val text-blue">AI Disclosure Flag Active</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- ==========================================================
-           TAB 6: CHANNEL HEALTH & POLICY RADAR
-           ========================================================== -->
-      <section class="tab-view" id="view-health">
-        <div class="page-title-row">
-          <h1 class="page-title">Channel health & Policy radar</h1>
-          <span class="health-fleet-badge badge-clean" id="health-fleet-status-pill">🛡️ Fleet: 100% Clean</span>
-        </div>
-
-        <!-- FLEET INTEGRITY HERO BANNER -->
-        <div class="yt-card health-hero-card">
-          <div class="health-hero-body">
-            <div class="health-hero-score-box">
-              <div class="hero-score-number" id="health-hero-score">99</div>
-              <div class="hero-score-denom">/ 100</div>
-              <div class="hero-score-sub text-green">Optimal Fleet Standing</div>
-            </div>
-            <div class="health-hero-details">
-              <h2 class="hero-title" id="health-hero-title">Zero Active Violations Across All 10 Channels</h2>
-              <p class="hero-desc" id="health-hero-desc">
-                Automated continuous diagnostics confirms all 10 YouTube channels operate with 0 Community Guidelines strikes, 0 copyright claims, 100% AI synthetic media disclosures, and compliant COPPA tags.
-              </p>
-              <div class="hero-tags-row">
-                <span class="hero-tag" id="health-hero-tag-strikes">🛡️ 0 / 30 Total Strikes</span>
-                <span class="hero-tag">⚡ 81.2% Shorts Feed Push</span>
-                <span class="hero-tag">✅ Rule 22 & 23 AI Guard Active</span>
-                <span class="hero-tag">🗑️ Auto-Delete Active</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- REAL-TIME VIDEO SAFETY & COPYRIGHT RADAR WIDGET -->
-        <div class="yt-card health-copyright-card mt-20" id="health-copyright-card">
-          <div class="yt-card-header">
-            <div style="display: flex; align-items: center; justify-content: space-between; width: 100%; flex-wrap: wrap; gap: 8px;">
-              <div style="display: flex; align-items: center; gap: 8px;">
-                <span style="font-size: 18px;">🛡️</span>
-                <h2>Real-Time Video Safety & Copyright Radar</h2>
-              </div>
-              <span class="live-badge-tag" id="health-copyright-badge" style="background: rgba(16, 185, 129, 0.15); color: #10B981; border: 1px solid rgba(16, 185, 129, 0.3); font-size: 11px; padding: 4px 10px; border-radius: 12px; font-weight: 700;">🟢 100% CLEAN • 0 RESTRICTIONS</span>
-            </div>
-          </div>
-          <div class="yt-card-body">
-            <div class="copyright-radar-hero" id="copyright-radar-hero">
-              <div class="copyright-radar-icon" id="copyright-radar-icon">✅</div>
-              <div class="copyright-radar-info">
-                <div class="copyright-radar-title" id="copyright-radar-title">All Uploaded Videos Active & Restriction-Free</div>
-                <div class="copyright-radar-desc" id="copyright-radar-desc">Continuous YouTube Data API probe verified all videos across all 10 channels. 0 copyright rejections, 0 audio claims, and 0 regional geo-blocks.</div>
-              </div>
-            </div>
-
-            <!-- List of flagged videos with direct 1-click studio resolution button (Shown only if any video is flagged) -->
-            <div class="flagged-videos-section mt-16" id="flagged-videos-section" style="display: none;">
-              <div class="flagged-header-row">
-                <span class="text-red font-bold" style="font-size: 13.5px;">⚠️ Restricted Videos Requiring Review:</span>
-                <span class="sub-muted" style="font-size: 12px;">Direct YouTube Studio 1-click editor link</span>
-              </div>
-              <div class="flagged-videos-grid" id="flagged-videos-grid">
-                <!-- Dynamically populated if any video has issue -->
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- 5 CHANNELS HEALTH COMPARISON GRID -->
-        <h2 class="section-subheading mt-24 mb-12">Channel Diagnostic Breakdown</h2>
-        <div class="health-radar-grid" id="health-channels-radar-grid">
-          <!-- Populated dynamically by JavaScript -->
-        </div>
-      </section>
-
-      <!-- ==========================================================
-           TAB 7: CLOUD RUNNER IP & GEOLOCATION RADAR
-           ========================================================== -->
-      <section class="tab-view" id="view-radar">
-        <div class="page-title-row">
-          <h1 class="page-title">Cloud Runner IP & Geolocation Radar</h1>
-          <span class="health-fleet-badge badge-clean" id="radar-fleet-status-pill">🌐 10 / 10 Cloud Runner Nodes Active</span>
-        </div>
-
-        <!-- SEARCH / FILTER FOR CHANNELS OR IPS -->
-        <div class="content-toolbar mt-20">
-          <h2 class="section-subheading" style="margin:0;">Channel Cloud Runner Nodes (10 Channels)</h2>
-          <div class="content-search-wrap">
-            <svg viewBox="0 0 24 24" width="16" height="16" fill="#888">
-              <path d="M20.87 19.47l-4.52-4.52A8 8 0 106.8 16.8a8 8 0 008.15-1.85l4.52 4.52a1 1 0 001.4-1.4zM4 10a6 6 0 116 6 6 6 0 01-6-6z"/>
-            </svg>
-            <input type="text" placeholder="Search by channel, IP, city or region..." id="radar-search-input" autocomplete="off" />
-          </div>
-        </div>
-
-        <!-- 10 CHANNELS CLOUD RUNNER GRID / CARDS -->
-        <div class="radar-channels-grid" id="radar-channels-grid">
-          <!-- Populated dynamically via JavaScript -->
-        </div>
-      </section>
-
-      <!-- ==========================================================
-           TAB 8: INSTANT POST CONSOLE (On-Demand Shorts Publisher)
-           ========================================================== -->
-      <section class="tab-view" id="view-post-now">
-        <div class="view-header">
-          <div class="header-title-wrap">
-            <h1 class="page-title">⚡ Instant Post Console</h1>
-            <span class="health-fleet-badge badge-clean">ON-DEMAND SHORTS PUBLISHER</span>
-          </div>
-          <p class="section-desc mt-8" style="color: var(--yt-text-secondary); font-size: 13.5px; line-height: 1.5;">
-            Select any channel and instantly publish its next queued Google Drive video to YouTube. Daily automated schedules (10:00 AM & 5:00 PM USA Eastern) remain 100% active and protected.
-          </p>
-        </div>
-
-        <!-- 2-COL / RESPONSIVE POST CONSOLE LAYOUT -->
-        <div class="postnow-console-layout mt-20">
-          
-          <!-- LEFT: 10-CHANNEL SELECTOR GRID -->
-          <div class="postnow-channels-col">
-            <div class="postnow-channels-header mb-12">
-              <label class="postnow-master-select-wrap" id="postnow-master-select-wrap" title="Select / Deselect All Channels">
-                <input type="checkbox" class="postnow-master-checkbox" id="postnow-master-checkbox" />
-                <span class="postnow-master-label">Select All Channels</span>
-              </label>
-              <span class="postnow-count-badge" id="postnow-selected-count-badge">1 Channel Selected</span>
-            </div>
-            <div class="postnow-channel-grid" id="postnow-channel-grid">
-              <!-- Injected via JavaScript for all 10 channels with stylish select boxes -->
-            </div>
-          </div>
-
-          <!-- RIGHT: STAGING & ACTION CONSOLE -->
-          <div class="postnow-action-col">
-            <h2 class="section-subheading mb-12">2. Staging & Execution Console</h2>
-            
-            <div class="yt-card postnow-stage-card" id="postnow-stage-card">
-              <!-- Selected Channel / Batch Header -->
-              <div class="postnow-selected-header">
-                <img id="postnow-stage-avatar" src="./logo.png" alt="Channel Avatar" class="postnow-avatar" />
-                <div>
-                  <div class="postnow-stage-name" id="postnow-stage-name">The Hidden Lens</div>
-                  <div class="postnow-stage-meta" id="postnow-stage-meta">@TheHiddenLens-w8y • Wildlife & Nature POV</div>
-                </div>
-                <span class="health-pill badge-clean" id="postnow-drive-stock-badge">75 VIDEOS IN DRIVE</span>
-              </div>
-
-              <!-- Next Video Preview Box (Single Channel View) -->
-              <div class="postnow-preview-box mt-16" id="postnow-preview-box-single">
-                <div class="preview-box-label">NEXT QUEUED GOOGLE DRIVE VIDEO</div>
-                <div class="preview-video-row">
-                  <div class="preview-video-icon">🎬</div>
-                  <div class="preview-video-info">
-                    <div class="preview-video-title" id="postnow-next-filename">Loading next queued video...</div>
-                    <div class="preview-video-meta" id="postnow-next-meta">Google Drive Cloud Storage • Next Ready for Upload</div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Batch Queue Preview Box (Shown when >1 channels selected) -->
-              <div class="postnow-preview-box mt-16" id="postnow-preview-box-batch" style="display:none;">
-                <div class="preview-box-label" id="postnow-batch-preview-label">QUEUED VIDEOS ACROSS 5 SELECTED CHANNELS</div>
-                <div class="postnow-batch-preview-container mt-8" id="postnow-batch-preview-list">
-                  <!-- Injected via JS -->
-                </div>
-              </div>
-
-              <!-- Pipeline Security & Compliance Badges -->
-              <div class="metric-rows-table mt-16">
-                <div class="m-row">
-                  <span class="m-label">Destination</span>
-                  <span class="m-val text-blue font-semibold" id="postnow-dest-label">YouTube Shorts (Vertical Feed)</span>
-                </div>
-                <div class="m-row">
-                  <span class="m-label">AI Disclosure Tag</span>
-                  <span class="m-val text-green font-semibold">Self-Declared (Compliant)</span>
-                </div>
-                <div class="m-row">
-                  <span class="m-label">COPPA Kids Tag</span>
-                  <span class="m-val text-green font-semibold">Not Made for Kids (Compliant)</span>
-                </div>
-                <div class="m-row">
-                  <span class="m-label">Scheduled Automation</span>
-                  <span class="m-val text-amber font-semibold">Protected & Active (No Conflict)</span>
-                </div>
-              </div>
-
-              <!-- Live Execution Output / Progress Terminal -->
-              <div class="postnow-terminal mt-16" id="postnow-terminal" style="display:none;">
-                <div class="terminal-header">
-                  <span class="terminal-dot red"></span>
-                  <span class="terminal-dot yellow"></span>
-                  <span class="terminal-dot green"></span>
-                  <span class="terminal-title">LIVE UPLOAD PIPELINE CONSOLE</span>
-                </div>
-                <div class="terminal-body" id="postnow-terminal-logs">
-                  <div class="terminal-line info">[Ready] Standing by for manual trigger...</div>
-                </div>
-              </div>
-
-              <!-- Action Buttons -->
-              <div class="postnow-actions-row mt-20">
-                <button class="yt-btn-primary postnow-big-btn" id="btn-execute-postnow">
-                  <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
-                    <path d="M5 18h14v2H5v-2zm7-14l6 6h-4v6h-4v-6H6l6-6z"/>
-                  </svg>
-                  <span id="btn-postnow-text">🚀 PUBLISH VIDEO NOW TO YOUTUBE</span>
-                </button>
-              </div>
-
-              <!-- Success Banner with direct link -->
-              <div class="postnow-success-banner mt-16" id="postnow-success-banner" style="display:none;">
-                <div class="success-icon">🎉</div>
-                <div class="success-details">
-                  <div class="success-title">Video Published Successfully to YouTube!</div>
-                  <div class="success-sub" id="postnow-success-title">Video Title</div>
-                  <div class="success-actions mt-8">
-                    <a href="#" id="postnow-success-link" target="_blank" class="yt-btn-flat" style="font-weight:700; color:#10B981;">WATCH ON YOUTUBE ↗</a>
-                    <button class="yt-btn-flat" id="postnow-btn-copy-link">COPY LINK 📋</button>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-
-        </div>
-      </section>
-
-      <!-- ==========================================================
-           TAB: FLEET UPLOAD RADAR & AUTOMATION SCHEDULE (DEDICATED CENTER WINDOW)
-           ========================================================== -->
-      <section class="tab-view" id="view-schedule">
-        <div class="page-title-row">
-          <div>
-            <h1 class="page-title">Fleet Upload Radar &amp; Automation Schedule</h1>
-            <p class="page-subtitle">
-              Anti-collision 15-minute staggered dispatch engine targeting USA &amp; Global peak audience hours.
-            </p>
-          </div>
-          <div class="schedule-header-badges">
-            <span class="live-badge-tag tag-emerald">🟢 9 CHANNELS ACTIVE</span>
-            <span class="live-badge-tag tag-sky">⏱️ 15-MIN STAGGER (0% COLLISION)</span>
-            <span class="live-badge-tag tag-vpn">🇺🇸 NY VPN: 146.70.186.206</span>
-          </div>
-        </div>
-
-        <!-- HERO: NEXT UPCOMING UPLOAD BANNER -->
-        <div class="schedule-hero-banner" id="schedule-hero-banner">
-          <div class="schedule-hero-left">
-            <div class="schedule-pulse-ring">
-              <span class="schedule-hero-icon">⏰</span>
-            </div>
-            <div class="schedule-hero-meta">
-              <div class="schedule-hero-sub">NEXT DISPATCH IN QUEUE</div>
-              <div class="schedule-hero-title-row">
-                <img id="schedule-hero-avatar" src="./logo.png" alt="Channel" class="schedule-hero-avatar" />
-                <span class="schedule-hero-title" id="schedule-next-target">Zyntrix07</span>
-                <span class="slot-pill" id="schedule-next-slot-pill">Slot 2 (Evening Peak)</span>
-              </div>
-              <div class="schedule-hero-timing" id="schedule-next-time-slot">
-                Target: <strong>06:30 PM IST</strong> (09:00 AM USA EDT) • 🇺🇸 New York VPN Ready
-              </div>
-            </div>
-          </div>
-          <div class="schedule-hero-right">
-            <div class="schedule-countdown-box">
-              <span class="schedule-countdown-label">TRIGGERING IN</span>
-              <span class="schedule-countdown-timer" id="schedule-next-countdown">--:--:--</span>
-              <button class="btn-hero-dispatch" id="btn-hero-dispatch-next" onclick="triggerHeroNextUpload()">⚡ Upload Now</button>
-            </div>
-          </div>
-        </div>
-
-        <!-- 9-CHANNEL FLEET CARDS GRID -->
-        <div class="schedule-section-heading">
-          <h2>All 9 Automation Channels</h2>
-          <span class="sub-muted">Live Drive stock, scheduled daily slots &amp; manual upload dispatchers</span>
-        </div>
-        <div class="schedule-fleet-grid" id="schedule-fleet-grid">
-          <!-- Rendered dynamically by app.js: All 9 channel cards with full details -->
-        </div>
-      </section>
- 
-       <!-- ==========================================================
-            TAB: FLEET IP & HEALTH SECURITY AUDIT CENTER
-            ========================================================== -->
-       <section class="tab-view" id="view-ip-audit">
-         <!-- UNIFIED EXECUTIVE COMMAND HEADER -->
-         <div class="audit-command-header">
-           <div class="audit-header-main">
-             <div class="audit-header-title-row">
-               <span class="pulse-indicator-dot"></span>
-               <h1 class="page-title" style="margin:0; font-size:20px;">Fleet IP &amp; Infrastructure Audit</h1>
-               <span class="badge-pill-green" style="font-size:11px; padding:3px 8px;">8/8 NODES LOCKED</span>
-               <span class="badge-pill-purple" style="font-size:11px; padding:3px 8px;">NEW YORK, US 🇺🇸</span>
-               <span class="badge-pill-cyan" style="font-size:11px; padding:3px 8px;">ZERO IP DRIFT</span>
-             </div>
-             <p class="audit-header-subtitle">
-               Dedicated static New York nodes, OpenVPN numeric IP pinning, and pre-flight safety shields across all 8 active automation channels.
-             </p>
-           </div>
-
-           <!-- ACTION CONTROLS & ALERTS -->
-           <div class="audit-header-actions">
-             <div class="audit-health-pill-box">
-               <span class="sub-muted" style="font-size:10.5px; text-transform:uppercase; letter-spacing:0.5px;">FLEET HEALTH</span>
-               <span id="main-audit-alert-count-pill" class="badge-pill-green">0 Issues Detected</span>
-             </div>
-             <div class="audit-buttons-group">
-               <button class="btn-audit-action primary" id="btn-run-live-audit" onclick="runLiveFleetProbe()" title="Ping and verify all 8 dedicated nodes in real time">
-                 <span class="btn-spinner" id="audit-spinner" style="display:none;"></span>
-                 <span>⚡ Run Live Fleet Probe</span>
-               </button>
-               <button class="btn-audit-action secondary" id="btn-copy-audit-report" onclick="copyConsolidatedDiagnosticReport()" title="Copy Full Diagnostic Report to Clipboard">
-                 <span>📋 Copy Report</span>
-               </button>
-               <button class="btn-audit-action danger-subtle" id="btn-audit-clear-alerts" onclick="clearAllAlerts()" title="Clear Active Alerts">
-                 <span>🧹 Clear Alerts</span>
-               </button>
-             </div>
-           </div>
-         </div>
-
-         <!-- COLLAPSIBLE REAL-TIME FLEET PROBE TERMINAL -->
-         <div class="live-probe-terminal" id="live-probe-terminal" style="display:none;">
-           <div class="live-probe-header">
-             <div style="display:flex; align-items:center; gap:8px;">
-               <span class="pulse-indicator-dot"></span>
-               <span>⚡ REAL-TIME FLEET PROBE EXECUTION</span>
-             </div>
-             <button class="btn-close-probe" id="btn-close-probe" onclick="document.getElementById('live-probe-terminal').style.display='none'">✕</button>
-           </div>
-           <pre class="live-probe-output" id="live-probe-output"></pre>
-         </div>
-
-         <!-- TABLE TOOLBAR WITH SEARCH / FILTER -->
-         <div class="audit-table-toolbar">
-           <div class="audit-table-meta-title">
-             <h2 style="font-size:16px; margin:0; font-weight:700; color:#f8fafc;">Channel Nodes &amp; Dedicated Infrastructure</h2>
-             <span class="sub-muted" style="font-size:12px;">8 Active Channels • Locked Numeric Gateways • Pre-Flight Guard 200 OK</span>
-           </div>
-           <div class="audit-table-search-box">
-             <span class="search-icon">🔍</span>
-             <input type="text" id="audit-channel-filter" placeholder="Filter channels or IPs..." oninput="filterAuditTable(this.value)">
-           </div>
-         </div>
-
-         <!-- DEDICATED CHANNEL NODES TABLE -->
-         <div class="audit-table-container">
-           <table class="audit-fleet-table" id="audit-fleet-table">
-             <thead>
-               <tr>
-                 <th style="width:36px;">#</th>
-                 <th>Channel</th>
-                 <th>Dedicated Static IP</th>
-                 <th>Health</th>
-                 <th style="text-align:right;">Action</th>
-               </tr>
-             </thead>
-             <tbody id="audit-channel-table-body">
-               <!-- Populated dynamically via app.js -->
-             </tbody>
-           </table>
-         </div>
-       </section>
-
-     </main>
-  </div>
-
-
-
-  <!-- YOUTUBE STUDIO CREATE & ACTIONS MODAL -->
-  <div class="studio-modal-overlay" id="create-modal-overlay">
-    <div class="studio-modal-card">
-      <div class="studio-modal-header">
-        <div class="modal-title-row">
-          <svg viewBox="0 0 24 24" width="22" height="22" fill="#FF0000">
-            <path d="M17 10.5V7c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4zM14 13h-3v3H9v-3H6v-2h3V8h2v3h3v2z"/>
-          </svg>
-          <h3>Create & Quick Actions</h3>
-        </div>
-        <button class="modal-close-btn" id="btn-close-create-modal">✕</button>
-      </div>
-
-      <div class="studio-modal-body">
-        <div class="create-action-list">
-          <button class="create-action-item" id="modal-btn-goto-postnow">
-            <div class="create-item-icon" style="background: rgba(239, 68, 68, 0.2); color: #EF4444;">
-              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M5 18h14v2H5v-2zm7-14l6 6h-4v6h-4v-6H6l6-6z"/></svg>
-            </div>
-            <div class="create-item-info">
-              <div class="create-item-title">Post Short Video Now (On-Demand)</div>
-              <div class="create-item-desc">Publish next queued Google Drive video to YouTube immediately</div>
-            </div>
-            <span class="create-item-arrow">🚀</span>
-          </button>
-
-          <a href="#" id="modal-drive-link" target="_blank" class="create-action-item">
-            <div class="create-item-icon bg-blue">
-              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM14 13v4h-4v-4H7l5-5 5 5h-3z"/></svg>
-            </div>
-            <div class="create-item-info">
-              <div class="create-item-title">Upload Videos to Google Drive Queue</div>
-              <div class="create-item-desc">Drop new MP4 shorts into this channel's cloud drive queue</div>
-            </div>
-            <span class="create-item-arrow">↗</span>
-          </a>
-
-          <button class="create-action-item" id="modal-btn-force-sync">
-            <div class="create-item-icon bg-green">
-              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M17.65 6.35A7.958 7.958 0 0012 4c-4.42 0-7.99 3.58-7.99 8s3.57 8 7.99 8c3.73 0 6.84-2.55 7.73-6h-2.08A5.99 5.99 0 0112 18c-3.31 0-6-2.69-6-6s2.69-6 6-6c1.66 0 3.14.69 4.22 1.78L13 11h7V4l-2.35 2.35z"/></svg>
-            </div>
-            <div class="create-item-info">
-              <div class="create-item-title">Force Sync Live YouTube Metrics</div>
-              <div class="create-item-desc">Fetch fresh views, subscribers & likes directly from YouTube Data API</div>
-            </div>
-            <span class="create-item-arrow">⚡</span>
-          </button>
-
-          <button class="create-action-item" id="modal-btn-goto-health">
-            <div class="create-item-icon bg-amber">
-              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
-            </div>
-            <div class="create-item-info">
-              <div class="create-item-title">Check Channel Health & Strike Radar</div>
-              <div class="create-item-desc">Review copyright standing, AI synthetic disclosures, and algorithm reach</div>
-            </div>
-            <span class="create-item-arrow">→</span>
-          </button>
-
-          <button class="create-action-item" id="modal-btn-goto-radar">
-            <div class="create-item-icon" style="background: rgba(168, 85, 247, 0.2); color: #C084FC;">
-              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
-            </div>
-            <div class="create-item-info">
-              <div class="create-item-title">Cloud Runner IP & Geolocation Radar</div>
-              <div class="create-item-desc">Track real Microsoft Azure runner public IPs and track whois data for each channel</div>
-            </div>
-            <span class="create-item-arrow">→</span>
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- EMERGENCY MOBILE QUICK-FIX MODAL -->
-  <div class="modal-overlay" id="modal-quick-fix" style="display:none;">
-    <div class="modal-dialog quick-fix-dialog">
-      <div class="modal-header">
-        <div class="modal-title-wrap">
-          <span class="modal-icon">🛠️</span>
-          <div>
-            <h2 id="qf-channel-name" style="margin:0; font-size:16px;">Channel Emergency Operations</h2>
-            <span id="qf-channel-sub" class="sub-muted" style="font-size:11px;">1-Click Remote Cloud Fix</span>
-          </div>
-        </div>
-        <button class="modal-close" onclick="closeQuickFixModal()">✕</button>
-      </div>
-
-      <div class="modal-body" style="padding:18px;">
-        <!-- Channel Status Pill & Node Info -->
-        <div class="qf-channel-hero">
-          <img id="qf-channel-avatar" src="./logo.png" class="qf-avatar" alt="Avatar" />
-          <div class="qf-meta">
-            <div id="qf-channel-handle" class="qf-title">@channel</div>
-            <div class="qf-badges">
-              <span id="qf-status-badge" class="badge-pill-green">🟢 100% PRISTINE</span>
-              <span id="qf-node-badge" class="badge-pill-purple">🗽 NY LOCKED</span>
-              <span id="qf-stock-badge" class="badge-pill-cyan">📦 0 vids ready</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Direct Emergency Action List -->
-        <div class="qf-actions-list">
-          
-          <!-- Action 1: Force Trigger Upload Workflow -->
-          <div class="qf-action-card" onclick="qfTriggerUpload()">
-            <div class="qf-action-icon bg-red">🚀</div>
-            <div class="qf-action-info">
-              <div class="qf-action-title">Force Trigger Upload Now (GitHub Actions)</div>
-              <div class="qf-action-desc">Dispatches upload.yml in GitHub Cloud runner via locked NY IP</div>
-            </div>
-            <span class="qf-action-btn">Run ⚡</span>
-          </div>
-
-          <!-- Action 2: Self-Heal & Clear Incident State -->
-          <div class="qf-action-card" onclick="qfSelfHealChannel()">
-            <div class="qf-action-icon bg-green">🧹</div>
-            <div class="qf-action-info">
-              <div class="qf-action-title">Self-Heal &amp; Reset Health Status</div>
-              <div class="qf-action-desc">Clears false alerts, removes red glitch flags, restores 100% pristine</div>
-            </div>
-            <span class="qf-action-btn">Heal ✅</span>
-          </div>
-
-          <!-- Action 3: View Live Cloud Workflow Logs -->
-          <a id="qf-link-actions" href="#" target="_blank" class="qf-action-card">
-            <div class="qf-action-icon bg-purple">📋</div>
-            <div class="qf-action-info">
-              <div class="qf-action-title">View Live GitHub Actions Logs</div>
-              <div class="qf-action-desc">Check step-by-step logs, errors, or re-run failed jobs directly on GitHub</div>
-            </div>
-            <span class="qf-action-btn">Open ↗</span>
-          </a>
-
-          <!-- Action 4: Open Google Drive Cloud Folder -->
-          <a id="qf-link-drive" href="#" target="_blank" class="qf-action-card">
-            <div class="qf-action-icon bg-amber">📁</div>
-            <div class="qf-action-info">
-              <div class="qf-action-title">Open Google Drive Queue Folder</div>
-              <div class="qf-action-desc">Check queue videos, rename files, or upload new Shorts from mobile phone</div>
-            </div>
-            <span class="qf-action-btn">Drive ↗</span>
-          </a>
-
-          <!-- Action 5: Live Node Latency Probe -->
-          <div class="qf-action-card" onclick="qfProbeNode()">
-            <div class="qf-action-icon bg-cyan">⚡</div>
-            <div class="qf-action-info">
-              <div class="qf-action-title">Live Node Latency Probe</div>
-              <div class="qf-action-desc">Test real-time connection to dedicated NY IP and YouTube pre-flight safety</div>
-            </div>
-            <span class="qf-action-btn">Ping 📡</span>
-          </div>
-
-        </div>
-
-        <!-- Optional GitHub Token Setup for 1-Click Mobile Dispatch -->
-        <div class="qf-token-box">
-          <div class="qf-token-header" onclick="toggleTokenInput()">
-            <span>🔑 1-Click Mobile Cloud Dispatch Key (Optional)</span>
-            <span id="qf-token-chevron">▼</span>
-          </div>
-          <div id="qf-token-body" style="display:none; padding-top:8px;">
-            <p style="font-size:11px; color:#94a3b8; margin:0 0 8px 0;">
-              Paste your GitHub Personal Access Token (with 'repo' & 'workflow' scope) once on your phone. Saved in your browser's private localStorage to enable instant background dispatches without opening GitHub!
-            </p>
-            <div style="display:flex; gap:8px;">
-              <input type="password" id="qf-pat-input" placeholder="ghp_xxxxxxxxxxxx or gho_xxxxxxxxxxxx" style="flex:1; background:rgba(0,0,0,0.5); border:1px solid rgba(255,255,255,0.15); border-radius:6px; padding:6px 10px; color:#fff; font-size:12px;" />
-              <button class="btn-audit-action primary" onclick="saveGitHubPat()" style="padding:6px 14px; font-size:11.5px;">Save Key</button>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
-
-  <!-- QUEUE PREVIEW MODAL -->
-  <div class="modal-overlay" id="modal-queue-preview" style="display:none;">
-    <div class="modal-dialog queue-preview-dialog">
-      <div class="modal-header">
-        <div class="modal-title-wrap">
-          <span class="modal-icon">👁️</span>
-          <h2 id="qp-channel-name">Next Video in Queue</h2>
-        </div>
-        <button class="modal-close" id="qp-btn-close">✕</button>
-      </div>
-      <div class="modal-body" id="qp-body">
-        <div class="qp-loading">Loading next video from Google Drive...</div>
-      </div>
-    </div>
-  </div>
-
-  <!-- NEXT-LEVEL REAL-TIME MASTER SYNC OVERLAY MODAL -->
-  <div class="modal-overlay sync-master-overlay" id="modal-realtime-sync" style="display:none;">
-    <div class="modal-dialog sync-master-dialog">
-      <div class="sync-glow-ring"></div>
-      
-      <!-- Modal Header -->
-      <div class="sync-modal-header">
-        <div class="sync-header-left">
-          <div class="sync-pulse-satellite">
-            <span class="sync-radar-ring"></span>
-            <span class="sync-radar-core">📡</span>
-          </div>
-          <div>
-            <h3 class="sync-modal-title">Real-Time Fleet Master Sync</h3>
-            <p class="sync-modal-subtitle">Direct YouTube Data API v3 &amp; Google Drive Live Engine</p>
-          </div>
-        </div>
-        <button class="modal-close" id="btn-close-realtime-sync" style="display:none;" title="Close">✕</button>
-      </div>
-
-      <!-- Modal Body -->
-      <div class="sync-modal-body">
-        <!-- Circular Progress Display -->
-        <div class="sync-progress-circle-wrap">
-          <svg class="sync-progress-circle" viewBox="0 0 140 140">
-            <circle class="sync-circle-bg" cx="70" cy="70" r="60" />
-            <circle class="sync-circle-bar" id="sync-circle-bar" cx="70" cy="70" r="60" stroke-dasharray="377" stroke-dashoffset="377" />
-          </svg>
-          <div class="sync-progress-label">
-            <div class="sync-percent-row">
-              <span class="sync-percent-number" id="sync-percent-number">0</span><span class="sync-percent-symbol">%</span>
-            </div>
-            <span class="sync-speed-tag" id="sync-speed-tag">CONNECTING</span>
-          </div>
-        </div>
-
-        <!-- Live Step Bar -->
-        <div class="sync-step-pill">
-          <span class="sync-spinner-mini" id="sync-step-spinner"></span>
-          <span id="sync-current-step">Connecting to YouTube Data API v3...</span>
-        </div>
-
-        <!-- 11-Channel Fleet Live Status Trackers -->
-        <div class="sync-fleet-trackers">
-          <div class="sync-trackers-header">
-            <span>FLEET CHANNELS (11)</span>
-            <span id="sync-trackers-count">0 / 11 SYNCED</span>
-          </div>
-          <div class="sync-channel-grid" id="sync-channel-grid">
-            <!-- Dynamically populated / illuminated -->
-          </div>
-        </div>
-
-        <!-- Live Telemetry Stream Terminal Box -->
-        <div class="sync-terminal-box">
-          <div class="sync-terminal-bar">
-            <div class="terminal-dots">
-              <span class="t-dot red"></span>
-              <span class="t-dot yellow"></span>
-              <span class="t-dot green"></span>
-            </div>
-            <span class="terminal-title">LIVE TELEMETRY STREAM</span>
-            <span class="terminal-badge" id="terminal-badge">LIVE 200 OK</span>
-          </div>
-          <div class="sync-terminal-content" id="sync-terminal-content">
-            <div class="terminal-line"><span class="t-dim">[SYSTEM]</span> Ready. Direct real-time YouTube Data API sync initialized.</div>
-          </div>
-        </div>
-
-        <!-- Real-Time Metrics Summary Card (shown at 100%) -->
-        <div class="sync-summary-card" id="sync-summary-card" style="display:none;">
-          <div class="sync-summary-item">
-            <span class="summary-val" id="sum-channels">11</span>
-            <span class="summary-lbl">Channels Active</span>
-          </div>
-          <div class="sync-summary-item">
-            <span class="summary-val highlight-green" id="sum-views">1.74M+</span>
-            <span class="summary-lbl">Total Real-Time Views</span>
-          </div>
-          <div class="sync-summary-item">
-            <span class="summary-val" id="sum-subs">1,422</span>
-            <span class="summary-lbl">Subscribers</span>
-          </div>
-          <div class="sync-summary-item">
-            <span class="summary-val highlight-cyan" id="sum-stock">429</span>
-            <span class="summary-lbl">Ready Stock</span>
-          </div>
-        </div>
-
-        <!-- Finish / Confirm Button -->
-        <button class="btn-sync-done" id="btn-sync-done" style="display:none;">
-          <span>✅ VIEW UPDATED DASHBOARD</span>
-        </button>
-      </div>
-    </div>
-  </div>
-
-  <!-- Toast Notification -->
-  <div id="toast" class="toast">Link copied to clipboard!</div>
-
-  <script src="./app.js?v=50.0"></script>
-</body>
-</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <title>YouTube Studio</title>
+  <meta name="description" content="YouTube Studio Channel Dashboard and Management Center">
+  <meta name="theme-color" content="#0f0f0f">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Studio">
+  <link rel="manifest" href="./manifest.json">
+  <link rel="icon" type="image/png" sizes="192x192" href="./icons/icon-192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="./icons/icon-512.png">
+  <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png">
+  <link rel="shortcut icon" href="./icons/icon-192.png">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <link rel="stylesheet" href="./styles.css?v=50.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <!-- Register PWA Service Worker with Auto Update -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('./sw.js?v=46.0').then((reg) => {
+          reg.update();
+        }).catch(() => {});
+      });
+      navigator.serviceWorker.addEventListener('controllerchange', () => {
+        window.location.reload();
+      });
+    }
+  </script>
+</head>
+<body class="yt-studio-theme">
+
+  <!-- TOP APP HEADER (Exact YouTube Studio Top Bar) -->
+  <header class="studio-header">
+    <div class="header-left">
+      <button class="icon-btn" id="btn-toggle-sidebar" title="Guide">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="#FFFFFF">
+          <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+        </svg>
+      </button>
+
+      <div class="studio-logo" id="logo-home">
+        <!-- YouTube Studio Red Badge Icon -->
+        <svg viewBox="0 0 89 20" width="105" height="24" class="yt-studio-svg">
+          <g fill="#FF0000">
+            <path d="M19.6 2.2C17.4.4 7.6.4 5.4 2.2 3.1 3.9 2.2 7.7 2.2 10s.9 6.1 3.2 7.8c2.2 1.8 12 1.8 14.2 0 2.3-1.7 3.2-5.5 3.2-7.8s-.9-6.1-3.2-7.8z"/>
+          </g>
+          <polygon fill="#FFFFFF" points="10.5,6.5 16.5,10 10.5,13.5"/>
+          <text x="28" y="15" fill="#FFFFFF" font-family="'Roboto', sans-serif" font-weight="700" font-size="14.5" letter-spacing="-0.3">Studio</text>
+        </svg>
+      </div>
+    </div>
+
+    <!-- Center Search Bar (YouTube Studio Search) -->
+    <div class="header-center">
+      <div class="search-box">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="#888888" class="search-icon">
+          <path d="M20.87 19.47l-4.52-4.52A8 8 0 106.8 16.8a8 8 0 008.15-1.85l4.52 4.52a1 1 0 001.4-1.4zM4 10a6 6 0 116 6 6 6 0 01-6-6z"/>
+        </svg>
+        <input type="text" placeholder="Search across your channel videos..." id="studio-search" autocomplete="off" />
+        <button class="clear-search-btn" id="btn-clear-search" style="display:none;">✕</button>
+      </div>
+    </div>
+
+    <!-- Right Header Actions -->
+    <div class="header-right">
+      <!-- Live Sync / Freshness Indicator -->
+      <div class="live-sync-indicator" id="live-sync-badge" title="Live YouTube Data API Sync Status">
+        <span class="live-pulse-dot"></span>
+        <span id="live-sync-text">LIVE SYNC</span>
+      </div>
+
+      <!-- Sync / Refresh Button -->
+      <button class="btn-refresh" id="btn-sync" title="Refresh Live YouTube Data">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="#AAAAAA">
+          <path d="M17.65 6.35A7.958 7.958 0 0012 4c-4.42 0-7.99 3.58-7.99 8s3.57 8 7.99 8c3.73 0 6.84-2.55 7.73-6h-2.08A5.99 5.99 0 0112 18c-3.31 0-6-2.69-6-6s2.69-6 6-6c1.66 0 3.14.69 4.22 1.78L13 11h7V4l-2.35 2.35z"/>
+        </svg>
+      </button>
+
+
+      <!-- Channel Switcher Trigger (Avatar & Handle) -->
+      <div class="channel-switcher-trigger" id="channel-switcher-trigger" title="Switch Channel">
+        <img id="header-avatar" src="./logo.png" alt="Channel" />
+        <span class="switcher-arrow">▼</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- BACKDROP OVERLAY FOR MOBILE & DROPDOWN -->
+  <div class="studio-backdrop" id="studio-backdrop"></div>
+
+  <!-- CHANNEL SWITCHER DROPDOWN MENU / MOBILE BOTTOM SHEET -->
+  <div class="channel-dropdown" id="channel-dropdown">
+    <div class="bottom-sheet-handle" id="bottom-sheet-handle"></div>
+    <div class="dropdown-header">
+      <div class="user-info-row">
+        <img id="dropdown-user-avatar" src="./logo.png" alt="Avatar" />
+        <div class="user-details">
+          <div class="user-name" id="dropdown-user-name">The Hidden Lens</div>
+          <div class="user-handle" id="dropdown-user-handle">@TheHiddenLens-w8y</div>
+        </div>
+      </div>
+      <a href="#" id="dropdown-view-channel" target="_blank" class="link-view-channel">View channel on YouTube</a>
+    </div>
+
+    <div class="dropdown-section-title flex-between">
+      <span>SWITCH CHANNEL</span>
+      <button class="sheet-close-btn" id="btn-close-channel-sheet" title="Close">✕</button>
+    </div>
+    <div class="channel-options-list" id="channel-options-list">
+      <!-- Injected via JavaScript: Channel 1, 2, 3, and All Channels -->
+    </div>
+
+    <div class="dropdown-footer">
+
+      <button class="btn-dropdown-action" id="btn-copy-mobile-url">
+        <span>📲 Copy Mobile 4G/5G Link</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- APP SHELL: SIDEBAR + MAIN CONTENT -->
+  <div class="studio-app-shell">
+
+    <!-- LEFT NAVIGATION SIDEBAR (YouTube Studio Left Menu) -->
+    <aside class="studio-sidebar" id="studio-sidebar">
+      <div class="sidebar-channel-header">
+        <div class="channel-avatar-wrap">
+          <img id="sidebar-avatar" src="./logo.png" alt="Channel Avatar" />
+        </div>
+        <div class="sidebar-header-text">
+          <div class="sidebar-your-channel">Your channel</div>
+          <div class="sidebar-channel-name" id="sidebar-channel-name">The Hidden Lens</div>
+        </div>
+      </div>
+
+      <nav class="sidebar-nav">
+        <button class="nav-item active" data-view="dashboard">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+            <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zM7 10h2v7H7zm4-3h2v10h-2zm4 6h2v4h-2z"/>
+          </svg>
+          <span class="nav-text">Dashboard</span>
+        </button>
+
+        <button class="nav-item" data-view="content">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+            <path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8 12.5v-9l6 4.5-6 4.5z"/>
+          </svg>
+          <span class="nav-text">Content</span>
+          <span class="nav-badge" id="sidebar-content-badge">2</span>
+        </button>
+
+        <button class="nav-item" data-view="schedule">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+            <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
+          </svg>
+          <span class="nav-text">Upload Schedule</span>
+          <span class="nav-badge badge-green" id="sidebar-schedule-badge">8 ACTIVE</span>
+        </button>
+
+        <button class="nav-item" data-view="analytics">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+            <path d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z"/>
+          </svg>
+          <span class="nav-text">Analytics</span>
+        </button>
+
+
+        <button class="nav-item" data-view="health">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+            <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/>
+          </svg>
+          <span class="nav-text">Channel Health</span>
+          <span class="nav-badge badge-green" id="sidebar-health-badge">100%</span>
+        </button>
+
+        <button class="nav-item" data-view="ip-audit" id="nav-item-ip-audit">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+            <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"/>
+          </svg>
+          <span class="nav-text">IP &amp; Fleet Audit</span>
+          <span class="nav-badge badge-green" id="sidebar-audit-badge">8/8 LOCKED</span>
+        </button>
+
+        <button class="nav-item" data-view="post-now">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+            <path d="M5 18h14v2H5v-2zm7-14l6 6h-4v6h-4v-6H6l6-6z"/>
+          </svg>
+          <span class="nav-text">Post Now</span>
+          <span class="nav-badge" style="background: rgba(239, 68, 68, 0.2); color: #EF4444; font-weight: 700;">INSTANT</span>
+        </button>
+      </nav>
+    </aside>
+
+    <!-- MAIN STUDIO WORKSPACE -->
+    <main class="studio-main">
+
+      <!-- ==========================================================
+           TAB 1: CHANNEL DASHBOARD (Default YouTube Studio View)
+           ========================================================== -->
+      <section class="tab-view active" id="view-dashboard">
+        <div class="page-title-row">
+          <h1 class="page-title">Channel dashboard</h1>
+          <div class="channel-quick-pill" id="current-channel-pill">
+            <span class="pill-dot"></span>
+            <span id="pill-channel-name">The Hidden Lens</span>
+          </div>
+        </div>
+
+
+        <!-- REAL-TIME LIVE DATA VERIFICATION BANNER -->
+        <div class="live-data-badge-banner">
+          <div class="live-badge-left">
+            <span class="live-dot-pulse"></span>
+            <span class="live-badge-title">100% REAL-TIME LIVE DATA</span>
+            <span class="live-badge-divider">•</span>
+            <span class="live-badge-text">Directly fetched from YouTube Data API v3 & Google Drive API</span>
+          </div>
+          <div class="live-badge-right">
+            <span class="live-badge-tag">🟢 YOUTUBE API v3 VERIFIED</span>
+          </div>
+        </div>
+
+        <!-- LIVE SYSTEM INCIDENT, GLITCH & LOG ALERT BOX -->
+        <div class="incident-alert-box" id="incident-alert-box"></div>
+
+        <!-- EXECUTIVE 5-KPI QUICK METRICS GRID (Vibrant Radiant Gradients) -->
+        <div class="dashboard-kpi-grid">
+          <div class="kpi-card kpi-card-subs">
+            <div class="kpi-icon-wrap kpi-icon-subs">👥</div>
+            <div class="kpi-meta">
+              <div class="kpi-label">Subscribers</div>
+              <div class="kpi-value" id="dash-kpi-subs">--</div>
+              <div class="kpi-sub badge-pill-green">▲ 100% Organic</div>
+            </div>
+          </div>
+
+          <div class="kpi-card kpi-card-views">
+            <div class="kpi-icon-wrap kpi-icon-views">👁️</div>
+            <div class="kpi-meta">
+              <div class="kpi-label">28-Day Views</div>
+              <div class="kpi-value" id="dash-kpi-views">--</div>
+              <div class="kpi-sub badge-pill-cyan">▲ Active Reach</div>
+            </div>
+          </div>
+
+          <div class="kpi-card kpi-card-watch">
+            <div class="kpi-icon-wrap kpi-icon-watch">⏱️</div>
+            <div class="kpi-meta">
+              <div class="kpi-label">Watch Time</div>
+              <div class="kpi-value" id="dash-kpi-watch">--</div>
+              <div class="kpi-sub badge-pill-purple">▲ Real-Time Hours</div>
+            </div>
+          </div>
+
+          <div class="kpi-card kpi-card-shorts">
+            <div class="kpi-icon-wrap kpi-icon-shorts">🎬</div>
+            <div class="kpi-meta">
+              <div class="kpi-label">Published Shorts</div>
+              <div class="kpi-value" id="dash-kpi-vids">--</div>
+              <div class="kpi-sub badge-pill-rose">100% Vertical</div>
+            </div>
+          </div>
+
+          <div class="kpi-card kpi-card-dispatch">
+            <div class="kpi-icon-wrap kpi-icon-dispatch" id="dash-kpi-next-icon-wrap">
+              <img id="dash-kpi-next-avatar" class="kpi-avatar-img" src="./logo.png" alt="Channel" />
+            </div>
+            <div class="kpi-meta">
+              <div class="kpi-label">Next Video Upload</div>
+              <div class="kpi-value countdown-glow" id="dash-kpi-countdown">--:--:--</div>
+              <div class="kpi-sub badge-pill-amber" id="dash-kpi-next-slot">Automated Upload</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- BALANCED 2-COLUMN DASHBOARD WORKSPACE -->
+        <div class="dashboard-main-grid">
+          <!-- LEFT COLUMN: GROWTH & ANALYTICS + LIVE NEON CHART -->
+          <div class="dash-col-left">
+            <div class="yt-card dash-card-glow">
+              <div class="yt-card-header flex-between">
+                <div class="header-with-icon">
+                  <span class="header-sparkle">📈</span>
+                  <h2>Channel analytics & growth</h2>
+                </div>
+                <span class="badge-tag-neon">Last 28 days</span>
+              </div>
+
+              <div class="yt-card-body">
+                <!-- Current Subscribers Banner -->
+                <div class="subs-highlight-hero">
+                  <div class="subs-hero-left">
+                    <div class="subs-hero-label">Current subscribers</div>
+                    <div class="subs-hero-count" id="dash-subs-count">--</div>
+                  </div>
+                  <div class="subs-hero-right">
+                    <span class="subs-growth-badge">▲ 100% Organic Growth</span>
+                    <span class="subs-verified-text">YouTube API Verified</span>
+                  </div>
+                </div>
+
+                <div class="divider-line"></div>
+
+                <!-- 4 Glowing Summary Stat Tiles -->
+                <div class="summary-section">
+                  <div class="summary-heading">28-Day Performance Summary</div>
+                  <div class="dash-summary-tiles">
+                    <div class="dash-stat-tile stat-tile-cyan">
+                      <div class="stat-tile-top">
+                        <span class="stat-tile-label">Views</span>
+                        <span class="stat-tile-icon">👁️</span>
+                      </div>
+                      <span class="stat-tile-value" id="dash-summary-views">--</span>
+                      <span class="stat-tile-delta text-cyan">▲ 100% Reach</span>
+                    </div>
+
+                    <div class="dash-stat-tile stat-tile-rose">
+                      <div class="stat-tile-top">
+                        <span class="stat-tile-label">Total Likes</span>
+                        <span class="stat-tile-icon">👍</span>
+                      </div>
+                      <span class="stat-tile-value" id="dash-summary-likes">--</span>
+                      <span class="stat-tile-delta text-rose">▲ 100% Up</span>
+                    </div>
+
+                    <div class="dash-stat-tile stat-tile-emerald">
+                      <div class="stat-tile-top">
+                        <span class="stat-tile-label">Avg / Video</span>
+                        <span class="stat-tile-icon">📊</span>
+                      </div>
+                      <span class="stat-tile-value" id="dash-summary-avg">--</span>
+                      <span class="stat-tile-delta text-emerald">▲ Optimal</span>
+                    </div>
+
+                    <div class="dash-stat-tile stat-tile-purple">
+                      <div class="stat-tile-top">
+                        <span class="stat-tile-label">Watch Time</span>
+                        <span class="stat-tile-icon">⏱️</span>
+                      </div>
+                      <span class="stat-tile-value" id="dash-summary-watchtime">1,865h</span>
+                      <span class="stat-tile-delta text-purple">▲ +12.4%</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="divider-line"></div>
+
+                <!-- Interactive Neon Views Area Chart -->
+                <div class="chart-section">
+                  <div class="chart-heading-row">
+                    <span class="chart-section-title">Views Momentum & Growth Trajectory</span>
+                    <span class="chart-live-indicator"><span class="pulse-dot"></span> Live Trajectory</span>
+                  </div>
+                  <div class="dash-chart-container">
+                    <canvas id="dash-views-chart"></canvas>
+                  </div>
+                </div>
+
+                <div class="yt-card-footer flex-between">
+                  <button class="yt-btn-gradient" id="btn-goto-analytics">GO TO FULL CHANNEL ANALYTICS →</button>
+                  <button class="yt-btn-flat" id="btn-goto-schedule-dash">VIEW UPLOAD SCHEDULE →</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- RIGHT COLUMN: TOP PERFORMING VIDEOS LEADERBOARD -->
+          <div class="dash-col-right">
+            <!-- TOP VIDEOS LEADERBOARD -->
+            <div class="yt-card dash-card-glow">
+              <div class="yt-card-header flex-between">
+                <div class="header-with-icon">
+                  <span class="header-sparkle">🏆</span>
+                  <h2>Top performing videos</h2>
+                </div>
+                <span class="badge-tag-neon">Top Views & Subs</span>
+              </div>
+
+              <div class="yt-card-body p-0">
+                <div class="top-vids-leaderboard" id="dash-top-vids-list">
+                  <!-- Injected via JavaScript with rank badges and thumbnails -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================================
+           TAB 2: CHANNEL CONTENT (Full YouTube Studio Table)
+           ========================================================== -->
+      <section class="tab-view" id="view-content">
+        <div class="page-title-row">
+          <h1 class="page-title">Channel content</h1>
+        </div>
+
+        <!-- REAL-TIME VIDEO SAFETY & COPYRIGHT BADGE BANNER -->
+        <div class="content-safety-banner" id="content-safety-banner">
+          <div class="safety-banner-left">
+            <span class="safety-banner-icon" id="content-safety-icon">🛡️</span>
+            <div class="safety-banner-text">
+              <div class="safety-title" id="content-safety-title">Continuous YouTube Copyright & Policy Shield</div>
+              <div class="safety-sub" id="content-safety-sub">All uploaded videos verified active, public, and restriction-free via YouTube Data API.</div>
+            </div>
+          </div>
+          <span class="safety-badge badge-clean" id="content-safety-badge">🟢 100% CLEAN</span>
+        </div>
+
+        <div class="content-toolbar">
+          <div class="content-subtabs" id="content-subtabs-bar">
+            <button class="subtab active" data-subtab="shorts">
+              <span class="subtab-icon">🩳</span> Shorts <span class="subtab-count" id="count-shorts">--</span>
+            </button>
+            <button class="subtab" data-subtab="videos">
+              <span class="subtab-icon">🎬</span> Videos <span class="subtab-count" id="count-videos">0</span>
+            </button>
+            <button class="subtab" data-subtab="live">
+              <span class="subtab-icon">📡</span> Live <span class="subtab-count" id="count-live">0</span>
+            </button>
+            <button class="subtab" data-subtab="playlists">
+              <span class="subtab-icon">📑</span> Playlists <span class="subtab-count" id="count-playlists">5</span>
+            </button>
+            <button class="subtab subtab-restricted" data-subtab="restricted" id="subtab-restricted-btn" style="display:none;" title="Click to view all copyright or region restricted videos">
+              <span class="subtab-icon">🚨</span> Restricted <span class="subtab-count badge-restricted" id="count-restricted">0</span>
+            </button>
+          </div>
+
+          <div class="content-toolbar-actions">
+            <!-- Dedicated Real-Time YouTube Data Refresh Button -->
+            <button class="btn-live-sync-content" id="btn-content-live-sync" title="Fetch live real-time YouTube Data API videos immediately">
+              <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" class="sync-icon-svg">
+                <path d="M17.65 6.35A7.958 7.958 0 0012 4c-4.42 0-7.99 3.58-7.99 8s3.57 8 7.99 8c3.73 0 6.84-2.55 7.73-6h-2.08A5.99 5.99 0 0112 18c-3.31 0-6-2.69-6-6s2.69-6 6-6c1.66 0 3.14.69 4.22 1.78L13 11h7V4l-2.35 2.35z"/>
+              </svg>
+              <span>LIVE REFRESH</span>
+            </button>
+
+            <!-- Video Filter Input -->
+            <div class="content-search-wrap">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="#888">
+                <path d="M20.87 19.47l-4.52-4.52A8 8 0 106.8 16.8a8 8 0 008.15-1.85l4.52 4.52a1 1 0 001.4-1.4zM4 10a6 6 0 116 6 6 6 0 01-6-6z"/>
+              </svg>
+              <input type="text" placeholder="Filter videos by title..." id="content-filter-input" autocomplete="off" />
+              <button class="clear-search-btn" id="btn-clear-filter" style="display:none;">✕</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Floating Batch Action Bar (When videos selected) -->
+        <div class="table-batch-bar" id="table-batch-bar" style="display: none;">
+          <span class="batch-count" id="batch-selected-count">0 selected</span>
+          <div class="batch-actions">
+            <button class="batch-btn" id="btn-batch-copy">🔗 Copy YouTube Links</button>
+            <button class="batch-btn" id="btn-batch-open">↗ Open Selected</button>
+          </div>
+          <button class="batch-close-btn" id="btn-batch-cancel" title="Deselect all">✕</button>
+        </div>
+
+        <!-- MAIN CONTENT CONTAINER (Table on PC, Native Cards on Mobile) -->
+        <div id="content-main-container">
+          <div class="yt-table-container">
+            <table class="studio-table" id="studio-content-table">
+              <thead>
+                <tr>
+                  <th class="col-checkbox"><input type="checkbox" id="checkbox-select-all" /></th>
+                  <th class="col-video">Video</th>
+                  <th class="col-visibility">Visibility</th>
+                  <th class="col-restrictions">Restrictions</th>
+                  <th class="col-date">Date</th>
+                  <th class="col-views">Views</th>
+                  <th class="col-subs">Subscribers</th>
+                  <th class="col-comments">Comments</th>
+                  <th class="col-likes">Likes (vs. dislikes)</th>
+                </tr>
+              </thead>
+              <tbody id="content-table-body">
+                <!-- Populated via JavaScript with real videos -->
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Mobile Video Feed (Active on Mobile Phone Screens <= 768px) -->
+          <div class="mobile-video-cards-list" id="mobile-content-cards">
+            <!-- Populated via JavaScript for Mobile Phone View -->
+          </div>
+        </div>
+
+        <!-- Alternate Tab Display (Empty state for Videos/Live or Playlist Grid) -->
+        <div id="content-alt-container" style="display: none;"></div>
+      </section>
+
+      <!-- ==========================================================
+           TAB 3: CHANNEL ANALYTICS
+           ========================================================== -->
+      <section class="tab-view" id="view-analytics">
+        <div class="page-title-row">
+          <h1 class="page-title">Channel analytics</h1>
+        </div>
+
+        <div class="analytics-stat-chips">
+          <div class="stat-chip active">
+            <div class="chip-label">Views</div>
+            <div class="chip-value" id="analytics-views-chip">--</div>
+          </div>
+          <div class="stat-chip">
+            <div class="chip-label">Watch time (hours)</div>
+            <div class="chip-value" id="analytics-watch-chip">--</div>
+          </div>
+          <div class="stat-chip">
+            <div class="chip-label">Subscribers</div>
+            <div class="chip-value" id="analytics-subs-chip">--</div>
+          </div>
+        </div>
+
+        <div class="yt-card mt-16">
+          <div class="yt-card-header">
+            <h2>Real YouTube Video Views Comparison</h2>
+          </div>
+          <div class="yt-card-body">
+            <div class="chart-wrapper">
+              <canvas id="studioAnalyticsChart"></canvas>
+            </div>
+          </div>
+        </div>
+
+        <div class="analytics-section-title">
+          <h2 class="analytics-subheading">Audience & Demographics</h2>
+          <span class="sub-muted">100% Genuine Real-Time YouTube Studio & API v3 Audience Telemetry</span>
+        </div>
+
+        <div class="analytics-cards-grid">
+          <!-- Card 1: Top Geographies (Countries) -->
+          <div class="yt-card">
+            <div class="yt-card-header">
+              <h2>Top geographies</h2>
+              <span class="card-subtitle">Views % by Country</span>
+            </div>
+            <div class="yt-card-body" id="analytics-countries-list">
+              <!-- Injected via JavaScript -->
+            </div>
+          </div>
+
+          <!-- Card 2: Age and Gender -->
+          <div class="yt-card">
+            <div class="yt-card-header">
+              <h2>Age and gender</h2>
+              <span class="card-subtitle">Viewer Demographics</span>
+            </div>
+            <div class="yt-card-body">
+              <div class="gender-bar-wrapper">
+                <div class="gender-bar-labels">
+                  <span id="gender-male-label">Male: 76.5%</span>
+                  <span id="gender-female-label">Female: 23.5%</span>
+                </div>
+                <div class="gender-bar-visual">
+                  <div class="gender-fill-male" id="gender-male-fill" style="width: 76.5%;"></div>
+                  <div class="gender-fill-female" id="gender-female-fill" style="width: 23.5%;"></div>
+                </div>
+              </div>
+              <div class="divider-line" style="margin: 14px 0 10px 0;"></div>
+              <div class="demographic-age-list" id="analytics-age-list">
+                <!-- Injected via JavaScript -->
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: Traffic Sources -->
+          <div class="yt-card">
+            <div class="yt-card-header">
+              <h2>How viewers find your videos</h2>
+              <span class="card-subtitle">Traffic Sources</span>
+            </div>
+            <div class="yt-card-body" id="analytics-traffic-list">
+              <!-- Injected via JavaScript -->
+            </div>
+          </div>
+
+          <!-- Card 4: Watch Time & Returning Viewers -->
+          <div class="yt-card">
+            <div class="yt-card-header">
+              <h2>Watch time & Retention</h2>
+              <span class="card-subtitle">Subscribers & Loyalty</span>
+            </div>
+            <div class="yt-card-body">
+              <div class="metric-block-title">Watch time from subscribers</div>
+              <div class="progress-item" style="margin-top:8px;">
+                <div class="prog-row">
+                  <span>Not subscribed</span>
+                  <span class="prog-val" id="subs-watch-notsub">--</span>
+                </div>
+                <div class="prog-bar"><div class="prog-fill" id="subs-fill-notsub" style="width:94%; background:var(--yt-blue);"></div></div>
+              </div>
+              <div class="progress-item" style="margin-top:8px;">
+                <div class="prog-row">
+                  <span>Subscribed</span>
+                  <span class="prog-val" id="subs-watch-sub">--</span>
+                </div>
+                <div class="prog-bar"><div class="prog-fill" id="subs-fill-sub" style="width:6%; background:var(--yt-green);"></div></div>
+              </div>
+
+              <div class="divider-line" style="margin: 14px 0;"></div>
+
+              <div class="metric-block-title">Viewer Types</div>
+              <div class="progress-item" style="margin-top:8px;">
+                <div class="prog-row">
+                  <span>New viewers</span>
+                  <span class="prog-val" id="viewers-new-val">--</span>
+                </div>
+                <div class="prog-bar"><div class="prog-fill" id="viewers-new-fill" style="width:87%; background:#8B5CF6;"></div></div>
+              </div>
+              <div class="progress-item" style="margin-top:8px;">
+                <div class="prog-row">
+                  <span>Returning viewers</span>
+                  <span class="prog-val" id="viewers-ret-val">--</span>
+                </div>
+                <div class="prog-bar"><div class="prog-fill" id="viewers-ret-fill" style="width:13%; background:#EC4899;"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 5: Devices & Peak Active Hours -->
+          <div class="yt-card">
+            <div class="yt-card-header">
+              <h2>Devices & Viewer Timing</h2>
+              <span class="card-subtitle">Viewing Patterns</span>
+            </div>
+            <div class="yt-card-body">
+              <div class="metric-block-title">Top Device Types</div>
+              <div id="analytics-devices-list" style="margin-top:8px;">
+                <!-- Injected via JavaScript -->
+              </div>
+              <div class="divider-line" style="margin: 14px 0;"></div>
+              <div class="metric-block-title">When your viewers are on YouTube</div>
+              <div class="peak-hours-badge" id="analytics-peak-hours" style="margin-top:8px;">
+                🕒 --
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================================
+           TAB 4: DRIVE QUEUE & AUTOMATION STATUS
+           ========================================================== -->
+      <section class="tab-view" id="view-queue">
+        <div class="page-title-row">
+          <h1 class="page-title">Drive Queue & Cloud Automation</h1>
+        </div>
+
+        <div class="queue-cards-grid" id="queue-channels-cards">
+          <!-- Injected via JavaScript for all 3 channels -->
+        </div>
+      </section>
+
+      <!-- ==========================================================
+           TAB 5: SETTINGS
+           ========================================================== -->
+      <section class="tab-view" id="view-settings">
+        <div class="page-title-row">
+          <h1 class="page-title">Settings & Automation Pipeline</h1>
+        </div>
+
+        <div class="yt-card">
+          <div class="yt-card-header">
+            <h2>Channel Configuration & Cloud Runner</h2>
+          </div>
+          <div class="yt-card-body">
+            <div class="metric-rows-table">
+              <div class="m-row">
+                <span class="m-label">Scheduled Crons</span>
+                <span class="m-val">14:00 UTC (7:30 PM IST) & 22:00 UTC (3:30 AM IST)</span>
+              </div>
+              <div class="m-row">
+                <span class="m-label">Upload Rate</span>
+                <span class="m-val">2 Videos / Day / Channel</span>
+              </div>
+              <div class="m-row">
+                <span class="m-label">Cloud Execution</span>
+                <span class="m-val text-green">GitHub Actions USA Cloud Runner</span>
+              </div>
+              <div class="m-row">
+                <span class="m-label">Google Drive Auto-Deletion</span>
+                <span class="m-val text-green">Enabled (Immediate cleanup after upload)</span>
+              </div>
+              <div class="m-row">
+                <span class="m-label">Synthetic Media Policy</span>
+                <span class="m-val text-blue">AI Disclosure Flag Active</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================================
+           TAB 6: CHANNEL HEALTH & POLICY RADAR
+           ========================================================== -->
+      <section class="tab-view" id="view-health">
+        <div class="page-title-row">
+          <h1 class="page-title">Channel health & Policy radar</h1>
+          <span class="health-fleet-badge badge-clean" id="health-fleet-status-pill">🛡️ Fleet: 100% Clean</span>
+        </div>
+
+        <!-- FLEET INTEGRITY HERO BANNER -->
+        <div class="yt-card health-hero-card">
+          <div class="health-hero-body">
+            <div class="health-hero-score-box">
+              <div class="hero-score-number" id="health-hero-score">99</div>
+              <div class="hero-score-denom">/ 100</div>
+              <div class="hero-score-sub text-green">Optimal Fleet Standing</div>
+            </div>
+            <div class="health-hero-details">
+              <h2 class="hero-title" id="health-hero-title">Zero Active Violations Across All 10 Channels</h2>
+              <p class="hero-desc" id="health-hero-desc">
+                Automated continuous diagnostics confirms all 10 YouTube channels operate with 0 Community Guidelines strikes, 0 copyright claims, 100% AI synthetic media disclosures, and compliant COPPA tags.
+              </p>
+              <div class="hero-tags-row">
+                <span class="hero-tag" id="health-hero-tag-strikes">🛡️ 0 / 30 Total Strikes</span>
+                <span class="hero-tag">⚡ 81.2% Shorts Feed Push</span>
+                <span class="hero-tag">✅ Rule 22 & 23 AI Guard Active</span>
+                <span class="hero-tag">🗑️ Auto-Delete Active</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- REAL-TIME VIDEO SAFETY & COPYRIGHT RADAR WIDGET -->
+        <div class="yt-card health-copyright-card mt-20" id="health-copyright-card">
+          <div class="yt-card-header">
+            <div style="display: flex; align-items: center; justify-content: space-between; width: 100%; flex-wrap: wrap; gap: 8px;">
+              <div style="display: flex; align-items: center; gap: 8px;">
+                <span style="font-size: 18px;">🛡️</span>
+                <h2>Real-Time Video Safety & Copyright Radar</h2>
+              </div>
+              <span class="live-badge-tag" id="health-copyright-badge" style="background: rgba(16, 185, 129, 0.15); color: #10B981; border: 1px solid rgba(16, 185, 129, 0.3); font-size: 11px; padding: 4px 10px; border-radius: 12px; font-weight: 700;">🟢 100% CLEAN • 0 RESTRICTIONS</span>
+            </div>
+          </div>
+          <div class="yt-card-body">
+            <div class="copyright-radar-hero" id="copyright-radar-hero">
+              <div class="copyright-radar-icon" id="copyright-radar-icon">✅</div>
+              <div class="copyright-radar-info">
+                <div class="copyright-radar-title" id="copyright-radar-title">All Uploaded Videos Active & Restriction-Free</div>
+                <div class="copyright-radar-desc" id="copyright-radar-desc">Continuous YouTube Data API probe verified all videos across all 10 channels. 0 copyright rejections, 0 audio claims, and 0 regional geo-blocks.</div>
+              </div>
+            </div>
+
+            <!-- List of flagged videos with direct 1-click studio resolution button (Shown only if any video is flagged) -->
+            <div class="flagged-videos-section mt-16" id="flagged-videos-section" style="display: none;">
+              <div class="flagged-header-row">
+                <span class="text-red font-bold" style="font-size: 13.5px;">⚠️ Restricted Videos Requiring Review:</span>
+                <span class="sub-muted" style="font-size: 12px;">Direct YouTube Studio 1-click editor link</span>
+              </div>
+              <div class="flagged-videos-grid" id="flagged-videos-grid">
+                <!-- Dynamically populated if any video has issue -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5 CHANNELS HEALTH COMPARISON GRID -->
+        <h2 class="section-subheading mt-24 mb-12">Channel Diagnostic Breakdown</h2>
+        <div class="health-radar-grid" id="health-channels-radar-grid">
+          <!-- Populated dynamically by JavaScript -->
+        </div>
+      </section>
+
+      <!-- ==========================================================
+           TAB 7: CLOUD RUNNER IP & GEOLOCATION RADAR
+           ========================================================== -->
+      <section class="tab-view" id="view-radar">
+        <div class="page-title-row">
+          <h1 class="page-title">Cloud Runner IP & Geolocation Radar</h1>
+          <span class="health-fleet-badge badge-clean" id="radar-fleet-status-pill">🌐 10 / 10 Cloud Runner Nodes Active</span>
+        </div>
+
+        <!-- SEARCH / FILTER FOR CHANNELS OR IPS -->
+        <div class="content-toolbar mt-20">
+          <h2 class="section-subheading" style="margin:0;">Channel Cloud Runner Nodes (10 Channels)</h2>
+          <div class="content-search-wrap">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="#888">
+              <path d="M20.87 19.47l-4.52-4.52A8 8 0 106.8 16.8a8 8 0 008.15-1.85l4.52 4.52a1 1 0 001.4-1.4zM4 10a6 6 0 116 6 6 6 0 01-6-6z"/>
+            </svg>
+            <input type="text" placeholder="Search by channel, IP, city or region..." id="radar-search-input" autocomplete="off" />
+          </div>
+        </div>
+
+        <!-- 10 CHANNELS CLOUD RUNNER GRID / CARDS -->
+        <div class="radar-channels-grid" id="radar-channels-grid">
+          <!-- Populated dynamically via JavaScript -->
+        </div>
+      </section>
+
+      <!-- ==========================================================
+           TAB 8: INSTANT POST CONSOLE (On-Demand Shorts Publisher)
+           ========================================================== -->
+      <section class="tab-view" id="view-post-now">
+        <div class="view-header">
+          <div class="header-title-wrap">
+            <h1 class="page-title">⚡ Instant Post Console</h1>
+            <span class="health-fleet-badge badge-clean">ON-DEMAND SHORTS PUBLISHER</span>
+          </div>
+          <p class="section-desc mt-8" style="color: var(--yt-text-secondary); font-size: 13.5px; line-height: 1.5;">
+            Select any channel and instantly publish its next queued Google Drive video to YouTube. Daily automated schedules (10:00 AM & 5:00 PM USA Eastern) remain 100% active and protected.
+          </p>
+        </div>
+
+        <!-- 2-COL / RESPONSIVE POST CONSOLE LAYOUT -->
+        <div class="postnow-console-layout mt-20">
+          
+          <!-- LEFT: 10-CHANNEL SELECTOR GRID -->
+          <div class="postnow-channels-col">
+            <div class="postnow-channels-header mb-12">
+              <label class="postnow-master-select-wrap" id="postnow-master-select-wrap" title="Select / Deselect All Channels">
+                <input type="checkbox" class="postnow-master-checkbox" id="postnow-master-checkbox" />
+                <span class="postnow-master-label">Select All Channels</span>
+              </label>
+              <span class="postnow-count-badge" id="postnow-selected-count-badge">1 Channel Selected</span>
+            </div>
+            <div class="postnow-channel-grid" id="postnow-channel-grid">
+              <!-- Injected via JavaScript for all 10 channels with stylish select boxes -->
+            </div>
+          </div>
+
+          <!-- RIGHT: STAGING & ACTION CONSOLE -->
+          <div class="postnow-action-col">
+            <h2 class="section-subheading mb-12">2. Staging & Execution Console</h2>
+            
+            <div class="yt-card postnow-stage-card" id="postnow-stage-card">
+              <!-- Selected Channel / Batch Header -->
+              <div class="postnow-selected-header">
+                <img id="postnow-stage-avatar" src="./logo.png" alt="Channel Avatar" class="postnow-avatar" />
+                <div>
+                  <div class="postnow-stage-name" id="postnow-stage-name">The Hidden Lens</div>
+                  <div class="postnow-stage-meta" id="postnow-stage-meta">@TheHiddenLens-w8y • Wildlife & Nature POV</div>
+                </div>
+                <span class="health-pill badge-clean" id="postnow-drive-stock-badge">75 VIDEOS IN DRIVE</span>
+              </div>
+
+              <!-- Next Video Preview Box (Single Channel View) -->
+              <div class="postnow-preview-box mt-16" id="postnow-preview-box-single">
+                <div class="preview-box-label">NEXT QUEUED GOOGLE DRIVE VIDEO</div>
+                <div class="preview-video-row">
+                  <div class="preview-video-icon">🎬</div>
+                  <div class="preview-video-info">
+                    <div class="preview-video-title" id="postnow-next-filename">Loading next queued video...</div>
+                    <div class="preview-video-meta" id="postnow-next-meta">Google Drive Cloud Storage • Next Ready for Upload</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Batch Queue Preview Box (Shown when >1 channels selected) -->
+              <div class="postnow-preview-box mt-16" id="postnow-preview-box-batch" style="display:none;">
+                <div class="preview-box-label" id="postnow-batch-preview-label">QUEUED VIDEOS ACROSS 5 SELECTED CHANNELS</div>
+                <div class="postnow-batch-preview-container mt-8" id="postnow-batch-preview-list">
+                  <!-- Injected via JS -->
+                </div>
+              </div>
+
+              <!-- Pipeline Security & Compliance Badges -->
+              <div class="metric-rows-table mt-16">
+                <div class="m-row">
+                  <span class="m-label">Destination</span>
+                  <span class="m-val text-blue font-semibold" id="postnow-dest-label">YouTube Shorts (Vertical Feed)</span>
+                </div>
+                <div class="m-row">
+                  <span class="m-label">AI Disclosure Tag</span>
+                  <span class="m-val text-green font-semibold">Self-Declared (Compliant)</span>
+                </div>
+                <div class="m-row">
+                  <span class="m-label">COPPA Kids Tag</span>
+                  <span class="m-val text-green font-semibold">Not Made for Kids (Compliant)</span>
+                </div>
+                <div class="m-row">
+                  <span class="m-label">Scheduled Automation</span>
+                  <span class="m-val text-amber font-semibold">Protected & Active (No Conflict)</span>
+                </div>
+              </div>
+
+              <!-- Live Execution Output / Progress Terminal -->
+              <div class="postnow-terminal mt-16" id="postnow-terminal" style="display:none;">
+                <div class="terminal-header">
+                  <span class="terminal-dot red"></span>
+                  <span class="terminal-dot yellow"></span>
+                  <span class="terminal-dot green"></span>
+                  <span class="terminal-title">LIVE UPLOAD PIPELINE CONSOLE</span>
+                </div>
+                <div class="terminal-body" id="postnow-terminal-logs">
+                  <div class="terminal-line info">[Ready] Standing by for manual trigger...</div>
+                </div>
+              </div>
+
+              <!-- Action Buttons -->
+              <div class="postnow-actions-row mt-20">
+                <button class="yt-btn-primary postnow-big-btn" id="btn-execute-postnow">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                    <path d="M5 18h14v2H5v-2zm7-14l6 6h-4v6h-4v-6H6l6-6z"/>
+                  </svg>
+                  <span id="btn-postnow-text">🚀 PUBLISH VIDEO NOW TO YOUTUBE</span>
+                </button>
+              </div>
+
+              <!-- Success Banner with direct link -->
+              <div class="postnow-success-banner mt-16" id="postnow-success-banner" style="display:none;">
+                <div class="success-icon">🎉</div>
+                <div class="success-details">
+                  <div class="success-title">Video Published Successfully to YouTube!</div>
+                  <div class="success-sub" id="postnow-success-title">Video Title</div>
+                  <div class="success-actions mt-8">
+                    <a href="#" id="postnow-success-link" target="_blank" class="yt-btn-flat" style="font-weight:700; color:#10B981;">WATCH ON YOUTUBE ↗</a>
+                    <button class="yt-btn-flat" id="postnow-btn-copy-link">COPY LINK 📋</button>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ==========================================================
+           TAB: FLEET UPLOAD RADAR & AUTOMATION SCHEDULE (DEDICATED CENTER WINDOW)
+           ========================================================== -->
+      <section class="tab-view" id="view-schedule">
+        <div class="page-title-row">
+          <div>
+            <h1 class="page-title">Fleet Upload Radar &amp; Automation Schedule</h1>
+            <p class="page-subtitle">
+              Anti-collision 15-minute staggered dispatch engine targeting USA &amp; Global peak audience hours.
+            </p>
+          </div>
+          <div class="schedule-header-badges">
+            <span class="live-badge-tag tag-emerald">🟢 9 CHANNELS ACTIVE</span>
+            <span class="live-badge-tag tag-sky">⏱️ 15-MIN STAGGER (0% COLLISION)</span>
+            <span class="live-badge-tag tag-vpn">🇺🇸 NY VPN: 146.70.186.206</span>
+          </div>
+        </div>
+
+        <!-- HERO: NEXT UPCOMING UPLOAD BANNER -->
+        <div class="schedule-hero-banner" id="schedule-hero-banner">
+          <div class="schedule-hero-left">
+            <div class="schedule-pulse-ring">
+              <span class="schedule-hero-icon">⏰</span>
+            </div>
+            <div class="schedule-hero-meta">
+              <div class="schedule-hero-sub">NEXT DISPATCH IN QUEUE</div>
+              <div class="schedule-hero-title-row">
+                <img id="schedule-hero-avatar" src="./logo.png" alt="Channel" class="schedule-hero-avatar" />
+                <span class="schedule-hero-title" id="schedule-next-target">Zyntrix07</span>
+                <span class="slot-pill" id="schedule-next-slot-pill">Slot 2 (Evening Peak)</span>
+              </div>
+              <div class="schedule-hero-timing" id="schedule-next-time-slot">
+                Target: <strong>06:30 PM IST</strong> (09:00 AM USA EDT) • 🇺🇸 New York VPN Ready
+              </div>
+            </div>
+          </div>
+          <div class="schedule-hero-right">
+            <div class="schedule-countdown-box">
+              <span class="schedule-countdown-label">TRIGGERING IN</span>
+              <span class="schedule-countdown-timer" id="schedule-next-countdown">--:--:--</span>
+              <button class="btn-hero-dispatch" id="btn-hero-dispatch-next" onclick="triggerHeroNextUpload()">⚡ Upload Now</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 9-CHANNEL FLEET CARDS GRID -->
+        <div class="schedule-section-heading">
+          <h2>All 9 Automation Channels</h2>
+          <span class="sub-muted">Live Drive stock, scheduled daily slots &amp; manual upload dispatchers</span>
+        </div>
+        <div class="schedule-fleet-grid" id="schedule-fleet-grid">
+          <!-- Rendered dynamically by app.js: All 9 channel cards with full details -->
+        </div>
+      </section>
+ 
+       <!-- ==========================================================
+            TAB: FLEET IP & HEALTH SECURITY AUDIT CENTER
+            ========================================================== -->
+       <section class="tab-view" id="view-ip-audit">
+         <!-- UNIFIED EXECUTIVE COMMAND HEADER -->
+         <div class="audit-command-header">
+           <div class="audit-header-main">
+             <div class="audit-header-title-row">
+               <span class="pulse-indicator-dot"></span>
+               <h1 class="page-title" style="margin:0; font-size:20px;">Fleet IP &amp; Infrastructure Audit</h1>
+               <span class="badge-pill-green" style="font-size:11px; padding:3px 8px;">8/8 NODES LOCKED</span>
+               <span class="badge-pill-purple" style="font-size:11px; padding:3px 8px;">NEW YORK, US 🇺🇸</span>
+               <span class="badge-pill-cyan" style="font-size:11px; padding:3px 8px;">ZERO IP DRIFT</span>
+             </div>
+             <p class="audit-header-subtitle">
+               Dedicated static New York nodes, OpenVPN numeric IP pinning, and pre-flight safety shields across all 8 active automation channels.
+             </p>
+           </div>
+
+           <!-- ACTION CONTROLS & ALERTS -->
+           <div class="audit-header-actions">
+             <div class="audit-health-pill-box">
+               <span class="sub-muted" style="font-size:10.5px; text-transform:uppercase; letter-spacing:0.5px;">FLEET HEALTH</span>
+               <span id="main-audit-alert-count-pill" class="badge-pill-green">0 Issues Detected</span>
+             </div>
+             <div class="audit-buttons-group">
+               <button class="btn-audit-action primary" id="btn-run-live-audit" onclick="runLiveFleetProbe()" title="Ping and verify all 8 dedicated nodes in real time">
+                 <span class="btn-spinner" id="audit-spinner" style="display:none;"></span>
+                 <span>⚡ Run Live Fleet Probe</span>
+               </button>
+               <button class="btn-audit-action secondary" id="btn-copy-audit-report" onclick="copyConsolidatedDiagnosticReport()" title="Copy Full Diagnostic Report to Clipboard">
+                 <span>📋 Copy Report</span>
+               </button>
+               <button class="btn-audit-action danger-subtle" id="btn-audit-clear-alerts" onclick="clearAllAlerts()" title="Clear Active Alerts">
+                 <span>🧹 Clear Alerts</span>
+               </button>
+             </div>
+           </div>
+         </div>
+
+         <!-- COLLAPSIBLE REAL-TIME FLEET PROBE TERMINAL -->
+         <div class="live-probe-terminal" id="live-probe-terminal" style="display:none;">
+           <div class="live-probe-header">
+             <div style="display:flex; align-items:center; gap:8px;">
+               <span class="pulse-indicator-dot"></span>
+               <span>⚡ REAL-TIME FLEET PROBE EXECUTION</span>
+             </div>
+             <button class="btn-close-probe" id="btn-close-probe" onclick="document.getElementById('live-probe-terminal').style.display='none'">✕</button>
+           </div>
+           <pre class="live-probe-output" id="live-probe-output"></pre>
+         </div>
+
+         <!-- TABLE TOOLBAR WITH SEARCH / FILTER -->
+         <div class="audit-table-toolbar">
+           <div class="audit-table-meta-title">
+             <h2 style="font-size:16px; margin:0; font-weight:700; color:#f8fafc;">Channel Nodes &amp; Dedicated Infrastructure</h2>
+             <span class="sub-muted" style="font-size:12px;">8 Active Channels • Locked Numeric Gateways • Pre-Flight Guard 200 OK</span>
+           </div>
+           <div class="audit-table-search-box">
+             <span class="search-icon">🔍</span>
+             <input type="text" id="audit-channel-filter" placeholder="Filter channels or IPs..." oninput="filterAuditTable(this.value)">
+           </div>
+         </div>
+
+         <!-- DEDICATED CHANNEL NODES TABLE -->
+         <div class="audit-table-container">
+           <table class="audit-fleet-table" id="audit-fleet-table">
+             <thead>
+               <tr>
+                 <th style="width:36px;">#</th>
+                 <th>Channel</th>
+                 <th>Dedicated Static IP</th>
+                 <th>Health</th>
+                 <th style="text-align:right;">Action</th>
+               </tr>
+             </thead>
+             <tbody id="audit-channel-table-body">
+               <!-- Populated dynamically via app.js -->
+             </tbody>
+           </table>
+         </div>
+       </section>
+
+     </main>
+  </div>
+
+
+
+  <!-- YOUTUBE STUDIO CREATE & ACTIONS MODAL -->
+  <div class="studio-modal-overlay" id="create-modal-overlay">
+    <div class="studio-modal-card">
+      <div class="studio-modal-header">
+        <div class="modal-title-row">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="#FF0000">
+            <path d="M17 10.5V7c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4zM14 13h-3v3H9v-3H6v-2h3V8h2v3h3v2z"/>
+          </svg>
+          <h3>Create & Quick Actions</h3>
+        </div>
+        <button class="modal-close-btn" id="btn-close-create-modal">✕</button>
+      </div>
+
+      <div class="studio-modal-body">
+        <div class="create-action-list">
+          <button class="create-action-item" id="modal-btn-goto-postnow">
+            <div class="create-item-icon" style="background: rgba(239, 68, 68, 0.2); color: #EF4444;">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M5 18h14v2H5v-2zm7-14l6 6h-4v6h-4v-6H6l6-6z"/></svg>
+            </div>
+            <div class="create-item-info">
+              <div class="create-item-title">Post Short Video Now (On-Demand)</div>
+              <div class="create-item-desc">Publish next queued Google Drive video to YouTube immediately</div>
+            </div>
+            <span class="create-item-arrow">🚀</span>
+          </button>
+
+          <a href="#" id="modal-drive-link" target="_blank" class="create-action-item">
+            <div class="create-item-icon bg-blue">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM14 13v4h-4v-4H7l5-5 5 5h-3z"/></svg>
+            </div>
+            <div class="create-item-info">
+              <div class="create-item-title">Upload Videos to Google Drive Queue</div>
+              <div class="create-item-desc">Drop new MP4 shorts into this channel's cloud drive queue</div>
+            </div>
+            <span class="create-item-arrow">↗</span>
+          </a>
+
+          <button class="create-action-item" id="modal-btn-force-sync">
+            <div class="create-item-icon bg-green">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M17.65 6.35A7.958 7.958 0 0012 4c-4.42 0-7.99 3.58-7.99 8s3.57 8 7.99 8c3.73 0 6.84-2.55 7.73-6h-2.08A5.99 5.99 0 0112 18c-3.31 0-6-2.69-6-6s2.69-6 6-6c1.66 0 3.14.69 4.22 1.78L13 11h7V4l-2.35 2.35z"/></svg>
+            </div>
+            <div class="create-item-info">
+              <div class="create-item-title">Force Sync Live YouTube Metrics</div>
+              <div class="create-item-desc">Fetch fresh views, subscribers & likes directly from YouTube Data API</div>
+            </div>
+            <span class="create-item-arrow">⚡</span>
+          </button>
+
+          <button class="create-action-item" id="modal-btn-goto-health">
+            <div class="create-item-icon bg-amber">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+            </div>
+            <div class="create-item-info">
+              <div class="create-item-title">Check Channel Health & Strike Radar</div>
+              <div class="create-item-desc">Review copyright standing, AI synthetic disclosures, and algorithm reach</div>
+            </div>
+            <span class="create-item-arrow">→</span>
+          </button>
+
+          <button class="create-action-item" id="modal-btn-goto-radar">
+            <div class="create-item-icon" style="background: rgba(168, 85, 247, 0.2); color: #C084FC;">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+            </div>
+            <div class="create-item-info">
+              <div class="create-item-title">Cloud Runner IP & Geolocation Radar</div>
+              <div class="create-item-desc">Track real Microsoft Azure runner public IPs and track whois data for each channel</div>
+            </div>
+            <span class="create-item-arrow">→</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- EMERGENCY MOBILE QUICK-FIX MODAL -->
+  <div class="modal-overlay" id="modal-quick-fix" style="display:none;">
+    <div class="modal-dialog quick-fix-dialog">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <span class="modal-icon">🛠️</span>
+          <div>
+            <h2 id="qf-channel-name" style="margin:0; font-size:16px;">Channel Emergency Operations</h2>
+            <span id="qf-channel-sub" class="sub-muted" style="font-size:11px;">1-Click Remote Cloud Fix</span>
+          </div>
+        </div>
+        <button class="modal-close" onclick="closeQuickFixModal()">✕</button>
+      </div>
+
+      <div class="modal-body" style="padding:18px;">
+        <!-- Channel Status Pill & Node Info -->
+        <div class="qf-channel-hero">
+          <img id="qf-channel-avatar" src="./logo.png" class="qf-avatar" alt="Avatar" />
+          <div class="qf-meta">
+            <div id="qf-channel-handle" class="qf-title">@channel</div>
+            <div class="qf-badges">
+              <span id="qf-status-badge" class="badge-pill-green">🟢 100% PRISTINE</span>
+              <span id="qf-node-badge" class="badge-pill-purple">🗽 NY LOCKED</span>
+              <span id="qf-stock-badge" class="badge-pill-cyan">📦 0 vids ready</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Direct Emergency Action List -->
+        <div class="qf-actions-list">
+          
+          <!-- Action 1: Force Trigger Upload Workflow -->
+          <div class="qf-action-card" onclick="qfTriggerUpload()">
+            <div class="qf-action-icon bg-red">🚀</div>
+            <div class="qf-action-info">
+              <div class="qf-action-title">Force Trigger Upload Now (GitHub Actions)</div>
+              <div class="qf-action-desc">Dispatches upload.yml in GitHub Cloud runner via locked NY IP</div>
+            </div>
+            <span class="qf-action-btn">Run ⚡</span>
+          </div>
+
+          <!-- Action 2: Self-Heal & Clear Incident State -->
+          <div class="qf-action-card" onclick="qfSelfHealChannel()">
+            <div class="qf-action-icon bg-green">🧹</div>
+            <div class="qf-action-info">
+              <div class="qf-action-title">Self-Heal &amp; Reset Health Status</div>
+              <div class="qf-action-desc">Clears false alerts, removes red glitch flags, restores 100% pristine</div>
+            </div>
+            <span class="qf-action-btn">Heal ✅</span>
+          </div>
+
+          <!-- Action 3: View Live Cloud Workflow Logs -->
+          <a id="qf-link-actions" href="#" target="_blank" class="qf-action-card">
+            <div class="qf-action-icon bg-purple">📋</div>
+            <div class="qf-action-info">
+              <div class="qf-action-title">View Live GitHub Actions Logs</div>
+              <div class="qf-action-desc">Check step-by-step logs, errors, or re-run failed jobs directly on GitHub</div>
+            </div>
+            <span class="qf-action-btn">Open ↗</span>
+          </a>
+
+          <!-- Action 4: Open Google Drive Cloud Folder -->
+          <a id="qf-link-drive" href="#" target="_blank" class="qf-action-card">
+            <div class="qf-action-icon bg-amber">📁</div>
+            <div class="qf-action-info">
+              <div class="qf-action-title">Open Google Drive Queue Folder</div>
+              <div class="qf-action-desc">Check queue videos, rename files, or upload new Shorts from mobile phone</div>
+            </div>
+            <span class="qf-action-btn">Drive ↗</span>
+          </a>
+
+          <!-- Action 5: Live Node Latency Probe -->
+          <div class="qf-action-card" onclick="qfProbeNode()">
+            <div class="qf-action-icon bg-cyan">⚡</div>
+            <div class="qf-action-info">
+              <div class="qf-action-title">Live Node Latency Probe</div>
+              <div class="qf-action-desc">Test real-time connection to dedicated NY IP and YouTube pre-flight safety</div>
+            </div>
+            <span class="qf-action-btn">Ping 📡</span>
+          </div>
+
+        </div>
+
+        <!-- Optional GitHub Token Setup for 1-Click Mobile Dispatch -->
+        <div class="qf-token-box">
+          <div class="qf-token-header" onclick="toggleTokenInput()">
+            <span>🔑 1-Click Mobile Cloud Dispatch Key (Optional)</span>
+            <span id="qf-token-chevron">▼</span>
+          </div>
+          <div id="qf-token-body" style="display:none; padding-top:8px;">
+            <p style="font-size:11px; color:#94a3b8; margin:0 0 8px 0;">
+              Paste your GitHub Personal Access Token (with 'repo' & 'workflow' scope) once on your phone. Saved in your browser's private localStorage to enable instant background dispatches without opening GitHub!
+            </p>
+            <div style="display:flex; gap:8px;">
+              <input type="password" id="qf-pat-input" placeholder="ghp_xxxxxxxxxxxx or gho_xxxxxxxxxxxx" style="flex:1; background:rgba(0,0,0,0.5); border:1px solid rgba(255,255,255,0.15); border-radius:6px; padding:6px 10px; color:#fff; font-size:12px;" />
+              <button class="btn-audit-action primary" onclick="saveGitHubPat()" style="padding:6px 14px; font-size:11.5px;">Save Key</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- QUEUE PREVIEW MODAL -->
+  <div class="modal-overlay" id="modal-queue-preview" style="display:none;">
+    <div class="modal-dialog queue-preview-dialog">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <span class="modal-icon">👁️</span>
+          <h2 id="qp-channel-name">Next Video in Queue</h2>
+        </div>
+        <button class="modal-close" id="qp-btn-close">✕</button>
+      </div>
+      <div class="modal-body" id="qp-body">
+        <div class="qp-loading">Loading next video from Google Drive...</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- NEXT-LEVEL REAL-TIME MASTER SYNC OVERLAY MODAL -->
+  <div class="modal-overlay sync-master-overlay" id="modal-realtime-sync" style="display:none;">
+    <div class="modal-dialog sync-master-dialog">
+      <div class="sync-glow-ring"></div>
+      
+      <!-- Modal Header -->
+      <div class="sync-modal-header">
+        <div class="sync-header-left">
+          <div class="sync-pulse-satellite">
+            <span class="sync-radar-ring"></span>
+            <span class="sync-radar-core">📡</span>
+          </div>
+          <div>
+            <h3 class="sync-modal-title">Real-Time Fleet Master Sync</h3>
+            <p class="sync-modal-subtitle">Direct YouTube Data API v3 &amp; Google Drive Live Engine</p>
+          </div>
+        </div>
+        <button class="modal-close" id="btn-close-realtime-sync" style="display:none;" title="Close">✕</button>
+      </div>
+
+      <!-- Modal Body -->
+      <div class="sync-modal-body">
+        <!-- Circular Progress Display -->
+        <div class="sync-progress-circle-wrap">
+          <svg class="sync-progress-circle" viewBox="0 0 140 140">
+            <circle class="sync-circle-bg" cx="70" cy="70" r="60" />
+            <circle class="sync-circle-bar" id="sync-circle-bar" cx="70" cy="70" r="60" stroke-dasharray="377" stroke-dashoffset="377" />
+          </svg>
+          <div class="sync-progress-label">
+            <div class="sync-percent-row">
+              <span class="sync-percent-number" id="sync-percent-number">0</span><span class="sync-percent-symbol">%</span>
+            </div>
+            <span class="sync-speed-tag" id="sync-speed-tag">CONNECTING</span>
+          </div>
+        </div>
+
+        <!-- Live Step Bar -->
+        <div class="sync-step-pill">
+          <span class="sync-spinner-mini" id="sync-step-spinner"></span>
+          <span id="sync-current-step">Connecting to YouTube Data API v3...</span>
+        </div>
+
+        <!-- 11-Channel Fleet Live Status Trackers -->
+        <div class="sync-fleet-trackers">
+          <div class="sync-trackers-header">
+            <span>FLEET CHANNELS (11)</span>
+            <span id="sync-trackers-count">0 / 11 SYNCED</span>
+          </div>
+          <div class="sync-channel-grid" id="sync-channel-grid">
+            <!-- Dynamically populated / illuminated -->
+          </div>
+        </div>
+
+        <!-- Live Telemetry Stream Terminal Box -->
+        <div class="sync-terminal-box">
+          <div class="sync-terminal-bar">
+            <div class="terminal-dots">
+              <span class="t-dot red"></span>
+              <span class="t-dot yellow"></span>
+              <span class="t-dot green"></span>
+            </div>
+            <span class="terminal-title">LIVE TELEMETRY STREAM</span>
+            <span class="terminal-badge" id="terminal-badge">LIVE 200 OK</span>
+          </div>
+          <div class="sync-terminal-content" id="sync-terminal-content">
+            <div class="terminal-line"><span class="t-dim">[SYSTEM]</span> Ready. Direct real-time YouTube Data API sync initialized.</div>
+          </div>
+        </div>
+
+        <!-- Real-Time Metrics Summary Card (shown at 100%) -->
+        <div class="sync-summary-card" id="sync-summary-card" style="display:none;">
+          <div class="sync-summary-item">
+            <span class="summary-val" id="sum-channels">11</span>
+            <span class="summary-lbl">Channels Active</span>
+          </div>
+          <div class="sync-summary-item">
+            <span class="summary-val highlight-green" id="sum-views">1.74M+</span>
+            <span class="summary-lbl">Total Real-Time Views</span>
+          </div>
+          <div class="sync-summary-item">
+            <span class="summary-val" id="sum-subs">1,422</span>
+            <span class="summary-lbl">Subscribers</span>
+          </div>
+          <div class="sync-summary-item">
+            <span class="summary-val highlight-cyan" id="sum-stock">429</span>
+            <span class="summary-lbl">Ready Stock</span>
+          </div>
+        </div>
+
+        <!-- Finish / Confirm Button -->
+        <button class="btn-sync-done" id="btn-sync-done" style="display:none;">
+          <span>✅ VIEW UPDATED DASHBOARD</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="toast">Link copied to clipboard!</div>
+
+  <script src="./app.js?v=50.0"></script>
+</body>
+</html>
