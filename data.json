@@ -1,23 +1,23 @@
 {
   "app_name": "Raj Tube Pro",
   "version": "6.1.0",
-  "timestamp": "2026-11-04T02:36:17.383558+00:00",
+  "timestamp": "2026-11-04T08:56:38.710607+00:00",
   "schedule": {
-    "next_slot_iso": "2026-11-04T08:00:00+00:00",
-    "seconds_remaining": 19422,
-    "formatted_countdown": "05h 23m 42s",
-    "slot_label": "01:30 PM IST (Lunch Break Window)",
-    "now_ist": "04 Nov, 08:06 AM IST"
+    "next_slot_iso": "2026-11-04T14:00:00+00:00",
+    "seconds_remaining": 18201,
+    "formatted_countdown": "05h 03m 21s",
+    "slot_label": "07:30 PM IST (Prime Wildlife Viral Peak)",
+    "now_ist": "04 Nov, 02:26 PM IST"
   },
   "summary": {
     "total_channels": 11,
-    "total_uploaded": 666,
-    "total_in_queue": 364,
-    "total_subscribers": 1584,
-    "total_views": 2012091,
-    "total_likes": 14571,
+    "total_uploaded": 672,
+    "total_in_queue": 355,
+    "total_subscribers": 1586,
+    "total_views": 2013537,
+    "total_likes": 14590,
     "network_engagement": 0.8,
-    "total_runway_days": 24.0,
+    "total_runway_days": 17.8,
     "system_health": "All Systems Operational (11 Channels Active 1-11)",
     "issues_count": 0,
     "top_trending_video": {
@@ -31,7 +31,7 @@
       "uploaded_at": "2026-09-15T21:09:27Z"
     },
     "analytics": {
-      "watch_time_hours": 10731.1,
+      "watch_time_hours": 10738.9,
       "avg_view_duration": "0:24",
       "top_countries": [
         {
@@ -155,7 +155,7 @@
       ],
       "peak_hours": "6:00 PM – 10:30 PM IST (Peak Global Viewing Window)"
     },
-    "avg_views_per_channel": 182917
+    "avg_views_per_channel": 183049
   },
   "issues": [],
   "channels": [
@@ -345,19 +345,21 @@
           "queue_health": "Plentiful Runway (33.5 days)",
           "runway_days": 33.5,
           "total_uploaded": 15
-        }
+        },
+        "runway_days": 30.0,
+        "queue_health": "Plentiful Runway (30.0 days)"
       },
       "drive_folder_id": "1f8Nj2kEchzW4gdlMEQ5S_eAazvdrQ3ai",
       "drive_folder_url": "https://drive.google.com/drive/folders/1f8Nj2kEchzW4gdlMEQ5S_eAazvdrQ3ai",
       "uploaded_count": 86,
       "drive_queue_count": 56,
       "runway_days": 28.0,
-      "stock_status": "Plentiful (33.5 days)",
+      "stock_status": "Plentiful (30.0 days)",
       "stock_color": "#10B981",
       "latest_run_status": "success",
       "latest_run_time": "2026-11-04T01:50:10.998670+00:00",
       "latest_uploaded_video": {
-        "title": "42_Seaturtle_FINAL",
+        "title": "This little turtle chose pure chaos 💀🌊 #Shorts",
         "youtube_id": "-oQkiSWpOxM",
         "youtube_url": "https://youtu.be/-oQkiSWpOxM",
         "studio_url": "https://studio.youtube.com/video/-oQkiSWpOxM/edit",
@@ -374,7 +376,7 @@
       },
       "uploaded_videos": [
         {
-          "title": "42_Seaturtle_FINAL",
+          "title": "This little turtle chose pure chaos 💀🌊 #Shorts",
           "youtube_id": "-oQkiSWpOxM",
           "youtube_url": "https://youtu.be/-oQkiSWpOxM",
           "studio_url": "https://studio.youtube.com/video/-oQkiSWpOxM/edit",
@@ -390,7 +392,7 @@
           "is_blocked": false
         },
         {
-          "title": "43_Brushturkey_FINAL",
+          "title": "This bird builds a 5-foot oven?! 🤯🔥 #Shorts",
           "youtube_id": "bRoljasfAhw",
           "youtube_url": "https://youtu.be/bRoljasfAhw",
           "studio_url": "https://studio.youtube.com/video/bRoljasfAhw/edit",
@@ -406,7 +408,7 @@
           "is_blocked": false
         },
         {
-          "title": "45_Harvestmouse_FINAL",
+          "title": "Tiny mouse tackles a giant harvest 🌾😱 #Shorts",
           "youtube_id": "RSSe8wVI79Q",
           "youtube_url": "https://youtu.be/RSSe8wVI79Q",
           "studio_url": "https://studio.youtube.com/video/RSSe8wVI79Q/edit",
@@ -422,7 +424,7 @@
           "is_blocked": false
         },
         {
-          "title": "40_Wombat_FINAL",
+          "title": "Wait until you see what this wombat built 💀 #Shorts",
           "youtube_id": "8mA5N9kQwVU",
           "youtube_url": "https://youtu.be/8mA5N9kQwVU",
           "studio_url": "https://studio.youtube.com/video/8mA5N9kQwVU/edit",
@@ -1446,7 +1448,7 @@
           "is_blocked": false
         },
         {
-          "title": "He Locked Eyes And Stopped #animalencounter #wildlifephotography #shorts #fyp",
+          "title": "He Locked Eyes With Me And Froze 😱 #wildlife #shorts #viral",
           "youtube_id": "FAFqSjxpIDc",
           "youtube_url": "https://youtu.be/FAFqSjxpIDc",
           "studio_url": "https://studio.youtube.com/video/FAFqSjxpIDc/edit",
@@ -1462,7 +1464,7 @@
           "is_blocked": false
         },
         {
-          "title": "He Had No Clue Anyone Was There #cameraman #wildlife #shorts #fyp",
+          "title": "Wild Animal Had NO IDEA I Was Hiding Here 🤫 #cameraman #wildlife #shorts",
           "youtube_id": "3WVy2litmNE",
           "youtube_url": "https://youtu.be/3WVy2litmNE",
           "studio_url": "https://studio.youtube.com/video/3WVy2litmNE/edit",
@@ -1478,7 +1480,7 @@
           "is_blocked": false
         },
         {
-          "title": "He Froze Right Before The Camera #nature #animalencounter #shorts #fyp",
+          "title": "Wild Animal Stopped Inches Away From Lens! 😳 #nature #wildlife #shorts",
           "youtube_id": "jRfeibclpH4",
           "youtube_url": "https://youtu.be/jRfeibclpH4",
           "studio_url": "https://studio.youtube.com/video/jRfeibclpH4/edit",
@@ -1882,7 +1884,7 @@
         "org": "Datacamp Limited (Chicago US Gateway)",
         "datacenter": "Surfshark Dedicated US Chicago Gateway",
         "verify_url": "https://ipinfo.io/154.47.25.100",
-        "verified_at": "2026-11-03T21:10:15.168610+00:00"
+        "verified_at": "2026-11-03T03:16:16.119082+00:00"
       },
       "is_active": true,
       "is_terminated": false,
@@ -1914,13 +1916,13 @@
       "color": "#F59E0B",
       "avatar_url": "https://yt3.ggpht.com/TTLhq8ijvpChRrWaVb1i96FzeFG02Gd31oOfWo4EdOtBtfqTD6h0TrRmEOTd2fE8V0kPexV6EA=s240-c-k-c0x00ffffff-no-rj",
       "subscribers": 994,
-      "total_views": 1633190,
+      "total_views": 1633272,
       "channel_total_videos": 84,
       "avg_views_per_video": 19444,
       "engagement_rate": 0.8,
       "total_likes": 8885,
       "analytics": {
-        "watch_time_hours": 8710.3,
+        "watch_time_hours": 8710.8,
         "avg_view_duration": "0:24",
         "top_countries": [
           {
@@ -2089,15 +2091,17 @@
           "queue_health": "Plentiful Runway (30.5 days)",
           "runway_days": 30.5,
           "total_uploaded": 23
-        }
+        },
+        "runway_days": 0.0,
+        "queue_health": "Critical Stock Level"
       },
       "drive_folder_id": "1So3rmfL0rvojsXq7m6WoA9RYS029HXW6",
       "drive_folder_url": "https://drive.google.com/drive/folders/1So3rmfL0rvojsXq7m6WoA9RYS029HXW6",
       "uploaded_count": 84,
       "drive_queue_count": 0,
       "runway_days": 0.0,
-      "stock_status": "Plentiful (30.5 days)",
-      "stock_color": "#10B981",
+      "stock_status": "Critical (Empty)",
+      "stock_color": "#EF4444",
       "latest_run_status": "success",
       "latest_run_time": "2026-09-20T21:08:20.057017+00:00",
       "latest_uploaded_video": {
@@ -2107,7 +2111,7 @@
         "studio_url": "https://studio.youtube.com/video/tyQ4y6uqLHQ/edit",
         "uploaded_at": "2026-10-22T00:46:18Z",
         "thumbnail": "https://i.ytimg.com/vi/tyQ4y6uqLHQ/mqdefault.jpg",
-        "views": 46573,
+        "views": 46574,
         "likes": 404,
         "comments": 0,
         "is_clean": true,
@@ -2124,7 +2128,7 @@
           "studio_url": "https://studio.youtube.com/video/tyQ4y6uqLHQ/edit",
           "uploaded_at": "2026-10-22T00:46:18Z",
           "thumbnail": "https://i.ytimg.com/vi/tyQ4y6uqLHQ/mqdefault.jpg",
-          "views": 46573,
+          "views": 46574,
           "likes": 404,
           "comments": 0,
           "is_clean": true,
@@ -2156,7 +2160,7 @@
           "studio_url": "https://studio.youtube.com/video/dbOAeZqeptM/edit",
           "uploaded_at": "2026-10-21T00:42:57Z",
           "thumbnail": "https://i.ytimg.com/vi/dbOAeZqeptM/mqdefault.jpg",
-          "views": 42883,
+          "views": 42887,
           "likes": 137,
           "comments": 2,
           "is_clean": true,
@@ -2268,7 +2272,7 @@
           "studio_url": "https://studio.youtube.com/video/deEFIsJrYaU/edit",
           "uploaded_at": "2026-10-17T16:02:57Z",
           "thumbnail": "https://i.ytimg.com/vi/deEFIsJrYaU/mqdefault.jpg",
-          "views": 3805,
+          "views": 3809,
           "likes": 23,
           "comments": 0,
           "is_clean": true,
@@ -2332,7 +2336,7 @@
           "studio_url": "https://studio.youtube.com/video/wJ5meRdUlQg/edit",
           "uploaded_at": "2026-10-15T17:34:14Z",
           "thumbnail": "https://i.ytimg.com/vi/wJ5meRdUlQg/mqdefault.jpg",
-          "views": 45374,
+          "views": 45376,
           "likes": 122,
           "comments": 2,
           "is_clean": true,
@@ -2444,7 +2448,7 @@
           "studio_url": "https://studio.youtube.com/video/gW821wUm5io/edit",
           "uploaded_at": "2026-10-11T08:06:13Z",
           "thumbnail": "https://i.ytimg.com/vi/gW821wUm5io/mqdefault.jpg",
-          "views": 26593,
+          "views": 26598,
           "likes": 246,
           "comments": 10,
           "is_clean": true,
@@ -3166,7 +3170,7 @@
           "title": "One Table One Belt And Huge Pressure #SlapFight #PowerSlap #Championship #CombatSports #FYP.",
           "uploaded_at": "2026-09-15T21:09:27Z",
           "thumbnail": "https://i.ytimg.com/vi/74d1M_ceEM0/mqdefault.jpg",
-          "views": 563575,
+          "views": 563577,
           "likes": 1997,
           "comments": 20,
           "upload_status": "processed",
@@ -3680,14 +3684,14 @@
       "status_badge": "AUTOPILOT ACTIVE",
       "status_label": "24/7 Autopilot • Scheduled",
       "status_color": "#10B981",
-      "subscribers": 67,
-      "total_views": 23840,
-      "channel_total_videos": 52,
-      "uploaded_count": 52,
-      "drive_queue_count": 28,
-      "drive_videos_count": 28,
-      "runway_days": 14.0,
-      "latest_run_time": "2026-11-03T21:49:46.746199+00:00",
+      "subscribers": 69,
+      "total_views": 25091,
+      "channel_total_videos": 53,
+      "uploaded_count": 53,
+      "drive_queue_count": 27,
+      "drive_videos_count": 27,
+      "runway_days": 13.5,
+      "latest_run_time": "2026-11-04T02:46:09.263426+00:00",
       "latest_run_status": "success",
       "schedule": {
         "videos_per_day": 2,
@@ -3715,7 +3719,7 @@
         "org": "Datacamp Limited (New York US Gateway)",
         "datacenter": "Surfshark Dedicated US NY Gateway",
         "verify_url": "https://ipinfo.io/84.17.35.112",
-        "verified_at": "2026-11-03T21:49:46.742506+00:00"
+        "verified_at": "2026-11-03T03:45:48.769208+00:00"
       },
       "health": {
         "overall_score": 98,
@@ -3728,94 +3732,96 @@
         "copyright_badge": "100% CLEAN",
         "copyright_color": "#10B981",
         "strikes_status": "0 Active Strikes",
-        "is_clean": true
+        "is_clean": true,
+        "runway_days": 15.5,
+        "queue_health": "Plentiful Runway (15.5 days)"
       },
       "analytics": {
         "verified_source": "YouTube Analytics API (100% Genuine)",
         "top_countries": [
           {
-            "country": "Indonesia",
-            "code": "ID",
-            "flag": "🇮🇩",
-            "percent": 30.5
-          },
-          {
             "country": "United States",
             "code": "US",
             "flag": "🇺🇸",
-            "percent": 24.4
+            "percent": 73.5
           },
           {
-            "country": "India",
-            "code": "IN",
-            "flag": "🇮🇳",
-            "percent": 16.7
+            "country": "United Kingdom",
+            "code": "GB",
+            "flag": "🇬🇧",
+            "percent": 5.4
           },
           {
             "country": "Philippines",
             "code": "PH",
             "flag": "🇵🇭",
-            "percent": 9.9
+            "percent": 5.1
           },
           {
-            "country": "Thailand",
-            "code": "TH",
-            "flag": "🇹🇭",
-            "percent": 5.9
+            "country": "Australia",
+            "code": "AU",
+            "flag": "🇦🇺",
+            "percent": 4.0
+          },
+          {
+            "country": "Canada",
+            "code": "CA",
+            "flag": "🇨🇦",
+            "percent": 3.8
           },
           {
             "country": "Other countries",
             "code": "OTHER",
             "flag": "🌐",
-            "percent": 12.6
+            "percent": 8.2
           }
         ],
         "age_distribution": [
           {
             "range": "13–17 years",
-            "percent": 3.4
+            "percent": 3.1
           },
           {
             "range": "18–24 years",
-            "percent": 8.1
+            "percent": 0.8
           },
           {
             "range": "25–34 years",
-            "percent": 36.9
+            "percent": 10.2
           },
           {
             "range": "35–44 years",
-            "percent": 23.2
+            "percent": 10.6
           },
           {
             "range": "45–54 years",
-            "percent": 11.1
+            "percent": 7.7
           },
           {
             "range": "55–64 years",
-            "percent": 8.5
+            "percent": 14.1
           },
           {
             "range": "65+ years",
-            "percent": 8.9
+            "percent": 53.5
           }
         ],
         "gender": {
-          "male": 44.7,
-          "female": 55.3
+          "male": 44.6,
+          "female": 55.4
         },
-        "watch_time_hours": 127.1
+        "watch_time_hours": 133.8
       },
       "uploaded_videos": [
         {
-          "title": "EP 52 - He Paid The Ultimate Price For Greed #shorts #drama #viral",
-          "youtube_id": "vPE3GnQxYxY",
-          "youtube_url": "https://youtu.be/vPE3GnQxYxY",
-          "studio_url": "https://studio.youtube.com/video/vPE3GnQxYxY/edit",
-          "uploaded_at": "2026-11-03T21:49:46.742506+00:00",
-          "thumbnail": "https://i.ytimg.com/vi/vPE3GnQxYxY/mqdefault.jpg",
-          "views": 610,
-          "likes": 15,
+          "title": "Billionaire Heir Arrested Live On Camera?! 😱 #Shorts",
+          "youtube_id": "9gHZdaW9Gqo",
+          "youtube_url": "https://youtu.be/9gHZdaW9Gqo",
+          "studio_url": "https://studio.youtube.com/video/9gHZdaW9Gqo/edit",
+          "uploaded_at": "2026-11-04T02:46:09.259005+00:00",
+          "thumbnail": "https://i.ytimg.com/vi/9gHZdaW9Gqo/mqdefault.jpg",
+          "views": 539,
+          "likes": 4,
           "comments": 0,
           "is_clean": true,
           "health_badge": "100% CLEAN",
@@ -3824,13 +3830,29 @@
           "is_blocked": false
         },
         {
-          "title": "EP 51 - She Put Down Her Mask At Last #shorts #drama #viral",
+          "title": "Greedy Billionaire Loses Everything In Seconds! 💀🔥 #Shorts",
+          "youtube_id": "vPE3GnQxYxY",
+          "youtube_url": "https://youtu.be/vPE3GnQxYxY",
+          "studio_url": "https://studio.youtube.com/video/vPE3GnQxYxY/edit",
+          "uploaded_at": "2026-11-03T21:49:46.742506+00:00",
+          "thumbnail": "https://i.ytimg.com/vi/vPE3GnQxYxY/mqdefault.jpg",
+          "views": 901,
+          "likes": 17,
+          "comments": 0,
+          "is_clean": true,
+          "health_badge": "100% CLEAN",
+          "flag_details": "None (Clean)",
+          "channel_name": "Billionaire Heir TV",
+          "is_blocked": false
+        },
+        {
+          "title": "She Took Off Her Disguise And Left Everyone Shook 💀 #Shorts",
           "youtube_id": "6EBv-PC0D28",
           "youtube_url": "https://youtu.be/6EBv-PC0D28",
           "studio_url": "https://studio.youtube.com/video/6EBv-PC0D28/edit",
           "uploaded_at": "2026-11-03T03:45:48.769208+00:00",
           "thumbnail": "https://i.ytimg.com/vi/6EBv-PC0D28/mqdefault.jpg",
-          "views": 1047,
+          "views": 1050,
           "likes": 6,
           "comments": 0,
           "is_clean": true,
@@ -3840,7 +3862,7 @@
           "is_blocked": false
         },
         {
-          "title": "EP 50 - The Whole City Heard The Audio Tape #shorts #drama #viral",
+          "title": "Playing This Audio Ruined His Entire Life 💀 #Shorts",
           "youtube_id": "k-KgESqS7Xg",
           "youtube_url": "https://youtu.be/k-KgESqS7Xg",
           "studio_url": "https://studio.youtube.com/video/k-KgESqS7Xg/edit",
@@ -3856,7 +3878,7 @@
           "is_blocked": false
         },
         {
-          "title": "EP 49 - He Tried To Run But The Exit Was Blocked #shorts #drama #viral",
+          "title": "Trapped With Nowhere To Run! 🚪💥 #Shorts",
           "youtube_id": "hKeVbigAewo",
           "youtube_url": "https://youtu.be/hKeVbigAewo",
           "studio_url": "https://studio.youtube.com/video/hKeVbigAewo/edit",
@@ -3872,7 +3894,7 @@
           "is_blocked": false
         },
         {
-          "title": "EP 48 - She Whispered The Forbidden Truth #shorts #drama #viral",
+          "title": "She Exposed The Billionaire's Darkest Secret 🤫 #Shorts",
           "youtube_id": "rENbB3MASNU",
           "youtube_url": "https://youtu.be/rENbB3MASNU",
           "studio_url": "https://studio.youtube.com/video/rENbB3MASNU/edit",
@@ -3888,13 +3910,13 @@
           "is_blocked": false
         },
         {
-          "title": "EP 47 - The Poison In The Wine Glass #shorts #drama #viral",
+          "title": "She Took One Sip And Knew It Was Over... 🍷☠️ #Shorts",
           "youtube_id": "bof4-eKlVT8",
           "youtube_url": "https://youtu.be/bof4-eKlVT8",
           "studio_url": "https://studio.youtube.com/video/bof4-eKlVT8/edit",
           "uploaded_at": "2026-11-01T01:32:15.620845+00:00",
           "thumbnail": "https://i.ytimg.com/vi/bof4-eKlVT8/mqdefault.jpg",
-          "views": 1270,
+          "views": 1273,
           "likes": 11,
           "comments": 0,
           "is_clean": true,
@@ -3904,13 +3926,13 @@
           "is_blocked": false
         },
         {
-          "title": "EP 46 - He Saw The Real Medical Report #shorts #drama #viral",
+          "title": "The Fake Doctor Panicked When He Saw This... 😱 #Shorts",
           "youtube_id": "lvy2D7LhanA",
           "youtube_url": "https://youtu.be/lvy2D7LhanA",
           "studio_url": "https://studio.youtube.com/video/lvy2D7LhanA/edit",
           "uploaded_at": "2026-10-31T20:03:01.749038+00:00",
           "thumbnail": "https://i.ytimg.com/vi/lvy2D7LhanA/mqdefault.jpg",
-          "views": 1301,
+          "views": 1303,
           "likes": 15,
           "comments": 0,
           "is_clean": true,
@@ -3920,7 +3942,7 @@
           "is_blocked": false
         },
         {
-          "title": "EP 45 - She Reclaimed Her Mother's Emerald Ring #shorts #drama #viral",
+          "title": "She Took Back Her Mom's Ring, But Look What Was Inside 💍✨ #Shorts",
           "youtube_id": "Yvpit8yALho",
           "youtube_url": "https://youtu.be/Yvpit8yALho",
           "studio_url": "https://studio.youtube.com/video/Yvpit8yALho/edit",
@@ -3936,7 +3958,7 @@
           "is_blocked": false
         },
         {
-          "title": "EP 44 - The Secret Heir Stood Up #shorts #drama #viral",
+          "title": "Family Denied The Billionaire Heir! 🤫💸 #Shorts",
           "youtube_id": "6OdXnK_ixAs",
           "youtube_url": "https://youtu.be/6OdXnK_ixAs",
           "studio_url": "https://studio.youtube.com/video/6OdXnK_ixAs/edit",
@@ -3952,7 +3974,7 @@
           "is_blocked": false
         },
         {
-          "title": "EP 43 - He Was Stripped Of His Chairman Title #shorts #drama #viral",
+          "title": "His Own Family Betrayed Him For The CEO Seat! 😳 #Shorts",
           "youtube_id": "HF0lNaZIY0U",
           "youtube_url": "https://youtu.be/HF0lNaZIY0U",
           "studio_url": "https://studio.youtube.com/video/HF0lNaZIY0U/edit",
@@ -3968,7 +3990,7 @@
           "is_blocked": false
         },
         {
-          "title": "EP 42 - She Looked Straight Into His Eyes #shorts #drama #viral",
+          "title": "She Saw His True Identity And Regretted Everything! 😳 #Shorts",
           "youtube_id": "r4m5YzDipDw",
           "youtube_url": "https://youtu.be/r4m5YzDipDw",
           "studio_url": "https://studio.youtube.com/video/r4m5YzDipDw/edit",
@@ -3984,7 +4006,7 @@
           "is_blocked": false
         },
         {
-          "title": "EP 41 - The Press Conference Went Wild #shorts #drama #viral",
+          "title": "Billionaire Heir Shut Down Live! 🤯 #Shorts",
           "youtube_id": "LX0_wkRv4Ek",
           "youtube_url": "https://youtu.be/LX0_wkRv4Ek",
           "studio_url": "https://studio.youtube.com/video/LX0_wkRv4Ek/edit",
@@ -4000,7 +4022,7 @@
           "is_blocked": true
         },
         {
-          "title": "EP 40 - He Underestimated Her True Power #shorts #drama #viral",
+          "title": "He Thought She Was Poor... Then Her Black Card Dropped 😱 #Shorts",
           "youtube_id": "d5nn--5fVWo",
           "youtube_url": "https://youtu.be/d5nn--5fVWo",
           "studio_url": "https://studio.youtube.com/video/d5nn--5fVWo/edit",
@@ -4016,7 +4038,7 @@
           "is_blocked": false
         },
         {
-          "title": "EP 39 - She Made Him Sign His Own Ruin #shorts #drama #viral",
+          "title": "She Tricked The Billionaire Heir Into Ruin! 😱 #Shorts",
           "youtube_id": "6lHchi4ZUpo",
           "youtube_url": "https://youtu.be/6lHchi4ZUpo",
           "studio_url": "https://studio.youtube.com/video/6lHchi4ZUpo/edit",
@@ -4032,13 +4054,13 @@
           "is_blocked": true
         },
         {
-          "title": "EP 38 - The Elevator Stopped On The Secret Floor #shorts #drama #viral",
+          "title": "The Elevator Stopped On Floor 66... 🤫 Elevator Secret #Shorts",
           "youtube_id": "tG5O2tt73SQ",
           "youtube_url": "https://youtu.be/tG5O2tt73SQ",
           "studio_url": "https://studio.youtube.com/video/tG5O2tt73SQ/edit",
           "uploaded_at": "2026-10-27T20:45:23.985827+00:00",
           "thumbnail": "https://i.ytimg.com/vi/tG5O2tt73SQ/mqdefault.jpg",
-          "views": 3,
+          "views": 4,
           "likes": 0,
           "comments": 0,
           "is_clean": true,
@@ -4048,7 +4070,7 @@
           "is_blocked": false
         },
         {
-          "title": "EP 37 - He Tried To Hide The Stolen Assets #shorts #drama #viral",
+          "title": "He Thought Nobody Would Find The Hidden Billions 💀 #Shorts",
           "youtube_id": "T2oTkS5GIaE",
           "youtube_url": "https://youtu.be/T2oTkS5GIaE",
           "studio_url": "https://studio.youtube.com/video/T2oTkS5GIaE/edit",
@@ -4064,7 +4086,7 @@
           "is_blocked": true
         },
         {
-          "title": "EP 36 - She Stepped Out Of The Luxury Limousine #shorts #drama #viral",
+          "title": "Her Rich Family Regretted This Instantly! 😱 #Shorts",
           "youtube_id": "Wl-N1fZ-Kjs",
           "youtube_url": "https://youtu.be/Wl-N1fZ-Kjs",
           "studio_url": "https://studio.youtube.com/video/Wl-N1fZ-Kjs/edit",
@@ -4080,7 +4102,7 @@
           "is_blocked": false
         },
         {
-          "title": "EP 35 - The Mysterious Caller Gave The Warning #shorts #drama #viral",
+          "title": "A Mysterious Caller Just Warned The Billionaire Heir... 🚨 #Shorts",
           "youtube_id": "OH2jgTph1EY",
           "youtube_url": "https://youtu.be/OH2jgTph1EY",
           "studio_url": "https://studio.youtube.com/video/OH2jgTph1EY/edit",
@@ -4096,7 +4118,7 @@
           "is_blocked": true
         },
         {
-          "title": "EP 34 - He Realized The Monster In His Bed #shorts #drama #viral",
+          "title": "She Shared His Bed, But He Found The Monster 😱 #Shorts",
           "youtube_id": "DXHfwGEQ28g",
           "youtube_url": "https://youtu.be/DXHfwGEQ28g",
           "studio_url": "https://studio.youtube.com/video/DXHfwGEQ28g/edit",
@@ -4112,7 +4134,7 @@
           "is_blocked": true
         },
         {
-          "title": "EP 33 - She Burned The Contract In Front Of Him #shorts #drama #viral",
+          "title": "She Dared To Burn The Billionaire's Contract! 🔥👀 #Shorts",
           "youtube_id": "p5qmgxkeMPM",
           "youtube_url": "https://youtu.be/p5qmgxkeMPM",
           "studio_url": "https://studio.youtube.com/video/p5qmgxkeMPM/edit",
@@ -4128,7 +4150,7 @@
           "is_blocked": false
         },
         {
-          "title": "EP 32 - The DNA Test Shook The Entire Family #shorts #drama #viral",
+          "title": "The DNA Result Exposed Everyone... 😱 #Shorts",
           "youtube_id": "3bQKBLA6hlg",
           "youtube_url": "https://youtu.be/3bQKBLA6hlg",
           "studio_url": "https://studio.youtube.com/video/3bQKBLA6hlg/edit",
@@ -4144,7 +4166,7 @@
           "is_blocked": false
         },
         {
-          "title": "EP 31 - He Found The Hidden Diary #shorts #drama #viral",
+          "title": "His Dead Dad's Diary Changed Everything... 🤫 #Shorts",
           "youtube_id": "75uLDV5SF6U",
           "youtube_url": "https://youtu.be/75uLDV5SF6U",
           "studio_url": "https://studio.youtube.com/video/75uLDV5SF6U/edit",
@@ -4160,7 +4182,7 @@
           "is_blocked": false
         },
         {
-          "title": "EP 30 - She Took Back The Family Heirs #shorts #drama #viral",
+          "title": "She Tricked The Billionaire Heir! 😱 #Shorts",
           "youtube_id": "6l3oyDH8i60",
           "youtube_url": "https://youtu.be/6l3oyDH8i60",
           "studio_url": "https://studio.youtube.com/video/6l3oyDH8i60/edit",
@@ -4176,13 +4198,13 @@
           "is_blocked": true
         },
         {
-          "title": "EP 29 - The Wedding Was A Total Trap #shorts #drama #viral",
+          "title": "She Walked Into A Billion Dollar Trap 💍🚨 #Shorts",
           "youtube_id": "82l_r07hTb8",
           "youtube_url": "https://youtu.be/82l_r07hTb8",
           "studio_url": "https://studio.youtube.com/video/82l_r07hTb8/edit",
           "uploaded_at": "2026-10-23T01:01:00.192461+00:00",
           "thumbnail": "https://i.ytimg.com/vi/82l_r07hTb8/mqdefault.jpg",
-          "views": 1544,
+          "views": 1548,
           "likes": 51,
           "comments": 0,
           "is_clean": true,
@@ -4192,7 +4214,7 @@
           "is_blocked": false
         },
         {
-          "title": "EP 28 - He Realized Who Actually Saved Him #shorts #drama #viral",
+          "title": "He Thought She Was A Maid... Then He Saw The Black Card 🤯 #Shorts",
           "youtube_id": "8vi9WXUEy_k",
           "youtube_url": "https://youtu.be/8vi9WXUEy_k",
           "studio_url": "https://studio.youtube.com/video/8vi9WXUEy_k/edit",
@@ -4208,7 +4230,7 @@
           "is_blocked": false
         },
         {
-          "title": "EP 27 - She Was Never An Ordinary Girl #shorts #drama #viral",
+          "title": "She Stole His Black Card... Then He Checked Her ID! 😱 #Shorts",
           "youtube_id": "huIpKrbjnDw",
           "youtube_url": "https://youtu.be/huIpKrbjnDw",
           "studio_url": "https://studio.youtube.com/video/huIpKrbjnDw/edit",
@@ -4224,7 +4246,7 @@
           "is_blocked": false
         },
         {
-          "title": "EP 26 - The Security Footage Stunned Everyone #shorts #drama #viral",
+          "title": "The Security Footage Stunned Everyone! 🤯 #Shorts",
           "youtube_id": "jxD7By9UXj4",
           "youtube_url": "https://youtu.be/jxD7By9UXj4",
           "studio_url": "https://studio.youtube.com/video/jxD7By9UXj4/edit",
@@ -4240,7 +4262,7 @@
           "is_blocked": false
         },
         {
-          "title": "EP 25 - He Knelt Down To Beg For Forgiveness #shorts #drama #viral",
+          "title": "He Begged For Mercy, But She Destroyed Him Instantly! 😱 #Shorts",
           "youtube_id": "nfJjGzA-TeY",
           "youtube_url": "https://youtu.be/nfJjGzA-TeY",
           "studio_url": "https://studio.youtube.com/video/nfJjGzA-TeY/edit",
@@ -4256,13 +4278,13 @@
           "is_blocked": false
         },
         {
-          "title": "EP 24 - She Cut Off All His Bank Accounts #shorts #drama #viral",
+          "title": "She Froze His Black Card... But He Owns The Bank! 💳🔥 #Shorts",
           "youtube_id": "ifcUhMUTUMM",
           "youtube_url": "https://youtu.be/ifcUhMUTUMM",
           "studio_url": "https://studio.youtube.com/video/ifcUhMUTUMM/edit",
           "uploaded_at": "2026-10-20T20:02:28.312415+00:00",
           "thumbnail": "https://i.ytimg.com/vi/ifcUhMUTUMM/mqdefault.jpg",
-          "views": 1068,
+          "views": 1069,
           "likes": 35,
           "comments": 0,
           "is_clean": true,
@@ -4272,7 +4294,7 @@
           "is_blocked": false
         },
         {
-          "title": "EP 23 - The Real Master Was Standing Right There #shorts #drama #viral",
+          "title": "They Disrespected The Janitor... Big Mistake! 🤯 #Shorts",
           "youtube_id": "ISIZopGRCuY",
           "youtube_url": "https://youtu.be/ISIZopGRCuY",
           "studio_url": "https://studio.youtube.com/video/ISIZopGRCuY/edit",
@@ -4288,7 +4310,7 @@
           "is_blocked": false
         },
         {
-          "title": "EP 22 - He Discovered His Biggest Mistake #shorts #drama #viral",
+          "title": "He Discovered His Biggest Mistake 😱 #Shorts",
           "youtube_id": "wkLQ8iSlVxY",
           "youtube_url": "https://youtu.be/wkLQ8iSlVxY",
           "studio_url": "https://studio.youtube.com/video/wkLQ8iSlVxY/edit",
@@ -4304,7 +4326,7 @@
           "is_blocked": false
         },
         {
-          "title": "EP 21 - She Handed Over The Divorce Papers #shorts #drama #viral",
+          "title": "She Smiled Handing Him The Divorce Papers... Big Mistake! 💔 #Shorts",
           "youtube_id": "ZToW87WP3Pk",
           "youtube_url": "https://youtu.be/ZToW87WP3Pk",
           "studio_url": "https://studio.youtube.com/video/ZToW87WP3Pk/edit",
@@ -4320,7 +4342,7 @@
           "is_blocked": false
         },
         {
-          "title": "EP 20 - The Entire Room Went Completely Silent #shorts #drama #viral",
+          "title": "She Ruined His Billionaire Family Dinner... Then This Happened 🤫 #Shorts",
           "youtube_id": "WK9Oxm4_uV8",
           "youtube_url": "https://youtu.be/WK9Oxm4_uV8",
           "studio_url": "https://studio.youtube.com/video/WK9Oxm4_uV8/edit",
@@ -4358,7 +4380,7 @@
           "studio_url": "https://studio.youtube.com/video/Tb8OKykKHXg/edit",
           "uploaded_at": "2026-10-14T22:37:43Z",
           "thumbnail": "https://i.ytimg.com/vi/Tb8OKykKHXg/mqdefault.jpg",
-          "views": 98,
+          "views": 100,
           "likes": 0,
           "comments": 0,
           "is_clean": true,
@@ -4374,7 +4396,7 @@
           "studio_url": "https://studio.youtube.com/video/K9KB_-xgVqY/edit",
           "uploaded_at": "2026-10-13T23:09:41Z",
           "thumbnail": "https://i.ytimg.com/vi/K9KB_-xgVqY/mqdefault.jpg",
-          "views": 26,
+          "views": 27,
           "likes": 1,
           "comments": 0,
           "is_clean": true,
@@ -4438,7 +4460,7 @@
           "studio_url": "https://studio.youtube.com/video/LWj7Ti5NJ3M/edit",
           "uploaded_at": "2026-10-11T23:09:30Z",
           "thumbnail": "https://i.ytimg.com/vi/LWj7Ti5NJ3M/mqdefault.jpg",
-          "views": 1551,
+          "views": 1552,
           "likes": 55,
           "comments": 0,
           "is_clean": true,
@@ -4642,14 +4664,14 @@
       ],
       "num": 3,
       "latest_uploaded_video": {
-        "title": "EP 52 - He Paid The Ultimate Price For Greed #shorts #drama #viral",
-        "youtube_id": "vPE3GnQxYxY",
-        "youtube_url": "https://youtu.be/vPE3GnQxYxY",
-        "studio_url": "https://studio.youtube.com/video/vPE3GnQxYxY/edit",
-        "uploaded_at": "2026-11-03T21:49:46.742506+00:00",
-        "thumbnail": "https://i.ytimg.com/vi/vPE3GnQxYxY/mqdefault.jpg",
-        "views": 610,
-        "likes": 15,
+        "title": "Billionaire Heir Arrested Live On Camera?! 😱 #Shorts",
+        "youtube_id": "9gHZdaW9Gqo",
+        "youtube_url": "https://youtu.be/9gHZdaW9Gqo",
+        "studio_url": "https://studio.youtube.com/video/9gHZdaW9Gqo/edit",
+        "uploaded_at": "2026-11-04T02:46:09.259005+00:00",
+        "thumbnail": "https://i.ytimg.com/vi/9gHZdaW9Gqo/mqdefault.jpg",
+        "views": 539,
+        "likes": 4,
         "comments": 0,
         "is_clean": true,
         "health_badge": "100% CLEAN",
@@ -4657,8 +4679,8 @@
         "channel_name": "Billionaire Heir TV",
         "is_blocked": false
       },
-      "total_likes": 520,
-      "avg_views_per_video": 494,
+      "total_likes": 526,
+      "avg_views_per_video": 501,
       "slots": [
         {
           "time_ist": "21:50 IST",
@@ -4671,7 +4693,9 @@
           "slot_desc": "US East Coast (NYC) Prime Evening Peak (06:50 PM EDT)"
         }
       ],
-      "upload_schedule": "21:50 IST & 04:20 IST"
+      "upload_schedule": "21:50 IST & 04:20 IST",
+      "stock_status": "Plentiful (15.5 days)",
+      "stock_color": "#10B981"
     },
     {
       "id": "channel_4",
@@ -4685,10 +4709,10 @@
       "avatar_url": "https://yt3.ggpht.com/pqIrk9GBtAR6cdyBH5C_kHNWA1jlu4VT9ZLKxdYTFW6IvVQLWbtFO3OUxrSV1Jm1SR0JAyTrAA=s240-c-k-c0x00ffffff-no-rj",
       "subscribers": 74,
       "total_views": 140282,
-      "channel_total_videos": 108,
-      "avg_views_per_video": 1306,
+      "channel_total_videos": 110,
+      "avg_views_per_video": 1293,
       "engagement_rate": 1.0,
-      "total_likes": 1149,
+      "total_likes": 1158,
       "analytics": {
         "watch_time_hours": 748.2,
         "avg_view_duration": "0:24",
@@ -4697,72 +4721,72 @@
             "country": "United States",
             "code": "US",
             "flag": "🇺🇸",
-            "percent": 63.0
+            "percent": 47.9
           },
           {
-            "country": "United Kingdom",
-            "code": "GB",
-            "flag": "🇬🇧",
-            "percent": 10.5
-          },
-          {
-            "country": "Philippines",
-            "code": "PH",
-            "flag": "🇵🇭",
-            "percent": 10.3
+            "country": "Indonesia",
+            "code": "ID",
+            "flag": "🇮🇩",
+            "percent": 20.4
           },
           {
             "country": "India",
             "code": "IN",
             "flag": "🇮🇳",
-            "percent": 5.0
+            "percent": 7.3
           },
           {
-            "country": "Australia",
-            "code": "AU",
-            "flag": "🇦🇺",
-            "percent": 5.0
+            "country": "Philippines",
+            "code": "PH",
+            "flag": "🇵🇭",
+            "percent": 6.4
+          },
+          {
+            "country": "Uzbekistan",
+            "code": "UZ",
+            "flag": "🇺🇿",
+            "percent": 5.6
           },
           {
             "country": "Other countries",
             "code": "OTHER",
             "flag": "🌐",
-            "percent": 6.2
+            "percent": 12.4
           }
         ],
         "age_distribution": [
           {
             "range": "13–17 years",
-            "percent": 8.5
+            "percent": 7.1
           },
           {
             "range": "18–24 years",
-            "percent": 6.1
+            "percent": 7.9
           },
           {
             "range": "25–34 years",
-            "percent": 34.3
+            "percent": 38.9
           },
           {
             "range": "35–44 years",
-            "percent": 27.3
+            "percent": 27.1
           },
           {
             "range": "45–54 years",
-            "percent": 8.6
+            "percent": 9.2
           },
           {
             "range": "55–64 years",
-            "percent": 6.0
+            "percent": 5.6
           },
           {
             "range": "65+ years",
-            "percent": 9.2
+            "percent": 4.2
           }
         ],
         "gender": {
-          "male": 33.0,
-          "female": 67.0
+          "male": 45.4,
+          "female": 54.6
         },
         "traffic_sources": [
           {
@@ -4859,26 +4883,28 @@
           "queue_health": "Plentiful Runway (64.0 days)",
           "runway_days": 64.0,
           "total_uploaded": 20
-        }
+        },
+        "runway_days": 21.5,
+        "queue_health": "Plentiful Runway (21.5 days)"
       },
       "drive_folder_id": "1xZSez3F82y0pLTWJbQ-ybPjbOCqY1mrW",
       "drive_folder_url": "https://drive.google.com/drive/folders/1xZSez3F82y0pLTWJbQ-ybPjbOCqY1mrW",
-      "uploaded_count": 108,
-      "drive_queue_count": 40,
-      "runway_days": 20.0,
-      "stock_status": "Plentiful (64.0 days)",
+      "uploaded_count": 110,
+      "drive_queue_count": 38,
+      "runway_days": 19.0,
+      "stock_status": "Plentiful (21.5 days)",
       "stock_color": "#10B981",
       "latest_run_status": "success",
       "latest_run_time": "2026-09-20T21:06:00.223541+00:00",
       "latest_uploaded_video": {
-        "title": "This Painting Defies All Logic! 🤯 #Shorts",
-        "youtube_id": "V1C5xBHLy98",
-        "youtube_url": "https://youtu.be/V1C5xBHLy98",
-        "studio_url": "https://studio.youtube.com/video/V1C5xBHLy98/edit",
-        "uploaded_at": "2026-11-03T22:03:17Z",
-        "thumbnail": "https://i.ytimg.com/vi/V1C5xBHLy98/mqdefault.jpg",
-        "views": 69,
-        "likes": 6,
+        "title": "How does he make regular paint look this soft? 🤯 #Shorts",
+        "youtube_id": "bz5joSGPRcE",
+        "youtube_url": "https://youtu.be/bz5joSGPRcE",
+        "studio_url": "https://studio.youtube.com/video/bz5joSGPRcE/edit",
+        "uploaded_at": "2026-11-04T03:01:11Z",
+        "thumbnail": "https://i.ytimg.com/vi/bz5joSGPRcE/mqdefault.jpg",
+        "views": 225,
+        "likes": 5,
         "comments": 0,
         "is_clean": true,
         "health_badge": "100% CLEAN",
@@ -4888,13 +4914,45 @@
       },
       "uploaded_videos": [
         {
+          "title": "How does he make regular paint look this soft? 🤯 #Shorts",
+          "youtube_id": "bz5joSGPRcE",
+          "youtube_url": "https://youtu.be/bz5joSGPRcE",
+          "studio_url": "https://studio.youtube.com/video/bz5joSGPRcE/edit",
+          "uploaded_at": "2026-11-04T03:01:11Z",
+          "thumbnail": "https://i.ytimg.com/vi/bz5joSGPRcE/mqdefault.jpg",
+          "views": 225,
+          "likes": 5,
+          "comments": 0,
+          "is_clean": true,
+          "health_badge": "100% CLEAN",
+          "flag_details": "None (Clean)",
+          "channel_name": "Klyvo",
+          "is_blocked": false
+        },
+        {
+          "title": "This art trick will blow your mind! 🤯 #Shorts",
+          "youtube_id": "FtPWRYPd6a4",
+          "youtube_url": "https://youtu.be/FtPWRYPd6a4",
+          "studio_url": "https://studio.youtube.com/video/FtPWRYPd6a4/edit",
+          "uploaded_at": "2026-11-04T03:00:16Z",
+          "thumbnail": "https://i.ytimg.com/vi/FtPWRYPd6a4/mqdefault.jpg",
+          "views": 774,
+          "likes": 3,
+          "comments": 0,
+          "is_clean": true,
+          "health_badge": "100% CLEAN",
+          "flag_details": "None (Clean)",
+          "channel_name": "Klyvo",
+          "is_blocked": false
+        },
+        {
           "title": "This Painting Defies All Logic! 🤯 #Shorts",
           "youtube_id": "V1C5xBHLy98",
           "youtube_url": "https://youtu.be/V1C5xBHLy98",
           "studio_url": "https://studio.youtube.com/video/V1C5xBHLy98/edit",
           "uploaded_at": "2026-11-03T22:03:17Z",
           "thumbnail": "https://i.ytimg.com/vi/V1C5xBHLy98/mqdefault.jpg",
-          "views": 69,
+          "views": 102,
           "likes": 6,
           "comments": 0,
           "is_clean": true,
@@ -4910,8 +4968,8 @@
           "studio_url": "https://studio.youtube.com/video/kzv1xq4oToM/edit",
           "uploaded_at": "2026-11-03T03:55:57Z",
           "thumbnail": "https://i.ytimg.com/vi/kzv1xq4oToM/mqdefault.jpg",
-          "views": 537,
-          "likes": 5,
+          "views": 606,
+          "likes": 6,
           "comments": 0,
           "is_clean": true,
           "health_badge": "100% CLEAN",
@@ -4926,7 +4984,7 @@
           "studio_url": "https://studio.youtube.com/video/5vPAkdgki5Q/edit",
           "uploaded_at": "2026-11-02T23:42:50Z",
           "thumbnail": "https://i.ytimg.com/vi/5vPAkdgki5Q/mqdefault.jpg",
-          "views": 1287,
+          "views": 1292,
           "likes": 10,
           "comments": 1,
           "is_clean": true,
@@ -4942,7 +5000,7 @@
           "studio_url": "https://studio.youtube.com/video/MaSt3pPSFGY/edit",
           "uploaded_at": "2026-11-02T02:28:24Z",
           "thumbnail": "https://i.ytimg.com/vi/MaSt3pPSFGY/mqdefault.jpg",
-          "views": 291,
+          "views": 307,
           "likes": 7,
           "comments": 0,
           "is_clean": true,
@@ -4958,7 +5016,7 @@
           "studio_url": "https://studio.youtube.com/video/vR0fnQXomCw/edit",
           "uploaded_at": "2026-11-01T20:52:00Z",
           "thumbnail": "https://i.ytimg.com/vi/vR0fnQXomCw/mqdefault.jpg",
-          "views": 1040,
+          "views": 1052,
           "likes": 13,
           "comments": 0,
           "is_clean": true,
@@ -4974,7 +5032,7 @@
           "studio_url": "https://studio.youtube.com/video/VpoCRdNDL3U/edit",
           "uploaded_at": "2026-11-01T02:11:05Z",
           "thumbnail": "https://i.ytimg.com/vi/VpoCRdNDL3U/mqdefault.jpg",
-          "views": 1074,
+          "views": 1081,
           "likes": 10,
           "comments": 0,
           "is_clean": true,
@@ -5262,7 +5320,7 @@
           "studio_url": "https://studio.youtube.com/video/Fg7W1ETrJO4/edit",
           "uploaded_at": "2026-10-23T01:28:45Z",
           "thumbnail": "https://i.ytimg.com/vi/Fg7W1ETrJO4/mqdefault.jpg",
-          "views": 7545,
+          "views": 7547,
           "likes": 49,
           "comments": 1,
           "is_clean": true,
@@ -6778,11 +6836,11 @@
         "org": "M247 Ltd (New York US Gateway)",
         "datacenter": "Surfshark Dedicated US NY Gateway",
         "verify_url": "https://ipinfo.io/146.70.186.171",
-        "verified_at": "2026-11-03T22:03:17Z"
+        "verified_at": "2026-11-03T03:55:57Z"
       },
       "is_active": true,
       "is_terminated": false,
-      "drive_videos_count": 40,
+      "drive_videos_count": 38,
       "country": "US",
       "num": 4,
       "slots": [
@@ -6817,12 +6875,12 @@
       "status_label": "24/7 Autopilot • Scheduled",
       "status_color": "#10B981",
       "subscribers": 7,
-      "total_views": 1078,
-      "channel_total_videos": 41,
-      "uploaded_count": 53,
-      "drive_queue_count": 32,
-      "drive_videos_count": 32,
-      "runway_days": 16.0,
+      "total_views": 1082,
+      "channel_total_videos": 43,
+      "uploaded_count": 52,
+      "drive_queue_count": 31,
+      "drive_videos_count": 31,
+      "runway_days": 15.5,
       "latest_run_time": "2026-09-20T21:06:00.223541+00:00",
       "latest_run_status": "success",
       "schedule": {
@@ -6864,7 +6922,9 @@
         "copyright_badge": "100% CLEAN",
         "copyright_color": "#10B981",
         "strikes_status": "0 Active Strikes",
-        "is_clean": true
+        "is_clean": true,
+        "runway_days": 17.5,
+        "queue_health": "Plentiful Runway (17.5 days)"
       },
       "analytics": {
         "verified_source": "YouTube Analytics API (100% Genuine)",
@@ -6873,74 +6933,66 @@
             "country": "United States",
             "code": "US",
             "flag": "🇺🇸",
-            "percent": 47.9
-          },
-          {
-            "country": "Indonesia",
-            "code": "ID",
-            "flag": "🇮🇩",
-            "percent": 20.4
-          },
-          {
-            "country": "India",
-            "code": "IN",
-            "flag": "🇮🇳",
-            "percent": 7.3
+            "percent": 45.5
           },
           {
             "country": "Philippines",
             "code": "PH",
             "flag": "🇵🇭",
-            "percent": 6.4
+            "percent": 11.9
           },
           {
-            "country": "Uzbekistan",
-            "code": "UZ",
-            "flag": "🇺🇿",
-            "percent": 5.6
+            "country": "MY",
+            "code": "MY",
+            "flag": "🌐",
+            "percent": 8.7
+          },
+          {
+            "country": "Japan",
+            "code": "JP",
+            "flag": "🇯🇵",
+            "percent": 8.6
+          },
+          {
+            "country": "India",
+            "code": "IN",
+            "flag": "🇮🇳",
+            "percent": 7.7
           },
           {
             "country": "Other countries",
             "code": "OTHER",
             "flag": "🌐",
-            "percent": 12.4
+            "percent": 17.6
           }
         ],
         "age_distribution": [
           {
-            "range": "13–17 years",
-            "percent": 7.1
-          },
-          {
-            "range": "18–24 years",
-            "percent": 7.9
-          },
-          {
             "range": "25–34 years",
-            "percent": 38.9
+            "percent": 4.9
           },
           {
             "range": "35–44 years",
-            "percent": 27.1
+            "percent": 8.9
           },
           {
             "range": "45–54 years",
-            "percent": 9.2
+            "percent": 10.0
           },
           {
             "range": "55–64 years",
-            "percent": 5.6
+            "percent": 21.8
           },
           {
             "range": "65+ years",
-            "percent": 4.2
+            "percent": 54.4
           }
         ],
         "gender": {
-          "male": 45.4,
-          "female": 54.6
+          "male": 36.7,
+          "female": 63.3
         },
-        "watch_time_hours": 5.7
+        "watch_time_hours": 5.8
       },
       "uploaded_videos": [
         {
@@ -6950,7 +7002,7 @@
           "studio_url": "https://studio.youtube.com/video/F96-W3UEGNw/edit",
           "uploaded_at": "2026-11-03T22:19:31Z",
           "thumbnail": "https://i.ytimg.com/vi/F96-W3UEGNw/mqdefault.jpg",
-          "views": 0,
+          "views": 1,
           "likes": 0,
           "comments": 0,
           "is_clean": true,
@@ -7104,22 +7156,6 @@
           "is_blocked": false
         },
         {
-          "title": "She Froze Every Single Cent! 😱 #Shorts",
-          "youtube_id": "Oro9xHEfIZk",
-          "youtube_url": "https://youtu.be/Oro9xHEfIZk",
-          "studio_url": "https://studio.youtube.com/video/Oro9xHEfIZk/edit",
-          "uploaded_at": "2026-10-28T21:39:22Z",
-          "thumbnail": "https://i.ytimg.com/vi/Oro9xHEfIZk/mqdefault.jpg",
-          "views": 0,
-          "likes": 0,
-          "comments": 0,
-          "is_clean": true,
-          "health_badge": "RESTRICTED",
-          "flag_details": "Blocked in 249 regions",
-          "channel_name": "CineBite Drama",
-          "is_blocked": true
-        },
-        {
           "title": "She Burned The Contract Right In Front Of Him! 🤯 #Shorts",
           "youtube_id": "LPcmcX-dETg",
           "youtube_url": "https://youtu.be/LPcmcX-dETg",
@@ -7206,7 +7242,7 @@
           "studio_url": "https://studio.youtube.com/video/70SDNCAGoAE/edit",
           "uploaded_at": "2026-10-25T01:38:19Z",
           "thumbnail": "https://i.ytimg.com/vi/70SDNCAGoAE/mqdefault.jpg",
-          "views": 2,
+          "views": 3,
           "likes": 0,
           "comments": 0,
           "is_clean": true,
@@ -7813,7 +7849,7 @@
         "studio_url": "https://studio.youtube.com/video/F96-W3UEGNw/edit",
         "uploaded_at": "2026-11-03T22:19:31Z",
         "thumbnail": "https://i.ytimg.com/vi/F96-W3UEGNw/mqdefault.jpg",
-        "views": 0,
+        "views": 1,
         "likes": 0,
         "comments": 0,
         "is_clean": true,
@@ -7823,7 +7859,9 @@
         "is_blocked": false
       },
       "total_likes": 255,
-      "avg_views_per_video": 340
+      "avg_views_per_video": 347,
+      "stock_status": "Plentiful (17.5 days)",
+      "stock_color": "#10B981"
     },
     {
       "id": "channel_6",
@@ -7843,12 +7881,12 @@
       "status_label": "24/7 Autopilot • Scheduled",
       "status_color": "#10B981",
       "subscribers": 0,
-      "total_views": 33,
+      "total_views": 35,
       "channel_total_videos": 46,
       "uploaded_count": 46,
-      "drive_queue_count": 51,
-      "drive_videos_count": 51,
-      "runway_days": 25.5,
+      "drive_queue_count": 50,
+      "drive_videos_count": 50,
+      "runway_days": 25.0,
       "latest_run_time": "2026-10-10T17:37:02Z",
       "latest_run_status": "success",
       "schedule": {
@@ -7890,7 +7928,9 @@
         "copyright_badge": "100% CLEAN",
         "copyright_color": "#10B981",
         "strikes_status": "0 Active Strikes",
-        "is_clean": true
+        "is_clean": true,
+        "runway_days": 26.5,
+        "queue_health": "Plentiful Runway (26.5 days)"
       },
       "analytics": {
         "verified_source": "YouTube Data API v3 (Live Channel Verified)",
@@ -8723,7 +8763,9 @@
         "is_blocked": false
       },
       "total_likes": 3,
-      "avg_views_per_video": 1
+      "avg_views_per_video": 1,
+      "stock_status": "Plentiful (26.5 days)",
+      "stock_color": "#10B981"
     },
     {
       "id": "channel_7",
@@ -8744,11 +8786,11 @@
       "status_color": "#10B981",
       "subscribers": 0,
       "total_views": 171,
-      "channel_total_videos": 43,
-      "uploaded_count": 43,
-      "drive_queue_count": 15,
-      "drive_videos_count": 15,
-      "runway_days": 7.5,
+      "channel_total_videos": 44,
+      "uploaded_count": 44,
+      "drive_queue_count": 14,
+      "drive_videos_count": 14,
+      "runway_days": 7.0,
       "latest_run_time": "2026-10-10T17:36:11Z",
       "latest_run_status": "success",
       "schedule": {
@@ -8790,7 +8832,9 @@
         "copyright_badge": "100% CLEAN",
         "copyright_color": "#10B981",
         "strikes_status": "0 Active Strikes",
-        "is_clean": true
+        "is_clean": true,
+        "runway_days": 8.5,
+        "queue_health": "Refill Recommended"
       },
       "analytics": {
         "verified_source": "YouTube Data API v3 (Live Channel Verified)",
@@ -8856,6 +8900,22 @@
       },
       "uploaded_videos": [
         {
+          "title": "This rolling mattress trick is actually genius 🤯 #Shorts",
+          "youtube_id": "OulrlAwDqHU",
+          "youtube_url": "https://youtu.be/OulrlAwDqHU",
+          "studio_url": "https://studio.youtube.com/video/OulrlAwDqHU/edit",
+          "uploaded_at": "2026-11-04T06:53:18Z",
+          "thumbnail": "https://i.ytimg.com/vi/OulrlAwDqHU/mqdefault.jpg",
+          "views": 0,
+          "likes": 0,
+          "comments": 0,
+          "is_clean": true,
+          "health_badge": "100% CLEAN",
+          "flag_details": "None (Clean)",
+          "channel_name": "Cozy Fold",
+          "is_blocked": false
+        },
+        {
           "title": "I tried the viral TikTok cloud mattress and I'm never leaving ☁️🛏️ #Shorts",
           "youtube_id": "r8S2SQQGkLs",
           "youtube_url": "https://youtu.be/r8S2SQQGkLs",
@@ -8894,7 +8954,7 @@
           "studio_url": "https://studio.youtube.com/video/OHTvGLxWn6A/edit",
           "uploaded_at": "2026-11-02T06:37:55Z",
           "thumbnail": "https://i.ytimg.com/vi/OHTvGLxWn6A/mqdefault.jpg",
-          "views": 3,
+          "views": 4,
           "likes": 0,
           "comments": 0,
           "is_clean": true,
@@ -9559,12 +9619,12 @@
       ],
       "upload_schedule": "23:30 IST & 06:00 IST",
       "latest_uploaded_video": {
-        "title": "I tried the viral TikTok cloud mattress and I'm never leaving ☁️🛏️ #Shorts",
-        "youtube_id": "r8S2SQQGkLs",
-        "youtube_url": "https://youtu.be/r8S2SQQGkLs",
-        "studio_url": "https://studio.youtube.com/video/r8S2SQQGkLs/edit",
-        "uploaded_at": "2026-11-03T07:07:52Z",
-        "thumbnail": "https://i.ytimg.com/vi/r8S2SQQGkLs/mqdefault.jpg",
+        "title": "This rolling mattress trick is actually genius 🤯 #Shorts",
+        "youtube_id": "OulrlAwDqHU",
+        "youtube_url": "https://youtu.be/OulrlAwDqHU",
+        "studio_url": "https://studio.youtube.com/video/OulrlAwDqHU/edit",
+        "uploaded_at": "2026-11-04T06:53:18Z",
+        "thumbnail": "https://i.ytimg.com/vi/OulrlAwDqHU/mqdefault.jpg",
         "views": 0,
         "likes": 0,
         "comments": 0,
@@ -9575,7 +9635,9 @@
         "is_blocked": false
       },
       "total_likes": 2,
-      "avg_views_per_video": 4
+      "avg_views_per_video": 4,
+      "stock_status": "Plentiful (8.5 days)",
+      "stock_color": "#10B981"
     },
     {
       "id": "channel_8",
@@ -9595,12 +9657,12 @@
       "status_label": "24/7 Autopilot • Scheduled",
       "status_color": "#10B981",
       "subscribers": 261,
-      "total_views": 82509,
-      "channel_total_videos": 43,
-      "uploaded_count": 43,
-      "drive_queue_count": 54,
-      "drive_videos_count": 54,
-      "runway_days": 27.0,
+      "total_views": 82595,
+      "channel_total_videos": 44,
+      "uploaded_count": 44,
+      "drive_queue_count": 53,
+      "drive_videos_count": 53,
+      "runway_days": 26.5,
       "latest_run_time": "2026-10-10T17:37:07Z",
       "latest_run_status": "success",
       "schedule": {
@@ -9642,7 +9704,9 @@
         "copyright_badge": "100% CLEAN",
         "copyright_color": "#10B981",
         "strikes_status": "0 Active Strikes",
-        "is_clean": true
+        "is_clean": true,
+        "runway_days": 28.0,
+        "queue_health": "Plentiful Runway (28.0 days)"
       },
       "analytics": {
         "verified_source": "YouTube Analytics API (100% Genuine)",
@@ -9651,72 +9715,92 @@
             "country": "United States",
             "code": "US",
             "flag": "🇺🇸",
-            "percent": 70.8
-          },
-          {
-            "country": "Indonesia",
-            "code": "ID",
-            "flag": "🇮🇩",
-            "percent": 10.5
+            "percent": 55.7
           },
           {
             "country": "India",
             "code": "IN",
             "flag": "🇮🇳",
-            "percent": 4.9
+            "percent": 9.0
           },
           {
             "country": "Philippines",
             "code": "PH",
             "flag": "🇵🇭",
-            "percent": 3.4
+            "percent": 7.1
           },
           {
-            "country": "Uzbekistan",
-            "code": "UZ",
-            "flag": "🇺🇿",
-            "percent": 3.1
+            "country": "United Kingdom",
+            "code": "GB",
+            "flag": "🇬🇧",
+            "percent": 7.0
+          },
+          {
+            "country": "Germany",
+            "code": "DE",
+            "flag": "🇩🇪",
+            "percent": 7.0
           },
           {
             "country": "Other countries",
             "code": "OTHER",
             "flag": "🌐",
-            "percent": 7.3
+            "percent": 14.2
           }
         ],
         "age_distribution": [
           {
+            "range": "13–17 years",
+            "percent": 1.9
+          },
+          {
             "range": "18–24 years",
-            "percent": 1.1
+            "percent": 0.3
           },
           {
             "range": "25–34 years",
-            "percent": 30.0
+            "percent": 4.8
           },
           {
             "range": "35–44 years",
-            "percent": 24.9
+            "percent": 8.6
           },
           {
             "range": "45–54 years",
-            "percent": 15.6
+            "percent": 12.8
           },
           {
             "range": "55–64 years",
-            "percent": 14.2
+            "percent": 20.6
           },
           {
             "range": "65+ years",
-            "percent": 14.2
+            "percent": 51.0
           }
         ],
         "gender": {
-          "male": 84.5,
-          "female": 15.5
+          "male": 10.6,
+          "female": 89.4
         },
-        "watch_time_hours": 440.0
+        "watch_time_hours": 440.5
       },
       "uploaded_videos": [
+        {
+          "title": "She Played Dumb Until He Lost Everything 💀🔥 #Shorts",
+          "youtube_id": "sYhMhoeSZ5o",
+          "youtube_url": "https://youtu.be/sYhMhoeSZ5o",
+          "studio_url": "https://studio.youtube.com/video/sYhMhoeSZ5o/edit",
+          "uploaded_at": "2026-11-04T07:01:39Z",
+          "thumbnail": "https://i.ytimg.com/vi/sYhMhoeSZ5o/mqdefault.jpg",
+          "views": 4,
+          "likes": 2,
+          "comments": 1,
+          "is_clean": true,
+          "health_badge": "100% CLEAN",
+          "flag_details": "None (Clean)",
+          "channel_name": "Godfather Sins",
+          "is_blocked": false
+        },
         {
           "title": "He Found Her Secret Diary... Big Mistake 💀🔥 #Shorts",
           "youtube_id": "TC5Sg7brlwg",
@@ -9724,8 +9808,8 @@
           "studio_url": "https://studio.youtube.com/video/TC5Sg7brlwg/edit",
           "uploaded_at": "2026-11-03T07:19:36Z",
           "thumbnail": "https://i.ytimg.com/vi/TC5Sg7brlwg/mqdefault.jpg",
-          "views": 24,
-          "likes": 2,
+          "views": 40,
+          "likes": 4,
           "comments": 0,
           "is_clean": true,
           "health_badge": "100% CLEAN",
@@ -9740,7 +9824,7 @@
           "studio_url": "https://studio.youtube.com/video/Hde3JGLDuq8/edit",
           "uploaded_at": "2026-11-03T01:08:05Z",
           "thumbnail": "https://i.ytimg.com/vi/Hde3JGLDuq8/mqdefault.jpg",
-          "views": 43,
+          "views": 48,
           "likes": 4,
           "comments": 0,
           "is_clean": true,
@@ -9756,7 +9840,7 @@
           "studio_url": "https://studio.youtube.com/video/kQELw1nQsII/edit",
           "uploaded_at": "2026-10-30T22:32:35Z",
           "thumbnail": "https://i.ytimg.com/vi/kQELw1nQsII/mqdefault.jpg",
-          "views": 401,
+          "views": 402,
           "likes": 32,
           "comments": 0,
           "is_clean": true,
@@ -9836,7 +9920,7 @@
           "studio_url": "https://studio.youtube.com/video/MPhNMSypP74/edit",
           "uploaded_at": "2026-10-28T06:23:44Z",
           "thumbnail": "https://i.ytimg.com/vi/MPhNMSypP74/mqdefault.jpg",
-          "views": 242,
+          "views": 243,
           "likes": 8,
           "comments": 0,
           "is_clean": true,
@@ -9932,7 +10016,7 @@
           "studio_url": "https://studio.youtube.com/video/yvXzXVxMH9o/edit",
           "uploaded_at": "2026-10-24T21:01:32Z",
           "thumbnail": "https://i.ytimg.com/vi/yvXzXVxMH9o/mqdefault.jpg",
-          "views": 271,
+          "views": 272,
           "likes": 8,
           "comments": 0,
           "is_clean": true,
@@ -9980,7 +10064,7 @@
           "studio_url": "https://studio.youtube.com/video/aMFb2APrmOQ/edit",
           "uploaded_at": "2026-10-23T05:29:28Z",
           "thumbnail": "https://i.ytimg.com/vi/aMFb2APrmOQ/mqdefault.jpg",
-          "views": 116,
+          "views": 117,
           "likes": 6,
           "comments": 0,
           "is_clean": true,
@@ -9996,7 +10080,7 @@
           "studio_url": "https://studio.youtube.com/video/Ul0zJ5Dz-0Q/edit",
           "uploaded_at": "2026-10-22T21:48:19Z",
           "thumbnail": "https://i.ytimg.com/vi/Ul0zJ5Dz-0Q/mqdefault.jpg",
-          "views": 440,
+          "views": 441,
           "likes": 16,
           "comments": 0,
           "is_clean": true,
@@ -10028,7 +10112,7 @@
           "studio_url": "https://studio.youtube.com/video/sCGaDrka8X4/edit",
           "uploaded_at": "2026-10-21T21:53:12Z",
           "thumbnail": "https://i.ytimg.com/vi/sCGaDrka8X4/mqdefault.jpg",
-          "views": 139,
+          "views": 140,
           "likes": 2,
           "comments": 0,
           "is_clean": true,
@@ -10348,7 +10432,7 @@
           "studio_url": "https://studio.youtube.com/video/MQZ8gXWkNis/edit",
           "uploaded_at": "2026-09-28T08:26:01Z",
           "thumbnail": "https://i.ytimg.com/vi/MQZ8gXWkNis/mqdefault.jpg",
-          "views": 62846,
+          "views": 62852,
           "likes": 1387,
           "comments": 2,
           "is_clean": true,
@@ -10421,23 +10505,25 @@
       ],
       "upload_schedule": "23:55 IST & 06:25 IST",
       "latest_uploaded_video": {
-        "title": "He Found Her Secret Diary... Big Mistake 💀🔥 #Shorts",
-        "youtube_id": "TC5Sg7brlwg",
-        "youtube_url": "https://youtu.be/TC5Sg7brlwg",
-        "studio_url": "https://studio.youtube.com/video/TC5Sg7brlwg/edit",
-        "uploaded_at": "2026-11-03T07:19:36Z",
-        "thumbnail": "https://i.ytimg.com/vi/TC5Sg7brlwg/mqdefault.jpg",
-        "views": 24,
+        "title": "She Played Dumb Until He Lost Everything 💀🔥 #Shorts",
+        "youtube_id": "sYhMhoeSZ5o",
+        "youtube_url": "https://youtu.be/sYhMhoeSZ5o",
+        "studio_url": "https://studio.youtube.com/video/sYhMhoeSZ5o/edit",
+        "uploaded_at": "2026-11-04T07:01:39Z",
+        "thumbnail": "https://i.ytimg.com/vi/sYhMhoeSZ5o/mqdefault.jpg",
+        "views": 4,
         "likes": 2,
-        "comments": 0,
+        "comments": 1,
         "is_clean": true,
         "health_badge": "100% CLEAN",
         "flag_details": "None (Clean)",
         "channel_name": "Godfather Sins",
         "is_blocked": false
       },
-      "total_likes": 2247,
-      "avg_views_per_video": 1921
+      "total_likes": 2251,
+      "avg_views_per_video": 1878,
+      "stock_status": "Plentiful (28.0 days)",
+      "stock_color": "#10B981"
     },
     {
       "id": "channel_9",
@@ -10457,12 +10543,12 @@
       "status_label": "24/7 Autopilot • Scheduled",
       "status_color": "#10B981",
       "subscribers": 22,
-      "total_views": 4361,
-      "channel_total_videos": 45,
-      "uploaded_count": 45,
-      "drive_queue_count": 32,
-      "drive_videos_count": 32,
-      "runway_days": 16.0,
+      "total_views": 4377,
+      "channel_total_videos": 46,
+      "uploaded_count": 46,
+      "drive_queue_count": 31,
+      "drive_videos_count": 31,
+      "runway_days": 15.5,
       "latest_run_time": "2026-10-10T17:36:44Z",
       "latest_run_status": "success",
       "schedule": {
@@ -10504,7 +10590,9 @@
         "copyright_badge": "100% CLEAN",
         "copyright_color": "#10B981",
         "strikes_status": "0 Active Strikes",
-        "is_clean": true
+        "is_clean": true,
+        "runway_days": 17.0,
+        "queue_health": "Plentiful Runway (17.0 days)"
       },
       "analytics": {
         "verified_source": "YouTube Analytics API (100% Genuine)",
@@ -10513,56 +10601,80 @@
             "country": "United States",
             "code": "US",
             "flag": "🇺🇸",
-            "percent": 77.7
+            "percent": 80.3
+          },
+          {
+            "country": "Philippines",
+            "code": "PH",
+            "flag": "🇵🇭",
+            "percent": 4.4
           },
           {
             "country": "Germany",
             "code": "DE",
             "flag": "🇩🇪",
-            "percent": 8.3
+            "percent": 3.5
           },
           {
-            "country": "ZA",
-            "code": "ZA",
+            "country": "UA",
+            "code": "UA",
             "flag": "🌐",
-            "percent": 5.6
+            "percent": 3.0
           },
           {
-            "country": "PL",
-            "code": "PL",
-            "flag": "🌐",
-            "percent": 4.4
-          },
-          {
-            "country": "Italy",
-            "code": "IT",
-            "flag": "🇮🇹",
-            "percent": 3.9
+            "country": "India",
+            "code": "IN",
+            "flag": "🇮🇳",
+            "percent": 2.8
           },
           {
             "country": "Other countries",
             "code": "OTHER",
             "flag": "🌐",
-            "percent": 0.1
+            "percent": 6.0
           }
         ],
         "age_distribution": [
           {
+            "range": "35–44 years",
+            "percent": 3.3
+          },
+          {
+            "range": "45–54 years",
+            "percent": 6.0
+          },
+          {
             "range": "55–64 years",
-            "percent": 9.7
+            "percent": 13.0
           },
           {
             "range": "65+ years",
-            "percent": 90.3
+            "percent": 77.8
           }
         ],
         "gender": {
-          "male": 10.7,
-          "female": 89.3
+          "male": 29.0,
+          "female": 71.0
         },
         "watch_time_hours": 23.3
       },
       "uploaded_videos": [
+        {
+          "title": "She Laced His Glass With Poison... Then This Happened 💀🍷 #Shorts",
+          "youtube_id": "68y4o3EAqs4",
+          "youtube_url": "https://youtu.be/68y4o3EAqs4",
+          "studio_url": "https://studio.youtube.com/video/68y4o3EAqs4/edit",
+          "uploaded_at": "2026-11-04T07:37:11Z",
+          "thumbnail": "https://i.ytimg.com/vi/68y4o3EAqs4/mqdefault.jpg",
+          "views": 0,
+          "likes": 0,
+          "comments": 0,
+          "is_clean": true,
+          "health_badge": "100% CLEAN",
+          "flag_details": "None (Clean)",
+          "channel_name": "Tears of Regret TV",
+          "is_blocked": false
+        },
         {
           "title": "His face dropped when he read page 2 💀📉 #Shorts",
           "youtube_id": "3TkkLlw-ejg",
@@ -10602,7 +10714,7 @@
           "studio_url": "https://studio.youtube.com/video/v7-SCvCylWw/edit",
           "uploaded_at": "2026-11-02T07:48:15Z",
           "thumbnail": "https://i.ytimg.com/vi/v7-SCvCylWw/mqdefault.jpg",
-          "views": 17,
+          "views": 21,
           "likes": 0,
           "comments": 0,
           "is_clean": true,
@@ -10650,7 +10762,7 @@
           "studio_url": "https://studio.youtube.com/video/JnesfLtLJpo/edit",
           "uploaded_at": "2026-10-31T21:59:09Z",
           "thumbnail": "https://i.ytimg.com/vi/JnesfLtLJpo/mqdefault.jpg",
-          "views": 0,
+          "views": 1,
           "likes": 0,
           "comments": 0,
           "is_clean": true,
@@ -11299,13 +11411,13 @@
       ],
       "upload_schedule": "00:20 IST & 06:50 IST",
       "latest_uploaded_video": {
-        "title": "His face dropped when he read page 2 💀📉 #Shorts",
-        "youtube_id": "3TkkLlw-ejg",
-        "youtube_url": "https://youtu.be/3TkkLlw-ejg",
-        "studio_url": "https://studio.youtube.com/video/3TkkLlw-ejg/edit",
-        "uploaded_at": "2026-11-03T08:02:04Z",
-        "thumbnail": "https://i.ytimg.com/vi/3TkkLlw-ejg/mqdefault.jpg",
-        "views": 1,
+        "title": "She Laced His Glass With Poison... Then This Happened 💀🍷 #Shorts",
+        "youtube_id": "68y4o3EAqs4",
+        "youtube_url": "https://youtu.be/68y4o3EAqs4",
+        "studio_url": "https://studio.youtube.com/video/68y4o3EAqs4/edit",
+        "uploaded_at": "2026-11-04T07:37:11Z",
+        "thumbnail": "https://i.ytimg.com/vi/68y4o3EAqs4/mqdefault.jpg",
+        "views": 0,
         "likes": 0,
         "comments": 0,
         "is_clean": true,
@@ -11315,7 +11427,9 @@
         "is_blocked": false
       },
       "total_likes": 218,
-      "avg_views_per_video": 97
+      "avg_views_per_video": 95,
+      "stock_status": "Plentiful (17.0 days)",
+      "stock_color": "#10B981"
     },
     {
       "id": "channel_10",
@@ -11335,12 +11449,12 @@
       "status_label": "24/7 Autopilot • Scheduled",
       "status_color": "#10B981",
       "subscribers": 30,
-      "total_views": 6248,
-      "channel_total_videos": 53,
-      "uploaded_count": 53,
-      "drive_queue_count": 27,
-      "drive_videos_count": 27,
-      "runway_days": 13.5,
+      "total_views": 6253,
+      "channel_total_videos": 54,
+      "uploaded_count": 54,
+      "drive_queue_count": 26,
+      "drive_videos_count": 26,
+      "runway_days": 13.0,
       "latest_run_time": "2026-10-10T17:36:48Z",
       "latest_run_status": "success",
       "schedule": {
@@ -11382,7 +11496,9 @@
         "copyright_badge": "100% CLEAN",
         "copyright_color": "#10B981",
         "strikes_status": "0 Active Strikes",
-        "is_clean": true
+        "is_clean": true,
+        "runway_days": 15.0,
+        "queue_health": "Plentiful Runway (15.0 days)"
       },
       "analytics": {
         "verified_source": "YouTube Analytics API (100% Genuine)",
@@ -11391,31 +11507,31 @@
             "country": "United States",
             "code": "US",
             "flag": "🇺🇸",
-            "percent": 76.6
+            "percent": 77.9
           },
           {
-            "country": "Indonesia",
-            "code": "ID",
-            "flag": "🇮🇩",
-            "percent": 8.7
+            "country": "ZA",
+            "code": "ZA",
+            "flag": "🌐",
+            "percent": 5.6
           },
           {
-            "country": "South Korea",
-            "code": "KR",
-            "flag": "🇰🇷",
-            "percent": 4.9
+            "country": "JM",
+            "code": "JM",
+            "flag": "🌐",
+            "percent": 4.4
           },
           {
-            "country": "Philippines",
-            "code": "PH",
-            "flag": "🇵🇭",
-            "percent": 3.4
+            "country": "Canada",
+            "code": "CA",
+            "flag": "🇨🇦",
+            "percent": 3.8
           },
           {
-            "country": "Iraq",
-            "code": "IQ",
-            "flag": "🇮🇶",
-            "percent": 1.8
+            "country": "United Kingdom",
+            "code": "GB",
+            "flag": "🇬🇧",
+            "percent": 3.7
           },
           {
             "country": "Other countries",
@@ -11427,28 +11543,52 @@
         "age_distribution": [
           {
             "range": "13–17 years",
-            "percent": 9.6
+            "percent": 2.6
           },
           {
             "range": "25–34 years",
-            "percent": 51.9
+            "percent": 3.7
           },
           {
             "range": "35–44 years",
-            "percent": 32.0
+            "percent": 6.8
           },
           {
             "range": "45–54 years",
-            "percent": 6.6
+            "percent": 9.6
+          },
+          {
+            "range": "55–64 years",
+            "percent": 24.8
+          },
+          {
+            "range": "65+ years",
+            "percent": 52.7
           }
         ],
         "gender": {
-          "male": 58.9,
-          "female": 41.1
+          "male": 38.5,
+          "female": 61.5
         },
         "watch_time_hours": 33.3
       },
       "uploaded_videos": [
+        {
+          "title": "He Thought He Had Total Control Over Her 🤯 #Shorts",
+          "youtube_id": "aiCBvE_Gk-I",
+          "youtube_url": "https://youtu.be/aiCBvE_Gk-I",
+          "studio_url": "https://studio.youtube.com/video/aiCBvE_Gk-I/edit",
+          "uploaded_at": "2026-11-04T08:04:55Z",
+          "thumbnail": "https://i.ytimg.com/vi/aiCBvE_Gk-I/mqdefault.jpg",
+          "views": 0,
+          "likes": 0,
+          "comments": 0,
+          "is_clean": true,
+          "health_badge": "100% CLEAN",
+          "flag_details": "None (Clean)",
+          "channel_name": "United TV",
+          "is_blocked": false
+        },
         {
           "title": "He Found Out Who Saved Him From The Fire 😱 #Shorts",
           "youtube_id": "qIJdS1XWVVw",
@@ -11648,7 +11788,7 @@
           "studio_url": "https://studio.youtube.com/video/_h99BRCqMmQ/edit",
           "uploaded_at": "2026-10-24T06:31:15Z",
           "thumbnail": "https://i.ytimg.com/vi/_h99BRCqMmQ/mqdefault.jpg",
-          "views": 99,
+          "views": 104,
           "likes": 0,
           "comments": 0,
           "is_clean": true,
@@ -12313,23 +12453,25 @@
       ],
       "upload_schedule": "00:45 IST & 07:15 IST",
       "latest_uploaded_video": {
-        "title": "He Found Out Who Saved Him From The Fire 😱 #Shorts",
-        "youtube_id": "qIJdS1XWVVw",
-        "youtube_url": "https://youtu.be/qIJdS1XWVVw",
-        "studio_url": "https://studio.youtube.com/video/qIJdS1XWVVw/edit",
-        "uploaded_at": "2026-11-03T08:37:29Z",
-        "thumbnail": "https://i.ytimg.com/vi/qIJdS1XWVVw/mqdefault.jpg",
+        "title": "He Thought He Had Total Control Over Her 🤯 #Shorts",
+        "youtube_id": "aiCBvE_Gk-I",
+        "youtube_url": "https://youtu.be/aiCBvE_Gk-I",
+        "studio_url": "https://studio.youtube.com/video/aiCBvE_Gk-I/edit",
+        "uploaded_at": "2026-11-04T08:04:55Z",
+        "thumbnail": "https://i.ytimg.com/vi/aiCBvE_Gk-I/mqdefault.jpg",
         "views": 0,
         "likes": 0,
         "comments": 0,
         "is_clean": true,
-        "health_badge": "RESTRICTED",
-        "flag_details": "Blocked in 249 regions",
+        "health_badge": "100% CLEAN",
+        "flag_details": "None (Clean)",
         "channel_name": "United TV",
-        "is_blocked": true
+        "is_blocked": false
       },
       "total_likes": 256,
-      "avg_views_per_video": 118
+      "avg_views_per_video": 116,
+      "stock_status": "Plentiful (15.0 days)",
+      "stock_color": "#10B981"
     },
     {
       "id": "channel_11",
@@ -12396,7 +12538,9 @@
         "copyright_badge": "100% CLEAN",
         "copyright_color": "#10B981",
         "strikes_status": "0 Active Strikes",
-        "is_clean": true
+        "is_clean": true,
+        "runway_days": 16.0,
+        "queue_health": "Plentiful Runway (16.0 days)"
       },
       "analytics": {
         "verified_source": "YouTube Data API v3 (Live Channel Verified)",
@@ -13341,7 +13485,9 @@
         "is_blocked": false
       },
       "total_likes": 0,
-      "avg_views_per_video": 0
+      "avg_views_per_video": 0,
+      "stock_status": "Plentiful (16.0 days)",
+      "stock_color": "#10B981"
     }
   ],
   "sentinel": {
@@ -13363,5 +13509,6 @@
       "#11 WildStare POV (channel_11)"
     ],
     "frequency": "Hourly Automated Background Cycle (24/7 Autopilot)"
-  }
+  },
+  "last_updated": "2026-11-02T17:19:24.394306+00:00"
 }
