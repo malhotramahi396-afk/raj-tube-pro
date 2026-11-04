@@ -1,21 +1,21 @@
 {
   "app_name": "Raj Tube Pro",
   "version": "6.1.0",
-  "timestamp": "2026-11-04T08:56:38.710607+00:00",
+  "timestamp": "2026-11-04T10:41:31.282305+00:00",
   "schedule": {
     "next_slot_iso": "2026-11-04T14:00:00+00:00",
-    "seconds_remaining": 18201,
-    "formatted_countdown": "05h 03m 21s",
+    "seconds_remaining": 11908,
+    "formatted_countdown": "03h 18m 28s",
     "slot_label": "07:30 PM IST (Prime Wildlife Viral Peak)",
-    "now_ist": "04 Nov, 02:26 PM IST"
+    "now_ist": "04 Nov, 04:11 PM IST"
   },
   "summary": {
     "total_channels": 11,
-    "total_uploaded": 672,
-    "total_in_queue": 355,
+    "total_uploaded": 673,
+    "total_in_queue": 354,
     "total_subscribers": 1586,
-    "total_views": 2013537,
-    "total_likes": 14590,
+    "total_views": 2014224,
+    "total_likes": 14589,
     "network_engagement": 0.8,
     "total_runway_days": 17.8,
     "system_health": "All Systems Operational (11 Channels Active 1-11)",
@@ -31,7 +31,7 @@
       "uploaded_at": "2026-09-15T21:09:27Z"
     },
     "analytics": {
-      "watch_time_hours": 10738.9,
+      "watch_time_hours": 10742.5,
       "avg_view_duration": "0:24",
       "top_countries": [
         {
@@ -155,7 +155,7 @@
       ],
       "peak_hours": "6:00 PM – 10:30 PM IST (Peak Global Viewing Window)"
     },
-    "avg_views_per_channel": 183049
+    "avg_views_per_channel": 183111
   },
   "issues": [],
   "channels": [
@@ -1884,7 +1884,7 @@
         "org": "Datacamp Limited (Chicago US Gateway)",
         "datacenter": "Surfshark Dedicated US Chicago Gateway",
         "verify_url": "https://ipinfo.io/154.47.25.100",
-        "verified_at": "2026-11-03T03:16:16.119082+00:00"
+        "verified_at": "2026-11-04T01:50:10.996530+00:00"
       },
       "is_active": true,
       "is_terminated": false,
@@ -1920,7 +1920,7 @@
       "channel_total_videos": 84,
       "avg_views_per_video": 19444,
       "engagement_rate": 0.8,
-      "total_likes": 8885,
+      "total_likes": 8884,
       "analytics": {
         "watch_time_hours": 8710.8,
         "avg_view_duration": "0:24",
@@ -2111,7 +2111,7 @@
         "studio_url": "https://studio.youtube.com/video/tyQ4y6uqLHQ/edit",
         "uploaded_at": "2026-10-22T00:46:18Z",
         "thumbnail": "https://i.ytimg.com/vi/tyQ4y6uqLHQ/mqdefault.jpg",
-        "views": 46574,
+        "views": 46575,
         "likes": 404,
         "comments": 0,
         "is_clean": true,
@@ -2128,7 +2128,7 @@
           "studio_url": "https://studio.youtube.com/video/tyQ4y6uqLHQ/edit",
           "uploaded_at": "2026-10-22T00:46:18Z",
           "thumbnail": "https://i.ytimg.com/vi/tyQ4y6uqLHQ/mqdefault.jpg",
-          "views": 46574,
+          "views": 46575,
           "likes": 404,
           "comments": 0,
           "is_clean": true,
@@ -2160,7 +2160,7 @@
           "studio_url": "https://studio.youtube.com/video/dbOAeZqeptM/edit",
           "uploaded_at": "2026-10-21T00:42:57Z",
           "thumbnail": "https://i.ytimg.com/vi/dbOAeZqeptM/mqdefault.jpg",
-          "views": 42887,
+          "views": 42891,
           "likes": 137,
           "comments": 2,
           "is_clean": true,
@@ -2336,7 +2336,7 @@
           "studio_url": "https://studio.youtube.com/video/wJ5meRdUlQg/edit",
           "uploaded_at": "2026-10-15T17:34:14Z",
           "thumbnail": "https://i.ytimg.com/vi/wJ5meRdUlQg/mqdefault.jpg",
-          "views": 45376,
+          "views": 45378,
           "likes": 122,
           "comments": 2,
           "is_clean": true,
@@ -2849,7 +2849,7 @@
           "uploaded_at": "2026-09-26T13:03:56Z",
           "thumbnail": "https://i.ytimg.com/vi/r_RTNW2Moio/mqdefault.jpg",
           "views": 25497,
-          "likes": 206,
+          "likes": 205,
           "comments": 0,
           "is_clean": true,
           "health_badge": "100% CLEAN",
@@ -3104,7 +3104,7 @@
           "title": "That Championship Belt Changed The Whole Faceoff #PowerSlap #SlapFight #Championship #CombatSports #",
           "uploaded_at": "2026-09-17T14:11:02Z",
           "thumbnail": "https://i.ytimg.com/vi/D8s-tKl9wSg/mqdefault.jpg",
-          "views": 13115,
+          "views": 13116,
           "likes": 175,
           "comments": 5,
           "upload_status": "processed",
@@ -3684,7 +3684,7 @@
       "status_badge": "AUTOPILOT ACTIVE",
       "status_label": "24/7 Autopilot • Scheduled",
       "status_color": "#10B981",
-      "subscribers": 69,
+      "subscribers": 68,
       "total_views": 25091,
       "channel_total_videos": 53,
       "uploaded_count": 53,
@@ -3719,7 +3719,7 @@
         "org": "Datacamp Limited (New York US Gateway)",
         "datacenter": "Surfshark Dedicated US NY Gateway",
         "verify_url": "https://ipinfo.io/84.17.35.112",
-        "verified_at": "2026-11-03T03:45:48.769208+00:00"
+        "verified_at": "2026-11-04T02:46:09.259005+00:00"
       },
       "health": {
         "overall_score": 98,
@@ -3740,75 +3740,75 @@
         "verified_source": "YouTube Analytics API (100% Genuine)",
         "top_countries": [
           {
+            "country": "Indonesia",
+            "code": "ID",
+            "flag": "🇮🇩",
+            "percent": 30.5
+          },
+          {
             "country": "United States",
             "code": "US",
             "flag": "🇺🇸",
-            "percent": 73.5
+            "percent": 24.4
           },
           {
-            "country": "United Kingdom",
-            "code": "GB",
-            "flag": "🇬🇧",
-            "percent": 5.4
+            "country": "India",
+            "code": "IN",
+            "flag": "🇮🇳",
+            "percent": 16.7
           },
           {
             "country": "Philippines",
             "code": "PH",
             "flag": "🇵🇭",
-            "percent": 5.1
+            "percent": 9.9
           },
           {
-            "country": "Australia",
-            "code": "AU",
-            "flag": "🇦🇺",
-            "percent": 4.0
-          },
-          {
-            "country": "Canada",
-            "code": "CA",
-            "flag": "🇨🇦",
-            "percent": 3.8
+            "country": "Thailand",
+            "code": "TH",
+            "flag": "🇹🇭",
+            "percent": 5.9
           },
           {
             "country": "Other countries",
             "code": "OTHER",
             "flag": "🌐",
-            "percent": 8.2
+            "percent": 12.6
           }
         ],
         "age_distribution": [
           {
             "range": "13–17 years",
-            "percent": 3.1
+            "percent": 3.4
           },
           {
             "range": "18–24 years",
-            "percent": 0.8
+            "percent": 8.1
           },
           {
             "range": "25–34 years",
-            "percent": 10.2
+            "percent": 36.9
           },
           {
             "range": "35–44 years",
-            "percent": 10.6
+            "percent": 23.2
           },
           {
             "range": "45–54 years",
-            "percent": 7.7
+            "percent": 11.1
           },
           {
             "range": "55–64 years",
-            "percent": 14.1
+            "percent": 8.5
           },
           {
             "range": "65+ years",
-            "percent": 53.5
+            "percent": 8.9
           }
         ],
         "gender": {
-          "male": 44.6,
-          "female": 55.4
+          "male": 44.7,
+          "female": 55.3
         },
         "watch_time_hours": 133.8
       },
@@ -3820,7 +3820,7 @@
           "studio_url": "https://studio.youtube.com/video/9gHZdaW9Gqo/edit",
           "uploaded_at": "2026-11-04T02:46:09.259005+00:00",
           "thumbnail": "https://i.ytimg.com/vi/9gHZdaW9Gqo/mqdefault.jpg",
-          "views": 539,
+          "views": 551,
           "likes": 4,
           "comments": 0,
           "is_clean": true,
@@ -3836,7 +3836,7 @@
           "studio_url": "https://studio.youtube.com/video/vPE3GnQxYxY/edit",
           "uploaded_at": "2026-11-03T21:49:46.742506+00:00",
           "thumbnail": "https://i.ytimg.com/vi/vPE3GnQxYxY/mqdefault.jpg",
-          "views": 901,
+          "views": 930,
           "likes": 17,
           "comments": 0,
           "is_clean": true,
@@ -3852,7 +3852,7 @@
           "studio_url": "https://studio.youtube.com/video/6EBv-PC0D28/edit",
           "uploaded_at": "2026-11-03T03:45:48.769208+00:00",
           "thumbnail": "https://i.ytimg.com/vi/6EBv-PC0D28/mqdefault.jpg",
-          "views": 1050,
+          "views": 1052,
           "likes": 6,
           "comments": 0,
           "is_clean": true,
@@ -3868,7 +3868,7 @@
           "studio_url": "https://studio.youtube.com/video/k-KgESqS7Xg/edit",
           "uploaded_at": "2026-11-02T23:37:45.250580+00:00",
           "thumbnail": "https://i.ytimg.com/vi/k-KgESqS7Xg/mqdefault.jpg",
-          "views": 907,
+          "views": 909,
           "likes": 8,
           "comments": 0,
           "is_clean": true,
@@ -3916,7 +3916,7 @@
           "studio_url": "https://studio.youtube.com/video/bof4-eKlVT8/edit",
           "uploaded_at": "2026-11-01T01:32:15.620845+00:00",
           "thumbnail": "https://i.ytimg.com/vi/bof4-eKlVT8/mqdefault.jpg",
-          "views": 1273,
+          "views": 1274,
           "likes": 11,
           "comments": 0,
           "is_clean": true,
@@ -4236,7 +4236,7 @@
           "studio_url": "https://studio.youtube.com/video/huIpKrbjnDw/edit",
           "uploaded_at": "2026-10-22T00:58:23.371117+00:00",
           "thumbnail": "https://i.ytimg.com/vi/huIpKrbjnDw/mqdefault.jpg",
-          "views": 40,
+          "views": 41,
           "likes": 2,
           "comments": 0,
           "is_clean": true,
@@ -4268,7 +4268,7 @@
           "studio_url": "https://studio.youtube.com/video/nfJjGzA-TeY/edit",
           "uploaded_at": "2026-10-21T01:02:42.741056+00:00",
           "thumbnail": "https://i.ytimg.com/vi/nfJjGzA-TeY/mqdefault.jpg",
-          "views": 1243,
+          "views": 1244,
           "likes": 23,
           "comments": 1,
           "is_clean": true,
@@ -4670,7 +4670,7 @@
         "studio_url": "https://studio.youtube.com/video/9gHZdaW9Gqo/edit",
         "uploaded_at": "2026-11-04T02:46:09.259005+00:00",
         "thumbnail": "https://i.ytimg.com/vi/9gHZdaW9Gqo/mqdefault.jpg",
-        "views": 539,
+        "views": 551,
         "likes": 4,
         "comments": 0,
         "is_clean": true,
@@ -4680,7 +4680,7 @@
         "is_blocked": false
       },
       "total_likes": 526,
-      "avg_views_per_video": 501,
+      "avg_views_per_video": 502,
       "slots": [
         {
           "time_ist": "21:50 IST",
@@ -4707,86 +4707,86 @@
       "github_repo": "malhotramahi396-afk/yt-automation-klyvo",
       "color": "#EC4899",
       "avatar_url": "https://yt3.ggpht.com/pqIrk9GBtAR6cdyBH5C_kHNWA1jlu4VT9ZLKxdYTFW6IvVQLWbtFO3OUxrSV1Jm1SR0JAyTrAA=s240-c-k-c0x00ffffff-no-rj",
-      "subscribers": 74,
-      "total_views": 140282,
+      "subscribers": 75,
+      "total_views": 140969,
       "channel_total_videos": 110,
-      "avg_views_per_video": 1293,
+      "avg_views_per_video": 1297,
       "engagement_rate": 1.0,
       "total_likes": 1158,
       "analytics": {
-        "watch_time_hours": 748.2,
+        "watch_time_hours": 751.8,
         "avg_view_duration": "0:24",
         "top_countries": [
           {
             "country": "United States",
             "code": "US",
             "flag": "🇺🇸",
-            "percent": 47.9
+            "percent": 63.0
           },
           {
-            "country": "Indonesia",
-            "code": "ID",
-            "flag": "🇮🇩",
-            "percent": 20.4
-          },
-          {
-            "country": "India",
-            "code": "IN",
-            "flag": "🇮🇳",
-            "percent": 7.3
+            "country": "United Kingdom",
+            "code": "GB",
+            "flag": "🇬🇧",
+            "percent": 10.5
           },
           {
             "country": "Philippines",
             "code": "PH",
             "flag": "🇵🇭",
-            "percent": 6.4
+            "percent": 10.3
           },
           {
-            "country": "Uzbekistan",
-            "code": "UZ",
-            "flag": "🇺🇿",
-            "percent": 5.6
+            "country": "India",
+            "code": "IN",
+            "flag": "🇮🇳",
+            "percent": 5.0
+          },
+          {
+            "country": "Australia",
+            "code": "AU",
+            "flag": "🇦🇺",
+            "percent": 5.0
           },
           {
             "country": "Other countries",
             "code": "OTHER",
             "flag": "🌐",
-            "percent": 12.4
+            "percent": 6.2
           }
         ],
         "age_distribution": [
           {
             "range": "13–17 years",
-            "percent": 7.1
+            "percent": 8.5
           },
           {
             "range": "18–24 years",
-            "percent": 7.9
+            "percent": 6.1
           },
           {
             "range": "25–34 years",
-            "percent": 38.9
+            "percent": 34.3
           },
           {
             "range": "35–44 years",
-            "percent": 27.1
+            "percent": 27.3
           },
           {
             "range": "45–54 years",
-            "percent": 9.2
+            "percent": 8.6
           },
           {
             "range": "55–64 years",
-            "percent": 5.6
+            "percent": 6.0
           },
           {
             "range": "65+ years",
-            "percent": 4.2
+            "percent": 9.2
           }
         ],
         "gender": {
-          "male": 45.4,
-          "female": 54.6
+          "male": 33.0,
+          "female": 67.0
         },
         "traffic_sources": [
           {
@@ -4903,7 +4903,7 @@
         "studio_url": "https://studio.youtube.com/video/bz5joSGPRcE/edit",
         "uploaded_at": "2026-11-04T03:01:11Z",
         "thumbnail": "https://i.ytimg.com/vi/bz5joSGPRcE/mqdefault.jpg",
-        "views": 225,
+        "views": 275,
         "likes": 5,
         "comments": 0,
         "is_clean": true,
@@ -4920,7 +4920,7 @@
           "studio_url": "https://studio.youtube.com/video/bz5joSGPRcE/edit",
           "uploaded_at": "2026-11-04T03:01:11Z",
           "thumbnail": "https://i.ytimg.com/vi/bz5joSGPRcE/mqdefault.jpg",
-          "views": 225,
+          "views": 275,
           "likes": 5,
           "comments": 0,
           "is_clean": true,
@@ -4936,7 +4936,7 @@
           "studio_url": "https://studio.youtube.com/video/FtPWRYPd6a4/edit",
           "uploaded_at": "2026-11-04T03:00:16Z",
           "thumbnail": "https://i.ytimg.com/vi/FtPWRYPd6a4/mqdefault.jpg",
-          "views": 774,
+          "views": 1034,
           "likes": 3,
           "comments": 0,
           "is_clean": true,
@@ -4952,7 +4952,7 @@
           "studio_url": "https://studio.youtube.com/video/V1C5xBHLy98/edit",
           "uploaded_at": "2026-11-03T22:03:17Z",
           "thumbnail": "https://i.ytimg.com/vi/V1C5xBHLy98/mqdefault.jpg",
-          "views": 102,
+          "views": 142,
           "likes": 6,
           "comments": 0,
           "is_clean": true,
@@ -4968,7 +4968,7 @@
           "studio_url": "https://studio.youtube.com/video/kzv1xq4oToM/edit",
           "uploaded_at": "2026-11-03T03:55:57Z",
           "thumbnail": "https://i.ytimg.com/vi/kzv1xq4oToM/mqdefault.jpg",
-          "views": 606,
+          "views": 624,
           "likes": 6,
           "comments": 0,
           "is_clean": true,
@@ -5000,7 +5000,7 @@
           "studio_url": "https://studio.youtube.com/video/MaSt3pPSFGY/edit",
           "uploaded_at": "2026-11-02T02:28:24Z",
           "thumbnail": "https://i.ytimg.com/vi/MaSt3pPSFGY/mqdefault.jpg",
-          "views": 307,
+          "views": 317,
           "likes": 7,
           "comments": 0,
           "is_clean": true,
@@ -5016,7 +5016,7 @@
           "studio_url": "https://studio.youtube.com/video/vR0fnQXomCw/edit",
           "uploaded_at": "2026-11-01T20:52:00Z",
           "thumbnail": "https://i.ytimg.com/vi/vR0fnQXomCw/mqdefault.jpg",
-          "views": 1052,
+          "views": 1054,
           "likes": 13,
           "comments": 0,
           "is_clean": true,
@@ -5032,7 +5032,7 @@
           "studio_url": "https://studio.youtube.com/video/VpoCRdNDL3U/edit",
           "uploaded_at": "2026-11-01T02:11:05Z",
           "thumbnail": "https://i.ytimg.com/vi/VpoCRdNDL3U/mqdefault.jpg",
-          "views": 1081,
+          "views": 1083,
           "likes": 10,
           "comments": 0,
           "is_clean": true,
@@ -5064,7 +5064,7 @@
           "studio_url": "https://studio.youtube.com/video/e9DDonDYpMc/edit",
           "uploaded_at": "2026-10-31T02:19:27Z",
           "thumbnail": "https://i.ytimg.com/vi/e9DDonDYpMc/mqdefault.jpg",
-          "views": 1419,
+          "views": 1418,
           "likes": 11,
           "comments": 0,
           "is_clean": true,
@@ -5320,7 +5320,7 @@
           "studio_url": "https://studio.youtube.com/video/Fg7W1ETrJO4/edit",
           "uploaded_at": "2026-10-23T01:28:45Z",
           "thumbnail": "https://i.ytimg.com/vi/Fg7W1ETrJO4/mqdefault.jpg",
-          "views": 7547,
+          "views": 7548,
           "likes": 49,
           "comments": 1,
           "is_clean": true,
@@ -6836,7 +6836,7 @@
         "org": "M247 Ltd (New York US Gateway)",
         "datacenter": "Surfshark Dedicated US NY Gateway",
         "verify_url": "https://ipinfo.io/146.70.186.171",
-        "verified_at": "2026-11-03T03:55:57Z"
+        "verified_at": "2026-11-04T03:01:11Z"
       },
       "is_active": true,
       "is_terminated": false,
@@ -6909,7 +6909,7 @@
         "org": "Datacamp Limited (New York US Gateway)",
         "datacenter": "Surfshark Dedicated US NY Gateway",
         "verify_url": "https://ipinfo.io/84.17.35.112",
-        "verified_at": "2026-11-03T04:01:32Z"
+        "verified_at": "2026-11-03T22:19:31Z"
       },
       "health": {
         "overall_score": 99,
@@ -6933,64 +6933,72 @@
             "country": "United States",
             "code": "US",
             "flag": "🇺🇸",
-            "percent": 45.5
+            "percent": 47.9
           },
           {
-            "country": "Philippines",
-            "code": "PH",
-            "flag": "🇵🇭",
-            "percent": 11.9
-          },
-          {
-            "country": "MY",
-            "code": "MY",
-            "flag": "🌐",
-            "percent": 8.7
-          },
-          {
-            "country": "Japan",
-            "code": "JP",
-            "flag": "🇯🇵",
-            "percent": 8.6
+            "country": "Indonesia",
+            "code": "ID",
+            "flag": "🇮🇩",
+            "percent": 20.4
           },
           {
             "country": "India",
             "code": "IN",
             "flag": "🇮🇳",
-            "percent": 7.7
+            "percent": 7.3
+          },
+          {
+            "country": "Philippines",
+            "code": "PH",
+            "flag": "🇵🇭",
+            "percent": 6.4
+          },
+          {
+            "country": "Uzbekistan",
+            "code": "UZ",
+            "flag": "🇺🇿",
+            "percent": 5.6
           },
           {
             "country": "Other countries",
             "code": "OTHER",
             "flag": "🌐",
-            "percent": 17.6
+            "percent": 12.4
           }
         ],
         "age_distribution": [
           {
+            "range": "13–17 years",
+            "percent": 7.1
+          },
+          {
+            "range": "18–24 years",
+            "percent": 7.9
+          },
+          {
             "range": "25–34 years",
-            "percent": 4.9
+            "percent": 38.9
           },
           {
             "range": "35–44 years",
-            "percent": 8.9
+            "percent": 27.1
           },
           {
             "range": "45–54 years",
-            "percent": 10.0
+            "percent": 9.2
           },
           {
             "range": "55–64 years",
-            "percent": 21.8
+            "percent": 5.6
           },
           {
             "range": "65+ years",
-            "percent": 54.4
+            "percent": 4.2
           }
         ],
         "gender": {
-          "male": 36.7,
-          "female": 63.3
+          "male": 45.4,
+          "female": 54.6
         },
         "watch_time_hours": 5.8
       },
@@ -7114,7 +7122,7 @@
           "studio_url": "https://studio.youtube.com/video/pdUF_YSmVUg/edit",
           "uploaded_at": "2026-10-31T02:43:37Z",
           "thumbnail": "https://i.ytimg.com/vi/pdUF_YSmVUg/mqdefault.jpg",
-          "views": 17,
+          "views": 18,
           "likes": 0,
           "comments": 0,
           "is_clean": true,
@@ -8819,7 +8827,7 @@
         "org": "Datacamp Limited (Los Angeles US Gateway)",
         "datacenter": "Surfshark Dedicated US LA Gateway",
         "verify_url": "https://ipinfo.io/169.150.203.199",
-        "verified_at": "2026-11-03T07:07:52Z"
+        "verified_at": "2026-11-04T06:53:18Z"
       },
       "health": {
         "overall_score": 98,
@@ -9691,7 +9699,7 @@
         "org": "Datacamp Limited (New York US Gateway)",
         "datacenter": "Surfshark Dedicated US NY Gateway",
         "verify_url": "https://ipinfo.io/84.17.35.112",
-        "verified_at": "2026-11-03T07:19:36Z"
+        "verified_at": "2026-11-04T07:01:39Z"
       },
       "health": {
         "overall_score": 98,
@@ -9715,72 +9723,68 @@
             "country": "United States",
             "code": "US",
             "flag": "🇺🇸",
-            "percent": 55.7
+            "percent": 70.8
+          },
+          {
+            "country": "Indonesia",
+            "code": "ID",
+            "flag": "🇮🇩",
+            "percent": 10.5
           },
           {
             "country": "India",
             "code": "IN",
             "flag": "🇮🇳",
-            "percent": 9.0
+            "percent": 4.9
           },
           {
             "country": "Philippines",
             "code": "PH",
             "flag": "🇵🇭",
-            "percent": 7.1
+            "percent": 3.4
           },
           {
-            "country": "United Kingdom",
-            "code": "GB",
-            "flag": "🇬🇧",
-            "percent": 7.0
-          },
-          {
-            "country": "Germany",
-            "code": "DE",
-            "flag": "🇩🇪",
-            "percent": 7.0
+            "country": "Uzbekistan",
+            "code": "UZ",
+            "flag": "🇺🇿",
+            "percent": 3.1
           },
           {
             "country": "Other countries",
             "code": "OTHER",
             "flag": "🌐",
-            "percent": 14.2
+            "percent": 7.3
           }
         ],
         "age_distribution": [
           {
-            "range": "13–17 years",
-            "percent": 1.9
-          },
-          {
             "range": "18–24 years",
-            "percent": 0.3
+            "percent": 1.1
           },
           {
             "range": "25–34 years",
-            "percent": 4.8
+            "percent": 30.0
           },
           {
             "range": "35–44 years",
-            "percent": 8.6
+            "percent": 24.9
           },
           {
             "range": "45–54 years",
-            "percent": 12.8
+            "percent": 15.6
           },
           {
             "range": "55–64 years",
-            "percent": 20.6
+            "percent": 14.2
           },
           {
             "range": "65+ years",
-            "percent": 51.0
+            "percent": 14.2
           }
         ],
         "gender": {
-          "male": 10.6,
-          "female": 89.4
+          "male": 84.5,
+          "female": 15.5
         },
         "watch_time_hours": 440.5
       },
@@ -9792,7 +9796,7 @@
           "studio_url": "https://studio.youtube.com/video/sYhMhoeSZ5o/edit",
           "uploaded_at": "2026-11-04T07:01:39Z",
           "thumbnail": "https://i.ytimg.com/vi/sYhMhoeSZ5o/mqdefault.jpg",
-          "views": 4,
+          "views": 5,
           "likes": 2,
           "comments": 1,
           "is_clean": true,
@@ -9824,7 +9828,7 @@
           "studio_url": "https://studio.youtube.com/video/Hde3JGLDuq8/edit",
           "uploaded_at": "2026-11-03T01:08:05Z",
           "thumbnail": "https://i.ytimg.com/vi/Hde3JGLDuq8/mqdefault.jpg",
-          "views": 48,
+          "views": 49,
           "likes": 4,
           "comments": 0,
           "is_clean": true,
@@ -10432,7 +10436,7 @@
           "studio_url": "https://studio.youtube.com/video/MQZ8gXWkNis/edit",
           "uploaded_at": "2026-09-28T08:26:01Z",
           "thumbnail": "https://i.ytimg.com/vi/MQZ8gXWkNis/mqdefault.jpg",
-          "views": 62852,
+          "views": 62853,
           "likes": 1387,
           "comments": 2,
           "is_clean": true,
@@ -10511,7 +10515,7 @@
         "studio_url": "https://studio.youtube.com/video/sYhMhoeSZ5o/edit",
         "uploaded_at": "2026-11-04T07:01:39Z",
         "thumbnail": "https://i.ytimg.com/vi/sYhMhoeSZ5o/mqdefault.jpg",
-        "views": 4,
+        "views": 5,
         "likes": 2,
         "comments": 1,
         "is_clean": true,
@@ -10577,7 +10581,7 @@
         "org": "Datacamp Limited (New York US Gateway)",
         "datacenter": "Surfshark Dedicated US NY Gateway",
         "verify_url": "https://ipinfo.io/84.17.35.112",
-        "verified_at": "2026-11-03T08:02:04Z"
+        "verified_at": "2026-11-04T07:37:11Z"
       },
       "health": {
         "overall_score": 98,
@@ -10682,7 +10686,7 @@
           "studio_url": "https://studio.youtube.com/video/3TkkLlw-ejg/edit",
           "uploaded_at": "2026-11-03T08:02:04Z",
           "thumbnail": "https://i.ytimg.com/vi/3TkkLlw-ejg/mqdefault.jpg",
-          "views": 1,
+          "views": 2,
           "likes": 0,
           "comments": 0,
           "is_clean": true,
@@ -10714,7 +10718,7 @@
           "studio_url": "https://studio.youtube.com/video/v7-SCvCylWw/edit",
           "uploaded_at": "2026-11-02T07:48:15Z",
           "thumbnail": "https://i.ytimg.com/vi/v7-SCvCylWw/mqdefault.jpg",
-          "views": 21,
+          "views": 22,
           "likes": 0,
           "comments": 0,
           "is_clean": true,
@@ -10730,7 +10734,7 @@
           "studio_url": "https://studio.youtube.com/video/Hf2rfNQyGu0/edit",
           "uploaded_at": "2026-11-01T22:30:22Z",
           "thumbnail": "https://i.ytimg.com/vi/Hf2rfNQyGu0/mqdefault.jpg",
-          "views": 7,
+          "views": 11,
           "likes": 0,
           "comments": 0,
           "is_clean": true,
@@ -11034,7 +11038,7 @@
           "studio_url": "https://studio.youtube.com/video/lfpIIhPgOmg/edit",
           "uploaded_at": "2026-10-23T06:07:21Z",
           "thumbnail": "https://i.ytimg.com/vi/lfpIIhPgOmg/mqdefault.jpg",
-          "views": 85,
+          "views": 86,
           "likes": 4,
           "comments": 0,
           "is_clean": true,
@@ -11483,7 +11487,7 @@
         "org": "Clouvider Limited (Dallas US Gateway)",
         "datacenter": "Surfshark Dedicated US Dallas Gateway",
         "verify_url": "https://ipinfo.io/2.56.189.90",
-        "verified_at": "2026-11-03T08:37:29Z"
+        "verified_at": "2026-11-04T08:04:55Z"
       },
       "health": {
         "overall_score": 98,
@@ -11507,31 +11511,31 @@
             "country": "United States",
             "code": "US",
             "flag": "🇺🇸",
-            "percent": 77.9
+            "percent": 76.6
           },
           {
-            "country": "ZA",
-            "code": "ZA",
-            "flag": "🌐",
-            "percent": 5.6
+            "country": "Indonesia",
+            "code": "ID",
+            "flag": "🇮🇩",
+            "percent": 8.7
           },
           {
-            "country": "JM",
-            "code": "JM",
-            "flag": "🌐",
-            "percent": 4.4
+            "country": "South Korea",
+            "code": "KR",
+            "flag": "🇰🇷",
+            "percent": 4.9
           },
           {
-            "country": "Canada",
-            "code": "CA",
-            "flag": "🇨🇦",
-            "percent": 3.8
+            "country": "Philippines",
+            "code": "PH",
+            "flag": "🇵🇭",
+            "percent": 3.4
           },
           {
-            "country": "United Kingdom",
-            "code": "GB",
-            "flag": "🇬🇧",
-            "percent": 3.7
+            "country": "Iraq",
+            "code": "IQ",
+            "flag": "🇮🇶",
+            "percent": 1.8
           },
           {
             "country": "Other countries",
@@ -11543,32 +11547,24 @@
         "age_distribution": [
           {
             "range": "13–17 years",
-            "percent": 2.6
-          },
-          {
-            "range": "25–34 years",
-            "percent": 3.7
-          },
-          {
-            "range": "35–44 years",
-            "percent": 6.8
-          },
-          {
-            "range": "45–54 years",
             "percent": 9.6
           },
           {
-            "range": "55–64 years",
-            "percent": 24.8
+            "range": "25–34 years",
+            "percent": 51.9
           },
           {
-            "range": "65+ years",
-            "percent": 52.7
+            "range": "35–44 years",
+            "percent": 32.0
+          },
+          {
+            "range": "45–54 years",
+            "percent": 6.6
           }
         ],
         "gender": {
-          "male": 38.5,
-          "female": 61.5
+          "male": 58.9,
+          "female": 41.1
         },
         "watch_time_hours": 33.3
       },
@@ -11584,10 +11580,10 @@
           "likes": 0,
           "comments": 0,
           "is_clean": true,
-          "health_badge": "100% CLEAN",
-          "flag_details": "None (Clean)",
+          "health_badge": "RESTRICTED",
+          "flag_details": "Blocked in 249 regions",
           "channel_name": "United TV",
-          "is_blocked": false
+          "is_blocked": true
         },
         {
           "title": "He Found Out Who Saved Him From The Fire 😱 #Shorts",
@@ -11788,7 +11784,7 @@
           "studio_url": "https://studio.youtube.com/video/_h99BRCqMmQ/edit",
           "uploaded_at": "2026-10-24T06:31:15Z",
           "thumbnail": "https://i.ytimg.com/vi/_h99BRCqMmQ/mqdefault.jpg",
-          "views": 104,
+          "views": 105,
           "likes": 0,
           "comments": 0,
           "is_clean": true,
@@ -12463,10 +12459,10 @@
         "likes": 0,
         "comments": 0,
         "is_clean": true,
-        "health_badge": "100% CLEAN",
-        "flag_details": "None (Clean)",
+        "health_badge": "RESTRICTED",
+        "flag_details": "Blocked in 249 regions",
         "channel_name": "United TV",
-        "is_blocked": false
+        "is_blocked": true
       },
       "total_likes": 256,
       "avg_views_per_video": 116,
@@ -12492,11 +12488,11 @@
       "status_color": "#10B981",
       "subscribers": 0,
       "total_views": 11,
-      "channel_total_videos": 53,
-      "uploaded_count": 53,
-      "drive_queue_count": 29,
-      "drive_videos_count": 29,
-      "runway_days": 14.5,
+      "channel_total_videos": 54,
+      "uploaded_count": 54,
+      "drive_queue_count": 28,
+      "drive_videos_count": 28,
+      "runway_days": 14.0,
       "latest_run_time": "2026-10-10T17:36:53Z",
       "latest_run_status": "success",
       "schedule": {
@@ -12525,7 +12521,7 @@
         "org": "Datacamp Limited (New York US Gateway)",
         "datacenter": "Surfshark Dedicated US NY Gateway",
         "verify_url": "https://ipinfo.io/84.17.35.112",
-        "verified_at": "2026-11-03T09:33:09Z"
+        "verified_at": "2026-11-04T00:12:29Z"
       },
       "health": {
         "overall_score": 98,
@@ -12605,6 +12601,22 @@
         "watch_time_hours": 0.1
       },
       "uploaded_videos": [
+        {
+          "title": "Bro froze the exact second he spotted the camera 💀 #Shorts",
+          "youtube_id": "_FhdkXGDa4U",
+          "youtube_url": "https://youtu.be/_FhdkXGDa4U",
+          "studio_url": "https://studio.youtube.com/video/_FhdkXGDa4U/edit",
+          "uploaded_at": "2026-11-04T09:12:08Z",
+          "thumbnail": "https://i.ytimg.com/vi/_FhdkXGDa4U/mqdefault.jpg",
+          "views": 0,
+          "likes": 0,
+          "comments": 0,
+          "is_clean": true,
+          "health_badge": "100% CLEAN",
+          "flag_details": "None (Clean)",
+          "channel_name": "WildStare POV",
+          "is_blocked": false
+        },
         {
           "title": "Bro almost didn't make it out alive 💀 #Shorts",
           "youtube_id": "4Y55WiAAgks",
@@ -13469,12 +13481,12 @@
       ],
       "upload_schedule": "01:10 IST & 07:45 IST",
       "latest_uploaded_video": {
-        "title": "Bro almost didn't make it out alive 💀 #Shorts",
-        "youtube_id": "4Y55WiAAgks",
-        "youtube_url": "https://youtu.be/4Y55WiAAgks",
-        "studio_url": "https://studio.youtube.com/video/4Y55WiAAgks/edit",
-        "uploaded_at": "2026-11-04T00:12:29Z",
-        "thumbnail": "https://i.ytimg.com/vi/4Y55WiAAgks/mqdefault.jpg",
+        "title": "Bro froze the exact second he spotted the camera 💀 #Shorts",
+        "youtube_id": "_FhdkXGDa4U",
+        "youtube_url": "https://youtu.be/_FhdkXGDa4U",
+        "studio_url": "https://studio.youtube.com/video/_FhdkXGDa4U/edit",
+        "uploaded_at": "2026-11-04T09:12:08Z",
+        "thumbnail": "https://i.ytimg.com/vi/_FhdkXGDa4U/mqdefault.jpg",
         "views": 0,
         "likes": 0,
         "comments": 0,
