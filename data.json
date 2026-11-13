@@ -1,21 +1,21 @@
 {
   "app_name": "Raj Tube Pro",
   "version": "6.1.0",
-  "timestamp": "2026-11-12T18:31:13.659115+00:00",
+  "timestamp": "2026-11-13T00:01:02.994917+00:00",
   "schedule": {
     "next_slot_iso": "2026-11-13T08:00:00+00:00",
-    "seconds_remaining": 48526,
-    "formatted_countdown": "13h 28m 46s",
-    "slot_label": "01:30 PM IST Tomorrow (Lunch Break)",
-    "now_ist": "13 Nov, 12:01 AM IST"
+    "seconds_remaining": 28737,
+    "formatted_countdown": "07h 58m 57s",
+    "slot_label": "01:30 PM IST (Lunch Break Window)",
+    "now_ist": "13 Nov, 05:31 AM IST"
   },
   "summary": {
     "total_channels": 11,
-    "total_uploaded": 804,
-    "total_in_queue": 152,
-    "total_subscribers": 1698,
-    "total_views": 2104283,
-    "total_likes": 16028,
+    "total_uploaded": 808,
+    "total_in_queue": 149,
+    "total_subscribers": 1702,
+    "total_views": 2104431,
+    "total_likes": 16109,
     "network_engagement": 0.8,
     "total_runway_days": 17.8,
     "system_health": "All Systems Operational (11 Channels Active 1-11)",
@@ -31,7 +31,7 @@
       "uploaded_at": "2026-09-15T21:09:27Z"
     },
     "analytics": {
-      "watch_time_hours": 11223.0,
+      "watch_time_hours": 11223.7,
       "avg_view_duration": "0:24",
       "top_countries": [
         {
@@ -155,7 +155,7 @@
       ],
       "peak_hours": "6:00 PM – 10:30 PM IST (Peak Global Viewing Window)"
     },
-    "avg_views_per_channel": 191298
+    "avg_views_per_channel": 191312
   },
   "issues": [],
   "channels": [
@@ -357,7 +357,7 @@
       "stock_status": "Plentiful (30.0 days)",
       "stock_color": "#10B981",
       "latest_run_status": "success",
-      "latest_run_time": "2026-11-12T02:40:21.702706+00:00",
+      "latest_run_time": "2026-11-12T21:53:12.648819+00:00",
       "latest_uploaded_video": {
         "title": "This spider calculates jumps like a fighter pilot 🤯 #Shorts",
         "youtube_id": "3DnWSoNHNOc",
@@ -1980,13 +1980,13 @@
       "color": "#F59E0B",
       "avatar_url": "https://yt3.ggpht.com/TTLhq8ijvpChRrWaVb1i96FzeFG02Gd31oOfWo4EdOtBtfqTD6h0TrRmEOTd2fE8V0kPexV6EA=s240-c-k-c0x00ffffff-no-rj",
       "subscribers": 996,
-      "total_views": 1635261,
+      "total_views": 1635456,
       "channel_total_videos": 85,
-      "avg_views_per_video": 19242,
+      "avg_views_per_video": 19244,
       "engagement_rate": 0.8,
-      "total_likes": 8896,
+      "total_likes": 8895,
       "analytics": {
-        "watch_time_hours": 8721.4,
+        "watch_time_hours": 8722.4,
         "avg_view_duration": "0:24",
         "top_countries": [
           {
@@ -2037,7 +2037,7 @@
           },
           {
             "range": "25–34 years",
-            "percent": 16.7
+            "percent": 16.8
           },
           {
             "range": "35–44 years",
@@ -2057,8 +2057,8 @@
           }
         ],
         "gender": {
-          "male": 85.5,
-          "female": 14.5
+          "male": 85.4,
+          "female": 14.6
         },
         "traffic_sources": [
           {
@@ -2175,7 +2175,7 @@
         "studio_url": "https://studio.youtube.com/video/19FNMIXbUEc/edit",
         "uploaded_at": "2026-11-09T16:56:47Z",
         "thumbnail": "https://i.ytimg.com/vi/19FNMIXbUEc/mqdefault.jpg",
-        "views": 1906,
+        "views": 2086,
         "likes": 17,
         "comments": 0,
         "is_clean": true,
@@ -2192,7 +2192,7 @@
           "studio_url": "https://studio.youtube.com/video/19FNMIXbUEc/edit",
           "uploaded_at": "2026-11-09T16:56:47Z",
           "thumbnail": "https://i.ytimg.com/vi/19FNMIXbUEc/mqdefault.jpg",
-          "views": 1906,
+          "views": 2086,
           "likes": 17,
           "comments": 0,
           "is_clean": true,
@@ -2592,7 +2592,7 @@
           "studio_url": "https://studio.youtube.com/video/OuyIqHjfnYM/edit",
           "uploaded_at": "2026-10-09T08:08:18Z",
           "thumbnail": "https://i.ytimg.com/vi/OuyIqHjfnYM/mqdefault.jpg",
-          "views": 37600,
+          "views": 37602,
           "likes": 303,
           "comments": 4,
           "is_clean": true,
@@ -3105,7 +3105,7 @@
           "uploaded_at": "2026-09-20T21:08:20.054215+00:00",
           "thumbnail": "https://i.ytimg.com/vi/sprZKJfxJBI/mqdefault.jpg",
           "views": 14991,
-          "likes": 166,
+          "likes": 165,
           "comments": 5,
           "is_clean": true,
           "health_badge": "100% CLEAN",
@@ -3152,7 +3152,7 @@
           "studio_url": "https://studio.youtube.com/video/57rwnWsFfMw/edit",
           "uploaded_at": "2026-09-18T14:09:16.211199+00:00",
           "thumbnail": "https://i.ytimg.com/vi/57rwnWsFfMw/mqdefault.jpg",
-          "views": 41571,
+          "views": 41575,
           "likes": 208,
           "comments": 1,
           "is_clean": true,
@@ -3250,7 +3250,7 @@
           "title": "One Table One Belt And Huge Pressure #SlapFight #PowerSlap #Championship #CombatSports #FYP.",
           "uploaded_at": "2026-09-15T21:09:27Z",
           "thumbnail": "https://i.ytimg.com/vi/74d1M_ceEM0/mqdefault.jpg",
-          "views": 563616,
+          "views": 563617,
           "likes": 1995,
           "comments": 20,
           "upload_status": "processed",
@@ -3766,12 +3766,12 @@
       "status_color": "#10B981",
       "subscribers": 68,
       "total_views": 27054,
-      "channel_total_videos": 67,
-      "uploaded_count": 67,
-      "drive_queue_count": 13,
-      "drive_videos_count": 13,
-      "runway_days": 6.5,
-      "latest_run_time": "2026-11-12T03:26:07.227081+00:00",
+      "channel_total_videos": 68,
+      "uploaded_count": 68,
+      "drive_queue_count": 12,
+      "drive_videos_count": 12,
+      "runway_days": 6.0,
+      "latest_run_time": "2026-11-12T22:16:54.947418+00:00",
       "latest_run_status": "success",
       "schedule": {
         "videos_per_day": 2,
@@ -3893,6 +3893,22 @@
         "watch_time_hours": 144.3
       },
       "uploaded_videos": [
+        {
+          "title": "She Swapped The Real Diamond Necklace?! 😱 #Shorts",
+          "youtube_id": "0safOfAs22A",
+          "youtube_url": "https://youtu.be/0safOfAs22A",
+          "studio_url": "https://studio.youtube.com/video/0safOfAs22A/edit",
+          "uploaded_at": "2026-11-12T22:16:54.935577+00:00",
+          "thumbnail": "https://i.ytimg.com/vi/0safOfAs22A/mqdefault.jpg",
+          "views": 0,
+          "likes": 0,
+          "comments": 0,
+          "is_clean": true,
+          "health_badge": "100% CLEAN",
+          "flag_details": "None (Clean)",
+          "channel_name": "Billionaire Heir TV",
+          "is_blocked": false
+        },
         {
           "title": "Bro actually thought she'd stay after this 💀 #Shorts",
           "youtube_id": "zdwjmUE6-CM",
@@ -4268,7 +4284,7 @@
           "studio_url": "https://studio.youtube.com/video/6OdXnK_ixAs/edit",
           "uploaded_at": "2026-10-30T20:51:43.893782+00:00",
           "thumbnail": "https://i.ytimg.com/vi/6OdXnK_ixAs/mqdefault.jpg",
-          "views": 27,
+          "views": 28,
           "likes": 0,
           "comments": 0,
           "is_clean": true,
@@ -4508,7 +4524,7 @@
           "studio_url": "https://studio.youtube.com/video/82l_r07hTb8/edit",
           "uploaded_at": "2026-10-23T01:01:00.192461+00:00",
           "thumbnail": "https://i.ytimg.com/vi/82l_r07hTb8/mqdefault.jpg",
-          "views": 1562,
+          "views": 1563,
           "likes": 51,
           "comments": 0,
           "is_clean": true,
@@ -4764,7 +4780,7 @@
           "studio_url": "https://studio.youtube.com/video/LWj7Ti5NJ3M/edit",
           "uploaded_at": "2026-10-11T23:09:30Z",
           "thumbnail": "https://i.ytimg.com/vi/LWj7Ti5NJ3M/mqdefault.jpg",
-          "views": 1558,
+          "views": 1560,
           "likes": 55,
           "comments": 0,
           "is_clean": true,
@@ -4968,12 +4984,12 @@
       ],
       "num": 3,
       "latest_uploaded_video": {
-        "title": "Bro actually thought she'd stay after this 💀 #Shorts",
-        "youtube_id": "zdwjmUE6-CM",
-        "youtube_url": "https://youtu.be/zdwjmUE6-CM",
-        "studio_url": "https://studio.youtube.com/video/zdwjmUE6-CM/edit",
-        "uploaded_at": "2026-11-12T03:26:07.216596+00:00",
-        "thumbnail": "https://i.ytimg.com/vi/zdwjmUE6-CM/mqdefault.jpg",
+        "title": "She Swapped The Real Diamond Necklace?! 😱 #Shorts",
+        "youtube_id": "0safOfAs22A",
+        "youtube_url": "https://youtu.be/0safOfAs22A",
+        "studio_url": "https://studio.youtube.com/video/0safOfAs22A/edit",
+        "uploaded_at": "2026-11-12T22:16:54.935577+00:00",
+        "thumbnail": "https://i.ytimg.com/vi/0safOfAs22A/mqdefault.jpg",
         "views": 0,
         "likes": 0,
         "comments": 0,
@@ -4984,7 +5000,7 @@
         "is_blocked": false
       },
       "total_likes": 527,
-      "avg_views_per_video": 404,
+      "avg_views_per_video": 398,
       "slots": [
         {
           "time_ist": "21:50 IST",
@@ -5013,10 +5029,10 @@
       "avatar_url": "https://yt3.ggpht.com/pqIrk9GBtAR6cdyBH5C_kHNWA1jlu4VT9ZLKxdYTFW6IvVQLWbtFO3OUxrSV1Jm1SR0JAyTrAA=s240-c-k-c0x00ffffff-no-rj",
       "subscribers": 116,
       "total_views": 205839,
-      "channel_total_videos": 140,
-      "avg_views_per_video": 1493,
+      "channel_total_videos": 141,
+      "avg_views_per_video": 1477,
       "engagement_rate": 1.0,
-      "total_likes": 1802,
+      "total_likes": 1813,
       "analytics": {
         "watch_time_hours": 1097.8,
         "avg_view_duration": "0:24",
@@ -5193,22 +5209,22 @@
       },
       "drive_folder_id": "1xZSez3F82y0pLTWJbQ-ybPjbOCqY1mrW",
       "drive_folder_url": "https://drive.google.com/drive/folders/1xZSez3F82y0pLTWJbQ-ybPjbOCqY1mrW",
-      "uploaded_count": 140,
-      "drive_queue_count": 8,
-      "runway_days": 4.0,
+      "uploaded_count": 142,
+      "drive_queue_count": 7,
+      "runway_days": 3.5,
       "stock_status": "Plentiful (21.5 days)",
       "stock_color": "#10B981",
       "latest_run_status": "success",
       "latest_run_time": "2026-09-20T21:06:00.223541+00:00",
       "latest_uploaded_video": {
-        "title": "Painting the background first is illegal?? 🤯 #Shorts",
-        "youtube_id": "dxp4jMRDo4U",
-        "youtube_url": "https://youtu.be/dxp4jMRDo4U",
-        "studio_url": "https://studio.youtube.com/video/dxp4jMRDo4U/edit",
-        "uploaded_at": "2026-11-12T03:51:46Z",
-        "thumbnail": "https://i.ytimg.com/vi/dxp4jMRDo4U/mqdefault.jpg",
-        "views": 1027,
-        "likes": 17,
+        "title": "How is this even physically possible?! 🤯 #Shorts",
+        "youtube_id": "shgfEKsGYm8",
+        "youtube_url": "https://youtu.be/shgfEKsGYm8",
+        "studio_url": "https://studio.youtube.com/video/shgfEKsGYm8/edit",
+        "uploaded_at": "2026-11-12T22:28:26Z",
+        "thumbnail": "https://i.ytimg.com/vi/shgfEKsGYm8/mqdefault.jpg",
+        "views": 0,
+        "likes": 0,
         "comments": 0,
         "is_clean": true,
         "health_badge": "100% CLEAN",
@@ -5218,13 +5234,45 @@
       },
       "uploaded_videos": [
         {
+          "title": "How is this even physically possible?! 🤯 #Shorts",
+          "youtube_id": "shgfEKsGYm8",
+          "youtube_url": "https://youtu.be/shgfEKsGYm8",
+          "studio_url": "https://studio.youtube.com/video/shgfEKsGYm8/edit",
+          "uploaded_at": "2026-11-12T22:28:26Z",
+          "thumbnail": "https://i.ytimg.com/vi/shgfEKsGYm8/mqdefault.jpg",
+          "views": 0,
+          "likes": 0,
+          "comments": 0,
+          "is_clean": true,
+          "health_badge": "100% CLEAN",
+          "flag_details": "None (Clean)",
+          "channel_name": "Klyvo",
+          "is_blocked": false
+        },
+        {
+          "title": "How is this even humanly possible?! 🤯 #Shorts",
+          "youtube_id": "1ZZkRG4kqkA",
+          "youtube_url": "https://youtu.be/1ZZkRG4kqkA",
+          "studio_url": "https://studio.youtube.com/video/1ZZkRG4kqkA/edit",
+          "uploaded_at": "2026-11-12T22:28:21Z",
+          "thumbnail": "https://i.ytimg.com/vi/1ZZkRG4kqkA/mqdefault.jpg",
+          "views": 446,
+          "likes": 4,
+          "comments": 0,
+          "is_clean": true,
+          "health_badge": "100% CLEAN",
+          "flag_details": "None (Clean)",
+          "channel_name": "Klyvo",
+          "is_blocked": false
+        },
+        {
           "title": "Painting the background first is illegal?? 🤯 #Shorts",
           "youtube_id": "dxp4jMRDo4U",
           "youtube_url": "https://youtu.be/dxp4jMRDo4U",
           "studio_url": "https://studio.youtube.com/video/dxp4jMRDo4U/edit",
           "uploaded_at": "2026-11-12T03:51:46Z",
           "thumbnail": "https://i.ytimg.com/vi/dxp4jMRDo4U/mqdefault.jpg",
-          "views": 1027,
+          "views": 1055,
           "likes": 17,
           "comments": 0,
           "is_clean": true,
@@ -5240,8 +5288,8 @@
           "studio_url": "https://studio.youtube.com/video/lOsV0zJqL5M/edit",
           "uploaded_at": "2026-11-12T03:47:45Z",
           "thumbnail": "https://i.ytimg.com/vi/lOsV0zJqL5M/mqdefault.jpg",
-          "views": 17,
-          "likes": 0,
+          "views": 21,
+          "likes": 1,
           "comments": 0,
           "is_clean": true,
           "health_badge": "100% CLEAN",
@@ -5257,7 +5305,7 @@
           "uploaded_at": "2026-11-11T23:06:42Z",
           "thumbnail": "https://i.ytimg.com/vi/Kws0KkjLvzA/mqdefault.jpg",
           "views": 1167,
-          "likes": 4,
+          "likes": 5,
           "comments": 2,
           "is_clean": true,
           "health_badge": "100% CLEAN",
@@ -5288,8 +5336,8 @@
           "studio_url": "https://studio.youtube.com/video/1Pkw5OXXMUY/edit",
           "uploaded_at": "2026-11-11T02:47:50Z",
           "thumbnail": "https://i.ytimg.com/vi/1Pkw5OXXMUY/mqdefault.jpg",
-          "views": 204,
-          "likes": 2,
+          "views": 209,
+          "likes": 3,
           "comments": 0,
           "is_clean": true,
           "health_badge": "100% CLEAN",
@@ -5304,8 +5352,8 @@
           "studio_url": "https://studio.youtube.com/video/wpZEQKoTBoY/edit",
           "uploaded_at": "2026-11-11T02:46:03Z",
           "thumbnail": "https://i.ytimg.com/vi/wpZEQKoTBoY/mqdefault.jpg",
-          "views": 51,
-          "likes": 0,
+          "views": 58,
+          "likes": 1,
           "comments": 0,
           "is_clean": true,
           "health_badge": "100% CLEAN",
@@ -5320,7 +5368,7 @@
           "studio_url": "https://studio.youtube.com/video/Htr2A-YS_vM/edit",
           "uploaded_at": "2026-11-10T21:59:03Z",
           "thumbnail": "https://i.ytimg.com/vi/Htr2A-YS_vM/mqdefault.jpg",
-          "views": 784,
+          "views": 809,
           "likes": 4,
           "comments": 0,
           "is_clean": true,
@@ -5353,7 +5401,7 @@
           "uploaded_at": "2026-11-10T04:37:37Z",
           "thumbnail": "https://i.ytimg.com/vi/UaDCJ0laheI/mqdefault.jpg",
           "views": 26513,
-          "likes": 168,
+          "likes": 170,
           "comments": 1,
           "is_clean": true,
           "health_badge": "100% CLEAN",
@@ -5368,7 +5416,7 @@
           "studio_url": "https://studio.youtube.com/video/AgAsOEf0fIk/edit",
           "uploaded_at": "2026-11-10T00:28:11Z",
           "thumbnail": "https://i.ytimg.com/vi/AgAsOEf0fIk/mqdefault.jpg",
-          "views": 4469,
+          "views": 4567,
           "likes": 26,
           "comments": 0,
           "is_clean": true,
@@ -5384,7 +5432,7 @@
           "studio_url": "https://studio.youtube.com/video/RXFTBm9Yxt8/edit",
           "uploaded_at": "2026-11-10T00:27:35Z",
           "thumbnail": "https://i.ytimg.com/vi/RXFTBm9Yxt8/mqdefault.jpg",
-          "views": 1149,
+          "views": 1171,
           "likes": 14,
           "comments": 0,
           "is_clean": true,
@@ -5400,8 +5448,8 @@
           "studio_url": "https://studio.youtube.com/video/j-7ap6BBpbI/edit",
           "uploaded_at": "2026-11-09T02:40:13Z",
           "thumbnail": "https://i.ytimg.com/vi/j-7ap6BBpbI/mqdefault.jpg",
-          "views": 1456,
-          "likes": 18,
+          "views": 1458,
+          "likes": 19,
           "comments": 0,
           "is_clean": true,
           "health_badge": "100% CLEAN",
@@ -5416,7 +5464,7 @@
           "studio_url": "https://studio.youtube.com/video/LviBv6RYAOk/edit",
           "uploaded_at": "2026-11-09T02:39:04Z",
           "thumbnail": "https://i.ytimg.com/vi/LviBv6RYAOk/mqdefault.jpg",
-          "views": 1298,
+          "views": 1305,
           "likes": 14,
           "comments": 0,
           "is_clean": true,
@@ -5432,7 +5480,7 @@
           "studio_url": "https://studio.youtube.com/video/uWGnouaDXEI/edit",
           "uploaded_at": "2026-11-08T20:48:14Z",
           "thumbnail": "https://i.ytimg.com/vi/uWGnouaDXEI/mqdefault.jpg",
-          "views": 3812,
+          "views": 3829,
           "likes": 98,
           "comments": 11,
           "is_clean": true,
@@ -5448,7 +5496,7 @@
           "studio_url": "https://studio.youtube.com/video/ni5V8UY47bU/edit",
           "uploaded_at": "2026-11-08T20:47:12Z",
           "thumbnail": "https://i.ytimg.com/vi/ni5V8UY47bU/mqdefault.jpg",
-          "views": 926,
+          "views": 930,
           "likes": 20,
           "comments": 1,
           "is_clean": true,
@@ -5560,7 +5608,7 @@
           "studio_url": "https://studio.youtube.com/video/p9JrN7xT3RE/edit",
           "uploaded_at": "2026-11-06T21:46:49Z",
           "thumbnail": "https://i.ytimg.com/vi/p9JrN7xT3RE/mqdefault.jpg",
-          "views": 6152,
+          "views": 6169,
           "likes": 43,
           "comments": 1,
           "is_clean": true,
@@ -7624,7 +7672,7 @@
       },
       "is_active": true,
       "is_terminated": false,
-      "drive_videos_count": 8,
+      "drive_videos_count": 7,
       "country": "US",
       "num": 4,
       "slots": [
@@ -7660,11 +7708,11 @@
       "status_color": "#10B981",
       "subscribers": 11,
       "total_views": 6617,
-      "channel_total_videos": 58,
-      "uploaded_count": 60,
-      "drive_queue_count": 16,
-      "drive_videos_count": 16,
-      "runway_days": 8.0,
+      "channel_total_videos": 59,
+      "uploaded_count": 61,
+      "drive_queue_count": 15,
+      "drive_videos_count": 15,
+      "runway_days": 7.5,
       "latest_run_time": "2026-09-20T21:06:00.223541+00:00",
       "latest_run_status": "success",
       "schedule": {
@@ -7717,63 +7765,63 @@
             "country": "United States",
             "code": "US",
             "flag": "🇺🇸",
-            "percent": 47.8
+            "percent": 45.3
           },
           {
             "country": "Indonesia",
             "code": "ID",
             "flag": "🇮🇩",
-            "percent": 20.1
+            "percent": 20.4
           },
           {
             "country": "India",
             "code": "IN",
             "flag": "🇮🇳",
-            "percent": 8.3
+            "percent": 9.3
           },
           {
             "country": "Philippines",
             "code": "PH",
             "flag": "🇵🇭",
-            "percent": 7.1
+            "percent": 7.5
           },
           {
             "country": "Uzbekistan",
             "code": "UZ",
             "flag": "🇺🇿",
-            "percent": 5.6
+            "percent": 6.1
           },
           {
             "country": "Other countries",
             "code": "OTHER",
             "flag": "🌐",
-            "percent": 11.1
+            "percent": 11.4
           }
         ],
         "age_distribution": [
           {
             "range": "13–17 years",
-            "percent": 7.5
+            "percent": 7.2
           },
           {
             "range": "18–24 years",
-            "percent": 8.1
+            "percent": 8.2
           },
           {
             "range": "25–34 years",
-            "percent": 37.9
+            "percent": 38.5
           },
           {
             "range": "35–44 years",
-            "percent": 27.0
+            "percent": 26.9
           },
           {
             "range": "45–54 years",
-            "percent": 9.4
+            "percent": 9.3
           },
           {
             "range": "55–64 years",
-            "percent": 5.8
+            "percent": 5.6
           },
           {
             "range": "65+ years",
@@ -7781,12 +7829,28 @@
           }
         ],
         "gender": {
-          "male": 45.8,
-          "female": 54.2
+          "male": 46.0,
+          "female": 54.0
         },
         "watch_time_hours": 35.3
       },
       "uploaded_videos": [
+        {
+          "title": "Family Thinks She Is A Fake Until She Shows The Ring 😱 #Shorts",
+          "youtube_id": "Cu9HJz3T1mI",
+          "youtube_url": "https://youtu.be/Cu9HJz3T1mI",
+          "studio_url": "https://studio.youtube.com/video/Cu9HJz3T1mI/edit",
+          "uploaded_at": "2026-11-12T22:43:03Z",
+          "thumbnail": "https://i.ytimg.com/vi/Cu9HJz3T1mI/mqdefault.jpg",
+          "views": 378,
+          "likes": 9,
+          "comments": 0,
+          "is_clean": true,
+          "health_badge": "100% CLEAN",
+          "flag_details": "None (Clean)",
+          "channel_name": "CineBite Drama",
+          "is_blocked": false
+        },
         {
           "title": "His face dropped the second she said this 💀 #Shorts",
           "youtube_id": "mFVLz6xqW2E",
@@ -7794,8 +7858,8 @@
           "studio_url": "https://studio.youtube.com/video/mFVLz6xqW2E/edit",
           "uploaded_at": "2026-11-11T23:27:38Z",
           "thumbnail": "https://i.ytimg.com/vi/mFVLz6xqW2E/mqdefault.jpg",
-          "views": 799,
-          "likes": 5,
+          "views": 900,
+          "likes": 6,
           "comments": 0,
           "is_clean": true,
           "health_badge": "100% CLEAN",
@@ -8306,7 +8370,7 @@
           "studio_url": "https://studio.youtube.com/video/z0yfHwVzBjg/edit",
           "uploaded_at": "2026-10-20T02:05:47Z",
           "thumbnail": "https://i.ytimg.com/vi/z0yfHwVzBjg/mqdefault.jpg",
-          "views": 25,
+          "views": 26,
           "likes": 0,
           "comments": 0,
           "is_clean": true,
@@ -8763,14 +8827,14 @@
       ],
       "upload_schedule": "22:40 IST & 05:10 IST",
       "latest_uploaded_video": {
-        "title": "His face dropped the second she said this 💀 #Shorts",
-        "youtube_id": "mFVLz6xqW2E",
-        "youtube_url": "https://youtu.be/mFVLz6xqW2E",
-        "studio_url": "https://studio.youtube.com/video/mFVLz6xqW2E/edit",
-        "uploaded_at": "2026-11-11T23:27:38Z",
-        "thumbnail": "https://i.ytimg.com/vi/mFVLz6xqW2E/mqdefault.jpg",
-        "views": 799,
-        "likes": 5,
+        "title": "Family Thinks She Is A Fake Until She Shows The Ring 😱 #Shorts",
+        "youtube_id": "Cu9HJz3T1mI",
+        "youtube_url": "https://youtu.be/Cu9HJz3T1mI",
+        "studio_url": "https://studio.youtube.com/video/Cu9HJz3T1mI/edit",
+        "uploaded_at": "2026-11-12T22:43:03Z",
+        "thumbnail": "https://i.ytimg.com/vi/Cu9HJz3T1mI/mqdefault.jpg",
+        "views": 378,
+        "likes": 9,
         "comments": 0,
         "is_clean": true,
         "health_badge": "100% CLEAN",
@@ -8778,8 +8842,8 @@
         "channel_name": "CineBite Drama",
         "is_blocked": false
       },
-      "total_likes": 324,
-      "avg_views_per_video": 392,
+      "total_likes": 334,
+      "avg_views_per_video": 393,
       "stock_status": "Plentiful (17.5 days)",
       "stock_color": "#10B981"
     },
@@ -8794,14 +8858,14 @@
       "banner_url": "",
       "category": "Suspense / Emergency Drama",
       "country": "US",
-      "is_active": true,
-      "is_terminated": false,
-      "is_suspended": false,
-      "status_badge": "AUTOPILOT ACTIVE",
-      "status_label": "24/7 Autopilot • Scheduled",
-      "status_color": "#10B981",
+      "is_active": false,
+      "is_terminated": true,
+      "is_suspended": true,
+      "status_badge": "TERMINATED",
+      "status_label": "Channel Terminated / Deleted by YouTube",
+      "status_color": "#EF4444",
       "subscribers": 0,
-      "total_views": 47,
+      "total_views": 0,
       "channel_total_videos": 60,
       "uploaded_count": 60,
       "drive_queue_count": 36,
@@ -8838,19 +8902,17 @@
         "verified_at": "2026-11-12T07:02:25Z"
       },
       "health": {
-        "overall_score": 98,
-        "verdict": "Channel Health Pristine",
-        "verdict_color": "#10B981",
-        "view_health_badge": "HEALTHY",
-        "view_health_label": "Consistent Organic Views",
-        "view_health_color": "#10B981",
-        "copyright_status": "Clean (No Copyright Strikes)",
-        "copyright_badge": "100% CLEAN",
-        "copyright_color": "#10B981",
-        "strikes_status": "0 Active Strikes",
-        "is_clean": true,
-        "runway_days": 26.5,
-        "queue_health": "Plentiful Runway (26.5 days)"
+        "overall_score": 0,
+        "verdict": "Channel Terminated / Deleted by YouTube",
+        "verdict_color": "#EF4444",
+        "view_health_badge": "TERMINATED",
+        "view_health_label": "Account Deleted / Suspended by YouTube",
+        "view_health_color": "#EF4444",
+        "copyright_status": "Account Terminated / Deleted by YouTube",
+        "copyright_badge": "TERMINATED",
+        "copyright_color": "#EF4444",
+        "strikes_status": "Account Suspended / Terminated by YouTube",
+        "is_clean": false
       },
       "analytics": {
         "verified_source": "YouTube Data API v3 (Live Channel Verified)",
@@ -8912,7 +8974,7 @@
           "male": 66.0,
           "female": 34.0
         },
-        "watch_time_hours": 0.3
+        "watch_time_hours": 0.0
       },
       "uploaded_videos": [
         {
@@ -9906,7 +9968,7 @@
         "channel_name": "Code Red Dramas",
         "is_blocked": false
       },
-      "total_likes": 4,
+      "total_likes": 0,
       "avg_views_per_video": 1,
       "stock_status": "Plentiful (26.5 days)",
       "stock_color": "#10B981"
@@ -11024,7 +11086,7 @@
       "status_badge": "AUTOPILOT ACTIVE",
       "status_label": "24/7 Autopilot • Scheduled",
       "status_color": "#10B981",
-      "subscribers": 325,
+      "subscribers": 329,
       "total_views": 98068,
       "channel_total_videos": 59,
       "uploaded_count": 59,
@@ -11156,8 +11218,8 @@
           "studio_url": "https://studio.youtube.com/video/9WzbMM84KCo/edit",
           "uploaded_at": "2026-11-12T07:49:40Z",
           "thumbnail": "https://i.ytimg.com/vi/9WzbMM84KCo/mqdefault.jpg",
-          "views": 57,
-          "likes": 4,
+          "views": 77,
+          "likes": 5,
           "comments": 0,
           "is_clean": true,
           "health_badge": "100% CLEAN",
@@ -11172,8 +11234,8 @@
           "studio_url": "https://studio.youtube.com/video/hS2HHHFeWEM/edit",
           "uploaded_at": "2026-11-12T00:54:33Z",
           "thumbnail": "https://i.ytimg.com/vi/hS2HHHFeWEM/mqdefault.jpg",
-          "views": 10291,
-          "likes": 320,
+          "views": 12956,
+          "likes": 382,
           "comments": 0,
           "is_clean": true,
           "health_badge": "100% CLEAN",
@@ -11188,8 +11250,8 @@
           "studio_url": "https://studio.youtube.com/video/ehcyLhPV0J0/edit",
           "uploaded_at": "2026-11-11T07:18:15Z",
           "thumbnail": "https://i.ytimg.com/vi/ehcyLhPV0J0/mqdefault.jpg",
-          "views": 1077,
-          "likes": 34,
+          "views": 1378,
+          "likes": 36,
           "comments": 2,
           "is_clean": true,
           "health_badge": "100% CLEAN",
@@ -11204,7 +11266,7 @@
           "studio_url": "https://studio.youtube.com/video/i58rupEG0uk/edit",
           "uploaded_at": "2026-11-10T07:50:17Z",
           "thumbnail": "https://i.ytimg.com/vi/i58rupEG0uk/mqdefault.jpg",
-          "views": 126,
+          "views": 129,
           "likes": 4,
           "comments": 0,
           "is_clean": true,
@@ -11220,7 +11282,7 @@
           "studio_url": "https://studio.youtube.com/video/fNF8oTrdHl4/edit",
           "uploaded_at": "2026-11-10T01:46:29Z",
           "thumbnail": "https://i.ytimg.com/vi/fNF8oTrdHl4/mqdefault.jpg",
-          "views": 411,
+          "views": 415,
           "likes": 42,
           "comments": 0,
           "is_clean": true,
@@ -11236,7 +11298,7 @@
           "studio_url": "https://studio.youtube.com/video/DN2huC6MWiI/edit",
           "uploaded_at": "2026-11-09T07:17:45Z",
           "thumbnail": "https://i.ytimg.com/vi/DN2huC6MWiI/mqdefault.jpg",
-          "views": 1579,
+          "views": 1679,
           "likes": 44,
           "comments": 1,
           "is_clean": true,
@@ -11252,7 +11314,7 @@
           "studio_url": "https://studio.youtube.com/video/LcsUVOY7txg/edit",
           "uploaded_at": "2026-11-08T22:19:21Z",
           "thumbnail": "https://i.ytimg.com/vi/LcsUVOY7txg/mqdefault.jpg",
-          "views": 4223,
+          "views": 4240,
           "likes": 118,
           "comments": 0,
           "is_clean": true,
@@ -11396,7 +11458,7 @@
           "studio_url": "https://studio.youtube.com/video/sYhMhoeSZ5o/edit",
           "uploaded_at": "2026-11-04T07:01:39Z",
           "thumbnail": "https://i.ytimg.com/vi/sYhMhoeSZ5o/mqdefault.jpg",
-          "views": 113,
+          "views": 114,
           "likes": 11,
           "comments": 1,
           "is_clean": true,
@@ -11444,7 +11506,7 @@
           "studio_url": "https://studio.youtube.com/video/kQELw1nQsII/edit",
           "uploaded_at": "2026-10-30T22:32:35Z",
           "thumbnail": "https://i.ytimg.com/vi/kQELw1nQsII/mqdefault.jpg",
-          "views": 420,
+          "views": 421,
           "likes": 33,
           "comments": 0,
           "is_clean": true,
@@ -11780,7 +11842,7 @@
           "studio_url": "https://studio.youtube.com/video/ylfXMz9KUUQ/edit",
           "uploaded_at": "2026-10-19T22:32:11Z",
           "thumbnail": "https://i.ytimg.com/vi/ylfXMz9KUUQ/mqdefault.jpg",
-          "views": 347,
+          "views": 348,
           "likes": 15,
           "comments": 0,
           "is_clean": true,
@@ -12036,7 +12098,7 @@
           "studio_url": "https://studio.youtube.com/video/MQZ8gXWkNis/edit",
           "uploaded_at": "2026-09-28T08:26:01Z",
           "thumbnail": "https://i.ytimg.com/vi/MQZ8gXWkNis/mqdefault.jpg",
-          "views": 62962,
+          "views": 62964,
           "likes": 1387,
           "comments": 2,
           "is_clean": true,
@@ -12115,8 +12177,8 @@
         "studio_url": "https://studio.youtube.com/video/9WzbMM84KCo/edit",
         "uploaded_at": "2026-11-12T07:49:40Z",
         "thumbnail": "https://i.ytimg.com/vi/9WzbMM84KCo/mqdefault.jpg",
-        "views": 57,
-        "likes": 4,
+        "views": 77,
+        "likes": 5,
         "comments": 0,
         "is_clean": true,
         "health_badge": "100% CLEAN",
@@ -12124,8 +12186,8 @@
         "channel_name": "Godfather Sins",
         "is_blocked": false
       },
-      "total_likes": 2964,
-      "avg_views_per_video": 1764,
+      "total_likes": 3029,
+      "avg_views_per_video": 1817,
       "stock_status": "Plentiful (28.0 days)",
       "stock_color": "#10B981"
     },
@@ -12798,7 +12860,7 @@
           "studio_url": "https://studio.youtube.com/video/RNrjG_lf-n0/edit",
           "uploaded_at": "2026-10-21T22:02:07Z",
           "thumbnail": "https://i.ytimg.com/vi/RNrjG_lf-n0/mqdefault.jpg",
-          "views": 1038,
+          "views": 1039,
           "likes": 45,
           "comments": 0,
           "is_clean": true,
